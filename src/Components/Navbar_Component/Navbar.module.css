@@ -1,0 +1,84 @@
+
+.Navbar{
+    width: 100%;
+    color: white;
+    display: flex;
+    gap: 10rem;
+    align-items: center;
+    background-color:rgba(0, 0, 0,0.7);
+}
+
+.left_nav{
+    width: 18vw;
+    height: 100%;
+    margin-left: 20px;
+    justify-content: center;
+}
+
+.left_nav img{
+    width: 100%;
+}
+
+
+/* .right_nav{
+    width: 65vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+} */
+
+.right_nav ul{
+    list-style: none;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+.right_nav ul a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 30px;
+    padding: 0 5px;
+    display: block;
+}
+
+.right_nav ul li{
+    float: left;
+    position: relative;
+    text-align: center;
+    margin-left: 15px;
+}
+
+.right_nav ul ul{
+    position: absolute;
+    border-radius: 10px;
+    display: none;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    background: rgb(46, 243, 46);
+    padding: 20px;
+    top: 100%;
+    left: -5rem;
+}
+.right_nav ul ul li{
+    float: none;
+    width: 250px;
+}
+
+.right_nav ul ul li:hover{
+    border-left: 3px solid rgba(0, 0, 0,0.7);;
+}
+.right_nav ul ul li:hover{
+    background: red;
+}
+.right_nav ul ul ul{
+    top: 0;
+    left: 100%;
+}
+
+.right_nav ul li:hover>ul{
+    display: block;
+    transition: all 1s ease-in-out;
+}

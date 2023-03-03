@@ -1,0 +1,10 @@
+:root {
+  --primary-black-color:#1c1c1c;
+  --secondary-black-color: #393939;
+}
+
+.react_iconc{
+  color:#396ba9;
+  font-size: 20px;
+  margin-right: 5px;
+}
