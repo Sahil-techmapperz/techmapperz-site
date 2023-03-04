@@ -32,3 +32,22 @@
 
 
 Congratulations! You can now start adding files and collaborating with others on your project.
+
+
+## 🚀 Add contributor in GitHub repository
+
+### 1: Invite the Contributor
+The first step is to invite the contributor to your repository. To do this, navigate to your repository on GitHub and click on the "Settings" tab. Next, click on the "Collaborators" option on the left-hand side of the page. In the "Invite collaborators" field, enter the GitHub username or email address of the contributor you want to invite. Once you have entered their information, click on the "Add collaborator" button.
+
+### 2: Contributor Accepts Invitation
+After you have sent the invitation, the contributor will receive an email with the invitation link. They will need to accept the invitation before they can start contributing to the repository. Once they accept the invitation, they will be added to the repository with the collaborator permission level.
+
+
+### 3: Assigning Permissions
+By default, when a contributor is added to a repository, they are given the "Collaborator" permission level. This permission level allows the contributor to push and pull changes to and from the repository. However, if you want to assign a different permission level, you can do so by clicking on the contributor's username in the "Collaborators" section and selecting the appropriate permission level from the dropdown menu.
+
+
+### 4: Contributor Contribution
+After the contributor has been added to the repository and has accepted the invitation, they can start contributing to the repository. They can do this by creating new branches, making changes, and submitting pull requests. You, as the repository owner or administrator, can review their contributions and either approve or reject them.
+
+#### By following these steps, you can ensure that your repository is open to collaboration and that contributors can contribute to your project in a meaningful way.
