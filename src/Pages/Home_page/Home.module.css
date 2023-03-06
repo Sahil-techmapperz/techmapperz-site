@@ -1,0 +1,334 @@
+.home {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* border-right-color: 2px solid black;
+    border-left-color: 20px solid black; */
+}
+section:nth-child(1) {
+    background-color: #a9a0a0;
+    color:#fff;
+}
+body {
+    width: 100%;
+    height: 100%;
+    display:grid;
+    color: #fff;
+    /* place-items: center; */
+ } 
+
+/* header {
+    position: relative;
+}
+.main {
+    position: absolute;
+} */
+
+/* .backImg {
+    z-index: -1;
+} */
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 60px;
+    /* border: 1px solid red; */
+    margin-top: 4%;
+    /* padding: 0px 20px; */
+
+}
+.leftNav{
+    width: 20vw;
+
+}
+.leftNav img {
+    width:100%
+}
+
+.rightNav {
+    width: 50vw;
+    /* border: 1px solid; */
+    height: 90%;
+
+
+}
+.rightNav ul {
+    display: flex;
+    height: 100%;
+    align-items: center; 
+    justify-content: center; 
+    gap: 50px;
+    font-size: 15px;
+}
+
+
+.rightNav li {
+    float: right;
+    list-style: none;
+    font-size: 20px;
+    /* padding: 10px 20px; */
+}
+.rightNav li a{
+    /* padding: 3px 3px; */
+    text-decoration: none;
+    margin: auto;
+    
+}
+.middleBar {
+    height: 100%;
+    text-align: center;
+    /* width: 100vw; */
+    /* height: 100vw; */
+    margin-top: 10%;
+    margin-left: 0;
+    margin-right: 8%;
+    font-size: 40px;
+    color: black;
+    
+}
+.paragraph {
+    margin-left: 4%;
+    margin-top: 4%;
+    color: black;
+}
+.buttomBar {
+    height: 100%; 
+    text-align: center;
+    color:#fff;
+    cursor: pointer;
+}
+.buttom {
+    text-align: center;
+    height: 100%;
+    margin-top: 12%;
+    color: black;
+}
+
+/* =============================================== */
+/* features */
+section:nth-child(2){
+    color:#fff;
+    list-style: none;
+    background-color: #454545;
+}
+
+.feat {
+    margin-top: 8%;
+    margin-left: 3%;
+}
+
+.headtag1 {
+    margin-left: 5%;
+    height: 20px;
+}
+.paragraph1 {
+    margin-left: 50%;
+}
+
+.headtag2 {
+    margin-left: 45%;
+}
+.headtag3 {
+    margin-top: 20%;
+    margin-left: 3%;
+}
+
+.headtag4{
+    margin-top: 1%;
+    margin-left: 8%;
+    
+
+}
+.headtag5 { 
+    margin-top: 1%;
+    margin-left: 40%;
+
+}
+.headtag6 {
+    margin-top: 0%;
+    margin-left: 65%;
+    height: 20px;
+    width: 20px;
+    margin-bottom: 2%;
+
+}
+
+
+/* =============================== */
+section:nth-child(3) {
+    list-style: none;
+    background-color: #171717;
+    color: #fff;
+    
+}
+.about {
+    margin-top: 15%;
+    margin-left: 60%;
+
+}
+
+.headtag10 {
+    margin-top: 4%;
+    margin-left: 2%;
+}
+.headtag11 {
+    margin-top: 6%;
+
+
+}
+.headtag12 {
+    margin-top: 6%;
+
+}
+.headtag13 {
+    margin: 5%;
+    margin-left: 2%;
+
+}
+/* ====================== */
+ section:nth-child(4) {
+    list-style: none;
+    background-color: black;
+    color:#fff;
+
+ }
+ .headtag7 {
+    margin-top: 15%;
+    margin-left: 8%;
+
+}
+.headtag8 {
+    margin-top: 1%;
+    margin-left: 12%;
+     
+}
+.headtag9 {
+    margin-left: 12%;
+    margin-top: 35px;
+
+}
+
+.tabet {
+    margin-top: 5%;
+    margin-left: 50%;
+    height: 500px;
+    width: 500px;
+}
+
+
+
+/* ==================================ourblog================ */
+section:nth-child(5) {
+    list-style: none;
+    background-color:#2E2E2E;
+    color:#fff;
+    
+}
+
+.tag1 {
+    margin-top: 10%;
+    margin-left: 70%;
+
+}
+.tag2 {
+    margin-left: 70%;
+
+}
+.tag3 {
+    margin-top: 20%;
+    margin-left: 5%;
+
+}
+.tag4 {
+    margin-left: 5%;
+
+}
+.tag5 {
+    margin-top: 18%;
+    margin-left: 50%;
+
+}
+
+/* ====================================testimonial======== */
+section:nth-child(6) {
+    list-style: none;
+    background-color: #171717;
+    color:#fff;
+}
+
+.get1 {
+    margin-top: 2%;
+    margin-left: 45%;
+
+}
+.get2 {
+    margin-left: 40%;
+    margin-top: 1%;
+
+}
+.get3 {
+    margin-left: 25%;
+    margin-top: 2%;
+
+}
+
+/* ===================================lastpart============== */
+section:nth-child(7) {
+    list-style: none;
+    background-color:#2E2E2E;
+    color: #fff;
+    
+}
+.cards {
+    display: flex;
+    list-style: none;
+}
+.king {
+    margin-left: 72%;
+    list-style: none;
+}
+.queen {
+    margin-left: 8%;
+    list-style: none;
+}
+.city {
+    list-style: none;
+    display: flex;
+    /* height: 10%;
+    width: 5%; */
+}
+.get4 {
+    margin-top: 5%;
+    margin-left: 5%;
+
+}
+.get5 {
+    margin-top: 1%;
+    margin-left: 3%;
+
+}
+.get6 {
+    margin-top: 0%;
+    margin-left: 45%;
+
+}
+.get7 {
+    margin-top: 0%;
+    margin-left: 30%;
+
+}
+.get8 {
+    margin-top: 0%;
+    margin-left: 5%;
+    width: 10%;
+
+}
+.get9 {
+    margin-left: 35%;
+}
+
+.get10 {
+    margin-top: 8%;
+    margin-left:50%;
+}
