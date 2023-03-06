@@ -13,6 +13,7 @@ const Footer = () => {
             <div></div>
             <h2>Get in touch</h2>
         </div></Link>
+       
       </div>
       <div className={styles.footer_part_two}>
         <p className={styles.title}>About</p>

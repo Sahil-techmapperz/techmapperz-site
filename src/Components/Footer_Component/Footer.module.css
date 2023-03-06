@@ -1,17 +1,19 @@
 .Footer{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    justify-content: space-around;
     align-items: center;
     gap: 15px;
     padding: 0 15px;
     color: white;
     height: 350px;
-    /* width: 100%; */
-    /* padding: 15px 15px 5px 15px; */
     background-color: var(--primary-black-color);
 }
 
+
+
+.footer_part_one{
+    margin-left: 5rem;
+}
 
 .footer_part_one>p{
     color: var(--secondary-black-color);
@@ -33,8 +35,8 @@
 }
 .Submit_btn h2{
     position: absolute;
-    top: -10px;
-    left: 15px;
+    top: 5px;
+    left: 10px;
 }
 
 
