@@ -1,0 +1,41 @@
+.ourVlog {
+    width: 100%;
+}
+.tag1{
+    margin-left: 80%;
+}
+.totalTag {
+    display: flex;
+    
+}
+.tag2 {
+    margin-left: 5%;
+    height: 50px;
+    width:50px;
+
+}
+.tag3 {
+    margin-left: 10%;
+    height: 50px;
+    width:50px;
+
+}
+.tag4 {
+    margin-left: 14%;
+    height: 50px;
+    width:50px;
+
+}
+.tag5 {
+    margin-left: 18%;
+    height: 50px;
+    width:50px;
+
+}
+.tag6 {
+
+    margin-left: 22%;
+    height: 50px;
+    width:50px;
+}
+/* =================================================================================================*/

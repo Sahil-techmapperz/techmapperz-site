@@ -1,0 +1,42 @@
+.main {
+    width:100%;
+}
+.subMain {
+    width:90%;
+    display:flex;
+    margin:auto;
+}
+
+.Submit_btn{
+     position: relative; 
+    height: 60px;
+}
+
+.Submit_btn div{
+    width: 55px;
+    height: 50px;
+    border-radius: 50%;
+    background: #396ba9;
+}
+.Submit_btn h2{
+     position: absolute; 
+    top: 5px;
+    left: 10px;
+    color: aliceblue;
+}
+.navin {
+    margin-left: 2%;
+    margin-top: 5%;
+}
+.tabet {
+    margin-top: 10%;
+    height: 100px;
+    margin-left: 45%;
+}
+
+
+
+
+
+
+

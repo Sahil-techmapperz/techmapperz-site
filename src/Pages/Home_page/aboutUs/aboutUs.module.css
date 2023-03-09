@@ -1,0 +1,104 @@
+.About {
+    width: 100%;
+    margin:0;
+    padding: 0;
+}
+
+
+.main {
+    box-sizing: border-box;
+    margin: auto;
+    width:90%;
+    height:500px;
+    position: relative;
+    background-color: black;
+   
+
+}
+.Submit_btn{
+    position: relative;
+    height: 60px;
+}
+
+.Submit_btn div{
+    width: 55px;
+    height: 50px;
+    border-radius: 50%;
+    background: blue;
+}
+.Submit_btn h2{
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    color: white;
+}
+.navmane {
+    margin-top: 55%;
+    margin-left: 45%;
+}
+
+.vectorImage {
+    width: 90%;
+}
+
+
+.finalvector {
+
+    display: flex;
+    position: relative;
+    width:50%;
+    height:100%
+
+}
+
+.firstvector {
+
+    width: 60%;
+    height:100%
+
+}
+.lastvector {
+    width: 40%;
+    height: 100%;
+    
+
+}
+.headtag10 {
+    margin-top: 2%;
+
+}
+
+.headtag11 {
+    margin-top: 3%;
+
+}
+.headtag12 {
+    margin-top: 3%;
+    
+
+}
+
+.navbar1 {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    color: blue;
+
+
+}
+.navbar2 {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    color: blue;
+
+}
+.navbar3 {
+
+
+}
+.navbar4 {
+
+}

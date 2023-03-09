@@ -1,59 +1,17 @@
 import React from 'react';
+import AboutUs from './aboutUs/aboutUs';
+import Blog from './blog/Blog';
 import styles from "./Home.module.css";
+import TechBlog from './technoBlog/techBlog';
+import Testimonial from './testimonial/testimonial';
+
+
 const Home = () => {
   return (
-    <div className={styles.Home}>
-      <header>
-        <section>
-          <div className="main">
-            <div className={styles.navbar}>
-              <div className={styles.leftNav}>
-                <img className={styles.logo} src="https://www.techmapperz.com/images/v421_18528.png" alt="" />
-              </div>
+    <div >
+      
 
-
-              {/* <div className={styles.rightNav}>
-                <ul>
-                  <li><a href="a">Home</a></li>
-                  <li><a href="a">Service</a></li>
-                  <li><a href="a">News&Articles</a></li>
-                  <li><a href="a">About us</a></li>
-                  <li><a href="a">Careers</a></li>
-                  <li><a href="a">Contact us</a></li>
-                </ul>
-              </div> */}
-
-            </div>
-
-            <div className={styles.middleBar}>
-              <h1>MOBILE & WEB APPLICATION <br /> DEVELOPMENT</h1>
-            </div>
-
-            <div className={styles.paragraph}>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit culpa minus sinexerci <br />
-                non et quibusdam voluptatem. Laborum fugiat atque easimilique repelladeserunt <br />
-                distinctio recusandae libero praesentium eum corrupti.
-              </p>
-            </div>
-
-            <div className={styles.buttomBar}>
-              <button><h2>Get in touch</h2></button>
-            </div>
-
-
-            <div className={styles.buttom}>
-              <h3>SCROLL DOWN</h3>
-            </div>
-
-
-            <div className={styles.imageSlide}>
-            </div>
-
-          </div>
-        </section>
-      </header>
-
-
+{/* 
       <section>
         <div className={styles.features}>
           <div className={styles.uppersite}>
@@ -87,10 +45,13 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
 
-      <section>
+      <AboutUs/>
+
+
+      {/* <section>
         <div className={styles.about}>
           <li>About Us</li>
 
@@ -107,10 +68,14 @@ const Home = () => {
             <button><h2>Know More</h2></button>
           </div>
         </div>
-      </section>
+      </section> */}
 
 
-      <section>
+      {/* <section>
+          <div className={styles.tag1}><li>Technology</li></div>
+          <div className={styles.tag2}><h1>Our Brand Partners</h1></div>
+
+          <div className={styles.tag5}><button><h3>Read More</h3></button></div>
         <div className={styles.acro}><div className={styles.tag3}><li>Our Blog</li></div>
           <div className={styles.tag4}><h2>Latest News <br />& Articles</h2></div> </div>
 
@@ -149,10 +114,14 @@ const Home = () => {
         <img />
         <img />
 
-      </section>
+      </section> */}
+
+      
 
 
-      <section>
+
+      <Blog/>
+      {/* <section>
         <div className={`${styles.our} ${styles.vlog}`}>
           <img />
           <img />
@@ -164,10 +133,13 @@ const Home = () => {
           <div className={styles.tag5}><button><h3>Read More</h3></button></div>
 
         </div>
-      </section>
+      </section> */}
 
 
-      <section>
+
+         <TechBlog/>
+         <Testimonial/>
+      {/* <section>
         <div className={styles.Testimonial}>
           <div className={styles.get1}><li>Testimonial</li></div>
           <div className={styles.get2}><h1>What our Clients Say</h1></div>
@@ -176,10 +148,10 @@ const Home = () => {
             environment which was perfect for our needs!!.</h2></div>
           <img />
         </div>
-      </section>
+      </section> */}
 
 
-      <section>
+      {/* <section>
         <div className={styles.lastpart}>
 
           <div className={styles.get4}><li>Let's Have a talk about your project.</li></div>
@@ -218,10 +190,10 @@ const Home = () => {
 
 
         </div>
-      </section>
+      </section> */}
     </div>
 
   )
 }
 
-export default Home
+export default Home
