@@ -1,0 +1,71 @@
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 2rem;
+    color: white;
+    z-index: 1;
+    /* border: 1px solid red; */
+  }
+  
+  .arrow.prev {
+    position: absolute;
+    right: 10rem;
+    top: 20rem;
+    /* right: 60px; */
+  }
+  
+  .arrow.next {
+    position: absolute;
+    right: 5rem;
+    top: 20rem;
+  }
+  
+  .carousel{
+background-color: black;
+position: relative;
+
+  }
+  .carousel .slide {
+    transition: transform 0.5s ease-in-out;
+    
+  }
+
+  .carousel .slide {
+    transform: translateX(100%);
+    margin-bottom: 10px;
+  }
+
+
+
+  .slider .slide {
+    transform: translateX(0);
+  }
+
+  .slider .slide {
+    transition: transform 0.5s ease-in-out 0.5s;
+  }
+  
+
+
+.title{
+    position: absolute;
+    display: inline-block;
+    z-index: 10;
+    top:120px;
+    right: 200px;
+    width: 600px;
+    height: 195px;
+    font-size: 40px;
+    font-weight: 600;
+    /* line-height: 20px; */
+    letter-spacing: 0.16px;
+    text-align: center;
+}
+
+
+
+  

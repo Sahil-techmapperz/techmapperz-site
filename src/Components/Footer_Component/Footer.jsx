@@ -6,6 +6,7 @@ const Footer = () => {
   return (
     <>
     <div className={styles.Footer}>
+      <div className={styles.Footer_main}>
       <div className={styles.footer_part_one}>
         <p>Let's Have a talk about your project.</p>
         <h1>Need more information or want to get in touch?</h1>
@@ -32,20 +33,19 @@ const Footer = () => {
         <div className={styles.explore_content}>
             <ul>
                 <Link><li>Home</li></Link>
-                <Link><li>About</li></Link>
-                <Link><li>Services</li></Link>
-                <Link><li>News & Article</li></Link>
-                <Link><li>Contact</li></Link>
-            </ul>
-            <ul>
                 <Link><li>Support</li></Link>
+                <Link><li>About</li></Link>
                 <Link><li>Privacy & Policy</li></Link>
+                <Link><li>Services</li></Link>
                 <Link><li>Terms of Use</li></Link>
+                <Link><li>News & Article</li></Link>
                 <Link><li>Help</li></Link>
+                <Link><li>Contact</li></Link>
                 <Link><li>Sitemap</li></Link>
             </ul>
         </div>
       </div>
+    </div>
     </div>
     <div className={styles.copyright}>
     <p>&copy; copyright 2021 by Techmapperz.com</p>

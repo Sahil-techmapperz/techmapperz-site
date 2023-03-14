@@ -1,18 +1,19 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import styles from './Navbar.module.css';
 import { IoIosArrowDown } from 'react-icons/io';
 const Navbar = () => {
+  const location = useLocation();
   return (
     <div className={styles.Navbar}>
       <div className={styles.left_nav}>
-        <img src='https://www.techmapperz.com/images/v421_18528.png' alt='logo' />
+       <Link to={"/"}> <img src='https://www.techmapperz.com/images/v421_18528.png' alt='logo' /></Link>
       </div>
       <div className={styles.right_nav}>
         <ul>
-          <li><Link>Home</Link></li>
-          <li><Link>Service <IoIosArrowDown /></Link>
-            <ul>
+          <li style={{ backgroundColor: location.pathname === '/' && '#396ba9'  }}><Link  to={"/"}>Home</Link></li>
+          <li style={{ backgroundColor: location.pathname === '/service' && '#396ba9' }}><Link to={"/service"}>Service <IoIosArrowDown /></Link>
+            {/* <ul>
               <li><Link>Geospacial Services</Link>
                 <ul>
                   <li><Link>GIS Services</Link></li>
@@ -30,16 +31,16 @@ const Navbar = () => {
                   <li><Link>MOBILE APP DEELOPMENT</Link></li>
                 </ul>
               </li>
-            </ul>
+            </ul> */}
           </li>
-          <li><Link>News & Articles <IoIosArrowDown /></Link>
-            <ul>
+          <li style={{ backgroundColor: location.pathname === '/news&articles' && '#396ba9'  }}><Link>News & Articles <IoIosArrowDown /></Link>
+            {/* <ul>
               <li><Link>Blog</Link></li>
-            </ul>
+            </ul> */}
           </li>
-          <li><Link>About us</Link></li>
-          <li><Link>Careers</Link></li>
-          <li><Link>Contact us</Link></li>
+          <li style={{ backgroundColor: location.pathname === '/about' && '#396ba9'  }}><Link to={"/about"}>About us</Link></li>
+          <li style={{ backgroundColor: location.pathname === '/career' && '#396ba9'  }}><Link to={"/career"}>Careers</Link></li>
+          <li style={{ backgroundColor: location.pathname === '/contact' && '#396ba9'  }}><Link to={"/contact"}>Contact us</Link></li>
         </ul>
       </div>
     </div>
