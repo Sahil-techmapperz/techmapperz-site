@@ -1,6 +1,15 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styles from "./About.module.css"
 const About = () => {
+  
+  useEffect(() => {
+    const options = {
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    };
+    window.scrollTo(options);
+  }, []);
   return (
     <div className={styles.about}>
       <header>

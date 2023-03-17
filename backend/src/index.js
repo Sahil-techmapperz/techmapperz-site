@@ -3,6 +3,8 @@ const cors = require("cors");
 const bodyParser = require('body-parser');
 const ContactRoute = require("./routes/Contact_route/contact.routes");
 const { connect } = require("./config/db.config");
+const jobRoute = require("./routes/Jobs_route/jobs_route");
+const careerRoute = require("./routes/career_route/career_route");
 
 require('dotenv').config();
 const app = expres();
@@ -12,7 +14,8 @@ app.use(expres.json())
 app.use(bodyParser.json({ limit: '50mb' }));
 app.use(bodyParser.urlencoded({ limit: '50mb', extended: true }));
 app.use('/contact',ContactRoute)
-
+app.use("/Jobs",jobRoute)
+app.use("/career",careerRoute)
 
 
 app.get('/',async(req,res)=>{

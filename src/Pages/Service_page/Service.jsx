@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom';
 import Geospatial_Mapping from '../../Photos/Geospatial_Mapping.png';
 import Geo_health from '../../Photos/Geo_health.png';
@@ -7,6 +7,17 @@ import GIS_Suvey from '../../Photos/GIS_Suvey.png';
 import Styles from "./Service.module.css";
 
 const Service = () => {
+
+
+    useEffect(() => {
+        const options = {
+          top: 0,
+          left: 0,
+          behavior: 'smooth'
+        };
+        window.scrollTo(options);
+      }, []);
+
     return (
         <div className={Styles.service}>
             <section className={Styles.first_part}>
