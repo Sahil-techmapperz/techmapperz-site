@@ -10,7 +10,7 @@ const Footer = () => {
       <div className={styles.footer_part_one}>
         <p>Let's Have a talk about your project.</p>
         <h1>Need more information or want to get in touch?</h1>
-       <Link> <div className={styles.Submit_btn}>
+       <Link to={"/contact"}> <div className={styles.Submit_btn}>
             <div></div>
             <h2>Get in touch</h2>
         </div></Link>
@@ -25,23 +25,22 @@ const Footer = () => {
             <a href='#'><h3><BsInstagram/></h3></a>
             <a href='#'><h3><BsTwitter/></h3></a>
             <a href='#'><h3><BsFacebook/></h3></a>
-            <a href='#'><h3><BsFacebook/></h3></a>
         </div>
       </div>
       <div className={styles.footer_part_three}>
         <p className={styles.title}>Explore More</p>
         <div className={styles.explore_content}>
             <ul>
-                <Link><li>Home</li></Link>
-                <Link><li>Support</li></Link>
-                <Link><li>About</li></Link>
-                <Link><li>Privacy & Policy</li></Link>
-                <Link><li>Services</li></Link>
-                <Link><li>Terms of Use</li></Link>
-                <Link><li>News & Article</li></Link>
-                <Link><li>Help</li></Link>
-                <Link><li>Contact</li></Link>
-                <Link><li>Sitemap</li></Link>
+                <Link to={"/"}><li>Home</li></Link>
+                <Link to={"/support"}><li>Support</li></Link>
+                <Link to={"/about"}><li>About Us</li></Link>
+                <Link to={"/privacy"}><li>Privacy & Policy</li></Link>
+                <Link to={"/service"}><li>Services</li></Link>
+                <Link to={"/terms"}><li>Terms of Use</li></Link>
+                <Link to={"/news&article"}><li>News & Article</li></Link>
+                <Link to={"/help"}><li>Help</li></Link>
+                <Link to={"/contact"}><li>Contact</li></Link>
+                <Link to={"/sitemap"}><li>Sitemap</li></Link>
             </ul>
         </div>
       </div>

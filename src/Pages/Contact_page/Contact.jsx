@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
 import Styles from "./Contact.module.css";
 import { BiTimeFive } from 'react-icons/bi';
@@ -94,6 +94,23 @@ const Contact = () => {
     }
 
   }
+
+
+
+
+
+  useEffect(() => {
+    const options = {
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    };
+    window.scrollTo(options);
+  }, []);
+
+
+
+
   return (
     <>
       <div className={Styles.contact}>

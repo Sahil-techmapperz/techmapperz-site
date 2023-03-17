@@ -41,17 +41,19 @@
     padding: 2rem;
 }
 
-.cardcontener>.card>h2 {
+.cardcontener .card>h2 {
     font-weight: 400;
-    font-size: 26.4px;
-    line-height: 47px;
+    font-size: 20px;
+    line-height: 40px;
     text-align: left;
     padding-bottom: 25px;
+    /* border: 1px solid red; */
 }
 
 .client img {
     width: 100%;
     object-fit: fill;
+   
 }
 
 .client p {

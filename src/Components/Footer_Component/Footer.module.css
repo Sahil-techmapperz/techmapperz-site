@@ -53,26 +53,29 @@
 
 
 
+.title{
+    padding-bottom: 15px;
+}
+
+
 .social_media_icons{
     display: flex;
-    gap: 10px;
+    gap: 15px;
+    font-size: 20px;
 }
 .social_media_icons a{
     color: white;
 }
 
 .explore_content{
-    width: 30%;
+    width: 85%;
     /* border: 1px solid; */
 }
 .explore_content ul{
-    /* width: 100%; */
     list-style: none;
     display: grid;
-    grid-template-columns: repeat(2,150px);
-    row-gap: 5px;
-    gap: 20px;
-    /* flex-wrap: wrap; */
+    grid-template-columns: repeat(2,auto);
+    gap: 10px;
 }
 .explore_content a{
     text-decoration: none;
