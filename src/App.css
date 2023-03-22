@@ -1,32 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); */
 
 * {
   font-family: 'Poppins', sans-serif;
 }
 
 
-
+body p {
+  text-align: justify;
+  text-justify: inter-word;
+}
 
 
 :root {
-  --primary-black-color:#1c1c1c;
+  --primary-black-color: #1c1c1c;
   --secondary-black-color: #393939;
 }
 
-.react_iconc{
-  color:#396ba9;
-  font-size: 20px;
+.react_iconc {
+  color: #396ba9;
+  /* font-size: 25px; */
   margin-right: 5px;
 }
 
 
 
 
-.app{
+.app {
   position: relative;
 }
 
-.navbar{
+.navbar {
   position: fixed;
   top: 0;
   left: 0;
@@ -34,7 +37,7 @@
   z-index: 10;
 }
 
-.Error_toster{
+.Error_toster {
   background: red;
   color: white;
   width: 15%;
@@ -47,7 +50,7 @@
   animation: slideInRight 3s ease-in-out forwards;
 }
 
-.success_toster{
+.success_toster {
   background: green;
   color: white;
   width: 15%;
@@ -60,20 +63,32 @@
   animation: slideInRight 3s ease-in-out forwards;
 }
 
-@keyframes slideInRight{
-  0% {
-      right: 0;
-      opacity: 0;
-    }
 
-  50%{
-      right: 10rem;
-      opacity: 1;
-  } 
+
+#wp-image-542{
+  width: 300px;
+}
+
+
+
+@keyframes slideInRight {
+  0% {
+    right: 0;
+    opacity: 0;
+  }
+
+  50% {
+    right: 10rem;
+    opacity: 1;
+  }
+
   100% {
-      right: 0;
-      opacity: 0;
-    }
+    right: 0;
+    opacity: 0;
+  }
 
 
 }
+
+
+

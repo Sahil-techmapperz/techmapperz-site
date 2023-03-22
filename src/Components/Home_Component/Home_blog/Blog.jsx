@@ -12,13 +12,16 @@ const Blog = () => {
     ]
     return (
         <div className={styles.main}>
-            <div className={styles.tag1}>Technology</div>
-            <div className={styles.ourVlog}>
+            
+            <div className={styles.ourblog}>
                 <div className={styles.totalTag}>
                     <SlidingDeep images={Image} />
                 </div>
 
+                <div className={styles.Blog_2}>
+                <p className={styles.tag1}>Technology</p>
                 <h1 className={styles.tag6}>Our Brand Partners</h1>
+                </div>
             </div>
         </div>
 

@@ -14,13 +14,14 @@ const Testimonial = () => {
         </div>
         <div className={styles.cardcontener}>
           <Carousel
-             className={styles.slider}
+             className={styles.carousel}
              showStatus={false}
              infiniteLoop={true}
              autoPlay={true}
              showArrows={false}
              showThumbs={false}
              stopOnHover={true}
+            
           >
           <div className={styles.card}>
             <h2>They are the best of the best, and expertly trained team members who take the extra step and go the extra mile, all to fulfill

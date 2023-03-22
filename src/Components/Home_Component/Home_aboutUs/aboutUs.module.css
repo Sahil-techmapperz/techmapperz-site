@@ -44,7 +44,7 @@
 
 .finalvector {
     display: flex;
-    /* position: relative; */
+    justify-content: space-between;
     gap: 30px;
     width: 100%;
     height: 90%;
@@ -78,7 +78,7 @@
 
 
 .lastVector {
-    width: 50%;
+    width: 42.5%;
     height: 70%;
     padding-top: 6rem;
     padding-left: 10px;
@@ -103,8 +103,13 @@
 
 .headtag11 {
     margin-top: 3%;
-
+    text-align:justify;
 }
+
+.headtag11>p{
+    width: 500px;
+    
+} 
 
 .headtag12 {
     margin: 4% 0;

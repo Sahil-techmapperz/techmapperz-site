@@ -2,13 +2,18 @@
     width: 90%;
     height: 200px;
     margin: auto;
+    /* position: relative; */
+}
+
+
+.Blog_2{
     position: relative;
 }
 
 .tag1 {
     position: absolute;
-    right: 60px;
-    top: 40px;
+    left: 0;
+    top: -25px;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
@@ -16,19 +21,27 @@
     color: #808080;
 }
 
-.ourVlog {
+.ourblog {
     width: 100%;
     height: 100%;
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    gap: 25rem;
+    grid-template-columns: repeat(2,1fr);
+    justify-content:space-between;
     align-items: center;
+    /* border: 1px solid ; */
     /* position: relative; */
 }
 
 .totalTag {
-    width: 500px;
+    /* width: 400px; */
     height: 200px;
     /* border: 1px solid red; */
+}
+
+.Blog_2{
+    /* border: 1px solid; */
+    /* text-align: right; */
 }
 
 .tag6 {
