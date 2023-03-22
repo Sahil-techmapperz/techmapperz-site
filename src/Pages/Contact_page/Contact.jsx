@@ -125,9 +125,9 @@ const Contact = () => {
             <h1>Do you have a project in your mind?</h1>
             <div className={Styles.address}>
               <IconContext.Provider value={{ className: "react_iconc" }}>
-                <p>< BiTimeFive />9.30-6.30</p>
-                <p ><AiFillHome />Delhi Office 55, Lane- 2, Westend Marg, Saidullajab, Near Saket metro station,</p>
-                <p ><AiFillHome />Kolkata Office 37, Vivekananda Road, Dunlop, Kolkata-700035</p>
+                <p>< BiTimeFive  style={{ color: 'blue' }}  />9.30-6.30</p>
+                <p><AiFillHome />Delhi Office 55, <span className={Styles.address_detils}>Lane- 2, Westend Marg, Saidullajab, Near Saket metro station,</span></p>
+                <p ><AiFillHome />Kolkata Office 37,<span className={Styles.address_detils}> Vivekananda Road, Dunlop, Kolkata-700035</span></p>
               </IconContext.Provider>
             </div>
           </div>

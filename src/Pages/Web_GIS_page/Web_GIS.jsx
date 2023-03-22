@@ -1,0 +1,96 @@
+import React from 'react'
+import { Link } from 'react-router-dom'
+import Styles from "./Web_GIS.module.css";
+import Geospatial_Mapping from '../../Photos/Geospatial_Mapping.png';
+import Geo_health from '../../Photos/Geo_health.png';
+const Web_GIS = () => {
+    return (
+        <div className={Styles.Web_GIS}>
+            <div className={Styles.top}>
+                <h1>Web GIS Services</h1>
+                <p>Services / GIS Service / Geospatial programming & Web Map Development</p>
+            </div>
+            <div className={Styles.contaner}>
+                <div className={Styles.contaner_first}>
+                    <p className={Styles.into}>WebGIS is an advanced form of Geospatial Information System (most commonly known as Geographic Information System) this is available on the web platform. This system comprises of computer hardware, software and applications that capture, edit, analyse, manipulate and visualize geo-referenced data. Geospatial Intelligence maps provide a new prototype for how people everywhere access and use geographic information to take significant decisions, plan and execute operations. People use GIS maps on their desktops, tablets, and smartphones to perform a sophisticated range of activities.</p>
+
+                    <div className={Styles.card_contaner}>
+                        <div className={`${Styles.card} ${Styles.card_one}`}>
+                            <div className={`${Styles.Image} ${Styles.Image_1}`}>
+                                <h1>Geospatial programming & Web Map Development</h1>
+                                <img src={Geospatial_Mapping} alt='' />
+                            </div>
+
+                            <div className={Styles.details}>
+                                <p>Geographic Information System (GIS) has the potential to go beyond mapping. GIS offers a diverse set of analytical functions.</p>
+                                <div className={Styles.list_div}>
+
+                                    <div className={Styles.list_div_one}>
+                                        <ul>
+                                            <li>Assessing optimal driving path</li>
+                                            <li style={{ paddingBottom: "30px" }}>Discovering the nearest ATM, restaurant, shops and hotels etc.</li>
+                                            <li>Planning projects</li>
+                                        
+                                        </ul>
+                                    </div>
+                                    <div className={Styles.list_div_tow}>
+                                        <ul>
+                                            <li>Forest mapping</li>
+                                            <li>Flood management</li>
+                                            <li style={{ paddingTop: "20px" }}>Location: specific advertising</li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                                <Link>
+                                    <div className={Styles.btn}><div></div><h2>Know More</h2></div>
+                                </Link>
+                            </div>
+
+                            <div>
+
+                            </div>
+                        </div>
+
+                        <div className={`${Styles.card} ${Styles.card_two}`}>
+                           
+
+                            <div className={Styles.details}>
+                                <p>Geographic Information System (GIS) has the potential to go beyond mapping. GIS offers a diverse set of analytical functions.</p>
+                                <div className={Styles.list_div}>
+
+                                    <div className={Styles.list_div_one}>
+                                        <ul>
+                                            <li>Web GIS</li>
+                                            <li>Mobile GIS</li>
+                                            <li>GIS Enable Dashboard development</li>
+                                            <li>Geo-Server</li>
+                                        
+                                        </ul>
+                                    </div>
+                                    
+
+                                </div>
+                                <Link>
+                                    <div className={Styles.btn}><div></div><h2>Know More</h2></div>
+                                </Link>
+                            </div>
+
+                            <div className={`${Styles.Image} ${Styles.Image_1}`}>
+                                <img src={Geo_health} alt='' />
+                            </div>
+
+                            <div>
+
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    )
+}
+
+export default Web_GIS

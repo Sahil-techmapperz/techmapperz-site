@@ -1,10 +1,16 @@
 import React from 'react'
 import {Route,Routes} from "react-router-dom";
 import About from '../Pages/About_page/About';
+import Article from '../Pages/Article_page/Article';
 import Career from '../Pages/Career_page/Career';
 import Contact from '../Pages/Contact_page/Contact';
 import Home from '../Pages/Home_page/Home';
+import Photogrammetry_Services from '../Pages/Photogrammetry_Services_page/Photogrammetry_Services';
+import Remote_Sensing from '../Pages/Remote_Sensing_page/Remote_Sensing';
 import Service from '../Pages/Service_page/Service';
+import Singalearticle from '../Pages/Singale_Article_page/Singale_article';
+import Web_GIS from '../Pages/Web_GIS_page/Web_GIS';
+
 const Router = () => {
   return (
     <Routes>
@@ -13,6 +19,11 @@ const Router = () => {
        <Route path='/contact' element={<Contact/>}></Route> 
        <Route path='/career' element={<Career/>}></Route> 
        <Route path='/service' element={<Service/>}></Route> 
+       <Route path='/article' element={<Article/>}></Route> 
+       <Route path='/remote_sensing' element={<Remote_Sensing/>}></Route> 
+       <Route path='/web_gis' element={<Web_GIS/>}></Route> 
+       <Route path='/photogrammetry' element={<Photogrammetry_Services/>}></Route> 
+       <Route path='/singal_article/:id' element={<Singalearticle/>}></Route> 
     </Routes>
   )
 }

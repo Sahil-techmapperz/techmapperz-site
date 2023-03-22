@@ -19,7 +19,7 @@ const Home_Technology = () => {
             <img src={Strategic}/>
         </div>
         <div className={Styles.banner}>
-            {/* <img src={technology_banner}/> */}
+            
 
             <div><FaJava className={Styles.logo}/> <p>Java</p></div>
             <div><TbBrandJavascript className={Styles.logo}/><p>Javascript</p></div>

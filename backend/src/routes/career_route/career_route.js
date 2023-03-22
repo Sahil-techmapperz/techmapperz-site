@@ -5,7 +5,6 @@ const Careermodel = require("../../model/Career_model/career.model");
 careerRoute.use(cors());
 const multer = require('multer');
 const upload = multer();
-const fs = require("fs");
 const ImageKit = require('imagekit');
 
 

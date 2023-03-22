@@ -1,16 +1,18 @@
 
 .Navbar{
-    width: 100%;
+    width: 100vw;
     display: flex;
-    gap: 10rem;
+    /* gap: 10rem; */
+    justify-content: space-between;
+    padding: 0 5rem;
     align-items: center;
     background-color:rgba(0, 0, 0,0.7);
+    
 }
 
 .left_nav{
     width: 18vw;
     height: 100%;
-    margin-left: 20px;
     justify-content: center;
 }
 
@@ -19,6 +21,10 @@
 }
 
 
+
+.right_nav{
+    width: 55vw;
+}
 
 
 .right_nav ul{
@@ -30,13 +36,13 @@
 }
 
 .right_nav ul a{
-    /* color: #fff; */
     text-decoration: none;
     font-size: 17px;
-    font-weight: bold;
+    /* font-weight: bold; */
     line-height: 30px;
     padding: 0 5px;
-    display: block;
+    display: flex;
+    align-items: center;
 }
 
 .right_nav ul li{
