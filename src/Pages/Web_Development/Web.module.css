@@ -5,11 +5,12 @@
     color: #FFFFFF;
 }
 
-.drone {
+.development {
     background: rgba(24, 24, 24, 1);
+    position: relative;
 }
 
-.part1 {
+.first_part {
     height: 400px;
     width: 100%;
     display: flex;
@@ -20,21 +21,19 @@
     background: url("../../Photos/banner_1.jpg");
 }
 
-.part1>h1 {
+.first_part>h1 {
     font-size: 66px;
     line-height: 99px;
     letter-spacing: 0.16px;
     background: none;
 }
 
-.part1>p {
+.first_part>p {
     font-size: 20px;
     line-height: 30px;
     letter-spacing: 0.16px;
     background: none;
 }
-
-
 
 
 .secand_part {
@@ -76,28 +75,25 @@
     padding-bottom: 20px;
     background: rgba(24, 24, 24, 1);
 }
+
 .product {
     display: flex;
-    gap: 40px;
+    gap: 45px;
     background: rgba(24, 24, 24, 1);
 }
 
 .product img {
-    width: 800px;
-    height: 300px;
+    width: 750px;
+    height: 500px;
     object-fit: cover;
 }
 
 .product .Img_two {
-    height: 550px;
-    margin-left: 2px;
-    margin-top: 50px;
-    width: 700px;
-
+    /* height: 312px; */
 }
 .product .Img_three {
-    width: 469px;
-    height: 368px;
+    width: 700px;
+height: 368px;
 }
 
 .product_info {
@@ -106,6 +102,7 @@
     gap: 10px;
     position: relative;
     width: 700px;
+    margin-top: 80px;
 }
 
 
@@ -118,6 +115,7 @@
     word-wrap: break-word;
     width: 600px;
 }
+
 .product_info>ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -162,20 +160,135 @@
     left: 10px;
 }
 
-.card_info {
-    text-align: center;
+
+.main {
+    width: 100%;
+    margin: auto;
+    display: grid;
+    justify-content: center;
+    gap: 80px;
+    margin-top: 200px;
+    /* margin-bottom: 5rem; */
+    grid-template-columns: repeat(3, 300px);
 }
-.card_info h1 {
+
+.heading1 {
     text-align: center;
+    margin: 10px;
+    margin-top: 20px;
+    
+}
+.harbour {
+    background-color: none;
+}
+.design {
+    width: 100%;
+    /* margin: auto; */
+    background-color: red;
+    justify-content: center;
+    position:relative;
+    gap: 100px;
+    margin-top: 5rem;
+   
+    grid-template-columns: repeat(2, 300px);
+    height: 1000px;
+
 }
 .card1 {
-    /* text-align: center; */
-    margin-left: 60px;
-    margin-right: 60px;
+    border: 2px solid white;
+    position: absolute;
+    width: 320px;
+    height:350px ;
+    top: 5px;
+    left: 300px; 
+
 }
-.Img_two {
-    margin-left: 30%;
-    width: 500px;
-    height: 250px;
-    margin-top: 4%;
+.card2 {
+    border: 2px solid white;
+    /* margin-top: 50px; */
+    position: absolute;
+    width: 320px;
+    height:350px ; 
+    top: 80px;
+    left: 700px;
 }
+.card3 {
+    border: 2px solid white;
+    position: absolute;
+    width: 320px;
+    height:350px ; 
+    top: 470px;
+    left: 300px;
+}
+.card4 {
+    border: 2px solid white;
+    /* margin-top: 100px; */
+    position: absolute;
+    width: 320px;
+    height:350px ;
+    top: 550px;
+    left: 700px; 
+}
+
+.contaner_card2 {
+    border: 1px solid red;
+    /* z-index: 2; */
+    height: 450px;
+}
+.contaner_card2 img {
+   border: 2px solid red;
+   height: 500px;
+}
+.card1 img {
+    margin-top: 30px;
+    margin-left: 10px;
+}
+.card1 h3{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.card1 p{
+    margin-top: 10px;
+     margin-left:10px ;
+     margin-right:10px ;
+}
+.card2 img {
+    margin-top: 30px;
+    margin-left: 10px;
+}
+.card2 h3{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.card2 p{
+    margin-top: 10px;
+     margin-left:10px ;
+     margin-right:10px ;
+}
+.card3 img {
+    margin-top: 30px;
+    margin-left: 10px;
+}
+.card3 h3{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.card3 p{
+    margin-top: 10px;
+     margin-left:10px ;
+     margin-right:10px ;
+}
+.card4 img {
+    margin-top: 30px;
+    margin-left: 10px;
+}
+.card4 h3{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.card4 p{
+    margin-top: 10px;
+     margin-left:10px ;
+     margin-right:10px ;
+}
+

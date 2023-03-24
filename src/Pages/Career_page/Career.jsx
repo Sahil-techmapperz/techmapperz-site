@@ -8,6 +8,11 @@ import career_idea_4 from '../../Photos/career_idea-4.png';
 import career_idea_5 from '../../Photos/career_idea-5.png';
 import career_idea_6 from '../../Photos/career_idea-6.png';
 import Styles from "./Career.module.css";
+import { Button, Modal, ModalBody, ModalCloseButton, ModalContent, ModalFooter, ModalHeader, ModalOverlay } from '@chakra-ui/react';
+
+
+
+
 
 const init = {
   "name": "",
@@ -72,7 +77,7 @@ const Career = () => {
   }
 
 
-  const GetJodData =async () => {
+  const GetJodData = async () => {
     const response = await axios.get('http://localhost:8080/jobs');
     console.log(response.data)
     setjobsdata(response.data)
@@ -173,6 +178,20 @@ const Career = () => {
             {Jobsdata && Jobsdata.map(job => {
               return (
                 <div key={job.userId}>
+     {console.log (job && job)}
+                  <Modal >
+                    <ModalOverlay />
+                    <ModalHeader>Important!</ModalHeader>
+                    <ModalCloseButton />
+                    <ModalBody>
+                      More Information
+                    </ModalBody>
+                    <ModalFooter>
+                      <Button>Close</Button>
+                      <Button>Delete</Button>
+                    </ModalFooter>
+                  </Modal>
+
                   <h3>{job.Jobtype}</h3>
                   <h1>{job.designetion}</h1>
                   <p>Experience:  {job.experience}</p>

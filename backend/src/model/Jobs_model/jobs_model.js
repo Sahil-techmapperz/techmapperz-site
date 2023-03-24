@@ -2,14 +2,18 @@ const mongoose =require('mongoose')
 
 const jobSchema=new mongoose.Schema ({
     userId:{type:Number,required:true},
-    description: {type:String},
-    designetion: {
-        type:String,
-        required:true},
-    experience:{type:String},
-    location:{type:String},
-    JobID:{type:String},
-    Jobtype:{type:String}
+    JobID: String,
+    Jobtype: String,
+    location: String,
+    experience: String,
+    designetion: String,
+    description: String,
+    education: String,
+    perksBenefits: String,
+    candidateProfile: String,
+    roleResponsibility: String,
+    salary: String,
+    Date:{type:String},
 });
 
 let Jobsmodel=mongoose.model("jobs",jobSchema)

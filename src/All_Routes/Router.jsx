@@ -4,11 +4,13 @@ import About from '../Pages/About_page/About';
 import Article from '../Pages/Article_page/Article';
 import Career from '../Pages/Career_page/Career';
 import Contact from '../Pages/Contact_page/Contact';
+import Drone_Service from '../Pages/Drone_services/Drone_service';
 import Home from '../Pages/Home_page/Home';
 import Photogrammetry_Services from '../Pages/Photogrammetry_Services_page/Photogrammetry_Services';
 import Remote_Sensing from '../Pages/Remote_Sensing_page/Remote_Sensing';
 import Service from '../Pages/Service_page/Service';
 import Singalearticle from '../Pages/Singale_Article_page/Singale_article';
+import Web_Development from '../Pages/Web_Development/Web_development';
 import Web_GIS from '../Pages/Web_GIS_page/Web_GIS';
 
 const Router = () => {
@@ -24,6 +26,9 @@ const Router = () => {
        <Route path='/web_gis' element={<Web_GIS/>}></Route> 
        <Route path='/photogrammetry' element={<Photogrammetry_Services/>}></Route> 
        <Route path='/singal_article/:id' element={<Singalearticle/>}></Route> 
+       <Route path='/drone_service' element={<Drone_Service/>}></Route>
+       <Route path='/web_development' element={<Web_Development/>}></Route>
+       
     </Routes>
   )
 }
