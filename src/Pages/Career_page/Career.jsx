@@ -8,6 +8,19 @@ import career_idea_4 from '../../Photos/career_idea-4.png';
 import career_idea_5 from '../../Photos/career_idea-5.png';
 import career_idea_6 from '../../Photos/career_idea-6.png';
 import Styles from "./Career.module.css";
+import { HiOutlineInformationCircle } from 'react-icons/hi';
+import { Text } from '@chakra-ui/react';
+import {
+  Modal,
+  ModalOverlay,
+  ModalContent,
+  ModalHeader,
+  ModalFooter,
+  ModalBody,
+  ModalCloseButton,
+  useDisclosure,
+  Button,
+} from '@chakra-ui/react'
 
 const init = {
   "name": "",
@@ -21,10 +34,11 @@ const Career = () => {
   const [careerdata, setcareerdata] = useState(init);
   const [Jobsdata, setjobsdata] = useState([]);
   const [resume, setresume] = useState('');
-
+  const [job, setJob] = useState();
 
 
   const inputRefs = [useRef(), useRef(), useRef(), useRef(), useRef()];
+  const { isOpen, onOpen, onClose } = useDisclosure()
 
   const handalechange = async (e) => {
     const { name, value } = e.target;
@@ -72,7 +86,7 @@ const Career = () => {
   }
 
 
-  const GetJodData =async () => {
+  const GetJodData = async () => {
     const response = await axios.get('http://localhost:8080/jobs');
     console.log(response.data)
     setjobsdata(response.data)
@@ -89,6 +103,14 @@ const Career = () => {
     window.scrollTo(options);
     GetJodData()
   }, [])
+
+
+  const ShowMoreInfo = (Job) => {
+    setJob(Job)
+    console.log(job && job)
+    onOpen();
+
+  }
 
 
   return (
@@ -171,16 +193,23 @@ const Career = () => {
         <div className={Styles.secend_section_main}>
           <div className={Styles.secend_section_main_one}>
             {Jobsdata && Jobsdata.map(job => {
+
+
               return (
                 <div key={job.userId}>
                   <h3>{job.Jobtype}</h3>
                   <h1>{job.designetion}</h1>
                   <p>Experience:  {job.experience}</p>
                   <p>Location:  {job.location}</p>
-                  <button onClick={() => inputRefs[0].current.focus()}>Apply Now</button>
+                  <div className={Styles.card_apply}>
+                    <button className={Styles.apply_now} onClick={() => inputRefs[0].current.focus()}>Apply Now</button>
+                    <button onClick={() => ShowMoreInfo(job)}><HiOutlineInformationCircle /></button>
+                  </div>
+
                 </div>
               )
             })}
+
           </div>
 
         </div>
@@ -203,8 +232,37 @@ const Career = () => {
         </div>
       </section>
 
+
+      <Modal isOpen={isOpen} onClose={onClose}>
+        <ModalOverlay />
+        <ModalContent>
+          <ModalHeader>Job Info</ModalHeader>
+          <ModalCloseButton />
+          <ModalBody>
+            <Text color='black'><b style={{ "color": "black" }}>JobID-</b> {job&&job.JobID}</Text><br />
+            <Text color='black'><b style={{ "color": "black" }}> Jobtype-</b>  {job&&job.Jobtype}</Text><br />
+            <Text color='black'><b style={{ "color": "black" }}>education- </b> {job&&job.education}</Text><br />
+            <Text color='black'><b style={{ "color": "black" }}>experience-</b> {job&&job.experience}</Text><br />
+            <Text color='black'><b style={{ "color": "black" }}>designetion-</b>  {job&&job.designetion}</Text><br />
+            <Text color='black'><b style={{ "color": "black" }}>location-</b>  {job&&job.location}</Text><br />
+            <Text color='black'><b style={{ "color": "black" }}>salary- </b> {job&&job.salary}</Text><br />
+            <Text color='black'><b style={{ "color": "black" }}>roleResponsibility- </b> {job&&job.roleResponsibility}</Text><br />
+            <Text color='black'><b style={{ "color": "black" }}>perksBenefits-</b> {job&&job.perksBenefits}</Text><br />
+            <Text color='black'><b style={{ "color": "black" }}>description- </b> {job&&job.description}</Text><br />
+
+          </ModalBody>
+          <ModalFooter bgColor={"white"}>
+            <Button colorScheme='blue' mr={3} onClick={onClose}>
+              Close
+            </Button>
+          </ModalFooter>
+        </ModalContent>
+      </Modal>
+
     </div>
   )
+
 }
+
 
 export default Career;
