@@ -52,10 +52,12 @@ careerRoute.post("/", upload.single("file"), async (req, res, next) => {
 
       const resume_url = await uploadFile(buffer, file);
       console.log(resume_url);
+      const currentDate = new Date();
+      const formattedDate = `${currentDate.getDate()}-${currentDate.getMonth() + 1}-${currentDate.getFullYear()}`;
 
 
       let AllCareer = await Careermodel.find();
-      let newcareer = new Careermodel({ name, mobile, message, designetion, "resume": resume_url, userId: AllCareer.length + 1 });
+      let newcareer = new Careermodel({ name, mobile, message, designetion, "resume": resume_url, userId: AllCareer.length + 1,Date: formattedDate, });
       await newcareer.save();
       res.status(200).json({ "message": "your application submitted successfully" });
     } else {
@@ -67,6 +69,29 @@ careerRoute.post("/", upload.single("file"), async (req, res, next) => {
 
 
 });
+
+
+
+careerRoute.delete("/", async (req, res) => {
+  const { selectedCareerIds } = req.body;
+
+  try {
+    if (selectedCareerIds && Array.isArray(selectedCareerIds)) {
+      const result = await Careermodel.deleteMany({ userId: { $in: selectedCareerIds } });
+
+      if (result.deletedCount > 0) {
+        res.status(200).json({ message: "Career applications deleted successfully." });
+      } else {
+        res.status(404).json({ message: "No career applications found with the provided ids." });
+      }
+    } else {
+      res.status(400).json({ message: "Invalid request. Provide an array of career application ids." });
+    }
+  } catch (err) {
+    res.status(500).json({ message: "Error deleting career applications.", error: err });
+  }
+});
+
 
 
 
