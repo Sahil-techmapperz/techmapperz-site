@@ -51,6 +51,9 @@ const Service = () => {
                         </div>
                     </div>
                 </div>
+
+
+
                 <div className={Styles.contaner}>
                     <div className={Styles.product}>
                         <div className={Styles.product_info}>
@@ -99,6 +102,9 @@ const Service = () => {
                         </div>
                     </div>
                 </div>
+
+
+                
             </section>
         </div>
     )

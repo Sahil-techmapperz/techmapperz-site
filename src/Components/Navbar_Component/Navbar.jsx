@@ -14,7 +14,7 @@ const Navbar = () => {
             <ul className={styles.nav_list}>
                 <li style={{ borderBottom: location.pathname === '/' && '3px solid red'  }}><Link to="/">Home</Link></li>
                 <li style={{ borderBottom: location.pathname === '/service' && '3px solid red'  }} className={styles.nav_item}>
-                    <Link to="/service">Services <IoIosArrowDown/></Link>
+                    <Link to="/service">Services </Link>
                     <div className={styles.dropdown}>
                         <Link to="/geospatial-services">Geospatial Services</Link>
                         <Link to="/it-services">IT Services</Link>
