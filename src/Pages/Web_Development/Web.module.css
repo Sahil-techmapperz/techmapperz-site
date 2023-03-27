@@ -19,6 +19,7 @@
     align-items: center;
     object-fit: cover;
     background: url("../../Photos/banner_1.jpg");
+    
 }
 
 .first_part>h1 {
@@ -38,7 +39,7 @@
 
 .secand_part {
     width: 90%;
-    margin: auto;
+     margin: auto; 
     background: rgba(24, 24, 24, 1);
 }
 
@@ -105,15 +106,13 @@ height: 368px;
     margin-top: 80px;
 }
 
-
-
 .product_info>p {
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.16;
     font-weight: 400;
     word-wrap: break-word;
-    width: 600px;
+    width: 100%;
 }
 
 .product_info>ul {
@@ -140,6 +139,7 @@ height: 368px;
 .product_info .btn {
     position: relative;
     height: 60px;
+    width: 100%;
 }
 
 .product_info .btn div {
@@ -167,29 +167,25 @@ height: 368px;
     display: grid;
     justify-content: center;
     gap: 80px;
-    margin-top: 200px;
+    margin-top: 20px;
     /* margin-bottom: 5rem; */
-    grid-template-columns: repeat(3, 300px);
+    grid-template-columns: repeat(3,400px);
 }
 
-.heading1 {
-    text-align: center;
-    margin: 10px;
-    margin-top: 20px;
+.class2{
     
+    text-align: center;
 }
+
 .harbour {
     background-color: none;
 }
 .design {
     width: 100%;
-    /* margin: auto; */
-    background-color: red;
     justify-content: center;
     position:relative;
     gap: 100px;
     margin-top: 5rem;
-   
     grid-template-columns: repeat(2, 300px);
     height: 1000px;
 
@@ -197,17 +193,17 @@ height: 368px;
 .card1 {
     border: 2px solid white;
     position: absolute;
-    width: 320px;
+    width: 400px;
     height:350px ;
     top: 5px;
-    left: 300px; 
+    left: 250px; 
 
 }
 .card2 {
     border: 2px solid white;
     /* margin-top: 50px; */
     position: absolute;
-    width: 320px;
+    width: 400px;
     height:350px ; 
     top: 80px;
     left: 700px;
@@ -215,53 +211,60 @@ height: 368px;
 .card3 {
     border: 2px solid white;
     position: absolute;
-    width: 320px;
+    width: 400px;
     height:350px ; 
     top: 470px;
-    left: 300px;
+    left: 250px;
 }
 .card4 {
     border: 2px solid white;
     /* margin-top: 100px; */
     position: absolute;
-    width: 320px;
+    width: 400px;
     height:350px ;
     top: 550px;
     left: 700px; 
 }
 
 .contaner_card2 {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     /* z-index: 2; */
     height: 450px;
+    display: flex;
 }
 .contaner_card2 img {
-   border: 2px solid red;
-   height: 500px;
+   height: 900px;
+   z-index: 10;
+   margin-top: -10rem;
 }
+.contaner_card2 .heading {
+    margin-top: -5rem;
+    width: 500px;
+}
+
 .card1 img {
     margin-top: 30px;
     margin-left: 10px;
 }
-.card1 h3{
-    margin-top: 10px;
+.card1 h1{
+    margin-top: 15px;
     margin-left: 10px;
 }
 .card1 p{
-    margin-top: 10px;
+    margin-top: 25px;
      margin-left:10px ;
      margin-right:10px ;
 }
 .card2 img {
-    margin-top: 30px;
+    margin-top: 40px;
     margin-left: 10px;
 }
-.card2 h3{
-    margin-top: 10px;
+.card2 h1{
+    margin-top: 15px;
     margin-left: 10px;
 }
 .card2 p{
-    margin-top: 10px;
+    margin-top: 30px;
      margin-left:10px ;
      margin-right:10px ;
 }
@@ -269,12 +272,12 @@ height: 368px;
     margin-top: 30px;
     margin-left: 10px;
 }
-.card3 h3{
-    margin-top: 10px;
+.card3 h1{
+    margin-top: 15px;
     margin-left: 10px;
 }
 .card3 p{
-    margin-top: 10px;
+    margin-top: 25px;
      margin-left:10px ;
      margin-right:10px ;
 }
@@ -282,13 +285,42 @@ height: 368px;
     margin-top: 30px;
     margin-left: 10px;
 }
-.card4 h3{
-    margin-top: 10px;
+.card4 h1{
+    margin-top: 15px;
     margin-left: 10px;
 }
 .card4 p{
-    margin-top: 10px;
+    margin-top: 25px;
      margin-left:10px ;
      margin-right:10px ;
 }
+
+.card_border_1{
+    border: 2px solid red;
+    width: 350px;
+    height: 200px;
+
+    
+}
+.card_border_1 h3{
+    margin-left: 10px;
+    
+
+}
+.card{
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-direction: column;
+}
+
+.class1 {
+    padding-left: 30px;
+    padding-right: 30px;
+    border-left: 1px solid;
+    border-right: 1px solid;
+
+}
+
 

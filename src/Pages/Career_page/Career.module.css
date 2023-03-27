@@ -85,7 +85,7 @@
     border: 2px solid white;
 }
 
-.secend_section_main_one>div>button {
+.secend_section_main_one>div .apply_now {
     padding: 10px 20px;
     background: transparent;
     border: 2px solid white;
@@ -100,7 +100,7 @@
     color: #FFFFFF;
 }
 
-.secend_section_main_one>div>button:hover {
+.secend_section_main_one>div .apply_now:hover {
     background: #396ba9;
     border: none;
 }
@@ -269,5 +269,16 @@ text-align: left;
 .Submit_btn h2 {
     position: absolute;
     top: 5px;
-    left: 10px;
+    left:10px;
+}
+.card_apply{
+    display:flex;
+    justify-content: space-between;
+    padding: 10px;
+   
+}
+
+.card_apply :last-child {
+    font-size: 40px;
+    /* border: 2px solid red; */
 }
