@@ -69,7 +69,7 @@ jobRoute.put('/:userId', async (req, res) => {
           res.status(404).send('Job not found');
       }
   } catch (err) {
-      console.error('Error updating job:', err);
+     
       res.status(500).send('Internal server error');
   }
 });

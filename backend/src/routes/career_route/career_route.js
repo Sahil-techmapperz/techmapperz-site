@@ -27,7 +27,7 @@ const uploadFile = async (fileBuffer, fileName) => {
 
     return response.url;
   } catch (error) {
-    console.log(error);
+   
     return null;
   }
 };
@@ -51,7 +51,7 @@ careerRoute.post("/", upload.single("file"), async (req, res, next) => {
 
 
       const resume_url = await uploadFile(buffer, file);
-      console.log(resume_url);
+     
 
 
       let AllCareer = await Careermodel.find();

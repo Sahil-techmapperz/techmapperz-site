@@ -82,17 +82,19 @@
 }
 
 .product img {
-    width: 460px;
-    height: 406px;
+    width: 800px;
+    height: 350px;
     object-fit: cover;
 }
 
 .product .Img_two {
-    height: 312px;
+    height: 250px;
+    margin-top: 50px;
 }
 .product .Img_three {
-    width: 469px;
-height: 368px;
+    width: 800px;
+   height: 368px;
+   margin-top: 50px;
 }
 
 .product_info {

@@ -4,7 +4,7 @@ import Styles from "./Singale_article.module.css";
 const Singalearticle = () => {
     const [Singalearticle,setsingalearticle]=useState();
     let id= useParams();
-    console.log('Singalearticle',id);
+   
 
     let Fetchdata=async()=>{
       fetch("http://localhost:8080/article/singale_artical", {
@@ -12,10 +12,10 @@ const Singalearticle = () => {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(id)
       }).then((res)=>res.json()).then((data)=>{
-        console.log(data);
+        
         setsingalearticle(data);
       }).catch((err)=>{
-        console.log(err);
+       
       })
       
     }
