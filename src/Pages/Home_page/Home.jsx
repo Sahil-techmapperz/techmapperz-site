@@ -20,7 +20,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div>
+    <div className={styles.home}>
       <section className={styles.carousel}>
         <Home_carousel />
       </section>
