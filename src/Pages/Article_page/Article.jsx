@@ -12,9 +12,9 @@ function Article() {
         const response = await fetch('http://localhost:8080/article');
         let data=await response.json();
         setPosts(data);
-        console.log(data);
+       
       } catch (error) {
-        console.error(error);
+     
       }
     };
     fetchPosts();
@@ -24,8 +24,8 @@ function Article() {
     <div className={Styles.article}>
 
         <div className={Styles.top_part}>
-        <h1>Blog Articals</h1>
-        <p>Home / Blog Articals</p>
+        <h1>Blog Articles</h1>
+        <p>Home / Blog Articles</p>
         </div>
 
         <div className={Styles.contaner}>

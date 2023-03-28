@@ -4,20 +4,20 @@
     box-sizing: border-box;
 }
 
-.container {
+/* .container {
     padding-top: 2 rem;
     padding-bottom: 2 rem;
     padding-left:2 rem ;
     padding-right:2 rem ;
-}
+} */
 
 
 .about {
     background: #181818;
 }
 .main {
-    width: 90%;
-    margin: auto;
+    width: 100%;
+    /* margin: auto; */
 }
 
 header {

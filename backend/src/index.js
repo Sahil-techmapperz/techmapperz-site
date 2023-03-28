@@ -32,6 +32,6 @@ app.get('/',async(req,res)=>{
 
 app.listen(port,async()=>{
     await connect();
-    console.log("Connect")
-    console.log(`listening on http://localhost:${port}`)
+    
+    // console.log(`listening on http://localhost:${port}`)
 })

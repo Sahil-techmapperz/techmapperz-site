@@ -43,8 +43,8 @@ const Career = () => {
   const handalechange = async (e) => {
     const { name, value } = e.target;
 
-    if (name == "designetion") {
-      console.log(value);
+    if (name === "designetion") {
+      
     }
     setcareerdata({ ...careerdata, [name]: value })
 
@@ -61,7 +61,7 @@ const Career = () => {
   const handalesubmit = async () => {
     const { name, mobile, message, designetion } = careerdata;
 
-    console.log(careerdata)
+    
     if (name && message && mobile && resume && designetion) {
 
       const formData = new FormData();
@@ -69,9 +69,9 @@ const Career = () => {
       formData.append("data", JSON.stringify(careerdata));
 
       axios.post("http://localhost:8080/career", formData).then((res) => {
-        console.log(res)
+       
       }).catch(err => {
-        console.log(err);
+       
       })
     } else {
 
@@ -88,7 +88,7 @@ const Career = () => {
 
   const GetJodData = async () => {
     const response = await axios.get('http://localhost:8080/jobs');
-    console.log(response.data)
+   
     setjobsdata(response.data)
   };
 
@@ -107,7 +107,7 @@ const Career = () => {
 
   const ShowMoreInfo = (Job) => {
     setJob(Job)
-    console.log(job && job)
+  
     onOpen();
 
   }
@@ -239,16 +239,16 @@ const Career = () => {
           <ModalHeader>Job Info</ModalHeader>
           <ModalCloseButton />
           <ModalBody>
-            <Text color='black'><b style={{ "color": "black" }}>JobID-</b> {job&&job.JobID}</Text><br />
-            <Text color='black'><b style={{ "color": "black" }}> Jobtype-</b>  {job&&job.Jobtype}</Text><br />
-            <Text color='black'><b style={{ "color": "black" }}>education- </b> {job&&job.education}</Text><br />
-            <Text color='black'><b style={{ "color": "black" }}>experience-</b> {job&&job.experience}</Text><br />
-            <Text color='black'><b style={{ "color": "black" }}>designetion-</b>  {job&&job.designetion}</Text><br />
-            <Text color='black'><b style={{ "color": "black" }}>location-</b>  {job&&job.location}</Text><br />
-            <Text color='black'><b style={{ "color": "black" }}>salary- </b> {job&&job.salary}</Text><br />
-            <Text color='black'><b style={{ "color": "black" }}>roleResponsibility- </b> {job&&job.roleResponsibility}</Text><br />
-            <Text color='black'><b style={{ "color": "black" }}>perksBenefits-</b> {job&&job.perksBenefits}</Text><br />
-            <Text color='black'><b style={{ "color": "black" }}>description- </b> {job&&job.description}</Text><br />
+            <Text color='black'><b style={{ "color": "black" }}>Job Id -</b> {job&&job.JobID}</Text><br />
+            <Text color='black'><b style={{ "color": "black" }}> JobType -</b>  {job&&job.Jobtype}</Text><br />
+            <Text color='black'><b style={{ "color": "black" }}>Education - </b> {job&&job.education}</Text><br />
+            <Text color='black'><b style={{ "color": "black" }}>Experience -</b> {job&&job.experience}</Text><br />
+            <Text color='black'><b style={{ "color": "black" }}>Designetion -</b>  {job&&job.designetion}</Text><br />
+            <Text color='black'><b style={{ "color": "black" }}>Location -</b>  {job&&job.location}</Text><br />
+            <Text color='black'><b style={{ "color": "black" }}>Salary - </b> {job&&job.salary}</Text><br />
+            <Text color='black'><b style={{ "color": "black" }}>RoleResponsibility - </b> {job&&job.roleResponsibility}</Text><br />
+            <Text color='black'><b style={{ "color": "black" }}>PerksBenefits -</b> {job&&job.perksBenefits}</Text><br />
+            <Text color='black'><b style={{ "color": "black" }}>Description - </b> {job&&job.description}</Text><br />
 
           </ModalBody>
           <ModalFooter bgColor={"white"}>

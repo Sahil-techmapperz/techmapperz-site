@@ -28,7 +28,7 @@ article_route.get("/", async (req, res) => {
       
       return postsWithImgurl;
     } catch (error) {
-      console.error(error);
+     
     }
   };
 
@@ -91,7 +91,8 @@ const fetchPosts = async () => {
     
     return response;
   } catch (error) {
-    console.error(error);
+ 
+    
   }
 };
 

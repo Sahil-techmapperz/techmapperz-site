@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import Styles from "./Contact.module.css";
 import { BiTimeFive } from 'react-icons/bi';
 import { AiFillHome } from 'react-icons/ai';
@@ -43,24 +43,24 @@ const Contact = () => {
 
   const handalechange = (e) => {
     const { name, value } = e.target;
-    if(name=="mobile"){
+    if(name==="mobile"){
       let newvalue = value;
       if (/^\d{10}$/.test(newvalue)){
-          console.log(newvalue)
+         
           setHasError({ ...hasError, "mobile": hasError.mobile =false})
           setcontactdata({ ...contactdata, [name]: value })
       }else{
         setHasError({ ...hasError, "mobile": hasError.mobile = true})
-        console.log("enter 10 degit value")
+       
       }
     }
-    if(name=="email"){
+    if(name==="email"){
       let newEmail = value;
       if (/^[a-zA-Z0-9._%+-]+@gmail.com$/.test(newEmail)) {
-        console.log(newEmail);
+       
         setcontactdata({ ...contactdata, [name]: value })
       }else{
-        console.log("enter your email address");
+       
       }
     }
     setcontactdata({ ...contactdata, [name]: value })
@@ -76,20 +76,20 @@ const Contact = () => {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(contactdata)
       }).then(res => {
-        if (res.status == 200) {
+        if (res.status === 200) {
           handaleSuccesstoster();
         } else {
-          console.log("error")
+         
           handaleErrortoster()
         }
 
       }).catch(err => {
-        console.log("error")
+       
         handaleErrortoster();
       })
     }
-     else if (email == ""&&name == ""&&mobile == ""&&projectType==""&&projectdetails=="") {
-      console.log("error")
+     else if (email === ""&&name === ""&&mobile === ""&&projectType===""&&projectdetails==="") {
+    
       setHasError({ ...hasError, "email": hasError.email = true,"name": hasError.name = true,"mobile": hasError.mobile =true,"projectType": hasError.projectType,"projectdetails": hasError.projectdetails})
     }
 
