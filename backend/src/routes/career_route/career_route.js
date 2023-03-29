@@ -27,7 +27,7 @@ const uploadFile = async (fileBuffer, fileName) => {
 
     return response.url;
   } catch (error) {
-   
+    console.log(error);
     return null;
   }
 };
@@ -54,7 +54,6 @@ careerRoute.post("/", upload.single("file"), async (req, res, next) => {
       console.log(resume_url);
       const currentDate = new Date();
       const formattedDate = `${currentDate.getDate()}-${currentDate.getMonth() + 1}-${currentDate.getFullYear()}`;
-
 
 
       let AllCareer = await Careermodel.find();

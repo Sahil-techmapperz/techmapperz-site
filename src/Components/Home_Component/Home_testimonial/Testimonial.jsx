@@ -1,14 +1,28 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import client from "../../../Photos/client.png";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import styles from "./testimonial.module.css";
 
 const Testimonial = () => {
+  const[Testimonial,setTestimonial]=useState([]);
+
+
+
+
+useEffect(()=>{
+  fetch('http://localhost:8080/Testimonial')
+            .then(res => res.json())
+            .then(data => {
+                setTestimonial(data);
+            });
+},[])
+
+
   return (
     <div className={styles.Testimonial}>
       <div className={styles.main}>
-        <div>
+        <div className={styles.titel_contaner}>
           <p className={styles.title}>Testimonial</p>
           <h1 className={styles.heading}>What our Clients Say</h1>
         </div>
@@ -21,51 +35,28 @@ const Testimonial = () => {
              showArrows={false}
              showThumbs={false}
              stopOnHover={true}
+             showIndicators={false}
+             useKeyboardArrows={true}
             
           >
-          <div className={styles.card}>
-            <h2>They are the best of the best, and expertly trained team members who take the extra step and go the extra mile, all to fulfill
-              our dedicated promise to deliver innovative and dynamic solutions to our customers to fit the needs of a rapidly changing global
-              environment which was perfect for our needs!!.</h2>
-
-            <div className={styles.client}>
-              <img src={client} />
-              <div>
-              <p>John Peter</p>
-              <p>7aroof Inc</p>
+          {Testimonial.map(data=>{
+            return(
+              <div className={styles.card}>
+              <h2>{data.message}</h2>
+  
+              <div className={styles.client}>
+                <img src={data.avater} />
+                <div>
+                <p>{data.name}</p>
+                <p>{data.Companyname}</p>
+                </div>
               </div>
+  
             </div>
-
-          </div>
-          <div className={styles.card}>
-            <h2>They are the best of the best, and expertly trained team members who take the extra step and go the extra mile, all to fulfill
-              our dedicated promise to deliver innovative and dynamic solutions to our customers to fit the needs of a rapidly changing global
-              environment which was perfect for our needs!!.</h2>
-
-            <div className={styles.client}>
-              <img src={client} />
-              <div>
-              <p>John Peter</p>
-              <p>7aroof Inc</p>
-              </div>
-            </div>
-
-          </div>
-          <div className={styles.card}>
-            <h2>They are the best of the best, and expertly trained team members who take the extra step and go the extra mile, all to fulfill
-              our dedicated promise to deliver innovative and dynamic solutions to our customers to fit the needs of a rapidly changing global
-              environment which was perfect for our needs!!.</h2>
-
-            <div className={styles.client}>
-              <img src={client} />
-              <div>
-              <p>John Peter</p>
-              <p>7aroof Inc</p>
-              </div>
-            </div>
-
-          </div>
-
+            )
+          })}
+          
+        
           </Carousel>
         </div>
 

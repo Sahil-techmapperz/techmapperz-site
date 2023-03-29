@@ -42,10 +42,6 @@ const Career = () => {
 
   const handalechange = async (e) => {
     const { name, value } = e.target;
-
-    if (name === "designetion") {
-      
-    }
     setcareerdata({ ...careerdata, [name]: value })
 
   }

@@ -1,7 +1,7 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); */
 
 * {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins';
 }
 
 
@@ -16,17 +16,18 @@ body p {
   --secondary-black-color: #393939;
 }
 
-.react_iconc {
+/* .react_iconc {
   color: #396ba9;
-  /* font-size: 25px; */
+  font-size: 25px;
   margin-right: 5px;
-}
+} */
 
 
 
 
 .app {
   position: relative;
+  width: 100vw;
 }
 
 .navbar {
