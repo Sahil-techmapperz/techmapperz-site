@@ -5,10 +5,10 @@ import styles from "./Blog.module.css"
 
 const Blog = () => {
     let Image = [
-        "https://www.pngall.com/wp-content/uploads/11/Apple-Logo-PNG-Pic.png",
-        "https://www.freepnglogos.com/uploads/company-logo-png/bmw-car-company-logo-png-transparent-image-3.png",
-        //  "https://www.freepnglogos.com/uploads/company-logo-png/bmw-car-company-logo-png-transparent-image-3.png" ,
-        //  "https://pngimg.com/uploads/nissan/small/nissan_PNG77.png" ,
+        "https://www.pngmart.com/files/4/Microsoft-Logo-PNG-Transparent-Image.png",
+        "https://www.pngmart.com/files/4/Microsoft-Logo-PNG-Transparent-Image.png",
+        // "https://www.pngall.com/wp-content/uploads/11/Apple-Logo-PNG-Pic.png",
+        // "https://www.freepnglogos.com/uploads/company-logo-png/bmw-car-company-logo-png-transparent-image-3.png",
     ]
     return (
         <div className={styles.main}>

@@ -5,47 +5,91 @@ import { Link } from 'react-router-dom';
 import Moment from 'react-moment';
 function Article() {
   const [posts, setPosts] = useState([]);
+  const [error, setError] = useState(null);
+  const [page, setPage] = useState(1);
+  const [totalPages, setTotalPages] = useState(0);
+
+  // useEffect(() => {
+  //   const fetchPosts = async () => {
+  //     try {
+  //       const response = await fetch('http://localhost:8080/article');
+  //       let data=await response.json();
+  //       setPosts(data);
+  //       console.log(data);
+  //     } catch (error) {
+  //       console.error(error);
+  //     }
+  //   };
+  //   fetchPosts();
+  // }, []);
 
   useEffect(() => {
     const fetchPosts = async () => {
       try {
-        const response = await fetch('http://localhost:8080/article');
-        let data=await response.json();
-        setPosts(data);
-       
-      } catch (error) {
-     
+        const response = await axios.get(
+          `http://localhost:8080/article/posts?page=${page}`
+        );
+        setPosts(response.data.posts);
+        setTotalPages(response.data.totalPages);
+      } catch (err) {
+        setError("Failed to fetch posts");
       }
     };
+
     fetchPosts();
-  }, []);
+  }, [page]);
+
+
+
+  const handlePreviousPage = () => {
+    if (page > 1) {
+      setPage(page - 1);
+    }
+  };
+
+  const handleNextPage = () => {
+    if (page < totalPages) {
+      setPage(page + 1);
+    }
+  };
 
   return (
     <div className={Styles.article}>
 
-        <div className={Styles.top_part}>
-        <h1>Blog Articles</h1>
-        <p>Home / Blog Articles</p>
-        </div>
+      <div className={Styles.top_part}>
+        <h1>Blog Articals</h1>
+        <p>Home / Blog Articals</p>
+      </div>
 
-        <div className={Styles.contaner}>
-         <Link className={Styles.create_btn} to={"https://sahilreviews.com/wp-admin/edit.php?post_type=post"} target={"_blank"} > <button>Create Post</button></Link>
-             {posts && posts.map(post => (
-        <div className={Styles.card} key={post.id}>
-          <img src={post.img_url && post.img_url.rendered} alt=""/>
-          <div className={Styles.Article_details}>
-          <h2>{post.title.rendered}</h2>
+      <div className={Styles.contaner}>
+        {/* <Link className={Styles.create_btn} to={"https://sahilreviews.com/wp-admin/edit.php?post_type=post"} target={"_blank"} > <button>Create Post</button></Link> */}
+        {posts && posts.map(post => (
+          <div className={Styles.card} key={post.id}>
+            <img src={post.imgUrl && post.imgUrl} alt="" />
+            <div className={Styles.Article_details}>
+              <h2>{post.title}</h2>
 
-          {console.log(post.excerpt.rendered.split(/(<[^>]+>)/)[2])}
-          <div dangerouslySetInnerHTML={{__html: post.excerpt.rendered.split(/(<[^>]+>)/)[2]}} />
-          <Link  className={Styles.readmore_btn} to={`/singal_article/${post.id}`}><button>Read more...</button></Link>
-          <div><Moment fromNow>{post.date}</Moment></div>
+              {console.log(post.description.split(/(<[^>]+>)/)[2])}
+              <div dangerouslySetInnerHTML={{ __html: post.description.split(/(<[^>]+>)/)[2] }} />
+              <Link className={Styles.readmore_btn} to={`/singal_article/${post.id}`}><button>Read more...</button></Link>
+              {/* <div><Moment fromNow>{post.date}</Moment></div> */}
+            </div>
           </div>
-        </div>
-      ))}
-        </div>
+        ))}
+      </div>
 
 
+      <div className={Styles.pagination}>
+        <div> <button disabled={page === 1} onClick={handlePreviousPage} >
+          Previous
+        </button></div>
+        <div>
+          Page {page} of {totalPages}
+        </div>
+        <div>  <button onClick={handleNextPage} disabled={page === totalPages}>
+          Next
+        </button></div>
+      </div>
     </div>
   );
 }
