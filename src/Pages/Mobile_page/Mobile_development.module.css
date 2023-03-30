@@ -5,7 +5,7 @@
     color: #FFFFFF;
 }
 
-.development {
+.Mobile_development {
     background: rgba(24, 24, 24, 1);
     position: relative;
 }
@@ -63,17 +63,32 @@
 
 
 .contaner {
+    margin-top: 50px;
     padding-bottom: 30px;
     background: rgba(24, 24, 24, 1);
+    display: grid;
+    grid-template-columns: repeat(2);
 }
 
 
 .heading {
+    text-align: center;
     font-size: 36px;
     font-weight: 600;
     line-height: 54px;
     letter-spacing: 0.16px;
-    padding-bottom: 20px;
+    /* width: 500px; */
+    /* padding-bottom: 20px; */
+    background: rgba(24, 24, 24, 1);
+}
+.heading1 {
+
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 54px;
+    letter-spacing: 0.16px;
+    width: 400px;
+    /* padding-bottom: 20px; */
     background: rgba(24, 24, 24, 1);
 }
 
@@ -83,10 +98,17 @@
     background: rgba(24, 24, 24, 1);
 }
 
-.product img {
-    width: 750px;
-    height: 500px;
+ .product img {
+    width: 600px;
+    height: 300px;
     object-fit: cover;
+    margin-top: 50px; 
+    
+}
+.divimg1{
+    
+    width: 500px;
+    height: 400px;
 }
 
 
@@ -114,8 +136,8 @@ height: 368px;
 }
 
 .product_info>ul {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr); */
     row-gap: 25px;
     width: 500px;
     margin-top: 15px;
@@ -164,19 +186,20 @@ height: 368px;
     margin: auto;
     display: grid;
     justify-content: center;
-    gap: 80px;
-    margin-top: 20px;
+    gap: 50px;
+    margin-top: 5px;
     /* margin-bottom: 5rem; */
-    grid-template-columns: repeat(3,400px);
+    grid-template-columns: repeat(3,350px);
 }
 
-.class2{
+/* .class2{
     
     text-align: center;
-}
+} */
 
 .harbour {
     background-color: none;
+    display: flex;
 }
 .design {
     width: 100%;
@@ -184,60 +207,92 @@ height: 368px;
     position:relative;
     gap: 100px;
     margin-top: 5rem;
-    grid-template-columns: repeat(2, 300px);
-    height: 1000px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 900px;
 
 }
 .card1 {
-    border: 2px solid white;
+   /* padding-bottom: 30px;
+   padding-right: 30px;
+   border-right: 2px solid red;
+   border-bottom: 2px solid red; */
+   /* border: 2px solid white;  */
     position: absolute;
-    width: 400px;
-    height:350px ;
-    top: 5px;
-    left: 250px; 
+    width: 300px;
+    height:200px ;
+    top: 0px;
+    left: 20px; 
+    justify-content: center;
+    text-align: center;
 
 }
 .card2 {
-    border: 2px solid white;
+     /* border: 2px solid white;  */
+    /* border-bottom: 2px solid red; */
+
     /* margin-top: 50px; */
     position: absolute;
-    width: 400px;
-    height:350px ; 
-    top: 80px;
-    left: 700px;
+    width: 300px;
+    height:200px ; 
+    top: 0px;
+    left: 500px;
+    justify-content: center;
+    text-align: center;
 }
 .card3 {
-    border: 2px solid white;
+    /* border: 2px solid white; */
+    justify-content: center;
     position: absolute;
-    width: 400px;
-    height:350px ; 
-    top: 470px;
-    left: 250px;
+    width: 300px;
+    height:200px ; 
+    top: 300px;
+    left: 20px;
+    justify-content: center;
+    text-align: center;
 }
 .card4 {
-    border: 2px solid white;
+    /* border: 2px solid white; */
+    justify-content: center;
     /* margin-top: 100px; */
     position: absolute;
-    width: 400px;
-    height:350px ;
-    top: 550px;
-    left: 700px; 
+    width: 300px;
+    height:200px ;
+    top: 300px;
+    left: 500px; 
+    justify-content: center;
+    text-align: center;
+}
+.card5 {
+    /* border: 2px solid white; */
+    justify-content: center;
+    /* margin-top: 100px; */
+    position: absolute;
+    width: 300px;
+    height:200px ;
+    top: 600px;
+    left: 20px; 
+    justify-content: center;
+    text-align: center;
+} 
+.card6 {
+    /* border: 2px solid white; */
+    /* margin-top: 100px; */
+    position: absolute;
+    width: 300px;
+    height:200px ;
+    top: 600px;
+    left: 500px; 
+    justify-content: center;
+    text-align: center;
+
 }
 
-.contaner_card2 {
-    /* border: 1px solid red; */
-    /* z-index: 2; */
-    height: 450px;
-    display: flex;
-}
+
 .contaner_card2 img {
-   height: 900px;
+   height: 450px;
    z-index: 10;
-   margin-top: -10rem;
-}
-.contaner_card2 .heading {
-    margin-top: -5rem;
-    width: 500px;
+   margin-top: -5rem;
 }
 
 .card1 img {
@@ -313,12 +368,6 @@ height: 368px;
     flex-direction: column;
 }
 
-.class1 {
-    padding-left: 30px;
-    padding-right: 30px;
-    border-left: 1px solid;
-    border-right: 1px solid;
 
-}
 
 

@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    color: #FFFFFF;
+    /* color: #FFFFFF; */
 }
 
 .development {
@@ -38,7 +38,7 @@
 
 
 .secand_part {
-    width: 90%;
+    width: 100%;
      margin: auto; 
     background: rgba(24, 24, 24, 1);
 }
@@ -51,7 +51,7 @@
 }
 
 .info>p {
-    font-size: 16px;
+    font-size: 26px;
     font-weight: 400px;
     line-height: 26px;
     letter-spacing: 0.16;
@@ -69,7 +69,8 @@
 
 
 .heading {
-    font-size: 36px;
+    text-align: center;
+    font-size: 26px;
     font-weight: 600;
     line-height: 54px;
     letter-spacing: 0.16px;
@@ -184,8 +185,16 @@ height: 368px;
     position:relative;
     gap: 100px;
     margin-top: 5rem;
+    display: grid;
     grid-template-columns: repeat(2, 300px);
     height: 1000px;
+
+}
+.card {
+    border: 2px solid white;
+    width: 400px;
+    height:350px ;
+    gap: 150px;
 
 }
 .card1 {
@@ -203,8 +212,8 @@ height: 368px;
     position: absolute;
     width: 400px;
     height:350px ; 
-    top: 80px;
-    left: 700px;
+    top: 5px;
+    left: 800px;
 }
 .card3 {
     border: 2px solid white;
@@ -220,8 +229,8 @@ height: 368px;
     position: absolute;
     width: 400px;
     height:350px ;
-    top: 550px;
-    left: 700px; 
+    top: 470px;
+    left: 800px; 
 }
 
 .contaner_card2 {
@@ -245,7 +254,7 @@ height: 368px;
     margin-left: 10px;
 }
 .card1 h1{
-    margin-top: 15px;
+    margin-top: 25px;
     margin-left: 10px;
 }
 .card1 p{
@@ -258,7 +267,7 @@ height: 368px;
     margin-left: 10px;
 }
 .card2 h1{
-    margin-top: 15px;
+    margin-top: 25px;
     margin-left: 10px;
 }
 .card2 p{
@@ -271,7 +280,7 @@ height: 368px;
     margin-left: 10px;
 }
 .card3 h1{
-    margin-top: 15px;
+    margin-top: 25px;
     margin-left: 10px;
 }
 .card3 p{
@@ -284,7 +293,7 @@ height: 368px;
     margin-left: 10px;
 }
 .card4 h1{
-    margin-top: 15px;
+    margin-top: 25px;
     margin-left: 10px;
 }
 .card4 p{
@@ -320,5 +329,59 @@ height: 368px;
     border-right: 1px solid;
 
 }
+.card5 {
+    /* border: 2px solid white; */
+    position: absolute;
+    width: 300px;
+    height:350px ;
+    top: 5px;
+    left: 80px; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 
-
+.card6 {
+    /* border: 2px solid white; */
+    position: absolute;
+    width: 300px;
+    height:350px ;
+    top: 5px;
+    left: 600px; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.card7 {
+    /* border: 2px solid white; */
+    position: absolute;
+    width: 300px;
+    height:350px ;
+    top: 5px;
+    left: 1000px;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+}
+.card8 {
+    /* border: 2px solid white; */
+    position: absolute;
+    width: 300px;
+    height:350px ;
+    top: 250px;
+    left: 450px; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.card9 {
+    /* border: 2px solid white; */
+    position: absolute;
+    width: 300px;
+    height:350px ;
+    top: 250px;
+    left: 850px; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}

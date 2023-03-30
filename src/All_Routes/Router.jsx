@@ -4,8 +4,10 @@ import About from '../Pages/About_page/About';
 import Article from '../Pages/Article_page/Article';
 import Career from '../Pages/Career_page/Career';
 import Contact from '../Pages/Contact_page/Contact';
+import CRM_pages from '../Pages/CRM_page/CRM_pages.';
 import Drone_Service from '../Pages/Drone_services/Drone_service';
 import Home from '../Pages/Home_page/Home';
+import Mobile_development from '../Pages/Mobile_page/Mobile_development';
 import Photogrammetry_Services from '../Pages/Photogrammetry_Services_page/Photogrammetry_Services';
 import Remote_Sensing from '../Pages/Remote_Sensing_page/Remote_Sensing';
 import Service from '../Pages/Service_page/Service';
@@ -28,6 +30,11 @@ const Router = () => {
        <Route path='/singal_article/:id' element={<Singalearticle/>}></Route> 
        <Route path='/drone_service' element={<Drone_Service/>}></Route>
        <Route path='/web_development' element={<Web_Development/>}></Route>
+       <Route path='/mobile_development' element={<Mobile_development/>}></Route>
+       <Route path='crm_page' element={<CRM_pages/>}></Route>
+
+   
+       
        
     </Routes>
   )

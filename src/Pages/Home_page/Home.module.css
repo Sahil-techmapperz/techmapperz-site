@@ -89,7 +89,7 @@
 section:nth-child(2){
     color:#fff;
     list-style: none;
-    background-color: #454545;
+    /* background-color: #454545; */
 }
 
 .feat {

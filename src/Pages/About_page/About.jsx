@@ -33,7 +33,7 @@ const About = () => {
           </header>
 
           <div className={styles.top_part}>
-            <p>Chasing the Vision a better tomorrow where technology simplifies complex functions.</p>
+            <h1>Chasing the Vision a better tomorrow where technology simplifies complex functions</h1>
           </div>
 
 
