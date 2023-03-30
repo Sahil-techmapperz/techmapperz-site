@@ -3,8 +3,6 @@ import { Link } from 'react-router-dom';
 import Geospatial_Mapping from '../../Photos/Geospatial_Mapping.png';
 import Geo_health from '../../Photos/Geo_health.png';
 import Geogoverence from '../../Photos/Geogoverence.png';
-// import GIS_Suvey from '../../Photos/GIS_Suvey.png';
-// import WebDevelopmentServices from '../../Photos/WebDevelopmentServices.module.css';
 import Styles from './Web.module.css';
 import Development1 from '../../Photos/Development1.png';
 import Development2 from '../../Photos/Development2.png';
@@ -13,6 +11,10 @@ import Combind5 from '../../Photos/Combind5.png';
 import Combind3 from '../../Photos/Combind3.png';
 import Combind1 from '../../Photos/Combind1.png';
 import Combind4 from '../../Photos/Combind4.png';
+import Webdevelop from '../../Photos/Webdevelop.png'
+import Vector7 from '../../Photos/Develop1.png';
+import Vector8 from '../../Photos/Develop2.png';
+import Vector9 from '../../Photos/Develop3.png';
 
 const Web_Development = () => {
 
@@ -130,18 +132,20 @@ const Web_Development = () => {
                     <h1 className={`${Styles.heading} ${Styles.class2}`}>Things to Consider</h1>
                     <div className={Styles.main}>
                         <div className={Styles.card}>
+                            <img src={Webdevelop} />
                             <h3>Original Content</h3>
                             <p>It is heighly recommended that the content of the website is original and of high quality, this is not only helps your coustomers find you quickly but also effects the ranking of your website,ensure this for your website.</p>
                         </div>
 
                         <div className={`${Styles.card}  ${Styles.class1}`}>
-
+                        <img src={Webdevelop} />
                             <h3>Call to Action</h3>
                             <p>Call to action is as simple as setting up a contact now button,this invariably motivates customers and visitors to get in touch with your company and promotes building relationships.</p>
                         </div>
 
 
                         <div className={Styles.card}>
+                        <img src={Webdevelop} />
                             <h3>Compatibility</h3>
                             <p>Compatibility With time the inter has evolved a lot and so will it with time,and with this internet browsers also change, your website should be flexible enough to adapt itself to run a new browser as well as...</p>
                         </div>
@@ -169,6 +173,41 @@ const Web_Development = () => {
                                 <h2>Know More</h2>
                             </div></Link>
                         </div>
+                    </div>
+                </div>
+
+                <div className={Styles.harbour}>
+                    <h3 className={Styles.heading}>Why Choose Techmapperz for your Development</h3>
+                    <div className={Styles.design}>
+
+
+                        <div className={Styles.card1}>
+                            <img src={Webdevelop} alt='' />
+                            <h1>Flexibility</h1>
+                            <p>We understand your need,and sometime we know that it can we time critical yet should affordable,that is why we have custom designed package to suit your demands of time and money.</p>
+                        </div>
+
+
+                        <div className={Styles.card2}>
+                            <img src={Vector7} alt='' />
+                            <h1>Friendly</h1>
+                            <p>Nothing is more important that a customer oritented business model,we at Techmapperz  love what we do, and we are always passeonate about putting our customers first.</p>
+                        </div>
+
+
+                        <div className={Styles.card3}>
+                            <img src={Vector8} alt='' />
+                            <h1>Quality</h1>
+                            <p>Quality makes us excel.our approach is designed to provide it at all levels of functioning up-to the micro level details,that extra ounce of effort in effective communication....</p>
+                        </div>
+
+
+                        <div className={Styles.card4}>
+                            <img src={Vector9} alt='' />
+                            <h1>Reduce cost</h1>
+                            <p>Our team planning is so efficient that the project overall time in not extended and thus keeping the overall coast in check.</p>
+                        </div>
+
                     </div>
                 </div>
             </section>
