@@ -1,7 +1,7 @@
 .techblog {
     width: 90%;
     margin: auto;
-    height: 700px;
+    height: 800px;
     position: relative;
 }
 
@@ -11,7 +11,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 5rem;
+    padding-top: 3rem;
     /* border: 1px solid red; */
 }
 
@@ -45,8 +45,11 @@
     /* border: 1px solid red; */
 }
 
-table {
+
+table tr{
+    display: block;
     border: 1px solid #396BA9;
+    padding:0 15px;
 }
 
 
@@ -57,6 +60,7 @@ table {
     font-size: 18px;
     line-height: 27px;
     letter-spacing: 0.162793px;
+    border-right: 1px solid #396BA9;
 }
 
 .row_2 {
@@ -68,11 +72,14 @@ table {
     color: #FFFFFF;
     padding-left: 30px;
     word-wrap: break-word;
+    padding-bottom: 10px;
 }
 
-.row_2 h3{
-    margin-bottom: 10px;
+.row_2 a{
+    font-size: 25px;
+    color: #396ba9;
 }
+
 .Submit_btn {
     width: 150px;
     height: 60px;
@@ -86,15 +93,16 @@ table {
 }
 
 .Submit_btn h2 {
+    font-size: 20px;
     position: absolute;
     width: 100%;
-    top: 5px;
+    top: -0.5rem;
     left: 10px;
     color: aliceblue;
 }
 
 .getintouch_btn {
     position: absolute;
-    bottom: 5rem;
+    bottom: 0;
     right: 33rem;
 }
