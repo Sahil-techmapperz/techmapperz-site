@@ -7,6 +7,7 @@ const careerSchema=new mongoose.Schema ({
     designetion: { type:String},
     message: {type:String},
     resume:{type:String},
+    Date:{type:String},
     
 });
 

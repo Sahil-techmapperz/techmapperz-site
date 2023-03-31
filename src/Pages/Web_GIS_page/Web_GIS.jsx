@@ -42,7 +42,7 @@ const Web_GIS = () => {
                                     </div>
 
                                 </div>
-                                <Link>
+                                <Link to={"/contact"}>
                                     <div className={Styles.btn}><div></div><h2>Know More</h2></div>
                                 </Link>
                             </div>
@@ -71,7 +71,7 @@ const Web_GIS = () => {
                                     
 
                                 </div>
-                                <Link>
+                                <Link to={"/contact"}>
                                     <div className={Styles.btn}><div></div><h2>Know More</h2></div>
                                 </Link>
                             </div>

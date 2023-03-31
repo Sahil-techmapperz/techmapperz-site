@@ -51,7 +51,7 @@ const Drone_Service = () => {
                             feature extraction,and base mapgeneration for thevarious sectors such as urban planing,land record digition,mining,smart
                             city etc.Our expertise in GIS and UAV data handling team can also help you to integrate dronedata with cadastral maps,
                             satellite imagery and report generation.</p>
-                            <Link> <div className={styles.btn}>
+                            <Link to={"/contact"}> <div className={styles.btn}>
                                 <div></div>
                                 <h2>Know More</h2>
                             </div></Link>
@@ -88,7 +88,7 @@ const Drone_Service = () => {
                         <li>3D Feature Extraction.</li>
                         <li>Cross Sections</li>
                     </ul>
-                            <Link> <div className={styles.btn}>
+                            <Link to={"/contact"}> <div className={styles.btn}>
                                 <div></div>
                                 <h2>Know More</h2>
                             </div></Link>
@@ -121,7 +121,7 @@ const Drone_Service = () => {
                     ground level.We are a drone specialist with a team to provide solutions to our clients.We can also provide 2D and 3D mapping
                     services to the clients.</p>
                           
-                            <Link> <div className={styles.btn}>
+                            <Link to={"/contact"}> <div className={styles.btn}>
                                 <div></div>
                                 <h2>Know More</h2>
                             </div></Link>

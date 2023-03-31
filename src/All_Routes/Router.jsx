@@ -9,11 +9,13 @@ import Drone_Service from '../Pages/Drone_services/Drone_service';
 import Home from '../Pages/Home_page/Home';
 import Mobile_development from '../Pages/Mobile_page/Mobile_development';
 import Photogrammetry_Services from '../Pages/Photogrammetry_Services_page/Photogrammetry_Services';
-import Remote_Sensing from '../Pages/Remote_Sensing_page/Remote_Sensing';
+ import Remote_Sensing from '../Pages/Remote_Sensing_page/Remote_Sensing';
+
 import Service from '../Pages/Service_page/Service';
 import Singalearticle from '../Pages/Singale_Article_page/Singale_article';
 import Web_Development from '../Pages/Web_Development/Web_development';
 import Web_GIS from '../Pages/Web_GIS_page/Web_GIS';
+
 
 const Router = () => {
   return (
@@ -24,9 +26,6 @@ const Router = () => {
        <Route path='/career' element={<Career/>}></Route> 
        <Route path='/service' element={<Service/>}></Route> 
        <Route path='/article' element={<Article/>}></Route> 
-       <Route path='/remote_sensing' element={<Remote_Sensing/>}></Route> 
-       <Route path='/web_gis' element={<Web_GIS/>}></Route> 
-       <Route path='/photogrammetry' element={<Photogrammetry_Services/>}></Route> 
        <Route path='/singal_article/:id' element={<Singalearticle/>}></Route> 
        <Route path='/drone_service' element={<Drone_Service/>}></Route>
        <Route path='/web_development' element={<Web_Development/>}></Route>
@@ -35,6 +34,10 @@ const Router = () => {
 
    
        
+       <Route path='/web_GIS' element={<Web_GIS/>}></Route>
+       <Route path='/Remote_Sensing' element={<Remote_Sensing/>}></Route>
+       <Route path='/Photogrammetry' element={<Photogrammetry_Services/>}></Route>
+
        
     </Routes>
   )
