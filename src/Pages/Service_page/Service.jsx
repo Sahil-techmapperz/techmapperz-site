@@ -44,7 +44,7 @@ const Service = () => {
                                 <li>Navigation Mapping</li>
                                 <li>Parcel Mapping</li>
                             </ul>
-                            <Link> <div className={Styles.btn}>
+                            <Link to={"/contact"}> <div className={Styles.btn}>
                                 <div></div>
                                 <h2>Know More</h2>
                             </div></Link>
@@ -60,7 +60,7 @@ const Service = () => {
                             <h1 className={Styles.heading}>Geo-health</h1>
                             <p>GIS plays a very vital role in the modern health sector. A GIS can play an important role in the surveillance, management and analysis of diseases. Techmapperz's GIS-based Health solution will help you to monitor and management of both diseases and health programs. We use the latest software and accurate GIS data to improve your strategic planning, research and evaluation, emergency preparedness and both response and location of health care service too.</p>
 
-                            <Link> <div className={Styles.btn}>
+                            <Link to={"/contact"}> <div className={Styles.btn}>
                                 <div></div>
                                 <h2>Know More</h2>
                             </div></Link>
@@ -79,7 +79,7 @@ const Service = () => {
                             <h1 className={Styles.heading}>Geogoverence</h1>
                             <p>GIS, a new edge technology, has opened several new prospects for the day-to-day life of civil society. GIS is rapidly becoming a digital revolution for different transformational changes in the world. It improves the Decesion making system of the government body. Governments body are using GIS technology to manage different govermnet programe and policy. With the help of deep GIS knowladge, Techmapperz integrates different types of data in GIS systems to derive understanding, operationalize solutions and engage the Government and public.</p>
 
-                            <Link> <div className={Styles.btn}>
+                            <Link to={"/contact"}> <div className={Styles.btn}>
                                 <div></div>
                                 <h2>Know More</h2>
                             </div></Link>
@@ -92,7 +92,7 @@ const Service = () => {
                             <h1 className={Styles.heading}>GIS Field Survey</h1>
                             <p>Techmapperz offers a wide range of GIS surveying services using both Traditional and modern survey techniques. We have a very highly experienced and skilled team for the survey. We help clients across the different sectors by providing accurate, precise and up-to-date GIS survey data. Our range of GIS field survey services includes all types of Land surveys, Total Station Survey, DGPS surveys, Drone Survey, Household surveys, Road surveys & Networking Survey, Utility Survey, Hydrological surveys etc.</p>
 
-                            <Link> <div className={Styles.btn}>
+                            <Link to={"/contact"}> <div className={Styles.btn}>
                                 <div></div>
                                 <h2>Know More</h2>
                             </div></Link>

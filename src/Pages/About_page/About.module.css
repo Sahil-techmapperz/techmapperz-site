@@ -50,6 +50,7 @@ header>p {
 }
 
 
+
 .top_part {
     text-align: center; 
     margin-top: 5%;
@@ -119,14 +120,14 @@ header>p {
     gap: 5px;
     position: relative;
     margin-top: 3%;
-    align-items: center;
-    
-    
+    align-items: center;   
     
 }
 
 .secend_part_main>div{
     text-align: center;
+    justify-content: center;
+    justify-items: center;
 }
 .Mission{
     padding: 30px;
@@ -255,8 +256,8 @@ header>p {
 .lastVector {
     width: 70%;
     height: 70%;
-    padding-top: 1rem;
-    padding-left: 10px;
+    /* padding-top: 1rem; */
+    padding-left: 80px;
     margin-top: 20px;
 }
 
@@ -288,7 +289,7 @@ header>p {
     background: rgba(57, 107, 169, 1);
     position: absolute;
     top: -45px;
-    right: 25px;
+    right: 60px;
 }
 
 .navbar2 {

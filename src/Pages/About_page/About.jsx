@@ -12,6 +12,7 @@ import Career5 from '../../Photos/career_idea-5.png'
 
 
 
+
 const About = () => {
 
   useEffect(() => {
@@ -70,7 +71,7 @@ const About = () => {
                 <h2 className={styles.heading}>Mission</h2>
                 <p>We at Techmapperz, understand that each<br /> organisation is different, and so are their <br />challenges, so when we tailor
                   solutions, we ensure <br />that it is as simplified as it can be. Our mission is<br /> simplified solutions for complex problems.</p>
-                <Link> <div className={styles.Submit_btn}>
+                <Link to={"/contact"}> <div className={styles.Submit_btn}>
                   <div></div>
                   <h2>Know More</h2>
                 </div></Link>
@@ -82,7 +83,7 @@ const About = () => {
                   <h2 className={styles.heading}>Vision</h2>
                   <p>With technology becoming the most important<br /> part of our day to day life, we are driven by the<br /> commitment to deliver
                     the best of IT solutions, to <br />be a trusted provider of end-to-end IT services<br /> and solutions to businesses globally.</p>
-                  <Link> <div className={styles.Submit_btn}>
+                  <Link to={"/contact"}> <div className={styles.Submit_btn}>
                     <div></div>
                     <h2>Know More</h2>
                   </div></Link>
@@ -127,7 +128,7 @@ const About = () => {
 
                   <div className={styles.last_part}>
                     <ul>
-                      <li>Individual and interactions over processes and<br />tools.</li>
+                      <li>Individual and interactions over processes and tools.</li>
                       <li>Working software over comprehensive<br />documentation</li>
                       <li>Customer collaboration over contract negotiation.</li>
                       <li>Responding to change over following a plan</li>

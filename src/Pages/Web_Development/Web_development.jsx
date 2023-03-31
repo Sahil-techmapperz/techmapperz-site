@@ -43,7 +43,7 @@ const Web_Development = () => {
                         <img src={Development1} alt="Development1.png" />
                         <div className={Styles.product_info}>
                             <p>One of the first websites was created in 1991, and since then, the website and its design have evolved manifold.Today it is complex and involves an entire ecosystem of roles and skill sets. Website development is an umbrella term for two major parts-Design & Development, Design represents the look and feel wherwas Development determines how it functions</p>
-                            <Link> <div className={Styles.btn}>
+                            <Link to={"/contact"}> <div className={Styles.btn}>
                                 <div></div>
                                 <h2>Know More</h2>
                             </div></Link>
@@ -59,7 +59,7 @@ const Web_Development = () => {
                             <h1 className={Styles.heading}>Why Web Design and & <br />Development is Important?</h1>
                             <p>Today the world is connected online,people get to the internet for any kind of need they may have,in this are Web design and web development are crucial for any business that wants to create an online presence.it is the first impression of your company,make sure it is a good one, and a functioning one as well.A A good web design and functionality is also a key element in good sales and business growth. </p>
 
-                            <Link> <div className={Styles.btn}>
+                            <Link to={"/contact"}> <div className={Styles.btn}>
                                 <div></div>
                                 <h2>Know More</h2>
                             </div></Link>
@@ -82,7 +82,7 @@ const Web_Development = () => {
                         </div>
                         <div className={Styles.product_info}>
                             <p>With so much at state,it is important that your web designing and development company is reliable and has a team that is experienced and can be trusted. We at Techmapperz, have some of the best developers in the field with a combined experience of more than 100 years; we have worked in various fields in a wide range of segments from small business owners to restourents,corporates,government sectors and professionals. Our team compatibility and pooled experience is our biggest asset and the major reason that we use them in creating masterpiece websites. </p>
-                            <Link> <div className={Styles.btn}>
+                            <Link to={"/contact"}> <div className={Styles.btn}>
                                 <div></div>
                                 <h2>Know More</h2>
                             </div></Link>
@@ -168,7 +168,7 @@ const Web_Development = () => {
                                 <li>Boost Sales</li>
                                 <li>Stay ahead of Competitors</li>
                             </ul>
-                            <Link> <div className={Styles.btn}>
+                            <Link to={"/contact"}> <div className={Styles.btn}>
                                 <div></div>
                                 <h2>Know More</h2>
                             </div></Link>

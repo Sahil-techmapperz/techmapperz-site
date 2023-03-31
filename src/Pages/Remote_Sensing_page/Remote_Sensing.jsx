@@ -23,7 +23,7 @@ const Remote_Sensing = () => {
 
                         <div className={Styles.details}>
                         <p>Most remote sensing data are recorded in the digital format in today's world of advanced technology, almost all image interpretation and analysis involves some element of digital processing it involves various processes to enhance the image, we at Techmapperz use some of the best software and hardware available commercially to process high-quality images for commercial use.</p>
-                        <Link> 
+                        <Link to={"/contact"}> 
                         <div className={Styles.btn}><div></div><h2>Know More</h2></div>
                         </Link>
                         </div>
@@ -36,7 +36,7 @@ const Remote_Sensing = () => {
                         <div className={Styles.details}>
                             <h1>Land Use / Land Cover Mapping</h1>
                         <p>Land use and land cover may sound the same but there is a slight difference between them, Land cover refers to the surface cover on the ground like vegetation, urban infrastructure, water, bare soil etc. wherein Land use refers to the purpose the land serves, for example, recreation, wildlife habitat, or agriculture. Land use and Land cover, mapping plays a significant role in economic development. It is required for a better understanding and use of land in urban and rural areas.</p>
-                        <Link> 
+                        <Link to={"/contact"}> 
                         <div className={Styles.btn}><div></div><h2>Know More</h2></div>
                         </Link>
                         </div>
