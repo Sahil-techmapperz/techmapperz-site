@@ -10,7 +10,6 @@ import Home from '../Pages/Home_page/Home';
 import Mobile_development from '../Pages/Mobile_page/Mobile_development';
 import Photogrammetry_Services from '../Pages/Photogrammetry_Services_page/Photogrammetry_Services';
  import Remote_Sensing from '../Pages/Remote_Sensing_page/Remote_Sensing';
-
 import Service from '../Pages/Service_page/Service';
 import Singalearticle from '../Pages/Singale_Article_page/Singale_article';
 import Web_Development from '../Pages/Web_Development/Web_development';
@@ -31,9 +30,6 @@ const Router = () => {
        <Route path='/web_development' element={<Web_Development/>}></Route>
        <Route path='/mobile_development' element={<Mobile_development/>}></Route>
        <Route path='crm_page' element={<CRM_pages/>}></Route>
-
-   
-       
        <Route path='/web_GIS' element={<Web_GIS/>}></Route>
        <Route path='/Remote_Sensing' element={<Remote_Sensing/>}></Route>
        <Route path='/Photogrammetry' element={<Photogrammetry_Services/>}></Route>
