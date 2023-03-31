@@ -16,7 +16,12 @@ const Navbar = () => {
                 <li style={{ borderBottom: location.pathname === '/service' && '3px solid red'  }} className={styles.nav_item}>
                     <Link to="/service">Services </Link>
                     <div className={styles.dropdown}>
+                        <Link className={styles.dropdown_1} to="/geospatial-services">Geospatial Services</Link>
+                        <div className={styles.inner_dropdown_1}>
                         <Link to="/geospatial-services">Geospatial Services</Link>
+                        <Link to="/geospatial-services">Geospatial Services</Link>
+                        <Link to="/geospatial-services">Geospatial Services</Link>
+                        </div>
                         <Link to="/it-services">IT Services</Link>
                     </div>
                 </li>

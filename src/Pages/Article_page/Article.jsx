@@ -9,19 +9,7 @@ function Article() {
   const [page, setPage] = useState(1);
   const [totalPages, setTotalPages] = useState(0);
 
-  // useEffect(() => {
-  //   const fetchPosts = async () => {
-  //     try {
-  //       const response = await fetch('http://localhost:8080/article');
-  //       let data=await response.json();
-  //       setPosts(data);
-  //       console.log(data);
-  //     } catch (error) {
-  //       console.error(error);
-  //     }
-  //   };
-  //   fetchPosts();
-  // }, []);
+
 
   useEffect(() => {
     const fetchPosts = async () => {
@@ -40,6 +28,14 @@ function Article() {
   }, [page]);
 
 
+  useEffect(() => {
+    const options = {
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    };
+    window.scrollTo(options);
+  }, []);
 
   const handlePreviousPage = () => {
     if (page > 1) {
@@ -53,6 +49,11 @@ function Article() {
     }
   };
 
+  // const CreatedAt=(date)=>{
+  //   let Time= Moment(date.split("T")[0]).fromNow();
+  //   console.log(Time);
+  // }
+
   return (
     <div className={Styles.article}>
 
@@ -62,17 +63,16 @@ function Article() {
       </div>
 
       <div className={Styles.contaner}>
-        {/* <Link className={Styles.create_btn} to={"https://sahilreviews.com/wp-admin/edit.php?post_type=post"} target={"_blank"} > <button>Create Post</button></Link> */}
         {posts && posts.map(post => (
           <div className={Styles.card} key={post.id}>
             <img src={post.imgUrl && post.imgUrl} alt="" />
             <div className={Styles.Article_details}>
-              <h2>{post.title}</h2>
+             <Link  to={`/singal_article/${post.id}`}> <h2 title={post.title}>{post.title}</h2></Link>
 
-              {console.log(post.description.split(/(<[^>]+>)/)[2])}
-              <div dangerouslySetInnerHTML={{ __html: post.description.split(/(<[^>]+>)/)[2] }} />
+              
+              {/* <div dangerouslySetInnerHTML={{ __html: post.description.split(/(<[^>]+>)/)[2] }} /> */}
+              {/* <div style={{"color":"black"}}><Moment fromNow>{post.date.split("T")[0]}</Moment></div> */}
               <Link className={Styles.readmore_btn} to={`/singal_article/${post.id}`}><button>Read more...</button></Link>
-              {/* <div><Moment fromNow>{post.date}</Moment></div> */}
             </div>
           </div>
         ))}

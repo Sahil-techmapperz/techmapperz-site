@@ -214,7 +214,7 @@ async function fetchAuthors() {
 
 
 // Function to fetch posts with pagination
-async function fetchPosts(page = 1) {
+async function fetchPosts(page = 1,perPage=5) {
   const response = await axios.get(`${baseUrl}/posts?_embed&page=${page}&per_page=${perPage}`);
   return response.data;
 }
@@ -237,6 +237,7 @@ function extractPostData(posts, authors) {
       description: post.excerpt.rendered,
       content: post.content.rendered,
       imgUrl: imgUrl || null,
+      date:post.date,
       author: {
         id: author.id,
         name: author.name,
@@ -252,10 +253,11 @@ function extractPostData(posts, authors) {
 article_route.get('/posts', async (req, res) => {
   try {
     const page = req.query.page ? parseInt(req.query.page) : 1;
+    const Perpage = req.query.perpage ? parseInt(req.query.perpage) : 5;
     const authors = await fetchAuthors();
     const totalPostCount = await fetchTotalPostCount();
     const totalPages = Math.ceil(totalPostCount / perPage);
-    const posts = await fetchPosts(page);
+    const posts = await fetchPosts(page,Perpage);
     const postData = extractPostData(posts, authors);
     res.json({
       page,
