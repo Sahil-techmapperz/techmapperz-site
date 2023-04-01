@@ -118,8 +118,8 @@
     border-radius: 50%;
     background: rgba(57, 107, 169, 1);
     position: absolute;
-    top: -35px;
-    right: 310px;
+    top: -60px;
+    right: 420px;
 }
 
 .navbar2 {
@@ -128,7 +128,7 @@
     border-radius: 50%;
     background: rgba(57, 107, 169, 1);
     position: absolute;
-    left: 10px;
+    left: 2px;
     bottom: 270px;
 }
 
@@ -138,8 +138,8 @@
 
 .navbar4 {
     position: absolute;
-    top: 150px;
-    right: 80px;
+    top: 100px;
+    right: 243px;
 }
 
 
