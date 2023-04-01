@@ -34,7 +34,6 @@ body p {
   position: fixed;
   top: 0;
   left: 0;
-  right: 0;
   z-index: 10;
 }
 
@@ -65,31 +64,6 @@ body p {
 }
 
 
-
-#wp-image-542{
-  width: 300px;
-}
-
-
-
-@keyframes slideInRight {
-  0% {
-    right: 0;
-    opacity: 0;
-  }
-
-  50% {
-    right: 10rem;
-    opacity: 1;
-  }
-
-  100% {
-    right: 0;
-    opacity: 0;
-  }
-
-
-}
 
 
 

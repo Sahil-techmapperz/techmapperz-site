@@ -1,181 +1,242 @@
 import React, { useEffect, useState } from 'react'
-// import { Link } from 'react-router-dom';
+// import "./Contact.css";
 import Styles from "./Contact.module.css";
 import { BiTimeFive } from 'react-icons/bi';
 import { AiFillHome } from 'react-icons/ai';
-import { IconContext } from "react-icons";
-import Toaster from '../../Components/Popup_Component/Toster';
-const init = {
-  "name": "",
-  "email": "",
-  "mobile": "",
-  "projectType": "",
-  "projectdetails": ""
-}
+import {
+    Box,
+    VStack,
+    HStack,
+    Input,
+    Textarea,
+    Text,
+    Button,
+    useToast,
+    FormControl,
+    FormLabel,
+    FormErrorMessage,
 
-const hasError_init = {
-  "name": false,
-  "email": false,
-  "mobile": false,
-  "projectType": false,
-  "projectdetails": false
+} from '@chakra-ui/react';
+const init = {
+    "name": "",
+    "email": "",
+    "mobile": "",
+    "projectType": "",
+    "projectdetails": ""
 }
 const Contact = () => {
-  const [contactdata, setcontactdata] = useState(init);
-  const [hasError, setHasError] = useState(hasError_init);
-  const [Successtoster, setSuccesstoster] = useState(false);
-  const [Errortoster, setErrortoster] = useState(false);
+    const [contactdata, setcontactdata] = useState(init);
+    const [hasError, setHasError] = useState({});
+    const toast=useToast();
 
 
+    const validateForm = () => {
+        const errors = {};
 
-  const handaleSuccesstoster = () => {
-    setSuccesstoster(true);
-    setTimeout(() => {
-      setSuccesstoster(false);
-    }, 3000)
-  }
-  const handaleErrortoster = () => {
-    setErrortoster(true);
-    setTimeout(() => {
-      setErrortoster(false);
-    }, 3000)
-  }
-
-  const handalechange = (e) => {
-    const { name, value } = e.target;
-    if(name==="mobile"){
-      let newvalue = value;
-      if (/^\d{10}$/.test(newvalue)){
-         
-          setHasError({ ...hasError, "mobile": hasError.mobile =false})
-          setcontactdata({ ...contactdata, [name]: value })
-      }else{
-        setHasError({ ...hasError, "mobile": hasError.mobile = true})
-       
-      }
-    }
-    if(name==="email"){
-      let newEmail = value;
-      if (/^[a-zA-Z0-9._%+-]+@gmail.com$/.test(newEmail)) {
-       
-        setcontactdata({ ...contactdata, [name]: value })
-      }else{
-       
-      }
-    }
-    setcontactdata({ ...contactdata, [name]: value })
-  }
-
-  const handalesubmit = () => {
-   
-    const { name, email, mobile, projectType, projectdetails } = contactdata;
-    if (name && email && mobile && projectType && projectdetails) {
-      setHasError(hasError_init);
-      fetch("http://localhost:8080/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(contactdata)
-      }).then(res => {
-        if (res.status === 200) {
-          handaleSuccesstoster();
-        } else {
-         
-          handaleErrortoster()
+        if (!contactdata.name) {
+            errors.name = "required*";
         }
 
-      }).catch(err => {
-       
-        handaleErrortoster();
-      })
-    }
-     else if (email === ""&&name === ""&&mobile === ""&&projectType===""&&projectdetails==="") {
-    
-      setHasError({ ...hasError, "email": hasError.email = true,"name": hasError.name = true,"mobile": hasError.mobile =true,"projectType": hasError.projectType,"projectdetails": hasError.projectdetails})
-    }
+        if (!contactdata.email) {
+            errors.email = "required*";
+        }
 
-  }
+        if (!contactdata.projectType) {
+            errors.projectType = "required*";
+        }
 
+        if (!contactdata.mobile) {
+            errors.mobile = "required*";
+        } else if (!/^\d{10}$/.test(contactdata.mobile)) {
+            errors.mobile = "enter 10 digit mobile number"
+        }
 
+        if (!contactdata.projectdetails) {
+            errors.projectdetails = "required*";
+        }
 
-
-
-  useEffect(() => {
-    const options = {
-      top: 0,
-      left: 0,
-      behavior: 'smooth'
+        return errors;
     };
-    window.scrollTo(options);
-  }, []);
 
 
 
+    const handalechange = (e) => {
+        const { name, value } = e.target;
+        setcontactdata({ ...contactdata, [name]: value })
+        console.log(contactdata);
+    }
 
-  return (
-    <>
-      <div className={Styles.contact}>
-        <section className={Styles.first_section}>
-          <h1>Contact us</h1>
-          <p>Home / Contast Us</p>
-        </section>
-        
-        <section className={Styles.secend_section}>
-          <div className={Styles.secend_section_first}>
-            <p>Gettting Touch</p>
-            <h1>Do you have a project in your mind?</h1>
-            <div className={Styles.address}>
-              <IconContext.Provider value={{ className: "react_iconc" }}>
-                <p>< BiTimeFive  style={{ color: 'blue' }}  />9.30-6.30</p>
-                <p><AiFillHome />Delhi Office 55, <span className={Styles.address_detils}>Lane- 2, Westend Marg, Saidullajab, Near Saket metro station,</span></p>
-                <p ><AiFillHome />Kolkata Office 37,<span className={Styles.address_detils}> Vivekananda Road, Dunlop, Kolkata-700035</span></p>
-              </IconContext.Provider>
+    const handalesubmit = (e) => {
+        e.preventDefault();
+        const validationErrors = validateForm();
+
+        if (Object.keys(validationErrors).length > 0) {
+            setHasError(validationErrors);
+            return;
+        }else{
+           setHasError({});
+           fetch("http://localhost:8080/contact", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(contactdata)
+          }).then(res => {
+            if (res.status === 200) {
+                toast({
+                    title: 'Success',
+                    description: "we will get in touch with you soon",
+                    status: 'success',
+                    duration: 3000,
+                    isClosable: true,
+                  })
+                  setHasError({})
+                  setcontactdata(init)
+              
+            } else {
+                toast({
+                    title: 'field',
+                    description: "failed to save contact details",
+                    status: 'error',
+                    duration: 3000,
+                    isClosable: true,
+                  })
+                  setHasError({})
+                  setcontactdata(init)
+            }
+    
+          }).catch(err => {
+            toast({
+                title: 'field',
+                description: err.message,
+                status: 'error',
+                duration: 3000,
+                isClosable: true,
+              })
+              setHasError({})
+              setcontactdata(init)
+          })
+
+
+        }
+    }
+
+
+
+    useEffect(() => {
+        const options = {
+          top: 0,
+          left: 0,
+          behavior: 'smooth'
+        };
+        window.scrollTo(options);
+      }, []);
+
+
+
+    return (
+        <div className={Styles.contact}>
+            <div className={Styles.contact_top}>
+                <h1>Contact us</h1>
+                <p>Home / Contast Us</p>
             </div>
-          </div>
-          <div className={Styles.secend_section_secend}>
-            {Successtoster ? <Toaster type="success" heading="Sussess" title="Thankyou" /> : null}
-            {Errortoster ? <Toaster type="Error" heading="Error" title="something is wrong" /> : null}
-            <div className={Styles.Input_box}>
-              <div>
-                <label>Full Name*</label>
-                <input name='name' value={contactdata.name} onChange={handalechange} type={"text"} placeholder='enter full name'></input>
-                {hasError.name && <label className={Styles.error_label}>you have to fill the name*</label>}
-              </div>
-              <div>
-                <label>Email*</label>
-                <input className={`input ${hasError.email ? 'error' : ''}`} name='email' value={contactdata.email} onChange={handalechange} type={"email"} placeholder='enter email'></input>
-                {hasError.email && <label className={Styles.error_label}>enter your email address*</label>}
-              </div>
-              <div>
-                <label>Project Type*</label>
-                <input className={`input ${hasError.projectType ? 'error' : ''}`} name='projectType' value={contactdata.projectType} onChange={handalechange} type={"text"} placeholder='enter project type'></input>
-                {hasError.projectType && <label className={Styles.error_label}>you have to fill the Project Type*</label>}
-              </div>
-              <div>
-                <label>Mobile*</label>
-                <input className={`input ${hasError.mobile ? 'error' : ''}`} name='mobile' value={contactdata.mobile} onChange={handalechange} type={"number"} placeholder='enter mobile' pattern="\d{10}" required></input>
-                {hasError.mobile && <label className={Styles.error_label}>enter 10 degit number*</label>}
-              </div>
+            <div className={Styles.contact_bottom}>
+                <div className={Styles.contact_bottom_left}>
+                    <p className={Styles.title}>Gettting Touch</p>
+                    <h1>Do you have a project in your mind?</h1>
+                    <div>
+                        <p className={Styles.logo_contaner}><BiTimeFive className={Styles.logo} />  9.30-6.30 </p>
+                        <div className={Styles.address_card}>
+                            <p className={Styles.logo_contaner}><AiFillHome className={Styles.logo} />   Delhi Office</p>
+                            <p>55, Lane - 2, Westend Marg, Saidullajab,
+                                Near Saket metro station,</p>
+                        </div>
+                        <div className={Styles.address_card}>
+                            <p className={Styles.logo_contaner}><AiFillHome className={Styles.logo} />Kolkata Office</p>
+                            <p>37, Vivekananda Road,Dunlop,Kolkata-700035</p>
+                        </div>
+                    </div>
+                </div>
+                <div className={Styles.contact_bottom_right}>
+                    <VStack spacing={8}>
+                        <HStack spacing={4}>
+                            <FormControl isInvalid={hasError.name}>
+                                <FormLabel>Full Name*</FormLabel>
+                                <Input
+                                    name="name"
+                                    value={contactdata.name}
+                                    onChange={handalechange}
+                                    placeholder="Enter full name"
+                                   
+                                />
+                                <FormErrorMessage>{hasError.name}</FormErrorMessage>
+                            </FormControl>
+
+                            <FormControl isInvalid={hasError.email}>
+                                <FormLabel>Email*</FormLabel>
+                                <Input
+                                    name="email"
+                                    value={contactdata.email}
+                                    onChange={handalechange}
+                                    placeholder="Enter email"
+                                    
+                                />
+                                
+                                <FormErrorMessage>{hasError.email}</FormErrorMessage>
+                            </FormControl>
+                        </HStack>
+
+                        <HStack spacing={4}>
+                            <FormControl isInvalid={hasError.projectType}>
+                                <FormLabel>Project Type*</FormLabel>
+                                <Input
+                                    name="projectType"
+                                    value={contactdata.projectType}
+                                    onChange={handalechange}
+                                    placeholder="Enter project type"
+                                    
+                                />
+                                <FormErrorMessage>{ hasError.projectType}</FormErrorMessage>
+                            </FormControl>
+
+                            <FormControl isInvalid={hasError.mobile}>
+                                <FormLabel>Mobile*</FormLabel>
+                                <Input
+                                    name="mobile"
+                                    value={contactdata.mobile}
+                                    onChange={handalechange}
+                                    placeholder="Enter mobile"
+                                    type="tel"
+                                    pattern="\d{10}"
+                                    
+                                />
+                                <FormErrorMessage>{hasError.mobile}</FormErrorMessage>
+                            </FormControl>
+                        </HStack>
+
+                        <FormControl isInvalid={hasError.projectdetails}>
+                            <FormLabel>Write Project Details*</FormLabel>
+                            <Textarea
+                                name="projectdetails"
+                                value={contactdata.projectdetails}
+                                onChange={handalechange}
+                                placeholder="Write Project Details"
+                                
+                            />
+                            <FormErrorMessage>
+                                { hasError.projectdetails}
+                            </FormErrorMessage>
+                        </FormControl>
+
+                        <Button size={"lg"} colorScheme="blue" onClick={handalesubmit}>
+                            Submit
+                        </Button>
+                    </VStack>
+                </div>
             </div>
-
-            <div className={Styles.text_area}>
-              <label >Write Project Details*</label><br />
-              <textarea className={`${Styles}.input${hasError.projectdetails ? 'error' : ''}`} name='projectdetails' value={contactdata.projectdetails} onChange={handalechange} type={"text"} placeholder='Write Project Details'></textarea>
-              {hasError.projectdetails && <label className={Styles.error_label}>you have to fill the Project Details*</label>}
-            </div>
-            <div>
-              <button type="button"  className={Styles.Submit_btn} onClick={handalesubmit}>Submit</button>
-            </div>
-          </div>
-        </section>
-
-
-        <section className={Styles.third_section}>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3683.806246276118!2d88.35882551394677!3d22.586348838160177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0277b573148aaf%3A0xc830ad0c222e6a1!2s37%2C%20Vivekananda%20Rd%2C%20Raja%20Katra%2C%20Singhi%20Bagan%2C%20Ram%20Bagan%2C%20Kolkata%2C%20West%20Bengal%20700006!5e0!3m2!1sen!2sin!4v1677844468005!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </section>
-      </div>
-
-    </>
-  )
+            <div className={Styles.map}>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3683.806246276118!2d88.35882551394677!3d22.586348838160177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0277b573148aaf%3A0xc830ad0c222e6a1!2s37%2C%20Vivekananda%20Rd%2C%20Raja%20Katra%2C%20Singhi%20Bagan%2C%20Ram%20Bagan%2C%20Kolkata%2C%20West%20Bengal%20700006!5e0!3m2!1sen!2sin!4v1677844468005!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+        </div>
+    )
 }
 
 export default Contact
