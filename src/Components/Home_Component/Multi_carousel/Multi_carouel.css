@@ -1,0 +1,14 @@
+.carousel-item-padding-40-px img{
+    width: 130px;
+}
+
+.carousel-item-padding-40-px{
+    display: flex;
+}
+
+
+@media (max-width:720px) {
+    .carousel-item-padding-40-px img{
+        width: 100px;
+    }
+}
