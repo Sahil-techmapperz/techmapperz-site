@@ -75,7 +75,7 @@
 }
 
 .products>div {
-    width: 387px;
+    width: 400px;
 }
 
 .products>div>img {
@@ -96,14 +96,14 @@
 }
 .card_2 {
     position: absolute;
-    left: 25rem;
-    top: 10rem;
+    left: 30rem;
+    top: 8rem;
 }
 
 .card_3 {
     position: absolute;
-    left: 50rem;
-    top: 20rem;
+    left: 60rem;
+    top: 15rem;
 }
 
 .all_service_btn{
