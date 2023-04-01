@@ -27,7 +27,7 @@ body p {
 
 .app {
   position: relative;
-  width: 100vw;
+  width: 100%;
 }
 
 .navbar {

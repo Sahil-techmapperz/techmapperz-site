@@ -33,8 +33,6 @@ const Router = () => {
        <Route path='/web_GIS' element={<Web_GIS/>}></Route>
        <Route path='/Remote_Sensing' element={<Remote_Sensing/>}></Route>
        <Route path='/Photogrammetry' element={<Photogrammetry_Services/>}></Route>
-       <Route path='/web_GIS' element={<Web_GIS/>}></Route>
-       <Route path='/Remote_Sensing' element={<Remote_Sensing/>}></Route>
        
     </Routes>
   )

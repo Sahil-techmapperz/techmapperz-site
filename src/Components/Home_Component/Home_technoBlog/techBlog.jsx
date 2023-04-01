@@ -1,8 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
+import FormattedDateComponent from "./formatDate";
 import Styles from "./techBlog.module.css"
 
-const TechBlog = () => {
+const TechBlog = ({postdata=[]}) => {
+
+
+
+ 
+      
+
+
     return (
         <div className={Styles.techblog}>
             <div className={Styles.getintouch_btn}>
@@ -27,15 +35,22 @@ const TechBlog = () => {
                 <div className={Styles.subMain_2}>
                     <div className={Styles.tabet}>
                         <table border="1" >
-                            <tr>
-                                <th className={Styles.row_1}>20-feb-2022</th>
+                            {postdata.map(post=>{
+                                return(
+                                    <tr>
+                                <th className={Styles.row_1}>
+                                <FormattedDateComponent dateString={post.date} />
+                                </th>
                                 <th className={Styles.row_2}>
-                                    <h3>Data Automization</h3>
-                                    <p>Business Inteligience and Data Analytics with the help of AI and MI</p>
+                                <Link to={`/singal_article/${post.id}`}> <h1>{post.title}</h1></Link>
+                                    <div dangerouslySetInnerHTML={{ __html: post.description.split(/(<[^>]+>)/)[2] }} />
                                 </th>
                             </tr>
+                                )
+                            })}
+                            
 
-                            <tr>
+                            {/* <tr>
                                 <th className={Styles.row_1}>22-feb-2022</th>
                                 <th className={Styles.row_2}>
                                     <h3>Use of Drones in Minning Sector</h3>
@@ -49,7 +64,7 @@ const TechBlog = () => {
                                     <h3>GIS:A New Technology</h3>
                                     <p>Application of GIS as a new edge technology in Land Record Management System</p>
                                 </th>
-                            </tr>
+                            </tr> */}
                         </table>
                     </div>
 
