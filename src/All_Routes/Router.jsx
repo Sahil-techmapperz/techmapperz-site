@@ -14,6 +14,10 @@ import Service from '../Pages/Service_page/Service';
 import Singalearticle from '../Pages/Singale_Article_page/Singale_article';
 import Web_Development from '../Pages/Web_Development/Web_development';
 import Web_GIS from '../Pages/Web_GIS_page/Web_GIS';
+import Service_main from '../Pages/Service_main/Service_main';
+import It_consulting from '../Pages/It_consulting/It_consulting';
+
+
 
 
 const Router = () => {
@@ -33,8 +37,9 @@ const Router = () => {
        <Route path='/web_GIS' element={<Web_GIS/>}></Route>
        <Route path='/Remote_Sensing' element={<Remote_Sensing/>}></Route>
        <Route path='/Photogrammetry' element={<Photogrammetry_Services/>}></Route>
-       <Route path='/web_GIS' element={<Web_GIS/>}></Route>
-       <Route path='/Remote_Sensing' element={<Remote_Sensing/>}></Route>
+       <Route path='/it_consulting' element={<It_consulting/>}></Route> 
+       <Route path='/service_main' element={<Service_main/>}></Route>
+
        
     </Routes>
   )

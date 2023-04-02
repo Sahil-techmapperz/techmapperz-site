@@ -38,6 +38,7 @@ const CRM_pages = () => {
                 <div className={Styles.harbour}>
                 <p className={Styles.heading}>Everything CRM, All-round assistance,We are one stop solution for your CRM needs</p>
                     <div className={Styles.design}>
+
                         <div className={Styles.card1}>
                         <img src={Webdevelop} alt='' />
                         <h3>CRM Consulting</h3>
@@ -45,7 +46,7 @@ const CRM_pages = () => {
                         </div>
 
 
-                        <div className={Styles.card2}>
+                        <div className={Styles.card1}>
                         <img src={Vector7} alt='' />
                         <h3>CRM Implementation</h3>
                          <p>With global competition and greater customer expectations companies look forward to enhance customer relationship and experience,many business entities...Know More</p>
@@ -53,7 +54,7 @@ const CRM_pages = () => {
                         </div>
 
 
-                        <div className={Styles.card3}>
+                        <div className={Styles.card1}>
                         <img src={Vector8} alt='' />
                         <h3>Custom CMR Consulting </h3>
                              <p>AT customer CMR Consulting we understand your current capabilities,map your organisation's desired future state, and then recommend CRM implementation...Know More</p>
@@ -61,12 +62,12 @@ const CRM_pages = () => {
                          </div>
 
 
-                        <div className={Styles.card4}>
+                        <div className={Styles.card1}>
                         <img src={Vector9} alt='' />
                         <h3>CRM Integration</h3>
                         <p>CRM integration is connecting all the applications you use to run your business to customer Information,It's a 360-degree view of customer data that can be seamlessly...Know More </p>
                        
-                           
+      
                          </div>
 
                     </div>
@@ -127,5 +128,3 @@ const CRM_pages = () => {
 }
 
 export default CRM_pages
-
-
