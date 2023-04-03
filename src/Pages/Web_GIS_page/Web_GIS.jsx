@@ -1,9 +1,17 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import Styles from "./Web_GIS.module.css";
 import Geospatial_Mapping from '../../Photos/Geospatial_Mapping.png';
 import Geo_health from '../../Photos/Geo_health.png';
 const Web_GIS = () => {
+    useEffect(() => {
+        const options = {
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
+        };
+        window.scrollTo(options);
+    }, []);
     return (
         <div className={Styles.Web_GIS}>
             <div className={Styles.top}>
@@ -24,36 +32,29 @@ const Web_GIS = () => {
                             <div className={Styles.details}>
                                 <p>Geographic Information System (GIS) has the potential to go beyond mapping. GIS offers a diverse set of analytical functions.</p>
                                 <div className={Styles.list_div}>
+                                    <ul>
+                                        <li>Assessing optimal driving path</li>
+                                        <li style={{ paddingBottom: "30px" }}>Discovering the nearest ATM, restaurant, shops and hotels etc.</li>
+                                        <li>Planning projects</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Forest mapping</li>
+                                        <li>Flood management</li>
+                                        <li style={{ paddingTop: "20px" }}>Location: specific advertising</li>
+                                    </ul>
 
-                                    <div className={Styles.list_div_one}>
-                                        <ul>
-                                            <li>Assessing optimal driving path</li>
-                                            <li style={{ paddingBottom: "30px" }}>Discovering the nearest ATM, restaurant, shops and hotels etc.</li>
-                                            <li>Planning projects</li>
-                                        
-                                        </ul>
-                                    </div>
-                                    <div className={Styles.list_div_tow}>
-                                        <ul>
-                                            <li>Forest mapping</li>
-                                            <li>Flood management</li>
-                                            <li style={{ paddingTop: "20px" }}>Location: specific advertising</li>
-                                        </ul>
-                                    </div>
 
                                 </div>
+                                <div className={Styles.knowmore_btn}>
                                 <Link to={"/contact"}>
                                     <div className={Styles.btn}><div></div><h2>Know More</h2></div>
                                 </Link>
-                            </div>
-
-                            <div>
-
+                                </div>
                             </div>
                         </div>
 
                         <div className={`${Styles.card} ${Styles.card_two}`}>
-                           
+
 
                             <div className={Styles.details}>
                                 <p>Geographic Information System (GIS) has the potential to go beyond mapping. GIS offers a diverse set of analytical functions.</p>
@@ -65,10 +66,10 @@ const Web_GIS = () => {
                                             <li>Mobile GIS</li>
                                             <li>GIS Enable Dashboard development</li>
                                             <li>Geo-Server</li>
-                                        
+
                                         </ul>
                                     </div>
-                                    
+
 
                                 </div>
                                 <Link to={"/contact"}>
@@ -84,10 +85,10 @@ const Web_GIS = () => {
 
                             </div>
                         </div>
-                       
+
                     </div>
                 </div>
-               
+
             </div>
         </div>
     )

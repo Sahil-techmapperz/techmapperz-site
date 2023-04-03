@@ -80,7 +80,7 @@ const CRM_pages = () => {
 
                 
 
-                <div className={Styles.harbour}>
+                <div className={Styles.Application}>
                     <h3 className={Styles.heading}>Types of Mobile Application</h3>
                     <div className={Styles.design}>
 
@@ -107,7 +107,7 @@ const CRM_pages = () => {
                           <p>This CRM is the framework for vendor distributor interaction and business opportunities.</p>
                      </div>
 
-
+                    <div className={Styles.card10}></div>
                         <div className={Styles.card8}>
                         <img src={Combind1} alt='' />
                         <h3>Campaign Management</h3>
@@ -128,3 +128,4 @@ const CRM_pages = () => {
 }
 
 export default CRM_pages
+

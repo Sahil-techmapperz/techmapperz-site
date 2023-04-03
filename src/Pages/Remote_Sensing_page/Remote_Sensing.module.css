@@ -74,11 +74,11 @@
 
 
 
-/* .card_tow{
-    height: 420px;
-    object-fit: cover;
-    background: url("../../Photos/banner_1.jpg");
-} */
+.card_tow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 .Image {
@@ -114,8 +114,8 @@
 .card_one .details {
     width: 724px;
     height: 300px;
-    margin-bottom: 2rem;
     position: relative;
+    margin-top: 2rem;
 }
 
 .details {
@@ -177,7 +177,7 @@
     line-height: 39px;
     letter-spacing: 0.16px;
     width: 100%;
-    top: 0;
+    top: -1rem;
     left: 10px;
 }
 
@@ -213,7 +213,9 @@
     /* border: 1px solid ; */
 }
 
-
+.lists{
+    list-style: disc;
+}
 
 
 .list_div li {

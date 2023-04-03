@@ -5,19 +5,29 @@
 
 .Footer_main {
     width: 100%;
-    /* height: 90%; */
-    /* margin: auto; */
-    display: grid;
-    grid-template-columns:450px 340px 300px;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    align-items: center;
     padding: 40px 5rem;
     gap: 20px;
-    /* border: 1px solid; */
 }
 
 
+.footer_part_one{
+    width: 400px;
+}
+
+.footer_part_two{
+    width: 340px;
+}
+
+.footer_part_three{
+    width: 300px;
+}
 
 .footer_part_one>p{
-    color: var(--secondary-black-color);
+    color: white;
 }
 .footer_part_one>a{
     color: white
@@ -36,8 +46,9 @@
 }
 .Submit_btn h2{
     position: absolute;
-    top: 5px;
+    top: -0.5rem;
     left: 10px;
+    font-size: 20px;
 }
 
 
@@ -86,4 +97,20 @@
     align-items: center;
     font-weight: 500;
     padding-left: 30px;
+}
+
+
+
+@media (max-width:1250px) {
+    .footer_part_one{
+        width: 300px;
+    }
+    
+    .footer_part_two{
+        width: 240px;
+    }
+    
+    .footer_part_three{
+        width: 200px;
+    }
 }

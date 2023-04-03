@@ -125,57 +125,57 @@ const Career = () => {
             <img src={career_idea_1} alt='' />
             <h3>Possibilities unmatched</h3>
             <p>With techmapperZ being a start up with business interests and prospects in many IT fields, weather its. </p>
-            <Link to={"/contact"}> <div className={Styles.Submit_btn}>
+            {/* <Link to={"/contact"}> <div className={Styles.Submit_btn}>
               <div></div>
               <h2>Get in touch</h2>
-            </div></Link>
+            </div></Link> */}
           </div>
           <div className={Styles.card}>
             <img src={career_idea_2} alt='' />
             <h3>Diversity unmatched</h3>
             <p>Since we operate all over India , you will have a spectrum of cultures that people that you can interact with</p>
-            <Link to={"/contact"}> <div className={Styles.Submit_btn}>
+            {/* <Link to={"/contact"}> <div className={Styles.Submit_btn}>
               <div></div>
               <h2>Get in touch</h2>
-            </div></Link>
+            </div></Link> */}
           </div>
           <div className={Styles.card}>
             <img src={career_idea_3} alt='' />
             <h3>Flexibility unparalleled</h3>
             <p>You will have flexible working hours and work environment, not tied to work and time regime,</p>
-            <Link to={"/contact"}> <div className={Styles.Submit_btn}>
+            {/* <Link to={"/contact"}> <div className={Styles.Submit_btn}>
               <div></div>
               <h2>Get in touch</h2>
-            </div></Link>
+            </div></Link> */}
           </div>
           <div className={Styles.card}>
             <img src={career_idea_4} alt='' />
             <h3>Grow unhindered</h3>
             <p>The world is a digital canvas, evolving with every passing day, you will have the opportunity of developing</p>
-            <Link to={"/contact"}> <div className={Styles.Submit_btn}>
+            {/* <Link to={"/contact"}> <div className={Styles.Submit_btn}>
               <div></div>
               <h2>Get in touch</h2>
-            </div></Link>
+            </div></Link> */}
           </div>
 
           <div className={Styles.card}>
             <img src={career_idea_5} alt='' />
             <h3>Shine Unrestricted</h3>
             <p>At Techmapperz, you will get the freedom to choose your timings your approach for getting.</p>
-            <Link to={"/contact"}> <div className={Styles.Submit_btn}>
+            {/* <Link to={"/contact"}> <div className={Styles.Submit_btn}>
               <div></div>
               <h2>Get in touch</h2>
-            </div></Link>
+            </div></Link> */}
           </div>
 
           <div className={Styles.card}>
             <img src={career_idea_6} alt='' />
             <h3>Earn unlimited</h3>
             <p>No matter what, Salary is an important parameter at tech mappers we acknowledge your talent</p>
-            <Link to={"/contact"}> <div className={Styles.Submit_btn}>
+            {/* <Link to={"/contact"}> <div className={Styles.Submit_btn}>
               <div></div>
               <h2>Get in touch</h2>
-            </div></Link>
+            </div></Link> */}
           </div>
 
         </div>
@@ -208,7 +208,6 @@ const Career = () => {
 
           </div>
 
-        </div>
         <div className={Styles.secend_section_main_two} >
           <h2>Be a Volunteer</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, ex. Dolorem ipsum</p>
@@ -216,7 +215,7 @@ const Career = () => {
             <input ref={inputRefs[0]} value={careerdata.name} placeholder='Your Name' type={"text"} name="name" onChange={handalechange} />
             <input ref={inputRefs[1]} value={careerdata.mobile} placeholder='Your Mobile Number' name='mobile' type={"number"} onChange={handalechange} />
             <select ref={inputRefs[2]} onChange={handalechange} name="designetion">
-              <option value={""}>select the destination</option>
+              <option value={""}>Select the Designetion</option>
               {Jobsdata && Jobsdata.map((job) => <option value={`${job.JobID} - ${job.designetion}`}>{`${job.JobID} - ${job.designetion}`}</option>)}
             </select>
 
@@ -225,6 +224,7 @@ const Career = () => {
             <label for="Resume">{resume ? `${resume.name}` : "Upload Resume*"}</label>
             <button onClick={handalesubmit}>Submit</button>
           </div>
+        </div>
         </div>
       </section>
 
