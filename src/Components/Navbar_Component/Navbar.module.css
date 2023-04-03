@@ -1,78 +1,94 @@
-.navbar {
+
+.Navbar{
+    width: 100vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
-    padding: 0 5rem;
-    box-sizing: border-box;
+    padding: 10px 5rem;
+    background-color:rgba(0, 0, 0,0.7);
 }
 
-.nav_list {
-    display: flex;
-    list-style: none;
-}
-
-.nav_item {
-    position: relative;
-    transition: all 1s ease;
-}
-
-.nav_item:hover .dropdown {
-    display: block;
-}
-
-.nav_list li a {
-    display: block;
-    color: white;
-    text-decoration: none;
-    padding: 8px 16px;
-}
-
-.nav_list li a:hover {
-    background-color: #555;
-}
-
-.dropdown {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #333;
-    width: 250px;
-    height: 150px;
-}
-
-.dropdown a {
-    position: relative;
-    display: block;
-    padding: 8px 16px;
-    margin-top: 1rem;
-}
-
-.inner_dropdown_1 {
-    position: absolute;
-    top: 3rem;
-    left: 13rem;
-    background-color: #333;
-    width: 250px;
-    display: none;
-
-}
-
-.dropdown a:hover {
-    background-color: #555;
-    border-right: 3px solid red;
-}
-
-.dropdown_1:hover .inner_dropdown_1{
-    display: block;
-}
-
-.logo {
+.left_nav{
     width: 18vw;
 }
 
-
-.logo img {
+.left_nav img{
     width: 100%;
+}
+
+
+
+
+.right_nav ul{
+    list-style: none;
+    position: relative;
+    display: flex;
+    gap: 20px;
+    
+}
+
+.right_nav ul a{
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.right_nav ul ul a{
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.right_nav ul li{
+    float: left;
+    position: relative;
+    text-align: center;
+   
+}
+
+.right_nav ul li li{
+    padding: 10px;
+}
+
+
+.right_nav ul ul{
+    position: absolute;
+    width: 200px;
+    display:none;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background:rgb(235, 243, 234);
+    top: 1.5rem;
+    left: -20px;
+    transition: all 1s;
+}
+
+
+.right_nav ul ul ul{
+    width: 300px;
+}
+
+.right_nav ul ul li{
+    float: none;
+    margin-bottom: 10px;
+    color: black;
+}
+
+
+.right_nav ul ul li:hover{
+    background-color: gray;
+    border-right: 5px solid red;
+    
+}
+.right_nav ul ul ul{
+    top: 1rem;
+    left: 102%;
+    position: absolute;
+}
+
+.right_nav ul li:hover>ul{
+    display: block;
 }

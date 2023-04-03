@@ -71,20 +71,18 @@
 
 
 .heading {
-    
-    /* text-align: center;
     font-size: 26px;
     font-weight: 600;
     line-height: 54px;
     letter-spacing: 0.16px;
     padding-bottom: 20px;
-    background: rgba(24, 24, 24, 1); */
+    background: rgba(24, 24, 24, 1);
 }
 
 .design {
     display: grid;
     grid-template-columns: repeat(3, 350px);
-    gap:50px;
+    gap:80px;
     margin-left: 5px;
     
 }
@@ -114,7 +112,7 @@
     font-size: 18px;
     text-align: justify;
     letter-spacing: 0.162793px;
-    color: #A3A3A3;
+    color: #FFFFFF;
     padding-bottom: 10px;
 }
 
@@ -130,14 +128,295 @@ text-align: left;
 .harbour {
     background-color: none;
     display: flex;
+    /* background: url("../../Photos/banner_2.png"); */
 }
 .main {
-    width: 700px;
+    width: 900px;
     justify-content: center;
     position:relative;
     gap: 100px;
     margin-top: 5rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    margin-bottom: auto;
 
+}
+
+
+.card1>p{
+    width: 100%;
+    height: 120px;
+    text-align: left;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: justify;
+    letter-spacing: 0.162793px;
+    color: #FFFFFF;
+    padding-bottom: 10px;
+}
+
+.card1>h3{
+font-style: normal;
+font-weight: 700;
+font-size: 22px;
+line-height: 33px;
+letter-spacing: 0.162793px;
+text-align: left;
+}
+
+.card2 {
+    margin-top: 20px;
+}
+
+.card2>p{
+    width: 100%;
+    height: 120px;
+    text-align: left;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: justify;
+    letter-spacing: 0.162793px;
+    color: #FFFFFF;
+    padding-bottom: 10px;
+}
+
+.card2>h3{
+font-style: normal;
+font-weight: 700;
+font-size: 22px;
+line-height: 33px;
+letter-spacing: 0.162793px;
+text-align: left;
+}
+
+.card3{
+    margin-top: 20px;
+}
+.card3>p{
+    width: 100%;
+    height: 120px;
+    text-align: left;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: justify;
+    letter-spacing: 0.162793px;
+    color: #FFFFFF;
+    padding-bottom: 10px;
+}
+
+.card3>h3{
+font-style: normal;
+font-weight: 700;
+font-size: 22px;
+line-height: 33px;
+letter-spacing: 0.162793px;
+text-align: left;
+}
+.card4>p{
+    width: 100%;
+    height: 120px;
+    text-align: left;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: justify;
+    letter-spacing: 0.162793px;
+    color: #FFFFFF;
+    padding-bottom: 10px;
+}
+
+.card4>h3{
+font-style: normal;
+font-weight: 700;
+font-size: 22px;
+line-height: 33px;
+letter-spacing: 0.162793px;
+text-align: left;
+}
+.card5>p{
+    width: 100%;
+    height: 120px;
+    text-align: left;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: justify;
+    letter-spacing: 0.162793px;
+    color: #FFFFFF;
+    padding-bottom: 10px;
+}
+
+.card5>h3{
+font-style: normal;
+font-weight: 700;
+font-size: 22px;
+line-height: 33px;
+letter-spacing: 0.162793px;
+text-align: left;
+}
+.card6>p{
+    width: 100%;
+    height: 120px;
+    text-align: left;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: justify;
+    letter-spacing: 0.162793px;
+    color: #FFFFFF;
+    padding-bottom: 10px;
+}
+
+.card6>h3{
+font-style: normal;
+font-weight: 700;
+font-size: 22px;
+line-height: 33px;
+letter-spacing: 0.162793px;
+text-align: left;
+}
+.card7>p{
+    width: 100%;
+    height: 120px;
+    text-align: left;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: justify;
+    letter-spacing: 0.162793px;
+    color: #FFFFFF;
+    padding-bottom: 10px;
+}
+
+.card7>h3{
+font-style: normal;
+font-weight: 700;
+font-size: 22px;
+line-height: 33px;
+letter-spacing: 0.162793px;
+text-align: left;
+}
+
+.card8 {
+    margin-top: 20px;
+}
+.card8>p{
+    width: 100%;
+    height: 120px;
+    text-align: left;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: justify;
+    letter-spacing: 0.162793px;
+    color: #FFFFFF;
+    padding-bottom: 10px;
+}
+
+.card8>h3{
+font-style: normal;
+font-weight: 700;
+font-size: 22px;
+line-height: 33px;
+letter-spacing: 0.162793px;
+text-align: left;
+}
+.card9>p{
+    width: 100%;
+    height: 120px;
+    text-align: left;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: justify;
+    letter-spacing: 0.162793px;
+    color: #FFFFFF;
+    padding-bottom: 10px;
+}
+
+.card9>h3{
+font-style: normal;
+font-weight: 700;
+font-size: 22px;
+line-height: 33px;
+letter-spacing: 0.162793px;
+text-align: left;
+}
+.class1 {
+    width: 350px;
+}
+
+.card10>h3{
+font-style: normal;
+font-weight: 700;
+font-size: 22px;
+line-height: 33px;
+letter-spacing: 0.162793px;
+text-align: left;
+}
+.card11>p{
+    width: 100%;
+    height: 120px;
+    text-align: left;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: justify;
+    letter-spacing: 0.162793px;
+    color: #FFFFFF;
+    padding-bottom: 10px;
+}
+
+.card11>h3{
+font-style: normal;
+font-weight: 700;
+font-size: 22px;
+line-height: 33px;
+letter-spacing: 0.162793px;
+text-align: left;
+}
+.card12>p{
+    width: 100%;
+    height: 120px;
+    text-align: left;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: justify;
+    letter-spacing: 0.162793px;
+    color: #FFFFFF;
+    padding-bottom: 10px;
+}
+
+.card12>h3{
+font-style: normal;
+font-weight: 700;
+font-size: 22px;
+line-height: 33px;
+letter-spacing: 0.162793px;
+text-align: left;
+}
+.card13>p{
+    width: 100%;
+    height: 120px;
+    text-align: left;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: justify;
+    letter-spacing: 0.162793px;
+    color: #FFFFFF;
+    padding-bottom: 10px;
+}
+
+.card13>h3{
+font-style: normal;
+font-weight: 700;
+font-size: 22px;
+line-height: 33px;
+letter-spacing: 0.162793px;
+text-align: left;
 }
