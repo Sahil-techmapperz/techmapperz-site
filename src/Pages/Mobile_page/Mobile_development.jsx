@@ -27,7 +27,7 @@ const Mobile_development = () => {
                     <div className={styles.product}>
                         <div className={styles.product_info}>
                             <p>We provide IOS and A+ndroid mobile application development services to loverage mobile technology for your business; we provide IOS and Android mobile application development services </p>
-                            <h3>Android App Development</h3>
+                            <h1>Android App Development</h1>
                             <ul>
                                 <li>Anrroid Mobile App Development</li>
                                 <li>Android TV App Development</li>
@@ -51,7 +51,7 @@ const Mobile_development = () => {
                         </div>
                    
                         <div className={styles.product_info}>
-                        <h1 className={styles.heading}>iOS App Development</h1>
+                        <h1 className={styles.heading2}>iOS App Development</h1>
                           
                             <ul>
                                 <li>iphone App Development</li>
@@ -86,8 +86,9 @@ const Mobile_development = () => {
 
                         <div className={styles.card}>
                             <img src={Combind4} alt='' />
-                            <h3>Hybrid  apps pool the effectiveness of native apps and web-based apps and support both types of technology. These apps are swift and easy to create on the developer's end, but they often have a lower performance rate...</h3>
-                            <p></p>
+                            <h3>Hybrid App</h3>
+                            <p>Hybrid  apps pool the effectiveness of native apps and web-based apps and support both types of technology. These apps are swift and easy to create on the developer's end, but they often have a lower performance rate...</p>
+                            
                         </div>
 
                     </div>

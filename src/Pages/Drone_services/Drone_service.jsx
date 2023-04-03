@@ -40,7 +40,7 @@ const Drone_Service = () => {
                 <div className={styles.contaner}>
                     <h1 className={styles.heading}>Data Acquisition & Processing</h1>
                     <div className={styles.product}>
-                        <img src={Geospatial_Mapping} alt="Geospatial_Mapping.png" />
+                       <div> <img src={Geospatial_Mapping} alt="Geospatial_Mapping.png" /></div>
                         <div className={styles.product_info}>
                         <p>Our experienced and skilled pilots and high configered Drone allow us to acquire Drone data faster than any other
                             traditional methods. We have a team of skiled GIS analysts for Drone data processing and analysis.We use high-power
@@ -59,14 +59,7 @@ const Drone_Service = () => {
                     </div>
                 </div>
                 
-                
-
-                
-
-
-
-                
-           
+                        
 
                    <div className={styles.contaner}>
                     <div className={styles.product}>

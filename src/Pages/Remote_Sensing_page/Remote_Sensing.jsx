@@ -21,7 +21,7 @@ const Remote_Sensing = () => {
                             <img src={Geospatial_Mapping} alt='' />
                         </div>
 
-                        <div className={Styles.details}>
+                        <div className={`${Styles.details} ${Styles.details1}`}>
                         <p>Most remote sensing data are recorded in the digital format in today's world of advanced technology, almost all image interpretation and analysis involves some element of digital processing it involves various processes to enhance the image, we at Techmapperz use some of the best software and hardware available commercially to process high-quality images for commercial use.</p>
                         <Link to={"/contact"}> 
                         <div className={Styles.btn}><div></div><h2>Know More</h2></div>
@@ -55,7 +55,7 @@ const Remote_Sensing = () => {
                 <h1>Techmapperz's Remote sensing services include</h1>
                 <div className={Styles.list_div}>
                     <div className={Styles.list_div_one}>
-                        <ul>
+                        <ul className={Styles.lists}>
                         <li>Change Detection Mapping & Analysis</li>
                         <li>Slope aspect analysis</li>
                         <li>Coastal ecosystem management</li>
@@ -63,7 +63,7 @@ const Remote_Sensing = () => {
                         </ul>
                     </div>
                     <div className={Styles.list_div_tow}>
-                        <ul>
+                        <ul className={Styles.lists}>
                         <li style={{paddingBottom:"0"}}>Agriculture Crop acreage estimation and Crop yield estimation</li>
                         <li>Forest Mapping</li>
                         <li>Forest Fire Mapping</li>
