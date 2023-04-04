@@ -9,11 +9,7 @@ const article_route = require("./routes/article_route/article_route");
 const Login_route = require("./routes/Login_route/login_route");
 const Recent_login_Route = require("./routes/Recent_login_route/Recent_login_route");
 const TestimonialRoute = require("./routes/Testimonial_route/Testimonial_route");
-<<<<<<< HEAD
 
-=======
-// const blogRoute = require("./routes/Blog.route/Blog.route")
->>>>>>> 7bd667ddd077d8d2e14bf3cc21c71afc1dc8e4cf
 
 require('dotenv').config();
 const app = expres();
@@ -29,11 +25,7 @@ app.use("/article",article_route)
 app.use("/admin",Login_route)
 app.use("/recent-logins",Recent_login_Route)
 app.use("/Testimonial",TestimonialRoute)
-<<<<<<< HEAD
 
-=======
-// app.use("/blog",blogRoute)
->>>>>>> 7bd667ddd077d8d2e14bf3cc21c71afc1dc8e4cf
 
 
 app.get('/',async(req,res)=>{

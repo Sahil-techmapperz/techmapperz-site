@@ -81,7 +81,7 @@
 
 .design {
     display: grid;
-    grid-template-columns: repeat(3, 350px);
+    grid-template-columns: repeat(3, 350px)
     gap:80px;
     margin-left: 5px;
     
@@ -112,6 +112,7 @@
     font-size: 18px;
     text-align: justify;
     letter-spacing: 0.162793px;
+
     color: #FFFFFF;
     padding-bottom: 10px;
 }
@@ -128,10 +129,12 @@ text-align: left;
 .harbour {
     background-color: none;
     display: flex;
-    /* background: url("../../Photos/banner_2.png"); */
 }
 .main {
     width: 900px;
+}
+.main {
+    width: 700px;
     justify-content: center;
     position:relative;
     gap: 100px;
@@ -419,4 +422,5 @@ font-size: 22px;
 line-height: 33px;
 letter-spacing: 0.162793px;
 text-align: left;
+
 }

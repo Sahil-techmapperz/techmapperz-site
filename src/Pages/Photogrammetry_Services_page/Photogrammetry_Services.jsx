@@ -87,7 +87,7 @@ const Photogrammetry_Services = () => {
                             </div>
                         </div>
                         <div>
-                            <img src={GIS_Suvey} className={styles.Img_two} alt="Geospatial_Mapping.png" />
+                            <img src={GIS_Suvey} className={styles.Img_four} alt="Geospatial_Mapping.png" />
                         </div>
                     </div>
                 </div>

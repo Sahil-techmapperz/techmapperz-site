@@ -38,9 +38,8 @@
 
 
 .secand_part {
-    width: 90%;
-     margin: auto; 
-    background: rgba(24, 24, 24, 1);
+    width: 100%; 
+    padding: 2rem 5rem;
 }
 
 .info {
@@ -64,7 +63,6 @@
 
 .contaner {
     padding-bottom: 30px;
-    background: rgba(24, 24, 24, 1);
 }
 
 
@@ -137,7 +135,7 @@ height: 368px;
 .product_info .btn {
     position: relative;
     height: 60px;
-    width: 100%;
+    width: 150px;
 }
 
 .product_info .btn div {
@@ -154,20 +152,17 @@ height: 368px;
     line-height: 39px;
     letter-spacing: 0.16px;
     width: 100%;
-    top: 0;
+    top: -1rem;
     left: 10px;
 }
 
 
 .main {
     width: 100%;
-    margin: auto;
-    display: grid;
+    display: flex;
     justify-content: center;
     gap: 80px;
     margin-top: 20px;
-    /* margin-bottom: 5rem; */
-    grid-template-columns: repeat(3,400px);
 }
 
 .class2{

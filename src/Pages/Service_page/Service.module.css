@@ -156,6 +156,6 @@
     line-height: 39px;
     letter-spacing: 0.16px;
     width: 100%;
-    top: 0;
+    top: -1rem;
     left: 10px;
 }

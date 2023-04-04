@@ -48,7 +48,7 @@ const About = () => {
               </div>
 
               <div className={styles.company_info}>
-                <p>Get known us</p>
+                <h1 className={styles.title}>Get known us</h1>
                 <h2 className={styles.heading}>About Company</h2>
                 <p>Let your imagination fly, this has always been the spirit that made Techmapperz possible, we were always free-thinkers, a team that believed that the solution to a complex problem need not be complex, that complex issues should have very simple solutions, and this is the change that we all believe in.</p>
                 <p>We aim for a Digital transformation toward innovation with simplicity, striving to be a Company that delivers cutting-edge solutions, helping the world, mankind, enterprise and fortune 500 companies, all in one go.</p>
@@ -69,8 +69,8 @@ const About = () => {
               <div className={styles.Mission}>
                 <img className={styles.Mission_part_one} src={Career4} />
                 <h2 className={styles.heading}>Mission</h2>
-                <p>We at Techmapperz, understand that each<br /> organisation is different, and so are their <br />challenges, so when we tailor
-                  solutions, we ensure <br />that it is as simplified as it can be. Our mission is<br /> simplified solutions for complex problems.</p>
+                <p>We at Techmapperz, understand that each organisation is different, and so are their challenges, so when we tailor
+                  solutions, we ensure that it is as simplified as it can be. Our mission is  simplified solutions for complex problems.</p>
                 <Link to={"/contact"}> <div className={styles.Submit_btn}>
                   <div></div>
                   <h2>Know More</h2>
@@ -81,8 +81,8 @@ const About = () => {
                 <div className={styles.subVission}>
                   <img className={styles.vission_one} src={Career5} />
                   <h2 className={styles.heading}>Vision</h2>
-                  <p>With technology becoming the most important<br /> part of our day to day life, we are driven by the<br /> commitment to deliver
-                    the best of IT solutions, to <br />be a trusted provider of end-to-end IT services<br /> and solutions to businesses globally.</p>
+                  <p>With technology becoming the most important part of our day to day life, we are driven by the commitment to deliver
+                    the best of IT solutions, to be a trusted provider of end-to-end IT services and solutions to businesses globally.</p>
                   <Link to={"/contact"}> <div className={styles.Submit_btn}>
                     <div></div>
                     <h2>Know More</h2>
@@ -96,18 +96,9 @@ const About = () => {
             </div>
           </section>
 
-
-          {/* <section>
-    <Industry />
-  </section> */}
-
           <section>
             <Choose />
           </section>
-
-{/* <div className={styles.pvector}>
-              <img className={styles.vectorImage} src={Group} />
-            </div> */}
 
 
           <div className={styles.totalVector}>
@@ -118,28 +109,29 @@ const About = () => {
                 <div className={styles.navbar2}></div>
                 <img className={styles.navbar3} src={Rectangle_6} />
               </div>
-            
+
               <div className={styles.lastVector}>
                 <div className={styles.headtag10}><h1>How Do We Work</h1></div>
 
-                <div className={styles.headtag11}><p>We are constantly looking for ways to keep us <br />updated with the changing technology and
-                  evolving<br />markets and demands.We believe that our<br />performance should be more efficient, nimble and<br />flexible then
-                   before.That's where the Agile<br />methodology comes in.We follow 4 values of<br /> Agile:<br /><br /></p>
+                <div className={styles.headtag11}>
+                  <p>
+                    We are constantly looking for ways to keep us updated with the changing technology and
+                    evolving markets and demands.We believe that our performance should be more efficient, nimble and flexible then
+                    before.That's where the Agile methodology comes in.We follow 4 values of Agile:
+                  </p>
+                  <ul className={styles.lists}>
+                    <li>Individual and interactions over processes and tools.</li>
+                    <li>Working software over comprehensive documentation</li>
+                    <li>Customer collaboration over contract negotiation.</li>
+                    <li>Responding to change over following a plan</li>
+                  </ul>
 
-                  <div className={styles.last_part}>
-                    <ul>
-                      <li>Individual and interactions over processes and tools.</li>
-                      <li>Working software over comprehensive<br />documentation</li>
-                      <li>Customer collaboration over contract negotiation.</li>
-                      <li>Responding to change over following a plan</li>
-                    </ul>
-                  </div>
 
                 </div>
 
               </div>
-              </div>
-          
+            </div>
+
           </div>
 
 
@@ -147,21 +139,19 @@ const About = () => {
           <section className={styles.methodology}>
 
             <div className={styles.methodology1}>
-              <p>Following Agile methodology gives us a high degree of understanding of client requirements and <br />collection between
-                the client and the development team. We have happier clients because we maintain<br /> transparency throughout the process and
-                our teams know and understand the client requirements and <br />limitions better.</p>
+              <p>Following Agile methodology gives us a high degree of understanding of client requirements and collection between
+                the client and the development team. We have happier clients because we maintain transparency throughout the process and
+                our teams know and understand the client requirements and limitions better.</p>
             </div>
             <div className={styles.methodology2}>
-              <h4>Some of the benefits that we would like to highlight of using the Agile methodology in<br />our work are:</h4>
+              <p>Some of the benefits that we would like to highlight of using the Agile methodology in our work are:</p>
             </div>
-            <div className={styles.methodology3}>
-              <ul><li>Cost protection and the time frame required</li></ul>
-              <ul><li>Constant feedback and asuperior product result</li></ul>
-              <ul><li>Possibility of change during the process</li></ul>
-              <ul><li>Reduce the risk of error and the investment</li></ul>
-              
-
-            </div>
+              <ul className={styles.lists}>
+                <li>Cost protection and the time frame required</li>
+                <li>Constant feedback and asuperior product result</li>
+                <li>Possibility of change during the process</li>
+                <li>Reduce the risk of error and the investment</li>
+              </ul>
 
           </section>
 
@@ -174,7 +164,7 @@ const About = () => {
 
           <section className={styles.five_part}>
             <div className={styles.five_first_part}>
-              <h3>Company value</h3>
+              <h1>Company value</h1>
             </div>
             <img className={styles.five_last_part} src={Group1} />
           </section>

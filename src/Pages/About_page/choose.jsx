@@ -19,7 +19,7 @@ const Choose = () => {
             <section className={styles.first_part}>
                 <div className={styles.first_part_main}>
 
-                    <div className={styles.video_contaner1}>
+                    <div className={styles.video_contaner}>
                         <video autoplay controls loop muted>
                             <source src="https://techmapperz.com/media/videos/2022/07/04/whatsapp-video-2022-07-04-at-10.57.43-am.mp4" type="video/mp4"></source>
                         </video>
@@ -43,92 +43,80 @@ const Choose = () => {
 
 
 
-                   <div style={{width:300, margin:"auto", display:grid, }}>
 
-                    <Accordion>
-                        <AccordionItem>
-                            <h2  >
-                                <AccordionButton>
-                                    <Box as="span" flex='1' textAlign='left' >
-                                       Plans
-                                    </Box>
-                                    <AccordionIcon />
-                                </AccordionButton>
-                            </h2>
-                            <AccordionPanel pb={4}>
+                    <Accordion allowToggle>
+                        <div className={styles.dropdown}>
+
+                            <AccordionItem  border={"none"}>
                                 
-                            </AccordionPanel>
-                        </AccordionItem>
+                                    <AccordionButton border={"1px solid"}>
+                                        <Box as="span" flex='1' textAlign='left'>
+                                        Plan
+                                        </Box>
+                                        <AccordionIcon />
+                                    </AccordionButton>
+                                
+                                <AccordionPanel  border={"1px solid"} pb={4}>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                    commodo consequat.
+                                </AccordionPanel>
+                            </AccordionItem>
 
-                        <AccordionItem>
-                            <h2>
-                                <AccordionButton>
-                                    <Box as="span" flex='1' textAlign='left'>
-                                      Create
-                                    </Box>
-                                    <AccordionIcon />
-                                </AccordionButton>
-                            </h2>
-                            <AccordionPanel pb={4}>
-                              
-                            </AccordionPanel>
-                        </AccordionItem>
+                            <AccordionItem border={"none"}>
+                                
+                                    <AccordionButton border={"1px solid"}>
+                                        <Box as="span" flex='1' textAlign='left'>
+                                        Create
+                                        </Box>
+                                        <AccordionIcon />
+                                    </AccordionButton>
+                                
+                                <AccordionPanel border={"1px solid"} pb={4}>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                    commodo consequat.
+                                </AccordionPanel>
+                            </AccordionItem>
+                            <AccordionItem  border={"none"}>
+                                
+                                    <AccordionButton border={"1px solid"}>
+                                        <Box as="span" flex='1' textAlign='left'>
+                                        Leads
+                                        </Box>
+                                        <AccordionIcon />
+                                    </AccordionButton>
+                                
+                                <AccordionPanel  border={"1px solid"} pb={4}>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                    commodo consequat.
+                                </AccordionPanel>
+                            </AccordionItem>
 
-                        <AccordionItem>
-                            <h2>
-                                <AccordionButton>
-                                    <Box as="span" flex='1' textAlign='left'>
-                                      Lead
-                                    </Box>
-                                    <AccordionIcon />
-                                </AccordionButton>
-                            </h2>
-                            <AccordionPanel pb={4}>
-                              
-                            </AccordionPanel>
-
-                            
-                        </AccordionItem>
-
-                        <AccordionItem>
-                            <h2>
-                                <AccordionButton>
-                                    <Box as="span" flex='1' textAlign='left'>
-                                      Achive
-                                    </Box>
-                                    <AccordionIcon />
-                                </AccordionButton>
-                            </h2>
-                            <AccordionPanel pb={4}>
-                              
-                            </AccordionPanel>
-
-                            
-                        </AccordionItem>
+                            <AccordionItem border={"none"}>
+                                
+                                    <AccordionButton border={"1px solid"}>
+                                        <Box as="span" flex='1' textAlign='left'>
+                                        Achieve
+                                        </Box>
+                                        <AccordionIcon />
+                                    </AccordionButton>
+                                
+                                <AccordionPanel border={"1px solid"} pb={4}>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                    commodo consequat.
+                                </AccordionPanel>
+                            </AccordionItem>
 
 
+                        </div>
                     </Accordion>
-
-                    </div>
-
-
-
-                    {/* <div className={styles.third_part}>
-                <div className={styles.third_part1}>
-                    <p>Plans</p>
-                </div>
-                <div className={styles.third_part2}>
-                    <p>Create</p>
-                </div>
-                <div className={styles.third_part3}>
-                    <p>Leads</p>
-                </div>
-                <div className={styles.third_part4}>
-                    <p>Achieve</p>
-                </div>
-
-
-            </div> */}
                 </div>
 
             </section>
