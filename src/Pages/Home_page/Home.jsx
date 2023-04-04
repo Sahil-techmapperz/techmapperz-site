@@ -18,7 +18,6 @@ import Home_7 from '../../Photos/Home/Home_7.png';
 import Home_8 from '../../Photos/Home/Home_8.png';
 import Home_9 from '../../Photos/Home/Home_9.png';
 import Multi_carousel from '../../Components/Home_Component/Multi_carousel/Multi_carousel';
-// import Multi_carousel from '../../Compotents/Home_Component/Multi_carousel/Multi_carousel';
 
 const slides = [
     {

@@ -33,10 +33,11 @@ const Service_main = () => {
 
             <section className={Styles.secand_part}>
 
-                <p>We provide IT consulting services to business in a wide range of industries.We use our expertise to identify your opportunities and deliver solutions that will help you outperform your competitors.Whether it's strategy,innovaton,or implementation, we're able to provide exceptional services thanks to the skills of our impeccable team.</p>
+
+                <p className={Styles.para1}>We provide IT consulting services to business in a wide range of industries.We use our expertise to identify your opportunities and deliver solutions that will help you outperform your competitors.Whether it's strategy,innovaton,or implementation, we're able to provide exceptional services thanks to the skills of our impeccable team.</p>
 
                 <div className={Styles.newmain}>
-                    <h1 className={Styles.heading1}>Our GIS Services</h1>
+                    <h1 className={Styles.heading}>Our GIS Services</h1>
                     <div className={Styles.design}>
 
 
@@ -89,42 +90,46 @@ const Service_main = () => {
 
 
 
-                <div className={Styles.harbour}>
-                        <h1 className={Styles.heading1}>Our IT Services</h1>
-                    <div className={Styles.main}>
+
+                <div className={Styles.honest}>
+                        <h1 className={Styles.heading}>Our IT Services</h1>
+                    <div className={Styles.person}>
                         <div className={Styles.card2}>
                         <img src={Webdevelop} alt='' /> 
                             <h3>Web Development Services</h3>
                             <p>With the accumulated experience of more than 20 years, our team is well equipped to help you solve all possible challenges in the customer management field... </p>
                         </div>
 
-                        <div className={Styles.card2}>
+
+                        <div className={Styles.card3}>
                         <img src={Vector7} alt='' /> 
                             <h3>Mobile Application Development</h3>
                             <p>With global competition and greater customer expectations companies look forward to enhance customer relationship and experience,many business entities..</p>
                         </div>
 
 
-                        <div className={Styles.card2}>
+
+                        <div className={Styles.card4}>
                         <img src={Vector8} alt='' />
                             <h3>CRM/ERP</h3>
                             <p>At custom CRM consulting we understand your current capabilities, map your organisation's desired future state, and then recommend CRM implentation</p>
                         </div>
 
                         
-                         <div className={Styles.card2}>
+
+                         <div className={Styles.card5}>
                          <img src={Vector8} alt='' />
                             <h3>IT Consulting Services</h3>
                             <p>At custom CRM consulting we understand your current capabilities,map your organisation's desired future state, and then recommend CRM implementation</p>
                         </div>
 
-                        <div className={Styles.card2}>
-                        <img src={Consulting7} alt='' />
-                        </div>
 
+                       
                     </div>
-
                     
+                    <div className={Styles.card6}>
+                        <img src={Consulting7} alt='' />
+                        </div>   
                 </div>
 
 
