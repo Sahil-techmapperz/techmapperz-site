@@ -20,7 +20,6 @@ import Home_9 from '../../Photos/Home/Home_9.png';
 import Drone_gif from '../../Photos/Home/drone.gif';
 import App_development from '../../Photos/Home/App_development.gif';
 import Multi_carousel from '../../Components/Home_Component/Multi_carousel/Multi_carousel';
-// import Multi_carousel from '../../Compotents/Home_Component/Multi_carousel/Multi_carousel';
 
 const slides = [
     {
