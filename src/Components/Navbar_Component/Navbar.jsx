@@ -16,7 +16,7 @@ const Navbar = () => {
             <ul>
               <li><Link>Geospacial Services</Link>
                 <ul>
-                  <li to={""}><Link>GIS Services</Link></li>
+                  <li to={""}><Link to={"/gis_service"}>GIS Services</Link></li>
                   <li ><Link to={"/Remote_Sensing"}>Remote Sensing</Link></li>
                   <li ><Link to={"/drone_service"}>Drone Services</Link></li>
                   <li ><Link to={"/Photogrammetry"}>Photogrammetry Services</Link></li>
@@ -28,7 +28,7 @@ const Navbar = () => {
                   <li ><Link to={"/mobile_development"}>Mobile APP Development</Link></li>
                   <li ><Link to={"/web_development"}>Website Development</Link></li>
                   <li ><Link to={"/crm_page"}>CRM / ERP</Link></li>
-                  <li><Link>IT Consultancy</Link></li>
+                  <li><Link to={"/it_consulting"}>IT Consultancy</Link></li>
                 </ul>
               </li>
             </ul>

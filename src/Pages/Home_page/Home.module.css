@@ -369,6 +369,7 @@
 }
 
 .About_us .about_right .about_us_drone{
+    width: 100px;
     position: absolute;
     top: -10rem;
     right: 0;
