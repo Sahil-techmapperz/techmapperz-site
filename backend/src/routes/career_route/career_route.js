@@ -10,9 +10,9 @@ const ImageKit = require('imagekit');
 
 
 const imagekit = new ImageKit({
-  publicKey: "public_uw+Iy20W6XHXO3AjkXEW2K+2tgo=",
-  privateKey: "private_B4IrCM6a0Q7Q+r/03UZGZINFyrE=",
-  urlEndpoint: "https://ik.imagekit.io/lrrkr27gr",
+  publicKey:process.env.ImagekitpublicKey,
+  privateKey: process.env.ImagekitprivateKey,
+  urlEndpoint: `https://ik.imagekit.io/${process.env.ImagekiturlEndpoint}`,
 });
 
 

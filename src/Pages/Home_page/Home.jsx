@@ -17,6 +17,8 @@ import Home_6 from '../../Photos/Home/Home_6.png';
 import Home_7 from '../../Photos/Home/Home_7.png';
 import Home_8 from '../../Photos/Home/Home_8.png';
 import Home_9 from '../../Photos/Home/Home_9.png';
+import Drone_gif from '../../Photos/Home/drone.gif';
+import App_development from '../../Photos/Home/App_development.gif';
 import Multi_carousel from '../../Components/Home_Component/Multi_carousel/Multi_carousel';
 
 const slides = [
@@ -165,7 +167,7 @@ const Home = () => {
                         <img className={Styles.about_img_2} src={Home_6} alt='' />
                     </div>
                     <div className={Styles.about_right}>
-                    <img className={Styles.about_us_drone} src={Home_9} alt=''/>
+                    <img className={Styles.about_us_drone} src={App_development} alt=''/>
                         <p className={Styles.title}>About Us</p>
                         <div className={Styles.about_right_contener}>
                             <h1>Why Choose Techmapperz</h1>
