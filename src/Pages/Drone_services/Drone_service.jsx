@@ -4,6 +4,10 @@ import styles from './Drone.module.css';
 import Geospatial_Mapping from '../../Photos/Geospatial_Mapping.png';
 import Geo_health from '../../Photos/Geo_health.png';
 import Geogoverence from '../../Photos/Geogoverence.png';
+import Drone_Service1 from '../../Photos/DroneService1.png';
+import Drone_Service2 from '../../Photos/DroneService2.png';
+import Drone_Service3 from '../../Photos/DroneService3.png';
+import Drone_Service4 from '../../Photos/DroneService4.png';
 
 
 const Drone_Service = () => {
@@ -38,9 +42,11 @@ const Drone_Service = () => {
                             imagery on a substantial high level with additional payloads.</p>
                   </div>
                 <div className={styles.contaner}>
+                <div  className={styles.para1}>
                     <h1 className={styles.heading}>Data Acquisition & Processing</h1>
+                    <img src={Drone_Service4} alt="" /></div>
                     <div className={styles.product}>
-                       <div> <img src={Geospatial_Mapping} alt="Geospatial_Mapping.png" /></div>
+                       <div> <img src={Drone_Service1} alt="Geospatial_Mapping.png" /></div>
                         <div className={styles.product_info}>
                         <p>Our experienced and skilled pilots and high configered Drone allow us to acquire Drone data faster than any other
                             traditional methods. We have a team of skiled GIS analysts for Drone data processing and analysis.We use high-power
@@ -87,7 +93,7 @@ const Drone_Service = () => {
                             </div></Link>
                         </div>
                         <div>
-                            <img src={Geo_health} className={styles.Img_two} alt="Geospatial_Mapping.png" />
+                            <img src={Drone_Service2} className={styles.Img_two} alt="Geospatial_Mapping.png" />
                         </div>
                     </div>
                 </div>
@@ -104,10 +110,13 @@ const Drone_Service = () => {
 <div className={styles.contaner}>
                     <div className={styles.product}>
                         <div>
-                            <img src={Geogoverence} className={styles.Img_three} alt="Geospatial_Mapping.png" />
+                            <img src={Drone_Service3} className={styles.Img_three} alt="Geospatial_Mapping.png" />
                         </div>
                         <div className={styles.product_info}>
+                        {/* <div  className={styles.para1}> */}
                             <h1 className={styles.heading}>3D Modelling</h1>
+                            {/* <img src={Drone_Service4} alt="" />
+                            </div> */}
                             <p>uses aerial photogrammetry to generate a 3D model. It uses a series ofphotographs taken by a drone to
                     measure everything in the 3D model such asvolumetric calculation,distance measurenment and etc.3D modelling can visualize
                     building before they start thr projects,helping us to capture details,intricies,and beauty of a structure not easily seen from the

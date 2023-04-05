@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom';
 import Styles from "./Remote_Sensing.module.css";
 import Geospatial_Mapping from '../../Photos/Geospatial_Mapping.png';
 import Geo_health from '../../Photos/Geo_health.png';
+import RemoteSence1 from '../../Photos/RemoteSence1.png';
+import RemoteSence2 from '../../Photos/RemoteSence2.png';
+
 const Remote_Sensing = () => {
     return (
         <div className={Styles.Remote_Sensing}>
@@ -18,7 +21,7 @@ const Remote_Sensing = () => {
                     <div className={`${Styles.card} ${Styles.card_one}`}>
                         <div className={`${Styles.Image} ${Styles.Image_1}`}>
                             <h1>Image Processing</h1>
-                            <img src={Geospatial_Mapping} alt='' />
+                            <img src={RemoteSence1} alt='' />
                         </div>
 
                         <div className={`${Styles.details} ${Styles.details1}`}>
@@ -42,7 +45,7 @@ const Remote_Sensing = () => {
                         </div>
 
                         <div className={`${Styles.Image} ${Styles.Image_2}`}>
-                            <img src={Geo_health} alt='' />
+                            <img src={RemoteSence2} alt='' />
                         </div>
 
                         <div>

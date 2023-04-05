@@ -10,6 +10,11 @@ import Webdevelop from '../../Photos/Webdevelop.png';
 import Vector7 from '../../Photos/Develop1.png';
 import Vector8 from '../../Photos/Develop2.png';
 import Vector9 from '../../Photos/Develop3.png';
+import T01 from '../../Photos/01.png';
+import T02 from '../../Photos/02.png';
+import T03 from '../../Photos/03.png';
+import T04 from '../../Photos/04.png';
+
 
 
 const CRM_pages = () => {
@@ -40,14 +45,22 @@ const CRM_pages = () => {
                     <div className={Styles.design}>
 
                         <div className={Styles.card1}>
+                        <div className={Styles.testimg1}>
                         <img src={Webdevelop} alt='' />
+                        <img src={T01} alt='' />
+                        </div> 
+                       
                         <h3>CRM Consulting</h3>
                       <p>With the accumlated experince of more than 20 years,our team is well equipped to help you slove all possible challenges in the coustomer management field...<h5>Know More</h5></p>
                         </div>
 
 
                         <div className={Styles.card1}>
+                        <div className={Styles.testimg1}>
                         <img src={Vector7} alt='' />
+                        <img src={T02} alt='' />
+                        </div> 
+                      
                         <h3>CRM Implementation</h3>
                          <p>With global competition and greater customer expectations companies look forward to enhance customer relationship and experience,many business entities...Know More</p>
                      
@@ -55,7 +68,11 @@ const CRM_pages = () => {
 
 
                         <div className={Styles.card1}>
+                        <div className={Styles.testimg1}>
                         <img src={Vector8} alt='' />
+                        <img src={T03} alt='' />
+                        </div> 
+                       
                         <h3>Custom CMR Consulting </h3>
                              <p>AT customer CMR Consulting we understand your current capabilities,map your organisation's desired future state, and then recommend CRM implementation...Know More</p>
                         
@@ -63,6 +80,10 @@ const CRM_pages = () => {
 
 
                         <div className={Styles.card1}>
+                        <div className={Styles.testimg1}>
+                        <img src={Vector9} alt='' />
+                        <img src={T04} alt='' />
+                        </div> 
                         <img src={Vector9} alt='' />
                         <h3>CRM Integration</h3>
                         <p>CRM integration is connecting all the applications you use to run your business to customer Information,It's a 360-degree view of customer data that can be seamlessly...Know More </p>

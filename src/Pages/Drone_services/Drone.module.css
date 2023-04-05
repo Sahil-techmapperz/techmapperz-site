@@ -85,21 +85,26 @@
     background: rgba(24, 24, 24, 1);
 }
 
-
+.para1 {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 400px;
+}
 
 .product img {
-    width: 900px;
-    height: 400px;
+    width: 800px;
+    height: 536px;
     object-fit: cover;
+    /* margin-top: 50px; */
 }
 
 .product .Img_two {
-    height: 500px;
+    height: 570px;
 }
 
 .product .Img_three {
-    width: 900px;
-    height: 350px;
+    width: 800px;
+    height: 638px;
 }
 
 .product_info {

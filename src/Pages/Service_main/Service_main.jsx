@@ -8,6 +8,13 @@ import Vector7 from '../../Photos/Develop1.png';
 import Vector8 from '../../Photos/Develop2.png';
 import Vector9 from '../../Photos/Develop3.png';
 import Consulting7 from '../../Photos/Consulting7.png';
+import T01 from '../../Photos/01.png';
+import T02 from '../../Photos/02.png';
+import T03 from '../../Photos/03.png';
+import T04 from '../../Photos/04.png';
+// import T05 from '../../Photos/05.png';
+import T06 from '../../Photos/06.png';
+// import T07 from '../../Photos/07.png';
 
 
 const Service_main = () => {
@@ -41,44 +48,62 @@ const Service_main = () => {
 
 
                         <div className={Styles.card1}>
+                            <div className={Styles.testimg1}>
                              <img src={Webdevelop} alt='' /> 
+                             <img src={T01} alt='' /> 
+                             </div>
                             <h3 >GIS Services</h3>
                             <p>With the accumulated experience of more then 20 years, Our team is well equipped to help you solve all possible challenges in the customer management field</p>
                         </div>
 
 
                         <div className={Styles.card1}>
-                        <img src={Webdevelop} alt='' />   
+                        <div className={Styles.testimg1}>
+                        <img src={Webdevelop} alt='' />
+                        <img src={T02} alt='' />   
+                        </div>
                             <h3>Remote Sensing  Services</h3>
                             <p>With the accumulated experience of more then 20 years, Our team is well equipped to help you solve all possible challenges in the customer management field</p>
                         </div>
 
 
-                        <div className={Styles.card1}>
-                        <img src={Vector7} alt='' /> 
+                        <div className={Styles.card4}>
+                        <div className={Styles.testimg1}>
+                        <img src={Vector7} alt='' />
+                        <img src={T03} alt='' /> 
+                        </div>
                             <h3>Photogammetry Services</h3>
                             <p>With the accumulated experience of more then 20 years, Our team is well equipped to help you solve all possible challenges in the customer management field</p>
                       
                       </div>
 
                         <div className={Styles.card1}>
+                        <div className={Styles.testimg1}>
                             <img src={Vector8} alt='' />
+                            <img src={T04} alt='' />
+                            </div>
                             <h3>Web GIS Services</h3>
                             <p>With the accumulated experience of more then 20 years, Our team is well equipped to help you solve all possible challenges in the customer management field</p>
                       
                         </div>
 
-                        <div className={Styles.card1}>
+                        <div className={Styles.card5}>
+                        <div className={Styles.testimg1}>
                             <img src={Vector8} alt='' />
+                            <img src={T04} alt='' />
+                            </div>
                             <h3>Drone Services</h3>
                             <p>With the accumulated experience of more then 20 years, Our team is well equipped to help you solve all possible challenges in the customer management field</p>
                       
                            </div>
 
-                        <div className={Styles.card1}>
+                        <div className={Styles.card6}>
+                        {/* <div className={Styles.testimg1}>
                             <img src={Vector9} alt='' />
+                            <img src={T06} alt='' />
+                            </div>
                             <h3>Modernization</h3>
-                            <p>With the accumulated experience of more then 20 years, Our team is well equipped to help you solve all possible challenges in the customer management field</p>
+                            <p>With the accumulated experience of more then 20 years, Our team is well equipped to help you solve all possible challenges in the customer management field</p> */}
                          </div>
 
 
@@ -92,28 +117,41 @@ const Service_main = () => {
                 <div className={Styles.harbour}>
                         <h1 className={Styles.heading}>Our IT Services</h1>
                     <div className={Styles.main}>
+
                         <div className={Styles.card2}>
+                        <div className={Styles.testimg1}>
                         <img src={Webdevelop} alt='' /> 
+                        <img src={T01} alt='' />
+                        </div>
                             <h3>Web Development Services</h3>
                             <p>With the accumulated experience of more than 20 years, our team is well equipped to help you solve all possible challenges in the customer management field... </p>
                         </div>
 
-                        <div className={Styles.card2}>
-                        <img src={Vector7} alt='' /> 
+                        <div className={Styles.card3}>
+                        <div className={Styles.testimg1}>
+                        <img src={Vector7} alt='' />
+                        <img src={T02} alt='' />
+                        </div> 
                             <h3>Mobile Application Development</h3>
                             <p>With global competition and greater customer expectations companies look forward to enhance customer relationship and experience,many business entities..</p>
                         </div>
 
 
                         <div className={Styles.card2}>
+                        <div className={Styles.testimg1}>
                         <img src={Vector8} alt='' />
+                        <img src={T03} alt='' />
+                        </div> 
                             <h3>CRM/ERP</h3>
                             <p>At custom CRM consulting we understand your current capabilities, map your organisation's desired future state, and then recommend CRM implentation</p>
                         </div>
 
                         
                          <div className={Styles.card2}>
+                         <div className={Styles.testimg1}>
                          <img src={Vector8} alt='' />
+                         <img src={T04} alt='' />
+                        </div> 
                             <h3>IT Consulting Services</h3>
                             <p>At custom CRM consulting we understand your current capabilities,map your organisation's desired future state, and then recommend CRM implementation</p>
                         </div>

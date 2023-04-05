@@ -316,4 +316,8 @@ height: 368px;
 
 }
 
+.testimg1 {
+    display: flex;
+    gap: 100px;
+}
 

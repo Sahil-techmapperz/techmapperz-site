@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom'
 import Styles from "./Web_GIS.module.css";
 import Geospatial_Mapping from '../../Photos/Geospatial_Mapping.png';
 import Geo_health from '../../Photos/Geo_health.png';
+import WebGis1 from '../../Photos/WebGis1.png';
+import WebGis2 from '../../Photos/WebGis2.png';
 const Web_GIS = () => {
     useEffect(() => {
         const options = {
@@ -26,7 +28,7 @@ const Web_GIS = () => {
                         <div className={`${Styles.card} ${Styles.card_one}`}>
                             <div className={`${Styles.Image} ${Styles.Image_1}`}>
                                 <h1>Geospatial programming & Web Map Development</h1>
-                                <img src={Geospatial_Mapping} alt='' />
+                                <img src={WebGis1} alt='' />
                             </div>
 
                             <div className={Styles.details}>
@@ -78,7 +80,7 @@ const Web_GIS = () => {
                             </div>
 
                             <div className={`${Styles.Image} ${Styles.Image_1}`}>
-                                <img src={Geo_health} alt='' />
+                                <img src={WebGis2} alt='' />
                             </div>
 
                             <div>

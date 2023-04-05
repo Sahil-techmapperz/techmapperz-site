@@ -9,7 +9,12 @@ import Consulting6 from '../../Photos/Consulting6.png'
 import Consulting7 from '../../Photos/Consulting7.png'
 import Consulting8 from '../../Photos/Consulting8.png'
 import Consulting9 from '../../Photos/Consulting9.png'
-// import Consulting10 from '../../Photos/Consulting10.png'
+import T01 from '../../Photos/01.png';
+import T02 from '../../Photos/02.png';
+import T03 from '../../Photos/03.png';
+import T04 from '../../Photos/04.png';
+
+
 
 import Combind1 from '../../Photos/Combind1.png';
 import Combind3 from '../../Photos/Combind3.png'
@@ -114,26 +119,35 @@ const It_consulting = () => {
                     </div>
                     <div className={Styles.main}>
                         <div className={Styles.card1}>
+                        <div className={Styles.testimg1}>
+                        <img src={T01} alt='' />
+                        </div> 
                             <h3>Reliability</h3>
                             <p>With the accumulated experience of more than 20 years, our team is well equipped to help you solve all possible challenges in the customer management field..</p>
                         </div>
 
                         <div className={Styles.card2}>
-
+                        <div className={Styles.testimg1}>
+                        <img src={T02} alt='' />
+                        </div> 
                             <h3>Revenue</h3>
                             <p>With global competition and greater customer expectations companies look farward to enhance customer relationship and experience,many business entities .</p>
                         </div>
 
 
                         <div className={Styles.card3}>
-
+                        <div className={Styles.testimg1}>
+                        <img src={T03} alt='' />
+                        </div> 
                             <h3>Robust</h3>
                             <p>At custom CRM consulting we understand your current capabilities,map your organisation's desired future state, and then recommend CRM implementation</p>
                         </div>
 
 
                         <div className={Styles.card4}>
-
+                        <div className={Styles.testimg1}>
+                        <img src={T04} alt='' />
+                        </div> 
                             <h3>Skilled Management</h3>
                             <p>CRM integration is connecting all the applications you use to run your business to customer information, it's a 360-degree view of customer data that can be seamlessly..</p>
                         </div>
