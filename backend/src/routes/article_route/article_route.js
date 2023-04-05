@@ -256,12 +256,12 @@ article_route.get('/posts', async (req, res) => {
     const Perpage = req.query.perpage ? parseInt(req.query.perpage) : 5;
     const authors = await fetchAuthors();
     const totalPostCount = await fetchTotalPostCount();
-    const totalPages = Math.ceil(totalPostCount / perPage);
+    const totalPages = Math.ceil(totalPostCount / Perpage);
     const posts = await fetchPosts(page,Perpage);
     const postData = extractPostData(posts, authors);
     res.json({
       page,
-      perPage,
+      Perpage,
       totalPostCount,
       totalPages,
       posts: postData,
