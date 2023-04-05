@@ -75,7 +75,7 @@ const Contact = () => {
             return;
         }else{
            setHasError({});
-           fetch("http://localhost:8080/contact", {
+           fetch(`${process.env.REACT_APP_Backend_baseUrl}/contact`, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(contactdata)

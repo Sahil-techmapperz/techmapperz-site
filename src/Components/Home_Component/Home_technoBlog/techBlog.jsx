@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import FormattedDateComponent from "./formatDate";
 import Styles from "./techBlog.module.css"
 
-const TechBlog = ({postdata=[]}) => {
+const TechBlog = ({postdata}) => {
 
 
 
@@ -35,7 +35,7 @@ const TechBlog = ({postdata=[]}) => {
                 <div className={Styles.subMain_2}>
                     <div className={Styles.tabet}>
                         <table border="1" >
-                            {postdata.map(post=>{
+                            {postdata&&postdata.map(post=>{
                                 return(
                                     <tr>
                                 <th className={Styles.row_1}>
@@ -50,21 +50,7 @@ const TechBlog = ({postdata=[]}) => {
                             })}
                             
 
-                            {/* <tr>
-                                <th className={Styles.row_1}>22-feb-2022</th>
-                                <th className={Styles.row_2}>
-                                    <h3>Use of Drones in Minning Sector</h3>
-                                    <p>Developing Profit Base Quarry Operation and Improving Warker's Safety in Minig by using Drone Data</p>
-                                </th>
-                            </tr>
-
-                            <tr>
-                                <th className={Styles.row_1}>23-feb-2022</th>
-                                <th className={Styles.row_2}>
-                                    <h3>GIS:A New Technology</h3>
-                                    <p>Application of GIS as a new edge technology in Land Record Management System</p>
-                                </th>
-                            </tr> */}
+                           
                         </table>
                     </div>
 
