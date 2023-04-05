@@ -6,6 +6,13 @@ import Combind1 from '../../Photos/Combind1.png';
 import Combind4 from '../../Photos/Combind4.png'
 import Combind3 from '../../Photos/Combind3.png';
 import Webdevelop from '../../Photos/Webdevelop.png'
+import T01 from '../../Photos/01.png'
+import T02 from '../../Photos/02.png'
+import T03 from '../../Photos/03.png'
+import T04 from '../../Photos/04.png'
+import T06 from '../../Photos/06.png'
+
+
 
 
 
@@ -105,11 +112,17 @@ const Mobile_development = () => {
                     </div>
                     <div className={styles.design}>
                         <div className={styles.card1}>
+                        {/* <div className={styles.testimg1}>
+                        <img src={T01} alt='' />
+                        </div>  */}
                             <h3>Market to Study</h3>
                             <p>We generelly conduct market research in determining your exact requirements and what you rivals are doing and what are their strengths and shortcomming...</p>
                         </div>
 
                         <div className={styles.card2}>
+                        {/* <div className={styles.testimg1}>
+                        <img src={T02} alt='' />
+                        </div>  */}
 
                             <h3>Generate Sales</h3>
                             <p>We focus an newer avenues in the marketplace for the execution of mobile applications to genetdte sales prograssive levels within a short span of time.</p>
@@ -117,6 +130,9 @@ const Mobile_development = () => {
 
 
                         <div className={styles.card3}>
+                        {/* <div className={styles.testimg1}>
+                        <img src={T03} alt='' />
+                        </div>  */}
 
                             <h3>Innovative User Interface</h3>
                             <p>Our design team conceptualizes the most hassle-free user interface,we take special care to make it user-friendly.</p>
@@ -124,6 +140,9 @@ const Mobile_development = () => {
 
 
                         <div className={styles.card4}>
+                        {/* <div className={styles.testimg1}>
+                        <img src={T04} alt='' />
+                        </div>  */}
 
                             <h3>Business Solution</h3>
                             <p>According to your need and market reserch, we design a framework for your app,we keep in mind all your requirenments and what we have learned from the market reserch.</p>
@@ -131,6 +150,9 @@ const Mobile_development = () => {
 
 
                         <div className={styles.card5}>
+                        {/* <div className={styles.testimg1}>
+                        <img src={T06} alt='' />
+                        </div>  */}
 
                             <h3>Brand Value</h3>
                             <p>Mobile apps are a one-stop point for getting all the relevent information related to the brand as well as showcasing the products and services.Thus increasing the overallBrand Value.</p>
@@ -138,6 +160,9 @@ const Mobile_development = () => {
 
 
                         <div className={styles.card6}>
+                        {/* <div className={styles.testimg1}>
+                        <img src={T06} alt='' />
+                        </div>  */}
 
                             <h3>Revenue</h3>
                             <p>We take your suggections to incorporate in-app advertising, in-app purchases, and paid apps are some of the most common app monetization tactics.</p>

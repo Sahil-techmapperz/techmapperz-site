@@ -208,10 +208,10 @@
     grid-template-columns: repeat(3, 350px);
 }
 
-/* .class2{
-    
-    text-align: center;
-} */
+.testimg1 {
+    display: flex;
+    gap: 100px;
+}
 
 .harbour {
     display: flex;

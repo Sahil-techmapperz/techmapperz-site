@@ -5,6 +5,8 @@ import Geospatial_Mapping from '../../Photos/Geospatial_Mapping.png'
 import Geo_health from '../../Photos/Geo_health.png'
 // import Geogoverence from '../../Photos/Geogoverence.png'
 import GIS_Suvey from '../../Photos/GIS_Suvey.png'
+import Photogametry1 from '../../Photos/Photogametry1.png';
+import Photogametry2 from '../../Photos/Photogametry2.png';
 
 
 const Photogrammetry_Services = () => {
@@ -35,7 +37,7 @@ const Photogrammetry_Services = () => {
                 <div className={styles.contaner}>
                     <h1 className={styles.heading}>Aerial Triangulation &<br/> Ortho Photo generation</h1>
                     <div className={styles.product}>
-                        <img src={Geospatial_Mapping} alt="Geospatial_Mapping.png" />
+                        <img src={Photogametry1 } alt="Photogametry1.png" />
                         <div className={styles.product_info}>
                         <p>Aerial Triangulation in Photogrammetry is a method of determining and calculating 3-dimensional object coordinates by photogrammetric means, by using photographs exposed from different positions, covering the same object. We follow a highly automated aerial triangulation method that minimizes the manual intervention and increases accuracy towards a combination of point selection, point measurement, point transfer and block adjustment in a single process.</p>
                               
@@ -71,7 +73,7 @@ const Photogrammetry_Services = () => {
                             </div></Link>
                         </div>
                         <div>
-                            <img src={Geo_health} className={styles.Img_two} alt="Geospatial_Mapping.png" />
+                            <img src={Photogametry2} className={styles.Img_two} alt="Photogametry2.png" />
                         </div>
                     </div>
                 </div>

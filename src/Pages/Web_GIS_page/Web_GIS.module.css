@@ -82,14 +82,14 @@
 
 .card_one div img {
     width: 480px;
-    height: 332px;
+    height: 650px;
 }
 
 
 .card_one .details {
     width: 100%;
     padding-right: 0;
-    margin-top: 7rem;
+    margin-top: 4rem;
     position: relative;
 }
 
@@ -122,7 +122,7 @@
 
 .card_two img {
     width: 548px;
-    height: 354px;
+    height: 500px;
     object-fit: cover;
 }
 
