@@ -64,7 +64,7 @@ const Career = () => {
       formData.append("file", resume);
       formData.append("data", JSON.stringify(careerdata));
 
-      axios.post("http://localhost:8080/career", formData).then((res) => {
+      axios.post(`${process.env.REACT_APP_Backend_baseUrl}/career`, formData).then((res) => {
        
       }).catch(err => {
        
@@ -83,7 +83,7 @@ const Career = () => {
 
 
   const GetJodData = async () => {
-    const response = await axios.get('http://localhost:8080/jobs');
+    const response = await axios.get(`${process.env.REACT_APP_Backend_baseUrl}/jobs`);
    
     setjobsdata(response.data)
   };
@@ -125,10 +125,7 @@ const Career = () => {
             <img src={career_idea_1} alt='' />
             <h3>Possibilities unmatched</h3>
             <p>With techmapperZ being a start up with business interests and prospects in many IT fields, weather its. </p>
-            {/* <Link to={"/contact"}> <div className={Styles.Submit_btn}>
-              <div></div>
-              <h2>Get in touch</h2>
-            </div></Link> */}
+            
           </div>
           <div className={Styles.card}>
             <img src={career_idea_2} alt='' />

@@ -15,7 +15,7 @@ function Article() {
     const fetchPosts = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:8080/article/posts?page=${page}`
+          `${process.env.REACT_APP_Backend_baseUrl}/article/posts?page=${page}`
         );
         setPosts(response.data.posts);
         setTotalPages(response.data.totalPages);

@@ -20,6 +20,7 @@ import Home_9 from '../../Photos/Home/Home_9.png';
 import Drone_gif from '../../Photos/Home/drone.gif';
 import App_development from '../../Photos/Home/App_development.gif';
 import Multi_carousel from '../../Components/Home_Component/Multi_carousel/Multi_carousel';
+import TechBlog from '../../Components/Home_Component/Home_technoBlog/techBlog';
 
 const slides = [
     {
@@ -51,15 +52,20 @@ const slides = [
 
 const Home = () => {
     const[Testimonial,setTestimonial]=useState([]);
-
+    const[TechBlogpost,setTechBlog]=useState([]);
 
 
 
     useEffect(()=>{
-      fetch('http://localhost:8080/Testimonial')
+      fetch(`${process.env.REACT_APP_Backend_baseUrl}/Testimonial`)
                 .then(res => res.json())
                 .then(data => {
                     setTestimonial(data);
+                });
+      fetch(`${process.env.REACT_APP_Backend_baseUrl}/article/posts?perpage=3`)
+                .then(res => res.json())
+                .then(data => {
+                    setTechBlog(data.posts);
                 });
     },[])
 
@@ -72,6 +78,10 @@ const Home = () => {
         };
         window.scrollTo(options);
       }, []);
+
+
+
+
     return (
         <div>
             <section className={Styles.home_first_part}>
@@ -103,7 +113,7 @@ const Home = () => {
                         <div className={Styles.info}>
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
                             <div className={Styles.know_more}>
-                                <Link to={"#"}> <div className={Styles.know_more_btn}>
+                                <Link to={"/contact"}> <div className={Styles.know_more_btn}>
                                     <div></div>
                                     <h2>Know More</h2>
                                 </div></Link>
@@ -125,7 +135,7 @@ const Home = () => {
                         </div>
                     </div>
                     <div className={`${Styles.know_more} ${Styles.View_All_Services}`}>
-                        <Link to={"#"}> <div className={Styles.know_more_btn}>
+                        <Link to={"/service"}> <div className={Styles.know_more_btn}>
                             <div></div>
                             <h2>View All Services</h2>
                         </div></Link>
@@ -180,7 +190,7 @@ const Home = () => {
                                 delivers cutting edge solutions,helping not just Fortune 500
                                 companies and enterprise clients on their digital evolution journey.</p>
                             <div className={Styles.know_more }>
-                                <Link to={"#"}> <div className={Styles.know_more_btn}>
+                                <Link to={"/service"}> <div className={Styles.know_more_btn}>
                                     <div></div>
                                     <h2>View All Services</h2>
                                 </div></Link>
@@ -199,50 +209,11 @@ const Home = () => {
                         <h1>Our Brand Partners</h1>
                     </div>
                 </div>
-                <div className={Styles.our_blog}>
-                    <div className={Styles.our_blog_left}>
-                        <p>Our Blog</p>
-                        <h1>Latest News & Articles</h1>
-                    </div>
-                    <div className={Styles.our_blog_right}>
-                        <div className={Styles.our_blog_right_contaner}>
-                        <div className={Styles.our_blog_right_oen}>
-                            <p>20-feb-2022</p>
-                        </div>
-                        <div className={Styles.our_blog_right_two}>
-                            <h1>Data Automization</h1>
-                            <p>Business Inteligience and Data Analytics with the help of AI and MI</p>
-                        </div>
-                        </div>
 
-                        <div className={Styles.our_blog_right_contaner}>
-                        <div className={Styles.our_blog_right_oen}>
-                            <p>20-feb-2022</p>
-                        </div>
-                        <div className={Styles.our_blog_right_two}>
-                            <h1>Data Automization</h1>
-                            <p>Business Inteligience and Data Analytics with the help of AI and MI</p>
-                        </div>
-                        </div>
 
-                        <div className={Styles.our_blog_right_contaner}>
-                        <div className={Styles.our_blog_right_oen}>
-                            <p>20-feb-2022</p>
-                        </div>
-                        <div className={Styles.our_blog_right_two}>
-                            <h1>Data Automization</h1>
-                            <p>Business Inteligience and Data Analytics with the help of AI and MI</p>
-                        </div>
-                        </div>
-                        <div className={`${Styles.know_more} ${Styles.our_blog_know_more}`}>
-                                <Link to={"#"}> <div className={Styles.know_more_btn}>
-                                    <div></div>
-                                    <h2>Know More</h2>
-                                </div></Link>
-                            </div>
+                <TechBlog postdata={TechBlogpost&&TechBlogpost}/>
 
-                    </div>
-                </div>
+
                 <div className={Styles.Testimonial}>
                     <p>Testimonial</p>
                     <h1>What our Clients Say</h1>
