@@ -7,6 +7,7 @@
 
 .article {
   background: #181818;
+  width: 100%
 }
 
 .top_part {
@@ -50,20 +51,32 @@
 .card{
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    background-color: white;
+    background-color: transparent;
     padding: 15px;
+}
+
+
+.card .Img{
+  width: 100%;
+  height: 200px;
+  border: none;
+  overflow: hidden;
 }
 
 .card img {
   width: 100%;
+  height: 100%;
   box-sizing: border-box;
+  transition: all 1s ease-in-out;
 }
-/* .card img:{
+
+.card img:hover{
+cursor: pointer;
   transform: scale(1.5);
-} */
+}
+
 
 .card h2{
-  color: black;
   font-size: 20px;
   font-weight: 600;
   text-decoration: underline;
@@ -71,9 +84,7 @@
 }
 
 
-.card .Article_details .date{
-  color: black;
-}
+
 
 
 .create_btn button {
@@ -86,26 +97,9 @@
   cursor: pointer;
 }
 
-/* .readmore_btn button  {
-    width: 130px;
-    height: 50px;
-    border-radius: 10px;
-    border: none;
-    background: #396ba9;
-    font-size: 20px;
-    cursor: pointer;
-} */
 
 
-
-
-/* body {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-  } */
-
-h1,
+/* h1,
 h2,
 h3 {
   margin: 1em 0;
@@ -221,7 +215,7 @@ a:hover {
 .RecentPosts ul,
 .RelatedPosts ul {
   padding-left: 20px;
-}
+} */
 
 
 .readmore_btn {
@@ -242,7 +236,7 @@ a:hover {
 
 
 .pagination {
-  width: 100vw;
+  width: 100%;
   height: 100px;
   display: flex;
   gap: 10px;

@@ -54,6 +54,15 @@ const handalesearchsubmit=()=>{
   setsearchQuery("");
 }
 
+useEffect(() => {
+  const options = {
+    top: 0,
+    left: 0,
+    behavior: 'smooth'
+  };
+  window.scrollTo(options);
+}, [postId]);
+
   if (error) {
     return <p>{error}</p>;
   }

@@ -2,24 +2,23 @@
     display: flex;
     background-color: #333;
     position: relative;
+    width: 100%;
 }
 
 
 
 .SinglePost {
     width: 80%;
-    /* margin: 0 auto; */
     background-color: #333;
-    padding: 2rem 5rem;
+    padding: 3rem 5rem;
   }
 
   .related_recentpost{
-    overflow-y: scroll;
-    padding-top: 5rem;
+    padding-top: 6rem;
     width: 20%;
-    height: 600px;
+    height: 100%;
     background-color: #333;
-    position: fixed;
+    position: absolute;
     top:0;
     right: 0;
   }
@@ -196,9 +195,22 @@
     margin-bottom: 40px;
   }
   
-  .RecentPosts ul,
-  .RelatedPosts ul {
+  .RecentPosts ul div,
+  .RelatedPosts ul div{
     padding-left: 20px;
+    list-style: none;
+    display: flex;
+  }
+  .RecentPosts ul a,
+  .RelatedPosts ul a{
+    color: #9c9c9c;
+    text-decoration: none;
+  }
+  .RecentPosts ul img,
+  .RelatedPosts ul img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
   }
   
   
