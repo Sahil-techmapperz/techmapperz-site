@@ -202,6 +202,7 @@ const Web_Development = () => {
                     <div className={Styles.project}>
 
 
+
                         <div className={Styles.card5}>
                         <div className={Styles.testimg1}>
                         <img src={Webdevelop} alt='' />
@@ -211,6 +212,7 @@ const Web_Development = () => {
                             <h1>Flexibility</h1>
                             <p>We understand your need,and sometime we know that it can we time critical yet should affordable,that is why we have custom designed package to suit your demands of time and money.</p>
                         </div>
+
 
 
                         <div className={Styles.card5}>
@@ -224,6 +226,7 @@ const Web_Development = () => {
                         </div>
 
 
+
                         <div className={Styles.card5}>
                         <div className={Styles.testimg1}>
                         <img src={Vector8} alt='' />
@@ -235,7 +238,9 @@ const Web_Development = () => {
                         </div>
 
 
+
                         <div className={Styles.card5}>
+
                         <div className={Styles.testimg1}>
                         <img src={Vector9} alt='' />
                         <img src={T04} alt='' />

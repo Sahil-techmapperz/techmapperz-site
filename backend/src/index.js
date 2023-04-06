@@ -9,6 +9,7 @@ const article_route = require("./routes/article_route/article_route");
 const Login_route = require("./routes/Login_route/login_route");
 const Recent_login_Route = require("./routes/Recent_login_route/Recent_login_route");
 const TestimonialRoute = require("./routes/Testimonial_route/Testimonial_route");
+const BannerRoute = require("./routes/Banner_route/banner_route");
 
 
 require('dotenv').config();
@@ -25,6 +26,7 @@ app.use("/article",article_route)
 app.use("/admin",Login_route)
 app.use("/recent-logins",Recent_login_Route)
 app.use("/Testimonial",TestimonialRoute)
+app.use("/Banner",BannerRoute)
 
 
 

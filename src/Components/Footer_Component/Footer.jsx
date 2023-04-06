@@ -47,7 +47,7 @@ const Footer = () => {
     </div>
     </div>
     <div className={styles.copyright}>
-    <p>&copy; copyright 2021 by Techmapperz.com</p>
+    Copyright &copy; Techmapperz.com All Rights Reserved
     </div>
     </>
   )

@@ -19,18 +19,29 @@ function RecentPosts() {
 
     fetchRecentPosts();
   }, []);
+  useEffect(() => {
+    const options = {
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    };
+    window.scrollTo(options);
+  }, []);
 
   return (
     <div className="RecentPosts">
       <h2>Recent Posts</h2>
       <ul>
         {recentPosts.map((post) => (
+          <div>
+          {post.imgUrl&&<img src={post.imgUrl} alt=""/>}
           <li key={post.id}>
             <Link
-              to={`/post/${post.id}`}
+              to={`/singal_article/${post.id}`}
               dangerouslySetInnerHTML={{ __html: post.title }}
             />
           </li>
+          </div>
         ))}
       </ul>
     </div>

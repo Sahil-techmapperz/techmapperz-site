@@ -1,50 +1,59 @@
-.Footer{
-    width: 100vw;
+.Footer {
+    width: 100%;
     background-color: var(--primary-black-color);
+    padding: 2rem 5rem;
 }
 
 .Footer_main {
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    /* justify-content: center; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
     align-items: center;
-    padding: 40px 5rem;
     gap: 20px;
 }
 
 
-.footer_part_one{
-    width: 400px;
+.footer_part_one {
+    width: 469px;
 }
 
-.footer_part_two{
+.footer_part_two {
     width: 340px;
+    margin-left: 2rem;
 }
 
-.footer_part_three{
+.footer_part_three {
     width: 300px;
+    margin-left: 6rem;
 }
 
-.footer_part_one>p{
-    color: white;
+.footer_part_one>h1 {
+    width: 100%;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 54px;
+    letter-spacing: 0.162793px;
+    color: #FFFFFF;
 }
-.footer_part_one>a{
+
+.footer_part_one>a {
     color: white
 }
 
-.Submit_btn{
+.Submit_btn {
     position: relative;
     height: 60px;
 }
 
-.Submit_btn div{
+.Submit_btn div {
     width: 55px;
     height: 50px;
     border-radius: 50%;
     background: #396ba9;
 }
-.Submit_btn h2{
+
+.Submit_btn h2 {
     position: absolute;
     top: -0.5rem;
     left: 10px;
@@ -53,43 +62,44 @@
 
 
 
-.title{
+.title {
     padding-bottom: 15px;
 }
 
 
-.social_media_icons{
+.social_media_icons {
     display: flex;
     gap: 25px;
     font-size: 20px;
 }
-.social_media_icons a{
+
+.social_media_icons a {
     color: white;
 }
 
-.explore_content{
-    width: 85%;
-    /* border: 1px solid; */
-}
-.explore_content ul{
+
+
+.explore_content ul {
     list-style: none;
     display: grid;
-    grid-template-columns: repeat(2,130px);
+    justify-content: space-between;
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 
 }
-.explore_content a{
+
+.explore_content a {
     text-decoration: none;
     color: white;
 }
 
 
-.title{
+.title {
     font-weight: bold;
 }
 
-.copyright{
-    width: 100vw;
+.copyright {
+    width: 100%;
     height: 35px;
     background: var(--secondary-black-color);
     color: white;
@@ -102,15 +112,15 @@
 
 
 @media (max-width:1250px) {
-    .footer_part_one{
+    .footer_part_one {
         width: 300px;
     }
-    
-    .footer_part_two{
+
+    .footer_part_two {
         width: 240px;
     }
-    
-    .footer_part_three{
+
+    .footer_part_three {
         width: 200px;
     }
 }

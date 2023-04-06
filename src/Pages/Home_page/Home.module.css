@@ -150,6 +150,10 @@
     width: 400px;
 }
 
+.card_contaner .card h1:hover{
+cursor: pointer;
+}
+
 .card_contaner .card_2 {
     margin-top: 10rem;
 }
@@ -418,6 +422,9 @@
     color: #FFFFFF;
     word-wrap: break-word;
 }
+.Brand_Partners .Brand_Partners_right img{
+    margin-top: -3rem;
+}
 
 
 /* Brand Partners */
@@ -528,13 +535,13 @@
 /* Testimonial */
 
 .Testimonial{
-    width: 100%;
-    /* height: 400px; */
+    width: 1100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 2rem 5rem;
+    margin: auto;
 }
 
 
