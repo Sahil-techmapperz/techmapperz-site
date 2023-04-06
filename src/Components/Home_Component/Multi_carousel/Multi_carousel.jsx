@@ -4,8 +4,9 @@ import "react-multi-carousel/lib/styles.css";
 import "./Multi_carouel.css"
 let Images = [
     "https://techmapperz.com/images/2022/05/12/earthgenic_logo-removebg-preview.png",
-    "https://techmapperz.com/images/2022/05/11/english-faculities-logo-1.jpg",
-    "https://www.freepnglogos.com/uploads/company-logo-png/bmw-car-company-logo-png-transparent-image-3.png",
+    "https://ik.imagekit.io/ntktfi8dx/uploads/PAS.png?updatedAt=1680755047359",
+    "https://ik.imagekit.io/ntktfi8dx/uploads/Genesys-removebg-preview.png?updatedAt=1680755067922",
+    "https://ik.imagekit.io/ntktfi8dx/uploads/Earthgenic_logo.png?updatedAt=1680756167992"
 ]
 
 const responsive = {
@@ -29,6 +30,8 @@ const responsive = {
 };
 const Multi_carousel = () => {
     return (
+        <>
+        <h1 className='multi_carousel_headind'>Our happy clients</h1>
         <Carousel
             swipeable={false}
             draggable={false}
@@ -53,6 +56,7 @@ const Multi_carousel = () => {
             })}
 
         </Carousel>
+        </>
     )
 }
 

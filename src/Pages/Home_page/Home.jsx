@@ -17,42 +17,18 @@ import Home_6 from '../../Photos/Home/Home_6.png';
 import Home_7 from '../../Photos/Home/Home_7.png';
 import Home_8 from '../../Photos/Home/Home_8.png';
 import Home_9 from '../../Photos/Home/Home_9.png';
+import Cotation from '../../Photos/Home/Cotation.png';
 import Drone_gif from '../../Photos/Home/drone.gif';
 import App_development from '../../Photos/Home/App_development.gif';
 import Multi_carousel from '../../Components/Home_Component/Multi_carousel/Multi_carousel';
 import TechBlog from '../../Components/Home_Component/Home_technoBlog/techBlog';
 
-const slides = [
-    {
-        id: 1,
-        imageUrl: 'https://techmapperz.com/images/2022/05/07/frame-5.jpg',
-        caption: 'MOBILE & WEB APPLICATION DEVELOPMENT'
-    },
-    {
-        id: 2,
-        imageUrl: 'https://techmapperz.com/images/2022/05/07/business-inteligence.jpg',
-        caption: 'BUSINESS INTELLIGENCE & DATA ANALYTICS'
-    },
-    {
-        id: 3,
-        imageUrl: 'https://techmapperz.com/images/2022/05/07/drone-data-image-processing.jpg',
-        caption: 'DRONE DATA ACQUISITION & PROCESSING'
-    },
-    {
-        id: 4,
-        imageUrl: 'https://techmapperz.com/images/2022/05/08/crm-erp-solutions.jpg',
-        caption: 'ERP AND CRM SOLUTION'
-    },
-    {
-        id: 5,
-        imageUrl: 'https://techmapperz.com/images/2022/05/08/mapping-navigation.jpg',
-        caption: 'GIS MAPPING & NAVIGATION'
-    },
-];
+
 
 const Home = () => {
     const[Testimonial,setTestimonial]=useState([]);
     const[TechBlogpost,setTechBlog]=useState([]);
+    const[Techbanner,setTechBanner]=useState([]);
 
 
 
@@ -66,6 +42,11 @@ const Home = () => {
                 .then(res => res.json())
                 .then(data => {
                     setTechBlog(data.posts);
+                });
+      fetch(`http://localhost:8080/Banner`)
+                .then(res => res.json())
+                .then(data => {
+                    setTechBanner(data);
                 });
     },[])
 
@@ -95,16 +76,17 @@ const Home = () => {
                     stopOnHover={true}
 
                 >
-                    {slides.map(slide => (
+                    {Techbanner&&Techbanner.map(slide => (
                         <div key={slide.id}>
-                            <img src={slide.imageUrl} alt={slide.caption} />
-                            <p className={Styles.title}>{slide.caption}</p>
+                            <img src={slide.banner_img_url} alt={slide.caption} />
+                            <p className={Styles.title}>{slide.heading}</p>
                         </div>
                     ))}
                 </Carousel>
 
             </section>
             <section className={Styles.home_secend_part}>
+
                 <div className={Styles.features}>
                     <p className={Styles.title}>Features</p>
                     <img className={Styles.setting_icon} src={Home_4} alt='' />
@@ -123,15 +105,15 @@ const Home = () => {
                     <div className={Styles.card_contaner}>
                         <div className={Styles.card}>
                             <img src={Home_1} alt='' />
-                            <h1>IT Services</h1>
+                           <Link to={"/it_consulting"}> <h1>IT Services</h1></Link>
                         </div>
                         <div className={`${Styles.card} ${Styles.card_2}`}>
                             <img src={Home_2} alt='' />
-                            <h1>GIS Services</h1>
+                           <Link to={"/gis_service"}> <h1>GIS Services</h1></Link>
                         </div>
                         <div className={`${Styles.card} ${Styles.card_3}`}>
                             <img src={Home_3} alt='' />
-                            <h1>Drone Services</h1>
+                           <Link to={"/drone_service"}> <h1>Drone Services</h1></Link>
                         </div>
                     </div>
                     <div className={`${Styles.know_more} ${Styles.View_All_Services}`}>
@@ -177,7 +159,7 @@ const Home = () => {
                         <img className={Styles.about_img_2} src={Home_6} alt='' />
                     </div>
                     <div className={Styles.about_right}>
-                    <img className={Styles.about_us_drone} src={App_development} alt=''/>
+                    <img className={Styles.about_us_drone} src={Home_9} alt=''/>
                         <p className={Styles.title}>About Us</p>
                         <div className={Styles.about_right_contener}>
                             <h1>Why Choose Techmapperz</h1>
@@ -207,6 +189,7 @@ const Home = () => {
                     <div className={Styles.Brand_Partners_right}>
                         <p>Technology</p>
                         <h1>Our Brand Partners</h1>
+                        <img src='https://ik.imagekit.io/ntktfi8dx/uploads/Microsoft_logo_1.png?updatedAt=1680756385301' alt=''/>
                     </div>
                 </div>
 
@@ -233,7 +216,10 @@ const Home = () => {
           {Testimonial.map(data=>{
             return(
               <div className={Styles.card}>
+                <div style={{"display":"flex", "gap":"10px"}}>
+                <img src={Cotation} alt=''/>
               <h2>{data.message}</h2>
+              </div>
               <div className={Styles.client}>
                 <img src={data.avater} />
                 <div>
