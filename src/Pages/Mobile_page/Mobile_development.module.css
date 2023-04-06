@@ -84,7 +84,7 @@
     font-weight: 600;
     line-height: 54px;
     letter-spacing: 0.16px;
-    /* background: rgba(24, 24, 24, 1); */
+    background: rgba(24, 24, 24, 1);
 }
 
 .heading2{
@@ -96,7 +96,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 290px;
     background: rgba(24, 24, 24, 1);
 }
 

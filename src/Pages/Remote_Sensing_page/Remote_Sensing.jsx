@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import { Link } from 'react-router-dom';
 import Styles from "./Remote_Sensing.module.css";
 import Geospatial_Mapping from '../../Photos/Geospatial_Mapping.png';
@@ -7,6 +7,17 @@ import RemoteSence1 from '../../Photos/RemoteSence1.png';
 import RemoteSence2 from '../../Photos/RemoteSence2.png';
 
 const Remote_Sensing = () => {
+    
+    useEffect(() => {
+        const options = {
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
+        };
+        window.scrollTo(options);
+    }, []);
+
+
     return (
         <div className={Styles.Remote_Sensing}>
             <div className={Styles.top}>

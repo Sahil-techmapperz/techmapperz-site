@@ -22,7 +22,7 @@ const GIS_Services = () => {
         <div className={Styles.service}>
             <section className={Styles.first_part}>
                 <h1>GIS Services</h1>
-                <p>Services / GIS Services</p>
+                <p>Services / Geospatial /GIS Services</p>
             </section>
 
 

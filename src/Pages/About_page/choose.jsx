@@ -1,5 +1,6 @@
 import React from "react";
 import styles from './choose.module.css';
+import Aboutus3 from '../../Photos/Aboutus3.png';
 import {
     Accordion,
     AccordionItem,
@@ -19,11 +20,12 @@ const Choose = () => {
             <section className={styles.first_part}>
                 <div className={styles.first_part_main}>
 
-                    <div className={styles.video_contaner}>
+                    {/* <div className={styles.video_contaner}>
                         <video autoplay controls loop muted>
                             <source src="https://techmapperz.com/media/videos/2022/07/04/whatsapp-video-2022-07-04-at-10.57.43-am.mp4" type="video/mp4"></source>
                         </video>
-                    </div>
+                    </div> */}
+                    <img src={Aboutus3} />
 
                     <div className={styles.company_info}>
                         <h2 className={styles.heading}>Why Choose Techmapparz</h2>
@@ -57,10 +59,7 @@ const Choose = () => {
                                     </AccordionButton>
                                 
                                 <AccordionPanel  border={"1px solid"} pb={4}>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                    commodo consequat.
+                                  This is the first and foremost step in delivering your project ahead of your expection, though we are driven by results, we never let that hamper our course of understanding you and requirement, we ensure that our research is onto every vertical that involves the company competitors, target market and customer psychographics, this is critical and crucial in our further action plan.
                                 </AccordionPanel>
                             </AccordionItem>
 
@@ -74,10 +73,7 @@ const Choose = () => {
                                     </AccordionButton>
                                 
                                 <AccordionPanel border={"1px solid"} pb={4}>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                    commodo consequat.
+                                   We have a talent pool to make any company jealous, and we use this talent pool to do the creation in such a way it serves our mission statement "simple solution for complex scenarios". what our team creates not just fills the vacuum of your requirenment. But also ensure that the solution remains simple while doing so.in the process also ensure that we remain committed to the budget and deadline.. 
                                 </AccordionPanel>
                             </AccordionItem>
                             <AccordionItem  border={"none"}>
@@ -90,10 +86,7 @@ const Choose = () => {
                                     </AccordionButton>
                                 
                                 <AccordionPanel  border={"1px solid"} pb={4}>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                    commodo consequat.
+                                    
                                 </AccordionPanel>
                             </AccordionItem>
 
@@ -107,10 +100,7 @@ const Choose = () => {
                                     </AccordionButton>
                                 
                                 <AccordionPanel border={"1px solid"} pb={4}>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                    commodo consequat.
+                                    
                                 </AccordionPanel>
                             </AccordionItem>
 

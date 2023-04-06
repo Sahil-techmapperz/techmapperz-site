@@ -31,7 +31,8 @@ const Photogrammetry_Services = () => {
 
             <section className={styles.secand_part}>
                 <div className={styles.info}>
-                <p>Photogrammetry is the process to obtain dependable information and measurements of physical objects from photographs and use them for the development of maps, drawings, or 3D models of terrains.</p>                    <p>Aerial images require pre- and post-processing using Photogrammetry before they can be used to extract valuable geo-data. Techmapperz offers the following Photogrammetry services</p>
+                <p>Photogrammetry is the process to obtain dependable information and measurements of physical objects from photographs and use them for the development of  maps, drawings, or 3D models of terrains.</p>             
+                <p>Aerial images require pre- and post-processing using Photogrammetry before they can be used to extract valuable geo-data. Techmapperz offers the following Photogrammetry services</p>
 
                   </div>
                 <div className={styles.contaner}>
@@ -60,7 +61,7 @@ const Photogrammetry_Services = () => {
                             bounces off the ground and back to the sensor to obtain the elevtion of the Earth's surface.We use sophisticated post-processing tools and methods
                             to detrct errors and anamalies in DMT.The final delivery is in a client-specific format.Common uses of models include:</p>
 
-                            <ul>
+                            <ul className={styles.project} >
                                <li>Extracting terrain counter</li>
                                 <li>Creation of relief maps</li>
                                <li>3D visualitions of the terrain</li>
