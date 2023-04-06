@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Styles from "./Article.module.css";
 import { Link } from 'react-router-dom';
-import Moment from 'react-moment';
+import moment from 'moment';
 function Article() {
   const [posts, setPosts] = useState([]);
   const [error, setError] = useState(null);
@@ -15,7 +15,7 @@ function Article() {
     const fetchPosts = async () => {
       try {
         const response = await axios.get(
-          `${process.env.REACT_APP_Backend_baseUrl}/article/posts?page=${page}`
+          `${process.env.REACT_APP_Backend_baseUrl}/article/posts?page=${page}&&perpage=6`
         );
         setPosts(response.data.posts);
         setTotalPages(response.data.totalPages);
@@ -65,13 +65,13 @@ function Article() {
       <div className={Styles.contaner}>
         {posts && posts.map(post => (
           <div className={Styles.card} key={post.id}>
-            <img src={post.imgUrl && post.imgUrl} alt="" />
+            <div className={Styles.Img}>{post.imgUrl&&<img src={post.imgUrl && post.imgUrl} alt="" />}</div>
             <div className={Styles.Article_details}>
              <Link  to={`/singal_article/${post.id}`}> <h2 title={post.title}>{post.title}</h2></Link>
-
+            <h1>- By {post.author.name}</h1>
               
               {/* <div dangerouslySetInnerHTML={{ __html: post.description.split(/(<[^>]+>)/)[2] }} /> */}
-              {/* <div style={{"color":"black"}}><Moment fromNow>{post.date.split("T")[0]}</Moment></div> */}
+              <div>{moment(post.date.split("T")[0]).fromNow()}</div>
               <Link className={Styles.readmore_btn} to={`/singal_article/${post.id}`}><button>Read more...</button></Link>
             </div>
           </div>
