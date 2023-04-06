@@ -37,7 +37,7 @@ const Web_Development = () => {
         <div className={Styles.development}>
             <section className={Styles.first_part}>
                 <h1>Website Development</h1>
-                <p>Service / IT /Website Development</p>
+                <p>Service / IT Services / Website Development</p>
             </section>
 
 
@@ -199,10 +199,11 @@ const Web_Development = () => {
 
                 <div className={Styles.harbour}>
                     <h3 className={Styles.heading}>Why Choose Techmapperz for your Development</h3>
-                    <div className={Styles.design}>
+                    <div className={Styles.project}>
 
 
-                        <div className={Styles.card1}>
+
+                        <div className={Styles.card5}>
                         <div className={Styles.testimg1}>
                         <img src={Webdevelop} alt='' />
                         <img src={T01} alt='' />
@@ -213,7 +214,8 @@ const Web_Development = () => {
                         </div>
 
 
-                        <div className={Styles.card2}>
+
+                        <div className={Styles.card5}>
                         <div className={Styles.testimg1}>
                         <img src={Vector7} alt='' />
                         <img src={T02} alt='' />
@@ -224,7 +226,8 @@ const Web_Development = () => {
                         </div>
 
 
-                        <div className={Styles.card3}>
+
+                        <div className={Styles.card5}>
                         <div className={Styles.testimg1}>
                         <img src={Vector8} alt='' />
                         <img src={T03} alt='' />
@@ -235,7 +238,9 @@ const Web_Development = () => {
                         </div>
 
 
-                        <div className={Styles.card4}>
+
+                        <div className={Styles.card5}>
+
                         <div className={Styles.testimg1}>
                         <img src={Vector9} alt='' />
                         <img src={T04} alt='' />

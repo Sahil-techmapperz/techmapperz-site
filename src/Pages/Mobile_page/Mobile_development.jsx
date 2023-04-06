@@ -21,7 +21,7 @@ const Mobile_development = () => {
         <div className={styles.Mobile_development}>
             <section className={styles.first_part}>
                 <h1>Mobile Application Development</h1>
-                <p>Service / IT /Mobile Application Development</p>
+                <p>Service / IT Services / Mobile Application Development</p>
             </section>
 
 
@@ -34,7 +34,7 @@ const Mobile_development = () => {
                     <div className={styles.product}>
                         <div className={styles.product_info}>
                             <p>We provide IOS and A+ndroid mobile application development services to loverage mobile technology for your business; we provide IOS and Android mobile application development services </p>
-                            <h1>Android App Development</h1>
+                            <h2>Android App Development</h2>
                             <ul>
                                 <li>Anrroid Mobile App Development</li>
                                 <li>Android TV App Development</li>
@@ -58,7 +58,8 @@ const Mobile_development = () => {
                         </div>
                    
                         <div className={styles.product_info}>
-                        <h1 className={styles.heading2}>iOS App Development</h1>
+                        
+                        <h1  className={styles.heading1}>iOS App Development</h1>
                           
                             <ul>
                                 <li>iphone App Development</li>
@@ -160,9 +161,9 @@ const Mobile_development = () => {
 
 
                         <div className={styles.card6}>
-                        {/* <div className={styles.testimg1}>
                         <img src={T06} alt='' />
                         </div>  */}
+
 
                             <h3>Revenue</h3>
                             <p>We take your suggections to incorporate in-app advertising, in-app purchases, and paid apps are some of the most common app monetization tactics.</p>

@@ -84,7 +84,7 @@ const CRM_pages = () => {
                         <img src={Vector9} alt='' />
                         <img src={T04} alt='' />
                         </div> 
-                        <img src={Vector9} alt='' />
+                       
                         <h3>CRM Integration</h3>
                         <p>CRM integration is connecting all the applications you use to run your business to customer Information,It's a 360-degree view of customer data that can be seamlessly...Know More </p>
                        
@@ -137,7 +137,7 @@ const CRM_pages = () => {
 
                           <div className={Styles.card9}>
                           <img src={Combind1} alt='' />
-                             <h3>Strategic</h3>
+                             <h2>Strategic</h2>
                              <p>This is a market study CMR, which helps you to understand and fellow market trends and demands, crucial for the customer demand supply efficiency.</p>
                          </div>
 

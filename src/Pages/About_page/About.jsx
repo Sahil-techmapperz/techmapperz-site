@@ -68,7 +68,7 @@ const About = () => {
 
               <div className={styles.Mission}>
                 <img className={styles.Mission_part_one} src={Career4} />
-                <h2 className={styles.heading}>Mission</h2>
+                <h2 className={styles.heading}> Our Mission</h2>
                 <p>We at Techmapperz, understand that each organisation is different, and so are their challenges, so when we tailor
                   solutions, we ensure that it is as simplified as it can be. Our mission is  simplified solutions for complex problems.</p>
                 <Link to={"/contact"}> <div className={styles.Submit_btn}>
@@ -80,7 +80,7 @@ const About = () => {
               <div className={styles.Vision}>
                 <div className={styles.subVission}>
                   <img className={styles.vission_one} src={Career5} />
-                  <h2 className={styles.heading}>Vision</h2>
+                  <h2 className={styles.heading}> Our Vision</h2>
                   <p>With technology becoming the most important part of our day to day life, we are driven by the commitment to deliver
                     the best of IT solutions, to be a trusted provider of end-to-end IT services and solutions to businesses globally.</p>
                   <Link to={"/contact"}> <div className={styles.Submit_btn}>

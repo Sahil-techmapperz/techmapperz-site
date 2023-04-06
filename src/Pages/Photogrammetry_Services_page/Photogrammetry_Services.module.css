@@ -41,6 +41,7 @@
     width: 90%;
     margin: auto;
     background: rgba(24, 24, 24, 1);
+    
 }
 
 .info {
@@ -48,6 +49,12 @@
     flex-direction: column;
     background: none;
     background: rgba(24, 24, 24, 1);
+
+}
+.info .p {
+text-align: center;
+    justify-content: center;
+    align-items: center; 
 }
 
 .info>p {
@@ -97,6 +104,10 @@
     margin-top: 50px;
     width: 700px;
 
+}
+
+.project {
+    margin-left: 20px;
 }
 
 .product .Img_three {

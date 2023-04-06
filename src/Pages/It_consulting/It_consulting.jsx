@@ -51,7 +51,6 @@ const It_consulting = () => {
                 <div className={Styles.newmain}>
 
                     <div className={Styles.design}>
-
                         <div className={Styles.card}>
                             <img src={Consulting1} alt='' />
                             <h3>Infrastructure</h3>
@@ -75,7 +74,7 @@ const It_consulting = () => {
                         </div>
 
                         <div className={Styles.card}>
-                            <img src={Consulting3} alt='' />
+                            <img className={Styles.para2}  src={Consulting3} alt='' />
                         </div>
 
                         <div className={Styles.card}>
@@ -104,7 +103,7 @@ const It_consulting = () => {
                         </div>
 
                         <div className={Styles.card}>
-                            <img src={Consulting3} alt='' />
+                            <img className={Styles.para2} src={Consulting3} alt='' />
                         </div>
 
                     </div>
@@ -114,41 +113,47 @@ const It_consulting = () => {
 
                 <div className={Styles.harbour}>
                     <div>
-                        <h1 className={Styles.heading1}>Why Choose <br/>Techmapperz <br/> for your IT Services?</h1>
-                     <img src={Consulting3} alt='' /> 
+                        <h1 className={Styles.heading}>Why Choose <br/>Techmapperz <br/> for your IT Services?</h1>
+                     <img className={Styles.para1} src={Consulting3} alt='' /> 
                     </div>
                     <div className={Styles.main}>
                         <div className={Styles.card1}>
                         <div className={Styles.testimg1}>
+
+                        <h3>Reliability</h3>
                         <img src={T01} alt='' />
                         </div> 
-                            <h3>Reliability</h3>
                             <p>With the accumulated experience of more than 20 years, our team is well equipped to help you solve all possible challenges in the customer management field..</p>
                         </div>
 
                         <div className={Styles.card2}>
                         <div className={Styles.testimg1}>
+
+                        <h3>Revenue</h3>
                         <img src={T02} alt='' />
                         </div> 
-                            <h3>Revenue</h3>
                             <p>With global competition and greater customer expectations companies look farward to enhance customer relationship and experience,many business entities .</p>
                         </div>
 
 
                         <div className={Styles.card3}>
                         <div className={Styles.testimg1}>
+
+                        <h3>Robust</h3>
                         <img src={T03} alt='' />
                         </div> 
-                            <h3>Robust</h3>
+
                             <p>At custom CRM consulting we understand your current capabilities,map your organisation's desired future state, and then recommend CRM implementation</p>
                         </div>
 
 
                         <div className={Styles.card4}>
                         <div className={Styles.testimg1}>
+
+                        <h3>Skilled Management</h3>
                         <img src={T04} alt='' />
                         </div> 
-                            <h3>Skilled Management</h3>
+
                             <p>CRM integration is connecting all the applications you use to run your business to customer information, it's a 360-degree view of customer data that can be seamlessly..</p>
                         </div>
 
