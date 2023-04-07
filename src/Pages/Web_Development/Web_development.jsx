@@ -208,7 +208,7 @@ const Web_Development = () => {
                         <img src={T01} alt='' />
                         </div> 
                            
-                            <h1>Flexibility</h1>
+                            <h3>Flexibility</h3>
                             <p>We understand your need,and sometime we know that it can we time critical yet should affordable,that is why we have custom designed package to suit your demands of time and money.</p>
                         </div>
 
