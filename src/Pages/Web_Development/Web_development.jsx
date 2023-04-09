@@ -200,19 +200,15 @@ const Web_Development = () => {
                 <div className={Styles.harbour}>
                     <h3 className={Styles.heading}>Why Choose Techmapperz for your Development</h3>
                     <div className={Styles.project}>
-
-
-
                         <div className={Styles.card5}>
                         <div className={Styles.testimg1}>
                         <img src={Webdevelop} alt='' />
                         <img src={T01} alt='' />
                         </div> 
                            
-                            <h1>Flexibility</h1>
+                            <h3>Flexibility</h3>
                             <p>We understand your need,and sometime we know that it can we time critical yet should affordable,that is why we have custom designed package to suit your demands of time and money.</p>
                         </div>
-
 
 
                         <div className={Styles.card5}>
@@ -225,8 +221,6 @@ const Web_Development = () => {
                             <p>Nothing is more important that a customer oritented business model,we at Techmapperz  love what we do, and we are always passeonate about putting our customers first.</p>
                         </div>
 
-
-
                         <div className={Styles.card5}>
                         <div className={Styles.testimg1}>
                         <img src={Vector8} alt='' />
@@ -238,9 +232,7 @@ const Web_Development = () => {
                         </div>
 
 
-
                         <div className={Styles.card5}>
-
                         <div className={Styles.testimg1}>
                         <img src={Vector9} alt='' />
                         <img src={T04} alt='' />

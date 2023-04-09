@@ -131,48 +131,33 @@ const Career = () => {
             <img src={career_idea_2} alt='' />
             <h3>Diversity unmatched</h3>
             <p>Since we operate all over India , you will have a spectrum of cultures that people that you can interact with</p>
-            {/* <Link to={"/contact"}> <div className={Styles.Submit_btn}>
-              <div></div>
-              <h2>Get in touch</h2>
-            </div></Link> */}
+           
           </div>
           <div className={Styles.card}>
             <img src={career_idea_3} alt='' />
             <h3>Flexibility unparalleled</h3>
             <p>You will have flexible working hours and work environment, not tied to work and time regime,</p>
-            {/* <Link to={"/contact"}> <div className={Styles.Submit_btn}>
-              <div></div>
-              <h2>Get in touch</h2>
-            </div></Link> */}
+            
           </div>
           <div className={Styles.card}>
             <img src={career_idea_4} alt='' />
             <h3>Grow unhindered</h3>
             <p>The world is a digital canvas, evolving with every passing day, you will have the opportunity of developing</p>
-            {/* <Link to={"/contact"}> <div className={Styles.Submit_btn}>
-              <div></div>
-              <h2>Get in touch</h2>
-            </div></Link> */}
+            
           </div>
 
           <div className={Styles.card}>
             <img src={career_idea_5} alt='' />
             <h3>Shine Unrestricted</h3>
             <p>At Techmapperz, you will get the freedom to choose your timings your approach for getting.</p>
-            {/* <Link to={"/contact"}> <div className={Styles.Submit_btn}>
-              <div></div>
-              <h2>Get in touch</h2>
-            </div></Link> */}
+            
           </div>
 
           <div className={Styles.card}>
             <img src={career_idea_6} alt='' />
             <h3>Earn unlimited</h3>
             <p>No matter what, Salary is an important parameter at tech mappers we acknowledge your talent</p>
-            {/* <Link to={"/contact"}> <div className={Styles.Submit_btn}>
-              <div></div>
-              <h2>Get in touch</h2>
-            </div></Link> */}
+            
           </div>
 
         </div>

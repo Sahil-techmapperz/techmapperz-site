@@ -2,12 +2,17 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    /* color: #FFFFFF; */
+    
 }
 
-.consulting {
-    background: rgba(24, 24, 24, 1);
+
+/* .service {
+
+} */
+.service {
+    /* background: rgba(24, 24, 24, 1); */
     position: relative;
+    width: 100%;
 }
 
 .first_part {

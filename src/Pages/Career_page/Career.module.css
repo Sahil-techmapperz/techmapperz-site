@@ -219,10 +219,11 @@
     margin: auto;
     display: grid;
     justify-content: center;
-    gap: 30px;
+    gap: 150px;
     margin-top: 5rem;
     /* margin-bottom: 5rem; */
-    grid-template-columns: repeat(3, 300px);
+    grid-template-columns: repeat(3, 350px);
+    grid-template-rows: repeat(2,400px);
 }
 
 .main>.card img {
