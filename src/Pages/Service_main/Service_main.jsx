@@ -62,6 +62,7 @@ const Service_main = () => {
                         <img src={Webdevelop} alt='' />
                         <img src={T02} alt='' />   
                         </div>
+
                             <h3 to={"/GIS_Service"}>Remote Sensing  Services</h3>
                             <p>With the accumulated experience of more then 20 years, Our team is well equipped to help you solve all possible challenges in the customer management field</p>
                         </div>
@@ -72,6 +73,7 @@ const Service_main = () => {
                         <img src={Vector7} alt='' />
                         <img src={T03} alt='' /> 
                         </div>
+
                             <h3 to={"/GIS_Service"}>Photogammetry Services</h3>
                             <p>With the accumulated experience of more then 20 years, Our team is well equipped to help you solve all possible challenges in the customer management field</p>
                       
@@ -82,6 +84,7 @@ const Service_main = () => {
                             <img src={Vector8} alt='' />
                             <img src={T04} alt='' />
                             </div>
+
                             <h3 to={"/GIS_Service"}>Web GIS Services</h3>
                             <p>With the accumulated experience of more then 20 years, Our team is well equipped to help you solve all possible challenges in the customer management field</p>
                       
@@ -99,9 +102,12 @@ const Service_main = () => {
 
                         <div className={Styles.card6}>
                      </div>
-
-
-                       
+                            <img src={Vector9} alt='' />
+                            <img src={T06} alt='' />
+                            </div>
+                            <h3>Modernization</h3>
+                            <p>With the accumulated experience of more then 20 years, Our team is well equipped to help you solve all possible challenges in the customer management field</p> */}
+                         </div>
 
                     </div>
                 </div>
@@ -136,7 +142,7 @@ const Service_main = () => {
                         <img src={Vector8} alt='' />
                         <img src={T03} alt='' />
                         </div> 
-                            <h3 to={"/GIS_Service"}>CRM/ERP</h3>
+                            <h3 to={"/GIS_Service"}>CRM/ERP</h3>n
                             <p>At custom CRM consulting we understand your current capabilities, map your organisation's desired future state, and then recommend CRM implentation</p>
                         </div>
 

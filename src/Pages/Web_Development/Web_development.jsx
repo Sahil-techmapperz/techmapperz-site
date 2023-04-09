@@ -200,8 +200,6 @@ const Web_Development = () => {
                 <div className={Styles.harbour}>
                     <h3 className={Styles.heading}>Why Choose Techmapperz for your Development</h3>
                     <div className={Styles.project}>
-
-
                         <div className={Styles.card5}>
                         <div className={Styles.testimg1}>
                         <img src={Webdevelop} alt='' />
@@ -222,7 +220,6 @@ const Web_Development = () => {
                             <h1>Friendly</h1>
                             <p>Nothing is more important that a customer oritented business model,we at Techmapperz  love what we do, and we are always passeonate about putting our customers first.</p>
                         </div>
-
 
                         <div className={Styles.card5}>
                         <div className={Styles.testimg1}>
