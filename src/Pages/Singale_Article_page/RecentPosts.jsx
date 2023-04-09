@@ -9,7 +9,7 @@ function RecentPosts() {
     const fetchRecentPosts = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:8080/article/recent-posts"
+          `${process.env.REACT_APP_Backend_baseUrl}/article/recent-posts`
         );
         setRecentPosts(response.data);
       } catch (err) {

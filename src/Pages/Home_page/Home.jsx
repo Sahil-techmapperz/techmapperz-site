@@ -43,7 +43,7 @@ const Home = () => {
                 .then(data => {
                     setTechBlog(data.posts);
                 });
-      fetch(`http://localhost:8080/Banner`)
+      fetch(`${process.env.REACT_APP_Backend_baseUrl}/banner`)
                 .then(res => res.json())
                 .then(data => {
                     setTechBanner(data);
@@ -211,7 +211,7 @@ const Home = () => {
              stopOnHover={true}
              showIndicators={false}
              useKeyboardArrows={true}
-            
+            className={Styles.Carousel}
           >
           {Testimonial.map(data=>{
             return(

@@ -127,7 +127,7 @@ const Career = () => {
             <p>With techmapperZ being a start up with business interests and prospects in many IT fields, weather its. </p>
             
           </div>
-          <div className={Styles.card}>
+          <div className={`${Styles.card} ${Styles.card2}`}>
             <img src={career_idea_2} alt='' />
             <h3>Diversity unmatched</h3>
             <p>Since we operate all over India , you will have a spectrum of cultures that people that you can interact with</p>

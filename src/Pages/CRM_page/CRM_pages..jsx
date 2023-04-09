@@ -128,16 +128,16 @@ const CRM_pages = () => {
                           <p>This CRM is the framework for vendor distributor interaction and business opportunities.</p>
                      </div>
 
-                    <div className={Styles.card10}></div>
                         <div className={Styles.card8}>
                         <img src={Combind1} alt='' />
                         <h3>Campaign Management</h3>
                              <p>Campaign CMR is primarly for campaign management which combines anaytical and operational CRMs.</p>
                           </div>
 
+
                           <div className={Styles.card9}>
                           <img src={Combind1} alt='' />
-                             <h2>Strategic</h2>
+                             <h3>Strategic</h3>
                              <p>This is a market study CMR, which helps you to understand and fellow market trends and demands, crucial for the customer demand supply efficiency.</p>
                          </div>
 

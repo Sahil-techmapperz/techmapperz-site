@@ -173,6 +173,7 @@
 
     text-align: center;
 }
+
 .testimg1 {
     display: flex;
     gap: 100px;
@@ -187,7 +188,7 @@
     display: grid;
     grid-template-columns: repeat(2, 400px);
     grid-template-rows: repeat(2, 332px);
-   
+
     justify-content: center;
     gap: 2rem;
     margin-top: 1rem;
@@ -329,35 +330,49 @@
 
 
 
-.Application .design{
+.Application .design {
     display: grid;
-    grid-template-columns: repeat(3,350px);
-    grid-template-rows: repeat(3,450px);
+    grid-template-columns: repeat(3, 350px);
+    grid-template-rows: repeat(3, 400px);
     width: 100%;
     height: 900px;
     gap: 50px;
-   
+
 }
 
-.Application div{
+.Application .design>div h3 {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 33px;
+    text-align: center;
+    letter-spacing: 0.162793px;
+    color: #FFFFFF;
+}
+.Application .design>div p {
+    line-height: 33px;
+    font-size: 17px;
+    text-align: left;
+    letter-spacing: 0.162793px;
+    color: #FFFFFF;
+}
+
+.Application div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 .card6 {
-    margin-top: 20px;
+    margin-top: 3rem;
 }
 
-
-/* .card8 {
-    margin-top: 5px;
-    margin-left: 350px;
+.Application .card8{
+    margin-left: 11rem;
+    width: 350px;
 }
-
-
-.card9 {
-
-} */
+.Application .card9{
+    margin-left: 11rem;
+    width: 350px;
+}

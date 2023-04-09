@@ -16,7 +16,7 @@ function SinglePost() {
     const fetchPost = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:8080/article/posts/${postId}`
+          `${process.env.REACT_APP_Backend_baseUrl}/article/posts/${postId}`
         );
         setPost(response.data);
         
@@ -34,7 +34,7 @@ function SinglePost() {
     console.log(searchQuery && searchQuery)
     try {
       const response = await axios.get(
-        `http://localhost:8080/article/search?search=${searchQuery}`
+        `${process.env.REACT_APP_Backend_baseUrl}/article/search?search=${searchQuery}`
       );
       setPost(response.data);
       console.log(response.data)

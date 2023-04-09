@@ -6,7 +6,7 @@ let Images = [
     "https://techmapperz.com/images/2022/05/12/earthgenic_logo-removebg-preview.png",
     "https://ik.imagekit.io/ntktfi8dx/uploads/PAS.png?updatedAt=1680755047359",
     "https://ik.imagekit.io/ntktfi8dx/uploads/Genesys-removebg-preview.png?updatedAt=1680755067922",
-    "https://ik.imagekit.io/ntktfi8dx/uploads/Earthgenic_logo.png?updatedAt=1680756167992"
+    "https://ik.imagekit.io/ntktfi8dx/uploads/English_facalities.png?updatedAt=1680830949547"
 ]
 
 const responsive = {

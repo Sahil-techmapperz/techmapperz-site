@@ -12,7 +12,6 @@
     justify-content: space-between;
     align-items: center;
     padding-top: 3rem;
-    /* border: 1px solid red; */
 }
 
 .subMain_1 {
@@ -103,6 +102,6 @@ table tr{
 
 .getintouch_btn {
     position: absolute;
-    bottom: 0;
-    right: 33rem;
+    bottom: 3rem;
+    right:42rem;
 }

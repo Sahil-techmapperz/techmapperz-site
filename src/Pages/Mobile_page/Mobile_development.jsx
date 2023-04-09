@@ -161,9 +161,7 @@ const Mobile_development = () => {
 
 
                         <div className={styles.card6}>
-                        <img src={T06} alt='' />
-                        </div>  */}
-
+                        
 
                             <h3>Revenue</h3>
                             <p>We take your suggections to incorporate in-app advertising, in-app purchases, and paid apps are some of the most common app monetization tactics.</p>

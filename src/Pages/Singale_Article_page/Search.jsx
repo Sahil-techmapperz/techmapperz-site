@@ -9,7 +9,7 @@ function Search({ searchQuery }) {
     async function fetchSearchResults() {
       try {
         const response = await axios.get(
-          `http://localhost:8080/posts/search?search=${searchQuery}`
+          `${process.env.REACT_APP_Backend_baseUrl}/posts/search?search=${searchQuery}`
         );
         setPosts(response.data);
       } catch (error) {
