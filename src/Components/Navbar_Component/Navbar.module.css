@@ -17,7 +17,9 @@
 }
 
 
-
+.right_nav{
+    margin-right: 5rem;
+}
 
 .right_nav ul{
     list-style: none;

@@ -18,6 +18,7 @@ import Service_main from '../Pages/Service_main/Service_main';
 import It_consulting from '../Pages/It_consulting/It_consulting';
 import GIS_Services from '../Pages/GIS_Services_page/GIS_Services';
 import Privacy_Policy from '../Components/Privacy_Policy_Component/Privacy_Policy';
+import Sitemap from '../Pages/Sitemap_page/Sitemap';
 
 
 
@@ -43,6 +44,7 @@ const Router = () => {
        <Route path='/it_consulting' element={<It_consulting/>}></Route> 
        <Route path='/service' element={<Service_main/>}></Route>
        <Route path='/Privacy_Policy' element={<Privacy_Policy/>}></Route>
+       <Route path='/sitemap' element={<Sitemap/>}></Route>
        
     </Routes>
   )

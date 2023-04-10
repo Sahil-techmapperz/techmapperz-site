@@ -33,7 +33,7 @@ const CRM_pages = () => {
         <div className={Styles.Mobile_development}>
                      <section className={Styles.first_part}>
                          <h1>CRM-ERP</h1>
-                        <p>Service / IT /CRM-ERP</p>
+                        <p>Home / Services / IT Services /CRM-ERP</p>
                     </section>
         
 

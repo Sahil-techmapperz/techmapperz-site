@@ -26,7 +26,7 @@ const Photogrammetry_Services = () => {
         <div className={styles.drone}>
             <section className={styles.part1}>
             <h1>Photogrammetry Services</h1>      
-            <p>Services / GIS Service / Photogrammetry Services</p>
+            <p>Home / Services / GIS Service / Photogrammetry Services</p>
             </section>
 
             <section className={styles.secand_part}>

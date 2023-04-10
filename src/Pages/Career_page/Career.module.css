@@ -40,8 +40,9 @@
 .secend_section {
     width: 100%;
     color: white;
-    margin-top: 15px;
+    padding: 5rem 0;
     position: relative;
+    
 }
 
 .secend_section>h3 {
@@ -228,10 +229,11 @@
     width: 100%;
     display: grid;
     justify-content: center;
-    align-items: center;
-    gap: 30px;
+    gap: 150px;
     margin-top: 5rem;
-    grid-template-columns: repeat(3, 1fr);
+    /* margin-bottom: 5rem; */
+    grid-template-columns: repeat(3, 350px);
+    grid-template-rows: repeat(2,400px);
 }
 
 .main>.card img {

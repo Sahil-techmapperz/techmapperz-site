@@ -33,7 +33,7 @@ const Service_main = () => {
         <div className={Styles.service}>
             <section className={Styles.first_part}>
                 <h1>Our Services</h1>
-                <p>Home / IT Service / IT Consulting Services</p>
+                <p>Home / Services</p>
             </section>
 
 

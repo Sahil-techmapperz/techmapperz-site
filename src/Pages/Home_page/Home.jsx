@@ -22,6 +22,7 @@ import Drone_gif from '../../Photos/Home/drone.gif';
 import App_development from '../../Photos/Home/App_development.gif';
 import Multi_carousel from '../../Components/Home_Component/Multi_carousel/Multi_carousel';
 import TechBlog from '../../Components/Home_Component/Home_technoBlog/techBlog';
+import Chatbot from '../../Components/Home_Component/Chatbot/Chatbot';
 
 
 
@@ -64,7 +65,7 @@ const Home = () => {
 
 
     return (
-        <div>
+        <div >
             <section className={Styles.home_first_part}>
                 <Carousel
                     className={Styles.slider}
@@ -85,6 +86,7 @@ const Home = () => {
                 </Carousel>
 
             </section>
+              <div className={Styles.Chatbot}> <Chatbot/></div> 
             <section className={Styles.home_secend_part}>
 
                 <div className={Styles.features}>
@@ -194,7 +196,7 @@ const Home = () => {
                 </div>
 
 
-                <TechBlog postdata={TechBlogpost&&TechBlogpost}/>
+                <TechBlog postdata={TechBlogpost}/>
 
 
                 <div className={Styles.Testimonial}>

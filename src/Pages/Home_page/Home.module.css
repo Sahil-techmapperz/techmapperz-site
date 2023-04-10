@@ -57,6 +57,18 @@
 /* carousel  */
 
 
+
+/* chatbot */
+
+
+.Chatbot{
+    position: fixed;
+    z-index: 10;
+    top: 10rem;
+    right: 2rem;
+}
+
+
 /* features */
 
 .home_secend_part {
