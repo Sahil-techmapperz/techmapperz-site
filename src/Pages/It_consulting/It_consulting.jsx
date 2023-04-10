@@ -119,7 +119,6 @@ const It_consulting = () => {
                     <div className={Styles.main}>
                         <div className={Styles.card1}>
                         <div className={Styles.testimg1}>
-
                         <h3>Reliability</h3>
                         <img src={T01} alt='' />
                         </div> 
@@ -128,7 +127,6 @@ const It_consulting = () => {
 
                         <div className={Styles.card2}>
                         <div className={Styles.testimg1}>
-
                         <h3>Revenue</h3>
                         <img src={T02} alt='' />
                         </div> 
@@ -138,22 +136,18 @@ const It_consulting = () => {
 
                         <div className={Styles.card3}>
                         <div className={Styles.testimg1}>
-
                         <h3>Robust</h3>
                         <img src={T03} alt='' />
                         </div> 
-
                             <p>At custom CRM consulting we understand your current capabilities,map your organisation's desired future state, and then recommend CRM implementation</p>
                         </div>
 
 
                         <div className={Styles.card4}>
                         <div className={Styles.testimg1}>
-
                         <h3>Skilled Management</h3>
                         <img src={T04} alt='' />
                         </div> 
-
                             <p>CRM integration is connecting all the applications you use to run your business to customer information, it's a 360-degree view of customer data that can be seamlessly..</p>
                         </div>
 
