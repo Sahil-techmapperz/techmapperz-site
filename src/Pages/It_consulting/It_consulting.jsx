@@ -39,7 +39,7 @@ const It_consulting = () => {
         <div className={Styles.consulting}>
             <section className={Styles.first_part}>
                 <h1>IT Consulting Services</h1>
-                <p>Services / IT Service / IT Consulting Services</p>
+                <p>Home / Services / IT Services/ IT Consulting Services</p>
             </section>
 
 
@@ -51,14 +51,14 @@ const It_consulting = () => {
                 <div className={Styles.newmain}>
 
                     <div className={Styles.design}>
-                        <div className={Styles.card}>
+                        <div className={`${Styles.card} ${Styles.card1}`}>
                             <img src={Consulting1} alt='' />
                             <h3>Infrastructure</h3>
                             <p>Our Infrastructure consulting will help you power through the use of under-utilization of your Infrastructure, and deliver something that can make your business thrive...</p>
                         </div>
 
 
-                        <div className={Styles.card}>
+                        <div className={`${Styles.card} ${Styles.card2}`}>
                             <img src={Consulting9} alt='' />
                             <h3>Design and Implementation</h3>
                             <p>Our team can work with you on designing a network to secure your data and other intelligent infrastructures...</p>
@@ -66,43 +66,43 @@ const It_consulting = () => {
                         </div>
 
 
-                        <div className={Styles.card}>
+                        <div className={`${Styles.card} ${Styles.card3}`}>
                             <img src={Consulting8} alt='' />
                             <h3>Planning</h3>
                             <p>Techmapperz provides strategic information Systems Planning and Assesment services that help organizations leverage the benefits of technology...</p>
 
                         </div>
 
-                        <div className={Styles.card}>
+                        <div className={`${Styles.card} ${Styles.card11}`}>
                             <img className={Styles.para2}  src={Consulting3} alt='' />
                         </div>
 
-                        <div className={Styles.card}>
+                        <div className={`${Styles.card} ${Styles.card4}`}>
                             <img src={Consulting6} alt='' />
                             <h3>Digital Transformations</h3>
                             <p>Digital Transformation is the integration of Digital technology into your business. With our team of experts, we'll help you work smarter...</p>
                         </div>
 
-                        <div className={Styles.card}>
+                        <div className={`${Styles.card} ${Styles.card5}`}>
                             <img src={Consulting4} alt='' />
                             <h3>Modernization</h3>
                             <p>We replatform your apps in order to make functionality easier.Re-architecting your apps to make it more scalable and flexible.This will be done through code...  </p>
                         </div>
 
 
-                        <div className={Styles.card}>
+                        <div className={`${Styles.card} ${Styles.card6}`}>
                             <img src={Consulting2} alt='' />
                             <h3>Strattegy Consulting</h3>
                             <p>strategy consulting is an important aspect of digital transformation. With this package, we offer one-on-ones with our consultants to assess where you are at now... </p>
                         </div>
 
-                        <div className={Styles.card}>
+                        <div className={`${Styles.card} ${Styles.card7}`}>
                             <img src={Consulting8} alt='' />
                             <h3>Implementation</h3>
                             <p>We,ll help define the required skill sets for our team (including developers,project managers, QA, etc.) so that we can build a robust architecture and prototype..</p>
                         </div>
 
-                        <div className={Styles.card}>
+                        <div className={`${Styles.card} ${Styles.card11}`}>
                             <img className={Styles.para2} src={Consulting3} alt='' />
                         </div>
 

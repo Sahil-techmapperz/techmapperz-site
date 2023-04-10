@@ -1,7 +1,15 @@
 .Footer {
     width: 100%;
-    background-color: var(--primary-black-color);
+    background-color: rgb(16, 16, 16);
     padding: 2rem 5rem;
+    position: relative;
+}
+
+.Footer>img{
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    cursor: pointer;
 }
 
 .Footer_main {
@@ -77,6 +85,9 @@
     color: white;
 }
 
+.social_media_icons .icon{
+    font-size: 30px;
+}
 
 
 .explore_content ul {
@@ -85,6 +96,7 @@
     justify-content: space-between;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+    
 
 }
 

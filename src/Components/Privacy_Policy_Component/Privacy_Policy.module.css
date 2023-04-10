@@ -1,0 +1,16 @@
+.pdf_page_container {
+    margin: 0;
+    padding: 0;
+  }
+  
+.btn{
+    display: flex;
+    gap: 1rem;
+}
+
+  .react-pdf__Page {
+    margin: 0 !important;
+    padding: 0 !important;
+    height: 700px !important;
+  }
+  

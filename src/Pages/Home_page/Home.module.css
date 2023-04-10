@@ -57,6 +57,18 @@
 /* carousel  */
 
 
+
+/* chatbot */
+
+
+.Chatbot{
+    position: fixed;
+    z-index: 10;
+    top: 10rem;
+    right: 2rem;
+}
+
+
 /* features */
 
 .home_secend_part {
@@ -79,13 +91,13 @@
     letter-spacing: 0.16px;
     font-weight: 400;
     color: #808080;
+    margin-bottom: -1.5rem;
     
 }
 
 
 .features_top {
     display: flex;
-    gap: 30px;
     align-items: center;
     justify-content: space-between;
 }
@@ -101,6 +113,7 @@
 
 .features_top .info {
     width: 600px;
+    margin-top: 15px;
 }
 
 .features_top .info>p {
@@ -142,7 +155,7 @@
 
 .card_contaner {
     display: flex;
-    gap: 2rem;
+    gap: 5rem;
     width: 100%;
 }
 
@@ -398,7 +411,9 @@ cursor: pointer;
 
 .Brand_Partners_left{
     width: 60%;
+    margin-top: -1.5rem;
 }
+
 
 .Brand_Partners_right{
     width: 40%;
@@ -412,18 +427,19 @@ cursor: pointer;
     line-height: 24px;
     letter-spacing: 0.162793px;
     color: #808080;
+    margin-bottom:-1rem
 }
 
 .Brand_Partners .Brand_Partners_right h1{
-    font-weight: 600;
-    font-size: 36px;
-    line-height: 54px;
+    font-weight: 500;
+    font-size: 30px;
     letter-spacing: 0.162793px;
     color: #FFFFFF;
     word-wrap: break-word;
 }
 .Brand_Partners .Brand_Partners_right img{
-    margin-top: -3rem;
+    width: 180px;
+    margin-top: -1rem;
 }
 
 
@@ -535,23 +551,28 @@ cursor: pointer;
 /* Testimonial */
 
 .Testimonial{
-    width: 1100px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 2rem 5rem;
     margin: auto;
+    background-color: black;
+}
+
+.Testimonial .Carousel{
+    width: 65%;
 }
 
 
 
-.Testimonial p{
+.Testimonial>p{
     font-weight: 400;
     font-size: 16px;
-    line-height: 24px;
     letter-spacing: 0.162793px;
     color: #808080;
+    margin-bottom: -1rem;
 }
 
 
@@ -568,7 +589,7 @@ cursor: pointer;
 .Testimonial .card{
     margin: auto;
     text-align: left;
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
     width: 100%;
 }
 
@@ -593,6 +614,13 @@ cursor: pointer;
     text-align: left;
     padding-bottom: 25px;
     color: white;
+}
+
+.Testimonial .card p{
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.162793px;
+    color: #808080;
 }
 
 

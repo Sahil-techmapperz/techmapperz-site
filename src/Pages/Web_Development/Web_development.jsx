@@ -37,7 +37,7 @@ const Web_Development = () => {
         <div className={Styles.development}>
             <section className={Styles.first_part}>
                 <h1>Website Development</h1>
-                <p>Service / IT Services / Website Development</p>
+                <p>Home / Services / IT Services / Website Development</p>
             </section>
 
 

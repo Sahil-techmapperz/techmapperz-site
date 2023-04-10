@@ -11,7 +11,7 @@ function RelatedPosts({ postId }) {
     const fetchRelatedPosts = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:8080/article/related-posts/${postId}`
+          `${process.env.REACT_APP_Backend_baseUrl}/article/related-posts/${postId}`
         );
         if(response.data.length==0){
           setShowPosts(false);
