@@ -14,9 +14,10 @@ import Photogrammetry_Services from '../Pages/Photogrammetry_Services_page/Photo
 import Singalearticle from '../Pages/Singale_Article_page/Singale_article';
 import Web_Development from '../Pages/Web_Development/Web_development';
 import Web_GIS from '../Pages/Web_GIS_page/Web_GIS';
-import Service_main from '../Pages/Service_main/Service_main';
+
 import It_consulting from '../Pages/It_consulting/It_consulting';
 import GIS_Services from '../Pages/GIS_Services_page/GIS_Services';
+import Service_main from '../Pages/Service_main/Service_main';
 
 
 
@@ -41,7 +42,7 @@ const Router = () => {
        <Route path='/Photogrammetry' element={<Photogrammetry_Services/>}></Route>
        <Route path='/it_consulting' element={<It_consulting/>}></Route> 
        <Route path='/service' element={<Service_main/>}></Route>
-       {/* <Route path='/service_main' element={<Service_main/>}></Route> */}
+       <Route path='/service_main' element={<Service_main/>}></Route>
        
     </Routes>
   )

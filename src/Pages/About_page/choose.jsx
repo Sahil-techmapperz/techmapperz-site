@@ -25,7 +25,7 @@ const Choose = () => {
                             <source src="https://techmapperz.com/media/videos/2022/07/04/whatsapp-video-2022-07-04-at-10.57.43-am.mp4" type="video/mp4"></source>
                         </video>
                     </div> */}
-                    <img src={Aboutus3} />
+                    <img src={Aboutus3}  />
 
                     <div className={styles.company_info}>
                         <h2 className={styles.heading}>Why Choose Techmapparz</h2>
@@ -87,6 +87,7 @@ const Choose = () => {
                                 
                                 <AccordionPanel  border={"1px solid"} pb={4}>
                                     The word defines a lot of internal and external factors and processes that we do to ensure that everything goes as planned, this is always project dependent, but the the crucial step that we undertake under this is to keep your project and requirement confidential,keep it to need to know basis amongest all sections of employees, also maintaining multiple tier experts for the tab on the biling or unexpected or additional expenses. With a lot of government  and time-sensitive clients' jobs that we do, this layering guarantees us that we don't miss a deadline..
+                                </AccordionPanel>
                             </AccordionItem>
 
                             <AccordionItem border={"none"}>
@@ -100,6 +101,7 @@ const Choose = () => {
                                 
                                 <AccordionPanel border={"1px solid"} pb={4}>
                                This is it! T     
+                                </AccordionPanel>
                             </AccordionItem>
 
 
@@ -115,4 +117,4 @@ const Choose = () => {
 
     )
 }
-export default Choose
+export default Choose

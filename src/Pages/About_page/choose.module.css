@@ -17,8 +17,12 @@
 }
 
 .first_part_main div {
-    width: 50%;
+    width: 41%;
 }
+
+/* .about_img {
+    width: 50%;
+} */
 
 /* .first_part_main>.video_contaner{
     width: 50%;

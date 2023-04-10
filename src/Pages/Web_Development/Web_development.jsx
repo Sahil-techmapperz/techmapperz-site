@@ -19,6 +19,15 @@ import T01 from '../../Photos/01.png';
 import T02 from '../../Photos/02.png';
 import T03 from '../../Photos/03.png';
 import T04 from '../../Photos/04.png';
+import Webdev8 from '../../Photos/Webdev8.png';
+import Webdev9 from '../../Photos/Webdev9.png';
+import Webdev10 from '../../Photos/Webdev10.png';
+import Webdev4 from '../../Photos/Webdev4.png';
+import Webdev3 from '../../Photos/Webdev3.png';
+import Webdev2 from '../../Photos/Webdev2.png';
+import Webdev11 from '../../Photos/Webdev11.png';
+
+
 
 
 const Web_Development = () => {
@@ -45,7 +54,7 @@ const Web_Development = () => {
                 <div className={Styles.contaner}>
                     <h1 className={Styles.heading}>What is Website Design <br />& Development</h1>
                     <div className={Styles.product}>
-                        <img src={Development1} alt="Development1.png" />
+                        <img src={Webdev8} alt="" />
                         <div className={Styles.product_info}>
                             <p>One of the first websites was created in 1991, and since then, the website and its design have evolved manifold.Today it is complex and involves an entire ecosystem of roles and skill sets. Website development is an umbrella term for two major parts-Design & Development, Design represents the look and feel wherwas Development determines how it functions</p>
                             <Link to={"/contact"}> <div className={Styles.btn}>
@@ -70,7 +79,7 @@ const Web_Development = () => {
                             </div></Link>
                         </div>
                         <div>
-                            <img src={Development2} className={Styles.Img_two} alt="Development2.png" />
+                            <img src={Webdev9} className={Styles.Img_two} alt="" />
                         </div>
                     </div>
                 </div>
@@ -83,7 +92,7 @@ const Web_Development = () => {
                     <h1 className={Styles.heading}>The Right Web Design <br />and Development Team</h1>
                     <div className={Styles.product}>
                         <div>
-                            <img src={Development3} className={Styles.Img_three} alt="Development3.png" />
+                            <img src={Webdev10} className={Styles.Img_three} alt="Webdev10.png" />
                         </div>
                         <div className={Styles.product_info}>
                             <p>With so much at state,it is important that your web designing and development company is reliable and has a team that is experienced and can be trusted. We at Techmapperz, have some of the best developers in the field with a combined experience of more than 100 years; we have worked in various fields in a wide range of segments from small business owners to restourents,corporates,government sectors and professionals. Our team compatibility and pooled experience is our biggest asset and the major reason that we use them in creating masterpiece websites. </p>
@@ -153,20 +162,20 @@ const Web_Development = () => {
                     <h1 className={`${Styles.heading} ${Styles.class2}`}>Things to Consider</h1>
                     <div className={Styles.main}>
                         <div className={Styles.card}>
-                            <img src={Webdevelop} />
+                            <img src={Webdev4} />
                             <h3>Original Content</h3>
                             <p>It is heighly recommended that the content of the website is original and of high quality, this is not only helps your coustomers find you quickly but also effects the ranking of your website,ensure this for your website.</p>
                         </div>
 
                         <div className={`${Styles.card}  ${Styles.class1}`}>
-                        <img src={Webdevelop} />
+                        <img src={Webdev3} />
                             <h3>Call to Action</h3>
                             <p>Call to action is as simple as setting up a contact now button,this invariably motivates customers and visitors to get in touch with your company and promotes building relationships.</p>
                         </div>
 
 
                         <div className={Styles.card}>
-                        <img src={Webdevelop} />
+                        <img src={Webdev2} />
                             <h3>Compatibility</h3>
                             <p>Compatibility With time the inter has evolved a lot and so will it with time,and with this internet browsers also change, your website should be flexible enough to adapt itself to run a new browser as well as...</p>
                         </div>
@@ -178,7 +187,7 @@ const Web_Development = () => {
                 <div className={Styles.contaner}>
                     <h1 className={Styles.heading}>Benefits of Getting Web <br/>Development Professionally</h1>
                     <div className={Styles.product}>
-                        <img src={Geospatial_Mapping} alt="Geospatial_Mapping.png" />
+                        <img src={Webdev11} alt="Webdev11.png" />
                         <div className={Styles.product_info}>
                             <p>We Techmapperz,get the best-customized web development for your company with the maximum customization to its needs.We develop a strategy to make your goals a reality, business ownears, not always understand how website functions and can be easily cheated.A professional web design and development company with years of experties and experience can help you build a website that will attract potential customers and grow your web presence.Some of the section that our website makes you stand apart are: </p>
                             <ul>
