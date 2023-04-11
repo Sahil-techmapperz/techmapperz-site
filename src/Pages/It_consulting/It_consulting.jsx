@@ -35,6 +35,9 @@ import Itconsulting11 from '../../Photos/Itconsulting11.png';
 import Itconsulting12 from '../../Photos/Itconsulting12.png';
 import Itconsulting13 from '../../Photos/Itconsulting13.png';
 import Itconsulting14 from '../../Photos/Itconsulting14.png';
+import Office_work from '../../Photos/Itconsulting/Office work.gif';
+import Digital_nomad from '../../Photos/Itconsulting/Digital nomad.gif';
+import Good_team from '../../Photos/Itconsulting/Good team.gif';
 
 
 
@@ -87,7 +90,7 @@ const It_consulting = () => {
                         </div>
 
                         <div className={`${Styles.card} ${Styles.card4}`}>
-                            <img className={Styles.para2} src={Itconsulting11} alt='' />
+                            <img className={Styles.para2} src={Office_work} alt='' />
                         </div>
 
                         <div className={`${Styles.card} ${Styles.card5}`}>
@@ -116,7 +119,7 @@ const It_consulting = () => {
                         </div>
 
                         <div className={`${Styles.card} ${Styles.card9}`}>
-                            <img className={Styles.para2} src={Itconsulting6} alt='' />
+                            <img className={Styles.para2} src={Digital_nomad} alt='' />
                         </div>
 
                     </div>
@@ -127,7 +130,7 @@ const It_consulting = () => {
                 <div className={Styles.harbour}>
                     <div className={Styles.Img_contaner}>
                         <h1 className={Styles.heading}>Why Choose <br />Techmapperz <br /> for your IT Services?</h1>
-                        <img className={Styles.para1} src={Itconsulting3} alt='' />
+                        <img className={Styles.para1} src={Good_team} alt='' />
                     </div>
                     <div className={Styles.main}>
                         <div className={Styles.card1}>
