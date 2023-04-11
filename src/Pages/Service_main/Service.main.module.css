@@ -24,6 +24,8 @@
     align-items: center;
     object-fit: cover;
     background: url("../../Photos/banner_3.jpg");
+    background-size: cover;
+    background-position: center;
 
 }
 
@@ -44,7 +46,7 @@
 
 .secand_part {
     width: 100%;
-    padding: 2rem 5rem;
+    /* padding: 2rem 5rem; */
     background: rgba(24, 24, 24, 1);
 
 }
@@ -68,6 +70,12 @@
 }
 
 
+.secand_part>.title{
+     padding: 2rem 5rem;
+     text-align: center;
+}
+
+
 .contaner {
     padding-bottom: 30px;
     background: rgba(24, 24, 24, 1);
@@ -83,12 +91,26 @@
     color: #FFFFFF;
 }
 
+
+.newmain{
+    background: url("../../Photos/Rectangle 41.png");
+    background-size: cover;
+    background-position: center;
+}
+
 .design {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 350px);
-    gap: 50px;
-    padding-bottom: 2rem;
+     padding: 2rem 5rem;
+    
+}
+
+
+.design .icon{
+    width: 100px;
+    height: 120px;
+    object-fit: fill;
 }
 
 .design>div>h3 {
@@ -99,6 +121,29 @@
     color: #FFFFFF;
 }
 
+.design .card1{
+    border-right: 1px solid ;
+    border-bottom: 1px solid ;
+    padding: 2rem;
+}
+.design .card2{
+    border-right: 1px solid ;
+    border-bottom: 1px solid ;
+    padding: 2rem;
+}
+.design .card3{
+    margin-top: -0.3rem;
+    border-bottom: 1px solid;
+    padding: 2rem;
+}
+.design .card4{
+    border-right: 1px solid ;
+    padding: 2rem;
+}
+.design .card5{
+    margin-top: 1rem;
+    padding: 2rem;
+}
 
 
 .main>.card img {
@@ -134,6 +179,7 @@
     width: 100%;
     height: 1100px;
     position: relative;
+     padding: 2rem 5rem;
 }
 
 .harbour>.main>div>h3 {
@@ -148,7 +194,6 @@
     width: 100%;
     justify-content: center;
     position: relative;
-    gap: 100px;
     margin-top: 20px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -159,17 +204,27 @@
 
 .harbour .Squared_img {
     position: absolute;
-    width: 632px;
-    height: 632px;
-    bottom: 0;
-    right: 0;
+    bottom: -10px;
+    right: 5rem;
 }
-.card3 {
-    margin-top: 22px;
+
+
+.harbour .card7{
+    margin-top: 1.5rem;
+    border-right: 1px solid ;
+    border-bottom: 1px solid;
+    padding: 2rem;
 }
-.card4 {
-    margin-top: 20px;
+.harbour .card8{
+    border-right: 1px solid ;
+    border-bottom: 1px solid;
+    padding: 2rem;
 }
-.card6{
-    margin-top: 10px;
+.harbour .card9{
+    border-bottom: 1px solid;
+    padding: 2rem;
+}
+.harbour .card10{
+    border-right: 1px solid;
+    padding: 2rem;
 }

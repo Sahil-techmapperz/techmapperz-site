@@ -19,6 +19,8 @@
     align-items: center;
     object-fit: cover;
     background: url("../../Photos/banner_3.jpg");
+    background-size: cover;
+    background-position: center;
     
 }
 
@@ -26,7 +28,7 @@
     font-size: 66px;
     line-height: 99px;
     letter-spacing: 0.16px;
-    background: transparent;
+    background: none;
 }
 .testimg1 {
     display: flex;
@@ -43,9 +45,14 @@
 
 .secand_part {
     width: 100%;
-    padding: 2rem 5rem;
     background: rgba(24, 24, 24, 1);
 
+}
+
+.secand_part .title{
+    padding: 2rem 8rem;
+    text-align: center;
+    width: 100%;
 }
 
 .info {
@@ -73,52 +80,45 @@
 }
 
 
-
-.harbour .heading{
-    font-size: 36px;
+.heading {
+    
+    
+    font-size: 26px;
     font-weight: 600;
     line-height: 54px;
     letter-spacing: 0.16px;
+    padding-bottom: 20px;
+    background:none;
 }
 
 .design {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 350px);
     gap:85px;
-    padding-bottom: 3rem;
+    margin-left: 5px;
     
-}
-
-.design .card11 img{
-    width: 100%;
-}
-
-.design>.card2{
-    margin-top: 1rem;
-}
-.design>.card3{
-    margin-top: 1rem;
-}
-.design>.card7{
-    margin-top: 3rem;
-}
-
-.design >.card p{
-    width: 100%;
-    height: 120px;
-    text-align: left;
-    font-weight: 400;
-    font-size: 18px;
 }
 
  .newmain {
     width: 100%;
-    display: flex;
-    flex-direction: column;
+    margin: auto;
+    display: grid;
     justify-content: center;
-    align-items: center;
     gap: 30px;
     margin-top: 5rem;
+    
+}
+
+.newmain .design{
+    padding-bottom: 2rem;
+}
+
+.newmain .design .card2{
+    margin-top: 1rem;
+}
+.newmain .design .card9 img{
+    width: 100%;
+    object-fit: fill;
 }
 
 .main>.card img {
@@ -127,19 +127,23 @@
     object-fit: fill;
 }
 
-.main>.card p{
+.main>.card>p{
     width: 100%;
     height: 120px;
     text-align: left;
+    font-style: normal;
     font-weight: 400;
     font-size: 18px;
+    text-align: justify;
+    letter-spacing: 0.162793px;
     color: #A3A3A3;
     padding-bottom: 10px;
 }
 
 .card>h3{
+font-style: normal;
 font-weight: 700;
-font-size: 20px;
+font-size: 22px;
 line-height: 33px;
 letter-spacing: 0.162793px;
 text-align: left;
@@ -148,30 +152,48 @@ text-align: left;
 .harbour {
     background-color: none;
     display: flex;
+    width: 100%;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+    background-image: url("../../Photos/Rectangle 41.png");
+    background-size: cover;
+    background-position: center;
 }
 
-.harbour .main h3{
-font-weight: 700;
-font-size: 20px;
-line-height: 33px;
-letter-spacing: 0.162793px;
-text-align: left;
+.harbour .Img_contaner{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 5rem;
+}
+
+.Img_contaner img{
+    height: 440px;
+    object-fit: fill;
+    
 }
 .main {
-    width: 700px;
-    justify-content: center;
+    width: 1000px;
     position:relative;
-    gap: 100px;
-    margin-top: 5rem;
-    margin-left: 200px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-
+    padding-right: 5rem;
+    margin-top: -2rem;
+    background: none;
 }
 
-.harbour .main p{
-    text-align: left;
-    width: 100%;
+.main div{
+    padding: 2rem;
+}
+
+.main h3{
+    font-style: normal;
+font-weight: 700;
+font-size: 22px;
+line-height: 33px;
+letter-spacing: 0.162793px;
+
 }
 
 .para1 {
@@ -181,6 +203,19 @@ text-align: left;
 .para2 {
     width: 280px;
 }
-.card6 {
-    margin-top: 20px;
+
+
+
+.harbour .main .card1{
+    border-bottom: 1px solid ;
+    border-right: 1px solid ;
+}
+.harbour .main .card2{
+    border-bottom: 1px solid ;
+}
+.harbour .main .card3{
+    border-right: 1px solid ;
+}
+.harbour .main .card4{
+    margin-top: -1.5rem;
 }

@@ -22,7 +22,7 @@ import Drone_gif from '../../Photos/Home/drone.gif';
 import App_development from '../../Photos/Home/App_development.gif';
 import Multi_carousel from '../../Components/Home_Component/Multi_carousel/Multi_carousel';
 import TechBlog from '../../Components/Home_Component/Home_technoBlog/techBlog';
-import Chatbot from '../../Components/Home_Component/Chatbot/Chatbot';
+// import Chatbot from '../../Components/Home_Component/Chatbot/Chatbot';
 
 
 
@@ -79,14 +79,21 @@ const Home = () => {
                 >
                     {Techbanner&&Techbanner.map(slide => (
                         <div key={slide.id}>
-                            <img src={slide.banner_img_url} alt={slide.caption} />
+                            <img className={Styles.carousel_img} src={slide.banner_img_url} alt={slide.caption} />
                             <p className={Styles.title}>{slide.heading}</p>
+                            <p className={Styles.subTitle}>{slide.subTitle}</p>
+                            <div className={Styles.know_more}>
+                                <Link to={"/contact"}> <div className={Styles.know_more_btn}>
+                                    <div></div>
+                                    <h2>Know More</h2>
+                                </div></Link>
+                            </div>
                         </div>
                     ))}
                 </Carousel>
 
             </section>
-              <div className={Styles.Chatbot}> <Chatbot/></div> 
+              {/* <div className={Styles.Chatbot}> <Chatbot/></div>  */}
             <section className={Styles.home_secend_part}>
 
                 <div className={Styles.features}>

@@ -94,3 +94,20 @@
 .right_nav ul li:hover>ul{
     display: block;
 }
+
+
+
+.menue{
+    display: none;
+    font-size: 30px;
+}
+
+
+@media (max-width:1100px) {
+    .menue{
+        display: block;
+    }
+    .right_nav{
+        display: none;
+    }
+}
