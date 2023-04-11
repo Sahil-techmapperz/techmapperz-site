@@ -25,6 +25,8 @@ import Ourservice9 from '../../Photos/Ourservice9.png';
 import Ourservice10 from '../../Photos/Ourservice10.png';
 import Ourservice11 from '../../Photos/Ourservice11.png';
 import Rectangle_41 from '../../Photos/Rectangle 41.png';
+import Drone_race_gif from '../../Photos/Our Services/Drone_race.gif';
+import Coworking_gif from '../../Photos/Our Services/Coworking.gif';
 import { Link } from 'react-router-dom';
 
 
@@ -109,7 +111,7 @@ const Service_main = () => {
                            </div>
 
                         <div className={Styles.card6}>
-                        <img src={Ourservice6} alt='' />
+                        <img src={Drone_race_gif} alt='' />
                      </div>
 
 
@@ -164,12 +166,12 @@ const Service_main = () => {
 
                         
 
-                    </div>
                     <div className={Styles.Squared_img}>
-                        <img src={Ourservice1} alt='' />
+                        <img src={Coworking_gif} alt='' />
                         </div>
                     
                 </div>
+                    </div>
 
 
             </section>

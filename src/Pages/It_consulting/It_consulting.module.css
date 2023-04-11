@@ -116,6 +116,10 @@
 .newmain .design .card2{
     margin-top: 1rem;
 }
+.newmain .design .card4 img{
+    width: 100%;
+    object-fit: fill;
+}
 .newmain .design .card9 img{
     width: 100%;
     object-fit: fill;
@@ -219,3 +223,4 @@ letter-spacing: 0.162793px;
 .harbour .main .card4{
     margin-top: -1.5rem;
 }
+

@@ -41,9 +41,11 @@ const Drone_Service = () => {
                             cameras and sensors. Techmapperz can capture multispectral imagery(NDVI),thermal imagery and vedio vedio recision LiDAR
                             imagery on a substantial high level with additional payloads.</p>
                   </div>
+                  <h1 className={styles.water_mark}>Drone</h1>
                 <div className={styles.contaner}>
                 <div  className={styles.para1}>
-                    <h1 className={styles.heading}>Data Acquisition & Processing</h1>
+                    
+                    <h1 className={styles.heading1}>Data Acquisition & Processing</h1>
                     <img src={Drone_Service4} alt="" /></div>
                     <div className={styles.product}>
                        <div> <img src={Drone_Service1} alt="Geospatial_Mapping.png" /></div>
