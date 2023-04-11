@@ -91,7 +91,9 @@
     font-size: 36px;
     font-weight:600;
 }
-
+.class2 {
+    text-align: center;
+}
 .product {
     display: flex;
     justify-content: center;
@@ -361,6 +363,43 @@ border-right: 1px solid;
 }
 
 .card h3 {
+font-weight: 700;
+font-size: 22px;
+line-height: 33px;
+text-align: center;
+letter-spacing: 0.162793px;
+color: #FFFFFF;
+}
+
+
+.card10 {
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.card10 h3 {
+font-weight: 700;
+font-size: 22px;
+line-height: 33px;
+text-align: center;
+letter-spacing: 0.162793px;
+color: #FFFFFF;
+}
+
+.card11 {
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.card11 h3 {
 font-weight: 700;
 font-size: 22px;
 line-height: 33px;

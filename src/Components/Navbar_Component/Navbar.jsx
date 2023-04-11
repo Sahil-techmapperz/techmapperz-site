@@ -2,16 +2,40 @@ import React from 'react'
 import { Link, useLocation } from 'react-router-dom';
 import styles from './Navbar.module.css';
 import { IoIosArrowDown } from 'react-icons/io';
+import { AiOutlineMenu, AiOutlineDown } from 'react-icons/ai';
+import {
+  Drawer,
+  DrawerBody,
+  DrawerFooter,
+  DrawerHeader,
+  DrawerOverlay,
+  DrawerContent,
+  DrawerCloseButton,
+  useDisclosure,
+  Button,
+  Box,
+  Menu,
+  MenuButton,
+  MenuList,
+  MenuItem,
+  MenuItemOption,
+  MenuGroup,
+  MenuOptionGroup,
+  MenuDivider,
+} from '@chakra-ui/react'
+
 const Navbar = () => {
+  const { isOpen, onOpen, onClose } = useDisclosure()
+  const btnRef = React.useRef()
   const location = useLocation();
   return (
     <div className={styles.Navbar}>
       <div className={styles.left_nav}>
-       <Link to={"/"}> <img src='https://www.techmapperz.com/images/v421_18528.png' alt='logo' /></Link>
+        <Link to={"/"}> <img src='https://www.techmapperz.com/images/v421_18528.png' alt='logo' /></Link>
       </div>
       <div className={styles.right_nav}>
         <ul>
-          <li style={{ borderBottom: location.pathname === '/' && '3px solid red'  }}><Link  to={"/"}>Home</Link></li>
+          <li style={{ borderBottom: location.pathname === '/' && '3px solid red' }}><Link to={"/"}>Home</Link></li>
           <li style={{ borderBottom: location.pathname === '/service' && '3px solid red' }}><Link to={"/service"}>Service <IoIosArrowDown /></Link>
             <ul>
               <li><Link>Geospacial Services</Link>
@@ -33,13 +57,44 @@ const Navbar = () => {
               </li>
             </ul>
           </li>
-          <li style={{ borderBottom: location.pathname === '/article' && '3px solid red'  }}><Link to={"/article"}>News & Articles <IoIosArrowDown /></Link>
+          <li style={{ borderBottom: location.pathname === '/article' && '3px solid red' }}><Link to={"/article"}>News & Articles <IoIosArrowDown /></Link>
           </li>
-          <li style={{ borderBottom: location.pathname === '/about' && '3px solid red'  }}><Link to={"/about"}>About us</Link></li>
-          <li style={{ borderBottom: location.pathname === '/career' && '3px solid red'  }}><Link to={"/career"}>Careers</Link></li>
-          <li style={{ borderBottom: location.pathname === '/contact' && '3px solid red'  }}><Link to={"/contact"}>Contact us</Link></li>
+          <li style={{ borderBottom: location.pathname === '/about' && '3px solid red' }}><Link to={"/about"}>About us</Link></li>
+          <li style={{ borderBottom: location.pathname === '/career' && '3px solid red' }}><Link to={"/career"}>Careers</Link></li>
+          <li style={{ borderBottom: location.pathname === '/contact' && '3px solid red' }}><Link to={"/contact"}>Contact us</Link></li>
         </ul>
       </div>
+      <div ref={btnRef} onClick={onOpen} className={styles.menue}><AiOutlineMenu /></div>
+
+      <Drawer
+        isOpen={isOpen}
+        placement='right'
+        onClose={onClose}
+        finalFocusRef={btnRef}
+        
+      >
+        <DrawerOverlay />
+        <DrawerContent backgroundColor={"gray.400"}>
+          <DrawerCloseButton />
+          <DrawerBody display={"flex"} flexDirection="column" justifyContent={"center"} alignItems="center" gap="2rem">
+            <Box fontSize={"25px"} ><Link to={"/"}>Home</Link></Box>
+            <Box fontSize={"25px"} ><Link to={"/service"}>Service</Link></Box>
+            <Box fontSize={"25px"} ><Link to={"/article"}>News & Article</Link></Box>
+            <Box fontSize={"25px"} ><Link to={"/about"}>About us</Link></Box>
+            <Box fontSize={"25px"} ><Link to={"/career"}>Career</Link></Box>
+            <Box fontSize={"25px"} ><Link to={"/contact"}>Contact</Link></Box>
+            
+          </DrawerBody>
+
+          <DrawerFooter>
+            <Button colorScheme={"red"} variant='outline' mr={3} onClick={onClose}>
+              Cancel
+            </Button>
+          </DrawerFooter>
+        </DrawerContent>
+      </Drawer>
+
+
     </div>
   )
 }

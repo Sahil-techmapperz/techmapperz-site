@@ -40,7 +40,7 @@ BannerRoute.get("/", async (req, res) => {
 
 BannerRoute.post("/", upload.single("file"), async (req, res, next) => {
   const { body: { data } } = req;
-  const { heading,banner_img_url } = JSON.parse(data);
+  const { heading,banner_img_url,subTitle } = JSON.parse(data);
   // const { heading,banner_img_url } =req.body;
   
 
@@ -54,12 +54,12 @@ BannerRoute.post("/", upload.single("file"), async (req, res, next) => {
       const Banner_url = await uploadFile(buffer, file);
       console.log(Banner_url);
       let AllBanner = await Bannermodel.find();
-      let newBanner = new Bannermodel({"banner_img_url": Banner_url, userId: AllBanner.length + 1,heading });
+      let newBanner = new Bannermodel({"banner_img_url": Banner_url, userId: AllBanner.length + 1,heading,subTitle });
       await newBanner.save();
       res.status(200).json({ "message": "your banner details submitted successfully","data":newBanner });
     }else if(banner_img_url){
       let AllBanner = await Bannermodel.find();
-      let newBanner = new Bannermodel({banner_img_url, userId: AllBanner.length + 1,heading });
+      let newBanner = new Bannermodel({banner_img_url, userId: AllBanner.length + 1,heading,subTitle });
       await newBanner.save();
       res.status(200).json({ "message": "your banner details submitted successfully","data":newBanner  });
     }   
@@ -73,6 +73,27 @@ BannerRoute.post("/", upload.single("file"), async (req, res, next) => {
 
 });
 
+
+
+
+BannerRoute.put('/:userId', async (req, res) => {
+  const userId = req.params.userId;
+  const updatedJob = req.body;
+
+  try {
+    // Update the job in your data store
+    const updatedBannerData = await Bannermodel.findOneAndUpdate({ userId: userId }, updatedJob, { new: true });
+
+    if (updatedBannerData) {
+      res.json(updatedBannerData);
+    } else {
+      res.status(404).send('Job not found');
+    }
+  } catch (err) {
+    console.error('Error updating job:', err);
+    res.status(500).send('Internal server error');
+  }
+});
 
 
 BannerRoute.delete("/", async (req, res) => {
