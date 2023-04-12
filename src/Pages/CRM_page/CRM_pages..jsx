@@ -10,6 +10,17 @@ import Webdevelop from '../../Photos/Webdevelop.png';
 import Vector7 from '../../Photos/Develop1.png';
 import Vector8 from '../../Photos/Develop2.png';
 import Vector9 from '../../Photos/Develop3.png';
+import CRM1 from '../../Photos/CRM1.png'
+import CRM2 from '../../Photos/CRM2.png'
+import CRM3 from '../../Photos/CRM3.png'
+import CRM4 from '../../Photos/CRM4.png'
+import CRM5 from '../../Photos/CRM5.png'
+import CRM6 from '../../Photos/CRM6.png'
+import CRM7 from '../../Photos/CRM7.png'
+import CRM8 from '../../Photos/CRM8.png'
+import CRM9 from '../../Photos/CRM9.png'
+import CRM10 from '../../Photos/CRM10.png'
+
 import T01 from '../../Photos/01.png';
 import T02 from '../../Photos/02.png';
 import T03 from '../../Photos/03.png';
@@ -46,7 +57,7 @@ const CRM_pages = () => {
 
                         <div className={Styles.card1}>
                         <div className={Styles.testimg1}>
-                        <img src={Webdevelop} alt='' />
+                        <img src={ CRM1} alt='' />
                         <img src={T01} alt='' />
                         </div> 
                        
@@ -57,7 +68,7 @@ const CRM_pages = () => {
 
                         <div className={Styles.card1}>
                         <div className={Styles.testimg1}>
-                        <img src={Vector7} alt='' />
+                        <img src={ CRM2} alt='' />
                         <img src={T02} alt='' />
                         </div> 
                       
@@ -69,7 +80,7 @@ const CRM_pages = () => {
 
                         <div className={Styles.card1}>
                         <div className={Styles.testimg1}>
-                        <img src={Vector8} alt='' />
+                        <img src={ CRM3} alt='' />
                         <img src={T03} alt='' />
                         </div> 
                        
@@ -81,7 +92,7 @@ const CRM_pages = () => {
 
                         <div className={Styles.card1}>
                         <div className={Styles.testimg1}>
-                        <img src={Vector9} alt='' />
+                        <img src={ CRM4} alt='' />
                         <img src={T04} alt='' />
                         </div> 
                        
@@ -108,14 +119,14 @@ const CRM_pages = () => {
 
                         <div className={Styles.card5}>
                         
-                        <img src={Combind1} alt='' />
+                        <img src={ CRM5} alt='' />
                              <h3>Operational</h3>
                              <p>This is a prime tool to manage your business,more efficiently with maximum utilization of customer data.</p>                           
                         </div>
 
 
                         <div className={Styles.card6}>
-                        <img src={Combind5} alt='' />
+                        <img src={ CRM6} alt='' />
                         <h3>Analytical</h3>
                              <p>An analytic CRM is for better interactions with your customers and new business possibilities based on customer data. </p>
                        
@@ -123,20 +134,20 @@ const CRM_pages = () => {
 
 
                         <div className={Styles.card7}>
-                        <img src={Combind3} alt='' />  
+                        <img src={ CRM7} alt='' />  
                         <h3>Colaberetive</h3>
                           <p>This CRM is the framework for vendor distributor interaction and business opportunities.</p>
                      </div>
 
                         <div className={Styles.card8}>
-                        <img src={Combind1} alt='' />
+                        <img src={ CRM8} alt='' />
                         <h3>Campaign Management</h3>
                              <p>Campaign CMR is primarly for campaign management which combines anaytical and operational CRMs.</p>
                           </div>
 
 
                           <div className={Styles.card9}>
-                          <img src={Combind1} alt='' />
+                          <img src={ CRM10} alt='' />
                              <h3>Strategic</h3>
                              <p>This is a market study CMR, which helps you to understand and fellow market trends and demands, crucial for the customer demand supply efficiency.</p>
                          </div>
