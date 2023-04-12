@@ -142,15 +142,15 @@ const Contact = () => {
                 <div className={Styles.contact_bottom_left}>
                     <p className={Styles.title}>Gettting Touch</p>
                     <h1>Do you have a project in your mind?</h1>
-                    <div>
+                    <div className={Styles.addres_contaner}>
                         <p className={Styles.logo_contaner}><BiTimeFive className={Styles.logo} />  9.30-6.30 </p>
                         <div className={Styles.address_card}>
-                            <p className={Styles.logo_contaner}><AiFillHome className={Styles.logo} />   Delhi Office</p>
+                            <p className={Styles.logo_contaner}><AiFillHome className={Styles.logo} />Delhi</p>
                             <p>55, Lane - 2, Westend Marg, Saidullajab,
                                 Near Saket metro station,</p>
                         </div>
                         <div className={Styles.address_card}>
-                            <p className={Styles.logo_contaner}><AiFillHome className={Styles.logo} />Kolkata Office</p>
+                            <p className={Styles.logo_contaner}><AiFillHome className={Styles.logo} />Kolkata</p>
                             <p>37, Vivekananda Road,Dunlop,Kolkata-700035</p>
                         </div>
                     </div>
@@ -233,7 +233,7 @@ const Contact = () => {
                 </div>
             </div>
             <div className={Styles.map}>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3683.806246276118!2d88.35882551394677!3d22.586348838160177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0277b573148aaf%3A0xc830ad0c222e6a1!2s37%2C%20Vivekananda%20Rd%2C%20Raja%20Katra%2C%20Singhi%20Bagan%2C%20Ram%20Bagan%2C%20Kolkata%2C%20West%20Bengal%20700006!5e0!3m2!1sen!2sin!4v1677844468005!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3683.596906446634!2d88.415269676073!3d22.594174726557426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a02754e9bb6f449%3A0xfef69449a7f4a853!2sCF-401%2C%20CF%20Block%2C%20Sector%201%2C%20Bidhannagar%2C%20Kolkata%2C%20West%20Bengal%20700064!5e0!3m2!1sen!2sin!4v1681305583641!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
         </div>
     )

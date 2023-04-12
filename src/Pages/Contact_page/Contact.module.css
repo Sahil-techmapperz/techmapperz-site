@@ -74,7 +74,7 @@
 
 .contact_bottom .contact_bottom_left .address_card{
     display: flex;
-    gap: 15px;
+    width: max-content;
 }
 
 
@@ -83,6 +83,8 @@
     display: flex;
     gap: 5px;
 }
+
+
 
 
 .contact_bottom .contact_bottom_left .logo{
@@ -102,6 +104,7 @@
 
 .contact_bottom .contact_bottom_right{
     color: white;
+    width: 600px;
 }
 
 

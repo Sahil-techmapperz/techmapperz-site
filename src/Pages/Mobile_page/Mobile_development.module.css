@@ -87,13 +87,15 @@
     background: rgba(24, 24, 24, 1);
 }
 
-.heading2{
+.heading2 {
     font-size: 36px;
-    font-weight:600;
+    font-weight: 600;
 }
+
 .class2 {
     text-align: center;
 }
+
 .product {
     display: flex;
     justify-content: center;
@@ -220,51 +222,47 @@
     margin-top: 2rem;
 }
 
-.design {
+.harbour .design {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(2,400px);
+    grid-template-columns: repeat(2, 400px);
     justify-content: center;
-    align-items: center;
     margin-top: 2rem;
-    row-gap: 0;
-
 }
 
-.design div{
-    height: 300px;
-    padding: 2rem 10px 4rem 10px;
+.design div {
+    padding: 1rem;
 }
 
-.design div h3{
+.design div h3 {
     font-weight: 700;
-font-size: 22px;
-line-height: 33px;
-letter-spacing: 0.162793px;
-color: #FFFFFF;
+    font-size: 22px;
+    line-height: 33px;
+    letter-spacing: 0.162793px;
+    color: #FFFFFF;
 }
 
 .card1 {
-    border-right: 1px solid ;
+    border-right: 1px solid;
     border-bottom: 1px solid;
 }
 
 .card2 {
-border-bottom: 1px solid ;
-    
+    border-bottom: 1px solid;
+
 }
 
 .card3 {
-   border-bottom: 1px solid ;
-   border-right: 1px solid ;
+    border-bottom: 1px solid;
+    border-right: 1px solid;
 }
 
 .card4 {
-border-bottom: 1px solid;
+    border-bottom: 1px solid;
 }
 
 .card5 {
-border-right: 1px solid;
+    border-right: 1px solid;
 }
 
 
@@ -350,25 +348,23 @@ border-right: 1px solid;
 
 .card_border_1 h3 {
     margin-left: 10px;
-
-
 }
 
 .card {
     height: 350px;
     display: flex;
     align-items: center;
-    justify-content:center;
+    justify-content: center;
     flex-direction: column;
 }
 
 .card h3 {
-font-weight: 700;
-font-size: 22px;
-line-height: 33px;
-text-align: center;
-letter-spacing: 0.162793px;
-color: #FFFFFF;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 33px;
+    text-align: center;
+    letter-spacing: 0.162793px;
+    color: #FFFFFF;
 }
 
 
@@ -376,34 +372,34 @@ color: #FFFFFF;
     height: 350px;
     display: flex;
     align-items: center;
-    justify-content:center;
+    justify-content: center;
     flex-direction: column;
     margin-top: 30px;
 }
 
 .card10 h3 {
-font-weight: 700;
-font-size: 22px;
-line-height: 33px;
-text-align: center;
-letter-spacing: 0.162793px;
-color: #FFFFFF;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 33px;
+    text-align: center;
+    letter-spacing: 0.162793px;
+    color: #FFFFFF;
 }
 
 .card11 {
     height: 350px;
     display: flex;
     align-items: center;
-    justify-content:center;
+    justify-content: center;
     flex-direction: column;
     margin-top: 20px;
 }
 
 .card11 h3 {
-font-weight: 700;
-font-size: 22px;
-line-height: 33px;
-text-align: center;
-letter-spacing: 0.162793px;
-color: #FFFFFF;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 33px;
+    text-align: center;
+    letter-spacing: 0.162793px;
+    color: #FFFFFF;
 }

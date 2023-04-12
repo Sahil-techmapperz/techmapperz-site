@@ -22,6 +22,7 @@ import Sitemap from '../Pages/Sitemap_page/Sitemap';
 import CRM_Consulting from '../Pages/CRM_Consulting/CRM_Consulting';
 import CRM_Implement from '../Pages/CRM_Impliment/CRM_Implement';
 import Custom_Consulting from '../Pages/Custom_Consulting/Custom_Consulting';
+import CRM_Integretion from '../Pages/CRM_Integretion/CRM_Integretion';
 
 
 
@@ -51,6 +52,7 @@ const Router = () => {
       <Route path='/crm_consulting' element={<CRM_Consulting/>}></Route>
       <Route path='/crm_implement' element={<CRM_Implement/>}></Route>
      <Route path='/custom_consulting' element={<Custom_Consulting/>}></Route>
+     <Route path='/crm_integretion' element={<CRM_Integretion/>}></Route>
        
     </Routes>
   )

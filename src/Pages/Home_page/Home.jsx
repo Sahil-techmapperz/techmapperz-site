@@ -102,12 +102,12 @@ const Home = () => {
                     autoPlay={true}
                     showThumbs={false}
                     stopOnHover={true}
-                   showIndicators={false} 
+                    showArrows={false}
                    useKeyboardArrows={true}
                 >
                     {Techbanner&&Techbanner.map(slide => (
                         <div key={slide.id}>
-                            <img className={Styles.carousel_img} src={slide.banner_img_url} alt={slide.caption} />
+                            <img className={Styles.carousel_img} loading="lazy" src={slide.banner_img_url} alt={slide.caption} />
                             <p className={Styles.title}>{slide.heading}</p>
                             <p className={Styles.subTitle}>{slide.subTitle}</p>
                             <div className={Styles.know_more}>
@@ -126,7 +126,7 @@ const Home = () => {
 
                 <div className={Styles.features}>
                     <p className={Styles.title}>Features</p>
-                    <img className={Styles.setting_icon} src={Home_4} alt='' />
+                    <img className={Styles.setting_icon} src={Home_4} alt='' loading="lazy" />
                     <div className={Styles.features_top}>
                         <h1>These Services to Expand your Business</h1>
                         <div className={Styles.info}>
@@ -141,15 +141,15 @@ const Home = () => {
                     </div>
                     <div className={Styles.card_contaner}>
                         <div className={Styles.card}>
-                            <img src={Home_1} alt='' />
+                            <img src={Home_1} alt=''   loading="lazy"/>
                            <Link to={"/it_consulting"}> <h1>IT Services</h1></Link>
                         </div>
                         <div className={`${Styles.card} ${Styles.card_2}`}>
-                            <img src={Home_2} alt='' />
+                            <img src={Home_2} alt=''  loading="lazy"/>
                            <Link to={"/gis_service"}> <h1>GIS Services</h1></Link>
                         </div>
                         <div className={`${Styles.card} ${Styles.card_3}`}>
-                            <img src={Home_3} alt='' />
+                            <img src={Home_3} alt=''  loading="lazy"/>
                            <Link to={"/drone_service"}> <h1>Drone Services</h1></Link>
                         </div>
                     </div>
@@ -185,18 +185,18 @@ const Home = () => {
                             <div><SiKotlin className={Styles.logo} /><p>Kotlin</p></div>
                         </div>
                     </div>
-                    <img className={Styles.technology_icon} src={Home_5} alt='' />
+                    <img className={Styles.technology_icon} src={Home_5} alt='' loading="lazy" />
                 </div>
 
                 <div className={Styles.About_us}>
                     <div className={Styles.about_left}>
-                        <img className={Styles.Circul_1} src={Home_8} alt='' />
-                        <img className={Styles.Circul_2} src={Home_8} alt='' />
-                        <img className={Styles.about_img_1} src={Home_7} alt='' />
-                        <img className={Styles.about_img_2} src={Home_6} alt='' />
+                        <img className={Styles.Circul_1} src={Home_8} alt=''  loading="lazy"/>
+                        <img className={Styles.Circul_2} src={Home_8} alt=''  loading="lazy"/>
+                        <img className={Styles.about_img_1} src={Home_7} alt=''  loading="lazy"/>
+                        <img className={Styles.about_img_2} src={Home_6} alt=''  loading="lazy"/>
                     </div>
                     <div className={Styles.about_right}>
-                    <img className={Styles.about_us_drone} src={Home_9} alt=''/>
+                    <img className={Styles.about_us_drone} src={Home_9} alt='' loading="lazy"/>
                         <p className={Styles.title}>About Us</p>
                         <div className={Styles.about_right_contener}>
                             <h1>Why Choose Techmapperz</h1>
@@ -226,7 +226,7 @@ const Home = () => {
                     <div className={Styles.Brand_Partners_right}>
                         <p>Technology</p>
                         <h1>Our Brand Partners</h1>
-                        <img src='https://ik.imagekit.io/ntktfi8dx/uploads/Microsoft_logo_1.png?updatedAt=1680756385301' alt=''/>
+                        <img src='https://ik.imagekit.io/ntktfi8dx/uploads/Microsoft_logo_1.png?updatedAt=1680756385301' alt='' loading="lazy"/>
                     </div>
                 </div>
 

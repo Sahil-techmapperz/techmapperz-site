@@ -34,8 +34,8 @@
     font-weight: 600;
     letter-spacing: 0.16px;
     text-align: center;
-    margin: auto;
-    
+    justify-content: center;
+    width: 900px;
 }
 
 
@@ -54,9 +54,9 @@
 
 .carousel_container .know_more{
     position: absolute;
-    bottom: 20rem;
+    bottom: 5rem;
     width: 250px;
-    left: 50%;
+    left: 46%;
 } 
 
 

@@ -2,7 +2,7 @@ import React, {useEffect} from 'react';
 import { Link } from 'react-router-dom';
 
 import Custom_Consulting5 from '../../Photos/Custom_Consulting5.gif'
-import Custom_Consulting6 from '../../Photos/Custom_Consulting6.gif'
+import Custom_Consulting6 from '../../Photos/Custom_Consulting6.gif';
 
 
 
