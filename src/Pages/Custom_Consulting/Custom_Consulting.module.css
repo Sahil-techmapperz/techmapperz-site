@@ -39,11 +39,10 @@
 
 
 .secand_part {
-    width: 90%;
+    width: 100%;
     margin: auto;
     background: rgba(24, 24, 24, 1);
-    margin-left: 5rem;
-    margin-right: 5rem;
+   padding: 2rem 5rem;
 }
 .info {
     display: flex;

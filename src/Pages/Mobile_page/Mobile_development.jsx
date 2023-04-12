@@ -125,7 +125,7 @@ const Mobile_development = () => {
                 
                 <div className={styles.harbour}>
                     <div>
-                    <h1 className={`${styles.heading1} ${styles.class2}`}>How Mobile <br/> Applications <br/> Grow Your <br/> Business?</h1>
+                    <h1 className={`${styles.heading1} ${styles.class2}`}>How Mobile Applications <br/> Grow Your <br/> Business?</h1>
                     <img src={MobileDev16} alt='' />
                     </div>
                     <div className={styles.design}>

@@ -68,14 +68,14 @@ const It_consulting = () => {
 
                     <div className={Styles.design}>
                         <div className={`${Styles.card} ${Styles.card1}`}>
-                            <img src={Itconsulting14} alt='' />
+                            <img src={Itconsulting14} alt='' loading="lazy"/>
                             <h3>Infrastructure</h3>
                             <p>Our Infrastructure consulting will help you power through the use of under-utilization of your Infrastructure, and deliver something that can make your business thrive...</p>
                         </div>
 
 
                         <div className={`${Styles.card} ${Styles.card2}`}>
-                            <img src={Itconsulting13} alt='' />
+                            <img src={Itconsulting13} alt='' loading="lazy"/>
                             <h3>Design and Implementation</h3>
                             <p>Our team can work with you on designing a network to secure your data and other intelligent infrastructures...</p>
 
@@ -83,43 +83,43 @@ const It_consulting = () => {
 
 
                         <div className={`${Styles.card} ${Styles.card3}`}>
-                            <img src={Itconsulting12} alt='' />
+                            <img src={Itconsulting12} alt='' loading="lazy"/>
                             <h3>Planning</h3>
                             <p>Techmapperz provides strategic information Systems Planning and Assesment services that help organizations leverage the benefits of technology...</p>
 
                         </div>
 
                         <div className={`${Styles.card} ${Styles.card4}`}>
-                            <img className={Styles.para2} src={Office_work} alt='' />
+                            <img className={Styles.para2} src={Office_work} alt='' loading="lazy"/>
                         </div>
 
                         <div className={`${Styles.card} ${Styles.card5}`}>
-                            <img src={Itconsulting10} alt='' />
+                            <img src={Itconsulting10} alt='' loading="lazy"/>
                             <h3>Digital Transformations</h3>
                             <p>Digital Transformation is the integration of Digital technology into your business. With our team of experts, we'll help you work smarter...</p>
                         </div>
 
                         <div className={`${Styles.card} ${Styles.card6}`}>
-                            <img src={Itconsulting9} alt='' />
+                            <img src={Itconsulting9} alt='' loading="lazy"/>
                             <h3>Modernization</h3>
                             <p>We replatform your apps in order to make functionality easier.Re-architecting your apps to make it more scalable and flexible.This will be done through code...  </p>
                         </div>
 
 
                         <div className={`${Styles.card} ${Styles.card7}`}>
-                            <img src={Itconsulting8} alt='' />
+                            <img src={Itconsulting8} alt='' loading="lazy"/>
                             <h3>Strattegy Consulting</h3>
                             <p>strategy consulting is an important aspect of digital transformation. With this package, we offer one-on-ones with our consultants to assess where you are at now... </p>
                         </div>
 
                         <div className={`${Styles.card} ${Styles.card8}`}>
-                            <img src={Itconsulting1} alt='' />
+                            <img src={Itconsulting1} alt='' loading="lazy"/>
                             <h3>Implementation</h3>
                             <p>We,ll help define the required skill sets for our team (including developers,project managers, QA, etc.) so that we can build a robust architecture and prototype..</p>
                         </div>
 
                         <div className={`${Styles.card} ${Styles.card9}`}>
-                            <img className={Styles.para2} src={Digital_nomad} alt='' />
+                            <img className={Styles.para2} src={Digital_nomad} alt='' loading="lazy"/>
                         </div>
 
                     </div>
@@ -130,13 +130,13 @@ const It_consulting = () => {
                 <div className={Styles.harbour}>
                     <div className={Styles.Img_contaner}>
                         <h1 className={Styles.heading}>Why Choose <br />Techmapperz <br /> for your IT Services?</h1>
-                        <img className={Styles.para1} src={Good_team} alt='' />
+                        <img className={Styles.para1} src={Good_team} alt='' loading="lazy"/>
                     </div>
                     <div className={Styles.main}>
                         <div className={Styles.card1}>
                             <div className={Styles.testimg1}>
-                                <img src={Itconsulting5} alt='' />
-                                <img src={T01} alt='' />
+                                <img src={Itconsulting5} alt='' loading="lazy" />
+                                <img src={T01} alt='' loading="lazy"/>
                             </div>
                                 <h3>Reliability</h3>
                             <p>With the accumulated experience of more than 20 years, our team is well equipped to help you solve all possible challenges in the customer management field..</p>
@@ -144,8 +144,8 @@ const It_consulting = () => {
 
                         <div className={Styles.card2}>
                             <div className={Styles.testimg1}>
-                                <img src={Itconsulting4} alt='' />
-                                <img src={T02} alt='' />
+                                <img src={Itconsulting4} alt='' loading="lazy"/>
+                                <img src={T02} alt='' loading="lazy"/>
                             </div>
                                 <h3>Revenue</h3>
                             <p>With global competition and greater customer expectations companies look farward to enhance customer relationship and experience,many business entities .</p>
@@ -154,8 +154,8 @@ const It_consulting = () => {
 
                         <div className={Styles.card3}>
                             <div className={Styles.testimg1}>
-                                <img src={Itconsulting2} alt='' />
-                                <img src={T03} alt='' />
+                                <img src={Itconsulting2} alt='' loading="lazy"/>
+                                <img src={T03} alt='' loading="lazy"/>
                             </div>
                                 <h3>Robust</h3>
                             <p>At custom CRM consulting we understand your current capabilities,map your organisation's desired future state, and then recommend CRM implementation</p>
@@ -164,8 +164,8 @@ const It_consulting = () => {
 
                         <div className={Styles.card4}>
                             <div className={Styles.testimg1}>
-                                <img src={Itconsulting1} alt='' />
-                                <img src={T04} alt='' />
+                                <img src={Itconsulting1} alt='' loading="lazy"/>
+                                <img src={T04} alt='' loading="lazy"/>
                             </div>
                                 <h3>Skilled Management</h3>
                             <p>CRM integration is connecting all the applications you use to run your business to customer information, it's a 360-degree view of customer data that can be seamlessly..</p>
