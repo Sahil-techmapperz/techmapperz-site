@@ -31,7 +31,7 @@ const Navbar = () => {
   return (
     <div className={styles.Navbar}>
       <div className={styles.left_nav}>
-        <Link to={"/"}> <img src='https://www.techmapperz.com/images/v421_18528.png' alt='logo' /></Link>
+        <Link to={"/"}> <img src='https://ik.imagekit.io/ntktfi8dx/logo/Logo.png?updatedAt=1681285604682' alt='logo' /></Link>
       </div>
       <div className={styles.right_nav}>
         <ul>

@@ -83,11 +83,11 @@ function checkAuth(req, res, next) {
 article_route.get("/", async (req, res) => {
   const fetchPosts = async () => {
     try {
-      let response = await fetch('https://sahilreviews.com/wp-json/wp/v2/posts');
+      let response = await fetch('https://www.test.geotechcybernauts.com/wp-json/wp/v2/posts');
       response=await response.json();
       const postsWithImgurl = await Promise.all(
         response.map(async post => {
-          let ImgResponse = await fetch(`https://sahilreviews.com/wp-json/wp/v2/media/${post.featured_media}`);
+          let ImgResponse = await fetch(`https://www.test.geotechcybernauts.com/wp-json/wp/v2/media/${post.featured_media}`);
           ImgResponse= await ImgResponse.json();
           return {...post,img_url: ImgResponse.guid};
         })
@@ -112,15 +112,15 @@ article_route.get("/test",async(req,res)=>{
 
 let fetchPosts=async()=>{
 
-  let response1 = await fetch('https://sahilreviews.com/wp-json/wp/v2/posts');
+  let response1 = await fetch('https://www.test.geotechcybernauts.com/wp-json/wp/v2/posts');
 response1 = await response1.json();
 
 const authorId = response1[0].author; // Get the author ID from the first post in the response
 
-let response2 = await fetch(`https://sahilreviews.com/wp-json/wp/v2/users/${authorId}`);
+let response2 = await fetch(`https://www.test.geotechcybernauts.com/wp-json/wp/v2/users/${authorId}`);
 response2 = await response2.json();
 
-let response3 = await fetch(`https://sahilreviews.com/wp-json/wp/v2/media/${response1[0].featured_media}`);
+let response3 = await fetch(`https://www.test.geotechcybernauts.com/wp-json/wp/v2/media/${response1[0].featured_media}`);
 response3 = await response3.json();
 
 const postsWithAuthor = await Promise.all(
@@ -152,7 +152,7 @@ const {id}=req.body;
 
 const fetchPosts = async () => {
   try {
-    let response = await fetch(`https://sahilreviews.com/wp-json/wp/v2/posts/${id}`);
+    let response = await fetch(`https://www.test.geotechcybernauts.com/wp-json/wp/v2/posts/${id}`);
     response=await response.json();
     
     
@@ -180,7 +180,7 @@ res.status(200).send(post);
 
 
 
-const baseUrl = 'https://sahilreviews.com/wp-json/wp/v2';
+const baseUrl = 'https://www.test.geotechcybernauts.com/wp-json/wp/v2';
 
 
 
@@ -358,7 +358,7 @@ article_route.get("/search",async(req,res)=>{
   const search = req.query.search || '';
 
   try{
-  const response = await axios.get(`https://sahilreviews.com/wp-json/wp/v2/posts?_embed&&search=${search}`);
+  const response = await axios.get(`${baseUrl}/posts?_embed&&search=${search}`);
     
   const postData = response.data.map((post) => {
     const author = post._embedded.author[0];

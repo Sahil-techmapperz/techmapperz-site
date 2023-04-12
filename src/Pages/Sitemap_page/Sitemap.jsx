@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom';
 import Styles from "./Sitemap.module.css";
+import { AiOutlineRight,AiOutlineLeft} from 'react-icons/ai';
 const Sitemap = () => {
   useEffect(() => {
     const options = {
@@ -19,7 +20,7 @@ const Sitemap = () => {
       <div className={Styles.bottem}>
         <div className={Styles.card_contanier}>
             <div className={Styles.card}>
-              <Link to={"/"}> <h2>Home</h2></Link> 
+              <Link to={"/"}><div className={Styles.card_top}><div className={Styles.arrow}> <AiOutlineLeft/> </div> <h2>Home</h2></div></Link> 
                 <ul>
                   <li><Link to={"/"}>Features</Link></li>
                   <li><Link to={"/"}>Technology</Link></li>
@@ -30,7 +31,7 @@ const Sitemap = () => {
                 
             </div>
             <div className={Styles.card}>
-              <Link to={"/about"}> <h2>About us</h2></Link> 
+              <Link to={"/about"}> <div className={Styles.card_top}><div className={Styles.arrow}> <AiOutlineLeft/> </div> <h2>About us</h2></div></Link> 
                 <ul>
                   <li><Link to={"/about"}>About Company</Link></li>
                   <li><Link to={"/about"}>Our Mission</Link></li>
@@ -42,7 +43,7 @@ const Sitemap = () => {
                 
             </div>
             <div className={Styles.card}>
-               <Link to={"/service"}> <h2>Service</h2></Link>
+               <Link to={"/service"}> <div className={Styles.card_top}><div className={Styles.arrow}> <AiOutlineLeft/> </div> <h2>Service</h2></div></Link>
                 <ul>
                   <li><Link to={"/service"}>GIS Services</Link></li>
                   <li><Link to={"/service"}>Remote Sensing Services</Link></li>
@@ -56,20 +57,9 @@ const Sitemap = () => {
                 </ul>
                 
             </div>
+
             <div className={Styles.card}>
-              <Link to={"/about"}> <h2>About us</h2></Link> 
-                <ul>
-                  <li><Link to={"/about"}>About Company</Link></li>
-                  <li><Link to={"/about"}>Our Mission</Link></li>
-                  <li><Link to={"/about"}>Our Vision</Link></li>
-                  <li><Link to={"/about"}>Why Choose Techmapparz</Link></li>
-                  <li><Link to={"/about"}>How Do We Work</Link></li>
-                  <li><Link to={"/about"}>Company value</Link></li>
-                </ul>
-                
-            </div>
-            <div className={Styles.card}>
-               <Link to={"/career"}> <h2>Career</h2></Link>
+               <Link to={"/career"}> <div className={Styles.card_top}><div className={Styles.arrow}> <AiOutlineLeft/> </div> <h2>Career</h2></div></Link>
                 <ul>
                   <li><Link to={"/career"}>Possibilities unmatched</Link></li>
                   <li><Link to={"/career"}>Diversity unmatched</Link></li>
@@ -81,7 +71,7 @@ const Sitemap = () => {
                 
             </div>
             <div className={Styles.card}>
-               <Link to={"/contact"}> <h2>Contact us</h2></Link>
+               <Link to={"/contact"}> <div className={Styles.card_top}><div className={Styles.arrow}> <AiOutlineLeft/> </div> <h2>Contact us</h2></div></Link>
                 <ul>
                   <li><Link to={"/contact"}>Gettting Touch</Link></li>
                 </ul>

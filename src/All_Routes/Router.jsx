@@ -50,7 +50,7 @@ const Router = () => {
        <Route path='/sitemap' element={<Sitemap/>}></Route>
       <Route path='/crm_consulting' element={<CRM_Consulting/>}></Route>
       <Route path='/crm_implement' element={<CRM_Implement/>}></Route>
-     <Route path='custom_consulting' element={<Custom_Consulting/>}></Route>
+     <Route path='/custom_consulting' element={<Custom_Consulting/>}></Route>
        
     </Routes>
   )

@@ -49,10 +49,7 @@ function Article() {
     }
   };
 
-  // const CreatedAt=(date)=>{
-  //   let Time= Moment(date.split("T")[0]).fromNow();
-  //   console.log(Time);
-  // }
+ 
 
   return (
     <div className={Styles.article}>

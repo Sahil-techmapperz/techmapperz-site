@@ -5,6 +5,7 @@ import Styles from "./Home.module.css"
 import { Link } from 'react-router-dom';
 import { FaPython, FaJava, FaVuejs, FaAngular, FaReact, FaPhp, FaCss3Alt, FaNodeJs, FaSwift, FaHtml5 } from "react-icons/fa";
 import { TbBrandJavascript } from "react-icons/tb";
+import { AiOutlineRight,AiOutlineLeft} from 'react-icons/ai';
 import { SiSolidity } from "react-icons/si";
 import { TbBrandReactNative } from "react-icons/tb";
 import { SiKotlin } from "react-icons/si";
@@ -30,6 +31,33 @@ const Home = () => {
     const[Testimonial,setTestimonial]=useState([]);
     const[TechBlogpost,setTechBlog]=useState([]);
     const[Techbanner,setTechBanner]=useState([]);
+
+
+    const CustomPrevArrow = (onClickHandler, hasPrev, label) => (
+        <button
+          type="button"
+          onClick={onClickHandler}
+          disabled={!hasPrev}
+          className={`${Styles.custom_arrow} ${Styles.custom_arrow_prev}`}
+          aria-label={label}
+        >
+          <AiOutlineLeft/>
+        </button>
+      );
+      
+      const CustomNextArrow = (onClickHandler, hasNext, label) => (
+        <button
+          type="button"
+          onClick={onClickHandler}
+          disabled={!hasNext}
+          className={`${Styles.custom_arrow} ${Styles.custom_arrow_next}`}
+          aria-label={label}
+        >
+          <AiOutlineRight/>
+        </button>
+      );
+      
+
 
 
 
@@ -68,14 +96,14 @@ const Home = () => {
         <div >
             <section className={Styles.home_first_part}>
                 <Carousel
-                    className={Styles.slider}
+                    className={Styles.carousel_container}
                     showStatus={false}
-                    showArrows={false}
                     infiniteLoop={true}
                     autoPlay={true}
                     showThumbs={false}
                     stopOnHover={true}
-
+                   showIndicators={false} 
+                   useKeyboardArrows={true}
                 >
                     {Techbanner&&Techbanner.map(slide => (
                         <div key={slide.id}>
@@ -244,6 +272,7 @@ const Home = () => {
         
           </Carousel>
           </div>
+          
             </section>
         </div>
     )

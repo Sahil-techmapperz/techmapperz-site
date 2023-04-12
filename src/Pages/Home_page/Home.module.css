@@ -6,85 +6,90 @@
 
 /* carousel  */
 
+
 .home_first_part {
-    margin: 0;
-    background-color: #333;
-  
-}
-
-.slider {
-    position: relative;
     width: 100%;
-    
+    height: 650px;
+    position: relative;
+    background-color: #333;
+    overflow: hidden;
+}
 
+.carousel_container {
+    width: 100%;
+    height: 100%;
+    position: relative;
 }
 
 
 
-.carousel .slide {
-    transition: transform 0.5s ease-in-out;
-    
-}
-
-.carousel .slide {
-    transform: translateX(100%);
-    margin-bottom: 10px;
-}
-
-
-
-.slider .slide {
-    transform: translateX(0);
-}
-
-.slider .slide {
-    transition: transform 0.5s ease-in-out 0.5s;
-}
-
-
-
-
-
-
-.slider .title {
+.carousel_container .title {
     color: white;
     position: absolute;
     display: flex;
-    z-index: 10;
-    top: 20rem;
-    left: 30%;
-    height: 195px;
-    width: 700px;
-    font-size: 40px;
+    z-index: 3;
+    top: 10rem;
+    left: 18rem;
+    font-size: 60px;
     font-weight: 600;
     letter-spacing: 0.16px;
     text-align: center;
     margin: auto;
+    
 }
 
 
-.slider .subTitle{
+.carousel_container .subTitle{
     color: white;
     position: absolute;
-    display: flex;
-    z-index: 10;
-    top: 70%;
+    z-index: 3;
+    top: 25rem;
     left: 6rem;
-    height: 195px;
     width: 300px;
     font-size: 16px;
     font-weight: 600;
-    letter-spacing: 0.16px;
-
+    text-align: left;
 }
 
 
-.slider .know_more{
+.carousel_container .know_more{
     position: absolute;
-    bottom: 6rem;
+    bottom: 20rem;
     width: 250px;
-    left: 45%;
-}
+    left: 50%;
+} 
+
+
+
+
+
+
+.custom-arrow {
+    position: absolute;
+    top: 10rem;
+    right: 3rem;
+    color: #fff;
+    border: none;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    border: 1px solid ;
+  }
+  
+  .custom-arrow-prev {
+    left: 10px;
+  }
+  
+  .custom-arrow-next {
+    right: 10px;
+  }
+  
+  /* .custom-arrow:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+  } */
+  
 
 /* carousel  */
 
@@ -343,11 +348,26 @@ cursor: pointer;
     display: flex;
     justify-content: space-between;
     width: 100%;
-    /* height: 750px; */
     gap: 5rem;
     position: relative;
     background-color: #171717;
     padding: 2rem 5rem;
+    background-image: url("../../Photos/Home/Why\ choose\ techmapperz-min.gif");
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.About_us::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Adjust the 0.5 value to control the opacity of the black layer */
+    z-index: 1;
 }
 
 .About_us .about_left {
@@ -355,6 +375,8 @@ cursor: pointer;
     height: 470px;
     position: relative;
     margin-top: 7rem;
+    position: relative;
+    z-index: 2;
 }
 
 .About_us .about_left img {
@@ -383,6 +405,7 @@ cursor: pointer;
     margin-top: 15rem;
     width: 500px;
     position: relative;
+    z-index: 2;
 }
 
 .About_us .about_right .title{
@@ -438,7 +461,7 @@ cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    background-color: rgb(52, 52, 52);
 }
 
 .Brand_Partners_left{
@@ -483,11 +506,9 @@ cursor: pointer;
 
 .our_blog{
     width: 100%;
-    /* height: 650px; */
     padding: 2rem 5rem;
     display: flex;
     gap: 5rem;
-    background-color: #171717;
 }
 
 
@@ -590,11 +611,35 @@ cursor: pointer;
     align-items: center;
     padding: 2rem 5rem;
     margin: auto;
-    background-color: black;
+    background-image: url("../../Photos/Home/Testimonial.gif");
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(15px);
+    position: relative;
+    
 }
+
+
+.Testimonial::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);     
+    z-index: 1;
+   
+}
+
+
+
 
 .Testimonial .Carousel{
     width: 65%;
+    position: relative;
+    z-index: 2;
 }
 
 
@@ -603,8 +648,9 @@ cursor: pointer;
     font-weight: 400;
     font-size: 16px;
     letter-spacing: 0.162793px;
-    color: #808080;
+    color: white;
     margin-bottom: -1rem;
+    z-index: 10;
 }
 
 
@@ -616,6 +662,7 @@ cursor: pointer;
     letter-spacing: 0.162793px;
     color: #FFFFFF;
     word-wrap: break-word;
+    z-index: 10;
 }
 
 .Testimonial .card{
@@ -652,7 +699,7 @@ cursor: pointer;
     font-weight: 400;
     font-size: 16px;
     letter-spacing: 0.162793px;
-    color: #808080;
+    color: white;
 }
 
 
