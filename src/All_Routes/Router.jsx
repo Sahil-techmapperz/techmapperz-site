@@ -19,6 +19,9 @@ import It_consulting from '../Pages/It_consulting/It_consulting';
 import GIS_Services from '../Pages/GIS_Services_page/GIS_Services';
 import Privacy_Policy from '../Components/Privacy_Policy_Component/Privacy_Policy';
 import Sitemap from '../Pages/Sitemap_page/Sitemap';
+import CRM_Consulting from '../Pages/CRM_Consulting/CRM_Consulting';
+import CRM_Implement from '../Pages/CRM_Impliment/CRM_Implement';
+import Custom_Consulting from '../Pages/Custom_Consulting/Custom_Consulting';
 
 
 
@@ -45,6 +48,9 @@ const Router = () => {
        <Route path='/service' element={<Service_main/>}></Route>
        <Route path='/Privacy_Policy' element={<Privacy_Policy/>}></Route>
        <Route path='/sitemap' element={<Sitemap/>}></Route>
+      <Route path='/crm_consulting' element={<CRM_Consulting/>}></Route>
+      <Route path='/crm_implement' element={<CRM_Implement/>}></Route>
+     <Route path='custom_consulting' element={<Custom_Consulting/>}></Route>
        
     </Routes>
   )
