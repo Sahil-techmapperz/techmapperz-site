@@ -18,6 +18,8 @@
     align-items: center;
     object-fit: cover;
     background: url("../../Photos/banner_2.png");
+    background-size: cover;
+    background-position: center;
 
 }
 
@@ -34,6 +36,7 @@
     font-size: 20px;
     line-height: 30px;
     letter-spacing: 0.162793px;
+    color: white;
 }
 
 
@@ -128,6 +131,16 @@
 
 }
 
+.secend_section_main_two>h2{
+    text-align: center;
+}
+.secend_section_main_two>p{
+    text-align: center;
+    color: white;
+}
+
+
+
 .input_from {
     display: flex;
     flex-direction: column;
@@ -145,6 +158,8 @@
     border-radius: 10px;
     border: none;
     padding: 10px;
+    padding-right: 1rem;
+    font-size: 18px;
 }
 
 .input_from select option {
@@ -231,12 +246,14 @@
 
 .main {
     width: 100%;
+    height: 1050px;
     display: grid;
     justify-content: center;
     gap: 70px;
     margin-top: 5rem;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2,400px);
+    row-gap: 10rem;
 }
 
 .main>.card img {

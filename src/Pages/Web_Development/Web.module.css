@@ -36,6 +36,7 @@
     line-height: 30px;
     letter-spacing: 0.16px;
     background: none;
+    color: white;
 }
 
 
@@ -364,8 +365,10 @@ height: 560px;
     font-size: 22px;
     line-height: 33px;
     letter-spacing: 0.162793px;
-    color: #FFFFFF;
+    color: #FFFFFF;
 }
+
+
 
 .contaner .main h1{
     font-weight: 700;
@@ -382,6 +385,7 @@ height: 560px;
     letter-spacing: 0.162793px;
     color: #FFFFFF;
 }
+
 
 
 

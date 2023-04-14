@@ -50,7 +50,7 @@ const Web_Development = () => {
         <div className={Styles.development}>
             <section className={Styles.first_part}>
                 <h1>Website Development</h1>
-                <p>Home / Service / Website Development</p>
+                <p><Link to={"/"}>Home</Link> / <Link to={"/service"}>Service</Link> / Website Development</p>
             </section>
 
 

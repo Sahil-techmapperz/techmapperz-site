@@ -47,7 +47,7 @@ const Service_main = () => {
         <div className={Styles.service}>
             <section className={Styles.first_part}>
                 <h1>Our Services</h1>
-                <p>Home / Services</p>
+                <p><Link to={"/"}>Home</Link> / Services</p>
             </section>
 
 

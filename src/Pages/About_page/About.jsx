@@ -1,9 +1,7 @@
 import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom';
 import styles from "./About.module.css"
-import Industry from './industry';
 import Rectangle_6 from "../../Photos/Rectangle_6.png";
-// import Group from "../../Photos/Group.png";
 import Choose from './choose';
 import Group1 from '../../Photos/Group1.png'
 import Career4 from '../../Photos/career_idea-4.png'
@@ -30,7 +28,7 @@ const About = () => {
         <div className={styles.main}>
           <header>
             <h1>About US</h1>
-            <p>Home / About us</p>
+            <p><Link to={"/"}> Home </Link>/ About us</p>
           </header>
 
           <div className={styles.top_part}>
