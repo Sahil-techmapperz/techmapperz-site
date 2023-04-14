@@ -20,6 +20,8 @@
     align-items: center;
     object-fit: cover;
     background: url("../../Photos/banner_3.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
 .top>h1 {
@@ -76,8 +78,8 @@
 
 .card_tow{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
 }
 
 
@@ -115,7 +117,7 @@
     width: 724px;
     height: 300px;
     position: relative;
-    margin-top: 2rem;
+    margin-top: 5rem;
 }
 
 .details {
@@ -147,9 +149,6 @@
     margin-bottom: 20px;
     color: #FFFFFF;
 }
-
-
-
 
 
 
@@ -204,7 +203,7 @@
 
 .list_div {
     display: flex;
-    gap: 20px;
+    gap: 60px;
 }
 
 .list_div div {

@@ -96,7 +96,8 @@
     grid-template-columns: repeat(3, 350px);
     gap:85px;
     margin-left: 5px;
-    
+    text-align: justify;
+    text-justify: inter-word;
 }
 
  .newmain {
@@ -185,6 +186,8 @@ text-align: left;
     padding-right: 5rem;
     margin-top: -2rem;
     background: none;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .main div{

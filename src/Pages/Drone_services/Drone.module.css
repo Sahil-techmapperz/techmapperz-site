@@ -17,7 +17,9 @@
     justify-content: center;
     align-items: center;
     object-fit: cover;
-    background: url("../../Photos/banner_1.jpg");
+    background: url("../../Photos/banner_3.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
 .part1>h1 {

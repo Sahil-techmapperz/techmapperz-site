@@ -18,7 +18,7 @@ const Web_GIS = () => {
         <div className={Styles.Web_GIS}>
             <div className={Styles.top}>
                 <h1>Web GIS Services</h1>
-                <p>Home / Services / GIS Service / Geospatial programming & Web Map Development</p>
+                <p>Home / Services  / Geospatial programming & Web Map Development</p>
             </div>
             <div className={Styles.contaner}>
                 <div className={Styles.contaner_first}>

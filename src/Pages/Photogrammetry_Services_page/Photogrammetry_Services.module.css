@@ -17,7 +17,9 @@
     justify-content: center;
     align-items: center;
     object-fit: cover;
-    background: url("../../Photos/banner_1.jpg");
+    background: url("../../Photos/banner_3.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
 .part1>h1 {
@@ -50,11 +52,12 @@
     background: none;
     background: rgba(24, 24, 24, 1);
 
-}
-.info .p {
+} 
+ .info .p {
 text-align: center;
     justify-content: center;
     align-items: center; 
+    
 }
 
 .info>p {
@@ -66,6 +69,10 @@ text-align: center;
     background: transparent;
     padding-top: 25px;
     padding-bottom: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+    text-align: center;
+    
 }
 
 
@@ -121,29 +128,22 @@ text-align: center;
     gap: 10px;
     position: relative;
     width: 700px;
-}
+} 
 
 
 
-.product_info>p {
+ .product_info>p {
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.16;
     font-weight: 400;
     word-wrap: break-word;
     width: 600px;
-}
+} 
 
-/* .product_info>ul {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    row-gap: 25px;
-    width: 500px;
-    margin-top: 15px;
-    padding-left: 12px;
-} */
 
-.product_info ul{
+
+ .product_info ul{
     list-style: disc;
 }
 
@@ -152,12 +152,12 @@ text-align: center;
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.16px;
-}
+} 
 
 
-.product_info a {
+ .product_info a {
     width: 25%;
-}
+} 
 
 .product_info .btn {
     position: relative;

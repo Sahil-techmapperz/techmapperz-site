@@ -19,6 +19,10 @@ import T01 from '../../Photos/01.png';
 import T02 from '../../Photos/02.png';
 import T03 from '../../Photos/03.png';
 import T04 from '../../Photos/04.png';
+import WebDev1 from '../../Photos/WebDev1.gif'
+import WebDev2 from '../../Photos/WebDev2.gif'
+import WebDev3 from '../../Photos/WebDev3.gif'
+import WebDev4 from '../../Photos/WebDev4.gif'
 import Webdev8 from '../../Photos/Webdev8.png';
 import Webdev9 from '../../Photos/Webdev9.png';
 import Webdev10 from '../../Photos/Webdev10.png';
@@ -46,7 +50,7 @@ const Web_Development = () => {
         <div className={Styles.development}>
             <section className={Styles.first_part}>
                 <h1>Website Development</h1>
-                <p>Service / IT Services / Website Development</p>
+                <p>Home / Service / Website Development</p>
             </section>
 
 
@@ -54,7 +58,7 @@ const Web_Development = () => {
                 <div className={Styles.contaner}>
                     <h1 className={Styles.heading}>What is Website Design <br />& Development</h1>
                     <div className={Styles.product}>
-                        <img src={Webdev8} alt="" />
+                        <img src={WebDev3} alt="" />
                         <div className={Styles.product_info}>
                             <p>One of the first websites was created in 1991, and since then, the website and its design have evolved manifold.Today it is complex and involves an entire ecosystem of roles and skill sets. Website development is an umbrella term for two major parts-Design & Development, Design represents the look and feel wherwas Development determines how it functions</p>
                             <Link to={"/contact"}> <div className={Styles.btn}>
@@ -79,7 +83,7 @@ const Web_Development = () => {
                             </div></Link>
                         </div>
                         <div>
-                            <img src={Webdev9} className={Styles.Img_two} alt="" />
+                            <img src={WebDev4} className={Styles.Img_two} alt="" />
                         </div>
                     </div>
                 </div>
@@ -92,7 +96,7 @@ const Web_Development = () => {
                     <h1 className={Styles.heading}>The Right Web Design <br />and Development Team</h1>
                     <div className={Styles.product}>
                         <div>
-                            <img src={Webdev10} className={Styles.Img_three} alt="Webdev10.png" />
+                            <img src={WebDev2} className={Styles.Img_three} alt="Webdev10.png" />
                         </div>
                         <div className={Styles.product_info}>
                             <p>With so much at state,it is important that your web designing and development company is reliable and has a team that is experienced and can be trusted. We at Techmapperz, have some of the best developers in the field with a combined experience of more than 100 years; we have worked in various fields in a wide range of segments from small business owners to restourents,corporates,government sectors and professionals. Our team compatibility and pooled experience is our biggest asset and the major reason that we use them in creating masterpiece websites. </p>
@@ -187,7 +191,7 @@ const Web_Development = () => {
                 <div className={Styles.contaner}>
                     <h1 className={Styles.heading}>Benefits of Getting Web <br/>Development Professionally</h1>
                     <div className={Styles.product}>
-                        <img src={Webdev11} alt="Webdev11.png" />
+                        <img src={WebDev1} alt="Webdev11.png" />
                         <div className={Styles.product_info}>
                             <p>We Techmapperz,get the best-customized web development for your company with the maximum customization to its needs.We develop a strategy to make your goals a reality, business ownears, not always understand how website functions and can be easily cheated.A professional web design and development company with years of experties and experience can help you build a website that will attract potential customers and grow your web presence.Some of the section that our website makes you stand apart are: </p>
                             <ul>
@@ -226,7 +230,7 @@ const Web_Development = () => {
                         <img src={T02} alt='' />
                         </div> 
                            
-                            <h1>Friendly</h1>
+                            <h3>Friendly</h3>
                             <p>Nothing is more important that a customer oritented business model,we at Techmapperz  love what we do, and we are always passeonate about putting our customers first.</p>
                         </div>
 
@@ -236,7 +240,7 @@ const Web_Development = () => {
                         <img src={T03} alt='' />
                         </div> 
                            
-                            <h1>Quality</h1>
+                            <h3>Quality</h3>
                             <p>Quality makes us excel.our approach is designed to provide it at all levels of functioning up-to the micro level details,that extra ounce of effort in effective communication....</p>
                         </div>
 
@@ -247,7 +251,7 @@ const Web_Development = () => {
                         <img src={T04} alt='' />
                         </div> 
                            
-                            <h1>Reduce cost</h1>
+                            <h3>Reduce cost</h3>
                             <p>Our team planning is so efficient that the project overall time in not extended and thus keeping the overall coast in check.</p>
                         </div>
 
