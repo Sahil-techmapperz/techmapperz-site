@@ -358,3 +358,11 @@ height: 560px;
      margin-left:10px ;
      margin-right:10px ;
 }
+
+.harbour .design h1{
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 33px;
+    letter-spacing: 0.162793px;
+    color: #FFFFFF;
+}

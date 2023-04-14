@@ -17,6 +17,7 @@ import {
     FormErrorMessage,
 
 } from '@chakra-ui/react';
+import { Link } from 'react-router-dom';
 const init = {
     "name": "",
     "email": "",
@@ -145,7 +146,7 @@ const Contact = () => {
         <div className={Styles.contact}>
             <div className={Styles.contact_top}>
                 <h1>Contact us</h1>
-                <p>Home / Contast Us</p>
+                <p> <Link to={"/"}>Home</Link> / Contast Us</p>
             </div>
             <div className={Styles.contact_bottom}>
                 <div className={Styles.contact_bottom_left}>
@@ -165,7 +166,7 @@ const Contact = () => {
                     </div>
                 </div>
                 <div className={Styles.contact_bottom_right}>
-                    <VStack spacing={8}>
+                    <VStack  spacing={8}>
                         <HStack spacing={4}>
                             <FormControl isInvalid={hasError.name}>
                                 <FormLabel>Full Name*</FormLabel>
@@ -235,7 +236,7 @@ const Contact = () => {
                             </FormErrorMessage>
                         </FormControl>
 
-                        <Button size={"lg"} colorScheme="blue" onClick={handalesubmit}>
+                        <Button  size={"lg"} w="40%" colorScheme="blue" onClick={handalesubmit}>
                             Submit
                         </Button>
                     </VStack>

@@ -147,7 +147,7 @@ const Career = () => {
 
       <section className={Styles.first_section}>
         <h1>Career</h1>
-        <p>Home / Career</p>
+        <p><Link to={"/"}> Home </Link>/ Career</p>
       </section>
       <div className={Styles.journey}>
         <h3 className={Styles.heading}>In your journey at Techmapperz you will get</h3>
@@ -157,39 +157,39 @@ const Career = () => {
           <div className={Styles.card}>
             <img src={career_idea_1} alt='' />
             <h3>Possibilities unmatched</h3>
-            <p>With techmapperZ being a start up with business interests and prospects in many IT fields, weather its. </p>
+            <p>With techmapperZ being a start up with business interests and prospects in many IT fields, weather its. And working with us will give you exposure to many sectors , private and government across many cities across India. </p>
 
           </div>
           <div className={`${Styles.card} ${Styles.card2}`}>
             <img src={career_idea_2} alt='' />
             <h3>Diversity unmatched</h3>
-            <p>Since we operate all over India , you will have a spectrum of cultures that people that you can interact with</p>
+            <p>Since we operate all over India , you will have a spectrum of cultures that people that you can interact with.</p>
 
           </div>
           <div className={Styles.card}>
             <img src={career_idea_3} alt='' />
             <h3>Flexibility unparalleled</h3>
-            <p>You will have flexible working hours and work environment, not tied to work and time regime,</p>
+            <p>You will have flexible working hours and work environment, not tied to work and time regime, the world is your office as long as you are connected to the office.</p>
 
           </div>
           <div className={Styles.card}>
             <img src={career_idea_4} alt='' />
             <h3>Grow unhindered</h3>
-            <p>The world is a digital canvas, evolving with every passing day, you will have the opportunity of developing</p>
+            <p>The world is a digital canvas, evolving with every passing day, you will have the opportunity of developing new ideas and executing them with expertise, not just make a better world , but paint a better digital canvas.</p>
 
           </div>
 
           <div className={Styles.card}>
             <img src={career_idea_5} alt='' />
             <h3>Shine Unrestricted</h3>
-            <p>At Techmapperz, you will get the freedom to choose your timings your approach for getting.</p>
+            <p>At Techmapperz, you will get the freedom to choose your timings your approach for getting the job done with in the alloted time.</p>
 
           </div>
 
           <div className={Styles.card}>
             <img src={career_idea_6} alt='' />
             <h3>Earn unlimited</h3>
-            <p>No matter what, Salary is an important parameter at tech mappers we acknowledge your talent</p>
+            <p>No matter what, Salary is an important parameter at tech mappers we acknowledge your talent with premium compensation , which grows as your skills grow.</p>
 
           </div>
 
@@ -235,7 +235,7 @@ const Career = () => {
                 {Jobsdata && Jobsdata.map((job) => <option value={`${job.JobID} - ${job.designetion}`}>{`${job.JobID} - ${job.designetion}`}</option>)}
               </select>
 
-              <textarea ref={inputRefs[3]} value={careerdata.message} placeholder='Type your Message' type='text' name='message' onChange={handalechange}></textarea>
+              <textarea ref={inputRefs[3]} value={careerdata.message} placeholder='Type Your Message' type='text' name='message' onChange={handalechange}></textarea>
               <input ref={inputRefs[4]} accept={".pdf,.doc"} type="file" className={Styles.resume} name="resume" id="Resume" onChange={handaleresumechange} />
               <label for="Resume">{resume ? `${resume.name}` : "Upload Resume*"}</label>
               <button onClick={handalesubmit}>Submit</button>

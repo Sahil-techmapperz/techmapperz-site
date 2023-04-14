@@ -77,8 +77,9 @@
 
 .social_media_icons {
     display: flex;
-    gap: 25px;
+    gap: 20px;
     font-size: 20px;
+    margin-top: -2rem;
 }
 
 .social_media_icons a {
