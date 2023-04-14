@@ -69,7 +69,7 @@ const CRM_Consulting = () => {
                         <img src={T01} alt='' />
                         </div> 
                             
-                            <h1>Selection</h1>
+                            <h3>Selection</h3>
                             <p>We help you with the analysis of ypur requirenment and design the best CRM suited for your needs</p>
                         </div>
 
@@ -80,7 +80,7 @@ const CRM_Consulting = () => {
                         <img src={T02} alt='' />
                         </div> 
                           
-                            <h1>Tmplementation</h1>
+                            <h3>Tmplementation</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste ad delectus quia vel animi enim.</p>
                         </div>
 
@@ -91,7 +91,7 @@ const CRM_Consulting = () => {
                         <img src={T03} alt='' />
                         </div> 
                            
-                            <h1>Migration</h1>
+                            <h3>Migration</h3>
                             <p>We help you migrate to a better CRM , in case your CRM has become out dated of obsolate </p>
                         </div>
 
@@ -102,7 +102,7 @@ const CRM_Consulting = () => {
                         <img src={T04} alt='' />
                         </div> 
                            
-                            <h1>Speed</h1>
+                            <h3>Speed</h3>
                             <p>This may be the last point but this is the first things customers and vis accommodate and understand...</p>
                         </div>
 

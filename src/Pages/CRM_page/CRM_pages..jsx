@@ -45,7 +45,7 @@ const CRM_pages = () => {
         <div className={Styles.Mobile_development}>
             <section className={Styles.first_part}>
                 <h1>CRM-ERP</h1>
-                <p>Home / Services / IT Services /CRM-ERP</p>
+                <p>Home / Services /CRM-ERP</p>
             </section>
 
 
@@ -73,7 +73,7 @@ const CRM_pages = () => {
                                 <img src={T02} alt='' />
                             </div>
 
-                           <Link to={"/crm_implement"}> <h3>CRM Implementation</h3></Link>
+                            <Link to={"/crm_implement"}> <h3>CRM Implementation</h3></Link>
                             <p>With global competition and greater customer expectations companies look forward to enhance customer relationship and experience,many business entities...<Link to={"/crm_implement"}> Know More</Link></p>
 
                         </div>
@@ -85,7 +85,7 @@ const CRM_pages = () => {
                                 <img src={T03} alt='' />
                             </div>
 
-                          <Link to={"/custom_consulting"}>  <h3>Custom CMR Consulting </h3></Link>
+                            <Link to={"/custom_consulting"}>  <h3>Custom CMR Consulting </h3></Link>
                             <p>AT customer CMR Consulting we understand your current capabilities,map your organisation's desired future state, and then recommend CRM implementation... <Link to={"/custom_consulting"}>Know More</Link></p>
 
                         </div>
@@ -97,20 +97,15 @@ const CRM_pages = () => {
                                 <img src={T04} alt='' />
                             </div>
 
-                           <Link to={"/crm_integretion"}> <h3>CRM Integration</h3></Link>
+                            <Link to={"/crm_integretion"}> <h3>CRM Integration</h3></Link>
                             <p>CRM integration is connecting all the applications you use to run your business to customer Information,It's a 360-degree view of customer data that can be seamlessly...<Link to={"/crm_integretion"}>Know More</Link> </p>
 
 
                         </div>
-
+                       
                     </div>
+                   
                 </div>
-
-
-
-
-
-
 
 
                 <div className={Styles.Application}>
@@ -136,7 +131,7 @@ const CRM_pages = () => {
 
                         <div className={Styles.card7}>
                             <img src={CRM7} alt='' />
-                            <h3>Colaberetive</h3>
+                            <h3>Collaborative</h3>
                             <p>This CRM is the framework for vendor distributor interaction and business opportunities.</p>
                         </div>
 
