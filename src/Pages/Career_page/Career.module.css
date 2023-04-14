@@ -40,28 +40,30 @@
 .secend_section {
     width: 100%;
     color: white;
-    padding: 5rem 0;
+    padding: 2rem 5rem;
     position: relative;
-    
+    margin-top: 2rem;
 }
 
 .secend_section>h3 {
     text-align: center;
     font-size: 30px;
-    /* background-color: var(--primary-black-color); */
+    margin-bottom: -2rem;
+    margin-top: 5rem;
 }
 
 .secend_section>h1 {
     text-align: center;
     font-size: 50px;
-    /* background-color: var(--primary-black-color); */
+    font-weight: bold;
+    
 }
 
 .secend_section_main {
     display: flex;
     gap: 50px;
-    justify-content: left;
-    align-items: center;
+    justify-content:space-between;
+    /* align-items: center; */
     /* background-color: var(--primary-black-color); */
 
 }
@@ -71,9 +73,7 @@
     grid-template-columns: repeat(2, 1fr);
     width: 60%;
     gap: 20px;
-    row-gap: 30px;
     margin-bottom: 5rem;
-    margin-left: 2rem;
 }
 
 .secend_section_main_one>div {
@@ -81,7 +81,7 @@
     flex-direction: column;
     justify-content: center;
     gap: 10px;
-    padding: 1rem 4rem;
+    padding: 0 1.5rem;
     border-radius: 10px;
     border: 2px solid white;
 }
@@ -91,14 +91,16 @@
     font-size: 26px;
     letter-spacing: 0.162793px;
     color: #FFFFFF;
-    margin-bottom: -0.5rem;
+    margin-bottom: -0.1rem;
 }
 .secend_section_main_one>div h3 {
     margin-bottom: -2rem;
 }
+.secend_section_main_one>div .location {
+    margin-top: -1.4rem;
+}
 
 .secend_section_main_one>div .apply_now {
-    /* padding: 10px 20px; */
     background: transparent;
     border: 2px solid white;
     border-radius: 25px;
@@ -110,6 +112,7 @@
     text-align: center;
     letter-spacing: 0.162793px;
     color: #FFFFFF;
+    margin-left: -15px;
 }
 
 .secend_section_main_one>div .apply_now:hover {
@@ -118,11 +121,11 @@
 }
 
 .secend_section_main_two {
-    width: 30%;
+    width: 35%;
     background: #396ba9;
     border-radius: 10px;
     padding: 20px;
-    margin-top: -4rem;
+
 }
 
 .input_from {
@@ -214,6 +217,7 @@
     width: 100%;
     text-align: center;
     padding: 2rem 5rem;
+    margin-bottom: 2rem;
 }
 
 .journey>.heading {
@@ -229,26 +233,24 @@
     width: 100%;
     display: grid;
     justify-content: center;
-    gap: 150px;
+    gap: 70px;
     margin-top: 5rem;
-    /* margin-bottom: 5rem; */
-    grid-template-columns: repeat(3, 350px);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2,400px);
 }
 
 .main>.card img {
-    width: 90%;
+    width: 100%;
     object-fit: contain;
-    height: 300px;
-    object-fit: fill;
+    height: 350px;
 }
 
 
 
 .main>.card>p {
     width: 100%;
-    height: 120px;
-    text-align: left;
+    text-align: justify;
+    text-justify: inter-word;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -257,8 +259,8 @@
 }
 
 .card>h3 {
-    font-style: normal;
     font-weight: 700;
+    font-weight: bold;
     font-size: 22px;
     line-height: 33px;
     letter-spacing: 0.162793px;

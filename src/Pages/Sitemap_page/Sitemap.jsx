@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom';
 import Styles from "./Sitemap.module.css";
 import { AiOutlineRight,AiOutlineLeft} from 'react-icons/ai';
 const Sitemap = () => {
+
+
+  
   useEffect(() => {
     const options = {
         top: 0,

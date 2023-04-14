@@ -6,6 +6,7 @@ import RecentPosts from "./RecentPosts";
 import RelatedPosts from "./RelatedPosts";
 import Search from "./Search";
 import { useParams } from "react-router-dom";
+import FormattedDateComponent from "../../Components/Home_Component/Home_technoBlog/formatDate";
 function SinglePost() {
   const [post, setPost] = useState(null);
   const [searchQuery, setsearchQuery] = useState();
@@ -75,8 +76,9 @@ useEffect(() => {
     <div className="main_contaner">
     <div className="SinglePost">
       <h1 dangerouslySetInnerHTML={{ __html: post.title }} />
+      <div><FormattedDateComponent dateString={post.date}/></div>
       {post.imgUrl && <img src={post.imgUrl} alt={post.title} />}
-      <div dangerouslySetInnerHTML={{ __html: post.description }} />
+      <div className={"description"} dangerouslySetInnerHTML={{ __html: post.description }} />
       <div dangerouslySetInnerHTML={{ __html: post.content }} />
       <p className="author">
         By: <a href={post.author.link}>{post.author.name}</a>
@@ -85,7 +87,7 @@ useEffect(() => {
     </div>
     <div className="related_recentpost">
       <div>
-      <input value={searchQuery} placeholder="search" onChange={handalesearch}/>
+      <input className="search" value={searchQuery} placeholder="search" onChange={handalesearch}/>
       <button onClick={handalesearchsubmit}>Search</button>
       </div>
       <RelatedPosts postId={postId} />

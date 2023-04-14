@@ -65,7 +65,7 @@ const Footer = () => {
     <img onClick={Gotop}  src={Up_arrow} alt=''/>
     </div>
     <div className={styles.copyright}>
-    Copyright &copy; Techmapperz LLP. All Rights Reserved
+    Copyright &copy; 2022 Techmapperz LLP. All Rights Reserved
     </div>
     </>
   )

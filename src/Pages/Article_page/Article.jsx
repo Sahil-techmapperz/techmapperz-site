@@ -3,6 +3,8 @@ import axios from 'axios';
 import Styles from "./Article.module.css";
 import { Link } from 'react-router-dom';
 import moment from 'moment';
+import { AiOutlineRight, AiOutlineLeft } from 'react-icons/ai';
+import FormattedDateComponent from '../../Components/Home_Component/Home_technoBlog/formatDate';
 function Article() {
   const [posts, setPosts] = useState([]);
   const [error, setError] = useState(null);
@@ -64,11 +66,12 @@ function Article() {
           <div className={Styles.card} key={post.id}>
             <div className={Styles.Img}>{post.imgUrl&&<img src={post.imgUrl && post.imgUrl} alt="" />}</div>
             <div className={Styles.Article_details}>
-             <Link  to={`/singal_article/${post.id}`}> <h2 title={post.title}>{post.title}</h2></Link>
+             <Link  to={`/singal_article/${post.id}`}> <h2 dangerouslySetInnerHTML={{__html:post.title.slice(0, 30) + "..." }} title={post.title}></h2></Link>
             <h1>- By {post.author.name}</h1>
               
               {/* <div dangerouslySetInnerHTML={{ __html: post.description.split(/(<[^>]+>)/)[2] }} /> */}
-              <div>{moment(post.date.split("T")[0]).fromNow()}</div>
+              {/* <div>{moment(post.date.split("T")[0]).fromNow()}</div> */}
+             <div> <FormattedDateComponent dateString={post.date}/></div>
               <Link className={Styles.readmore_btn} to={`/singal_article/${post.id}`}><button>Read more...</button></Link>
             </div>
           </div>
@@ -78,13 +81,13 @@ function Article() {
 
       <div className={Styles.pagination}>
         <div> <button disabled={page === 1} onClick={handlePreviousPage} >
-          Previous
+          <AiOutlineLeft/>
         </button></div>
-        <div>
-          Page {page} of {totalPages}
+        <div className={Styles.pages}>
+           {page} of {totalPages}
         </div>
         <div>  <button onClick={handleNextPage} disabled={page === totalPages}>
-          Next
+          <AiOutlineRight/>
         </button></div>
       </div>
     </div>

@@ -27,7 +27,23 @@ const init = {
 const Contact = () => {
     const [contactdata, setcontactdata] = useState(init);
     const [hasError, setHasError] = useState({});
-    const toast=useToast();
+    const toast = useToast();
+
+
+
+
+
+    useEffect(() => {
+        const options = {
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
+        };
+        window.scrollTo(options);
+    }, []);
+
+
+
 
 
     const validateForm = () => {
@@ -73,47 +89,47 @@ const Contact = () => {
         if (Object.keys(validationErrors).length > 0) {
             setHasError(validationErrors);
             return;
-        }else{
-           setHasError({});
-           fetch(`${process.env.REACT_APP_Backend_baseUrl}/contact`, {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(contactdata)
-          }).then(res => {
-            if (res.status === 200) {
-                toast({
-                    title: 'Success',
-                    description: "we will get in touch with you soon",
-                    status: 'success',
-                    duration: 3000,
-                    isClosable: true,
-                  })
-                  setHasError({})
-                  setcontactdata(init)
-              
-            } else {
+        } else {
+            setHasError({});
+            fetch(`${process.env.REACT_APP_Backend_baseUrl}/contact`, {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(contactdata)
+            }).then(res => {
+                if (res.status === 200) {
+                    toast({
+                        title: 'Success',
+                        description: "we will get in touch with you soon",
+                        status: 'success',
+                        duration: 3000,
+                        isClosable: true,
+                    })
+                    setHasError({})
+                    setcontactdata(init)
+
+                } else {
+                    toast({
+                        title: 'field',
+                        description: "failed to save contact details",
+                        status: 'error',
+                        duration: 3000,
+                        isClosable: true,
+                    })
+                    setHasError({})
+                    setcontactdata(init)
+                }
+
+            }).catch(err => {
                 toast({
                     title: 'field',
-                    description: "failed to save contact details",
+                    description: err.message,
                     status: 'error',
                     duration: 3000,
                     isClosable: true,
-                  })
-                  setHasError({})
-                  setcontactdata(init)
-            }
-    
-          }).catch(err => {
-            toast({
-                title: 'field',
-                description: err.message,
-                status: 'error',
-                duration: 3000,
-                isClosable: true,
-              })
-              setHasError({})
-              setcontactdata(init)
-          })
+                })
+                setHasError({})
+                setcontactdata(init)
+            })
 
 
         }
@@ -121,14 +137,7 @@ const Contact = () => {
 
 
 
-    useEffect(() => {
-        const options = {
-          top: 0,
-          left: 0,
-          behavior: 'smooth'
-        };
-        window.scrollTo(options);
-      }, []);
+
 
 
 
@@ -145,13 +154,13 @@ const Contact = () => {
                     <div className={Styles.addres_contaner}>
                         <p className={Styles.logo_contaner}><BiTimeFive className={Styles.logo} />  9.30-6.30 </p>
                         <div className={Styles.address_card}>
-                            <p className={Styles.logo_contaner}><AiFillHome className={Styles.logo} />Delhi</p>
-                            <p>55, Lane - 2, Westend Marg, Saidullajab,
-                                Near Saket metro station,</p>
+                            <p className={Styles.logo_contaner2}><AiFillHome className={Styles.logo} />Delhi</p>
+                            <p className={Styles.address}>55, Lane - 2, Westend Marg, Saidullajab,
+                                Near Saket metro station, New Delhi - 110030</p>
                         </div>
                         <div className={Styles.address_card}>
                             <p className={Styles.logo_contaner}><AiFillHome className={Styles.logo} />Kolkata</p>
-                            <p>37, Vivekananda Road,Dunlop,Kolkata-700035</p>
+                            <p>CF 401, Block CF, Sector 1, Salt Lake, Kolkata-700064</p>
                         </div>
                     </div>
                 </div>
@@ -165,7 +174,7 @@ const Contact = () => {
                                     value={contactdata.name}
                                     onChange={handalechange}
                                     placeholder="Enter full name"
-                                   
+
                                 />
                                 <FormErrorMessage>{hasError.name}</FormErrorMessage>
                             </FormControl>
@@ -177,9 +186,9 @@ const Contact = () => {
                                     value={contactdata.email}
                                     onChange={handalechange}
                                     placeholder="Enter email"
-                                    
+
                                 />
-                                
+
                                 <FormErrorMessage>{hasError.email}</FormErrorMessage>
                             </FormControl>
                         </HStack>
@@ -192,9 +201,9 @@ const Contact = () => {
                                     value={contactdata.projectType}
                                     onChange={handalechange}
                                     placeholder="Enter project type"
-                                    
+
                                 />
-                                <FormErrorMessage>{ hasError.projectType}</FormErrorMessage>
+                                <FormErrorMessage>{hasError.projectType}</FormErrorMessage>
                             </FormControl>
 
                             <FormControl isInvalid={hasError.mobile}>
@@ -206,7 +215,7 @@ const Contact = () => {
                                     placeholder="Enter mobile"
                                     type="tel"
                                     pattern="\d{10}"
-                                    
+
                                 />
                                 <FormErrorMessage>{hasError.mobile}</FormErrorMessage>
                             </FormControl>
@@ -219,10 +228,10 @@ const Contact = () => {
                                 value={contactdata.projectdetails}
                                 onChange={handalechange}
                                 placeholder="Write Project Details"
-                                
+                                h={"200px"}
                             />
                             <FormErrorMessage>
-                                { hasError.projectdetails}
+                                {hasError.projectdetails}
                             </FormErrorMessage>
                         </FormControl>
 
@@ -234,7 +243,7 @@ const Contact = () => {
             </div>
             <div className={Styles.map}>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3683.596906446634!2d88.415269676073!3d22.594174726557426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a02754e9bb6f449%3A0xfef69449a7f4a853!2sCF-401%2C%20CF%20Block%2C%20Sector%201%2C%20Bidhannagar%2C%20Kolkata%2C%20West%20Bengal%20700064!5e0!3m2!1sen!2sin!4v1681305583641!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
+            </div>
         </div>
     )
 }

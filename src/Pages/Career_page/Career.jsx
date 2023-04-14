@@ -199,7 +199,7 @@ const Career = () => {
       </div>
 
       <section className={Styles.secend_section}>
-        <h3>Get Involve Now</h3>
+        <h3>Get Involved Now</h3>
         <h1>Let's join with us !!</h1>
         <div className={Styles.secend_section_main}>
           <div className={Styles.secend_section_main_one}>
@@ -211,7 +211,7 @@ const Career = () => {
                   <h3>{job.Jobtype}</h3>
                   <h1>{job.designetion}</h1>
                   <p>Experience:  {job.experience}</p>
-                  <p>Location:  {job.location}</p>
+                  <p className={Styles.location}>Location:  {job.location}</p>
                   <div className={Styles.card_apply}>
                     <button className={Styles.apply_now} onClick={() => inputRefs[0].current.focus()}>Apply Now</button>
                     <button onClick={() => ShowMoreInfo(job)}><HiOutlineInformationCircle /></button>

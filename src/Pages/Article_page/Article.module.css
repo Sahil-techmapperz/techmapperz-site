@@ -255,6 +255,13 @@ a:hover {
   transition: background-color 0.3s;
 }
 
+
+.pagination .pages{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .pagination button:hover {
   background-color: #0056b3;
 }

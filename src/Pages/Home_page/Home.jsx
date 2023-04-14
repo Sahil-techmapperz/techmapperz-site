@@ -5,7 +5,7 @@ import Styles from "./Home.module.css"
 import { Link } from 'react-router-dom';
 import { FaPython, FaJava, FaVuejs, FaAngular, FaReact, FaPhp, FaCss3Alt, FaNodeJs, FaSwift, FaHtml5 } from "react-icons/fa";
 import { TbBrandJavascript } from "react-icons/tb";
-import { AiOutlineRight,AiOutlineLeft} from 'react-icons/ai';
+import { AiOutlineRight, AiOutlineLeft } from 'react-icons/ai';
 import { SiSolidity } from "react-icons/si";
 import { TbBrandReactNative } from "react-icons/tb";
 import { SiKotlin } from "react-icons/si";
@@ -28,66 +28,66 @@ import TechBlog from '../../Components/Home_Component/Home_technoBlog/techBlog';
 
 
 const Home = () => {
-    const[Testimonial,setTestimonial]=useState([]);
-    const[TechBlogpost,setTechBlog]=useState([]);
-    const[Techbanner,setTechBanner]=useState([]);
+    const [Testimonial, setTestimonial] = useState([]);
+    const [TechBlogpost, setTechBlog] = useState([]);
+    const [Techbanner, setTechBanner] = useState([]);
 
 
     const CustomPrevArrow = (onClickHandler, hasPrev, label) => (
         <button
-          type="button"
-          onClick={onClickHandler}
-          disabled={!hasPrev}
-          className={`${Styles.custom_arrow} ${Styles.custom_arrow_prev}`}
-          aria-label={label}
+            type="button"
+            onClick={onClickHandler}
+            disabled={!hasPrev}
+            className={`${Styles.custom_arrow} ${Styles.custom_arrow_prev}`}
+            aria-label={label}
         >
-          <AiOutlineLeft/>
+            <AiOutlineLeft />
         </button>
-      );
-      
-      const CustomNextArrow = (onClickHandler, hasNext, label) => (
+    );
+
+    const CustomNextArrow = (onClickHandler, hasNext, label) => (
         <button
-          type="button"
-          onClick={onClickHandler}
-          disabled={!hasNext}
-          className={`${Styles.custom_arrow} ${Styles.custom_arrow_next}`}
-          aria-label={label}
+            type="button"
+            onClick={onClickHandler}
+            disabled={!hasNext}
+            className={`${Styles.custom_arrow} ${Styles.custom_arrow_next}`}
+            aria-label={label}
         >
-          <AiOutlineRight/>
+            <AiOutlineRight />
         </button>
-      );
-      
+    );
 
 
 
 
-    useEffect(()=>{
-      fetch(`${process.env.REACT_APP_Backend_baseUrl}/Testimonial`)
-                .then(res => res.json())
-                .then(data => {
-                    setTestimonial(data);
-                });
-      fetch(`${process.env.REACT_APP_Backend_baseUrl}/article/posts?perpage=3`)
-                .then(res => res.json())
-                .then(data => {
-                    setTechBlog(data.posts);
-                });
-      fetch(`${process.env.REACT_APP_Backend_baseUrl}/banner`)
-                .then(res => res.json())
-                .then(data => {
-                    setTechBanner(data);
-                });
-    },[])
+
+    useEffect(() => {
+        fetch(`${process.env.REACT_APP_Backend_baseUrl}/Testimonial`)
+            .then(res => res.json())
+            .then(data => {
+                setTestimonial(data);
+            });
+        fetch(`${process.env.REACT_APP_Backend_baseUrl}/article/posts?perpage=3`)
+            .then(res => res.json())
+            .then(data => {
+                setTechBlog(data.posts);
+            });
+        fetch(`${process.env.REACT_APP_Backend_baseUrl}/banner`)
+            .then(res => res.json())
+            .then(data => {
+                setTechBanner(data);
+            });
+    }, [])
 
 
     useEffect(() => {
         const options = {
-          top: 0,
-          left: 0,
-          behavior: 'smooth'
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
         };
         window.scrollTo(options);
-      }, []);
+    }, []);
 
 
 
@@ -102,10 +102,10 @@ const Home = () => {
                     autoPlay={true}
                     showThumbs={false}
                     stopOnHover={true}
-                    showArrows={false}
-                   useKeyboardArrows={true}
+                    showIndicators={false}
+                    useKeyboardArrows={true}
                 >
-                    {Techbanner&&Techbanner.map(slide => (
+                    {Techbanner && Techbanner.map(slide => (
                         <div key={slide.id}>
                             <img className={Styles.carousel_img} loading="lazy" src={slide.banner_img_url} alt={slide.caption} />
                             <p className={Styles.title}>{slide.heading}</p>
@@ -121,7 +121,7 @@ const Home = () => {
                 </Carousel>
 
             </section>
-              {/* <div className={Styles.Chatbot}> <Chatbot/></div>  */}
+            {/* <div className={Styles.Chatbot}> <Chatbot/></div>  */}
             <section className={Styles.home_secend_part}>
 
                 <div className={Styles.features}>
@@ -141,16 +141,16 @@ const Home = () => {
                     </div>
                     <div className={Styles.card_contaner}>
                         <div className={Styles.card}>
-                            <img src={Home_1} alt=''   loading="lazy"/>
-                           <Link to={"/it_consulting"}> <h1>IT Services</h1></Link>
+                            <img src={Home_1} alt='' loading="lazy" />
+                            <Link to={"/it_consulting"}> <h1>IT Services</h1></Link>
                         </div>
                         <div className={`${Styles.card} ${Styles.card_2}`}>
-                            <img src={Home_2} alt=''  loading="lazy"/>
-                           <Link to={"/gis_service"}> <h1>GIS Services</h1></Link>
+                            <img src={Home_2} alt='' loading="lazy" />
+                            <Link to={"/gis_service"}> <h1>GIS Services</h1></Link>
                         </div>
                         <div className={`${Styles.card} ${Styles.card_3}`}>
-                            <img src={Home_3} alt=''  loading="lazy"/>
-                           <Link to={"/drone_service"}> <h1>Drone Services</h1></Link>
+                            <img src={Home_3} alt='' loading="lazy" />
+                            <Link to={"/drone_service"}> <h1>Drone Services</h1></Link>
                         </div>
                     </div>
                     <div className={`${Styles.know_more} ${Styles.View_All_Services}`}>
@@ -190,13 +190,13 @@ const Home = () => {
 
                 <div className={Styles.About_us}>
                     <div className={Styles.about_left}>
-                        <img className={Styles.Circul_1} src={Home_8} alt=''  loading="lazy"/>
-                        <img className={Styles.Circul_2} src={Home_8} alt=''  loading="lazy"/>
-                        <img className={Styles.about_img_1} src={Home_7} alt=''  loading="lazy"/>
-                        <img className={Styles.about_img_2} src={Home_6} alt=''  loading="lazy"/>
+                        <img className={Styles.Circul_1} src={Home_8} alt='' loading="lazy" />
+                        <img className={Styles.Circul_2} src={Home_8} alt='' loading="lazy" />
+                        <img className={Styles.about_img_1} src={Home_7} alt='' loading="lazy" />
+                        <img className={Styles.about_img_2} src={Home_6} alt='' loading="lazy" />
                     </div>
                     <div className={Styles.about_right}>
-                    <img className={Styles.about_us_drone} src={Home_9} alt='' loading="lazy"/>
+                        <img className={Styles.about_us_drone} src={Home_9} alt='' loading="lazy" />
                         <p className={Styles.title}>About Us</p>
                         <div className={Styles.about_right_contener}>
                             <h1>Why Choose Techmapperz</h1>
@@ -208,7 +208,7 @@ const Home = () => {
                             <p>We strive to be a software Development Company that
                                 delivers cutting edge solutions,helping not just Fortune 500
                                 companies and enterprise clients on their digital evolution journey.</p>
-                            <div className={Styles.know_more }>
+                            <div className={Styles.know_more}>
                                 <Link to={"/service"}> <div className={Styles.know_more_btn}>
                                     <div></div>
                                     <h2>View All Services</h2>
@@ -216,63 +216,63 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
-                    
+
                 </div>
 
                 <div className={Styles.Brand_Partners}>
                     <div className={Styles.Brand_Partners_left}>
-                        <Multi_carousel/>
+                        <Multi_carousel />
                     </div>
                     <div className={Styles.Brand_Partners_right}>
                         <p>Technology</p>
                         <h1>Our Brand Partners</h1>
-                        <img src='https://ik.imagekit.io/ntktfi8dx/uploads/Microsoft_logo_1.png?updatedAt=1680756385301' alt='' loading="lazy"/>
+                        <img src='https://ik.imagekit.io/ntktfi8dx/uploads/Microsoft_logo_1.png?updatedAt=1680756385301' alt='' loading="lazy" />
                     </div>
                 </div>
 
 
-                <TechBlog postdata={TechBlogpost}/>
+                <TechBlog postdata={TechBlogpost} />
 
 
                 <div className={Styles.Testimonial}>
                     <p>Testimonial</p>
                     <h1>What our Clients Say</h1>
-               
-                <Carousel
-             
-             showStatus={false}
-             infiniteLoop={true}
-             autoPlay={true}
-             showArrows={false}
-             showThumbs={false}
-             stopOnHover={true}
-             showIndicators={false}
-             useKeyboardArrows={true}
-            className={Styles.Carousel}
-          >
-          {Testimonial.map(data=>{
-            return(
-              <div className={Styles.card}>
-                <div style={{"display":"flex", "gap":"10px"}}>
-                <img src={Cotation} alt=''/>
-              <h2>{data.message}</h2>
-              </div>
-              <div className={Styles.client}>
-                <img src={data.avater} />
-                <div>
-                <p>{data.name}</p>
-                <p>{data.Companyname}</p>
+
+                    <Carousel
+
+                        showStatus={false}
+                        infiniteLoop={true}
+                        autoPlay={true}
+                        showArrows={false}
+                        showThumbs={false}
+                        stopOnHover={true}
+                        showIndicators={false}
+                        useKeyboardArrows={true}
+                        className={Styles.Carousel}
+                    >
+                        {Testimonial.map(data => {
+                            return (
+                                <div className={Styles.card}>
+                                    <div style={{ "display": "flex", "gap": "10px" }}>
+                                        <img src={Cotation} alt='' />
+                                        <h2 >{data.message}</h2>
+                                    </div>
+                                    <div className={Styles.client}>
+                                        <img src={data.avater} />
+                                        <div>
+                                            <p className={Styles.name}>{data.name}</p>
+                                            <p>{data.Companyname}</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            )
+                        })}
+
+
+                    </Carousel>
                 </div>
-              </div>
-  
-            </div>
-            )
-          })}
-          
-        
-          </Carousel>
-          </div>
-          
+
             </section>
         </div>
     )
