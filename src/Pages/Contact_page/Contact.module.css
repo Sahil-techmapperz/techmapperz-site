@@ -62,10 +62,11 @@
     line-height: 24px;
     letter-spacing: 0.162793px;
     color: #FFFFFF;
+    margin-bottom: -2rem;
 }
 
 .contact_bottom .contact_bottom_left>h1{
-    font-weight: 400;
+    font-weight:bold;
     font-size: 36px;
     letter-spacing: 0.162793px;
     color: #FFFFFF;
@@ -74,14 +75,24 @@
 
 .contact_bottom .contact_bottom_left .address_card{
     display: flex;
-    width: max-content;
+    width:100%; 
+    align-items: start;
 }
 
 
 .contact_bottom .contact_bottom_left  .logo_contaner{
     width: 150px;
     display: flex;
+    align-items: start;
     gap: 5px;
+
+}
+.contact_bottom .contact_bottom_left  .logo_contaner2{
+    width: 215px;
+    display: flex;
+    align-items: start;
+    gap: 5px;
+    
 }
 
 

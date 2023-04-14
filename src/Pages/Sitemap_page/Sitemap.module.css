@@ -51,7 +51,11 @@
 }
 
 .card{
-    height: 400px;
+   height: 400px;
+}
+.card ul{
+    padding-left: 10px;
+    border-left:6px solid #396ba9;
 }
 
 
@@ -81,5 +85,5 @@
     letter-spacing: 0.162793px;
     padding-left: 10px;
     padding-right: 10px;
-    background-color: blue;
+    background-color: #396ba9;
 }

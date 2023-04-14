@@ -51,8 +51,7 @@ const About = () => {
                 <h1 className={styles.title}>Get known us</h1>
                 <h2 className={styles.heading}>About Company</h2>
                 <p>Let your imagination fly, this has always been the spirit that made Techmapperz possible, we were always free-thinkers, a team that believed that the solution to a complex problem need not be complex, that complex issues should have very simple solutions, and this is the change that we all believe in.</p>
-                <p>We aim for a Digital transformation toward innovation with simplicity, striving to be a Company that delivers cutting-edge solutions, helping the world, mankind, enterprise and fortune 500 companies, all in one go.</p>
-
+                
                 <Link> <div className={styles.Submit_btn}>
                   <div></div>
                   <h2>Know More</h2>

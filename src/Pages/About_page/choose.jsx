@@ -25,7 +25,7 @@ const Choose = () => {
                             <source src="https://techmapperz.com/media/videos/2022/07/04/whatsapp-video-2022-07-04-at-10.57.43-am.mp4" type="video/mp4"></source>
                         </video>
                     </div> */}
-                    <img src={Aboutus3} />
+                  <div> <img src={Aboutus3} /></div> 
 
                     <div className={styles.company_info}>
                         <h2 className={styles.heading}>Why Choose Techmapparz</h2>
@@ -58,12 +58,12 @@ const Choose = () => {
                                         <AccordionIcon />
                                     </AccordionButton>
                                 
-                                <AccordionPanel  border={"1px solid"} pb={4}>
+                                <AccordionPanel textAlign={"justify"}  color={"#A3A3A3"} border={"1px solid"} pb={4}>
                                   This is the first and foremost step in delivering your project ahead of your expection, though we are driven by results, we never let that hamper our course of understanding you and requirement, we ensure that our research is onto every vertical that involves the company competitors, target market and customer psychographics, this is critical and crucial in our further action plan.
                                 </AccordionPanel>
                             </AccordionItem>
 
-                            <AccordionItem border={"none"}>
+                            <AccordionItem  border={"none"}>
                                 
                                     <AccordionButton border={"1px solid"}>
                                         <Box as="span" flex='1' textAlign='left'>
@@ -72,7 +72,7 @@ const Choose = () => {
                                         <AccordionIcon />
                                     </AccordionButton>
                                 
-                                <AccordionPanel border={"1px solid"} pb={4}>
+                                <AccordionPanel textAlign={"justify"}  color={"#A3A3A3"} border={"1px solid"} pb={4}>
                                    We have a talent pool to make any company jealous, and we use this talent pool to do the creation in such a way it serves our mission statement "simple solution for complex scenarios". what our team creates not just fills the vacuum of your requirenment. But also ensure that the solution remains simple while doing so.in the process also ensure that we remain committed to the budget and deadline.. 
                                 </AccordionPanel>
                             </AccordionItem>
@@ -85,7 +85,7 @@ const Choose = () => {
                                         <AccordionIcon />
                                     </AccordionButton>
                                 
-                                <AccordionPanel  border={"1px solid"} pb={4}>
+                                <AccordionPanel textAlign={"justify"}  color={"#A3A3A3"} border={"1px solid"} pb={4}>
                                     The word defines a lot of internal and external factors and processes that we do to ensure that everything goes as planned, this is always project dependent, but the the crucial step that we undertake under this is to keep your project and requirement confidential,keep it to need to know basis amongest all sections of employees, also maintaining multiple tier experts for the tab on the biling or unexpected or additional expenses. With a lot of government  and time-sensitive clients' jobs that we do, this layering guarantees us that we don't miss a deadline..
                                 </AccordionPanel>
                             </AccordionItem>
@@ -99,7 +99,7 @@ const Choose = () => {
                                         <AccordionIcon />
                                     </AccordionButton>
                                 
-                                <AccordionPanel border={"1px solid"} pb={4}>
+                                <AccordionPanel textAlign={"justify"}  color={"#A3A3A3"} border={"1px solid"} pb={4}>
                                This is it! T     
                                 </AccordionPanel>
                             </AccordionItem>

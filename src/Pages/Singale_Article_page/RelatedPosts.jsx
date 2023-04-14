@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import "./SinglePost.css";
-
+import dummy_image from "../../Photos/dummy-image.jpg"
 function RelatedPosts({ postId }) {
   const [relatedPosts, setRelatedPosts] = useState([]);
   const [showPosts, setShowPosts] = useState(true);
@@ -45,7 +45,7 @@ function RelatedPosts({ postId }) {
       <ul>
         {relatedPosts.map((post) => (
           <div>
-         {post.imgUrl&&<img src={post.imgUrl} alt=""/>}
+          <img src={post.imgUrl!==null ? post.imgUrl : dummy_image} alt=""/>
           <li key={post.id}>
             <Link
               to={`/singal_article/${post.id}`}
