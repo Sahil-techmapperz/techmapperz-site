@@ -128,6 +128,16 @@
 
 }
 
+.secend_section_main_two>h2{
+    text-align: center;
+}
+.secend_section_main_two>p{
+    text-align: center;
+    color: white;
+}
+
+
+
 .input_from {
     display: flex;
     flex-direction: column;
@@ -145,6 +155,8 @@
     border-radius: 10px;
     border: none;
     padding: 10px;
+    padding-right: 1rem;
+    font-size: 18px;
 }
 
 .input_from select option {

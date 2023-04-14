@@ -173,7 +173,7 @@ const Contact = () => {
                                     name="name"
                                     value={contactdata.name}
                                     onChange={handalechange}
-                                    placeholder="Enter full name"
+                                    placeholder="Enter Full Name"
 
                                 />
                                 <FormErrorMessage>{hasError.name}</FormErrorMessage>
@@ -185,7 +185,7 @@ const Contact = () => {
                                     name="email"
                                     value={contactdata.email}
                                     onChange={handalechange}
-                                    placeholder="Enter email"
+                                    placeholder="Enter Email"
 
                                 />
 
@@ -200,7 +200,7 @@ const Contact = () => {
                                     name="projectType"
                                     value={contactdata.projectType}
                                     onChange={handalechange}
-                                    placeholder="Enter project type"
+                                    placeholder="Enter Project Type"
 
                                 />
                                 <FormErrorMessage>{hasError.projectType}</FormErrorMessage>
@@ -212,7 +212,7 @@ const Contact = () => {
                                     name="mobile"
                                     value={contactdata.mobile}
                                     onChange={handalechange}
-                                    placeholder="Enter mobile"
+                                    placeholder="Enter Mobile"
                                     type="tel"
                                     pattern="\d{10}"
 
