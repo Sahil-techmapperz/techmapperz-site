@@ -26,7 +26,7 @@ const Photogrammetry_Services = () => {
         <div className={styles.drone}>
             <section className={styles.part1}>
                 <h1>Photogrammetry Services</h1>
-                <p>Home / Services / Photogrammetry Services</p>
+                <p><Link to={"/"}>Home</Link> / <Link to={"/service"}>Services</Link> / Photogrammetry Services</p>
             </section>
 
             <section className={styles.secand_part}>

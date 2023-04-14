@@ -21,7 +21,7 @@ const Footer = () => {
     <div className={styles.Footer}>
       <div className={styles.Footer_main}>
       <div className={styles.footer_part_one}>
-        <p>Let's Have a talk about your project.</p>
+        <p>Let's have a talk about your project.</p>
         <h1>Need more information or want to get in touch?</h1>
        <Link to={"/contact"}> <div className={styles.Submit_btn}>
             <div></div>

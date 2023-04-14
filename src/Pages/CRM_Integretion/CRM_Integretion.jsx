@@ -43,7 +43,7 @@ const CRM_Integretion = () => {
         <div className={Styles.CRM_Integretion}>
             <section className={Styles.first_part}>
                 <h1>CRM Integration</h1>
-                <p>Services / CRM-ERP /  CRM Integration</p>
+                <p><Link to={"/service"}>Services</Link> / <Link to={"crm_page"}>CRM-ERP</Link> /  CRM Integration</p>
             </section>
 
 

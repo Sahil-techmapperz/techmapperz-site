@@ -27,7 +27,7 @@ const Drone_Service = () => {
         <div className={styles.drone}>
             <section className={styles.part1}>
                 <h1>Drone Services</h1>
-                <p>Home / Services / Drone Services</p>
+                <p><Link to={"/"}>Home</Link> / <Link to={"/service"}>Services</Link> / Drone Services</p>
             </section>
 
 

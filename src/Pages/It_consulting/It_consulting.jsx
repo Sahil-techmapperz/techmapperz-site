@@ -38,6 +38,7 @@ import Itconsulting14 from '../../Photos/Itconsulting14.png';
 import Office_work from '../../Photos/Itconsulting/Office work.gif';
 import Digital_nomad from '../../Photos/Itconsulting/Digital nomad.gif';
 import Good_team from '../../Photos/Itconsulting/Good team.gif';
+import { Link } from '@chakra-ui/react';
 
 
 
@@ -55,7 +56,7 @@ const It_consulting = () => {
         <div className={Styles.consulting}>
             <section className={Styles.first_part}>
                 <h1>IT Consulting Services</h1>
-                <p>Services / IT Service / IT Consulting Services</p>
+                <p><Link top={"/service"}>Services</Link> / IT Service / IT Consulting Services</p>
             </section>
 
 

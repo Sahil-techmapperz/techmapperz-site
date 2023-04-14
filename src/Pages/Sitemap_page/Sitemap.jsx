@@ -18,7 +18,7 @@ const Sitemap = () => {
     <div className={Styles.sitemap}>
       <div className={Styles.Top}>
       <h1>Sitemap</h1>
-        <p>Home / Sitemap</p>
+        <p><Link to={"/"}>Home</Link> / Sitemap</p>
       </div>
       <div className={Styles.bottem}>
         <div className={Styles.card_contanier}>

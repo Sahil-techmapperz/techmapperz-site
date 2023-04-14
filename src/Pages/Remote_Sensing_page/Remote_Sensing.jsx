@@ -22,7 +22,7 @@ const Remote_Sensing = () => {
         <div className={Styles.Remote_Sensing}>
             <div className={Styles.top}>
                 <h1>Remote Sensing Services</h1>
-                <p>Home / Services / Remote Sensing Services</p>
+                <p><Link to={"/"}>Home </Link>/ <Link to={"/service"}>Services</Link> / Remote Sensing Services</p>
             </div>
             <div className={Styles.contaner}>
                 <div className={Styles.contaner_first}>
