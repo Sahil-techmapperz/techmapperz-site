@@ -20,6 +20,8 @@
     align-items: center;
     object-fit: cover;
     background: url("../../Photos/banner_3.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
 .top>h1 {

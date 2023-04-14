@@ -57,6 +57,8 @@
     background: transparent;
     padding-top: 25px;
     padding-bottom: 30px;
+   text-align: justify;
+   text-justify: inter-word;
 }
 
 
@@ -77,7 +79,7 @@
 
 .product {
     display: flex;
-    gap: 45px;
+    gap: 70px;
     background: rgba(24, 24, 24, 1);
 }
 
@@ -114,6 +116,8 @@
     font-weight: 400;
     word-wrap: break-word;
     width: 600px;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .product_info>ul {
