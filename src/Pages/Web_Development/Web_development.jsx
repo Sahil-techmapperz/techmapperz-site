@@ -167,20 +167,20 @@ const Web_Development = () => {
                     <div className={Styles.main}>
                         <div className={Styles.card}>
                             <img src={Webdev4} />
-                            <h3>Original Content</h3>
+                            <h1>Original Content</h1>
                             <p>It is heighly recommended that the content of the website is original and of high quality, this is not only helps your coustomers find you quickly but also effects the ranking of your website,ensure this for your website.</p>
                         </div>
 
                         <div className={`${Styles.card}  ${Styles.class1}`}>
                         <img src={Webdev3} />
-                            <h3>Call to Action</h3>
+                            <h1>Call to Action</h1>
                             <p>Call to action is as simple as setting up a contact now button,this invariably motivates customers and visitors to get in touch with your company and promotes building relationships.</p>
                         </div>
 
 
                         <div className={Styles.card}>
                         <img src={Webdev2} />
-                            <h3>Compatibility</h3>
+                            <h1>Compatibility</h1>
                             <p>Compatibility With time the inter has evolved a lot and so will it with time,and with this internet browsers also change, your website should be flexible enough to adapt itself to run a new browser as well as...</p>
                         </div>
                     </div>
@@ -219,7 +219,7 @@ const Web_Development = () => {
                         <img src={T01} alt='' />
                         </div> 
                            
-                            <h3>Flexibility</h3>
+                            <h1>Flexibility</h1>
                             <p>We understand your need,and sometime we know that it can we time critical yet should affordable,that is why we have custom designed package to suit your demands of time and money.</p>
                         </div>
 
@@ -230,7 +230,7 @@ const Web_Development = () => {
                         <img src={T02} alt='' />
                         </div> 
                            
-                            <h3>Friendly</h3>
+                            <h1>Friendly</h1>
                             <p>Nothing is more important that a customer oritented business model,we at Techmapperz  love what we do, and we are always passeonate about putting our customers first.</p>
                         </div>
 
@@ -240,7 +240,7 @@ const Web_Development = () => {
                         <img src={T03} alt='' />
                         </div> 
                            
-                            <h3>Quality</h3>
+                            <h1>Quality</h1>
                             <p>Quality makes us excel.our approach is designed to provide it at all levels of functioning up-to the micro level details,that extra ounce of effort in effective communication....</p>
                         </div>
 
@@ -251,7 +251,7 @@ const Web_Development = () => {
                         <img src={T04} alt='' />
                         </div> 
                            
-                            <h3>Reduce cost</h3>
+                            <h1>Reduce cost</h1>
                             <p>Our team planning is so efficient that the project overall time in not extended and thus keeping the overall coast in check.</p>
                         </div>
 

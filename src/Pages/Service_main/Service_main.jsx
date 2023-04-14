@@ -12,6 +12,7 @@ import T01 from '../../Photos/01.png';
 import T02 from '../../Photos/02.png';
 import T03 from '../../Photos/03.png';
 import T04 from '../../Photos/04.png';
+import T05 from '../../Photos/05.png';
 import T06 from '../../Photos/06.png';
 import Ourservice1 from '../../Photos/Ourservice1.png';
 import Ourservice2 from '../../Photos/Ourservice2.png';
@@ -103,7 +104,7 @@ const Service_main = () => {
                         <div className={Styles.card5}>
                         <div className={Styles.testimg1}>
                             <img className={Styles.icon} src={Ourservice7} alt='' />
-                            <img src={T04} alt='' />
+                            <img src={T05} alt='' />
                             </div>
                             <h3 > <Link to={"/GIS_Service"}> Drone Services</Link></h3>
                             <p>With the accumulated experience of more then 20 years, Our team is well equipped to help you solve all possible challenges in the customer management field</p>
