@@ -9,7 +9,6 @@
 
 .home_first_part {
     width: 100%;
-    height: 700px;
     position: relative;
     background-color: #333;
     overflow: hidden;
@@ -17,7 +16,6 @@
 
 .carousel_container {
     width: 100%;
-    /* height: 100%; */
     position: relative;
 }
 
@@ -39,11 +37,11 @@
 }
 
 
-.carousel_container .subTitle{
+.carousel_container .subTitle {
     color: white;
     position: absolute;
     z-index: 3;
-    top: 25rem;
+    bottom: 8rem;
     left: 6rem;
     width: 450px;
     font-size: 16px;
@@ -54,21 +52,21 @@
 }
 
 
-.carousel_container .know_more{
+.carousel_container .know_more {
     position: absolute;
     bottom: 5rem;
     width: 250px;
     left: 46%;
-} 
+}
 
 
 
 
 
 
-.custom-arrow {
+.custom_arrow {
     position: absolute;
-    top: 10rem;
+    top: 30rem;
     right: 3rem;
     color: #fff;
     border: none;
@@ -76,36 +74,28 @@
     padding: 10px;
     cursor: pointer;
     z-index: 10;
-    border: 1px solid ;
-  }
-  
-  .custom-arrow-prev {
-    left: 10px;
-  }
-  
-  .custom-arrow-next {
-    right: 10px;
-  }
-  
-  /* .custom-arrow:disabled {
-    opacity: 0.3;
+}
+
+.custom_arrow_prev {
+    right: 15rem;
+    font-size: 60px;
+}
+
+.custom_arrow_next {
+    font-size: 60px;
+    right: 10rem;
+}
+
+.custom_arrow[disabled] {
+    color: gray;
     cursor: not-allowed;
-  } */
-  
+}
+
 
 /* carousel  */
 
 
 
-/* chatbot */
-
-
-.Chatbot{
-    position: fixed;
-    z-index: 10;
-    top: 10rem;
-    right: 2rem;
-}
 
 
 /* features */
@@ -131,7 +121,7 @@
     font-weight: 400;
     color: #808080;
     margin-bottom: -1.5rem;
-    
+
 }
 
 
@@ -202,8 +192,8 @@
     width: 400px;
 }
 
-.card_contaner .card h1:hover{
-cursor: pointer;
+.card_contaner .card h1:hover {
+    cursor: pointer;
 }
 
 .card_contaner .card_2 {
@@ -250,7 +240,7 @@ cursor: pointer;
 /* Technology */
 
 
-.Technology{
+.Technology {
     width: 100%;
     position: relative;
     padding: 2rem 5rem;
@@ -388,32 +378,33 @@ cursor: pointer;
     position: absolute;
 }
 
-.About_us .about_left .Circul_1{
+.About_us .about_left .Circul_1 {
     top: -3rem;
     right: 5.5rem;
 }
-.About_us .about_left .Circul_2{
+
+.About_us .about_left .Circul_2 {
     bottom: -6.5rem;
 }
 
-.About_us .about_left .about_img_1{
+.About_us .about_left .about_img_1 {
     width: 465px;
 }
 
-.About_us .about_left .about_img_2{
+.About_us .about_left .about_img_2 {
     width: 380px;
     top: 8rem;
     right: -10rem;
 }
 
-.About_us .about_right{
+.About_us .about_right {
     margin-top: 10rem;
     width: 45%;
     position: relative;
     z-index: 2;
 }
 
-.About_us .about_right .title{
+.About_us .about_right .title {
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.16px;
@@ -422,14 +413,14 @@ cursor: pointer;
     margin-bottom: -1rem;
 }
 
-.About_us .about_right .about_right_contener{
+.About_us .about_right .about_right_contener {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
 
-.About_us .about_right .about_right_contener h1{
+.About_us .about_right .about_right_contener h1 {
     font-weight: bold;
     font-size: 36px;
     line-height: 54px;
@@ -438,7 +429,7 @@ cursor: pointer;
     margin-bottom: -0.5rem;
 }
 
-.About_us .about_right .about_right_contener p{
+.About_us .about_right .about_right_contener p {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
@@ -448,7 +439,7 @@ cursor: pointer;
     text-justify: inter-word;
 }
 
-.About_us .about_right .about_us_drone{
+.About_us .about_right .about_us_drone {
     width: 100px;
     position: absolute;
     top: -10rem;
@@ -462,7 +453,7 @@ cursor: pointer;
 
 /* Brand Partners */
 
-.Brand_Partners{
+.Brand_Partners {
     width: 100%;
     height: 300px;
     gap: 5rem;
@@ -472,34 +463,35 @@ cursor: pointer;
     background-color: #1c1c1c;
 }
 
-.Brand_Partners_left{
+.Brand_Partners_left {
     width: 60%;
     margin-top: -1.5rem;
 }
 
 
-.Brand_Partners_right{
+.Brand_Partners_right {
     width: 40%;
 }
 
 
-.Brand_Partners .Brand_Partners_right p{
+.Brand_Partners .Brand_Partners_right p {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.162793px;
     color: #808080;
-    margin-bottom:-1rem
+    margin-bottom: -1rem
 }
 
-.Brand_Partners .Brand_Partners_right h1{
+.Brand_Partners .Brand_Partners_right h1 {
     font-weight: 500;
     font-size: 30px;
     letter-spacing: 0.162793px;
     color: #FFFFFF;
     word-wrap: break-word;
 }
-.Brand_Partners .Brand_Partners_right img{
+
+.Brand_Partners .Brand_Partners_right img {
     width: 180px;
     margin-top: -1rem;
     margin-left: 3rem;
@@ -513,7 +505,7 @@ cursor: pointer;
 /* our_blog */
 
 
-.our_blog{
+.our_blog {
     width: 100%;
     padding: 2rem 5rem;
     display: flex;
@@ -521,12 +513,12 @@ cursor: pointer;
 }
 
 
-.our_blog .our_blog_left{
+.our_blog .our_blog_left {
     margin-top: 3rem;
     width: 40%;
 }
 
-.our_blog .our_blog_left p{
+.our_blog .our_blog_left p {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
@@ -534,7 +526,7 @@ cursor: pointer;
     color: #808080;
 }
 
-.our_blog .our_blog_left h1{
+.our_blog .our_blog_left h1 {
     font-weight: 600;
     font-size: 36px;
     line-height: 54px;
@@ -544,18 +536,18 @@ cursor: pointer;
 }
 
 
-.our_blog .our_blog_right{
+.our_blog .our_blog_right {
     margin-top: 2rem;
 }
 
-.our_blog .our_blog_right .our_blog_right_contaner{
+.our_blog .our_blog_right .our_blog_right_contaner {
     display: flex;
     justify-content: space-between;
     border: 1px solid #396ba9;
 }
 
 
-.our_blog .our_blog_right .our_blog_right_oen{
+.our_blog .our_blog_right .our_blog_right_oen {
     border-bottom: 1px solid #396ba9;
     border-right: 1px solid #396ba9;
     width: 30%;
@@ -565,7 +557,7 @@ cursor: pointer;
     align-items: center;
 }
 
-.our_blog .our_blog_right .our_blog_right_oen p{
+.our_blog .our_blog_right .our_blog_right_oen p {
     font-weight: 400;
     font-size: 26px;
     line-height: 24px;
@@ -573,7 +565,7 @@ cursor: pointer;
     color: #FFFFFF;
 }
 
-.our_blog .our_blog_right .our_blog_right_two{
+.our_blog .our_blog_right .our_blog_right_two {
     border-bottom: 1px solid #396ba9;
     width: 70%;
     height: 150px;
@@ -584,7 +576,7 @@ cursor: pointer;
     padding: 5px;
 }
 
-.our_blog .our_blog_right .our_blog_right_two h1{
+.our_blog .our_blog_right .our_blog_right_two h1 {
     font-weight: 400;
     font-size: 26px;
     line-height: 24px;
@@ -594,7 +586,7 @@ cursor: pointer;
     color: #FFFFFF;
 }
 
-.our_blog .our_blog_right .our_blog_right_two p{
+.our_blog .our_blog_right .our_blog_right_two p {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
@@ -602,7 +594,7 @@ cursor: pointer;
     color: #FFFFFF;
 }
 
-.our_blog .our_blog_right .our_blog_know_more{
+.our_blog .our_blog_right .our_blog_know_more {
     margin-top: 2rem;
 }
 
@@ -612,22 +604,22 @@ cursor: pointer;
 
 /* Testimonial */
 
-.Testimonial{
+.Testimonial {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 2rem 5rem;
-    margin: auto;
+    /* margin: auto; */
     background-color: black;
     /* background-image: url("../../Photos/Home/Testimonial.gif");
     overflow: hidden;
     background-size: cover;
     background-position: center;
-    backdrop-filter: blur(15px);
-    position: relative; */
-    
+    backdrop-filter: blur(15px); */
+    position: relative;
+
 }
 
 
@@ -646,7 +638,7 @@ cursor: pointer;
 
 
 
-.Testimonial .Carousel{
+.Testimonial .Carousel {
     width: 75%;
     position: relative;
     z-index: 2;
@@ -654,7 +646,14 @@ cursor: pointer;
 
 
 
-.Testimonial>p{
+
+
+
+
+
+
+
+.Testimonial>p {
     font-weight: 400;
     font-size: 16px;
     letter-spacing: 0.162793px;
@@ -665,7 +664,7 @@ cursor: pointer;
 
 
 
-.Testimonial h1{
+.Testimonial h1 {
     font-weight: 600;
     font-size: 36px;
     line-height: 54px;
@@ -675,38 +674,39 @@ cursor: pointer;
     z-index: 10;
 }
 
-.Testimonial .card{
+.Testimonial .card {
     margin: auto;
     text-align: left;
     /* margin-top: 2rem; */
     width: 100%;
 }
 
-.Testimonial .card img{
+.Testimonial .card img {
     width: 55px;
     height: 55px;
-    object-fit:fill;
+    object-fit: fill;
 }
-.Testimonial .card .client img{
+
+.Testimonial .card .client img {
     width: 55px;
     height: 55px;
     border: 6px solid #396ba9;
-    object-fit:fill;
+    object-fit: fill;
 }
 
-.Testimonial .card .client{
+.Testimonial .card .client {
     margin-top: 1rem;
     display: flex;
     gap: 10px;
     color: white;
 }
 
-.Testimonial .card .client .name{
+.Testimonial .card .client .name {
     font-size: 18px;
     margin-bottom: 0px;
 }
 
-.Testimonial .card h2{
+.Testimonial .card h2 {
     font-weight: 400;
     font-size: 20px;
     line-height: 40px;
@@ -715,7 +715,7 @@ cursor: pointer;
     color: white;
 }
 
-.Testimonial .card p{
+.Testimonial .card p {
     font-weight: 400;
     font-size: 16px;
     letter-spacing: 0.162793px;
@@ -732,162 +732,512 @@ cursor: pointer;
 
 
 
-@media (max-width: 1200px) {
-    .About_us {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        /* height: 750px; */
-        gap: 5rem;
-        position: relative;
-        background-color: #171717;
-        padding: 2rem 5rem;
+
+
+@media (max-width:1100px) {
+
+
+/* Carousel */
+
+    .carousel_container .title {
+        color:white;
+        position: absolute;
+        z-index: 3;
+        top: 2rem;
+        left: -15rem;
+        font-size: 18px;
+        font-weight:bold;
+        width: 200px;
     }
-}
+    
+    
+    .carousel_container .subTitle {
+        color: white;
+        position: absolute;
+        z-index: 3;
+        bottom: 1rem;
+        left: 0rem;
+        width: 150px;
+        font-size: 6px;
+        font-weight: 600;
+        text-align: left;
+        border-left: 6px solid #396ba9;
+        padding-left: 10px;
+        /* display: none; */
+    }
+    
+    
+    .carousel_container .know_more {
+        position: absolute;
+        bottom: 0rem;
+        width: 250px;
+        left: 46%;
+    }
+
+    
+    .custom_arrow {
+        position: absolute;
+        top: 30rem;
+        right: 3rem;
+        color: white;
+        border: none;
+        font-size: 24px;
+        padding: 10px;
+        cursor: pointer;
+        z-index: 10;
+    }
+    
+    .custom_arrow_prev {
+        right: 5rem;
+        font-size: 60px;
+    }
+    
+    .custom_arrow_next {
+        font-size: 60px;
+        right: 4rem;
+    }
+    
+    .custom_arrow[disabled] {
+        color: gray;
+        cursor: not-allowed;
+    }
 
 
-@media (max-width:720px) {
-    .slider .title{
+    /*features */
+
+    .features {
+        position: relative;
+        width: 100%;
+        padding: 10px;
+        padding-bottom: 2rem;
+        background-color: #171717;
+    }
+
+    .slider .title {
         font-size: 20px;
         width: 300px;
-        right: 2rem;
-        top: 5rem;
-    }
-    .features_top>h1{
-        font-size: 26px;
+        right: 1rem;
+        top: 2rem;
     }
 
-    .features_top .info{
-        width: 80%;
+    .features_top>h1 {
+        font-size: 20px;
+        width: 100%;
     }
 
-    .features_top .info>p{
+    .features_top .info {
+        width: 100%;
+    }
+
+    .features_top .info>p {
         font-size: 16px;
     }
 
-    .features_top{
+    .features_top {
         flex-direction: column;
     }
 
-
-    .card_contaner .card_2 {
-        margin-top: 7rem;
+    .features .card_contaner {
+        flex-direction: column;
+       margin-top: 1rem;
+        align-items: center;
+        gap: 10px;
     }
-    .card_contaner .card_3 {
-        margin-top: 15rem;
+
+    .know_more .know_more_btn {
+        position: relative;
+        height: 40px;
+    }
+    
+    .know_more .know_more_btn div {
+        width: 35px;
+        height: 30px;
+        border-radius: 50%;
+        background: #396ba9;
+    }
+    
+    .know_more .know_more_btn h2 {
+        position: absolute;
+        top: -10px;
+        left: 10px;
+        color: white;
+        font-size: 16px;
+    }
+    
+    .setting_icon {
+        position: absolute;
+        top: 5rem;
+        right: 2rem;
+        width: 20%;
+    }
+
+    .features .card{
+        width: 100%;
+        margin: 0;
+    }
+
+    .features .card h1{
+        font-size: 20px;
     }
 
     .View_All_Services {
         position: absolute;
-        width: 180px;
-        font-size: 16px;
-        bottom: 10rem;
-        left: 5rem;
-    }
-
-    .card_contaner .card h1 {
-        height: 54px;
-        font-weight: 600;
-        font-size: 20px;
-        line-height: 54px;
-        letter-spacing: 0.162793px;
-        color: white;
-    }
-
-    .setting_icon {
-        position: absolute;
-        top: 25rem;
-        right: 5rem;
+        width: 200px;
+        bottom: 1rem;
+        left: 10px;
     }
 
     /* Technology */
 
+    .Technology {
+        width: 100%;
+        position: relative;
+        padding: 10px;
+    }
+    
+    
+    .Technology .title {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.16px;
+        font-weight: 400;
+        color: #808080;
+    }
+    
+    
     .Technology .technology_contaner {
         display: flex;
         flex-direction: column;
-        justify-content:center;
-        align-items: center;
+        gap: 10px;
     }
-
-    .Technology .technology_icon {
-        width: 130px;
-        position: absolute;
-        bottom: 0;
-        margin-left: 17rem;
+    
+    .technology_contaner .technology_left {
+        width: 100%;
     }
-
-    .About_us .about_left .about_img_1{
-        width: 300px;
-    }
-    .About_us .about_left .about_img_2{
-        width: 300px;
-        top: 8rem;
-        left: 10rem;
-    }
-    .About_us .about_left .Circul_1{
-        width: 150px;
-        right: 7rem;
-    }
-
-    .About_us .about_left .Circul_2{
-        width: 150px;
-        bottom: 5rem;
-    }
-
-    /* Brand_Partners */
-    .Brand_Partners .Brand_Partners_right h1{
-        font-weight: 400;
-        font-size: 20px;
+    
+    .technology_contaner .technology_left h1 {
+        font-weight: bold;
+        font-size: 26px;
         line-height: 54px;
         letter-spacing: 0.162793px;
         color: #FFFFFF;
         word-wrap: break-word;
+        margin-top: 0rem;
     }
-
-
-    /* our_blog */
-    .our_blog{
-        width: 100%;
-        padding: 2rem 5rem;
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-        background-color: #171717;
-    }
-
-    .our_blog .our_blog_right .our_blog_right_two h1{
-        font-weight: 300;
-        font-size: 20px;
+    
+    .technology_contaner .technology_left p {
+        font-weight: 400;
+        font-size: 16px;
         line-height: 24px;
         letter-spacing: 0.162793px;
-        text-decoration: underline;
-        cursor: pointer;
         color: #FFFFFF;
+        border-left: 6px solid #396ba9;
+        padding-left: 10px;
     }
-    .our_blog .our_blog_right .our_blog_right_two p{
-        font-weight: 300;
+    
+    
+    .technology_right {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 50px);
+        justify-content: space-between;
+        gap: 10px;
+
+    }
+    
+    
+    
+    .technology_right div {
+        display: flex;
+        flex-direction: column;
+        row-gap: 7px;
+        cursor: pointer;
+        align-items: center;
+    }
+    
+    .technology_right .logo {
+        font-size: 30px;
+        color: white;
+        transition: all 0.5s ease-in-out;
+    }
+    
+    .technology_right p {
+        color: white;
+        font-size: 14px;
+        transition: all 0.5s ease-in-out;
+    }
+    
+    .technology_right div:hover .logo,
+    .technology_right div:hover p {
+        transform: scale(1.4);
+    }
+    
+    
+    .Technology .technology_icon {
+        width: 60px;
+        position: absolute;
+        bottom: 0;
+        left: 13rem;
+    }
+
+
+
+    /* About us */
+
+    .About_us {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        background-color: #171717;
+        padding: 10px;
+        background-image: url("../../Photos/Home/Why\ choose\ techmapperz-min.gif");
+        overflow: hidden;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .About_us::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.85);
+        z-index: 1;
+    }
+    
+    .About_us .about_left {
+        width: 100%;
+        padding-left: 10px;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin-top: 5rem;
+        position: relative;
+        z-index: 2;
+        
+    }
+    
+    .About_us .about_left img {
+        position: absolute;
+    }
+    
+    .About_us .about_left .Circul_1 {
+        top: -2rem;
+        right: 8.3rem;
+        width: 90px;
+    }
+    
+    .About_us .about_left .Circul_2 {
+        bottom: 13.5rem;
+        width: 90px;
+    }
+    
+    .About_us .about_left .about_img_1 {
+        width: 200px;
+    }
+    
+    .About_us .about_left .about_img_2 {
+        width: 200px;
+        top: 4rem;
+        left: 8rem;
+    }
+    
+    .About_us .about_right {
+        margin-top: -10rem;
+        width: 100%;
+        position: relative;
+        z-index: 2;
+    }
+    
+    .About_us .about_right .title {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.16px;
+        font-weight: 400;
+        color: #808080;
+        margin-bottom: -1rem;
+    }
+    
+    .About_us .about_right .about_right_contener {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    
+    .About_us .about_right .about_right_contener h1 {
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 54px;
+        letter-spacing: 0.162793px;
+        color: #FFFFFF;
+        margin-bottom: -0.5rem;
+    }
+    
+    .About_us .about_right .about_right_contener p {
+        font-weight: 400;
         font-size: 14px;
         line-height: 24px;
         letter-spacing: 0.162793px;
         color: #FFFFFF;
+        text-align: justify;
+        text-justify: inter-word;
     }
-    .our_blog .our_blog_left h1{
+    
+    .About_us .about_right .about_us_drone {
+        width: 60px;
+        position: absolute;
+        top: -45rem;
+        right: 0;
+    }
+
+
+    /* Brand_Partners */
+    .Brand_Partners {
+        width: 100%;
+        height: 370px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #1c1c1c;
+        padding: 10px;
+    }
+    
+    .Brand_Partners_left {
+        width: 100%;
+       margin-top: 0.5rem;
+    }
+    
+    
+    .Brand_Partners_right {
+        width: 100%;
+        margin-top: -5rem;
+        margin-left: 3rem;
+    }
+    
+    
+    .Brand_Partners .Brand_Partners_right p {
         font-weight: 400;
-        font-size: 30px;
-        line-height: 54px;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.162793px;
+        color: #808080;
+        margin-bottom: -1rem;
+        /* margin-left: -6rem; */
+    }
+    
+    .Brand_Partners .Brand_Partners_right h1 {
+        font-weight: 500;
+        font-size: 20px;
         letter-spacing: 0.162793px;
         color: #FFFFFF;
         word-wrap: break-word;
     }
-
-    .our_blog .our_blog_right .our_blog_right_oen p{
-        font-weight: 300;
-        font-size: 20px;
-        line-height: 24px;
-        letter-spacing: 0.162793px;
-        color: #FFFFFF;
-    }
     
+    .Brand_Partners .Brand_Partners_right img {
+        width: 150px;
+        margin-top: -1rem;
+       margin-left:40px;
+       margin-bottom: 2rem;
+    }
+
+
+
+
+
+ /* Testimonial */
+
+ .Testimonial {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: auto;
+    background-color: black;
+   
+
+}
+
+
+.Testimonial .Carousel {
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+
+
+.Testimonial>p {
+    font-weight: 400;
+    font-size: 14px;
+    color: white;
+    margin-bottom: -1rem;
+    z-index: 10;
+}
+
+
+
+.Testimonial h1 {
+    font-weight: bold;
+    font-size: 26px;
+    color: #FFFFFF;
+    z-index: 10;
+    width: 100%;
+    text-align: center;
+}
+
+.Testimonial .card {
+    margin: auto;
+    text-align: left;
+    /* margin-top: 2rem; */
+    width: 100%;
+}
+
+.Testimonial .card img {
+    width: 30px;
+    object-fit:contain;
+}
+
+.Testimonial .card .client img {
+    width: 45px;
+    border: 6px solid #396ba9;
+    object-fit:cover;
+}
+
+.Testimonial .card .client {
+    margin-top: 1rem;
+    display: flex;
+    gap: 10px;
+    color: white;
+    margin-left: 2rem;
+}
+
+.Testimonial .card .client .name {
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+
+.Testimonial .card h2 {
+    font-weight: 400;
+    font-size: 15px;
+    text-align: left;
+    padding-bottom: 25px;
+    color: white;
+}
+
+.Testimonial .card p {
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.162793px;
+    color: white;
+}
+
 }

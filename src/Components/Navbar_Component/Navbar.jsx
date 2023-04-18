@@ -69,6 +69,7 @@ const Navbar = () => {
       <Drawer
         isOpen={isOpen}
         placement='right'
+        size={"full"}
         onClose={onClose}
         finalFocusRef={btnRef}
         
