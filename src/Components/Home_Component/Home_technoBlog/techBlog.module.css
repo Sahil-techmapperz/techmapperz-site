@@ -138,3 +138,143 @@ table tr{
     right:42rem;
     z-index: 10;
 }
+
+
+
+
+@media (max-width:1100px) {
+    .techblog {
+        width: 100%;
+        height: max-content;
+        position: relative;
+        background-image: url("../../../Photos/Home/Latest\ News.gif");
+        backdrop-filter: 0.7;
+        overflow: hidden;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        padding:10px;
+        padding-bottom: 10rem;
+        border: 1px solid ;
+    }
+    
+    .techblog::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        /* height: 100%; */
+        background-color: rgba(0, 0, 0, 0.7);
+        z-index: 1;
+    }
+    
+    .main {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 3rem;
+    }
+    
+    .subMain_1 {
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+    }
+    
+    .subMain_1>p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.162793px;
+        color: #808080;
+        
+    }
+    
+
+
+    
+    .subMain_1>h2 {
+        font-weight: bold;
+        font-size: 26px;
+        color: #FFFFFF;
+        margin-top: -1rem;
+       
+       
+    }
+    
+    .subMain_2 {
+        width: 100%;
+        z-index: 10;
+    }
+
+
+    
+    table tr{
+        display: block;
+        border: 1px solid #396BA9;
+        padding:0 15px;
+    }
+    
+    
+    .row_1 {
+        width: 40%;
+        /* height: 150px; */
+        font-weight:bold;
+        font-size: 16px;
+        border-right: 1px solid #396BA9;
+    }
+    
+    .row_2 {
+        text-align: left;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 27px;
+        letter-spacing: 0.162793px;
+        color: #FFFFFF;
+        padding-left: 30px;
+        word-wrap: break-word;
+        padding-bottom: 10px;
+    }
+    
+    .row_2 a{
+        font-size: 16px;
+        font-weight: bold;
+        color: #396ba9;
+    }
+    
+    .Submit_btn {
+        width: 150px;
+        height: 60px;
+    }
+    
+    .Submit_btn div {
+        width: 55px;
+        height: 50px;
+        border-radius: 50%;
+        background: #396ba9;
+        
+    }
+    
+    .Submit_btn h2 {
+        font-size: 20px;
+        position: absolute;
+        width: 100%;
+        top: -0.5rem;
+        left: 10px;
+        color: aliceblue;
+    }
+    
+    .tabet{
+        position: relative;
+    }
+    
+    .getintouch_btn {
+        position: absolute;
+        left:0rem;
+        z-index: 10;
+        width: 100%;
+    }
+    
+}

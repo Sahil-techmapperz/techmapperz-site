@@ -17,8 +17,9 @@
     color: #FFFFFF;
 }
 
-@media (max-width:720px) {
+@media (max-width:1100px) {
     .carousel-item-padding-40-px img{
-        width: 100px;
+        width: 150px;
+        margin-left: 5rem;
     }
 }
