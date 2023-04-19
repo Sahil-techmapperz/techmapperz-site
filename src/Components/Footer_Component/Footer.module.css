@@ -24,6 +24,7 @@
 
 .footer_part_one {
     width: 469px;
+    margin-top: -25px;
 }
 
 .footer_part_two {
@@ -40,9 +41,12 @@
     width: 100%;
     font-weight: 400;
     font-size: 36px;
-    line-height: 54px;
-    letter-spacing: 0.162793px;
     color: #FFFFFF;
+    /* margin-top: -5px; */
+}
+
+.footer_part_one>p{
+    /* margin-top: -20px; */
 }
 
 .footer_part_one>a {
