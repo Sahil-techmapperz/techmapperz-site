@@ -5,6 +5,9 @@ import Geospatial_Mapping from '../../Photos/Geospatial_Mapping.png';
 import Geo_health from '../../Photos/Geo_health.png';
 import WebGis1 from '../../Photos/WebGis1.png';
 import WebGis2 from '../../Photos/WebGis2.png';
+
+
+
 const Web_GIS = () => {
     useEffect(() => {
         const options = {

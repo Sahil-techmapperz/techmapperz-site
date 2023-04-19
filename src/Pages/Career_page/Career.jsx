@@ -200,6 +200,7 @@ const Career = () => {
 
       <section className={Styles.secend_section}>
         <h3>Get Involved Now</h3>
+        <h1 className={Styles.water_mark}>Current Openings</h1>
         <h1>Let's join with us !!</h1>
         <div className={Styles.secend_section_main}>
           <div className={Styles.secend_section_main_one}>
@@ -251,16 +252,16 @@ const Career = () => {
           <ModalHeader>Job Info</ModalHeader>
           <ModalCloseButton />
           <ModalBody>
-            <Text color='black'><b style={{ "color": "black" }}>Job Id -</b> {job && job.JobID}</Text><br />
-            <Text color='black'><b style={{ "color": "black" }}> JobType -</b>  {job && job.Jobtype}</Text><br />
-            <Text color='black'><b style={{ "color": "black" }}>Education - </b> {job && job.education}</Text><br />
-            <Text color='black'><b style={{ "color": "black" }}>Experience -</b> {job && job.experience}</Text><br />
-            <Text color='black'><b style={{ "color": "black" }}>Designetion -</b>  {job && job.designetion}</Text><br />
-            <Text color='black'><b style={{ "color": "black" }}>Location -</b>  {job && job.location}</Text><br />
-            <Text color='black'><b style={{ "color": "black" }}>Salary - </b> {job && job.salary}</Text><br />
-            <Text color='black'><b style={{ "color": "black" }}>RoleResponsibility - </b> {job && job.roleResponsibility}</Text><br />
-            <Text color='black'><b style={{ "color": "black" }}>PerksBenefits -</b> {job && job.perksBenefits}</Text><br />
-            <Text color='black'><b style={{ "color": "black" }}>Description - </b> {job && job.description}</Text><br />
+            <Text color='black'><b style={{ "color": "black" }}>Job Id -</b> {job && job.JobID}</Text>
+            <Text color='black'><b style={{ "color": "black" }}> JobType -</b>  {job && job.Jobtype}</Text>
+            <Text color='black'><b style={{ "color": "black" }}>Education -</b> {job && job.education}</Text>
+            <Text color='black'><b style={{ "color": "black" }}>Experience -</b> {job && job.experience}</Text>
+            <Text color='black'><b style={{ "color": "black" }}>Designetion -</b>  {job && job.designetion}</Text>
+            <Text color='black'><b style={{ "color": "black" }}>Location -</b>  {job && job.location}</Text>
+            <Text color='black'><b style={{ "color": "black" }}>Salary -</b> {job && job.salary}</Text>
+            <Text color='black'><b style={{ "color": "black" }}>Role&Responsibility -</b> {job && job.roleResponsibility}</Text>
+            <Text color='black'><b style={{ "color": "black" }}>Perks&Benefits -</b> {job && job.perksBenefits}</Text>
+            <Text color='black'><b style={{ "color": "black" }}>Description -</b> {job && job.description}</Text>
 
           </ModalBody>
           <ModalFooter bgColor={"white"}>
