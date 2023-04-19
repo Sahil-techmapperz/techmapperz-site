@@ -133,16 +133,26 @@
 }
 
 
-@media (max-width: 719px) {
+@media (max-width: 1100px) {
     .contact_bottom {
       flex-direction: column;
       justify-content: center;
       align-items: center;
       gap: 20px;
+      padding: 10px;
     }
+   
 
     .contact_bottom .contact_bottom_left{
         width: 100%;
+    }
+
+    .contact_bottom .contact_bottom_left>h1{
+        font-weight:bold;
+        font-size: 26px;
+        letter-spacing: 0.162793px;
+        color: #FFFFFF;
+        
     }
 
     .contact .contact_top h1{
@@ -150,5 +160,14 @@
     }
     .contact .contact_top p{
         font-size: 15px;
+    }
+
+    .contact_bottom .contact_bottom_left .address_card{
+        display: block;
+    }
+    .contact_bottom .contact_bottom_right{
+        color: white;
+        width: 100%;
+        
     }
   }

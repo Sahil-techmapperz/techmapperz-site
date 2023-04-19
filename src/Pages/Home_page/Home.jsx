@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import { FaPython, FaJava, FaVuejs, FaAngular, FaReact, FaPhp, FaCss3Alt, FaNodeJs, FaSwift, FaHtml5 } from "react-icons/fa";
 import { TbBrandJavascript } from "react-icons/tb";
 import { AiOutlineRight, AiOutlineLeft } from 'react-icons/ai';
+import { BsArrowLeftCircle,BsArrowRightCircle } from 'react-icons/bs';
 import { SiSolidity } from "react-icons/si";
 import { TbBrandReactNative } from "react-icons/tb";
 import { SiKotlin } from "react-icons/si";
@@ -41,7 +42,7 @@ const Home = () => {
             className={`${Styles.custom_arrow} ${Styles.custom_arrow_prev}`}
             aria-label={label}
         >
-            <AiOutlineLeft />
+            <BsArrowLeftCircle />
         </button>
     );
 
@@ -53,21 +54,24 @@ const Home = () => {
             className={`${Styles.custom_arrow} ${Styles.custom_arrow_next}`}
             aria-label={label}
         >
-            <AiOutlineRight />
+            <BsArrowRightCircle />
         </button>
     );
-    const CustomPrevArrow2 = (onClickHandler, hasPrev, label) => (
-        <button
-            type="button"
-            onClick={onClickHandler}
-            disabled={!hasPrev}
-            className={`${Styles.custom_arrow2} ${Styles.custom_arrow_prev2}`}
-            aria-label={label}
-        >
-            <AiOutlineLeft />
-        </button>
-    );
-
+    const CustomPrevArrow2 = ({ onClickHandler, hasPrev, label }) => {
+        return (
+            <button
+                type="button"
+                onClick={onClickHandler}
+                disabled={!hasPrev}
+                className={`${Styles.custom_arrow2} ${Styles.custom_arrow_prev2}`}
+                aria-label={label}
+            >
+                <BsArrowLeftCircle />
+            </button>
+        );
+    };
+    
+    
     const CustomNextArrow2 = (onClickHandler, hasNext, label) => (
         <button
             type="button"
@@ -76,9 +80,10 @@ const Home = () => {
             className={`${Styles.custom_arrow2} ${Styles.custom_arrow_next2}`}
             aria-label={label}
         >
-            <AiOutlineRight />
+            <BsArrowRightCircle />
         </button>
     );
+    
 
 
 
@@ -279,12 +284,13 @@ const Home = () => {
                             showIndicators={false}
                             useKeyboardArrows={true}
                             className={Styles.Carousel}
-                            // renderArrowPrev={(onClickHandler, hasPrev, label) =>
-                            //     CustomPrevArrow2(onClickHandler, hasPrev, label)
-                            // }
-                            // renderArrowNext={(onClickHandler, hasNext, label) =>
-                            //     CustomNextArrow2(onClickHandler, hasNext, label)
-                            // }
+                            renderArrowPrev={(onClickHandler, hasPrev, label) =>
+                                CustomPrevArrow2(onClickHandler, hasPrev, label)
+                            }
+                            renderArrowNext={(onClickHandler, hasNext, label) =>
+                                CustomNextArrow2(onClickHandler, hasNext, label)
+                            }
+                            
                         >
                             {Testimonial.map(data => {
                                 return (
