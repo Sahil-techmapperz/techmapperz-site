@@ -5,7 +5,6 @@ import Styles from "./Home.module.css"
 import { Link } from 'react-router-dom';
 import { FaPython, FaJava, FaVuejs, FaAngular, FaReact, FaPhp, FaCss3Alt, FaNodeJs, FaSwift, FaHtml5 } from "react-icons/fa";
 import { TbBrandJavascript } from "react-icons/tb";
-import { AiOutlineRight, AiOutlineLeft } from 'react-icons/ai';
 import { BsArrowLeftCircle,BsArrowRightCircle } from 'react-icons/bs';
 import { SiSolidity } from "react-icons/si";
 import { TbBrandReactNative } from "react-icons/tb";
@@ -277,7 +276,6 @@ const Home = () => {
 
                             showStatus={false}
                             infiniteLoop={true}
-                            autoPlay={true}
                             showArrows={true}
                             showThumbs={false}
                             stopOnHover={true}
