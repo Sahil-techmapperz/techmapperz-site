@@ -37,7 +37,7 @@
 .first_part .company_info p {
     width: 100%;
     font-weight: 400;
-    font-size: 22px;
+    font-size: 18px;
     line-height: 33px;
     text-align: justify;
     text-justify: inter-word;
@@ -67,12 +67,12 @@
 
 .second_paragraph p {
     font-weight: 400;
-    font-size: 26px;
-    line-height: 39px;
+    font-size: 20px;
     text-align: justify;
     text-justify: inter-word;
-    letter-spacing: 0.162793px;
     color: #FFFFFF;
+    margin-bottom: 5rem;
+    
 }
 
 
