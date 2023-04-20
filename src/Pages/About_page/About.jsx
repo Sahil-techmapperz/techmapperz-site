@@ -25,6 +25,7 @@ const About = () => {
 
     <div className={styles.container}>
       <div className={styles.about}>
+        
         <div className={styles.main}>
           <header>
             <h1>About US</h1>
@@ -34,7 +35,7 @@ const About = () => {
           <div className={styles.top_part}>
             <h1>Chasing the Vision a better tomorrow where technology simplifies complex functions</h1>
           </div>
-
+          <div className={styles.watermark}>About Company</div>
 
           <section className={styles.first_part}>
             <div className={styles.first_part_main}>
