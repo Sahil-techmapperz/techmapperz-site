@@ -76,7 +76,7 @@ const Service_main = () => {
                         <img className={Styles.icon} src={Ourservice10} alt='' />
                         <img src={T02} alt='' />   
                         </div>
-                            <h3 ><Link to={"/GIS_Service"}> Remote Sensing  Services</Link></h3>
+                            <h3 ><Link to={"/Remote_Sensing"}> Remote Sensing  Services</Link></h3>
                             <p>With the accumulated experience of more then 20 years, Our team is well equipped to help you solve all possible challenges in the customer management field</p>
                         </div>
 
@@ -86,7 +86,7 @@ const Service_main = () => {
                         <img className={Styles.icon} src={Ourservice9} alt='' />
                         <img src={T03} alt='' /> 
                         </div>
-                            <h3 > <Link to={"/GIS_Service"}> Photogammetry Services </Link></h3>
+                            <h3 > <Link to={"/Photogrammetry_Services"}> Photogammetry Services </Link></h3>
                             <p>With the accumulated experience of more then 20 years, Our team is well equipped to help you solve all possible challenges in the customer management field</p>
                       
                       </div>
@@ -96,7 +96,7 @@ const Service_main = () => {
                             <img className={Styles.icon} src={Ourservice8} alt='' />
                             <img src={T04} alt='' />
                             </div>
-                            <h3 > <Link to={"/GIS_Service"}> Web GIS Services </Link></h3>
+                            <h3 > <Link to={"/Web_GIS"}> Web GIS Services </Link></h3>
                             <p>With the accumulated experience of more then 20 years, Our team is well equipped to help you solve all possible challenges in the customer management field</p>
                       
                         </div>
@@ -106,7 +106,7 @@ const Service_main = () => {
                             <img className={Styles.icon} src={Ourservice7} alt='' />
                             <img src={T05} alt='' />
                             </div>
-                            <h3 > <Link to={"/GIS_Service"}> Drone Services</Link></h3>
+                            <h3 > <Link to={"/Drone_Service"}> Drone Services</Link></h3>
                             <p>With the accumulated experience of more then 20 years, Our team is well equipped to help you solve all possible challenges in the customer management field</p>
                       
                            </div>
@@ -141,7 +141,7 @@ const Service_main = () => {
                         <img src={Ourservice4} alt='' />
                         <img src={T02} alt='' />
                         </div> 
-                            <h3 to={"/GIS_Service"}>Mobile Application Development</h3>
+                        <h3 > <Link to={"/Mobile_development"}> Mobile Application Development </Link></h3>
                             <p>With global competition and greater customer expectations companies look forward to enhance customer relationship and experience,many business entities..</p>
                         </div>
 
@@ -151,7 +151,7 @@ const Service_main = () => {
                         <img src={Ourservice3} alt='' />
                         <img src={T03} alt='' />
                         </div> 
-                            <h3 to={"/GIS_Service"}>CRM/ERP</h3>
+                        <h3 > <Link to={"/CRM_pages"}> CRM/ERP </Link></h3>
                             <p>At custom CRM consulting we understand your current capabilities, map your organisation's desired future state, and then recommend CRM implentation</p>
                         </div>
 
@@ -161,7 +161,7 @@ const Service_main = () => {
                          <img src={Ourservice2} alt='' />
                          <img src={T04} alt='' />
                         </div> 
-                            <h3 to={"/GIS_Service"}>IT Consulting Services</h3>
+                        <h3 > <Link to={"/It_consulting"}> IT Consulting Services </Link></h3>
                             <p>At custom CRM consulting we understand your current capabilities,map your organisation's desired future state, and then recommend CRM implementation</p>
                         </div>
 
