@@ -14,14 +14,6 @@ import {
   useDisclosure,
   Button,
   Box,
-  Menu,
-  MenuButton,
-  MenuList,
-  MenuItem,
-  MenuItemOption,
-  MenuGroup,
-  MenuOptionGroup,
-  MenuDivider,
 } from '@chakra-ui/react'
 
 const Navbar = () => {
@@ -36,7 +28,13 @@ const Navbar = () => {
       <div className={styles.right_nav}>
         <ul>
           <li style={{ borderBottom: location.pathname === '/' && '3px solid red' }}><Link to={"/"}>Home</Link></li>
-          <li style={{ borderBottom: location.pathname === '/service' && '3px solid red' }}><Link to={"/service"}>Service <IoIosArrowDown /></Link>
+          <li style={{ borderBottom: location.pathname === '/service' && '3px solid red' 
+          || location.pathname === '/gis_service' && '3px solid red' || location.pathname === '/Remote_Sensing' && '3px solid red' ||
+           location.pathname === '/drone_service' && '3px solid red' 
+           || location.pathname === '/Photogrammetry' && '3px solid red'||location.pathname === '/web_GIS' && '3px solid red'||
+           location.pathname === '/mobile_development' && '3px solid red'||location.pathname === '/web_development' && '3px solid red'||location.pathname === '/crm_page' && '3px solid red'||
+           location.pathname === '/it_consulting' && '3px solid red'||location.pathname === '/crm_integretion' && '3px solid red'||location.pathname === '/custom_consulting' && '3px solid red'||location.pathname === '/crm_implement' && '3px solid red'||location.pathname === '/crm_consulting' && '3px solid red'
+            }}><Link to={"/service"}>Service <IoIosArrowDown /></Link>
             <ul>
               <li><Link>Geospacial Services</Link>
                 <ul>
@@ -72,7 +70,7 @@ const Navbar = () => {
         size={"full"}
         onClose={onClose}
         finalFocusRef={btnRef}
-        
+
       >
         <DrawerOverlay />
         <DrawerContent backgroundColor={"gray.400"}>
@@ -84,7 +82,7 @@ const Navbar = () => {
             <Box fontSize={"25px"} ><Link to={"/about"}>About us</Link></Box>
             <Box fontSize={"25px"} ><Link to={"/career"}>Career</Link></Box>
             <Box fontSize={"25px"} ><Link to={"/contact"}>Contact</Link></Box>
-            
+
           </DrawerBody>
 
           <DrawerFooter>

@@ -31,7 +31,7 @@ const CRM_Consulting = () => {
         <div className={Styles.CRM_Consulting}>
             <section className={Styles.first_part}>
                 <h1>CRM Consulting</h1>
-                <p><Link to={"/service"}>Services</Link> / <Link to={"crm_page"}>CRM-ERP</Link> / CRM Consulting</p>
+                <p><Link to={"/service"}>Services</Link> / <Link to={"/crm_page"}>CRM-ERP</Link> / CRM Consulting</p>
             </section>
 
 

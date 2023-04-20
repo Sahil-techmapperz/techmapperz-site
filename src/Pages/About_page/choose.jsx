@@ -11,7 +11,7 @@ import {
     grid,
 } from '@chakra-ui/react'
 
-
+import { BsCaretRightFill } from 'react-icons/bs';
 const Choose = () => {
 
     return (
@@ -51,7 +51,7 @@ const Choose = () => {
                                         <Box as="span" flex='1' textAlign='left'>
                                         Plan
                                         </Box>
-                                        <AccordionIcon />
+                                        <BsCaretRightFill />
                                     </AccordionButton>
                                 
                                 <AccordionPanel textAlign={"justify"}  color={"#A3A3A3"} border={"1px solid"} pb={4}>
@@ -65,7 +65,7 @@ const Choose = () => {
                                         <Box as="span" flex='1' textAlign='left'>
                                         Create
                                         </Box>
-                                        <AccordionIcon />
+                                        <BsCaretRightFill />
                                     </AccordionButton>
                                 
                                 <AccordionPanel textAlign={"justify"}  color={"#A3A3A3"} border={"1px solid"} pb={4}>
@@ -78,7 +78,7 @@ const Choose = () => {
                                         <Box as="span" flex='1' textAlign='left'>
                                         Leads
                                         </Box>
-                                        <AccordionIcon />
+                                        <BsCaretRightFill />
                                     </AccordionButton>
                                 
                                 <AccordionPanel textAlign={"justify"}  color={"#A3A3A3"} border={"1px solid"} pb={4}>
@@ -92,11 +92,11 @@ const Choose = () => {
                                         <Box as="span" flex='1' textAlign='left'>
                                         Achieve
                                         </Box>
-                                        <AccordionIcon />
+                                        <BsCaretRightFill />
                                     </AccordionButton>
                                 
                                 <AccordionPanel textAlign={"justify"}  color={"#A3A3A3"} border={"1px solid"} pb={4}>
-                               This is it! T     
+                                This is it! The execution of the project, no matter how much ever ecstatic it may make us feel but this is one step we take with utmost precaution, we make certain that everything goes and works as planned, and usually, this is a smooth one for us since we take so much care of everything that precedes this.    
                                 </AccordionPanel>
                             </AccordionItem>
 

@@ -5,7 +5,7 @@ import Styles from "./Home.module.css"
 import { Link } from 'react-router-dom';
 import { FaPython, FaJava, FaVuejs, FaAngular, FaReact, FaPhp, FaCss3Alt, FaNodeJs, FaSwift, FaHtml5 } from "react-icons/fa";
 import { TbBrandJavascript } from "react-icons/tb";
-import { BsArrowLeftCircle,BsArrowRightCircle } from 'react-icons/bs';
+import { BsArrowLeftCircle,BsArrowRightCircle,BsChevronDoubleDown } from 'react-icons/bs';
 import { SiSolidity } from "react-icons/si";
 import { TbBrandReactNative } from "react-icons/tb";
 import { SiKotlin } from "react-icons/si";
@@ -116,7 +116,14 @@ const Home = () => {
         window.scrollTo(options);
     }, []);
 
-
+const handaledown=()=>{
+    const options = {
+        top: 700,
+        left: 0,
+        behavior: 'smooth'
+    };
+    window.scrollTo(options);
+}
 
 
     return (
@@ -149,6 +156,10 @@ const Home = () => {
                                         <div></div>
                                         <h2>Know More</h2>
                                     </div></Link>
+                                </div>
+                                <div onClick={handaledown} className={Styles.SCROLL_DOWN}>
+                                    <h1>SCROLL DOWN</h1>
+                                    <BsChevronDoubleDown/>
                                 </div>
                             </div>
                         ))}
