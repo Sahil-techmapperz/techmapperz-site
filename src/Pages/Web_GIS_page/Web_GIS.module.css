@@ -138,6 +138,7 @@
     margin-bottom: 2rem;
     margin-top: 3rem;
     position: relative;
+  
 
 }
 
@@ -154,12 +155,20 @@
 
 
 }
-
+.lastPart{
+    width: 100vw;
+    margin-left: -5rem;
+    padding: 0 5rem;
+    background: url("../../Photos/banner_4.png");
+    background-size: cover;
+    background-position: center;
+}
 
 
 .card_two .details {
     margin-top: 0rem;
     height: 430px;
+   
 
 }
 
@@ -240,11 +249,37 @@ ul {
     list-style: disc;
 }
 
-.list_div li {
+/* .list_div li {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.162793px;
-    padding-bottom: 30px;
-    color: #FFFFFF;
+    /* padding-bottom: 30px; */
+    /* color: #FFFFFF; */
+/* } */
+
+
+.list_div_one>ul>li {
+    color: #396ba9;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.16px;
+    margin-left: 20px;
 }
+
+.list_div_one>ul>li>p{
+   color:white;
+}
+
+
+
+
+
+
+
+
+
+
+
+

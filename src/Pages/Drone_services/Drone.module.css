@@ -79,7 +79,7 @@
     top: 2rem;
     left: 1rem;
     opacity: 0.1;
-    color: gray;
+    color: rgb(118, 116, 116);
 }
 
 
@@ -106,19 +106,28 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 5rem;
+    /* border: 2px solid; */
     background: rgba(24, 24, 24, 1);
 }
+
+
+
 
 .para1 {
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 400px;
 }
+.para2 {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10pxpx;
+}
 
 .product img {
     width: 800px;
-    height: 536px;
+    height: 555px;
     object-fit: cover;
     /* margin-top: 50px; */
 }
@@ -128,8 +137,8 @@
 }
 
 .product .Img_three {
-    width: 800px;
-    height: 638px;
+    width: 700px;
+    height: 600px;
 }
 
 .product_info {
@@ -138,9 +147,61 @@
     gap: 10px;
     position: relative;
     width: 700px;
+    
+}
+
+/* .details1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    width: 700px;
+    background: url("../../Photos/banner_3.jpg");
+    background-size: cover;
+    background-position: center;
+} */
+.details1>p {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.16;
+    font-weight: 400;
+    text-align: justify;
+    text-justify: inter-word;
+    width: 600px;
+}
+
+.project>ul {
+    display: grid;
+    margin-left: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    width: 500px;
+    margin-top: 15px;
+    gap: 2rem;
+    list-style: disc;
+}
+
+.project>ul>li {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.16px;
+}
+.project>ul>li {
+    color: #396ba9;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.16px;
+}
+
+.project>ul>li>p{
+   color:white;
 }
 
 
+.details1 a {
+    width: 25%;
+}
 
 .product_info>p {
     font-size: 16px;
@@ -195,4 +256,14 @@
     width: 100%;
     top: -1rem;
     left: 10px;
+}
+
+
+.lastPart .product {
+    width: 100vw;
+    margin-left: -5rem;
+    padding: 0 5rem;
+    background: url("../../Photos/banner_3.jpg");
+    background-size: cover;
+    background-position: center;
 }

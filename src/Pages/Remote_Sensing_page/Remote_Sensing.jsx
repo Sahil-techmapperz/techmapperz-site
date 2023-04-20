@@ -32,6 +32,7 @@ const Remote_Sensing = () => {
                     <div className={`${Styles.card} ${Styles.card_one}`}>
                         <div className={`${Styles.Image} ${Styles.Image_1}`}>
                             <h1>Image Processing</h1>
+                           
                             <img src={RemoteSence1} alt='' />
                         </div>
 
@@ -48,7 +49,7 @@ const Remote_Sensing = () => {
                     </div>
                     <div className={`${Styles.card} ${Styles.card_tow}`}>
                         <div className={Styles.details}>
-                            <h1>Land Use / Land Cover Mapping</h1>
+                         <h1>Land Use / Land Cover Mapping</h1>
                         <p>Land use and land cover may sound the same but there is a slight difference between them, Land cover refers to the surface cover on the ground like vegetation, urban infrastructure, water, bare soil etc. wherein Land use refers to the purpose the land serves, for example, recreation, wildlife habitat, or agriculture. Land use and Land cover, mapping plays a significant role in economic development. It is required for a better understanding and use of land in urban and rural areas.</p>
                         <Link to={"/contact"}> 
                         <div className={Styles.btn}><div></div><h2>Know More</h2></div>
@@ -69,18 +70,18 @@ const Remote_Sensing = () => {
                 <h1>Techmapperz's Remote sensing services include</h1>
                 <div className={Styles.list_div}>
                     <div className={Styles.list_div_one}>
-                        <ul className={Styles.lists}>
-                        <li>Change Detection Mapping & Analysis</li>
-                        <li>Slope aspect analysis</li>
-                        <li>Coastal ecosystem management</li>
-                        <li>Feature extraction and Digital terrain and surface modelling etc.</li>
+                        <ul>
+                        <li><p>Change Detection Mapping & Analysis</p></li>
+                        <li><p>Slope aspect analysis</p></li>
+                        <li><p>Coastal ecosystem management</p></li>
+                        <li><p>Feature extraction and Digital terrain and surface modelling etc.</p></li>
                         </ul>
                     </div>
                     <div className={Styles.list_div_tow}>
-                        <ul className={Styles.lists}>
-                        <li style={{paddingBottom:"0"}}>Agriculture Crop acreage estimation and Crop yield estimation</li>
-                        <li>Forest Mapping</li>
-                        <li>Forest Fire Mapping</li>
+                        <ul>
+                        <li style={{paddingBottom:"0"}}><p>Agriculture Crop acreage estimation and Crop yield estimation</p></li>
+                        <li><p>Forest Mapping</p></li>
+                        <li><p>Forest Fire Mapping</p></li>
                         </ul>
                     </div>
                 </div>
