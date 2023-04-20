@@ -41,6 +41,7 @@
     line-height: 30px;
     letter-spacing: 0.16px;
     background: none;
+    color: white;
 }
 
 
@@ -341,7 +342,6 @@
     .design {
         display: grid;
         grid-template-columns: repeat(1, 250px);
-        /* grid-template-rows: repeat(2, 350px); */
         padding: 2rem 5rem;
     
     }

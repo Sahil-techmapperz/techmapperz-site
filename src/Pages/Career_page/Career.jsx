@@ -9,7 +9,7 @@ import career_idea_5 from '../../Photos/career_idea-5.png';
 import career_idea_6 from '../../Photos/career_idea-6.png';
 import Styles from "./Career.module.css";
 import { HiOutlineInformationCircle } from 'react-icons/hi';
-import { Text } from '@chakra-ui/react';
+import { Box, Text } from '@chakra-ui/react';
 import {
   Modal,
   ModalOverlay,
@@ -249,7 +249,7 @@ const Career = () => {
       <Modal isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />
         <ModalContent>
-          <ModalHeader>Job Info</ModalHeader>
+        <ModalHeader bg="#396ba9" color="white"><Box borderBottom={"4px solid red"}>Job Info</Box></ModalHeader>
           <ModalCloseButton />
           <ModalBody>
             <Text color='black'><b style={{ "color": "black" }}>Job Id -</b> {job && job.JobID}</Text>
