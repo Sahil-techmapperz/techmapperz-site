@@ -5,7 +5,8 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 5rem;
-    background-color:rgba(0, 0, 0,0.7);
+    z-index: 20;
+    background-color:rgba(0, 0, 0,0.95);
 }
 
 .left_nav{
@@ -63,8 +64,8 @@
     display:none;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     background:rgb(235, 243, 234);
-    top: 1.5rem;
-    left: -20px;
+    top: 2rem;
+    left: 0px;
     transition: all 1s;
 }
 

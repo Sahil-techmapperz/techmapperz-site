@@ -16,6 +16,7 @@ color: white;
     background-position: center;
     position: relative;
     padding: 2rem 5rem;
+    z-index: 1;
 }
 
 .techblog::before {
@@ -155,7 +156,6 @@ table tr{
         position: relative;
         padding:10px;
         padding-bottom: 10rem;
-        border: 1px solid ;
     }
     
     .techblog::before {

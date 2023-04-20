@@ -51,7 +51,7 @@ const Photogrammetry_Services = () => {
                 </div>
 
 
-                <div className={styles.contaner}>
+                <div className={styles.service}>
                     <div className={styles.product}>
                         <div className={styles.product_info}>
                             <h1 className={styles.heading}>Digital Terrain model &<br />3D Visualition</h1>
@@ -60,14 +60,15 @@ const Photogrammetry_Services = () => {
                                 calculations,and power line surveys.DMTs are typically created through photogrammetry it  also uses LiDAR, LiDAR measures reflected light that
                                 bounces off the ground and back to the sensor to obtain the elevtion of the Earth's surface.We use sophisticated post-processing tools and methods
                                 to detrct errors and anamalies in DMT.The final delivery is in a client-specific format.Common uses of models include:</p>
-
-                            <ul className={styles.project} >
-                                <li>Extracting terrain counter</li>
-                                <li>Creation of relief maps</li>
-                                <li>3D visualitions of the terrain</li>
-                                <li>Terrain analysis</li>
-                                <li>Geomarphology and physical geography of the terrain</li>
+                            <div className={styles.project}>
+                            <ul>
+                                <li><p>Extracting terrain counter</p></li>
+                                <li><p>Creation of relief maps</p></li>
+                                <li><p>3D visualitions of the terrain</p></li>
+                                <li><p>Terrain analysis</p></li>
+                                <li><p>Geomarphology and physical geography of the terrain</p></li>
                             </ul>
+                            </div>
                             <Link> <div className={styles.btn}>
                                 <div></div>
                                 <h2>Know More</h2>

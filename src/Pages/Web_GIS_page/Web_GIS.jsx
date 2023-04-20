@@ -58,6 +58,9 @@ const Web_GIS = () => {
                             </div>
                         </div>
 
+
+                        <div  className={Styles.lastPart}>
+
                         <div className={`${Styles.card} ${Styles.card_two}`}>
 
 
@@ -67,10 +70,10 @@ const Web_GIS = () => {
 
                                     <div className={Styles.list_div_one}>
                                         <ul>
-                                            <li>Web GIS</li>
-                                            <li>Mobile GIS</li>
-                                            <li>GIS Enable Dashboard development</li>
-                                            <li>Geo-Server</li>
+                                            <li><p>Web GIS</p></li>
+                                            <li><p>Mobile GIS</p></li>
+                                            <li><p>GIS Enable Dashboard development</p></li>
+                                            <li><p>Geo-Server</p></li>
 
                                         </ul>
                                     </div>
@@ -89,6 +92,7 @@ const Web_GIS = () => {
                             <div>
 
                             </div>
+                        </div>
                         </div>
 
                     </div>

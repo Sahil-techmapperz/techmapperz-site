@@ -68,7 +68,7 @@ text-align: center;
     word-wrap: break-word;
     background: transparent;
     padding-top: 25px;
-    padding-bottom: 30px;
+    /* padding-bottom: 30px; */
     margin-left: 40px;
     margin-right: 40px;
     text-align: center;
@@ -100,8 +100,8 @@ text-align: center;
 }
 
 .product img {
-    width: 800px;
-    height: 500px;
+    width: 700px;
+    height: 590px;
     object-fit: cover;
 }
 
@@ -143,8 +143,18 @@ text-align: center;
 
 
 
- .product_info ul{
+ .project ul{
     list-style: disc;
+}
+
+
+.service {
+    width: 100vw;
+    margin-left: -5rem;
+    padding: 0 5rem;
+    background: url("../../Photos/banner_4.png");
+    background-size: cover;
+    background-position: center;
 }
 
 .project {
@@ -154,6 +164,17 @@ text-align: center;
     line-height: 24px;
     letter-spacing: 0.16px;
 } 
+.project>ul>li {
+    color: #396ba9;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.16px;
+}
+
+.project>ul>li>p{
+   color:white;
+}
 
 
  .product_info a {
@@ -193,8 +214,12 @@ text-align: center;
 
 .card1 {
     /* text-align: center; */
-    margin-left: 60px;
-    margin-right: 60px;
+    /* margin-left: 60px;
+    margin-right: 60px; */
+    text-align: center;
+    justify-content: center;
+    align-items: center; 
+
 }
 
 

@@ -108,7 +108,7 @@
 
 
 .design .icon {
-    width: 100px;
+    width: 90px;
     height: 120px;
     object-fit: fill;
 }
@@ -340,7 +340,7 @@
     
     .design {
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(1, 250px);
         /* grid-template-rows: repeat(2, 350px); */
         padding: 2rem 5rem;
     
@@ -362,25 +362,25 @@
     }
     
     .design .card1 {
-        border-right: 1px solid;
-        border-bottom: 1px solid;
+        /* border-right: 1px solid;
+        border-bottom: 1px solid; */
         padding: 2rem;
     }
     
     .design .card2 {
-        border-right: 1px solid;
-        border-bottom: 1px solid;
+        /* border-right: 1px solid;
+        border-bottom: 1px solid; */
         padding: 2rem;
     }
     
     .design .card3 {
         margin-top: -0.3rem;
-        border-bottom: 1px solid;
+        /* border-bottom: 1px solid; */
         padding: 2rem;
     }
     
     .design .card4 {
-        border-right: 1px solid;
+        /* border-right: 1px solid; */
         padding: 2rem;
     }
     
@@ -465,20 +465,20 @@
     
     .harbour .card7 {
         margin-top: 1.5rem;
-        border-right: 1px solid;
-        border-bottom: 1px solid;
+        /* border-right: 1px solid;
+        border-bottom: 1px solid; */
         padding: 2rem;
     }
     
     .harbour .card8 {
-        border-right: 1px solid;
-        border-bottom: 1px solid;
+        /* border-right: 1px solid;
+        border-bottom: 1px solid; */
         z-index: 2;
         padding: 2rem;
     }
     
     .harbour .card9 {
-        border-bottom: 1px solid;
+        /* border-bottom: 1px solid; */
         padding: 2rem;
         z-index: 2;
     }

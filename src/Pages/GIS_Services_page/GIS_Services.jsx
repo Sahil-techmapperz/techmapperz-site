@@ -32,17 +32,17 @@ const GIS_Services = () => {
                     <p>Techmapperz offers GIS services with an end-to-end solution for spatial data storing, management and analysis to Government and Enterprise sectors through GIS services. Techmapperz uses new-edge technology, deep research and innovation that are implemented by high skilled and experienced GIS analysts to create a simple solutions for a complex problems. The various GIS Data services offered by Techmapperz are:</p>
                 </div>
                 <div className={Styles.contaner}>
-                    <h1 className={Styles.heading}>Geospatial Mapping</h1>
+                    <h1 className={Styles.heading}>Geospatial Mapping <span></span></h1>
                     <div className={Styles.product}>
                         <img src={Geospatial_Mapping} alt="Geospatial_Mapping.png" />
                         <div className={Styles.product_info}>
                             <p>Geospatial mapping is a type of spatial analysis technique that typically employs software capable of rendering maps processing spatial data, and applying analytical methods to terrestrial or geographic datasets, including the use of geographic information systems. Techmapperz offers different kinds of GIS mapping Services:</p>
                             <ul>
-                                <li>Topographical Mapping</li>
-                                <li>Utility Mapping</li>
-                                <li>Cadastral Mapping</li>
-                                <li>Navigation Mapping</li>
-                                <li>Parcel Mapping</li>
+                                <li><p>Topographical Mapping</p></li>
+                                <li><p>Utility Mapping</p></li>
+                                <li><p>Cadastral Mapping</p></li>
+                                <li><p>Navigation Mapping</p></li>
+                                <li><p>Parcel Mapping</p></li>
                             </ul>
                             <Link to={"/contact"}> <div className={Styles.btn}>
                                 <div></div>
