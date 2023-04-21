@@ -64,9 +64,9 @@ p{
     font-size: 16px;
     line-height: 26px;
     letter-spacing: 0.162793px;
-    text-align: justify;
+    text-align: center;
     text-justify: inter-word;
-    color: #FFFFFF;
+    color:#acaaaa;
 
 }
 
@@ -286,17 +286,5 @@ ul {
 }
 
 .list_div_one>ul>li>p{
-   color:white;
+ color:#acaaaa;
 }
-
-
-
-
-
-
-
-
-
-
-
-
