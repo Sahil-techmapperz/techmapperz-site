@@ -36,7 +36,7 @@
     line-height: 30px;
     letter-spacing: 0.16px;
     background: none;
-    color: white;
+    color: #FFFFFF;
 }
 
 
@@ -59,9 +59,9 @@
     font-size: 16px;
     line-height: 26px;
     letter-spacing: 0.162793px;
-    text-align: justify;
+    text-align: center;
     text-justify: inter-word;
-    color: #FFFFFF;
+    color: #acaaaa;
 
 }
 
@@ -119,6 +119,15 @@
     margin-bottom: 20px;
     color: #FFFFFF;
 }
+.Image .Image_1 .h1::after {
+    content: "";
+    position: absolute;
+    right: -4rem;
+    bottom: 1.6rem; 
+    height: 2px;
+    width: 15%; 
+    background-color:#396ba9;
+}
 
 
 .Image img {
@@ -162,6 +171,15 @@
     letter-spacing: 0.162793px;
     margin-bottom: 20px;
     color: #FFFFFF;
+}
+.details h1::after {
+    content: "";
+    position: absolute;
+    right: -0.2rem;
+    top: 4.4rem; 
+    height: 2px;
+    width: 15%; 
+    background-color:#396ba9;
 }
 
 
@@ -242,7 +260,7 @@
 }
 
 .list_div_one>ul>li>p{
-   color:white;
+   color:#acaaaa;
 }
 
 .list_div_tow>ul>li {
@@ -254,7 +272,7 @@
 }
 
 .list_div_tow>ul>li>p{
-   color:white;
+   color:#acaaaa;
 }
 
 
