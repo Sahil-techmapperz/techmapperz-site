@@ -5,7 +5,7 @@
     color: #FFFFFF;
 }
 
-.CRM_Consulting{
+.CRM_Consulting {
     background: rgba(24, 24, 24, 1);
 }
 
@@ -40,9 +40,22 @@
 
 
 .secand_part {
-    width: 90%;
+    width: 100%;
     margin: auto;
     background: rgba(24, 24, 24, 1);
+    position: relative;
+}
+
+.watermark {
+    top: 20%;
+    right: 1rem;
+    position: absolute;
+    font-weight: 700;
+    font-size: 513.671px;
+    line-height: 771px;
+    letter-spacing: 3.80099px;
+    color: #FFFFFF;
+    opacity: 0.02;
 }
 
 .info {
@@ -65,7 +78,7 @@
 
 
 .contaner {
-    padding-bottom: 30px;
+    margin: 2rem 5rem;
     background: rgba(24, 24, 24, 1);
 }
 
@@ -78,6 +91,7 @@
     padding-bottom: 20px;
     background: rgba(24, 24, 24, 1);
 }
+
 .heading1 {
     text-align: center;
     font-size: 36px;
@@ -104,10 +118,11 @@
     height: 540px;
     /* margin-top: -15px; */
 }
+
 .product .Img_three {
     width: 800px;
-   height: 368px;
-   margin-top: 50px;
+    height: 368px;
+    margin-top: 50px;
 }
 
 .product_info {
@@ -172,6 +187,7 @@
     top: -1rem;
     left: 10px;
 }
+
 .harbour {
     height: 400px;
     width: 100%;
@@ -188,50 +204,64 @@
     background-size: cover;
     background-position: center; */
 }
+
 .design {
     width: 100%;
     justify-content: center;
-    position:relative;
+    position: relative;
     gap: 100px;
     margin-top: 5rem;
     grid-template-columns: repeat(2, 300px);
     height: 1000px;
 
 }
+
+.design h3 {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 33px;
+    letter-spacing: 0.162793px;
+    color: #FFFFFF;
+    padding-left: 15px;
+}
+
 .card1 {
     border: 2px solid white;
     position: absolute;
     width: 400px;
-    height:350px ;
+    height: 350px;
     top: 5px;
-    left: 250px; 
+    left: 250px;
 
 }
+
 .card2 {
     border: 2px solid white;
     /* margin-top: 50px; */
     position: absolute;
     width: 400px;
-    height:350px ; 
+    height: 350px;
     top: 80px;
     left: 700px;
 }
+
 .card3 {
     border: 2px solid white;
     position: absolute;
     width: 400px;
-    height:350px ; 
+    height: 350px;
     top: 470px;
     left: 250px;
 }
+
 .card4 {
     border: 2px solid white;
     /* margin-top: 100px; */
     position: absolute;
     width: 400px;
-    height:350px ;
+    height: 350px;
     top: 550px;
-    left: 700px; 
+    left: 700px;
 }
 
 .contaner_card2 {
@@ -240,11 +270,13 @@
     height: 450px;
     display: flex;
 }
+
 .contaner_card2 img {
-   height: 900px;
-   z-index: 10;
-   margin-top: -10rem;
+    height: 900px;
+    z-index: 10;
+    margin-top: -10rem;
 }
+
 .contaner_card2 .heading {
     margin-top: -5rem;
     width: 500px;
@@ -254,54 +286,66 @@
     margin-top: 30px;
     margin-left: 10px;
 }
-.card1 h1{
+
+.card1 h1 {
     margin-top: 15px;
     margin-left: 10px;
 }
-.card1 p{
+
+.card1 p {
     margin-top: 25px;
-     margin-left:10px ;
-     margin-right:10px ;
+    margin-left: 10px;
+    margin-right: 10px;
 }
+
 .card2 img {
     margin-top: 40px;
     margin-left: 10px;
 }
-.card2 h1{
+
+.card2 h1 {
     margin-top: 15px;
     margin-left: 10px;
 }
-.card2 p{
+
+.card2 p {
     margin-top: 30px;
-     margin-left:10px ;
-     margin-right:10px ;
+    margin-left: 10px;
+    margin-right: 10px;
 }
+
 .card3 img {
     margin-top: 30px;
     margin-left: 10px;
 }
-.card3 h1{
+
+.card3 h1 {
     margin-top: 15px;
     margin-left: 10px;
 }
-.card3 p{
+
+.card3 p {
     margin-top: 25px;
-     margin-left:10px ;
-     margin-right:10px ;
+    margin-left: 10px;
+    margin-right: 10px;
 }
+
 .card4 img {
     margin-top: 30px;
     margin-left: 10px;
 }
-.card4 h1{
+
+.card4 h1 {
     margin-top: 15px;
     margin-left: 10px;
 }
-.card4 p{
+
+.card4 p {
     margin-top: 25px;
-     margin-left:10px ;
-     margin-right:10px ;
+    margin-left: 10px;
+    margin-right: 10px;
 }
+
 .testimg1 {
     display: flex;
     gap: 100px;

@@ -6,6 +6,10 @@
 }
 
 
+p{
+    color: white;
+}
+
 .Web_GIS {
     background: rgba(24, 24, 24, 1);
 }
@@ -104,11 +108,11 @@
 } */
 
 
-/* .Image_1 {
-    margin-right: 3rem;
+.Image_1 {
+    padding-right: 8rem;
 }
 
-.Image_2 {
+/* .Image_2 {
     margin-left: 3rem;
 } */
 
@@ -259,6 +263,19 @@ ul {
 /* } */
 
 
+.list_div_two>ul{
+    display: grid;
+    grid-template-columns: repeat(2,300px);
+}
+
+.list_div_two>ul>li {
+    color: #396ba9;
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 20px;
+    height: 30px;
+    width: fit-content;
+}
 .list_div_one>ul>li {
     color: #396ba9;
     font-size: 16px;

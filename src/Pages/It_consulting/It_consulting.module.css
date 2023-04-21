@@ -5,6 +5,10 @@
     /* color: #FFFFFF; */
 }
 
+p{
+    text-align: left;
+}
+
 .consulting {
     background: rgba(24, 24, 24, 1);
     position: relative;
@@ -82,14 +86,24 @@
 
 
 .heading {
-    
-    
     font-size: 26px;
     font-weight: 600;
     line-height: 54px;
     letter-spacing: 0.16px;
     padding-bottom: 20px;
     background:none;
+    position: relative;
+}
+
+.heading::after{
+    width: fit-content;
+    content: "";
+    position: absolute;
+    right: 2rem;
+    bottom: 2.5rem; 
+    height: 2px;
+    width: 10%; 
+    background-color:#396ba9; 
 }
 
 .design {

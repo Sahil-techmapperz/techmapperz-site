@@ -36,7 +36,7 @@ const CRM_Consulting = () => {
 
 
             <section className={Styles.secand_part}>
-                
+                <div className={Styles.watermark}>?</div>
 
                 <div className={Styles.contaner}>
                     <div className={Styles.product}>

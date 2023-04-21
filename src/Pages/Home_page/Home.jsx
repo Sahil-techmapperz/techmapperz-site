@@ -175,7 +175,7 @@ const handaledown=()=>{
                         <div className={Styles.features_top}>
                             <h1>These Services to Expand your Business</h1>
                             <div className={Styles.info}>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+                                <p>To assist companies in thriving in the digital age, we provide a variety of technological services. We can assist businesses in managing their resources, connecting with their audiences online, and optimising their operations thanks to our knowledge and expertise.</p>
                                 <div className={Styles.know_more}>
                                     <Link to={"/contact"}> <div className={Styles.know_more_btn}>
                                         <div></div>
@@ -254,9 +254,9 @@ const handaledown=()=>{
                                     delivers cutting edge solutions,helping not just Fortune 500
                                     companies and enterprise clients on their digital evolution journey.</p>
                                 <div className={Styles.know_more}>
-                                    <Link to={"/service"}> <div className={Styles.know_more_btn}>
+                                    <Link to={"/about"}> <div className={Styles.know_more_btn}>
                                         <div></div>
-                                        <h2>View All Services</h2>
+                                        <h2>Know more</h2>
                                     </div></Link>
                                 </div>
                             </div>

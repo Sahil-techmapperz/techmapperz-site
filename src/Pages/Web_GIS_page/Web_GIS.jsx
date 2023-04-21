@@ -36,16 +36,15 @@ const Web_GIS = () => {
 
                             <div className={Styles.details}>
                                 <p>Geographic Information System (GIS) has the potential to go beyond mapping. GIS offers a diverse set of analytical functions.</p>
-                                <div className={Styles.list_div}>
+                                <div className={Styles.list_div_two}>
                                     <ul>
-                                        <li>Assessing optimal driving path</li>
-                                        <li style={{ paddingBottom: "30px" }}>Discovering the nearest ATM, restaurant, shops and hotels etc.</li>
-                                        <li>Planning projects</li>
-                                    </ul>
-                                    <ul>
-                                        <li>Forest mapping</li>
-                                        <li>Flood management</li>
-                                        <li style={{ paddingTop: "20px" }}>Location: specific advertising</li>
+                                        <li><p>Assessing optimal driving path</p></li>
+                                        <li style={{ paddingBottom: "30px" }}><p>Discovering the nearest ATM,<br/> restaurant, shops and hotels etc.</p></li>
+                                        <li><p>Planning projects</p></li>
+                                   
+                                        <li><p>Forest mapping</p></li>
+                                        <li><p>Flood management</p></li>
+                                        <li><p>Location: specific advertising</p></li>
                                     </ul>
 
 

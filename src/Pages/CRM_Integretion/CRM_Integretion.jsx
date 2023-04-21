@@ -76,14 +76,14 @@ const CRM_Integretion = () => {
                             <img src={CRM_Integretion14} className={Styles.Img_three} alt="" />
                         </div>
                         <div className={Styles.product_info}>
-                        <h1 className={Styles.heading}>Here are the benefits you get <br /> with CRM integrations</h1>
+                        <h1 className={Styles.heading3}>Here are the benefits you get <br /> with CRM integrations</h1>
                             <ul>
-                                <li>Better data</li>
-                                <li>Reduced changes of error</li>
-                                <li>Efficient resource allocation</li>
-                                <li>Increased productivity</li>
-                                <li>Improved customer care</li>
-                                <li>Overall automation</li>
+                                <li><p>Better data</p></li>
+                                <li><p>Reduced changes of error</p></li>
+                                <li><p>Efficient resource allocation</p></li>
+                                <li><p>Increased productivity</p></li>
+                                <li><p>Improved customer care</p></li>
+                                <li><p>Overall automation</p></li>
                                 
 
                             </ul>

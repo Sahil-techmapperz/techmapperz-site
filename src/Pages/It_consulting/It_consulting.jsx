@@ -130,7 +130,7 @@ const It_consulting = () => {
 
                 <div className={Styles.harbour}>
                     <div className={Styles.Img_contaner}>
-                        <h1 className={Styles.heading}>Why Choose <br />Techmapperz <br /> for your IT Services?</h1>
+                        <h1 className={Styles.heading}>Why Choose Techmapperz <br /> for your IT Services?</h1>
                         <img className={Styles.para1} src={Good_team} alt='' loading="lazy"/>
                     </div>
                     <div className={Styles.main}>

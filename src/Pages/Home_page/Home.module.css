@@ -54,7 +54,7 @@
 
 .carousel_container .know_more {
     position: absolute;
-    bottom: 12rem;
+    bottom: 8rem;
     width: 250px;
     left: 46%;
 }
@@ -94,7 +94,7 @@
 
 .SCROLL_DOWN{
     position: absolute;
-    bottom: 5rem;
+    bottom: 3rem;
     left: 46%;
     display: flex;
     flex-direction: column;
@@ -455,7 +455,7 @@
 .About_us .about_right .about_us_drone {
     width: 100px;
     position: absolute;
-    top: -10rem;
+    top: -6rem;
     right: 0;
 }
 
