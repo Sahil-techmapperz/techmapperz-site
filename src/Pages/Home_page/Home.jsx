@@ -245,11 +245,7 @@ const handaledown=()=>{
                             <p className={Styles.title}>About Us</p>
                             <div className={Styles.about_right_contener}>
                                 <h1>Why Choose Techmapperz</h1>
-                                <p>We are a learn of free-thinking individuals who believe that
-                                    the solution to a complex problem need not be complex,
-                                    that complex issues should have very simple solutions,and
-                                    this is the change that we all beleive in.we aim for a digital
-                                    transformation towards innovation with simplicity.</p>
+                                <p>The smaller things make big difference in everything that we do, we at Techmapperz also believe in the attention to detail methodology, and our eye to the detail in every project that we manage is what makes us stand out from the rest, we have a 4 step approach on how we execute a project plan</p>
                                 <p>We strive to be a software Development Company that
                                     delivers cutting edge solutions,helping not just Fortune 500
                                     companies and enterprise clients on their digital evolution journey.</p>

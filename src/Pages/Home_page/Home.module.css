@@ -764,6 +764,7 @@
 
     .features_top .info>p {
         font-size: 16px;
+        margin-left: 2px;
     }
 
     .features_top {
