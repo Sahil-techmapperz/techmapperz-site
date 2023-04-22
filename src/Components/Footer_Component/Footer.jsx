@@ -32,7 +32,7 @@ const Footer = () => {
 
       <div className={styles.footer_part_two}>
         <p className={styles.title}>About</p>
-        <p>There are many variation of passages of lorem ipsum available, but the majority suffered.</p><br/><br/>
+        <p>Chasing the Vision for a better tomorrow where technology simplifies complex functions.</p><br/><br/>
         <p className={styles.title}>Follow on -</p>
         <div className={styles.social_media_icons}>
             <a href='#'><h3><BsLinkedin className={styles.icon}/></h3></a>

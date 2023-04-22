@@ -226,7 +226,7 @@ const Career = () => {
 
           <div className={Styles.secend_section_main_two} >
             <h2>Be a Volunteer</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, ex. Dolorem ipsum</p>
+            <p>Our IT company offers volunteers the chance to develop important skills and experience while having a significant impact on the community. Join our team to work on exciting initiatives, meet others who share your interests, and change the world for the better.</p>
             <div className={Styles.input_from} >
               <input   ref={inputRefs[0]} value={careerdata.name} placeholder='Your Name' type={"text"} name="name" onChange={handalechange} />
               <input  ref={inputRefs[1]} value={careerdata.mobile} placeholder='Your Mobile Number' name='mobile' type={"number"} onChange={handalechange} />

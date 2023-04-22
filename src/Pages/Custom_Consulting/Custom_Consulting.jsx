@@ -62,19 +62,19 @@ const Custom_Consulting = () => {
                     <div>
                             <img src={ Custom_Consulting6} className={Styles.Img_two} alt="" />
                         </div>
-                        <div className={Styles.product_info}>
+                        <div className={Styles.product_info2}>
                            
                             <ul>
-                                <li>We analyse your business goals, identity opportunities and possibilities for improvement, to develop solutions on your needs.</li>
-                                <li>We can channel synchronizing with other departments within organizations such as human resources, accounting, and IT to ensure that the client gets high-quality service. </li>
-                                <li>We can channel synchronizing with other departments within organizations such as human resources, accounting, and IT to ensure that the client gets high-quality service. </li>
-                                <li>We can create detailed reports on clients activities and progress toward goals, including references for development.</li>
-                                <li>Communicating with clients to determine their needs and discuss the results of their work with them.</li>
-                                <li>We can conduct studies on potential clients,identity their needs, and present solutions to help meet those needs.</li>
-                                <li>We can help you scheme and implement plans to increase customer satisfaction and loyalty through improved service offering, products, pricing, etc</li>
-                                <li>We help in designing database, configuring software programs, and training staff members on new systems.</li>
-                                <li>We can create effective marketing campaigns by developing targetd massages and identifying effective channels for delivery.</li>
-                                <li>We do market research on industry and market btrends that could affect your company's business model, including changes in technology or competition from other companies.</li>
+                                <li><p>We analyse your business goals, identity opportunities and possibilities for improvement, to develop solutions on your needs.</p></li>
+                                <li><p>We can channel synchronizing with other departments within organizations such as human resources, accounting, and IT to ensure that the client gets high-quality service.</p> </li>
+                                <li><p>We can channel synchronizing with other departments within organizations such as human resources, accounting, and IT to ensure that the client gets high-quality service.</p> </li>
+                                <li><p>We can create detailed reports on clients activities and progress toward goals, including references for development.</p></li>
+                                <li><p>Communicating with clients to determine their needs and discuss the results of their work with them.</p></li>
+                                <li><p>We can conduct studies on potential clients,identity their needs, and present solutions to help meet those needs.</p></li>
+                                <li><p>We can help you scheme and implement plans to increase customer satisfaction and loyalty through improved service offering, products, pricing, etc</p></li>
+                                <li><p>We help in designing database, configuring software programs, and training staff members on new systems.</p></li>
+                                <li><p>We can create effective marketing campaigns by developing targetd massages and identifying effective channels for delivery.</p></li>
+                                <li><p>We do market research on industry and market btrends that could affect your company's business model, including changes in technology or competition from other companies.</p></li>
                                 
                             </ul>
                             

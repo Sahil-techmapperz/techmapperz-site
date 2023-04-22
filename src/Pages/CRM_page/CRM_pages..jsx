@@ -51,7 +51,8 @@ const CRM_pages = () => {
 
 
             <section className={Styles.secand_part}>
-
+            <div className={Styles.watermark}>IT Service</div>
+            <div className={Styles.watermark2}>?</div>
                 <div className={Styles.harbour}>
                     <p className={Styles.heading}>Everything CRM, All-round assistance,We are one stop solution for your CRM needs</p>
                     <div className={Styles.design}>
@@ -109,7 +110,7 @@ const CRM_pages = () => {
 
 
                 <div className={Styles.Application}>
-                    <h3 className={Styles.heading}>Types of Mobile Application</h3>
+                    <h3 className={Styles.heading2}>Lorem Ipsum is therefore always free from repetition</h3>
                     <div className={Styles.design}>
 
 
@@ -149,6 +150,11 @@ const CRM_pages = () => {
                         </div>
 
                     </div>
+                </div>
+                <div className={Styles.video_contaner}>
+                    <div className={Styles.crm_video}></div>
+                    <p>At custom CRM consulting we understand your current capabilities, map your organisation's desired future state, and then recommend CRM implementation Know More</p>
+                    <Link to={"#"}><b>Know more</b></Link>
                 </div>
             </section>
         </div>

@@ -51,20 +51,20 @@ const Mobile_development = () => {
                     
                     <div className={styles.product}>
                         <div className={styles.product_info}>
-                        <h1 className={styles.heading1}>Our Mobile App<br /> Development Services</h1>
+                        <h1 className={styles.heading1}>Our Mobile App Development Services</h1>
                             <p>We provide IOS and A+ndroid mobile application development services to loverage mobile technology for your business; we provide IOS and Android mobile application development services </p>
                             <h2>Android App Development</h2>
                             <ul>
-                                <li>Anrroid Mobile App Development</li>
-                                <li>Android TV App Development</li>
-                                <li>Android Tablet App Development</li>
-                                <li>Android Wear App Development</li>
+                                <li><p>Anrroid Mobile App Development</p></li>
+                                <li><p>Android TV App Development</p></li>
+                                <li><p>Android Tablet App Development</p></li>
+                                <li><p>Android Wear App Development</p></li>
                             </ul>
                             <p>Market Development-Android has more then 80% of the market share in the handheld device market share in the handheld device market,making it arguably the most popular market</p>
                         </div>
-                        {/* <div className={styles.divimg1}> */}
+                        <div className={styles.divimg1}>
                         <img src={MobileDev1} alt="MobileDev1.png" />
-                        {/* </div> */}
+                        </div>
                        
                     </div>
                 </div>
@@ -76,16 +76,16 @@ const Mobile_development = () => {
                         <img src={MobileDev2} alt="MobileDev2.png" />
                         </div>
                    
-                        <div className={styles.product_info}>
+                        <div className={`${styles.product_info} ${styles.product_info1}`}>
                         
-                        <h1  className={styles.heading}>iOS App Development</h1>
+                        <h1  className={styles.heading2}>iOS App Development</h1>
                           
                             <ul>
-                                <li>iphone App Development</li>
-                                <li>iPad App Development</li>
-                                <li>Apple Watch App Development</li>
-                                <li>Apple TV App Development</li>
-                                <li>App Clips Development</li>
+                                <li><p>iphone App Development</p></li>
+                                <li><p>iPad App Development</p></li>
+                                <li><p>Apple Watch App Development</p></li>
+                                <li><p>Apple TV App Development</p></li>
+                                <li><p>App Clips Development</p></li>
                             </ul>
                             <p>Source-Apple's stringent data protection standards makes sensitive corporate data lodged in iPhone applications  very safe and secure</p>
                         </div>
@@ -96,7 +96,7 @@ const Mobile_development = () => {
 
 
                 <div className={styles.contaner}>
-                    <h1 className={`${styles.heading} ${styles.class2}`}>Types of Mobile Application</h1>
+                    <h1 className={`${styles.heading3} ${styles.class2}`}>Types of Mobile Application</h1>
                     <div className={styles.main}>
                         <div className={styles.card10}>
                             <img src={MobileDev3} alt='' />
@@ -127,7 +127,7 @@ const Mobile_development = () => {
                 
                 <div className={styles.harbour}>
                     <div>
-                    <h1 className={`${styles.heading1} ${styles.class2}`}>How Mobile Applications  Grow Your  Business?</h1>
+                    <h1 className={`${styles.heading4} ${styles.class2}`}>How Mobile Applications  Grow Your  Business?</h1>
                     <img className={styles.animation} src={MobileDev16} alt='' />
                     </div>
                     <div className={styles.design}>

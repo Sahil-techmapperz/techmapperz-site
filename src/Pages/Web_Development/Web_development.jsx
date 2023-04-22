@@ -56,10 +56,11 @@ const Web_Development = () => {
 
             <section className={Styles.secand_part}>
                 <div className={Styles.contaner}>
-                    <h1 className={Styles.heading}>What is Website Design <br />& Development</h1>
+                <div className={Styles.watermark4}>IT Service</div>
+                    <h1 className={Styles.heading1}>What is Website Design <br />& Development</h1>
                     <div className={Styles.product}>
                         <img src={WebDev3} alt="" />
-                        <div className={Styles.product_info}>
+                        <div className={`${Styles.product_info} ${Styles.product_info1}`}>
                             <p>One of the first websites was created in 1991, and since then, the website and its design have evolved manifold.Today it is complex and involves an entire ecosystem of roles and skill sets. Website development is an umbrella term for two major parts-Design & Development, Design represents the look and feel wherwas Development determines how it functions</p>
                             <Link to={"/contact"}> <div className={Styles.btn}>
                                 <div></div>
@@ -74,7 +75,7 @@ const Web_Development = () => {
                 <div className={`${Styles.contaner} ${Styles.contaner_card2} `}>
                     <div className={Styles.product}>
                         <div className={Styles.product_info}>
-                            <h1 className={Styles.heading}>Why Web Design and & <br />Development is Important?</h1>
+                            <h1 className={Styles.heading2}>Why Web Design and & <br />Development is Important?</h1>
                             <p>Today the world is connected online,people get to the internet for any kind of need they may have,in this are Web design and web development are crucial for any business that wants to create an online presence.it is the first impression of your company,make sure it is a good one, and a functioning one as well.A A good web design and functionality is also a key element in good sales and business growth. </p>
 
                             <Link to={"/contact"}> <div className={Styles.btn}>
@@ -92,14 +93,15 @@ const Web_Development = () => {
 
 
 
-                <div className={Styles.contaner}>
-                    <h1 className={Styles.heading}>The Right Web Design <br />and Development Team</h1>
+                <div className={`${Styles.contaner} ${Styles.contaner_card3} `}>
+                <div className={Styles.watermark3}>Teamwork</div>
+                    <h1 className={Styles.heading3}>The Right Web Design <br />and Development Team</h1>
                     <div className={Styles.product}>
                         <div>
                             <img src={WebDev2} className={Styles.Img_three} alt="Webdev10.png" />
                         </div>
                         <div className={Styles.product_info}>
-                            <p>With so much at state,it is important that your web designing and development company is reliable and has a team that is experienced and can be trusted. We at Techmapperz, have some of the best developers in the field with a combined experience of more than 100 years; we have worked in various fields in a wide range of segments from small business owners to restourents,corporates,government sectors and professionals. Our team compatibility and pooled experience is our biggest asset and the major reason that we use them in creating masterpiece websites. </p>
+                            <p>With so much at state,it is important that your web designing and development company is reliable and has a team that is experienced and can be trusted. We at Techmapperz, have some of the best developers in the field with a combined experience of more than 100 years; we have worked in various fields in a wide range of segments from small business owners to restourents, corporates, government sectors and professionals. Our team compatibility and pooled experience is our biggest asset and the major reason that we use them in creating masterpiece websites. </p>
                             <Link to={"/contact"}> <div className={Styles.btn}>
                                 <div></div>
                                 <h2>Know More</h2>
@@ -111,7 +113,7 @@ const Web_Development = () => {
 
 
                 <div className={Styles.harbour}>
-                    <h3 className={Styles.heading}>Elements of Web Design</h3>
+                    <h3 className={Styles.heading4}>Elements of Web Design</h3>
                     <div className={Styles.design}>
 
 
@@ -163,7 +165,7 @@ const Web_Development = () => {
 
 
                 <div className={Styles.contaner}>
-                    <h1 className={`${Styles.heading} ${Styles.class2}`}>Things to Consider</h1>
+                    <h1 className={`${Styles.heading5} ${Styles.class2}`}>Things to Consider</h1>
                     <div className={Styles.main}>
                         <div className={Styles.card}>
                             <img src={Webdev4} />
@@ -188,19 +190,20 @@ const Web_Development = () => {
 
 
 
-                <div className={Styles.contaner}>
-                    <h1 className={Styles.heading}>Benefits of Getting Web <br/>Development Professionally</h1>
+                <div className={`${Styles.contaner} ${Styles.contaner_card4} `}>
+                <div className={Styles.watermark2}>Service</div>
+                    <h1 className={Styles.heading6}>Benefits of Getting Web <br/>Development Professionally</h1>
                     <div className={Styles.product}>
                         <img src={WebDev1} alt="Webdev11.png" />
                         <div className={Styles.product_info}>
                             <p>We Techmapperz,get the best-customized web development for your company with the maximum customization to its needs.We develop a strategy to make your goals a reality, business ownears, not always understand how website functions and can be easily cheated.A professional web design and development company with years of experties and experience can help you build a website that will attract potential customers and grow your web presence.Some of the section that our website makes you stand apart are: </p>
                             <ul>
-                                <li>Drive Social Media Growth</li>
-                                <li>Leveraging SEO</li>
-                                <li>Drivr Wider Reach</li>
-                                <li>Tapping on the Brand Power</li>
-                                <li>Boost Sales</li>
-                                <li>Stay ahead of Competitors</li>
+                                <li><p>Drive Social Media Growth</p></li>
+                                <li><p>Leveraging SEO</p></li>
+                                <li><p>Drivr Wider Reach</p></li>
+                                <li><p>Tapping on the Brand Power</p></li>
+                                <li><p>Boost Sales</p></li>
+                                <li><p>Stay ahead of Competitors</p></li>
                             </ul>
                             <Link to={"/contact"}> <div className={Styles.btn}>
                                 <div></div>
@@ -210,7 +213,8 @@ const Web_Development = () => {
                     </div>
                 </div>
 
-                <div className={Styles.harbour}>
+                <div className={`${Styles.harbour} ${Styles.harbour2}`}>
+                <div className={Styles.watermark}>?</div>
                     <h3 className={Styles.heading}>Why Choose Techmapperz for your Development</h3>
                     <div className={Styles.project}>
                         <div className={Styles.card5}>

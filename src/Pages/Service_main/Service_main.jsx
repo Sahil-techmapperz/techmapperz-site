@@ -54,7 +54,7 @@ const Service_main = () => {
 
             <section className={Styles.secand_part}>
 
-                <p className={Styles.title}>We provide IT consulting services to business in a wide range of industries.We use our expertise to identify your opportunities and deliver solutions that will help you outperform your competitors.Whether it's strategy,innovaton,or implementation, we're able to provide exceptional services thanks to the skills of our impeccable team.</p>
+                <p className={Styles.title}>To assist companies in thriving in the digital age, we provide a variety of technological services. Drone, GIS, and remote sensing services, mobile app development, website design, CRM solutions, and IT consulting are just a few of the things we offer. We can assist businesses in managing their resources, connecting with their audiences online, and optimising their operations thanks to our knowledge and expertise.</p>
 
                 <div className={Styles.newmain}>
                     <h1 className={Styles.heading}>Our GIS Services</h1>
@@ -67,7 +67,7 @@ const Service_main = () => {
                              <img src={T01} alt='' /> 
                              </div>
                             <h3  > <Link to={"/GIS_Service"}> GIS Services </Link></h3>
-                            <p>With the accumulated experience of more then 20 years, Our team is well equipped to help you solve all possible challenges in the customer management field</p>
+                            <p>Techmapperz offers GIS services with an end-to-end solution for spatial data storing, management and analysis to Government and Enterprise sectors through GIS services.</p>
                         </div>
 
 
@@ -77,7 +77,7 @@ const Service_main = () => {
                         <img src={T02} alt='' />   
                         </div>
                             <h3 ><Link to={"/Remote_Sensing"}> Remote Sensing  Services</Link></h3>
-                            <p>With the accumulated experience of more then 20 years, Our team is well equipped to help you solve all possible challenges in the customer management field</p>
+                            <p>Techmapperz has extensive expertise in Satellite Image Processing & Interpretation. We use some of the best software and hardware available commercially to process high-quality images .</p>
                         </div>
 
 
@@ -87,7 +87,7 @@ const Service_main = () => {
                         <img src={T03} alt='' /> 
                         </div>
                             <h3 > <Link to={"/Photogrammetry_Services"}> Photogammetry Services </Link></h3>
-                            <p>With the accumulated experience of more then 20 years, Our team is well equipped to help you solve all possible challenges in the customer management field</p>
+                            <p>Photogrammetry is the process to obtain  information and measurements of physical objects from photographs and use them for the development of maps, drawings, or 3D models.</p>
                       
                       </div>
 
@@ -97,7 +97,7 @@ const Service_main = () => {
                             <img src={T04} alt='' />
                             </div>
                             <h3 > <Link to={"/Web_GIS"}> Web GIS Services </Link></h3>
-                            <p>With the accumulated experience of more then 20 years, Our team is well equipped to help you solve all possible challenges in the customer management field</p>
+                            <p>WebGIS is an advanced form of Geospatial Information System this is available on the web platform. WebGIS offers a diverse set of analytical functions.</p>
                       
                         </div>
 
@@ -107,7 +107,7 @@ const Service_main = () => {
                             <img src={T05} alt='' />
                             </div>
                             <h3 > <Link to={"/Drone_Service"}> Drone Services</Link></h3>
-                            <p>With the accumulated experience of more then 20 years, Our team is well equipped to help you solve all possible challenges in the customer management field</p>
+                            <p>Techmapperz has expertise in cutting-edge drone technology, and high-quality data processing techniques to provide spatial services for a range of requirements.</p>
                       
                            </div>
 
