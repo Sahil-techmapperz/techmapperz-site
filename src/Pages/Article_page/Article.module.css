@@ -7,7 +7,7 @@
 
 .article {
   background: #181818;
-  width: 100%
+  width: 100%;
 }
 
 .top_part {
@@ -37,6 +37,14 @@
   color: #FFFFFF;
 }
 
+
+
+
+
+.blog_contater{
+width: 100%;
+height:100vh;
+}
 
 
 .contaner {

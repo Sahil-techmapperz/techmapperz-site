@@ -54,56 +54,61 @@ function Article() {
  
 
   return (
-    // <div className={Styles.article}>
+    <div className={Styles.article}>
 
-    //   <div className={Styles.top_part}>
-    //     <h1>Blog Articals</h1>
-    //     <p> <Link to={"/"}>Home</Link> / News & Articals</p>
-    //   </div>
-
-    //   <div className={Styles.contaner}>
-    //     {posts && posts.map(post => (
-    //       <div className={Styles.card} key={post.id}>
-    //         <div className={Styles.Img}>{post.imgUrl&&<img src={post.imgUrl && post.imgUrl} alt="" />}</div>
-    //         <div className={Styles.Article_details}>
-    //          <Link  to={`/singal_article/${post.id}`}> <h2 dangerouslySetInnerHTML={{__html:post.title.slice(0, 30) + "..." }} title={post.title}></h2></Link>
-    //         <h1>- By {post.author.name}</h1>
-              
-    //           {/* <div dangerouslySetInnerHTML={{ __html: post.description.split(/(<[^>]+>)/)[2] }} /> */}
-    //           {/* <div>{moment(post.date.split("T")[0]).fromNow()}</div> */}
-    //          <div> <FormattedDateComponent dateString={post.date}/></div>
-    //           <Link className={Styles.readmore_btn} to={`/singal_article/${post.id}`}><button>Read more...</button></Link>
-    //         </div>
-    //       </div>
-    //     ))}
-    //   </div>
+      <div className={Styles.top_part}>
+        <h1>News & Articals</h1>
+        <p> <Link to={"/"}>Home</Link> / News & Articals</p>
+      </div>
 
 
-    //   <div className={Styles.pagination}>
-    //     <div> <button disabled={page === 1} onClick={handlePreviousPage} >
-    //       <AiOutlineLeft/>
-    //     </button></div>
-    //     <div className={Styles.pages}>
-    //        {page} of {totalPages}
-    //     </div>
-    //     <div>  <button onClick={handleNextPage} disabled={page === totalPages}>
-    //       <AiOutlineRight/>
-    //     </button></div>
-    //   </div>
-    // </div>
-
-    
-    <div style={{"width":"100%","height":"100vh"}}>
+      <div className={Styles.blog_contater} >
       <iframe
-        src="https://www.test.geotechcybernauts.com/"
+        src="https://test2.geotechcybernauts.com/"
         title="Embedded WordPress Site"
         width="100%"
         height="100%"
         frameborder="0"
-        style={{ "border": "0", "overflow": "hidden","marginTop":"6.5rem" }}
+        style={{
+          border: '0',
+          overflow: 'hidden',
+        }}
 
       ></iframe>
     </div>
+
+      {/* <div className={Styles.contaner}>
+        {posts && posts.map(post => (
+          <div className={Styles.card} key={post.id}>
+            <div className={Styles.Img}>{post.imgUrl&&<img src={post.imgUrl && post.imgUrl} alt="" />}</div>
+            <div className={Styles.Article_details}>
+             <Link  to={`/singal_article/${post.id}`}> <h2 dangerouslySetInnerHTML={{__html:post.title.slice(0, 30) + "..." }} title={post.title}></h2></Link>
+            <h1>- By {post.author.name}</h1>
+              
+
+             <div> <FormattedDateComponent dateString={post.date}/></div>
+              <Link className={Styles.readmore_btn} to={`/singal_article/${post.id}`}><button>Read more...</button></Link>
+            </div>
+          </div>
+        ))}
+      </div> */}
+
+
+      {/* <div className={Styles.pagination}>
+        <div> <button disabled={page === 1} onClick={handlePreviousPage} >
+          <AiOutlineLeft/>
+        </button></div>
+        <div className={Styles.pages}>
+           {page} of {totalPages}
+        </div>
+        <div>  <button onClick={handleNextPage} disabled={page === totalPages}>
+          <AiOutlineRight/>
+        </button></div>
+      </div> */}
+    </div>
+
+    
+   
   );
 }
 
