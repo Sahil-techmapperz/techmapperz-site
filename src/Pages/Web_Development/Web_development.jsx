@@ -112,7 +112,7 @@ const Web_Development = () => {
 
 
 
-                <div className={Styles.harbour}>
+                <div className={`${Styles.harbour} ${Styles.harbour1}`}>
                     <h3 className={Styles.heading4}>Elements of Web Design</h3>
                     <div className={Styles.design}>
 

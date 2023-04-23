@@ -210,7 +210,23 @@ p{
 }
 
 .contaner_card4{
+    width: 100vw !important;
+    margin-left: -10rem;
+    padding-left: 10rem !important;
+    object-fit: cover;
+    background: url("../../Photos/background_4.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.contaner_card4 .product{
+    background: none;
+}
+
+.contaner_card4 .product_info{
     margin-left: -2rem;
+    padding-right: 5rem;
+    background: none;
 }
 
 .product {
@@ -369,9 +385,12 @@ height: 560px;
 }
 
 .contaner_card2 {
-    height: 450px;
     display: flex;
-    /* background-image: url("../../Photos/Rectangle 41.png"); */
+    width: 100vw;
+    margin-left: -5rem !important;
+    padding-left: 5rem;
+    object-fit: cover;
+    background: url("../../Photos/banner_3.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -383,7 +402,14 @@ height: 560px;
    z-index: 10;
    width: 800px;
    height: 450px;
+   padding-top: 2rem;
 }
+
+.contaner_card2 .product{
+    background: none;
+}
+
+
 .contaner_card2 .heading {
     margin-top: -5rem;
     width: 500px;
@@ -431,6 +457,18 @@ height: 560px;
     opacity: 0.02;
 }
 
+
+
+
+.harbour1{
+    padding-left: 5.5rem;
+    width: 100vw !important;
+    margin-left: -5rem;
+    object-fit: cover;
+    background: url("../../Photos/banner_3.jpg");
+    background-size: cover;
+    background-position: center;
+}
 
 .harbour2{
     position: relative;

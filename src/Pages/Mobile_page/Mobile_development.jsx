@@ -70,7 +70,7 @@ const Mobile_development = () => {
                 </div>
 
 
-                <div className={styles.contaner}>
+                <div className={`${styles.contaner} ${styles.contaner_card3} `}>
                     <div className={styles.product}>
                         <div className={styles.devimg2}>
                         <img src={MobileDev2} alt="MobileDev2.png" />
@@ -95,7 +95,7 @@ const Mobile_development = () => {
 
 
 
-                <div className={styles.contaner}>
+                <div className={`${styles.contaner} ${styles.contaner_card4} `}>
                     <h1 className={`${styles.heading3} ${styles.class2}`}>Types of Mobile Application</h1>
                     <div className={styles.main}>
                         <div className={styles.card10}>
