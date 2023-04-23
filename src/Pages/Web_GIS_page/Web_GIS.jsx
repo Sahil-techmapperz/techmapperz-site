@@ -35,7 +35,7 @@ const Web_GIS = () => {
                             </div>
 
                             <div className={Styles.details}>
-                                <p>Geographic Information System (GIS) has the potential to go beyond mapping. GIS offers a diverse set of analytical functions.</p>
+                                <p>Geographic Information System (GIS) has the potential to go beyond mapping. GIS offers a diverse set of analytical functions. </p>
                                 <div className={Styles.list_div_two}>
                                     <ul>
                                         <li><p>Assessing optimal driving path</p></li>

@@ -31,8 +31,8 @@ const Photogrammetry_Services = () => {
 
             <section className={styles.secand_part}>
                 <div className={styles.info}>
-                    <p>Photogrammetry is the process to obtain dependable information and measurements of physical objects from photographs and use them for the development of  maps, drawings, or 3D models of terrains.</p>
-                    <p>Aerial images require pre- and post-processing using Photogrammetry before they can be used to extract valuable geo-data. Techmapperz offers the following Photogrammetry services</p>
+                    <p>Photogrammetry is the process to obtain dependable information and measurements of physical objects from photographs and use them for the development of maps, drawings, or 3D models of terrains. </p>
+                    <p>Aerial images require pre- and post-processing using Photogrammetry before they can be used to extract valuable geo-data. Techmapperz offers the following Photogrammetry services:</p>
 
                 </div>
                 <div className={styles.contaner}>
@@ -55,19 +55,17 @@ const Photogrammetry_Services = () => {
                     <div className={styles.product}>
                         <div className={styles.product_info}>
                             <h1 className={styles.heading}>Digital Terrain model &<br />3D Visualition</h1>
-                            <p>A DTM(Digital Terrain Models)is highly enhanced and filtered topographic model of the bare earth where vegetation,buildings and other
-                                man-made components are removed digitally-leaving just the underlying terrain for specilized applications such as 3D modelling,volumetric
-                                calculations,and power line surveys.DMTs are typically created through photogrammetry it  also uses LiDAR, LiDAR measures reflected light that
-                                bounces off the ground and back to the sensor to obtain the elevtion of the Earth's surface.We use sophisticated post-processing tools and methods
-                                to detrct errors and anamalies in DMT.The final delivery is in a client-specific format.Common uses of models include:</p>
+                            <p>A DTM (Digital Terrain Models) is a highly enhanced and filtered topographic model of the bare earth where vegetation, buildings and other man-made components are removed digitally – leaving just the underlying terrain for specialized applications such as 3D modelling, volumetric calculations, and power line surveys. DTMs are typically created through photogrammetry it also uses LiDAR, LiDAR measures reflected light that bounces off the ground and back to the sensor to obtain the elevation of the Earth’s surface.
+                                We use sophisticated post-processing tools and methods to detect errors and anomalies in DTM. The final delivery is in a client-specific format.
+                                Common uses of models include:</p>
                             <div className={styles.project}>
-                            <ul>
-                                <li><p>Extracting terrain counter</p></li>
-                                <li><p>Creation of relief maps</p></li>
-                                <li><p>3D visualitions of the terrain</p></li>
-                                <li><p>Terrain analysis</p></li>
-                                <li><p>Geomarphology and physical geography of the terrain</p></li>
-                            </ul>
+                                <ul>
+                                    <li><p>Extracting terrain counter</p></li>
+                                    <li><p>Creation of relief maps</p></li>
+                                    <li><p>3D visualitions of the terrain</p></li>
+                                    <li><p>Terrain analysis</p></li>
+                                    <li><p>Geomarphology and physical geography of the terrain</p></li>
+                                </ul>
                             </div>
                             <Link> <div className={styles.btn}>
                                 <div></div>
