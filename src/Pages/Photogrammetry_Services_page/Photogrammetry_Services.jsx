@@ -31,8 +31,8 @@ const Photogrammetry_Services = () => {
 
             <section className={styles.secand_part}>
                 <div className={styles.info}>
-                    <p>Photogrammetry is the process to obtain dependable information and measurements of physical objects from photographs and use them for the development of maps, drawings, or 3D models of terrains. </p>
-                    <p>Aerial images require pre- and post-processing using Photogrammetry before they can be used to extract valuable geo-data. Techmapperz offers the following Photogrammetry services:</p>
+                    <p>Photogrammetry is the process to obtain dependable information and measurements of physical objects from photographs and use them for the development of maps, drawings, or 3D models of terrains.
+                    Aerial images require pre- and post-processing using Photogrammetry before they can be used to extract valuable geo-data. Techmapperz offers the following Photogrammetry services:</p>
 
                 </div>
                 <div className={styles.contaner}>
@@ -54,7 +54,7 @@ const Photogrammetry_Services = () => {
                 <div className={styles.service}>
                     <div className={styles.product}>
                         <div className={styles.product_info}>
-                            <h1 className={styles.heading}>Digital Terrain model &<br />3D Visualition</h1>
+                            <h1 className={styles.heading2}>Digital Terrain model &<br />3D Visualition</h1>
                             <p>A DTM (Digital Terrain Models) is a highly enhanced and filtered topographic model of the bare earth where vegetation, buildings and other man-made components are removed digitally – leaving just the underlying terrain for specialized applications such as 3D modelling, volumetric calculations, and power line surveys. DTMs are typically created through photogrammetry it also uses LiDAR, LiDAR measures reflected light that bounces off the ground and back to the sensor to obtain the elevation of the Earth’s surface.
                                 We use sophisticated post-processing tools and methods to detect errors and anomalies in DTM. The final delivery is in a client-specific format.
                                 Common uses of models include:</p>
@@ -82,7 +82,7 @@ const Photogrammetry_Services = () => {
                 <div className={styles.contaner}>
                     <div className={styles.card}>
                         <div className={styles.card_info}>
-                            <h1 className={styles.heading}>Contour Maps</h1>
+                            <h1 className={styles.heading3}>Contour Maps</h1>
                             <div className={styles.card1}><p>Based on the project requirenments, either the DMT or DSM model,with custom cantour lines map,giving you on
                                 improved understanding of the surface of
                                 the image taken by the drone</p>

@@ -80,8 +80,8 @@ const CRM_Consulting = () => {
                         <img src={T02} alt='' />
                         </div> 
                           
-                            <h3>Tmplementation</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste ad delectus quia vel animi enim.</p>
+                            <h3>Implementation</h3>
+                            <p>This is the most crucial step wherein we help you implement the CRM with custom support.</p>
                         </div>
 
 
@@ -102,8 +102,8 @@ const CRM_Consulting = () => {
                         <img src={T04} alt='' />
                         </div> 
                            
-                            <h3>Speed</h3>
-                            <p>This may be the last point but this is the first things customers and vis accommodate and understand...</p>
+                            <h3>Improvement</h3>
+                            <p>We deal with flaws of your CRM and help you maximise the utilities of your current CRM </p>
                         </div>
 
                     </div>

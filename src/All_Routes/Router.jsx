@@ -41,7 +41,7 @@ const Router = () => {
        <Route path='/web_development' element={<Web_Development/>}></Route>
        <Route path='/mobile_development' element={<Mobile_development/>}></Route>
 
-       <Route path='crm_page' element={<CRM_pages/>}></Route>
+       <Route path='/crm_page' element={<CRM_pages/>}></Route>
        <Route path='/web_GIS' element={<Web_GIS/>}></Route>
        <Route path='/Remote_Sensing' element={<Remote_Sensing/>}></Route>
        <Route path='/Photogrammetry' element={<Photogrammetry_Services/>}></Route>

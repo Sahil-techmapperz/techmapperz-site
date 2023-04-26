@@ -118,10 +118,10 @@ const About = () => {
                     before.That's where the Agile methodology comes in.We follow 4 values of Agile:
                   </p>
                   <ul className={styles.lists}>
-                    <li>Individual and interactions over processes and tools.</li>
-                    <li>Working software over comprehensive documentation</li>
-                    <li>Customer collaboration over contract negotiation.</li>
-                    <li>Responding to change over following a plan</li>
+                    <li><p>Individual and interactions over processes and tools.</p></li>
+                    <li><p>Working software over comprehensive documentation.</p></li>
+                    <li><p>Customer collaboration over contract negotiation.</p></li>
+                    <li><p>Responding to change over following a plan.</p></li>
                   </ul>
 
 
@@ -145,10 +145,10 @@ const About = () => {
               <p>Some of the benefits that we would like to highlight of using the Agile methodology in our work are:</p>
             </div>
               <ul className={styles.lists}>
-                <li>Cost protection and the time frame required</li>
-                <li>Constant feedback and asuperior product result</li>
-                <li>Possibility of change during the process</li>
-                <li>Reduce the risk of error and the investment</li>
+                <li><p>Cost protection and the time frame required.</p></li>
+                <li><p>Constant feedback and asuperior product result.</p></li>
+                <li><p>Possibility of change during the process.</p></li>
+                <li><p>Reduce the risk of error and the investment.</p></li>
               </ul>
 
           </section>

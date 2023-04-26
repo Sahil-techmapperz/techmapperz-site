@@ -81,6 +81,10 @@
     align-items: start;
 }
 
+.address{
+    margin-left: -4rem;
+}
+
 
 .contact_bottom .contact_bottom_left  .logo_contaner{
     width: 150px;

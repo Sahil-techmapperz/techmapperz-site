@@ -34,8 +34,8 @@ const Drone_Service = () => {
 
             <section className={styles.secand_part}>
                 <div className={styles.info}>
-                    <p>Techmapperz has expertise in cutting-edge drone technology, and high-quality data processing techniques to provide spatial services for a range of requirements.</p>
-                    <p>Since drones can provide current and high-quality data at low costs they becoming used more frequently for the collection of data. Our drone technology can capture high resolution orthoimagery, video and elevation data with the use of various cameras and sensors. Techmapperz can capture multispectral imagery (NDVI), thermal imagery and video and precision LiDAR imagery on a substantial high level with additional payloads.</p>
+                    <p>Techmapperz has expertise in cutting-edge drone technology, and high-quality data processing techniques to provide spatial services for a range of requirements.
+                    Since drones can provide current and high-quality data at low costs they becoming used more frequently for the collection of data. Our drone technology can capture high resolution orthoimagery, video and elevation data with the use of various cameras and sensors. Techmapperz can capture multispectral imagery (NDVI), thermal imagery and video and precision LiDAR imagery on a substantial high level with additional payloads.</p>
                 </div>
                 <h1 className={styles.water_mark}>Drone</h1>
                 <div className={styles.contaner}>
@@ -99,7 +99,7 @@ const Drone_Service = () => {
 
 
 
-                <div className={styles.contaner}>
+                <div className={`${styles.contaner} ${styles.contaner2}`}>
                     <div className={styles.product}>
                         <div>
                             <img src={Drone_Service3} className={styles.Img_three} alt="Geospatial_Mapping.png" />

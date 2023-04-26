@@ -76,12 +76,12 @@ const Navbar = () => {
         <DrawerContent backgroundColor={"gray.400"}>
           <DrawerCloseButton />
           <DrawerBody display={"flex"} flexDirection="column" justifyContent={"center"} alignItems="center" gap="2rem">
-            <Box fontSize={"25px"} ><Link to={"/"}>Home</Link></Box>
-            <Box fontSize={"25px"} ><Link to={"/service"}>Service</Link></Box>
-            <Box fontSize={"25px"} ><Link to={"/article"}>News & Article</Link></Box>
-            <Box fontSize={"25px"} ><Link to={"/about"}>About us</Link></Box>
-            <Box fontSize={"25px"} ><Link to={"/career"}>Career</Link></Box>
-            <Box fontSize={"25px"} ><Link to={"/contact"}>Contact</Link></Box>
+            <Box fontSize={"25px"} onClick={onClose} ><Link to={"/"}>Home</Link></Box>
+            <Box fontSize={"25px"} onClick={onClose}><Link to={"/service"}>Service</Link></Box>
+            <Box fontSize={"25px"} onClick={onClose}><Link to={"/article"}>News & Article</Link></Box>
+            <Box fontSize={"25px"} onClick={onClose}><Link to={"/about"}>About us</Link></Box>
+            <Box fontSize={"25px"} onClick={onClose}><Link to={"/career"}>Career</Link></Box>
+            <Box fontSize={"25px"} onClick={onClose}><Link to={"/contact"}>Contact</Link></Box>
 
           </DrawerBody>
 

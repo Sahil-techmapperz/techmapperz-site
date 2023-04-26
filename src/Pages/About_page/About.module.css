@@ -3,14 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-/* .container {
-    padding-top: 2 rem;
-    padding-bottom: 2 rem;
-    padding-left:2 rem ;
-    padding-right:2 rem ;
-    
-} */
+p{
+    color: white;
+}
 
 .video_contaner {
     width: 300px;
@@ -111,7 +106,8 @@ header>p {
     letter-spacing: 0.162793px;
     color: #FFFFFF;
     font-weight: bold;
-    margin: -1rem 0 0.5rem 0;
+    margin: -1rem 0 2rem 0;
+   
 }
 
 
@@ -269,6 +265,10 @@ header>p {
     margin-left: 40px;
 }
 
+.lists li{
+    color: #396ba9;
+}
+
 
 
 
@@ -418,6 +418,10 @@ header>p {
     padding: 2rem 0;
 }
 
+.methodology ul li{
+    color: #396ba9;
+}
+
 
 
 .five_part {
@@ -455,8 +459,8 @@ header>p {
     position: absolute;
     transform: rotate(270deg);
     font-size: 60px;
-    color: rgba(238, 237, 237,0.04);
-    left: -14rem;
+    color: rgba(238, 237, 237,0.02);
+    left: -13rem;
     top: 67rem;
     font-weight: bold;
 }

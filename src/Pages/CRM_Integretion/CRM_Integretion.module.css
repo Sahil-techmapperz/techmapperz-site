@@ -89,7 +89,7 @@ p{
     right: -5rem;
     bottom: 2.5rem; 
     height: 2px;
-    width: 10%; 
+    width: 50px; 
     background-color:#396ba9;
 }
 
@@ -107,10 +107,10 @@ p{
 .heading3::after{
     content: "";
     position: absolute;
-    right: 1rem;
+    right: 3rem;
     bottom: 2.5rem; 
     height: 2px;
-    width: 10%; 
+    width: 50px; 
     background-color:#396ba9;
 }
 .heading1 {
@@ -217,6 +217,7 @@ p{
     height: 900px;
     gap: 30px;
     column-gap: 100px;
+    align-items: center;
 
 }
 
@@ -242,4 +243,10 @@ p{
     justify-content: center;
     align-items: center;
 
+}
+
+
+
+.contaner2 .product_info{
+    padding-left: 4rem;
 }

@@ -65,14 +65,13 @@ text-align: center;
     font-size: 16px;
     font-weight: 400px;
     line-height: 26px;
-    letter-spacing: 0.16;
-    word-wrap: break-word;
+    letter-spacing: 0.36;
     background: transparent;
     padding-top: 25px;
-    /* padding-bottom: 30px; */
-    margin-left: 40px;
-    margin-right: 40px;
-    text-align: center;
+    text-align:justify;
+    text-justify: inter-word;
+    width: 100%;
+    margin-left: 13px;
     
 }
 
@@ -89,8 +88,41 @@ text-align: center;
     line-height: 54px;
     letter-spacing: 0.16px;
     padding-bottom: 20px;
-    background: rgba(24, 24, 24, 1);
+    background: none;
+    position: relative;
+    width: fit-content;
 }
+
+.heading::after {
+    content: "";
+    position: absolute;
+    right: -5rem;
+    bottom: 2.7rem; 
+    height: 2px;
+    width: 50px; 
+    background-color:#396ba9;
+}
+.heading2 {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 54px;
+    letter-spacing: 0.16px;
+    padding-bottom: 20px;
+    background: none;
+    position: relative;
+    width: fit-content;
+}
+
+.heading2::after {
+    content: "";
+    position: absolute;
+    right: 4rem;
+    bottom: 2.7rem; 
+    height: 2px;
+    width: 50px; 
+    background-color:#396ba9;
+}
+
 
 .product {
     display: flex;
@@ -101,16 +133,13 @@ text-align: center;
 }
 
 .product img {
-    width: 700px;
-    height: 590px;
-    object-fit: cover;
+    width: 715px;
+    object-fit: contain;
 }
 
 .product .Img_two {
-    height: 550px;
-    margin-left: 2px;
-    margin-top: 50px;
-    width: 700px;
+    width: 110%;
+    object-fit: contain;
 
 }
 
@@ -128,7 +157,7 @@ text-align: center;
     flex-direction: column;
     gap: 10px;
     position: relative;
-    width: 700px;
+    width: 730px;
 } 
 
 
@@ -138,21 +167,23 @@ text-align: center;
     line-height: 24px;
     letter-spacing: 0.16;
     font-weight: 400;
-    word-wrap: break-word;
-    width: 600px;
+    text-align: justify;
+    text-justify: inter-word;
+    width:100%;
 } 
 
 
 
  .project ul{
     list-style: disc;
+    margin-left: -1rem;
 }
 
 
 .service {
     width: 100vw;
     margin-left: -5rem;
-    padding: 0 5rem;
+    padding: 2rem 5rem;
     background: url("../../Photos/banner_4.png");
     background-size: cover;
     background-position: center;
@@ -213,14 +244,9 @@ text-align: center;
     text-align: center;
 }
 
-.card1 {
-    /* text-align: center; */
-    /* margin-left: 60px;
-    margin-right: 60px; */
+.card1 p{
     text-align: center;
-    justify-content: center;
-    align-items: center; 
-
+    margin-top: -2rem;
 }
 
 
@@ -230,4 +256,18 @@ text-align: center;
     width: 762px;
     height: 312px;
     object-fit: cover;
+}
+
+
+
+
+.heading3{
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 54px;
+    letter-spacing: 0.16px;
+    padding-bottom: 20px;
+    background: none;
+    text-align: center;
+    
 }

@@ -44,8 +44,8 @@ const Mobile_development = () => {
 
 
             <section className={styles.secand_part}>
-                <p>In this digital era,it's not easy to live without smart devices,especially smartphones,Smart devices are transforming the way we live our lives. where mobile apps have become the most lucrative digital tool to make life easier and more conveient.</p>
-                <p>The mobile app software intelligently combines the latest  technology,and design solutions which constantly get updated.It incorporates API,GPS,Camera, Microphone,Artificial Intelligence and other latest technologies and becomes a Launchpad hurling your business to the next level.</p>
+                <p>In this digital era,it's not easy to live without smart devices,especially smartphones,Smart devices are transforming the way we live our lives. where mobile apps have become the most lucrative digital tool to make life easier and more conveient.
+                The mobile app software intelligently combines the latest  technology,and design solutions which constantly get updated.It incorporates API,GPS,Camera, Microphone,Artificial Intelligence and other latest technologies and becomes a Launchpad hurling your business to the next level.</p>
                 
                 <div className={`${styles.contaner} ${styles.contaner_card2} `}>
                     
@@ -135,7 +135,7 @@ const Mobile_development = () => {
                         <div className={styles.card1}>
                         <div className={styles.testimg1}>
                         <img src={MobileDev6} alt='' />
-                        <img src={T01} alt='' />
+                        <img className={styles.num} src={T01} alt='' />
                         </div> 
                         
                             <h3>Market to Study</h3>
@@ -145,7 +145,7 @@ const Mobile_development = () => {
                         <div className={styles.card2}>
                         <div className={styles.testimg1}>
                         <img src={MobileDev7} alt='' />
-                        <img src={T02} alt='' />
+                        <img className={styles.num} src={T02} alt='' />
                         </div> 
                        
 
@@ -157,7 +157,7 @@ const Mobile_development = () => {
                         <div className={styles.card3}>
                         <div className={styles.testimg1}>
                         <img src={MobileDev8} alt='' />
-                        <img src={T03} alt='' />
+                        <img className={styles.num} src={T03} alt='' />
                         </div> 
 
                             <h3>Innovative User Interface</h3>
@@ -168,7 +168,7 @@ const Mobile_development = () => {
                         <div className={styles.card4}>
                         <div className={styles.testimg1}>
                         <img src={MobileDev9} alt='' />
-                        <img src={T04} alt='' />
+                        <img className={styles.num} src={T04} alt='' />
                         </div> 
                       
 
@@ -180,7 +180,7 @@ const Mobile_development = () => {
                         <div className={styles.card5}>
                         <div className={styles.testimg1}>
                         <img src={MobileDev10} alt='' />
-                        <img src={T05} alt='' />
+                        <img className={styles.num} src={T05} alt='' />
                         </div> 
                       
 
@@ -191,7 +191,7 @@ const Mobile_development = () => {
                         <div className={styles.card6}>
                         <div className={styles.testimg1}>
                         <img src={Techmapperz1} alt='' />
-                        <img src={T06} alt='' />
+                        <img className={styles.num} src={T06} alt='' />
                         </div> 
                        
                             <h3>Revenue</h3>

@@ -60,22 +60,22 @@ const CRM_pages = () => {
                         <div className={Styles.card1}>
                             <div className={Styles.testimg1}>
                                 <img src={CRM1} alt='' />
-                                <img src={T01} alt='' />
+                                <img className={Styles.num} src={T01} alt='' />
                             </div>
 
                             <Link to={"/crm_consulting"}><h3>CRM Consulting</h3></Link>
-                            <p>With the accumlated experince of more than 20 years,our team is well equipped to help you slove all possible challenges in the coustomer management field...<b><Link to={"/crm_consulting"}>Know More</Link></b></p>
+                            <p>With the accumlated experince of more than 20 years,our team is well equipped to help you slove all possible challenges in the coustomer management field...<br/><b style={{"borderBottom":"1px solid red","fontStyle":"italic"}}><Link to={"/crm_consulting"}>Know More</Link></b></p>
                         </div>
 
 
                         <div className={Styles.card1}>
                             <div className={Styles.testimg1}>
                                 <img src={CRM2} alt='' />
-                                <img src={T02} alt='' />
+                                <img  className={Styles.num} src={T02} alt='' />
                             </div>
 
                             <Link to={"/crm_implement"}> <h3>CRM Implementation</h3></Link>
-                            <p>With global competition and greater customer expectations companies look forward to enhance customer relationship and experience,many business entities...<b><Link to={"/crm_implement"}> Know More</Link></b></p>
+                            <p>With global competition and greater customer expectations companies look forward to enhance customer relationship and experience,many business entities...<br/> <b style={{"borderBottom":"1px solid red","fontStyle":"italic"}}><Link to={"/crm_implement"}> Know More</Link></b></p>
 
                         </div>
 
@@ -83,11 +83,11 @@ const CRM_pages = () => {
                         <div className={Styles.card1}>
                             <div className={Styles.testimg1}>
                                 <img src={CRM3} alt='' />
-                                <img src={T03} alt='' />
+                                <img className={Styles.num} src={T03} alt='' />
                             </div>
 
                             <Link to={"/custom_consulting"}>  <h3>Custom CMR Consulting </h3></Link>
-                            <p>AT customer CMR Consulting we understand your current capabilities,map your organisation's desired future state, and then recommend CRM implementation... <b><Link to={"/custom_consulting"}>Know More</Link></b></p>
+                            <p>AT customer CMR Consulting we understand your current capabilities,map your organisation's desired future state, and then recommend CRM implementation... <br/><b style={{"borderBottom":"1px solid red","fontStyle":"italic"}}><Link to={"/custom_consulting"}>Know More</Link></b></p>
 
                         </div>
 
@@ -95,11 +95,11 @@ const CRM_pages = () => {
                         <div className={Styles.card1}>
                             <div className={Styles.testimg1}>
                                 <img src={CRM4} alt='' />
-                                <img src={T04} alt='' />
+                                <img className={Styles.num} src={T04} alt='' />
                             </div>
 
                             <Link to={"/crm_integretion"}> <h3>CRM Integration</h3></Link>
-                            <p>CRM integration is connecting all the applications you use to run your business to customer Information,It's a 360-degree view of customer data that can be seamlessly...<b><Link to={"/crm_integretion"}>Know More</Link></b> </p>
+                            <p>CRM integration is connecting all the applications you use to run your business to customer Information,It's a 360-degree view of customer data that can be seamlessly...<br/><b style={{"borderBottom":"1px solid red","fontStyle":"italic"}}><Link to={"/crm_integretion"}>Know More</Link></b> </p>
 
 
                         </div>
@@ -110,7 +110,7 @@ const CRM_pages = () => {
 
 
                 <div className={Styles.Application}>
-                    <h3 className={Styles.heading2}>Lorem Ipsum is therefore always free from repetition</h3>
+                    <h3 className={Styles.heading2}>Types of CRM </h3>
                     <div className={Styles.design}>
 
 
@@ -118,7 +118,7 @@ const CRM_pages = () => {
 
                             <img src={CRM5} alt='' />
                             <h3>Operational</h3>
-                            <p>This is a prime tool to manage your business,more efficiently with maximum utilization of customer data.</p>
+                            <p>This is a prime tool to manage your business , more efficiently with maximum utilization of customer data.</p>
                         </div>
 
 
@@ -151,11 +151,11 @@ const CRM_pages = () => {
 
                     </div>
                 </div>
-                <div className={Styles.video_contaner}>
+                {/* <div className={Styles.video_contaner}>
                     <div className={Styles.crm_video}></div>
                     <p>At custom CRM consulting we understand your current capabilities, map your organisation's desired future state, and then recommend CRM implementation Know More</p>
                     <Link to={"#"}><b>Know more</b></Link>
-                </div>
+                </div> */}
             </section>
         </div>
     )
