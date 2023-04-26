@@ -226,13 +226,13 @@ const Career = () => {
 
           <div className={Styles.secend_section_main_two} >
             <h2>Be a Volunteer</h2>
-            <p>Our IT company offers volunteers the chance to develop important skills and experience while having a significant impact on the community. Join our team to work on exciting initiatives, meet others who share your interests, and change the world for the better.</p>
+            <p>Join our team to work on exciting initiatives, meet others who share your interests, and change the world for the better.</p>
             <div className={Styles.input_from} >
               <input   ref={inputRefs[0]} value={careerdata.name} placeholder='Your Name' type={"text"} name="name" onChange={handalechange} />
               <input  ref={inputRefs[1]} value={careerdata.mobile} placeholder='Your Mobile Number' name='mobile' type={"number"} onChange={handalechange} />
               {errornumber && <label style={{ "color": "red" }}>pleases enter 10 digit number</label>}
               <select ref={inputRefs[2]} onChange={handalechange} name="designetion">
-                <option value={""}>Select the Designetion</option>
+                <option value={""}>Select the Designation</option>
                 {Jobsdata && Jobsdata.map((job) => <option value={`${job.JobID} - ${job.designetion}`}>{`${job.JobID} - ${job.designetion}`}</option>)}
               </select>
 
@@ -256,7 +256,7 @@ const Career = () => {
             <Text color='black'><b style={{ "color": "black" }}> JobType -</b>  {job && job.Jobtype}</Text>
             <Text color='black'><b style={{ "color": "black" }}>Education -</b> {job && job.education}</Text>
             <Text color='black'><b style={{ "color": "black" }}>Experience -</b> {job && job.experience}</Text>
-            <Text color='black'><b style={{ "color": "black" }}>Designetion -</b>  {job && job.designetion}</Text>
+            <Text color='black'><b style={{ "color": "black" }}>Designation -</b>  {job && job.designetion}</Text>
             <Text color='black'><b style={{ "color": "black" }}>Location -</b>  {job && job.location}</Text>
             <Text color='black'><b style={{ "color": "black" }}>Salary -</b> {job && job.salary}</Text>
             <Text color='black'><b style={{ "color": "black" }}>Role&Responsibility -</b> {job && job.roleResponsibility}</Text>

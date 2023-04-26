@@ -64,7 +64,7 @@ const Service_main = () => {
                         <div className={Styles.card1}>
                             <div className={Styles.testimg1}>
                              <img  className={Styles.icon} src={Ourservice11} alt='' /> 
-                             <img src={T01} alt='' /> 
+                             <img className={Styles.num} src={T01} alt='' /> 
                              </div>
                             <h3  > <Link to={"/GIS_Service"}> GIS Services </Link></h3>
                             <p>Techmapperz offers GIS services with an end-to-end solution for spatial data storing, management and analysis to Government and Enterprise sectors through GIS services.</p>
@@ -74,7 +74,7 @@ const Service_main = () => {
                         <div className={Styles.card2}>
                         <div className={Styles.testimg1}>
                         <img className={Styles.icon} src={Ourservice10} alt='' />
-                        <img src={T02} alt='' />   
+                        <img className={Styles.num} src={T02} alt='' />   
                         </div>
                             <h3 ><Link to={"/Remote_Sensing"}> Remote Sensing  Services</Link></h3>
                             <p>Techmapperz has extensive expertise in Satellite Image Processing & Interpretation. We use some of the best software and hardware available commercially to process high-quality images .</p>
@@ -84,9 +84,9 @@ const Service_main = () => {
                         <div className={Styles.card3}>
                         <div className={Styles.testimg1}>
                         <img className={Styles.icon} src={Ourservice9} alt='' />
-                        <img src={T03} alt='' /> 
+                        <img className={Styles.num} src={T03} alt='' /> 
                         </div>
-                            <h3 > <Link to={"/Photogrammetry_Services"}> Photogammetry Services </Link></h3>
+                            <h3 > <Link to={"/Photogrammetry"}> Photogammetry Services </Link></h3>
                             <p>Photogrammetry is the process to obtain  information and measurements of physical objects from photographs and use them for the development of maps, drawings, or 3D models.</p>
                       
                       </div>
@@ -94,7 +94,7 @@ const Service_main = () => {
                         <div className={Styles.card4}>
                         <div className={Styles.testimg1}>
                             <img className={Styles.icon} src={Ourservice8} alt='' />
-                            <img src={T04} alt='' />
+                            <img className={Styles.num} src={T04} alt='' />
                             </div>
                             <h3 > <Link to={"/Web_GIS"}> Web GIS Services </Link></h3>
                             <p>WebGIS is an advanced form of Geospatial Information System this is available on the web platform. WebGIS offers a diverse set of analytical functions.</p>
@@ -104,7 +104,7 @@ const Service_main = () => {
                         <div className={Styles.card5}>
                         <div className={Styles.testimg1}>
                             <img className={Styles.icon} src={Ourservice7} alt='' />
-                            <img src={T05} alt='' />
+                            <img className={Styles.num} src={T05} alt='' />
                             </div>
                             <h3 > <Link to={"/Drone_Service"}> Drone Services</Link></h3>
                             <p>Techmapperz has expertise in cutting-edge drone technology, and high-quality data processing techniques to provide spatial services for a range of requirements.</p>
@@ -130,16 +130,16 @@ const Service_main = () => {
                         <div className={Styles.card7}>
                         <div className={Styles.testimg1}>
                         <img src={Ourservice11} alt='' /> 
-                        <img src={T01} alt='' />
+                        <img className={Styles.num} src={T01} alt='' />
                         </div>
-                            <h3>Web Development Services</h3>
+                            <h3><Link to={"/web_development"}>Web Development Services</Link> </h3>
                             <p>With the accumulated experience of more than 20 years, our team is well equipped to help you solve all possible challenges in the customer management field... </p>
                         </div>
 
                         <div className={Styles.card8}>
                         <div className={Styles.testimg1}>
                         <img src={Ourservice4} alt='' />
-                        <img src={T02} alt='' />
+                        <img className={Styles.num} src={T02} alt='' />
                         </div> 
                         <h3 > <Link to={"/Mobile_development"}> Mobile Application Development </Link></h3>
                             <p>With global competition and greater customer expectations companies look forward to enhance customer relationship and experience,many business entities..</p>
@@ -149,9 +149,9 @@ const Service_main = () => {
                         <div className={Styles.card9}>
                         <div className={Styles.testimg1}>
                         <img src={Ourservice3} alt='' />
-                        <img src={T03} alt='' />
+                        <img className={Styles.num} src={T03} alt='' />
                         </div> 
-                        <h3 > <Link to={"/CRM_pages"}> CRM/ERP </Link></h3>
+                        <h3 > <Link to={"/crm_page"}> CRM/ERP </Link></h3>
                             <p>At custom CRM consulting we understand your current capabilities, map your organisation's desired future state, and then recommend CRM implentation</p>
                         </div>
 
@@ -159,7 +159,7 @@ const Service_main = () => {
                          <div className={Styles.card10}>
                          <div className={Styles.testimg1}>
                          <img src={Ourservice2} alt='' />
-                         <img src={T04} alt='' />
+                         <img className={Styles.num} src={T04} alt='' />
                         </div> 
                         <h3 > <Link to={"/It_consulting"}> IT Consulting Services </Link></h3>
                             <p>At custom CRM consulting we understand your current capabilities,map your organisation's desired future state, and then recommend CRM implementation</p>

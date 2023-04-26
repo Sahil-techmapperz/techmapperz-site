@@ -50,19 +50,18 @@ section p{
     display: flex;
     flex-direction: column;
     background: none;
-    background: rgba(24, 24, 24, 1);
+   width: 100%;
+   margin-left: 15px;
 }
 
 .info>p {
     font-size: 16px;
     font-weight: 400px;
     line-height: 26px;
-    letter-spacing: 0.16;
-    word-wrap: break-word;
+    letter-spacing: 0.20;
     background: transparent;
     padding-top: 25px;
-    /* padding-bottom: 30px; */
-   text-align: center;
+   text-align: justify;
    text-justify: inter-word;
 }
 
@@ -86,13 +85,14 @@ section p{
 .heading::after {
     content: "";
     position: absolute;
-    right: -rem;
+    right: -5rem;
     bottom: 2.5rem; 
     height: 2px;
-    width: 10%; 
+    width: 50px; 
     background-color:#396ba9;
 }
 .heading1 {
+    width: fit-content;
     font-size: 36px;
     font-weight: 600;
     line-height: 54px;
@@ -103,10 +103,10 @@ section p{
 .heading1::after {
     content: "";
     position: absolute;
-    right: 23rem;
-    bottom: 22.5rem; 
+    right: 22rem;
+    bottom: 21.5rem; 
     height: 2px;
-    width: 10%; 
+    width: 50px; 
     background-color:#396ba9;
 }
 .heading2 {
@@ -120,10 +120,10 @@ section p{
 .heading2::after {
     content: "";
     position: absolute;
-    right: 15rem;
+    right: 16rem;
     bottom: 22.8rem; 
     height: 2px;
-    width: 10%; 
+    width: 50px; 
     background-color:#396ba9;
 }
 .heading3 {
@@ -140,26 +140,27 @@ section p{
     right: 17rem;
     bottom: 22.8rem; 
     height: 2px;
-    width: 10%; 
+    width: 50px; 
     background-color:#396ba9;
 }
 
 .product {
     display: flex;
-    gap: 160px;
+    gap: 2.5rem;
     background: rgba(24, 24, 24, 1);
 }
 
 .product img {
-    width: 650px;
-    height: 420px;
-    object-fit: cover;
+    width: 700px;
+    height: 480px;
+    object-fit: contain;
+    padding-right: 13.5rem;
 }
 
 .product .Img_two {
     height: 350px;
-    margin-top: 75px;
-    
+    width:100%;
+    /* margin-top: 75px; */
 }
 .product .Img_three {
     width: 800px;
@@ -183,7 +184,7 @@ section p{
     letter-spacing: 0.16;
     font-weight: 400;
     word-wrap: break-word;
-    width: 600px;
+    width: 640px;
     text-align: justify;
     text-justify: inter-word;
 }
@@ -191,10 +192,9 @@ section p{
 .product_info>ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    /* row-gap: 25px; */
     width: 500px;
     margin-top: 15px;
-    padding-left: 30px;
+    padding-left: 15px;
 }
 
 

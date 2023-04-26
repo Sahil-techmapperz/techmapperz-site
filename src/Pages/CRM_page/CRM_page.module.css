@@ -216,7 +216,7 @@
     display: grid;
     grid-template-columns: repeat(2, 400px);
     justify-content: center;
-    gap: 2rem;
+    gap: 4rem;
     margin-top: 1rem;
     height: 800px;
 }
@@ -367,10 +367,10 @@
 .heading2::after{
     content: "";
     position: absolute;
-    left:45%;
+    left:50%;
     bottom: 0rem; 
     height: 2px;
-    width: 7%; 
+    width:50px; 
     background-color: #396ba9; 
 }
 
@@ -451,4 +451,8 @@
 
 .video_contaner a{
     margin: auto;
+}
+
+.num{
+    object-fit: contain;
 }

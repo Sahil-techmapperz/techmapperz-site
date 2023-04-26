@@ -79,9 +79,9 @@ const Remote_Sensing = () => {
                     </div>
                     <div className={Styles.list_div_tow}>
                         <ul>
-                        <li style={{paddingBottom:"0"}}><p>Agriculture Crop acreage estimation and Crop yield estimation</p></li>
                         <li><p>Forest Mapping</p></li>
                         <li><p>Forest Fire Mapping</p></li>
+                        <li><p>Agriculture Crop acreage estimation and Crop yield estimation</p></li>
                         </ul>
                     </div>
                 </div>

@@ -21,7 +21,7 @@ const Web_GIS = () => {
         <div className={Styles.Web_GIS}>
             <div className={Styles.top}>
                 <h1>Web GIS Services</h1>
-                <p><Link to={"/"}>Home</Link> / <Link to={"service"}>Services</Link>  / Geospatial programming & Web Map Development</p>
+                <p><Link to={"/"}>Home</Link> / <Link to={"service"}>Services</Link>  / Web GIS Services</p>
             </div>
             <div className={Styles.contaner}>
                 <div className={Styles.contaner_first}>
@@ -39,12 +39,11 @@ const Web_GIS = () => {
                                 <div className={Styles.list_div_two}>
                                     <ul>
                                         <li><p>Assessing optimal driving path</p></li>
-                                        <li style={{ paddingBottom: "30px" }}><p>Discovering the nearest ATM,<br/> restaurant, shops and hotels etc.</p></li>
                                         <li><p>Planning projects</p></li>
-                                   
                                         <li><p>Forest mapping</p></li>
                                         <li><p>Flood management</p></li>
                                         <li><p>Location: specific advertising</p></li>
+                                        <li><p>Discovering the nearest ATM,<br/> restaurant, shops and hotels etc.</p></li>
                                     </ul>
 
 

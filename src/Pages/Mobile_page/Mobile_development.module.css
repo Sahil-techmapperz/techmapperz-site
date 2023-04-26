@@ -44,10 +44,15 @@
     width: 100%;
     padding: 2rem 5rem;
     background: rgba(24, 24, 24, 1);
+    overflow: hidden;
 }
 
 .secand_part p {
     color: #d1d0d0;
+    width: 100%;
+    text-align: justify;
+    text-justify: inter-word;
+
 }
 
 .info {
@@ -108,7 +113,7 @@
     right: -4rem;
     bottom: 1.6rem;
     height: 2px;
-    width: 15%;
+    width: 50px;
     background-color: #396ba9;
 }
 
@@ -124,7 +129,7 @@
     right: -2rem;
     bottom: 1.6rem;
     height: 2px;
-    width: 10%;
+    width: 50px;
     background-color: #396ba9;
 }
 
@@ -137,10 +142,10 @@
 .heading3::after {
     content: "";
     position: absolute;
-    right: 40rem;
+    right: 48%;
     bottom: -1rem;
     height: 2px;
-    width: 10%;
+    width: 50px;
     background-color: #396ba9;
 }
 
@@ -156,7 +161,7 @@
     right: 0rem;
     bottom: 1rem;
     height: 2px;
-    width: 10%;
+    width: 50px;
     background-color: #396ba9;
 }
 
@@ -311,6 +316,7 @@
 
 .harbour {
     display: flex;
+    gap:5rem;
     margin-top: 2rem;
 }
 
@@ -515,4 +521,13 @@
     background-size: cover;
     background-position: center;
     width: 100vw;
+}
+
+
+.num{
+    object-fit: contain;
+}
+
+.contaner_card3>.product>div>p{
+    width: 650px;
 }

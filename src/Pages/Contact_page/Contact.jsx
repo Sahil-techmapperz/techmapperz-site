@@ -153,10 +153,10 @@ const Contact = () => {
                     <p className={Styles.title}>Gettting Touch</p>
                     <h1>Do you have a project in your mind?</h1>
                     <div className={Styles.addres_contaner}>
-                        <p className={Styles.logo_contaner}><BiTimeFive className={Styles.logo} />  9.30-6.30 </p>
+                        <p className={Styles.logo_contaner}><BiTimeFive className={Styles.logo} />  9:30-6:30 </p>
                         <div className={Styles.address_card}>
                             <p className={Styles.logo_contaner2}><AiFillHome className={Styles.logo} />Delhi</p>
-                            <p className={Styles.address}>55, Lane - 2, Westend Marg, Saidullajab,
+                            <p className={Styles.address}>55, Lane - 2, Westend Marg, Saidullajab,<br/>
                                 Near Saket metro station, New Delhi - 110030</p>
                         </div>
                         <div className={Styles.address_card}>
@@ -167,7 +167,7 @@ const Contact = () => {
                 </div>
                 <div className={Styles.contact_bottom_right}>
                     <VStack  spacing={8}>
-                        <HStack spacing={4}>
+                        <HStack  spacing={4}>
                             <FormControl isInvalid={hasError.name}>
                                 <FormLabel>Full Name*</FormLabel>
                                 <Input
@@ -175,7 +175,6 @@ const Contact = () => {
                                     value={contactdata.name}
                                     onChange={handalechange}
                                     placeholder="Enter Full Name"
-
                                 />
                                 <FormErrorMessage>{hasError.name}</FormErrorMessage>
                             </FormControl>
@@ -222,6 +221,7 @@ const Contact = () => {
                             </FormControl>
                         </HStack>
 
+                        <HStack w={"100%"} pl={"3.5rem"} pr={"3.5rem"}>
                         <FormControl isInvalid={hasError.projectdetails}>
                             <FormLabel>Write Project Details*</FormLabel>
                             <Textarea
@@ -235,6 +235,7 @@ const Contact = () => {
                                 {hasError.projectdetails}
                             </FormErrorMessage>
                         </FormControl>
+                        </HStack>
 
                         <Button  size={"lg"} w="40%" colorScheme="blue" onClick={handalesubmit}>
                             Submit

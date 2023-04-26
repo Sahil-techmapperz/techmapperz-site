@@ -16,9 +16,11 @@ import CRM_Integretion10 from '../../Photos/CRM_Integration10.png';
 
 import CRM_Integretion11 from '../../Photos/CRM_Integration11.png';
 import CRM_Integretion12 from '../../Photos/CRM_Integration12.png';
-import CRM_Integretion15 from '../../Photos/CRM_Integretion15.png';
 import CRM_Integretion13 from '../../Photos/CRM_Integretion13.gif';
 import CRM_Integretion14 from '../../Photos/CRM_Integretion14.gif';
+import CRM_Integretion15 from '../../Photos/CRM_Integretion15.png';
+import CRM_Integretion16 from '../../Photos/CRM_Integration16.png';
+import CRM_Integretion17 from '../../Photos/CRM_Integration17.png';
 
 
 
@@ -69,7 +71,7 @@ const CRM_Integretion = () => {
 
 
 
-                <div className={Styles.contaner}>
+                <div className={`${Styles.contaner} ${Styles.contaner2}`}>
                     <div className={Styles.product}>
                        
                         <div>
@@ -160,19 +162,19 @@ const CRM_Integretion = () => {
                         </div>
 
                         <div className={Styles.card14}>
-                            <img src={CRM_Integretion1} alt='' />
+                            <img src={CRM_Integretion15} alt='' />
                             <h3>Team Communication <br /> Integrations</h3>
                         </div>
 
 
                         <div className={Styles.card15}>
-                            <img src={CRM_Integretion1} alt='' />
+                            <img src={CRM_Integretion16} alt='' />
                             <h3>Proposal and Document Integrations</h3>
                         </div>
 
 
                         <div className={Styles.card16}>
-                            <img src={CRM_Integretion15} alt='' />
+                            <img src={CRM_Integretion17} alt='' />
                             <h3>Forms and Data <br /> Collection Integrations</h3>
                         </div> 
 
