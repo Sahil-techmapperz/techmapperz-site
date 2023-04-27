@@ -115,6 +115,7 @@
 .home_secend_part {
     background-color: #333;
     margin-top: -1.2rem;
+    overflow: hidden;
 }
 
 
@@ -161,7 +162,7 @@
 
 .features_top .info>p {
     font-weight: 400;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.162793px;
    text-align: justify;
@@ -199,7 +200,8 @@
 
 .card_contaner {
     display: flex;
-    gap: 8rem;
+    justify-content: space-between;
+    /* gap: 8rem; */
     width: 100%;
 }
 
@@ -212,12 +214,12 @@
 }
 
 .card_contaner .card_2 {
-    margin-top: 10rem;
+    margin-top: 3rem;
 }
 
 
 .card_contaner .card_3 {
-    margin-top: 20rem;
+    margin-top: 6rem;
 }
 
 .card_contaner .card img {
@@ -238,7 +240,7 @@
 .View_All_Services {
     position: absolute;
     width: 200px;
-    bottom: 15rem;
+    bottom: 3rem;
     left: 5rem;
 }
 
@@ -303,14 +305,14 @@
 
 
 .technology_right {
-    width: 52%;
+    width: 50%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-content: center;
-    gap: 5rem;
+    gap: 2rem;
     row-gap: 20px;
     padding: 15px 10px;
-    margin-right:-3rem;
+    
 }
 
 

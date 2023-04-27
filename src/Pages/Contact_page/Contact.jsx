@@ -150,7 +150,7 @@ const Contact = () => {
             </div>
             <div className={Styles.contact_bottom}>
                 <div className={Styles.contact_bottom_left}>
-                    <p className={Styles.title}>Gettting Touch</p>
+                    <p className={Styles.title}>Get In Touch</p>
                     <h1>Do you have a project in your mind?</h1>
                     <div className={Styles.addres_contaner}>
                         <p className={Styles.logo_contaner}><BiTimeFive className={Styles.logo} />  9:30-6:30 </p>

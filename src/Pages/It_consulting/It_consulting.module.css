@@ -12,6 +12,7 @@ p{
 .consulting {
     background: rgba(24, 24, 24, 1);
     position: relative;
+    overflow: hidden;
 }
 
 .first_part {
@@ -55,8 +56,9 @@ p{
 }
 
 .secand_part .title{
-    padding: 2rem 8rem;
-    text-align: center;
+    padding: 2rem 6rem;
+    text-align: justify;
+    text-justify: inter-word;
     width: 100%;
 }
 
@@ -104,15 +106,16 @@ p{
     height: 2px;
     width: 10%; 
     background-color:#396ba9; 
+    display: none;
 }
 
 .design {
     display: grid;
-    grid-template-columns: repeat(3, 350px);
+    grid-template-columns: repeat(3, 25%);
     gap:85px;
-    margin-left: 5px;
-    text-align: justify;
-    text-justify: inter-word;
+    margin-left: 20px;
+    justify-content:space-evenly;
+    align-items: center;
 }
 
  .newmain {
@@ -172,6 +175,7 @@ text-align: left;
 .harbour {
     background-color: none;
     display: flex;
+    justify-content: space-between;
     width: 100%;
     padding-bottom: 3rem;
     padding-top: 3rem;

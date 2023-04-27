@@ -91,6 +91,7 @@ p{
     height: 2px;
     width: 50px; 
     background-color:#396ba9;
+    display: none;
 }
 
 .heading3 {
@@ -112,6 +113,7 @@ p{
     height: 2px;
     width: 50px; 
     background-color:#396ba9;
+    display: none;
 }
 .heading1 {
     text-align: center;

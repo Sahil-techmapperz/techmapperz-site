@@ -171,7 +171,7 @@ const handaledown=()=>{
 
                     <div className={Styles.features}>
                         <p className={Styles.title}>Features</p>
-                        <img className={Styles.setting_icon} src={Home_4} alt='' loading="lazy" />
+                        {/* <img className={Styles.setting_icon} src={Home_4} alt='' loading="lazy" /> */}
                         <div className={Styles.features_top}>
                             <h1>These Services to Expand your Business</h1>
                             <div className={Styles.info}>
@@ -186,15 +186,15 @@ const handaledown=()=>{
                         </div>
                         <div className={Styles.card_contaner}>
                             <div className={Styles.card}>
-                                <img src={Home_1} alt='' loading="lazy" />
+                                <img src={Home_3} alt='' loading="lazy" />
                                 <Link to={"/it_consulting"}> <h1>IT Services</h1></Link>
                             </div>
                             <div className={`${Styles.card} ${Styles.card_2}`}>
-                                <img src={Home_2} alt='' loading="lazy" />
+                                <img src={Home_1} alt='' loading="lazy" />
                                 <Link to={"/gis_service"}> <h1>GIS Services</h1></Link>
                             </div>
                             <div className={`${Styles.card} ${Styles.card_3}`}>
-                                <img src={Home_3} alt='' loading="lazy" />
+                                <img src={Home_2} alt='' loading="lazy" />
                                 <Link to={"/drone_service"}> <h1>Drone Services</h1></Link>
                             </div>
                         </div>
@@ -209,8 +209,8 @@ const handaledown=()=>{
                         <p className={Styles.title}>Technology</p>
                         <div className={Styles.technology_contaner}>
                             <div className={Styles.technology_left}>
-                                <h1>Latest Technology That we used</h1>
-                                <p>Let Your Data Take Your Business to Higher Grounds</p>
+                                <h1>Latest Technology That we use</h1>
+                                <p>Let the Data Take Your Business to Higher Ground</p>
                             </div>
 
                             <div className={Styles.technology_right}>

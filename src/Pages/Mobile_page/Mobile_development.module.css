@@ -8,6 +8,7 @@
 .Mobile_development {
     background: rgba(24, 24, 24, 1);
     position: relative;
+    overflow: hidden;
 }
 
 .first_part {
@@ -115,6 +116,7 @@
     height: 2px;
     width: 50px;
     background-color: #396ba9;
+    display: none;
 }
 
 .heading2 {
@@ -131,6 +133,7 @@
     height: 2px;
     width: 50px;
     background-color: #396ba9;
+    display: none;
 }
 
 .heading3 {
@@ -147,6 +150,7 @@
     height: 2px;
     width: 50px;
     background-color: #396ba9;
+    display: none;
 }
 
 .heading4 {
@@ -163,6 +167,7 @@
     height: 2px;
     width: 50px;
     background-color: #396ba9;
+    display: none;
 }
 
 .class2 {

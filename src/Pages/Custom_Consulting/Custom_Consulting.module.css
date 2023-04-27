@@ -7,6 +7,7 @@
 
 .CRM_Consulting{
     background: rgba(24, 24, 24, 1);
+    overflow: hidden;
 }
 
 p{
@@ -93,6 +94,7 @@ p{
     height: 2px;
     width: 60px; 
     background-color:#396ba9; 
+    display: none;
 
 }
 
@@ -114,6 +116,7 @@ p{
     height: 2px;
     width: 60px; 
     background-color:#396ba9; 
+    display: none;
 
 }
 
@@ -121,6 +124,7 @@ p{
 .product {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background: rgba(24, 24, 24, 1);
 }
 
@@ -151,7 +155,7 @@ p{
 }
 
 .product_info2{
-    width: 640px;
+    width: 660px;
     box-sizing: border-box;
 }
 
@@ -160,14 +164,16 @@ p{
     line-height: 24px;
     letter-spacing: 0.16;
     font-weight: 400;
-    word-wrap: break-word;
-    width: 600px;
+    width: 100%;
+    text-align: justify;
+    text-justify: inter-word;
+
 }
 
 .secand_part ul {
-    width: 700px;
+    width: 100%;
     margin-top: 15px;
-    padding-left: 12px;
+    padding-left: 3rem;
 }
 
 .secand_part ul>li {

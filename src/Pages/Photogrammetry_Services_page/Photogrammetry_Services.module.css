@@ -7,6 +7,7 @@
 
 .drone {
     background: rgba(24, 24, 24, 1);
+    overflow: hidden;
 }
 
 .part1 {
@@ -101,6 +102,7 @@ text-align: center;
     height: 2px;
     width: 50px; 
     background-color:#396ba9;
+    display: none;
 }
 .heading2 {
     font-size: 36px;
@@ -121,6 +123,7 @@ text-align: center;
     height: 2px;
     width: 50px; 
     background-color:#396ba9;
+    display: none;
 }
 
 

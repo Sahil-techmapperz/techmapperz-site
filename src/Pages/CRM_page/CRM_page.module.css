@@ -45,6 +45,7 @@
     padding: 2rem 5rem;
     background: rgba(24, 24, 24, 1);
     position: relative;
+    overflow: hidden;
 }
 
 .watermark {
@@ -372,6 +373,7 @@
     height: 2px;
     width:50px; 
     background-color: #396ba9; 
+    display: none;
 }
 
 

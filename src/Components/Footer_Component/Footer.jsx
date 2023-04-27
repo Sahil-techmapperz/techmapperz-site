@@ -35,17 +35,17 @@ const Footer = () => {
         <p>Chasing the Vision for a better tomorrow where technology simplifies complex functions.</p><br/><br/>
         <p className={styles.title}>Follow on -</p>
         <div className={styles.social_media_icons}>
-            <a href='#'><h3><BsLinkedin className={styles.icon}/></h3></a>
-            <a href='#'><h3><BsInstagram className={styles.icon}/></h3></a>
-            <a href='#'><h3><BsTwitter className={styles.icon}/></h3></a>
-            <a href='#'><h3><BsFacebook className={styles.icon}/></h3></a>
-            <a href='#'><h3><BsYoutube className={styles.icon}/></h3></a>
-            <a href='#'><h3><FaPinterest className={styles.icon}/></h3></a>
+            <a href='https://www.linkedin.com/company/techmapperz/' target="_blank"><h3><BsLinkedin className={styles.icon}/></h3></a>
+            <a href='https://www.instagram.com/techmapperz/' target="_blank"><h3><BsInstagram className={styles.icon}/></h3></a>
+            <a href='https://twitter.com/techmapperz?t=Rbrwd-5pDZ_pwkW2OEZ2Ng&s=09' target="_blank"><h3><BsTwitter className={styles.icon}/></h3></a>
+            <a href='https://www.facebook.com/techmapperz' target="_blank"><h3><BsFacebook className={styles.icon}/></h3></a>
+            <a href='https://www.youtube.com/channel/UCWogNBwwxTvoX8Ax24j6c6Q' target="_blank"><h3><BsYoutube className={styles.icon}/></h3></a>
+            <a href='https://pin.it/2nsXnBd' target="_blank"><h3><FaPinterest className={styles.icon}/></h3></a>
         </div>
       </div>
 
       <div className={styles.footer_part_three}>
-        <p className={styles.title}>Explore More</p>
+        <p className={styles.title3}>Explore More</p>
         <div className={styles.explore_content}>
             <ul>
                 <Link to={"/"}><li>Home</li></Link>

@@ -56,15 +56,14 @@
 }
 
 .info>p {
+    width: 100%;
     font-size: 16px;
     font-weight: 400px;
     line-height: 26px;
     letter-spacing: 0.16;
-    word-wrap: break-word;
     background: transparent;
-    text-align: center;
-    /* padding-top: 25px;
-    padding-bottom: 30px; */
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 
@@ -105,6 +104,7 @@
     height: 2px;
     width: 50px; 
     background-color:#396ba9;
+    display: none;
 }
 
 
@@ -127,6 +127,7 @@
     height: 2px;
     width: 50px; 
     background-color:#396ba9;
+    display: none;
 }
 
 .product {

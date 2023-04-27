@@ -8,6 +8,7 @@
 
 .Remote_Sensing {
     background: rgba(24, 24, 24, 1);
+    overflow: hidden;
 }
 
 
@@ -134,6 +135,7 @@
     height: 2px;
     width: 50px; 
     background-color:#396ba9;
+    display: none;
 }
 
 
@@ -188,6 +190,7 @@
     height: 2px;
     width: 50px; 
     background-color:#396ba9;
+    display: none;
 }
 
 
