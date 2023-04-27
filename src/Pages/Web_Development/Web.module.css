@@ -8,9 +8,10 @@
 .development {
     background: rgba(24, 24, 24, 1);
     position: relative;
+    overflow: hidden;
 }
 
-p{
+p {
     color: #d1d0d0;
 }
 
@@ -25,7 +26,7 @@ p{
     background: url("../../Photos/banner_3.jpg");
     background-size: cover;
     background-position: center;
-    
+
 }
 
 .first_part>h1 {
@@ -45,7 +46,7 @@ p{
 
 
 .secand_part {
-    width: 100%; 
+    width: 100%;
     padding: 2rem 5rem;
     overflow: hidden;
 }
@@ -79,7 +80,7 @@ p{
 }
 
 
-.watermark4{
+.watermark4 {
     position: absolute;
     top: 3rem;
     right: -8rem;
@@ -100,13 +101,14 @@ p{
     padding-bottom: 20px;
     background: rgba(24, 24, 24, 1);
 }
+
 .heading1 {
     font-size: 36px;
     font-weight: 600;
     line-height: 54px;
     letter-spacing: 0.16px;
     padding-bottom: 20px;
-    background:transparent;
+    background: transparent;
     position: relative;
 }
 
@@ -118,13 +120,15 @@ p{
     height: 2px;
     width: 50px;
     background-color: #396ba9;
+    display: none;
 }
+
 .heading2 {
     margin-top: -5rem;
     font-size: 36px;
     font-weight: 600;
     letter-spacing: 0.16px;
-    background:transparent;
+    background: transparent;
     position: relative;
 }
 
@@ -136,13 +140,15 @@ p{
     height: 2px;
     width: 50px;
     background-color: #396ba9;
+    display: none;
 }
+
 .heading3 {
     font-size: 36px;
     width: fit-content;
     font-weight: 600;
     letter-spacing: 0.16px;
-    background:transparent;
+    background: transparent;
     position: relative;
 }
 
@@ -154,13 +160,15 @@ p{
     height: 2px;
     width: 50px;
     background-color: #396ba9;
+    display: none;
 }
+
 .heading4 {
     font-size: 36px;
     width: fit-content;
     font-weight: 600;
     letter-spacing: 0.16px;
-    background:transparent;
+    background: transparent;
     position: relative;
     padding-top: 2rem;
 }
@@ -173,13 +181,15 @@ p{
     height: 2px;
     width: 50px;
     background-color: #396ba9;
+    display: none;
 }
+
 .heading5 {
     text-align: center;
     font-size: 36px;
     font-weight: 600;
     letter-spacing: 0.16px;
-    background:transparent;
+    background: transparent;
     position: relative;
 }
 
@@ -191,13 +201,15 @@ p{
     height: 2px;
     width: 60px;
     background-color: #396ba9;
+    display: none;
 }
+
 .heading6 {
     width: fit-content;
     font-size: 36px;
     font-weight: 600;
     letter-spacing: 0.16px;
-    background:transparent;
+    background: transparent;
     position: relative;
 }
 
@@ -209,9 +221,10 @@ p{
     height: 2px;
     width: 60px;
     background-color: #396ba9;
+    display: none;
 }
 
-.contaner_card4{
+.contaner_card4 {
     width: 100vw !important;
     margin-left: -5rem;
     padding-left: 5rem !important;
@@ -222,11 +235,12 @@ p{
     padding-top: 2rem;
 }
 
-.contaner_card4 .product{
+.contaner_card4 .product {
+
     background: none;
 }
 
-.contaner_card4 .product_info{
+.contaner_card4 .product_info {
     margin-left: -2rem;
     padding-right: 5rem;
     background: none;
@@ -234,6 +248,8 @@ p{
 
 .product {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     gap: 170px;
     background: rgba(24, 24, 24, 1);
 }
@@ -248,7 +264,7 @@ p{
 
 .product .Img_three {
     width: 700px;
-height: 560px;
+    height: 560px;
 }
 
 .product_info {
@@ -260,7 +276,7 @@ height: 560px;
     margin-top: 100px;
 }
 
-.product_info1{
+.product_info1 {
     margin-left: -2rem;
 }
 
@@ -328,8 +344,8 @@ height: 560px;
     margin-top: 20px;
 }
 
-.class2{
-    
+.class2 {
+
     text-align: center;
 }
 
@@ -337,62 +353,72 @@ height: 560px;
     background-color: none;
 }
 
-.harbour div p{
-    text-align: left;;
+.harbour div p {
+    text-align: left;
+    ;
 }
-.harbour .card1 h1{
+
+.harbour .card1 h1 {
     padding-left: 10px;
 }
+
 .design {
     width: 100%;
     justify-content: center;
-    position:relative;
+    align-items: center;
+    position: relative;
     gap: 100px;
     margin-top: 5rem;
     grid-template-columns: repeat(2, 300px);
     height: 1000px;
 
 }
+
 .card1 {
     border: 2px solid white;
     position: absolute;
     width: 400px;
-    height:350px ;
+    height: 350px;
     top: 5px;
-    left: 250px; 
+    left: 250px;
 
 }
+
 .card2 {
     border: 2px solid white;
     /* margin-top: 50px; */
     position: absolute;
     width: 400px;
-    height:350px ; 
+    height: 350px;
     top: 80px;
     left: 700px;
 }
+
 .card3 {
     border: 2px solid white;
     position: absolute;
     width: 400px;
-    height:350px ; 
+    height: 350px;
     top: 470px;
     left: 250px;
 }
+
 .card4 {
     border: 2px solid white;
     /* margin-top: 100px; */
     position: absolute;
     width: 400px;
-    height:350px ;
+    height: 350px;
     top: 550px;
-    left: 700px; 
+    left: 700px;
 }
 
 .contaner_card2 {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100vw;
-    height: 100%;
+    /* height: 100%; */
     margin-left: -5rem !important;
     padding-left: 5rem;
     object-fit: cover;
@@ -400,18 +426,20 @@ height: 560px;
     background-size: cover;
     background-position: center;
     padding-bottom: 0;
+
 }
 
 
 .contaner_card2 img {
     object-fit: contain;
     margin-left: -3.5rem;
-   z-index: 10;
-   width: 800px;
-   height: 100%;
+    z-index: 10;
+    width: 800px;
+    height: 100%;
+    overflow: hidden;
 }
 
-.contaner_card2 .product{
+.contaner_card2 .product {
     background: none;
 }
 
@@ -423,11 +451,11 @@ height: 560px;
 }
 
 
-.contaner_card3{
+.contaner_card3 {
     position: relative;
 }
 
-.watermark3{
+.watermark3 {
     position: absolute;
     bottom: 1rem;
     right: -5rem;
@@ -439,19 +467,29 @@ height: 560px;
     opacity: 0.02;
 }
 
-.contaner_card3 .product_info{
+.contaner_card3 .product_info {
     margin-left: -4rem;
 }
-.contaner_card3 .product_info p{
+
+.contaner_card3 .product_info p {
     text-align: justify;
     text-justify: inter-word;
     width: 100%;
 }
 
 
-.contaner_card4{
+.contaner_card4 {
+    justify-content: space-between;
+    align-items: center;
     position: relative;
 }
+
+.contaner_card4 .product_info{
+    margin-right: 5rem;
+    
+}
+
+
 
 .watermark2 {
     position: absolute;
@@ -468,7 +506,7 @@ height: 560px;
 
 
 
-.harbour1{
+.harbour1 {
     padding-left: 5.5rem;
     width: 100vw !important;
     margin-left: -5rem;
@@ -478,7 +516,7 @@ height: 560px;
     background-position: center;
 }
 
-.harbour2{
+.harbour2 {
     position: relative;
 }
 
@@ -494,7 +532,7 @@ height: 560px;
     opacity: 0.02;
 }
 
-.harbour2 .heading{
+.harbour2 .heading {
     text-align: center;
 }
 
@@ -503,69 +541,82 @@ height: 560px;
     margin-top: 30px;
     margin-left: 10px;
 }
-.card1 h3{
+
+.card1 h3 {
     margin-top: 15px;
     margin-left: 10px;
-    
+
 }
-.card1 p{
+
+.card1 p {
     margin-top: 25px;
-     margin-left:10px ;
-     margin-right:10px ;
+    margin-left: 10px;
+    margin-right: 10px;
 }
+
 .card2 img {
     margin-top: 40px;
     margin-left: 10px;
 }
-.card2 h1{
+
+.card2 h1 {
     margin-top: 15px;
     margin-left: 10px;
 }
-.card2 p{
+
+.card2 p {
     margin-top: 30px;
-     margin-left:10px ;
-     margin-right:10px ;
+    margin-left: 10px;
+    margin-right: 10px;
 }
+
 .card3 img {
     margin-top: 30px;
     margin-left: 10px;
 }
-.card3 h1{
+
+.card3 h1 {
     margin-top: 15px;
     margin-left: 10px;
 }
-.card3 p{
+
+.card3 p {
     margin-top: 25px;
-     margin-left:10px ;
-     margin-right:10px ;
+    margin-left: 10px;
+    margin-right: 10px;
 }
+
 .card4 img {
     margin-top: 30px;
     margin-left: 10px;
 }
-.card4 h1{
+
+.card4 h1 {
     margin-top: 15px;
     margin-left: 10px;
 }
-.card4 p{
+
+.card4 p {
     margin-top: 25px;
-     margin-left:10px ;
-     margin-right:10px ;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
-.card_border_1{
+.card_border_1 {
     border: 2px solid red;
     width: 350px;
     height: 200px;
 
-    
-}
-.card_border_1 h3{
-    margin-left: 10px;
-    
 
 }
-.card{
+
+.card_border_1 h3 {
+    margin-left: 10px;
+
+
+}
+
+.card {
     height: 350px;
     display: flex;
     align-items: center;
@@ -588,14 +639,14 @@ height: 560px;
 
 .project {
     display: grid;
- 
+
     width: 100%;
     justify-content: center;
-    position:relative;
+    position: relative;
     gap: 100px;
     margin-top: 5rem;
     grid-template-columns: repeat(2, 350px);
-    grid-template-rows: repeat(2,350px);
+    grid-template-rows: repeat(2, 350px);
     height: 1000px;
 }
 
@@ -605,21 +656,24 @@ height: 560px;
 .card5 {
     border: 2px solid white;
 }
+
 .card5 img {
     margin-top: 30px;
     margin-left: 10px;
 }
-.card5 h1{
+
+.card5 h1 {
     margin-top: 15px;
     margin-left: 10px;
 }
-.card5 p{
+
+.card5 p {
     margin-top: 25px;
-     margin-left:10px ;
-     margin-right:10px ;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
-.harbour .design h1{
+.harbour .design h1 {
     font-weight: 700;
     font-size: 22px;
     line-height: 33px;
@@ -629,25 +683,25 @@ height: 560px;
 
 
 
-.contaner .main h1{
+.contaner .main h1 {
     font-weight: 700;
     font-size: 22px;
     line-height: 33px;
     letter-spacing: 0.162793px;
-    color: #FFFFFF;
+    color: #FFFFFF;
 }
 
-.harbour .project h1{
+.harbour .project h1 {
     font-weight: 700;
     font-size: 22px;
     line-height: 33px;
     letter-spacing: 0.162793px;
-    color: #FFFFFF;
+    color: #FFFFFF;
 }
 
 
 
 
-.num{
+.num {
     object-fit: contain;
 }

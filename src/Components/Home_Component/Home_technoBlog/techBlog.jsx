@@ -34,7 +34,7 @@ const TechBlog = ({ postdata }) => {
                                         </th>
                                         <th className={Styles.row_2}>
 
-                                            <Link to={`/singal_article/${post.id}`}> <h1 dangerouslySetInnerHTML={{ __html: post.title.slice(0, 30) + "..." }}></h1></Link>
+                                            <Link to={`/article`}> <h1 dangerouslySetInnerHTML={{ __html: post.title.slice(0, 30) + "..." }}></h1></Link>
                                             <div dangerouslySetInnerHTML={{ __html: post.description.split(/(<[^>]+>)/)[2].slice(0, 100) + "..." }}></div>
                                         </th>
                                     </tr>

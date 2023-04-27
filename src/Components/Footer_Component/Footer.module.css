@@ -128,16 +128,133 @@
 
 
 
-@media (max-width:1250px) {
+@media (max-width:1100px) {
+    .Footer {
+        width: 100%;
+        background-color: rgb(16, 16, 16);
+        position: relative;
+    }
+    
+    .Footer>img{
+        position: absolute;
+        right: 1rem;
+        bottom: 1rem;
+        cursor: pointer;
+    }
+    
+    .Footer_main {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        padding-left: 10px;
+    }
+    
+    
     .footer_part_one {
-        width: 300px;
+        width:320px;
+      padding-left: 15px;
     }
-
+    
     .footer_part_two {
-        width: 240px;
+        width:320px;
+        
     }
-
+    
     .footer_part_three {
-        width: 200px;
+       width: 100%;
+       margin-left: -3rem;
     }
+    
+    .footer_part_one>h1 {
+        width: 100%;
+        font-weight: 400;
+        font-size: 20px;
+        color: #FFFFFF;
+    }
+    
+    
+    .footer_part_one>a {
+        color: white
+    }
+    
+    .Submit_btn {
+        position: relative;
+        height: 60px;
+    }
+    
+    .Submit_btn div {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        background: #396ba9;
+    }
+    
+    .Submit_btn h2 {
+        position: absolute;
+        top: -0.5rem;
+        left: 10px;
+        font-size: 20px;
+    }
+    
+    
+    
+    .title {
+        padding-bottom: 18px;
+        font-weight: bold;
+    }
+    .title3 {
+        margin-left: -2.6rem;
+        font-weight: bold;
+    }
+    
+    
+    .social_media_icons {
+        display: flex;
+        gap: 20px;
+        font-size: 20px;
+        margin-top: -2rem;
+    }
+    
+    .social_media_icons a {
+        color: white;
+    }
+    
+    .social_media_icons .icon{
+        font-size: 20px;
+    }
+    
+    
+    .explore_content ul {
+        /* width: 100%; */
+        list-style: none;
+        display:grid;
+        grid-template-columns: repeat(2);
+        flex-direction: column;
+        justify-content: space-evenly;
+        
+    
+    }
+    
+    .explore_content a {
+        text-decoration: none;
+        color: white;
+        width: max-content;
+    }
+    
+    
+
+    
+    .copyright {
+        width: 100%;
+        height: 35px;
+        background: var(--secondary-black-color);
+        color: white;
+        font-weight: 500;
+        font-size: 12px;
+        padding-left: 15px;
+    }
+ 
 }

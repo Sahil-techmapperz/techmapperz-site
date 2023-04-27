@@ -26,7 +26,7 @@ const Custom_Consulting = () => {
     return (
         <div className={Styles.CRM_Integretion}>
             <section className={Styles.first_part}>
-                <h1>CRM Implementation</h1>
+                <h1>Custom CRM Consulting</h1>
                 <p><Link to={"service"}>Services</Link> /<Link to={"/crm_page"}> CRM-ERP</Link> / Custom CRM Consulting</p>
             </section>
 
