@@ -73,8 +73,8 @@ const Navbar = () => {
 
       >
         <DrawerOverlay />
-        <DrawerContent backgroundColor={"gray.400"}>
-          <DrawerCloseButton />
+        <DrawerContent backgroundColor={"#181818"}>
+          <DrawerCloseButton  size={"lg"}/>
           <DrawerBody display={"flex"} flexDirection="column" justifyContent={"center"} alignItems="center" gap="2rem">
             <Box fontSize={"25px"} onClick={onClose} ><Link to={"/"}>Home</Link></Box>
             <Box fontSize={"25px"} onClick={onClose}><Link to={"/service"}>Service</Link></Box>
@@ -85,11 +85,6 @@ const Navbar = () => {
 
           </DrawerBody>
 
-          <DrawerFooter>
-            <Button colorScheme={"red"} variant='outline' mr={3} onClick={onClose}>
-              Cancel
-            </Button>
-          </DrawerFooter>
         </DrawerContent>
       </Drawer>
 

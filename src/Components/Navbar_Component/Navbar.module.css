@@ -113,10 +113,15 @@
         padding: 10px;
         background-color:rgba(0, 0, 0,0.7);
     }
+    .left_nav img{
+        transform: scale(3);
+        padding-left: 25px;
+    }
     .menue{
         display: block;
-        font-size: 16px;
+        font-size: 25px;
         cursor: pointer;
+        
     }
     .right_nav{
         display: none;

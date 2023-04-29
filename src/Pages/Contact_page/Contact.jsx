@@ -167,7 +167,7 @@ const Contact = () => {
                 </div>
                 <div className={Styles.contact_bottom_right}>
                     <VStack  spacing={8}>
-                        <HStack  spacing={4}>
+                        <HStack  spacing={[4,14,14]}>
                             <FormControl isInvalid={hasError.name}>
                                 <FormLabel>Full Name*</FormLabel>
                                 <Input
@@ -193,7 +193,7 @@ const Contact = () => {
                             </FormControl>
                         </HStack>
 
-                        <HStack spacing={4}>
+                        <HStack spacing={[4,14,14]}>
                             <FormControl isInvalid={hasError.projectType}>
                                 <FormLabel>Project Type*</FormLabel>
                                 <Input
@@ -201,7 +201,7 @@ const Contact = () => {
                                     value={contactdata.projectType}
                                     onChange={handalechange}
                                     placeholder="Enter Project Type"
-
+                                   
                                 />
                                 <FormErrorMessage>{hasError.projectType}</FormErrorMessage>
                             </FormControl>
@@ -221,15 +221,17 @@ const Contact = () => {
                             </FormControl>
                         </HStack>
 
-                        <HStack w={"100%"} pl={"3.5rem"} pr={"3.5rem"}>
+                        <HStack  className={Styles.message} w={["100%","90%","90%"]} >
                         <FormControl isInvalid={hasError.projectdetails}>
                             <FormLabel>Write Project Details*</FormLabel>
                             <Textarea
+                                className={Styles.message_textarea}
                                 name="projectdetails"
                                 value={contactdata.projectdetails}
                                 onChange={handalechange}
                                 placeholder="Write Project Details"
                                 h={"200px"}
+                                width={"100%"}
                             />
                             <FormErrorMessage>
                                 {hasError.projectdetails}

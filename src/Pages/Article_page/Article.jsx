@@ -57,8 +57,8 @@ function Article() {
     <div className={Styles.article}>
 
       <div className={Styles.top_part}>
-        <h1>News & Articals</h1>
-        <p> <Link to={"/"}>Home</Link> / News & Articals</p>
+        <h1>News & Articles</h1>
+        <p> <Link to={"/"}>Home</Link> / News & Articles</p>
       </div>
 
 
