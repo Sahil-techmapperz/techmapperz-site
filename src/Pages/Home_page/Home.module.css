@@ -184,7 +184,7 @@
 
 .know_more .know_more_btn div {
     width: 55px;
-    height: 50px;
+    height: 55px;
     border-radius: 50%;
     background: #396ba9;
 }
@@ -223,7 +223,7 @@
 }
 
 .card_contaner .card img {
-    object-fit: cover;
+    object-fit:contain;
 }
 
 .card_contaner .card h1 {
@@ -675,17 +675,38 @@
 @media (max-width:1100px) {
 
 
+
 /* Carousel */
+
+.home_first_part {
+    width: 100%;
+    position: relative;
+    background-color: #0b0b0b;
+    overflow: hidden;
+}
+
+.carousel_container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.carousel_img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
 
     .carousel_container .title {
         color:white;
         position: absolute;
         z-index: 3;
-        top: 2rem;
-        left: -16rem;
-        font-size: 16px;
+        top: 6rem;
+        left: -22rem;
+        font-size: 20px;
         font-weight:bold;
-        width: 250px;
+        width: 100%;
     }
     
     
@@ -693,46 +714,47 @@
         color: white;
         position: absolute;
         z-index: 3;
-        bottom: 1rem;
-        left: 0rem;
-        width: 150px;
-        font-size: 6px;
-        font-weight: 600;
-        text-align: left;
+        top: 12rem;
+        left: 1.5rem;
+        width:90%;
+        height: max-content;
+        font-size: 14px;
+        text-align:left;
+        /* text-justify: inter-word; */
         border-left: 6px solid #396ba9;
-        padding-left: 10px;
+        padding-left: 5px;
         /* display: none; */
     }
     
     
     .carousel_container .know_more {
         position: absolute;
-        bottom: 1rem;
+        bottom: 10rem;
         width: 250px;
-        left: 46%;
+        left: 35%;
     }
 
     
     .custom_arrow {
         position: absolute;
-        top: 30rem;
-        right: 3rem;
+        top: 33rem;
         color: white;
         border: none;
-        font-size: 24px;
+        font-size: 18px;
         padding: 10px;
         cursor: pointer;
         z-index: 10;
+        display: none;
     }
     
     .custom_arrow_prev {
-        right: 5rem;
-        font-size: 60px;
+        right: 10rem;
+        font-size: 30px;
     }
     
     .custom_arrow_next {
-        font-size: 60px;
-        right: 4rem;
+        font-size: 30px;
+        right: 6rem;
     }
     
     .custom_arrow[disabled] {
@@ -740,7 +762,14 @@
         cursor: not-allowed;
     }
     .SCROLL_DOWN{
-        display: none;
+        position: absolute;
+    bottom: 5rem;
+    left: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
     }
 
 
@@ -749,29 +778,29 @@
     .features {
         position: relative;
         width: 100%;
-        padding: 10px;
-        padding-bottom: 2rem;
+        padding:4rem 2rem;
         background-color: #171717;
     }
 
-    .slider .title {
+ .title {
         font-size: 20px;
-        width: 300px;
-        right: 1rem;
-        top: 2rem;
+        text-align: center;
     }
 
     .features_top>h1 {
-        font-size: 20px;
+        font-size: 14px;
+        font-weight: bolder;
         width: 100%;
+        text-align: center;
     }
 
     .features_top .info {
+        margin-top: -0.6rem;
         width: 100%;
     }
 
     .features_top .info>p {
-        font-size: 16px;
+        font-size: 14px;
         margin-left: 2px;
     }
 
@@ -786,14 +815,15 @@
         gap: 10px;
     }
 
-    .know_more .know_more_btn {
+ .features .know_more .know_more_btn {
         position: relative;
         height: 40px;
+        left: 5rem;
     }
     
     .know_more .know_more_btn div {
         width: 35px;
-        height: 30px;
+        height: 35px;
         border-radius: 50%;
         background: #396ba9;
     }
@@ -820,13 +850,18 @@
 
     .features .card h1{
         font-size: 20px;
+        text-align: center;
     }
 
     .View_All_Services {
         position: absolute;
         width: 200px;
-        bottom: 1rem;
+        bottom:1rem;
         left: 10px;
+    }
+
+    .card_contaner .card {
+        width: 250px;
     }
 
     /* Technology */
@@ -834,7 +869,7 @@
     .Technology {
         width: 100%;
         position: relative;
-        padding: 10px;
+        padding: 2rem;
     }
     
     
@@ -859,22 +894,13 @@
     
     .technology_contaner .technology_left h1 {
         font-weight: bold;
-        font-size: 26px;
-        line-height: 54px;
-        letter-spacing: 0.162793px;
-        color: #FFFFFF;
-        word-wrap: break-word;
-        margin-top: 0rem;
+        font-size: 14px;
+        text-align: center;
     }
     
     .technology_contaner .technology_left p {
         font-weight: 400;
-        font-size: 16px;
-        line-height: 24px;
-        letter-spacing: 0.162793px;
-        color: #FFFFFF;
-        border-left: 6px solid #396ba9;
-        padding-left: 10px;
+        font-size: 14px;
     }
     
     
@@ -920,6 +946,7 @@
         position: absolute;
         bottom: 0;
         left: 13rem;
+        display: none;
     }
 
 
@@ -934,11 +961,12 @@
         height: 100%;
         position: relative;
         background-color: #171717;
-        padding: 10px;
+        padding:2rem;
         background-image: url("../../Photos/Home/Why\ choose\ techmapperz-min.gif");
         overflow: hidden;
         background-size: cover;
         background-position: center;
+        gap: 2.5rem;
     }
     
     .About_us::before {
@@ -984,9 +1012,9 @@
     }
     
     .About_us .about_left .about_img_2 {
-        width: 200px;
+        width: 175px;
         top: 4rem;
-        left: 8rem;
+        left: 7rem;
     }
     
     .About_us .about_right {
@@ -1014,11 +1042,8 @@
     
     .About_us .about_right .about_right_contener h1 {
         font-weight: bold;
-        font-size: 22px;
-        line-height: 54px;
-        letter-spacing: 0.162793px;
-        color: #FFFFFF;
-        margin-bottom: -0.5rem;
+        font-size: 14px;
+        text-align: center;
     }
     
     .About_us .about_right .about_right_contener p {
@@ -1038,17 +1063,20 @@
         right: 0;
     }
 
+    .About_us .know_more{
+        position: relative;
+        left: 5rem;
+    }
 
     /* Brand_Partners */
     .Brand_Partners {
         width: 100%;
-        height: 370px;
+        height: 430px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         background-color: #1c1c1c;
-        padding: 10px;
     }
     
     .Brand_Partners_left {
@@ -1059,8 +1087,8 @@
     
     .Brand_Partners_right {
         width: 100%;
-        margin-top: -5rem;
-        margin-left: 3rem;
+        margin-top: -4rem;
+        margin-left: 8rem;
     }
     
     
@@ -1083,9 +1111,8 @@
     }
     
     .Brand_Partners .Brand_Partners_right img {
-        width: 150px;
+        width: 200px;
         margin-top: -1rem;
-       margin-left:40px;
        margin-bottom: 2rem;
     }
 
@@ -1101,10 +1128,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    padding: 2rem;
     margin: auto;
     background-color: black;
-   
+   padding-bottom: 2rem;
 
 }
 
@@ -1120,7 +1147,7 @@
 .Testimonial>p {
     font-weight: 400;
     font-size: 14px;
-    color: white;
+    color: #808080;
     margin-bottom: -1rem;
     z-index: 10;
 }

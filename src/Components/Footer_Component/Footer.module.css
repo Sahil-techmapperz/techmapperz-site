@@ -45,9 +45,7 @@
     /* margin-top: -5px; */
 }
 
-.footer_part_one>p{
-    /* margin-top: -20px; */
-}
+
 
 .footer_part_one>a {
     color: white
@@ -133,6 +131,7 @@
         width: 100%;
         background-color: rgb(16, 16, 16);
         position: relative;
+        overflow: hidden;
     }
     
     .Footer>img{
@@ -149,7 +148,7 @@
         justify-content: center;
         align-items: center;
         margin-top: 20px;
-        padding-left: 10px;
+        padding: 1rem;
     }
     
     
@@ -171,8 +170,14 @@
     .footer_part_one>h1 {
         width: 100%;
         font-weight: 400;
-        font-size: 20px;
+        font-size: 16px;
         color: #FFFFFF;
+        text-align: center;
+    }
+    .footer_part_one>p{
+       font-size: 14px;
+       font-weight: bold;
+       text-align: center;
     }
     
     
@@ -183,11 +188,12 @@
     .Submit_btn {
         position: relative;
         height: 60px;
+        left: 6rem;
     }
     
     .Submit_btn div {
-        width: 45px;
-        height: 45px;
+        width: 35px;
+        height: 35px;
         border-radius: 50%;
         background: #396ba9;
     }
@@ -196,7 +202,7 @@
         position: absolute;
         top: -0.5rem;
         left: 10px;
-        font-size: 20px;
+        font-size: 16px;
     }
     
     
@@ -204,16 +210,18 @@
     .title {
         padding-bottom: 18px;
         font-weight: bold;
+        text-align: center;
     }
     .title3 {
-        margin-left: -2.6rem;
         font-weight: bold;
+        margin-left: 4rem;
+        width: 100%;
     }
     
     
     .social_media_icons {
         display: flex;
-        gap: 20px;
+        gap: 23px;
         font-size: 20px;
         margin-top: -2rem;
     }
@@ -223,7 +231,7 @@
     }
     
     .social_media_icons .icon{
-        font-size: 20px;
+        font-size: 30px;
     }
     
     
@@ -231,9 +239,8 @@
         /* width: 100%; */
         list-style: none;
         display:grid;
-        grid-template-columns: repeat(2);
-        flex-direction: column;
-        justify-content: space-evenly;
+        grid-template-columns: repeat(2,120px);
+       margin-left: -1rem;
         
     
     }
@@ -244,7 +251,9 @@
         width: max-content;
     }
     
-    
+    .backtoTop{
+        display: none;
+    }
 
     
     .copyright {
@@ -254,7 +263,7 @@
         color: white;
         font-weight: 500;
         font-size: 12px;
-        padding-left: 15px;
+        padding-left: 12px;
     }
  
 }
