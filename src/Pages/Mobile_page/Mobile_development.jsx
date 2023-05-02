@@ -239,7 +239,7 @@ const Mobile_development = () => {
                         </div>
                         <div className={styles.card}>
                             <img src={MobileDev15} />
-                            <h3>Transperency</h3>
+                            <h3>Transparency</h3>
                             <p>Your business is important to you, and also to us, so it needs to be in safe hands of our expert IT technicians, We at techMapperz...</p>
                         </div>
                     </div>

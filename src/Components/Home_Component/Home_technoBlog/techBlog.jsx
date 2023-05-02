@@ -41,7 +41,7 @@ const TechBlog = ({ postdata }) => {
                                 )
                             })}
 
-                        </table>
+                        
 
                         <div className={Styles.getintouch_btn}>
                             <Link to={"/contact"} >
@@ -51,7 +51,7 @@ const TechBlog = ({ postdata }) => {
                                 </div>
                             </Link>
                         </div>
-
+                        </table>
                         
                     </div>
 

@@ -42,25 +42,21 @@
 
 
 .secand_part {
-    width: 90%;
-    margin: auto;
+    width: 100%;
     background: rgba(24, 24, 24, 1);
     
 }
 
 .info {
     display: flex;
+    width: 100%;
+    padding: 2rem 5rem;
     flex-direction: column;
     background: none;
     background: rgba(24, 24, 24, 1);
 
 } 
- .info .p {
-text-align: center;
-    justify-content: center;
-    align-items: center; 
-    
-}
+
 
 .info>p {
     font-size: 16px;
@@ -72,13 +68,12 @@ text-align: center;
     text-align:justify;
     text-justify: inter-word;
     width: 100%;
-    margin-left: 13px;
     
 }
 
 
 .contaner {
-    padding-bottom: 30px;
+    padding: 2rem 5rem;
     background: rgba(24, 24, 24, 1);
 }
 
@@ -136,12 +131,12 @@ text-align: center;
 }
 
 .product img {
-    width: 715px;
+    width: 50%;
     object-fit: contain;
 }
 
 .product .Img_two {
-    width: 110%;
+    width: 100%;
     object-fit: contain;
 
 }
@@ -151,7 +146,7 @@ text-align: center;
 }
 
 .product .Img_three {
-    width: 469px;
+    width: 100%;
     height: 368px;
 }
 
@@ -160,7 +155,7 @@ text-align: center;
     flex-direction: column;
     gap: 10px;
     position: relative;
-    width: 730px;
+    width:50%;
 } 
 
 
@@ -184,8 +179,7 @@ text-align: center;
 
 
 .service {
-    width: 100vw;
-    margin-left: -5rem;
+    width: 100%;
     padding: 2rem 5rem;
     background: url("../../Photos/banner_4.png");
     background-size: cover;
@@ -213,7 +207,7 @@ text-align: center;
 
 
  .product_info a {
-    width: 25%;
+    width: 100%;
 } 
 
 .product_info .btn {
@@ -256,7 +250,7 @@ text-align: center;
 
 .Img_four {
     margin: auto;
-    width: 762px;
+    width: 60%;
     height: 312px;
     object-fit: cover;
 }
@@ -273,4 +267,272 @@ text-align: center;
     background: none;
     text-align: center;
     
+}
+
+
+
+@media (max-width: 1100px) {
+    .part1 {
+        height: 250px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        object-fit: cover;
+        background: url("../../Photos/banner_3.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .part1>h1 {
+        font-size: 36px;
+        line-height: 40px;
+        letter-spacing: 0.16px;
+        background: none;
+        text-align: center;
+        margin-top: 3rem;
+    }
+    
+    .part1>p {
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 0.16px;
+        background: none;
+        color: white;
+        text-align: center;
+    }
+    
+    
+    
+    
+    .secand_part {
+        width:100vw;
+        padding: 2rem;
+        background: rgba(24, 24, 24, 1);
+        
+    }
+    
+    .info {
+        display: flex;
+        flex-direction: column;
+        background: none;
+        background: rgba(24, 24, 24, 1);
+    
+    } 
+    
+    .info>p {
+        font-size: 16px;
+        font-weight: 400px;
+        line-height: 26px;
+        letter-spacing: 0.36;
+        background: transparent;
+        padding-top: 25px;
+        text-align:justify;
+        text-justify: inter-word;
+        width: 100%;
+        margin-left: 0px;
+        
+    }
+    
+    
+    .contaner {
+        padding-bottom: 30px;
+        background: rgba(24, 24, 24, 1);
+    }
+    
+    
+    .heading {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 34px;
+        letter-spacing: 0.16px;
+        padding-bottom: 20px;
+        background: none;
+        position: relative;
+        width:100vw;
+    }
+    
+    .heading::after {
+        content: "";
+        position: absolute;
+        right: -5rem;
+        bottom: 2.7rem; 
+        height: 2px;
+        width: 50px; 
+        background-color:#396ba9;
+        display: none;
+    }
+    .heading2 {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 54px;
+        letter-spacing: 0.16px;
+        padding-bottom: 20px;
+        background: none;
+        position: relative;
+        width: fit-content;
+    }
+    
+    .heading2::after {
+        content: "";
+        position: absolute;
+        right: 4rem;
+        bottom: 2.7rem; 
+        height: 2px;
+        width: 50px; 
+        background-color:#396ba9;
+        display: none;
+    }
+    
+    
+    .product {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 120px;
+        /* background: rgba(24, 24, 24, 1); */
+    }
+    
+    .product img {
+        width:100vw;
+        object-fit: contain;
+    }
+    
+    .product .Img_two {
+        width: 110%;
+        object-fit: contain;
+    
+    }
+    
+    .project {
+        margin-left: 20px;
+    }
+    
+    .product .Img_three {
+        width: 469px;
+        height: 368px;
+    }
+    
+    .product_info {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        position: relative;
+        width:100vw;
+        padding: 2rem;
+    } 
+    
+    
+    
+     .product_info>p {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.16;
+        font-weight: 400;
+        text-align: justify;
+        text-justify: inter-word;
+        width:100%;
+    } 
+    
+    
+    
+     .project ul{
+        list-style: disc;
+        margin-left: 0rem;
+    }
+    
+    
+    .service {
+        width: 100vw;
+        margin-left: -2rem;
+        padding:0rem;
+        background: url("../../Photos/banner_4.png");
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .project {
+        margin-left: 30px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.16px;
+    } 
+    .project>ul>li {
+        color: #396ba9;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.16px;
+    }
+    
+    .project>ul>li>p{
+       color:#acaaaa;
+    }
+    
+    
+     .product_info a {
+        width:100%;
+    } 
+    
+    .product_info .btn {
+        position: relative;
+        height: 60px;
+    }
+    
+    .product_info .btn div {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background: #396ba9;
+    }
+    
+    .product_info .btn h2 {
+        position: absolute;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 39px;
+        letter-spacing: 0.16px;
+        width: 100%;
+        top: -1rem;
+        left: 10px;
+    }
+    
+    .card_info {
+        text-align: center;
+    }
+    
+    .card_info h1 {
+        text-align: center;
+    }
+    
+    .card1 p{
+        text-align: center;
+        margin-top: -2rem;
+    }
+    
+    
+    
+    .Img_four {
+        margin: auto;
+        width: 762px;
+        height: 312px;
+        object-fit: cover;
+    }
+    
+    
+    
+    
+    .heading3{
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 54px;
+        letter-spacing: 0.16px;
+        padding-bottom: 20px;
+        background: none;
+        text-align: center;
+        
+    }
 }
