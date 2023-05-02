@@ -24,7 +24,7 @@ const Choose = () => {
                   <div> <img src={Aboutus3} /></div> 
 
                     <div className={styles.company_info}>
-                        <h2 className={styles.heading}>Why Choose Techmapparz</h2>
+                        <h2 className={styles.heading}>Why Choose Techmapperz</h2>
                         <p>The smaller things make big difference in everything that we do,we at Techmapperz also believe in the attention
                             to detail methodology. and our eye to the detail in every project that we manage is what makes us stand out from the
                             rest, we have a 4 step approach on how we execute a project</p>

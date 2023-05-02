@@ -86,10 +86,6 @@ const Web_GIS = () => {
                             <div className={`${Styles.Image} ${Styles.Image_1}`}>
                                 <img src={WebGis2} alt='' />
                             </div>
-
-                            <div>
-
-                            </div>
                         </div>
                         </div>
 

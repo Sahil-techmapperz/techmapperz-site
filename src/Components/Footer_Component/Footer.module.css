@@ -16,31 +16,34 @@
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    justify-content: center;
+    justify-content:space-between;
     align-items: center;
     gap: 20px;
+   
 }
 
 
+
+
 .footer_part_one {
-    width: 469px;
+    width: 100%;
     margin-top: -25px;
 }
 
 .footer_part_two {
-    width: 340px;
-    margin-left: 2rem;
+    width: 100%;
+    margin-left:7%;
 }
 
 .footer_part_three {
-    width: 300px;
-    margin-left: 6rem;
+    width: 100%;
+    margin-left:15%;
 }
 
 .footer_part_one>h1 {
     width: 100%;
-    font-weight: 400;
-    font-size: 36px;
+    font-weight:bold;
+    font-size: 30px;
     color: #FFFFFF;
     /* margin-top: -5px; */
 }
@@ -65,9 +68,10 @@
 
 .Submit_btn h2 {
     position: absolute;
-    top: -0.5rem;
+    font-weight: 700;
+    top: -15px;
     left: 10px;
-    font-size: 20px;
+    font-size: 26px;
 }
 
 

@@ -14,7 +14,7 @@
 
 .Remote_Sensing>.top {
     height: 400px;
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -43,19 +43,20 @@
 
 
 .contaner {
-    width: 100vw;
+    width: 100%;
     background: rgba(24, 24, 24, 1);
 }
 
 
 .contaner_first {
-    width: 100vw;
+    width: 100%;
     box-sizing: border-box;
-    padding: 2rem 5rem;
+    
 }
 
-.contaner_first p{
+.contaner_first>p{
     color: #d3d3d3;
+    padding: 2rem 5rem;
 }
 
 .contaner_first .into {
@@ -86,23 +87,27 @@
     display: flex;
     justify-content: space-between;
     margin-top: 2rem;
+    padding: 2rem 5rem;
 }
+
 
 
 
 .card_tow{
-    width: 100vw;
-    margin-left: -5rem;
-    padding: 0 5rem;
+    width: 100%;
+    /* margin-left: -5rem; */
+    padding: 0;
     display: flex;
     background: url("../../Photos/banner_3.jpg");
     background-size: cover;
     background-position: center;
+    padding: 2rem 5rem;
 }
 
 
 .Image {
-    width: 460px;
+    width: 50%;
+
 }
 
 
@@ -146,28 +151,24 @@
 
 
 .card_one .details {
-    width: 724px;
-    height: 300px;
+    margin-top: 50px;
     position: relative;
-    margin-top: 5rem;
+
 }
 
 .details {
-    width: 724px;
-    height: 400px;
-    margin-bottom: 2rem;
+    width: 50%;
+    height: fit-content;
+    padding-bottom: 100px;
     position: relative;
-
 }
 
-.details p {
+.details>p {
     width: 100%;
-    height: 120px;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.162793px;
-    margin-top: 4.2rem;
     text-align: justify;
     text-justify: inter-word;
 }
@@ -193,11 +194,6 @@
     display: none;
 }
 
-
-.details1{
-    width: 640px !important;
-    margin-right: -14rem;
-}
 
 
 
@@ -231,7 +227,6 @@
 
 .contaner_secend {
     width: 100%;
-    height: 440px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -245,7 +240,6 @@
     line-height: 54px;
     letter-spacing: 0.162793px;
     color: #FFFFFF;
-    margin-top: -2rem;
 }
 
 
@@ -297,7 +291,7 @@
     
     
     .Remote_Sensing>.top {
-        height: 400px;
+        height: 200px;
         width: 100vw;
         display: flex;
         flex-direction: column;
@@ -311,17 +305,21 @@
     }
     
     .top>h1 {
-        font-size: 66px;
-        line-height: 99px;
+        font-size: 30px;
+        line-height: 50px;
         letter-spacing: 0.16px;
         background: none;
+        text-align: center;
+        font-weight: bold;
     }
     
     .top>p {
-        font-size: 20px;
+        font-size: 16px;
         line-height: 30px;
-        letter-spacing: 0.16px;
+        letter-spacing: 0px;
         background: none;
+        text-align: center;
+        font-weight: bold;
     }
     
     
@@ -335,7 +333,7 @@
     .contaner_first {
         width: 100vw;
         box-sizing: border-box;
-        padding: 2rem 5rem;
+        padding: 2rem;
     }
     
     .contaner_first .into {
@@ -356,16 +354,23 @@
     .card {
         width: 100%;
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
         margin-top: 2rem;
+
     }
     
     
     
     .card_tow{
         display: flex;
-        /* justify-content: center;
-        align-items: center; */
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card_tow>div{
+        width: 100%;
     }
     
     
@@ -387,38 +392,50 @@
     .Image h1 {
         width: 331px;
         font-weight: 600;
-        font-size: 36px;
+        font-size: 26px;
         line-height: 54px;
         letter-spacing: 0.162793px;
         margin-bottom: 20px;
         color: #FFFFFF;
+        text-align: center;
     }
     
     
     .Image img {
-        width: 100%;
+        width: 100vw;
         object-fit: cover;
     }
     
     
     .card_one .details {
-        width: 724px;
-        height: 300px;
+        width:100vw;
         position: relative;
         margin-top: 5rem;
+        margin-left: -1rem;
+        
+    }
+
+.card_one .details p {
+        width: 80%;
+        height:auto;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0;
+        margin-top: 4.2rem;
+        text-align: justify;
+        text-justify: inter-word;
+        border: 1px solid;
     }
     
     .details {
-        width: 724px;
-        height: 400px;
-        margin-bottom: 2rem;
-        position: relative;
+        width:100%;
     
     }
     
     .details p {
         width: 100%;
-        height: 120px;
+        height:auto;
         font-weight: 400;
         font-size: 16px;
         line-height: 24px;
@@ -446,20 +463,20 @@
         position: absolute;
         width: 30%;
         height: 60px;
-        left: 0;
-        bottom: 0;
+        left: 6rem;
+        bottom: -1rem;
     }
     
     .card .btn div {
-        width: 52px;
-        height: 52px;
+        width: 30px;
+        height: 30px;
         border-radius: 50%;
         background: #396ba9;
     }
     
     .card .btn h2 {
         position: absolute;
-        font-size: 26px;
+        font-size: 16px;
         font-weight: 700;
         line-height: 39px;
         letter-spacing: 0.16px;
@@ -471,7 +488,7 @@
     
     
     .contaner_secend {
-        width: 100%;
+        width: 100vw;
         height: 450px;
         display: flex;
         flex-direction: column;

@@ -1,6 +1,6 @@
 
 .Navbar{
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -10,7 +10,7 @@
 }
 
 .left_nav{
-    width: 18vw;
+    width: 18%;
 }
 
 .left_nav img{
@@ -114,7 +114,8 @@
         background-color:rgba(0, 0, 0,0.7);
     }
     .left_nav img{
-        transform: scale(3);
+        /* transform: scale(3); */
+        
         padding-left: 25px;
     }
     .menue{

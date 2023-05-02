@@ -181,15 +181,20 @@
     }
     .contact_bottom .contact_bottom_left{
         width: 100%;
-        padding: 0px;
+        padding: 2rem;
     }
 
     .contact_bottom .contact_bottom_left>h1{
         font-weight:bold;
         font-size: 26px;
+        text-align: center;
         letter-spacing: 0.162793px;
         color: #FFFFFF;
         
+    }
+
+    .contact_bottom .contact_bottom_left>p{
+        margin: auto;
     }
 
     .contact .contact_top h1{

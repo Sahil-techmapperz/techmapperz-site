@@ -173,6 +173,7 @@
     .first_part .company_info .heading {
         font-weight: bold;
         font-size: 26px;
+        margin-top: -2rem;
         text-align: center;
     }
     

@@ -42,7 +42,7 @@ const Drone_Service = () => {
                     <div className={styles.para1}>
 
                         <h1 className={styles.heading1}>Data Acquisition & Processing</h1>
-                        <img src={Drone_Service4} alt="" />
+                        <img  className={styles.drone_icon}  src={Drone_Service4} alt="" />
                     </div>
                     <div className={styles.process}>
                         <div> <img src={Drone_Service1} alt="Geospatial_Mapping.png" /></div>
@@ -108,7 +108,7 @@ const Drone_Service = () => {
 
                             <div className={styles.para2}>
                                 <h1 className={styles.heading}>3D Modelling</h1>
-                                <img src={Drone_Service4} alt="" />
+                                <img  className={styles.drone_icon} src={Drone_Service4} alt="" />
                             </div>
                             <p>3D Modelling uses aerial photogrammetry to generate a 3D model. It uses a series of photographs taken by a drone to measure everything in the 3D model such as volumetric calculation, distance measurement and etc. 3D modelling can visualize the building before they start the projects, helping us to capture details, intricacies, and beauty of a structure not easily seen from the ground level. We are a drone specialist with a team to provide solutions to our clients. We can also provide 2D and 3D mapping services to the clients.</p>
 
