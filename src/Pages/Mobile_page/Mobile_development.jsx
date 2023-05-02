@@ -45,17 +45,17 @@ const Mobile_development = () => {
 
             <section className={styles.secand_part}>
                 <p>In this digital era,it's not easy to live without smart devices,especially smartphones,Smart devices are transforming the way we live our lives. where mobile apps have become the most lucrative digital tool to make life easier and more conveient.
-                The mobile app software intelligently combines the latest  technology,and design solutions which constantly get updated.It incorporates API,GPS,Camera, Microphone,Artificial Intelligence and other latest technologies and becomes a Launchpad hurling your business to the next level.</p>
-                
+                    The mobile app software intelligently combines the latest  technology,and design solutions which constantly get updated.It incorporates API,GPS,Camera, Microphone,Artificial Intelligence and other latest technologies and becomes a Launchpad hurling your business to the next level.</p>
+
                 <div className={`${styles.contaner} ${styles.contaner_card2} `}>
-                    
+
                     <div className={styles.product}>
                         <div className={styles.product_info}>
-                        <h1 className={styles.heading1}>Our Mobile App Development Services</h1>
-                            <p>We provide IOS and A+ndroid mobile application development services to loverage mobile technology for your business; we provide IOS and Android mobile application development services </p>
+                            <h1 className={styles.heading1}>Our Mobile App Development Services</h1>
+                            <p>We provide IOS and Android mobile application development services to loverage mobile technology for your business; we provide IOS and Android mobile application development services </p>
                             <h2>Android App Development</h2>
                             <ul>
-                                <li><p>Anrroid Mobile App Development</p></li>
+                                <li><p>Android Mobile App Development</p></li>
                                 <li><p>Android TV App Development</p></li>
                                 <li><p>Android Tablet App Development</p></li>
                                 <li><p>Android Wear App Development</p></li>
@@ -63,23 +63,24 @@ const Mobile_development = () => {
                             <p>Market Development-Android has more then 80% of the market share in the handheld device market share in the handheld device market,making it arguably the most popular market</p>
                         </div>
                         <div className={styles.divimg1}>
-                        <img src={MobileDev1} alt="MobileDev1.png" />
+                            <img src={MobileDev1} alt="MobileDev1.png" />
                         </div>
-                       
+
                     </div>
                 </div>
 
 
                 <div className={`${styles.contaner} ${styles.contaner_card3} `}>
-                    <div className={styles.product}>
+                    {/* <div className={`${styles.product} ${styles.contaner_product3} `}> */}
+                    <div className={styles.product3}>
                         <div className={styles.devimg2}>
-                        <img src={MobileDev2} alt="MobileDev2.png" />
+                            <img src={MobileDev2} alt="MobileDev2.png" />
                         </div>
-                   
+
                         <div className={`${styles.product_info} ${styles.product_info1}`}>
-                        
-                        <h1  className={styles.heading2}>iOS App Development</h1>
-                          
+
+                            <h1 className={styles.heading2}>iOS App Development</h1>
+
                             <ul>
                                 <li><p>iphone App Development</p></li>
                                 <li><p>iPad App Development</p></li>
@@ -89,7 +90,7 @@ const Mobile_development = () => {
                             </ul>
                             <p>Source-Apple's stringent data protection standards makes sensitive corporate data lodged in iPhone applications  very safe and secure</p>
                         </div>
-                      
+
                     </div>
                 </div>
 
@@ -98,7 +99,7 @@ const Mobile_development = () => {
                 <div className={`${styles.contaner} ${styles.contaner_card4} `}>
                     <h1 className={`${styles.heading3} ${styles.class2}`}>Types of Mobile Application</h1>
                     <div className={styles.main}>
-                        <div className={styles.card10}>
+                        <div className={styles.card}>
                             <img src={MobileDev3} alt='' />
                             <h3>Native App</h3>
                             <p>These apps are applications built for a specific mobile platform.For example, Apple native applications are only accessible on Apple devices, and users may only accessible on Apple devices,and users may only access applications from other cell phone providers on their own branded devices...</p>
@@ -115,7 +116,7 @@ const Mobile_development = () => {
                             <img src={MobileDev5} alt='' />
                             <h3>Hybrid App</h3>
                             <p>Hybrid  apps pool the effectiveness of native apps and web-based apps and support both types of technology. These apps are swift and easy to create on the developer's end, but they often have a lower performance rate...</p>
-                            
+
                         </div>
 
                     </div>
@@ -123,31 +124,31 @@ const Mobile_development = () => {
 
 
 
-                
-                
+
+
                 <div className={styles.harbour}>
                     <div>
-                    <h1 className={`${styles.heading4} ${styles.class2}`}>How Mobile Applications  Grow Your  Business?</h1>
-                    <img className={styles.animation} src={MobileDev16} alt='' />
+                        <h1 className={`${styles.heading4} ${styles.class2}`}>How Mobile Applications  Grow Your  Business?</h1>
+                        <img className={styles.animation} src={MobileDev16} alt='' />
                     </div>
                     <div className={styles.design}>
 
                         <div className={styles.card1}>
-                        <div className={styles.testimg1}>
-                        <img src={MobileDev6} alt='' />
-                        <img className={styles.num} src={T01} alt='' />
-                        </div> 
-                        
+                            <div className={styles.testimg1}>
+                                <img src={MobileDev6} alt='' />
+                                <img className={styles.num} src={T01} alt='' />
+                            </div>
+
                             <h3>Market to Study</h3>
                             <p>We generelly conduct market research in determining your exact requirements and what you rivals are doing and what are their strengths and shortcomming...</p>
                         </div>
 
                         <div className={styles.card2}>
-                        <div className={styles.testimg1}>
-                        <img src={MobileDev7} alt='' />
-                        <img className={styles.num} src={T02} alt='' />
-                        </div> 
-                       
+                            <div className={styles.testimg1}>
+                                <img src={MobileDev7} alt='' />
+                                <img className={styles.num} src={T02} alt='' />
+                            </div>
+
 
                             <h3>Generate Sales</h3>
                             <p>We focus an newer avenues in the marketplace for the execution of mobile applications to genetdte sales prograssive levels within a short span of time.</p>
@@ -155,10 +156,10 @@ const Mobile_development = () => {
 
 
                         <div className={styles.card3}>
-                        <div className={styles.testimg1}>
-                        <img src={MobileDev8} alt='' />
-                        <img className={styles.num} src={T03} alt='' />
-                        </div> 
+                            <div className={styles.testimg1}>
+                                <img src={MobileDev8} alt='' />
+                                <img className={styles.num} src={T03} alt='' />
+                            </div>
 
                             <h3>Innovative User Interface</h3>
                             <p>Our design team conceptualizes the most hassle-free user interface, we take special care to make it user-friendly</p>
@@ -166,11 +167,11 @@ const Mobile_development = () => {
 
 
                         <div className={styles.card4}>
-                        <div className={styles.testimg1}>
-                        <img src={MobileDev9} alt='' />
-                        <img className={styles.num} src={T04} alt='' />
-                        </div> 
-                      
+                            <div className={styles.testimg1}>
+                                <img src={MobileDev9} alt='' />
+                                <img className={styles.num} src={T04} alt='' />
+                            </div>
+
 
                             <h3>Business Solution</h3>
                             <p>According to your need and market reserch, we design a framework for your app,we keep in mind all your requirenments and what we have learned from the market reserch.</p>
@@ -178,22 +179,22 @@ const Mobile_development = () => {
 
 
                         <div className={styles.card5}>
-                        <div className={styles.testimg1}>
-                        <img src={MobileDev10} alt='' />
-                        <img className={styles.num} src={T05} alt='' />
-                        </div> 
-                      
+                            <div className={styles.testimg1}>
+                                <img src={MobileDev10} alt='' />
+                                <img className={styles.num} src={T05} alt='' />
+                            </div>
+
 
                             <h3>Brand Value</h3>
                             <p>Mobile apps are a one-stop point for getting all the relevent information related to the brand as well as showcasing the products and services.Thus increasing the overallBrand Value.</p>
                         </div>
 
                         <div className={styles.card6}>
-                        <div className={styles.testimg1}>
-                        <img src={Techmapperz1} alt='' />
-                        <img className={styles.num} src={T06} alt='' />
-                        </div> 
-                       
+                            <div className={styles.testimg1}>
+                                <img src={Techmapperz1} alt='' />
+                                <img className={styles.num} src={T06} alt='' />
+                            </div>
+
                             <h3>Revenue</h3>
                             <p>We take your suggections to incorporate in-app advertising, in-app purchases, and paid apps are some of the most common app monetization tactics.</p>
                         </div>
@@ -239,7 +240,7 @@ const Mobile_development = () => {
                         </div>
                         <div className={styles.card}>
                             <img src={MobileDev15} />
-                            <h3>Transperency</h3>
+                            <h3>Transparency</h3>
                             <p>Your business is important to you, and also to us, so it needs to be in safe hands of our expert IT technicians, We at techMapperz...</p>
                         </div>
                     </div>
