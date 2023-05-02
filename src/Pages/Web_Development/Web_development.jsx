@@ -158,7 +158,7 @@ const Web_Development = () => {
 
                             <h1>Speed</h1>
                             <p>This may be the last point but this is the first things customers and visitors notice in a website,content and the coding of the website should accommodate and understand...</p>
-                        </div>
+                        </div> 
 
                     </div>
                 </div>
