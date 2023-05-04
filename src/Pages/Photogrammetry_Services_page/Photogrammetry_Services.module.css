@@ -300,14 +300,14 @@
         letter-spacing: 0.16px;
         background: none;
         color: white;
-        text-align: center;
+        text-align: center !important;
     }
     
     
     
     
     .secand_part {
-        width:100vw;
+        width:100%;
         padding: 2rem;
         background: rgba(24, 24, 24, 1);
         
@@ -318,7 +318,7 @@
         flex-direction: column;
         background: none;
         background: rgba(24, 24, 24, 1);
-    
+        padding: 0;
     } 
     
     .info>p {
@@ -339,6 +339,7 @@
     .contaner {
         padding-bottom: 30px;
         background: rgba(24, 24, 24, 1);
+        padding: 0;
     }
     
     
@@ -372,6 +373,7 @@
         background: none;
         position: relative;
         width: fit-content;
+        text-align: center;
     }
     
     .heading2::after {
@@ -391,17 +393,16 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 120px;
-        /* background: rgba(24, 24, 24, 1); */
+        gap:0px;
     }
     
     .product img {
-        width:100vw;
+        width:100%;
         object-fit: contain;
     }
     
     .product .Img_two {
-        width: 110%;
+        width: 100%;
         object-fit: contain;
     
     }
@@ -480,6 +481,7 @@
     .product_info .btn {
         position: relative;
         height: 60px;
+        left: 25%;
     }
     
     .product_info .btn div {

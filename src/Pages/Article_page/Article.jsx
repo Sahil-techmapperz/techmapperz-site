@@ -62,10 +62,9 @@ function Article() {
       </div>
 
 
-      <div className={Styles.blog_contater} >
+      {/* <div className={Styles.blog_contater} >
       <iframe
-        src="https://test2.geotechcybernauts.com/"
-        title="Embedded WordPress Site"
+        src="http://blogs.techmapperz.com/"
         width="100%"
         height="100%"
         frameborder="0"
@@ -75,9 +74,9 @@ function Article() {
         }}
 
       ></iframe>
-    </div>
+    </div> */}
 
-      {/* <div className={Styles.contaner}>
+      <div className={Styles.contaner}>
         {posts && posts.map(post => (
           <div className={Styles.card} key={post.id}>
             <div className={Styles.Img}>{post.imgUrl&&<img src={post.imgUrl && post.imgUrl} alt="" />}</div>
@@ -91,10 +90,10 @@ function Article() {
             </div>
           </div>
         ))}
-      </div> */}
+      </div>
 
 
-      {/* <div className={Styles.pagination}>
+      <div className={Styles.pagination}>
         <div> <button disabled={page === 1} onClick={handlePreviousPage} >
           <AiOutlineLeft/>
         </button></div>
@@ -104,7 +103,7 @@ function Article() {
         <div>  <button onClick={handleNextPage} disabled={page === totalPages}>
           <AiOutlineRight/>
         </button></div>
-      </div> */}
+      </div>
     </div>
 
     

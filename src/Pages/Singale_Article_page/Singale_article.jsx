@@ -73,26 +73,40 @@ useEffect(() => {
   }
 
   return (
-    <div className="main_contaner">
-    <div className="SinglePost">
-      <h1 dangerouslySetInnerHTML={{ __html: post.title }} />
-      <div><FormattedDateComponent dateString={post.date}/></div>
-      {post.imgUrl && <img src={post.imgUrl} alt={post.title} />}
-      <div className={"description"} dangerouslySetInnerHTML={{ __html: post.description }} />
-      <div dangerouslySetInnerHTML={{ __html: post.content }} />
-      <p className="author">
-        By: <a href={post.author.link}>{post.author.name}</a>
-      </p>
-      <CommentForm postId={postId} />
-    </div>
-    <div className="related_recentpost">
-      <div>
-      <input className="search" value={searchQuery} placeholder="search" onChange={handalesearch}/>
-      <button onClick={handalesearchsubmit}>Search</button>
-      </div>
-      <RelatedPosts postId={postId} />
-      <RecentPosts />
-      </div>
+    // <div className="main_contaner">
+    // <div className="SinglePost">
+    //   <h1 dangerouslySetInnerHTML={{ __html: post.title }} />
+    //   <div><FormattedDateComponent dateString={post.date}/></div>
+    //   {post.imgUrl && <img src={post.imgUrl} alt={post.title} />}
+    //   <div className={"description"} dangerouslySetInnerHTML={{ __html: post.description }} />
+    //   <div dangerouslySetInnerHTML={{ __html: post.content }} />
+    //   <p className="author">
+    //     By: <a href={post.author.link}>{post.author.name}</a>
+    //   </p>
+    //   <CommentForm postId={postId} />
+    // </div>
+    // <div className="related_recentpost">
+    //   <div>
+    //   <input className="search" value={searchQuery} placeholder="search" onChange={handalesearch}/>
+    //   <button onClick={handalesearchsubmit}>Search</button>
+    //   </div>
+    //   <RelatedPosts postId={postId} />
+    //   <RecentPosts />
+    //   </div>
+    // </div>
+
+    <div className={"blog_contater"} >
+      <iframe
+        src={post.guid.rendered}
+        width="100%"
+        height="100%"
+        frameborder="0"
+        style={{
+          border: '0',
+          overflow: 'hidden',
+        }}
+
+      ></iframe>
     </div>
   );
 }

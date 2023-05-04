@@ -55,7 +55,7 @@ const Navbar = () => {
               </li>
             </ul>
           </li>
-          <li style={{ borderBottom: location.pathname === '/article' && '3px solid red' }}><Link to={"/article"}>News & Articles <IoIosArrowDown /></Link>
+          <li style={{ borderBottom: location.pathname === '/article' && '3px solid red' }}><Link to={"/article"}>News & Articles</Link>
           </li>
           <li style={{ borderBottom: location.pathname === '/about' && '3px solid red' }}><Link to={"/about"}>About us</Link></li>
           <li style={{ borderBottom: location.pathname === '/career' && '3px solid red' }}><Link to={"/career"}>Careers</Link></li>
