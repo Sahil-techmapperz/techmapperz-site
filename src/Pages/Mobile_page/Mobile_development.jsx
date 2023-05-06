@@ -72,7 +72,7 @@ const Mobile_development = () => {
 
                 <div className={`${styles.contaner} ${styles.contaner_card3} `}>
                     {/* <div className={`${styles.product} ${styles.contaner_product3} `}> */}
-                    <div className={styles.product3}>
+                    <div className={`${styles.product} ${styles.product3} `}>
                         <div className={styles.devimg2}>
                             <img src={MobileDev2} alt="MobileDev2.png" />
                         </div>
@@ -99,7 +99,7 @@ const Mobile_development = () => {
                 <div className={`${styles.contaner} ${styles.contaner_card4} `}>
                     <h1 className={`${styles.heading3} ${styles.class2}`}>Types of Mobile Application</h1>
                     <div className={styles.main}>
-                        <div className={styles.card}>
+                        <div className={`${styles.card} ${styles.main_card2}`}>
                             <img src={MobileDev3} alt='' />
                             <h3>Native App</h3>
                             <p>These apps are applications built for a specific mobile platform.For example, Apple native applications are only accessible on Apple devices, and users may only accessible on Apple devices,and users may only access applications from other cell phone providers on their own branded devices...</p>

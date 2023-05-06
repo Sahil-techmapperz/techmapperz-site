@@ -17,12 +17,12 @@ import Web_GIS from '../Pages/Web_GIS_page/Web_GIS';
 import Service_main from '../Pages/Service_main/Service_main';
 import It_consulting from '../Pages/It_consulting/It_consulting';
 import GIS_Services from '../Pages/GIS_Services_page/GIS_Services';
-import Privacy_Policy from '../Components/Privacy_Policy_Component/Privacy_Policy';
 import Sitemap from '../Pages/Sitemap_page/Sitemap';
 import CRM_Consulting from '../Pages/CRM_Consulting/CRM_Consulting';
 import CRM_Implement from '../Pages/CRM_Impliment/CRM_Implement';
 import Custom_Consulting from '../Pages/Custom_Consulting/Custom_Consulting';
 import CRM_Integretion from '../Pages/CRM_Integretion/CRM_Integretion';
+import PrivacyPolicy_page from '../Pages/PrivacyPolicy_page/PrivacyPolicy_page';
 
 
 
@@ -47,12 +47,12 @@ const Router = () => {
        <Route path='/Photogrammetry' element={<Photogrammetry_Services/>}></Route>
        <Route path='/it_consulting' element={<It_consulting/>}></Route> 
        <Route path='/service' element={<Service_main/>}></Route>
-       <Route path='/Privacy_Policy' element={<Privacy_Policy/>}></Route>
        <Route path='/sitemap' element={<Sitemap/>}></Route>
       <Route path='/crm_consulting' element={<CRM_Consulting/>}></Route>
       <Route path='/crm_implement' element={<CRM_Implement/>}></Route>
      <Route path='/custom_consulting' element={<Custom_Consulting/>}></Route>
      <Route path='/crm_integretion' element={<CRM_Integretion/>}></Route>
+     <Route path='/Privacy_Policy' element={<PrivacyPolicy_page/>}></Route>
        
     </Routes>
   )

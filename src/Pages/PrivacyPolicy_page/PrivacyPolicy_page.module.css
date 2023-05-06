@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.PrivacyPolicy {
+    background: rgba(24, 24, 24, 1);
+    position: relative;
+}
+
+.Top {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    background: url("../../Photos/banner_2.png");
+
+}
+
+
+.Top h1 {
+    font-weight: 600;
+    font-size: 55px;
+    line-height: 99px;
+    letter-spacing: 0.162793px;
+}
+
+.Top p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.162793px;
+    color: white;
+}
+
+
+.secendpart{
+    width: 100%;
+    padding: 2rem 5rem;
+}
+
+.secendpart>div>h1{
+    font-size: 26px;
+    font-weight: bold;
+}
+
+
+.secendpart .Management_of_Personal_Data h1{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.secendpart ul{
+    padding-left: 2rem;
+}
+
+.secendpart a{
+    color:#396ba9 !important;
+    text-decoration: underline;
+    margin: 10px;
+}

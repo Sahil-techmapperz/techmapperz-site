@@ -333,6 +333,7 @@ header>p {
     line-height: 33px;
     letter-spacing: 0.162793px;
     color: #FFFFFF;
+    text-align: justify;
 }
 
 .lists {
@@ -403,7 +404,7 @@ header>p {
 .methodology2 p {
     font-weight: 500;
     font-size: 26px;
-    width: 1246px;
+    width:100%;
     text-align: center;
     color: white;
     padding: 1rem;

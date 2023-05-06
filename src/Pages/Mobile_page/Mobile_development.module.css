@@ -319,6 +319,11 @@
     gap: 10px;
 }
 
+
+.main_card2{
+    margin-top: 2rem;
+}
+
 .harbour {
     display: flex;
     gap: 5rem;
@@ -566,7 +571,7 @@
 
 
     .first_part {
-        height: 200px;
+        height: 250px;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -597,7 +602,7 @@
         background: none;
         color: white;
         justify-content: center;
-        text-align: center;
+        text-align: center !important;
     }
 
 
@@ -765,7 +770,7 @@
     }
 
     .product div {
-        width:100%;
+        width:100% !important;
         height:max-content;
         margin-top: 0%;
 

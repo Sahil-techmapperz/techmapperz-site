@@ -75,7 +75,7 @@ const GIS_Services = () => {
                         <div>
                             <img src={Geogoverence} className={Styles.Img_three} alt="Geospatial_Mapping.png" />
                         </div>
-                        <div style={{"marginRight":"-1rem"}} className={Styles.product_info}>
+                        <div className={Styles.product_info}>
                             <h1 className={Styles.heading2}>Geo-governance</h1>
                             <p >GIS, a new edge technology, has opened several new prospects for the day-to-day life of civil society. GIS is rapidly becoming a digital revolution for different transformational changes in the world. It improves the Decesion making system of the government body. Governments body are using GIS technology to manage different govermnet programe and policy. With the help of deep GIS knowladge, Techmapperz integrates different types of data in GIS systems to derive understanding, operationalize solutions and engage the Government and public.</p>
 
