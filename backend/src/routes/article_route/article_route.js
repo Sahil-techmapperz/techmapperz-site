@@ -180,7 +180,7 @@ res.status(200).send(post);
 
 
 
-const baseUrl = 'https://www.test.geotechcybernauts.com/wp-json/wp/v2';
+const baseUrl = 'http://blogs.techmapperz.com/wp-json/wp/v2';
 
 
 
@@ -283,7 +283,8 @@ article_route.get('/posts/:postId', async (req, res) => {
     const post = postResponse.data;
     const authors = await fetchAuthors();
     const postData = extractPostData([post], authors)[0];
-    res.json(postData);
+    // res.json(postData);
+    res.json(post);
   } catch (error) {
     console.error('Error fetching post:', error);
     res.status(500).json({ error: 'Failed to fetch post' });

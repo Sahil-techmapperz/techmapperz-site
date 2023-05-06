@@ -6,6 +6,7 @@ import Choose from './choose';
 import Group1 from '../../Photos/Group1.png'
 import Career4 from '../../Photos/career_idea-4.png'
 import Career5 from '../../Photos/career_idea-5.png'
+import video from '../../media/Introducation_video.mp4'
 
 
 
@@ -42,7 +43,7 @@ const About = () => {
 
               <div className={styles.video_contaner}>
                 <video autoplay controls loop muted>
-                  <source src="https://techmapperz.com/media/videos/2022/07/04/whatsapp-video-2022-07-04-at-10.57.43-am.mp4" type="video/mp4"></source>
+                  <source src={video} type="video/mp4"></source>
                 </video>
               </div>
 

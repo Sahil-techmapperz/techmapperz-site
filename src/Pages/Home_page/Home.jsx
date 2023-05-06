@@ -129,9 +129,9 @@ const handaledown=()=>{
     return (
         <>
             <div>
-                <section className={Styles.home_first_part}>
+                <section className={`${Styles.home_first_part} ${Styles.carousel_web}`}>
                     <Carousel
-                        className={Styles.carousel_container}
+                        className={`${Styles.carousel_container} `}
                         showStatus={false}
                         infiniteLoop={true}
                         autoPlay={true}
@@ -147,7 +147,7 @@ const handaledown=()=>{
                         }
                     >
                         {Techbanner && Techbanner.map(slide => (
-                            <div key={slide.id}>
+                            <div key={slide.id} >
                                 <img className={Styles.carousel_img} loading="lazy" src={slide.banner_img_url} alt={slide.caption} />
                                 <p className={Styles.title}>{slide.heading}</p>
                                 <p className={Styles.subTitle}>{slide.subTitle}</p>
@@ -164,7 +164,42 @@ const handaledown=()=>{
                             </div>
                         ))}
                     </Carousel>
-
+                </section>
+                <section className={`${Styles.home_first_part} ${Styles.carousel_mobile}`}>
+                    <Carousel
+                        className={`${Styles.carousel_container}`}
+                        showStatus={false}
+                        infiniteLoop={true}
+                        autoPlay={true}
+                        showThumbs={false}
+                        stopOnHover={true}
+                        showIndicators={false}
+                        useKeyboardArrows={true}
+                        renderArrowPrev={(onClickHandler, hasPrev, label) =>
+                            CustomPrevArrow(onClickHandler, hasPrev, label)
+                        }
+                        renderArrowNext={(onClickHandler, hasNext, label) =>
+                            CustomNextArrow(onClickHandler, hasNext, label)
+                        }
+                    >
+                        {Techbanner && Techbanner.map(slide => (
+                            <div key={slide.id} >
+                                <img className={Styles.carousel_img} loading="lazy" src={slide.banner_img_url} alt={slide.caption} />
+                                <p className={Styles.title}>{slide.heading}</p>
+                                <p className={Styles.subTitle}>{slide.subTitle}</p>
+                               
+                            </div>
+                        ))}
+                    </Carousel>
+                    <div className={Styles.know_more}>
+                                    <Link to={"/contact"}> <div className={Styles.know_more_btn}>
+                                        <div></div>
+                                        <h2>Know More</h2>
+                                    </div></Link>
+                                </div>
+                                <div onClick={handaledown} className={Styles.SCROLL_DOWN}>
+                                    <BsChevronDoubleDown/>
+                                </div>
                 </section>
 
                 <section className={Styles.home_secend_part}>
@@ -275,7 +310,7 @@ const handaledown=()=>{
                         <TechBlog postdata={TechBlogpost} />
                     </div>
 
-                    <div className={Styles.Testimonial}>
+                    <div className={`${Styles.Testimonial} ${Styles.Testimonial_web}`}>
                         <p>Testimonial</p>
                         <h1>What our Clients Say</h1>
 
@@ -288,6 +323,51 @@ const handaledown=()=>{
                             stopOnHover={true}
                             showIndicators={false}
                             useKeyboardArrows={true}
+                            className={Styles.Carousel}
+                            renderArrowPrev={(onClickHandler, hasPrev, label) =>
+                                CustomPrevArrow2(onClickHandler, hasPrev, label)
+                            }
+                            renderArrowNext={(onClickHandler, hasNext, label) =>
+                                CustomNextArrow2(onClickHandler, hasNext, label)
+                            }
+                            
+                        >
+                            {Testimonial.map(data => {
+                                return (
+                                    <div className={Styles.card}>
+                                        <div style={{ "display": "flex", "gap": "10px" }}>
+                                            <img src={Cotation} alt='' />
+                                            <h2 >{data.message}</h2>
+                                        </div>
+                                        <div className={Styles.client}>
+                                            <img src={data.avater} />
+                                            <div>
+                                                <p className={Styles.name}>{data.name}</p>
+                                                <p>{data.Companyname}</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                )
+                            })}
+
+
+                        </Carousel>
+                    </div>
+                    <div className={`${Styles.Testimonial} ${Styles.Testimonial_mobile}`}>
+                        <p>Testimonial</p>
+                        <h1>What our Clients Say</h1>
+
+                        <Carousel
+
+                            showStatus={false}
+                            infiniteLoop={true}
+                            showArrows={true}
+                            showThumbs={false}
+                            stopOnHover={true}
+                            showIndicators={false}
+                            useKeyboardArrows={true}
+                            swipeable={false}
                             className={Styles.Carousel}
                             renderArrowPrev={(onClickHandler, hasPrev, label) =>
                                 CustomPrevArrow2(onClickHandler, hasPrev, label)

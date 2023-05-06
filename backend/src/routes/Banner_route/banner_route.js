@@ -82,7 +82,7 @@ BannerRoute.put('/:userId', async (req, res) => {
 
   try {
     // Update the job in your data store
-    const updatedBannerData = await Bannermodel.findOneAndUpdate({ userId: userId }, updatedJob, { new: true });
+    const updatedBannerData = await Bannermodel.findOneAndUpdate({ _id: userId }, updatedJob, { new: true });
 
     if (updatedBannerData) {
       res.json(updatedBannerData);
@@ -101,7 +101,7 @@ BannerRoute.delete("/", async (req, res) => {
 
   try {
     if (selectedHomeBannerIds && Array.isArray(selectedHomeBannerIds)) {
-      const result = await Bannermodel.deleteMany({ userId: { $in: selectedHomeBannerIds } });
+      const result = await Bannermodel.deleteMany({ _id: { $in: selectedHomeBannerIds } });
 
       if (result.deletedCount > 0) {
         res.status(200).json({ message: "Career applications deleted successfully." });

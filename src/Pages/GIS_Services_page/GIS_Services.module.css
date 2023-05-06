@@ -53,7 +53,6 @@ section p{
     flex-direction: column;
     background: none;
    width: 100%;
-   margin-left: 15px;
 }
 
 .info>p {
@@ -152,9 +151,10 @@ section p{
 
 .product {
     display: flex;
-    gap: 6%;
+    justify-content: space-between;
     background: rgba(24, 24, 24, 1);
     width: 100%;
+    gap: 3rem;
 }
 
 .product img {

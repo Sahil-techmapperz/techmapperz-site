@@ -52,7 +52,7 @@ contactRoute.delete("/", async (req, res) => {
 
   try {
     if (selectedContactIds && Array.isArray(selectedContactIds)) {
-      const result = await contactModel.deleteMany({ userId: { $in: selectedContactIds } });
+      const result = await contactModel.deleteMany({ _id: { $in: selectedContactIds } });
 
       if (result.deletedCount > 0) {
         res.status(200).json({ message: "Contacts deleted successfully." });

@@ -77,7 +77,7 @@ careerRoute.delete("/", async (req, res) => {
 
   try {
     if (selectedCareerIds && Array.isArray(selectedCareerIds)) {
-      const result = await Careermodel.deleteMany({ userId: { $in: selectedCareerIds } });
+      const result = await Careermodel.deleteMany({ _id: { $in: selectedCareerIds } });
 
       if (result.deletedCount > 0) {
         res.status(200).json({ message: "Career applications deleted successfully." });

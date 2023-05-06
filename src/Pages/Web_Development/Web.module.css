@@ -341,49 +341,49 @@ p {
 
 .design {
     width: 100%;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    gap: 100px;
     margin-top: 5rem;
+    display: grid;
     grid-template-columns: repeat(2, 300px);
-    height: 1000px;
+    row-gap: 50px;
+    justify-content:space-evenly;
+    align-items: center;
+    height:max-content;
 
 }
 
 .card1 {
     border: 2px solid white;
-    position: absolute;
+    /* position: absolute; */
     width: 400px;
     height: 350px;
-    top: 5px;
-    left: 250px;
+    /* top: 5px;
+    left: 250px; */
 
 }
 
 .card2 {
     border: 2px solid white;
     /* margin-top: 50px; */
-    position: absolute;
+    /* position: absolute; */
     width: 400px;
     height: 350px;
-    top: 80px;
-    left: 700px;
+    /* top: 80px;
+    left: 700px; */
 }
 
 .card3 {
     border: 2px solid white;
-    position: absolute;
+    /* position: absolute; */
     width: 400px;
     height: 350px;
-    top: 470px;
-    left: 250px;
+    /* top: 470px;
+    left: 250px; */
 }
 
 .card4 {
     border: 2px solid white;
     /* margin-top: 100px; */
-    position: static;
+    /* position: static; */
     width: 400px;
     height: max-content;
     /* top: 550px;
@@ -696,7 +696,8 @@ p {
      */
     p {
         color: #d1d0d0;
-        text-align: justify;
+        text-align: justify !important;
+        text-justify: inter-word !important;
     }
 
     .first_part {
@@ -729,16 +730,15 @@ p {
         background: none;
         color: white;
         justify-content: center;
-        text-align: center;
+        text-align: center !important;
     }
 
 
     .secand_part {
         width: 100%;
-        padding: 2rem 2rem;
         overflow: hidden;
         justify-content: center;
-        text-align: jus;
+        text-align: center;
     }
 
     .info {
@@ -770,13 +770,7 @@ p {
         justify-content: center;
         text-align: justify;
         text-justify: inter-word;
-
-
-
-        /* background-image: url("../../Photos/Rectangle 41.png");
-        background-size: cover;
-        background-position: center;
-    */
+        padding: 2rem;
     }
 
     .contaner .product {
@@ -956,9 +950,7 @@ p {
     } */
 
     .contaner_card4 {
-        width: 100vw !important;
-        margin-left: -5rem;
-        padding-left: 5rem !important;
+        width: 100%;
         object-fit: cover;
         background: url("../../Photos/background_4.png");
         background-size: cover;
@@ -1187,7 +1179,7 @@ p {
         background: url("../../Photos/banner_3.jpg");
         background-size: cover;
         background-position: center;
-        padding-bottom: 0;
+        padding: 2rem;
 
     }
 
@@ -1271,7 +1263,7 @@ p {
 
 
     .harbour1 {
-        padding-left: 0rem;
+        padding: 2rem;
         width: 100% !important;
         margin-left: 0rem;
         object-fit: cover;
@@ -1305,6 +1297,7 @@ p {
     .harbour2 .heading {
         text-align: center;
         justify-content: center;
+        padding: 0 10px;
     }
 
 
@@ -1397,11 +1390,7 @@ p {
     }
 
     .class1 {
-        /* padding-left: 30px;
-        padding-right: 30px; */
-        /* border-left: 1px solid;
-        border-right: 1px solid; */
-        padding: none !important;
+        padding:0 !important;
         border: none !important;
 
     }
@@ -1412,8 +1401,6 @@ p {
     }
 
     .project {
-        display: grid;
-
         width: 100%;
         height: max-content;
         justify-content: center;
@@ -1425,6 +1412,7 @@ p {
         /* height: 1000px; */
         display: flex;
         flex-direction: column;
+        padding: 2rem;
     }
 
     .card5 {

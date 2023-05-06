@@ -35,7 +35,7 @@ jobRoute.put('/:userId', async (req, res) => {
 
   try {
     // Update the job in your data store
-    const updatedJobData = await Jobsmodel.findOneAndUpdate({ userId: userId }, updatedJob, { new: true });
+    const updatedJobData = await Jobsmodel.findOneAndUpdate({_id: userId }, updatedJob, { new: true });
 
     if (updatedJobData) {
       res.json(updatedJobData);
@@ -56,7 +56,7 @@ jobRoute.delete("/", async (req, res) => {
 
   try {
     if (selectedjobsIds&& Array.isArray(selectedjobsIds)) {
-      const result = await Jobsmodel.deleteMany({ userId: { $in: selectedjobsIds} });
+      const result = await Jobsmodel.deleteMany({ _id: { $in: selectedjobsIds} });
       console.log(result);
       if (result.deletedCount > 0) {
         res.status(200).json({ message: "job deleted successfully." });

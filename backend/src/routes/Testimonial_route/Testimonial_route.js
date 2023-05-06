@@ -82,7 +82,7 @@ TestimonialRoute.put('/:userId', async (req, res) => {
 
   try {
     // Update the job in your data store
-    const updatedTestimonialData = await Testimonialmodel.findOneAndUpdate({ userId: userId }, updatedJob, { new: true });
+    const updatedTestimonialData = await Testimonialmodel.findOneAndUpdate({_id: userId }, updatedJob, { new: true });
 
     if (updatedTestimonialData) {
       res.json(updatedTestimonialData);
@@ -105,7 +105,7 @@ TestimonialRoute.delete("/", async (req, res) => {
 
   try {
     if (selectedTestimonialIds && Array.isArray(selectedTestimonialIds)) {
-      const result = await Testimonialmodel.deleteMany({ userId: { $in: selectedTestimonialIds } });
+      const result = await Testimonialmodel.deleteMany({ _id: { $in: selectedTestimonialIds } });
 
       if (result.deletedCount > 0) {
         res.status(200).json({ message: "Testimonial  deleted successfully." });

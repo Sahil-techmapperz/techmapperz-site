@@ -10,7 +10,7 @@
 }
 
 .left_nav{
-    width: 18%;
+    width: 20%;
 }
 
 .left_nav img{
@@ -113,10 +113,15 @@
         padding: 10px;
         background-color:rgba(0, 0, 0,0.7);
     }
+
+    .left_nav{
+        width: 50%;
+    }
+
     .left_nav img{
         /* transform: scale(3); */
         
-        padding-left: 25px;
+        padding-left: 15px;
     }
     .menue{
         display: block;
