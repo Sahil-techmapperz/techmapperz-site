@@ -482,6 +482,10 @@
     right: 0;
 }
 
+.about_text_mobile{
+    display: none;
+}
+
 /* About_us */
 
 
@@ -696,6 +700,9 @@
 @media (max-width:1100px) {
 
 
+  
+
+
 /* Carousel */
 
 .home_first_part {
@@ -842,7 +849,7 @@
     }
 
     .features_top>h1 {
-        font-size: 14px;
+        font-size: 16px;
         font-weight: bolder;
         width: 100%;
         text-align: center;
@@ -928,7 +935,7 @@
     
     
     .Technology .title {
-        font-size: 16px;
+        font-size: 18px;
         line-height: 24px;
         letter-spacing: 0.16px;
         font-weight: 400;
@@ -948,7 +955,7 @@
     
     .technology_contaner .technology_left h1 {
         font-weight: bold;
-        font-size: 14px;
+        font-size: 18px;
         text-align: center;
     }
     
@@ -1096,7 +1103,7 @@
     
     .About_us .about_right .about_right_contener h1 {
         font-weight: bold;
-        font-size: 14px;
+        font-size: 18px;
         text-align: center;
     }
     
@@ -1120,6 +1127,13 @@
     .About_us .know_more{
         position: relative;
         left: 5rem;
+    }
+    .about_text_web{
+        display: none;
+    }
+
+    .about_text_mobile{
+        display: block;
     }
 
     /* Brand_Partners */
@@ -1206,6 +1220,7 @@
 .Testimonial>p {
     font-weight: 400;
     font-size: 14px;
+    text-align: center !important;
     color: #808080;
     margin-bottom: -1rem;
     z-index: 10;
@@ -1215,7 +1230,7 @@
 
 .Testimonial h1 {
     font-weight: bold;
-    font-size: 26px;
+    font-size: 20px;
     color: #FFFFFF;
     z-index: 10;
     width: 100%;
@@ -1282,5 +1297,8 @@
     display: block;
  }
 
+ h1{
+    size: 25px !important;
+}
 
 }

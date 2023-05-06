@@ -115,12 +115,12 @@ const About = () => {
                 <div className={styles.headtag11}>
                   <p>
                     We are constantly looking for ways to keep us updated with the changing technology and
-                    evolving markets and demands.We believe that our performance should be more efficient, nimble and flexible then
-                    before.That's where the Agile methodology comes in.We follow 4 values of Agile:
+                    evolving markets and demands. We believe that our performance should be more efficient, nimble and flexible then
+                    before. That's where the Agile methodology comes in. We follow 4 values of Agile:
                   </p>
                   <ul className={styles.lists}>
                     <li><p>Individual and interactions over processes and tools.</p></li>
-                    <li><p>Working software over comprehensive documentation.</p></li>
+                    <li><p>Working software over complete documentation.</p></li>
                     <li><p>Customer collaboration over contract negotiation.</p></li>
                     <li><p>Responding to change over following a plan.</p></li>
                   </ul>

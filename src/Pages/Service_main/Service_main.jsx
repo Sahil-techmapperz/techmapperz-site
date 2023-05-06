@@ -67,7 +67,8 @@ const Service_main = () => {
                              <img className={Styles.num} src={T01} alt='' /> 
                              </div>
                             <h3  > <Link to={"/GIS_Service"}> GIS Services </Link></h3>
-                            <p>Techmapperz offers GIS services with an end-to-end solution for spatial data storing, management and analysis to Government and Enterprise sectors through GIS services.</p>
+                            <p className={Styles.service_mobile}>Techmapperz offers GIS services with a complete solution for spatial data storing, management and analysis to Government and Enterprise sectors through GIS services.</p>
+                            <p className={Styles.service_web}>Techmapperz offers GIS services with an end-to-end solution for spatial data storing, management and analysis to Government and Enterprise sectors through GIS services.</p>
                         </div>
 
 
@@ -87,8 +88,8 @@ const Service_main = () => {
                         <img className={Styles.num} src={T03} alt='' /> 
                         </div>
                             <h3 > <Link to={"/Photogrammetry"}> Photogammetry Services </Link></h3>
-                            <p>Photogrammetry is the process to obtain  information and measurements of physical objects from photographs and use them for the development of maps, drawings, or 3D models.</p>
-                      
+                            <p className={Styles.service_web}>Photogrammetry is the process to obtain  information and measurements of physical objects from photographs and use them for the development of maps, drawings, or 3D models.</p>
+                            <p className={Styles.service_mobile}>Photogrammetry is the process to obtain information from photographs and use them for the development of maps, drawings, or 3D models.</p>   
                       </div>
 
                         <div className={Styles.card4}>
@@ -133,7 +134,7 @@ const Service_main = () => {
                         <img className={Styles.num} src={T01} alt='' />
                         </div>
                             <h3><Link to={"/web_development"}>Web Development Services</Link> </h3>
-                            <p>With the accumulated experience of more than 20 years, our team is well equipped to help you solve all possible challenges in the customer management field... </p>
+                            <p>Website development is an umbrella term for two major parts-Design & Development, Design represents the look and feel wherwas Development determines how it functions.</p>
                         </div>
 
                         <div className={Styles.card8}>
@@ -142,7 +143,8 @@ const Service_main = () => {
                         <img className={Styles.num} src={T02} alt='' />
                         </div> 
                         <h3 > <Link to={"/Mobile_development"}> Mobile Application Development </Link></h3>
-                            <p>With global competition and greater customer expectations companies look forward to enhance customer relationship and experience,many business entities..</p>
+                        <p className={Styles.service_mobile}>The mobile app software intelligently combines the latest technology,and design solutions which constantly get updated.It incorporates API, GPS, Camera, Microphone, AI and other latest technologies and becomes a Launchpad hurling your business to then ext level.</p>
+                            <p className={Styles.service_web}>With global competition and greater customer expectations companies look forward to enhance customer relationship and experience,many business entities..</p>
                         </div>
 
 
@@ -162,7 +164,8 @@ const Service_main = () => {
                          <img className={Styles.num} src={T04} alt='' />
                         </div> 
                         <h3 > <Link to={"/It_consulting"}> IT Consulting Services </Link></h3>
-                            <p>At custom CRM consulting we understand your current capabilities,map your organisation's desired future state, and then recommend CRM implementation</p>
+                           <p className={Styles.service_mobile}>We provide IT consulting services to business in a wide range of industries.We use our expertise to identify your opportunities and deliver solutions that will help you outperform your competitors.</p>
+                            <p className={Styles.service_web}>At custom CRM consulting we understand your current capabilities,map your organisation's desired future state, and then recommend CRM implementation</p>
                         </div>
 
                         

@@ -243,7 +243,9 @@ section p{
     left: 10px;
 }
 
-
+.GIS_mobile{
+    display: none;
+}
 
 
 @media (max-width:1100px) {
@@ -426,7 +428,13 @@ section p{
         width: 100%;
         top: -1rem;
         left: 10px;
-    }    
+    }   
+    
+    .GIS_web{
+        display: none;
+    }
+
+    .GIS_mobile{display: block;}
 }
 
 

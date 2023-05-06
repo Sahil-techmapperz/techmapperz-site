@@ -318,6 +318,9 @@ ul {
 }
 
 
+.WEB_GIS_mobile{
+    display: none;
+}
 
 
 @media (max-width:1100px) {
@@ -349,6 +352,7 @@ ul {
         background: none;
         color: white;
         text-align: center !important;
+        padding:0 2rem;
     }
     
     
@@ -647,4 +651,10 @@ ul {
         text-align:left !important;
         color: #acaaaa;
     }
+
+    .WEB_GIS_web{
+        display: none;
+    }
+
+    .WEB_GIS_mobile{display: block;}
 }

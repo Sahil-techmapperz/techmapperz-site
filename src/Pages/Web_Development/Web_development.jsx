@@ -57,11 +57,15 @@ const Web_Development = () => {
             <section className={Styles.secand_part}>
                 <div className={Styles.contaner}>
                     <div className={Styles.watermark4}>IT Service</div>
-                    <h1 className={Styles.heading1}>What is Website Design <br />& Development</h1>
+                    <h1 className={Styles.heading1}>What is Web Design  <br />and Development?</h1>
                     <div className={Styles.product}>
                         <img src={WebDev3} alt="" />
                         <div className={`${Styles.product_info} ${Styles.product_info1}`}>
-                            <p>One of the first websites was created in 1991, and since then, the website and its design have evolved manifold.Today it is complex and involves an entire ecosystem of roles and skill sets. Website development is an umbrella term for two major parts-Design & Development, Design represents the look and feel wherwas Development determines how it functions</p>
+                            <p>One of the first website was created in 1991, and since then
+                                website and its designing have evolved manifold. Today it is complex and involves
+                                an entire ecosystem of roles and skill sets. Website development is an umbrella
+                                term for two major parts- Design & Development, Design represents the look
+                                and feel whereas Development determines how it functions. </p>
                             <Link to={"/contact"}> <div className={Styles.btn}>
                                 <div></div>
                                 <h2>Know More</h2>
@@ -75,8 +79,13 @@ const Web_Development = () => {
                 <div className={`${Styles.contaner} ${Styles.contaner_card2} `}>
                     <div className={Styles.product}>
                         <div className={Styles.product_info}>
-                            <h1 className={Styles.heading2}>Why Web Design and & <br />Development is Important?</h1>
-                            <p>Today the world is connected online,people get to the internet for any kind of need they may have,in this are Web design and web development are crucial for any business that wants to create an online presence.it is the first impression of your company,make sure it is a good one, and a functioning one as well.A A good web design and functionality is also a key element in good sales and business growth. </p>
+                            <h1 className={Styles.heading2}>Why Web Design and <br />Development is Important?</h1>
+                            <p>Today the world is connected online, people get to the
+                                Internet for any kind of need they may have, in this era Web design and web
+                                development are crucial for any business that wants to create an online
+                                presence. it is the first impression of your company, make sure it is a good
+                                one, and a functioning one as well. A good web design and functionality is
+                                also a key element in good sales and business growth. </p>
 
                             <Link to={"/contact"}> <div className={Styles.btn}>
                                 <div></div>
@@ -95,13 +104,15 @@ const Web_Development = () => {
 
                 <div className={`${Styles.contaner} ${Styles.contaner_card3} `}>
                     <div className={Styles.watermark3}>Teamwork</div>
-                    <h1 className={Styles.heading3}>The Right Web Design <br />and Development Team</h1>
+                    <h1 className={Styles.heading3}>The Right Web Design<br />and Development Team</h1>
                     <div className={Styles.product}>
                         <div>
                             <img src={WebDev2} className={Styles.Img_three} alt="Webdev10.png" />
                         </div>
                         <div className={Styles.product_info}>
-                            <p>With so much at state,it is important that your web designing and development company is reliable and has a team that is experienced and can be trusted. We at Techmapperz, have some of the best developers in the field with a combined experience of more than 100 years; we have worked in various fields in a wide range of segments from small business owners to restourents, corporates, government sectors and professionals. Our team compatibility and pooled experience is our biggest asset and the major reason that we use them in creating masterpiece websites. </p>
+                            <p>With so much at
+                                stake it is important that your web designing and development company is reliable
+                                and has a team that is experienced and can be trusted.  </p>
                             <Link to={"/contact"}> <div className={Styles.btn}>
                                 <div></div>
                                 <h2>Know More</h2>
@@ -124,7 +135,9 @@ const Web_Development = () => {
                             </div>
 
                             <h1>Graphics</h1>
-                            <p> It is a collective term used to describe everything visual,like the photos,logos,and icons on a website.The rule of thumb is for graphics to complement the website's... </p>
+                            <p> It is a collective term used to describe everything visual,
+                                like the photos, logos, and icons on a website. The rule of thumb is for
+                                graphics to complement the website’s layout, content, and colour palette.</p>
                         </div>
 
 
@@ -135,7 +148,11 @@ const Web_Development = () => {
                             </div>
 
                             <h1>Navigation</h1>
-                            <p>Ease of navigation is the glue that keeps the website visitor on the website,it should to be simple and effective and precise since the navigation tools to help users... </p>
+                            <p>Ease of navigation is the glue that keeps the website visitor
+                                on the website, it should be simple and effective and precise since the navigation
+                                tools to help users find what they need it should not make the customers like
+                                searching for a needle in the haystack
+                            </p>
                         </div>
 
 
@@ -146,7 +163,8 @@ const Web_Development = () => {
                             </div>
 
                             <h1>Colour</h1>
-                            <p>Colours are the most essential side of a website,it has a psychological impact on the visitors to take action appart from giving the website personality </p>
+                            <p>Colours are the most essential side of a website, it has psychological
+                                impact on the visitors to take action apart from giving the website personality.</p>
                         </div>
 
 
@@ -157,8 +175,11 @@ const Web_Development = () => {
                             </div>
 
                             <h1>Speed</h1>
-                            <p>This may be the last point but this is the first things customers and visitors notice in a website,content and the coding of the website should accommodate and understand...</p>
-                        </div> 
+                            <p>This may be the last point but this is the first things
+                                customers and visitors notice in a website, the content and the coding of the
+                                a website should accommodate and understand the fact that if the website is slow
+                                , customers/visitors are less likely to linger around.</p>
+                        </div>
 
                     </div>
                 </div>
@@ -183,7 +204,9 @@ const Web_Development = () => {
                         <div className={Styles.card}>
                             <img src={Webdev2} />
                             <h1>Compatibility</h1>
-                            <p>Compatibility With time the inter has evolved a lot and so will it with time,and with this internet browsers also change, your website should be flexible enough to adapt itself to run a new browser as well as...</p>
+                            <p>Our team compatibility
+                                and pooled experience is our biggest asset the major reason that we use it in
+                                creating masterpiece websites.</p>
                         </div>
                     </div>
                 </div>
@@ -196,7 +219,11 @@ const Web_Development = () => {
                     <div className={Styles.product}>
                         <img src={WebDev1} alt="Webdev11.png" />
                         <div className={Styles.product_info}>
-                            <p>We Techmapperz,get the best-customized web development for your company with the maximum customization to its needs.We develop a strategy to make your goals a reality, business ownears, not always understand how website functions and can be easily cheated.A professional web design and development company with years of experties and experience can help you build a website that will attract potential customers and grow your web presence.Some of the section that our website makes you stand apart are: </p>
+                            <p>We at Techmapperz
+                                have some of the best developers in the field with a combined experience of
+                                more than 200 years; we have worked in various fields in a wide range of
+                                segments from small business owners to restaurants, corporates, government sectors
+                                and professionals.  </p>
                             <ul>
                                 <li><p>Drive Social Media Growth</p></li>
                                 <li><p>Leveraging SEO</p></li>

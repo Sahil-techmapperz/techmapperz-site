@@ -64,7 +64,7 @@ const CRM_pages = () => {
                             </div>
 
                             <Link to={"/crm_consulting"}><h3>CRM Consulting</h3></Link>
-                            <p>With the accumlated experince of more than 20 years,our team is well equipped to help you slove all possible challenges in the coustomer management field...<br/><b style={{"borderBottom":"1px solid red","fontStyle":"italic"}}><Link to={"/crm_consulting"}>Know More</Link></b></p>
+                            <p>With the accumlated experince of more than 20 years,our team is well equipped to help you solve all possible challenges in the coustomer management field...<br/><b style={{"borderBottom":"1px solid red","fontStyle":"italic"}}><Link to={"/crm_consulting"}>Know More</Link></b></p>
                         </div>
 
 
@@ -86,8 +86,8 @@ const CRM_pages = () => {
                                 <img className={Styles.num} src={T03} alt='' />
                             </div>
 
-                            <Link to={"/custom_consulting"}>  <h3>Custom CMR Consulting </h3></Link>
-                            <p>AT customer CMR Consulting we understand your current capabilities,map your organisation's desired future state, and then recommend CRM implementation... <br/><b style={{"borderBottom":"1px solid red","fontStyle":"italic"}}><Link to={"/custom_consulting"}>Know More</Link></b></p>
+                            <Link to={"/custom_consulting"}>  <h3>Custom CRM Consulting </h3></Link>
+                            <p>AT customer CRM Consulting we understand your current capabilities,map your organisation's desired future state, and then recommend CRM implementation... <br/><b style={{"borderBottom":"1px solid red","fontStyle":"italic"}}><Link to={"/custom_consulting"}>Know More</Link></b></p>
 
                         </div>
 
@@ -139,14 +139,14 @@ const CRM_pages = () => {
                         <div className={Styles.card8}>
                             <img src={CRM8} alt='' />
                             <h3>Campaign Management</h3>
-                            <p>Campaign CMR is primarly for campaign management which combines anaytical and operational CRMs.</p>
+                            <p>Campaign CRM is primarly for campaign management which combines anaytical and operational CRMs.</p>
                         </div>
 
 
                         <div className={Styles.card9}>
                             <img src={CRM10} alt='' />
                             <h3>Strategic</h3>
-                            <p>This is a market study CMR, which helps you to understand and fellow market trends and demands, crucial for the customer demand supply efficiency.</p>
+                            <p>This is a market study CRM, which helps you to understand and fellow market trends and demands, crucial for the customer demand supply efficiency.</p>
                         </div>
 
                     </div>

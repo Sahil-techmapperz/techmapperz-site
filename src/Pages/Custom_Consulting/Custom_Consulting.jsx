@@ -40,7 +40,7 @@ const Custom_Consulting = () => {
                     <div className={Styles.product}>
                         <div className={Styles.product_info}>
                             <h1 className={Styles.heading}>Custom CRM Consulting </h1>
-                            <p>At custom CRM consulting we understand your capabilities, mapping your organization's desired future state, then recommend CRM implementation or upgrading in line with your customer management approach, With a good CRM, you get wide-ranging customer analytics; you can maintain communication history and always stay up-to-date with process automation.</p>
+                            <p>At custom CRM consulting we understand your current capabilities, mapping your organization's desired future state, then recommend CRM implementation or upgrading in line with your customer management approach, With a good CRM, you get wide-ranging customer analytics; you can maintain communication history and always stay up-to-date with process automation.</p>
 
                             <Link to={"/contact"}> <div className={Styles.btn}>
                                 <div></div>

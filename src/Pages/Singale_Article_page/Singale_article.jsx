@@ -97,6 +97,7 @@ useEffect(() => {
 
     <div className={"blog_contater"} >
       <iframe
+      
         src={post.guid.rendered}
         width="100%"
         height="100%"

@@ -42,7 +42,7 @@ const CRM_Consulting = () => {
                     <div className={Styles.product}>
                         <div className={Styles.product_info}>
                             <h1 className={Styles.heading}>CRM Consulting</h1>
-                            <p>With the accumulated experience of more than 20 years, our team is well equipped to help you solve all possible challenges in customer management field. We have successully under taken and implemented numerous CRM solutions in the field of Healthcare, IT, Ecommerce to mention a fews.. </p>
+                            <p>With the accumulated experience of more than 20 years, our team is well equipped to help you solve all possible challenges in customer management field. We have successully under taken and implemented numerous CRM solutions in the field of Healthcare, IT, Ecommerce to mention a few. </p>
 
                             <Link to={"/contact"}> <div className={Styles.btn}>
                                 <div></div>

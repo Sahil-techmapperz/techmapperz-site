@@ -257,7 +257,9 @@
     padding: 2rem;
 }
 
-
+.service_mobile{
+    display: none;
+}
 
 
 
@@ -522,6 +524,11 @@
         border: none;
         padding: 10px;
     }
+
+    .service_web{
+        display: none;
+    }
+    .service_mobile{display:block ;}
     
 }
 
