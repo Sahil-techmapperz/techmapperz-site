@@ -157,7 +157,7 @@ const Career = () => {
           <div className={`${Styles.card} ${Styles.card1}`}>
             <img src={career_idea_1} alt='' />
             <h3>Possibilities unmatched</h3>
-            <p>With techmapperZ being a start up with business interests and prospects in many IT fields, weather its. And working with us will give you exposure to many sectors , private and government across many cities across India. </p>
+            <p>With techmapperz being a start up with business interests and prospects in many IT fields, weather its. And working with us will give you exposure to many sectors, private and government across many cities across India. </p>
 
           </div>
           <div className={`${Styles.card} ${Styles.card2}`}>
@@ -189,7 +189,7 @@ const Career = () => {
           <div className={`${Styles.card} ${Styles.card6}`}>
             <img src={career_idea_6} alt='' />
             <h3>Earn unlimited</h3>
-            <p>No matter what, Salary is an important parameter at tech mappers we acknowledge your talent with premium compensation , which grows as your skills grow.</p>
+            <p>No matter what, Salary is an important parameter at Techmapperz we acknowledge your talent with premium compensation , which grows as your skills grow.</p>
 
           </div>
 

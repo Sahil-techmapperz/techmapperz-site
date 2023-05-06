@@ -102,7 +102,7 @@ const Mobile_development = () => {
                         <div className={`${styles.card} ${styles.main_card2}`}>
                             <img src={MobileDev3} alt='' />
                             <h3>Native App</h3>
-                            <p>These apps are applications built for a specific mobile platform.For example, Apple native applications are only accessible on Apple devices, and users may only accessible on Apple devices,and users may only access applications from other cell phone providers on their own branded devices...</p>
+                            <p>These apps are applications built for a specific mobile platform. For example, Apple native applications are only accessible on Apple devices, and users may only access applications from other cell phone providers on their own branded devices. Native apps may offer higher performance compared to more generalised apps.</p>
                         </div>
 
                         <div className={styles.card}>
@@ -115,7 +115,7 @@ const Mobile_development = () => {
                         <div className={styles.card}>
                             <img src={MobileDev5} alt='' />
                             <h3>Hybrid App</h3>
-                            <p>Hybrid  apps pool the effectiveness of native apps and web-based apps and support both types of technology. These apps are swift and easy to create on the developer's end, but they often have a lower performance rate...</p>
+                            <p>Hybrid apps pool the effectiveness of native apps and web-based apps, and support both types of technology. These apps are swift and easy to create on the developer's end, but they often have a lower performance rate and therefore provide a less appreciated experience for the end-user.</p>
 
                         </div>
 
@@ -140,7 +140,10 @@ const Mobile_development = () => {
                             </div>
 
                             <h3>Market to Study</h3>
-                            <p>We generelly conduct market research in determining your exact requirements and what you rivals are doing and what are their strengths and shortcomming...</p>
+                            <p>we generally conduct market research in
+                                determining your exact requirements and what your rivals are
+                                doing and what are their strengths and shortcomings so that we
+                                can avoid making the same mistakes.</p>
                         </div>
 
                         <div className={styles.card2}>
@@ -186,7 +189,7 @@ const Mobile_development = () => {
 
 
                             <h3>Brand Value</h3>
-                            <p>Mobile apps are a one-stop point for getting all the relevent information related to the brand as well as showcasing the products and services.Thus increasing the overallBrand Value.</p>
+                            <p>Mobile apps are a one-stop point for getting all the relevent information related to the brand as well as showcasing the products and services. Thus increasing the over all Brand Value.</p>
                         </div>
 
                         <div className={styles.card6}>
@@ -225,7 +228,7 @@ const Mobile_development = () => {
                         <div className={styles.card}>
                             <img src={MobileDev12} />
                             <h3>Quality</h3>
-                            <p>Quality makes us excel.Our approach is design to provide it at all levels of functioning up-to the micro levels of functioning up-to the micro level details.that extra ounce of effort in effective communication and best practices seperates us...</p>
+                            <p>Quality makes us excel. our approach is designed to provide it at all levels of functioning up-to the micro level details. that extra ounce of effort in effective communication and best practices separates us and makes our work from Good to Great</p>
                         </div>
 
                         <div className={styles.card}>
@@ -241,7 +244,7 @@ const Mobile_development = () => {
                         <div className={styles.card}>
                             <img src={MobileDev15} />
                             <h3>Transparency</h3>
-                            <p>Your business is important to you, and also to us, so it needs to be in safe hands of our expert IT technicians, We at techMapperz...</p>
+                            <p>For most of us our business is our baby,we want the best for it, and this is the driving emotion for our transparent work culture, all our development stages are discussed , so that the client is aware of time ,manpower and progress pace.</p>
                         </div>
                     </div>
                 </div>

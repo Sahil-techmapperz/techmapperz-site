@@ -31,7 +31,8 @@ const Photogrammetry_Services = () => {
 
             <section className={styles.secand_part}>
                 <div className={styles.info}>
-                    <p>Photogrammetry is the process to obtain dependable information and measurements of physical objects from photographs and use them for the development of maps, drawings, or 3D models of terrains.
+                    <p className={styles.Photogametry_mobile}>Photogrammetry is the process to obtain dependable information from photographs and use them for the development of maps, drawings, or 3D models of terrains. Aerial images require pre and post-processing using Photogrammetry before they can be used to extract valuable geo-data. Techmapperz offers the following Photogrammetry services:</p>
+                    <p className={styles.Photogametry_web}>Photogrammetry is the process to obtain dependable information and measurements of physical objects from photographs and use them for the development of maps, drawings, or 3D models of terrains.
                     Aerial images require pre- and post-processing using Photogrammetry before they can be used to extract valuable geo-data. Techmapperz offers the following Photogrammetry services:</p>
 
                 </div>
@@ -40,7 +41,7 @@ const Photogrammetry_Services = () => {
                     <div className={styles.product}>
                         <img src={Photogametry1} alt="Photogametry1.png" />
                         <div className={styles.product_info}>
-                            <p>Aerial Triangulation in Photogrammetry is a method of determining and calculating 3-dimensional object coordinates by photogrammetric means, by using photographs exposed from different positions, covering the same object. We follow a highly automated aerial triangulation method that minimizes the manual intervention and increases accuracy towards a combination of point selection, point measurement, point transfer and block adjustment in a single process.</p>
+                            <p>Aerial Triangulation in Photogrammetry is a method of determining and calculating 3D object coordinates by photogrammetric means, by using photographs exposed from different positions, covering the same object. We follow a highly automated aerial triangulation method that minimizes the manual intervention and increases accuracy towards a combination of point selection, point measurement, point transfer and block adjustment in a single process.</p>
 
                             <Link> <div className={styles.btn}>
                                 <div></div>
@@ -55,9 +56,10 @@ const Photogrammetry_Services = () => {
                     <div className={styles.product}>
                         <div className={styles.product_info}>
                             <h1 className={styles.heading2}>Digital Terrain model &<br />3D Visualition</h1>
-                            <p>A DTM (Digital Terrain Models) is a highly enhanced and filtered topographic model of the bare earth where vegetation, buildings and other man-made components are removed digitally – leaving just the underlying terrain for specialized applications such as 3D modelling, volumetric calculations, and power line surveys. DTMs are typically created through photogrammetry it also uses LiDAR, LiDAR measures reflected light that bounces off the ground and back to the sensor to obtain the elevation of the Earth’s surface.
+                            <p className={styles.Photogametry_web}>A DTM (Digital Terrain Models) is a highly enhanced and filtered topographic model of the bare earth where vegetation, buildings and other man-made components are removed digitally – leaving just the underlying terrain for specialized applications such as 3D modelling, volumetric calculations, and power line surveys. DTMs are typically created through photogrammetry it also uses LiDAR, LiDAR measures reflected light that bounces off the ground and back to the sensor to obtain the elevation of the Earth’s surface.
                                 We use sophisticated post-processing tools and methods to detect errors and anomalies in DTM. The final delivery is in a client-specific format.
                                 Common uses of models include:</p>
+                                <p className={styles.Photogametry_mobile}>A DTM is a highly enhanced and filtered topographic model of the bare earth where vegetation, buildings and other man-made components are removed digitally - leaving just the underlying terrain for specialized applications such as 3D modelling, volumetric calculations, and power line surveys. DTMs are typically created through photogrammetry it also uses LiDAR. We use post-processing tools and methods to detect errors and anomalies in DTM. The final delivery is in a client-specific format. Common uses of models include:</p>
                             <div className={styles.project}>
                                 <ul>
                                     <li><p>Extracting terrain counter</p></li>

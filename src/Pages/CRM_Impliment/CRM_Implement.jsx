@@ -77,7 +77,7 @@ const CRM_Implement = () => {
                     <div className={Styles.product}>
                         <div className={Styles.product_info}>
                             <h1 className={Styles.heading}>Customised Implementation</h1>
-                            <p>Our team will try and understand your requirenment before we start with the designing of the CRM, usually, we will have multiple meetings and study your work model before we start with the designing, this is to ensure that we know what exactly your requirenment and services and needed.</p>
+                            <p>Our team will try and understand your requirenment before we start with the designing of the CRM, usually, we will have multiple meetings and study your work model before we start with the designing, this is to ensure that we know what exactly your requirenment and services needed.</p>
 
                             <Link to={"/contact"}> <div className={Styles.btn}>
                                 <div></div>

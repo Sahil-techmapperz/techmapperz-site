@@ -28,7 +28,8 @@ const GIS_Services = () => {
 
             <section className={Styles.secand_part}>
                 <div className={Styles.info}>
-                    <p>GIS (Geographical Information System) is a process that stores, creates, manages, analyses, and displays different types of spatial data. Geospatial services describe objects, events or other features with a location on or near the surface of the earth typically combining coordinates on the earth and the characteristics of the object, event or The location information provided may be static in the short or dynamic (for example, a moving vehicle or pedestrian, the spread of an infectious disease).
+                    <p className={Styles.GIS_mobile}>GIS is a process that stores, creates, manages, analyses, and displays different types of spatial data.Techmapperz offers GIS services with an end-to-end solution for spatial data storing, management and analysis to Government and Enterprise sectors through GIS services. Techmapperz uses new-edge technology, deep research and innovation that are implemented by high skilled and experienced GIS analysts to create a simple solutions for a complex problems. The various GIS Data services offered by Techmapperz are:</p>
+                    <p className={Styles.GIS_web}>GIS (Geographical Information System) is a process that stores, creates, manages, analyses, and displays different types of spatial data. Geospatial services describe objects, events or other features with a location on or near the surface of the earth typically combining coordinates on the earth and the characteristics of the object, event or The location information provided may be static in the short or dynamic (for example, a moving vehicle or pedestrian, the spread of an infectious disease).
                         Techmapperz offers GIS services with an end-to-end solution for spatial data storing, management and analysis to Government and Enterprise sectors through GIS services. Techmapperz uses new-edge technology, deep research and innovation that are implemented by high skilled and experienced GIS analysts to create a simple solutions for a complex problems. The various GIS Data services offered by Techmapperz are:</p>
                 </div>
                 <div className={Styles.contaner}>
@@ -36,7 +37,8 @@ const GIS_Services = () => {
                     <div className={Styles.product}>
                         <img src={Geospatial_Mapping} alt="Geospatial_Mapping.png" />
                         <div className={Styles.product_info}>
-                            <p>Geospatial mapping is a type of spatial analysis technique that typically employs software capable of rendering maps processing spatial data, and applying analytical methods to terrestrial or geographic datasets, including the use of geographic information systems. Techmapperz offers different kinds of GIS mapping Services:</p>
+                            <p className={Styles.GIS_mobile}>Geospatial mapping is a type of spatial analysis technique that typically uses software capable of rendering maps processing spatial data, and applying analytical methods to terrestrial or geographic datasets. Techmapperz offers different kinds of GIS mapping Services:</p>
+                            <p className={Styles.GIS_web}>Geospatial mapping is a type of spatial analysis technique that typically uses software capable of rendering maps processing spatial data, and applying analytical methods to terrestrial or geographic datasets, including the use of geographic information systems. Techmapperz offers different kinds of GIS mapping Services:</p>
                             <ul>
                                 <li><p>Topographical Mapping</p></li>
                                 <li><p>Utility Mapping</p></li>

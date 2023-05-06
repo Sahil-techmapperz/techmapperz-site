@@ -279,9 +279,10 @@ const handaledown=()=>{
                             <img className={Styles.about_us_drone} src={Home_9} alt='' loading="lazy" />
                             <p className={Styles.title}>About Us</p>
                             <div className={Styles.about_right_contener}>
-                                <h1>Why Choose Techmapperz</h1>
-                                <p>The smaller things make big difference in everything that we do, we at Techmapperz also believe in the attention to detail methodology, and our eye to the detail in every project that we manage is what makes us stand out from the rest, we have a 4 step approach on how we execute a project plan</p>
-                                <p>We strive to be a software Development Company that
+                                <h1>Why Choose Techmapperz?</h1>
+                                <p className={Styles.about_text_web}>The smaller things make big difference in everything that we do, we at Techmapperz also believe in the attention to detail methodology, and our eye to the detail in every project that we manage is what makes us stand out from the rest, we have a 4 step approach on how we execute a project plan</p>
+                                <p className={Styles.about_text_mobile}>The smaller things make big difference in everything that we do, we at Techmapperz also believe in the attention to detail methodology, and our eye to the detail in every project that we manage is what makes us stand out from the rest, we have a 4 step approach on how we execute a project plan</p>
+                                <p className={Styles.about_text_web}>We strive to be a software Development Company that
                                     delivers cutting edge solutions,helping not just Fortune 500
                                     companies and enterprise clients on their digital evolution journey.</p>
                                 <div className={Styles.know_more}>

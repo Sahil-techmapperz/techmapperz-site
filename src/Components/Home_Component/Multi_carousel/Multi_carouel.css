@@ -22,4 +22,12 @@
         width: 150px;
         margin-left: 5rem;
     }
+    .multi_carousel_headind{
+        text-align:center;
+        font-weight:bold;
+        font-size: 26px;
+        line-height: 54px;
+        letter-spacing: 0.162793px;
+        color: #FFFFFF;
+    }
 }
