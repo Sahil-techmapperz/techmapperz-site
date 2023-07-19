@@ -9,6 +9,7 @@ import Custom_Consulting6 from '../../Photos/Custom_Consulting6.gif';
 
 
 import Styles from "./Custom_Consulting.module.css";
+import { Helmet } from 'react-helmet';
 
 
 const Custom_Consulting = () => {
@@ -25,6 +26,11 @@ const Custom_Consulting = () => {
 
     return (
         <div className={Styles.CRM_Integretion}>
+            <Helmet>
+        <title>{"Techmapperz"}</title>
+        <meta name="description" content={"Techmapperz map your business"} />
+        <meta property="og:title" content={"Techmapperz"} />
+      </Helmet>
             <section className={Styles.first_part}>
                 <h1>Custom CRM Consulting</h1>
                 <p><Link to={"service"}>Services</Link> /<Link to={"/crm_page"}> CRM-ERP</Link> / Custom CRM Consulting</p>

@@ -11,6 +11,9 @@ const Recent_login_Route = require("./routes/Recent_login_route/Recent_login_rou
 const TestimonialRoute = require("./routes/Testimonial_route/Testimonial_route");
 const BannerRoute = require("./routes/Banner_route/banner_route");
 const Chatbotroute = require("./routes/Chatbot_route/Chatbot_route");
+const Newblogpost = require("./routes/NewBlog_route/NewBlog_route");
+const Comment = require("./routes/Comment_route/Comment_route");
+const Author = require("./routes/Author_route/Author_route");
 
 
 require('dotenv').config();
@@ -29,6 +32,9 @@ app.use("/recent-logins",Recent_login_Route)
 app.use("/Testimonial",TestimonialRoute)
 app.use("/Banner",BannerRoute)
 app.use("/Chatbot",Chatbotroute)
+app.use("/Newblogpost",Newblogpost)
+app.use("/comments",Comment)
+app.use("/author",Author)
 
 
 

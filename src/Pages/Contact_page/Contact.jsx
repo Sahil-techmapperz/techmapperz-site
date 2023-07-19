@@ -3,6 +3,8 @@ import React, { useEffect, useState } from 'react'
 import Styles from "./Contact.module.css";
 import { BiTimeFive } from 'react-icons/bi';
 import { AiFillHome } from 'react-icons/ai';
+import { IoMdContacts } from 'react-icons/io';
+import { MdEmail } from 'react-icons/md';
 import {
     Box,
     VStack,
@@ -18,6 +20,7 @@ import {
 
 } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 const init = {
     "name": "",
     "email": "",
@@ -58,9 +61,7 @@ const Contact = () => {
             errors.email = "required*";
         }
 
-        if (!contactdata.projectType) {
-            errors.projectType = "required*";
-        }
+       
 
         if (!contactdata.mobile) {
             errors.mobile = "required*";
@@ -68,9 +69,6 @@ const Contact = () => {
             errors.mobile = "enter 10 digit mobile number"
         }
 
-        if (!contactdata.projectdetails) {
-            errors.projectdetails = "required*";
-        }
 
         return errors;
     };
@@ -80,22 +78,33 @@ const Contact = () => {
     const handalechange = (e) => {
         const { name, value } = e.target;
         setcontactdata({ ...contactdata, [name]: value })
-        console.log(contactdata);
+        
     }
 
     const handalesubmit = (e) => {
         e.preventDefault();
         const validationErrors = validateForm();
 
+
         if (Object.keys(validationErrors).length > 0) {
             setHasError(validationErrors);
             return;
         } else {
             setHasError({});
+            const{name,email,mobile,projectType,projectdetails}=contactdata;
+            let data={name,email,mobile,projectType,projectdetails};
+            if(data.projectType==""){
+                data.projectType="none";
+                
+            }
+            if(data.projectdetails==""){
+                data.projectType="none";
+                
+            }
             fetch(`${process.env.REACT_APP_Backend_baseUrl}/contact`, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
-                body: JSON.stringify(contactdata)
+                body: JSON.stringify(data)
             }).then(res => {
                 if (res.status === 200) {
                     toast({
@@ -144,6 +153,11 @@ const Contact = () => {
 
     return (
         <div className={Styles.contact}>
+            <Helmet>
+        <title>{"Techmapperz"}</title>
+        <meta name="description" content={"Techmapperz map your business"} />
+        <meta property="og:title" content={"Techmapperz"} />
+      </Helmet>
             <div className={Styles.contact_top}>
                 <h1>Contact us</h1>
                 <p> <Link to={"/"}>Home</Link> / Contact Us</p>
@@ -151,17 +165,25 @@ const Contact = () => {
             <div className={Styles.contact_bottom}>
                 <div className={Styles.contact_bottom_left}>
                     <p className={Styles.title}>Get In Touch</p>
-                    <h1>Do you have a project in your mind?</h1>
+                    <h1>The internet is pretty huge,<br/> We're so glad you found us</h1>
                     <div className={Styles.addres_contaner}>
-                        <p className={Styles.logo_contaner}><BiTimeFive className={Styles.logo} />  9:30-6:30 </p>
+                        <p className={Styles.logo_contaner}><BiTimeFive className={Styles.logo} />  9:30-6:30 IST</p>
+                        <div className={Styles.address_card}>
+                            <p className={Styles.logo_contaner2}><MdEmail className={Styles.logo} />Email</p>
+                            <p className={Styles.address}>info@techmapperz.com</p>
+                        </div>
+                        <div className={Styles.address_card}>
+                            <p className={Styles.logo_contaner2}><IoMdContacts className={Styles.logo} />Phone no</p>
+                            <p className={Styles.address}>+91-9643002065 / +91-3335752689</p>
+                        </div>
                         <div className={Styles.address_card}>
                             <p className={Styles.logo_contaner2}><AiFillHome className={Styles.logo} />Delhi</p>
                             <p className={Styles.address}>55, Lane - 2, Westend Marg, Saidullajab,<br/>
-                                Near Saket metro station, New Delhi - 110030</p>
+                                Near Saket metro station, New Delhi - 110030, India</p>
                         </div>
                         <div className={Styles.address_card}>
                             <p className={Styles.logo_contaner}><AiFillHome className={Styles.logo} />Kolkata</p>
-                            <p>CF 401, Block CF, Sector 1, Salt Lake, Kolkata-700064</p>
+                            <p>CF 401, Block CF, Sector 1, Salt Lake, Kolkata-700064, India</p>
                         </div>
                     </div>
                 </div>
@@ -195,7 +217,7 @@ const Contact = () => {
 
                         <HStack spacing={[4,14,14]}>
                             <FormControl isInvalid={hasError.projectType}>
-                                <FormLabel>Project Type*</FormLabel>
+                                <FormLabel>Project Type</FormLabel>
                                 <Input
                                     name="projectType"
                                     value={contactdata.projectType}

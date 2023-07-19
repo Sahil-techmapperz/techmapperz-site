@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
-import "./SinglePost.css";
 import dummy_image from "../../Photos/dummy-image.jpg"
 function RecentPosts() {
   const [recentPosts, setRecentPosts] = useState([]);

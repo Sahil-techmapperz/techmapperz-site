@@ -29,6 +29,7 @@ import Rectangle_41 from '../../Photos/Rectangle 41.png';
 import Drone_race_gif from '../../Photos/Our Services/Drone_race.gif';
 import Coworking_gif from '../../Photos/Our Services/Coworking.gif';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 
 const Service_main = () => {
@@ -45,6 +46,11 @@ const Service_main = () => {
 
     return (
         <div className={Styles.service}>
+            <Helmet>
+        <title>{"Techmapperz"}</title>
+        <meta name="description" content={"Techmapperz map your business"} />
+        <meta property="og:title" content={"Techmapperz"} />
+      </Helmet>
             <section className={Styles.first_part}>
                 <h1>Our Services</h1>
                 <p><Link to={"/"}>Home</Link> / Services</p>
@@ -142,9 +148,9 @@ const Service_main = () => {
                         <img src={Ourservice4} alt='' />
                         <img className={Styles.num} src={T02} alt='' />
                         </div> 
-                        <h3 > <Link to={"/Mobile_development"}> Mobile Application Development </Link></h3>
+                        <h3 > <Link to={"/mobile_app_development"}> Mobile Application Development </Link></h3>
                         <p className={Styles.service_mobile}>The mobile app software intelligently combines the latest technology,and design solutions which constantly get updated.It incorporates API, GPS, Camera, Microphone, AI and other latest technologies and becomes a Launchpad hurling your business to then ext level.</p>
-                            <p className={Styles.service_web}>With global competition and greater customer expectations companies look forward to enhance customer relationship and experience,many business entities..</p>
+                            <p className={Styles.service_web}>With global competition and greater customer expectations companies look forward to enhance customer relationship and experience, many business entities.</p>
                         </div>
 
 
@@ -154,7 +160,7 @@ const Service_main = () => {
                         <img className={Styles.num} src={T03} alt='' />
                         </div> 
                         <h3 > <Link to={"/crm_page"}> CRM/ERP </Link></h3>
-                            <p>At custom CRM consulting we understand your current capabilities, map your organisation's desired future state, and then recommend CRM implentation</p>
+                            <p>At custom CRM consulting we understand your current capabilities, map your organisation's desired future state, and then recommend CRM implentation.</p>
                         </div>
 
                         
@@ -164,8 +170,8 @@ const Service_main = () => {
                          <img className={Styles.num} src={T04} alt='' />
                         </div> 
                         <h3 > <Link to={"/It_consulting"}> IT Consulting Services </Link></h3>
-                           <p className={Styles.service_mobile}>We provide IT consulting services to business in a wide range of industries.We use our expertise to identify your opportunities and deliver solutions that will help you outperform your competitors.</p>
-                            <p className={Styles.service_web}>At custom CRM consulting we understand your current capabilities,map your organisation's desired future state, and then recommend CRM implementation</p>
+                           <p className={Styles.service_mobile}>We provide IT consulting services to business in a wide range of industries. We use our expertise to identify your opportunities and deliver solutions that will help you outperform your competitors.</p>
+                            <p className={Styles.service_web}>At custom CRM consulting we understand your current capabilities, map your organisation's desired future state, and then recommend CRM implementation.</p>
                         </div>
 
                         

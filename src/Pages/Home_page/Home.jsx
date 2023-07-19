@@ -23,6 +23,7 @@ import Drone_gif from '../../Photos/Home/drone.gif';
 import App_development from '../../Photos/Home/App_development.gif';
 import Multi_carousel from '../../Components/Home_Component/Multi_carousel/Multi_carousel';
 import TechBlog from '../../Components/Home_Component/Home_technoBlog/techBlog';
+import { Helmet } from 'react-helmet';
 // import Chatbot from '../../Components/Home_Component/Chatbot/Chatbot';
 
 
@@ -94,10 +95,10 @@ const Home = () => {
             .then(data => {
                 setTestimonial(data);
             });
-        fetch(`${process.env.REACT_APP_Backend_baseUrl}/article/posts?perpage=3`)
+        fetch(`${process.env.REACT_APP_Backend_baseUrl}/Newblogpost/1?perPage=3`)
             .then(res => res.json())
             .then(data => {
-                setTechBlog(data.posts);
+                setTechBlog(data.blogPosts);
             });
         fetch(`${process.env.REACT_APP_Backend_baseUrl}/banner`)
             .then(res => res.json())
@@ -129,6 +130,11 @@ const handaledown=()=>{
     return (
         <>
             <div>
+            <Helmet>
+        <title>{"Techmapperz"}</title>
+        <meta name="description" content={"Techmapperz map your business"} />
+        <meta property="og:title" content={"Techmapperz"} />
+      </Helmet>
                 <section className={`${Styles.home_first_part} ${Styles.carousel_web}`}>
                     <Carousel
                         className={`${Styles.carousel_container} `}
@@ -280,8 +286,8 @@ const handaledown=()=>{
                             <p className={Styles.title}>About Us</p>
                             <div className={Styles.about_right_contener}>
                                 <h1>Why Choose Techmapperz?</h1>
-                                <p className={Styles.about_text_web}>The smaller things make big difference in everything that we do, we at Techmapperz also believe in the attention to detail methodology, and our eye to the detail in every project that we manage is what makes us stand out from the rest, we have a 4 step approach on how we execute a project plan</p>
-                                <p className={Styles.about_text_mobile}>The smaller things make big difference in everything that we do, we at Techmapperz also believe in the attention to detail methodology, and our eye to the detail in every project that we manage is what makes us stand out from the rest, we have a 4 step approach on how we execute a project plan</p>
+                                <p className={Styles.about_text_web}>The smaller things make big difference in everything that we do, we at Techmapperz also believe in the attention to detail methodology, and our eye to the detail in every project that we manage is what makes us stand out from the rest, we have a 4 step approach on how we execute a project plan.</p>
+                                <p className={Styles.about_text_mobile}>The smaller things make big difference in everything that we do, we at Techmapperz also believe in the attention to detail methodology, and our eye to the detail in every project that we manage is what makes us stand out from the rest, we have a 4 step approach on how we execute a project plan.</p>
                                 <p className={Styles.about_text_web}>We strive to be a software Development Company that
                                     delivers cutting edge solutions,helping not just Fortune 500
                                     companies and enterprise clients on their digital evolution journey.</p>
@@ -308,7 +314,7 @@ const handaledown=()=>{
                     </div>
 
                     <div className={Styles.techblog_contaner}>
-                        <TechBlog postdata={TechBlogpost} />
+                        <TechBlog postdata={TechBlogpost &&TechBlogpost} />
                     </div>
 
                     <div className={`${Styles.Testimonial} ${Styles.Testimonial_web}`}>

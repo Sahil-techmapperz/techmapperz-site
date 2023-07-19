@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from './Details.module.css'
 import { HiOutlineMail } from 'react-icons/hi';
 import { BsWhatsapp } from 'react-icons/bs';
@@ -26,9 +26,13 @@ const init = {
     "projectdetails": ""
 }
 
+
+
+
 const Details = () => {
 
     const [contactdata, setcontactdata] = useState(init);
+    const[clickcontact,setclickcontact]=useState(false);
     const [hasError, setHasError] = useState({})
     const { isOpen, onOpen, onClose } = useDisclosure()
 
@@ -38,6 +42,19 @@ const Details = () => {
         const { name, value } = e.target;
         setcontactdata({ ...contactdata, [name]: value })
         console.log(contactdata);
+    }
+
+    useEffect(()=>{
+        onOpen();
+    return () => {
+      onClose();
+    };
+    },[])
+
+
+    const handalecontactform=()=>{
+        setclickcontact(true)
+        onOpen()
     }
 
 
@@ -52,9 +69,7 @@ const Details = () => {
             errors.email = "required*";
         }
 
-        if (!contactdata.projectType) {
-            errors.projectType = "required*";
-        }
+       
 
         if (!contactdata.mobile) {
             errors.mobile = "required*";
@@ -71,13 +86,24 @@ const Details = () => {
 
     const handalesubmit = (e) => {
         e.preventDefault();
-        console.log("in")
+        const{name,email,mobile,projectType,projectdetails}=contactdata;
+            let data={name,email,mobile,projectType,projectdetails};
+            if(data.projectType==""){
+                data.projectType="none";
+                
+            }
+
+
+            if(data.projectdetails==""){
+                data.projectType="none";
+                
+            }
         // const validationErrors = validateForm();
 
             fetch(`${process.env.REACT_APP_Backend_baseUrl}/contact`, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
-                body: JSON.stringify(contactdata)
+                body: JSON.stringify(data)
             }).then(res => {
                 if (res.status === 200) {
                     toast({
@@ -129,7 +155,7 @@ const Details = () => {
 
 
             <div className={styles.contact}>
-                <h3 onClick={onOpen} className={styles.class1}>Contact Us</h3>
+                <h3 onClick={handalecontactform} className={styles.class1}>Contact Us</h3>
                 <h3 className={styles.class2}><HiOutlineMail /></h3>
             </div>
 
@@ -137,7 +163,6 @@ const Details = () => {
                 <div className={styles.text}>
                     <ReactWhatsapp number="9643002065" message="">
                         <h3 className={styles.class3}><BsWhatsapp /></h3>
-                        <h3 className={styles.class4}>Any Text</h3>
                     </ReactWhatsapp>
 
                 </div>
@@ -168,7 +193,8 @@ const Details = () => {
                     <ModalBody >
                         <form >
                             <div className={styles.contactform_contaner}>
-                                <h1 style={{"color":"#396ba9"}}>Contact Us</h1>
+                                {clickcontact? <h1 style={{"color":"#396ba9"}}>Contact Us</h1>: <h1 style={{"color":"#396ba9","textAlign":"center","marginLeft":"-20px","textDecoration":"underline","fontSize":"20px"}}>The Internet is Pretty Huge,<br/> We're So Glad You Found US</h1>}
+                               
                                
                                 <input required={"true"} value={contactdata.name} name="name" onChange={handalechange} type="text" placeholder="Enter Full Name" />
                                 
@@ -176,9 +202,7 @@ const Details = () => {
                                     value={contactdata.email}
                                     onChange={handalechange} type="email" placeholder="Enter Email" />
                                
-                                <input required={"true"}  name="projectType"
-                                    value={contactdata.projectType}
-                                    onChange={handalechange} type="text" placeholder="Enter Project Type" />
+                               
                                 
                                 <input required={"true"}  name="mobile"
                                     value={contactdata.mobile}

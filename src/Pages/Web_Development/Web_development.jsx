@@ -30,6 +30,7 @@ import Webdev4 from '../../Photos/Webdev4.png';
 import Webdev3 from '../../Photos/Webdev3.png';
 import Webdev2 from '../../Photos/Webdev2.png';
 import Webdev11 from '../../Photos/Webdev11.png';
+import { Helmet } from 'react-helmet';
 
 
 
@@ -48,6 +49,11 @@ const Web_Development = () => {
 
     return (
         <div className={Styles.development}>
+            <Helmet>
+        <title>{"Techmapperz"}</title>
+        <meta name="description" content={"Techmapperz map your business"} />
+        <meta property="og:title" content={"Techmapperz"} />
+      </Helmet>
             <section className={Styles.first_part}>
                 <h1>Website Development</h1>
                 <p><Link to={"/"}>Home</Link> / <Link to={"/service"}>Service</Link> / Website Development</p>
@@ -251,7 +257,7 @@ const Web_Development = () => {
                             </div>
 
                             <h1>Flexibility</h1>
-                            <p>We understand your need,and sometime we know that it can we time critical yet should affordable,that is why we have custom designed package to suit your demands of time and money.</p>
+                            <p>We understand your need, and sometime we know that it can we time critical yet should affordable, that is why we have custom designed package to suit your demands of time and money.</p>
                         </div>
 
 
@@ -262,7 +268,7 @@ const Web_Development = () => {
                             </div>
 
                             <h1>Friendly</h1>
-                            <p>Nothing is more important that a customer oritented business model,we at Techmapperz  love what we do, and we are always passeonate about putting our customers first.</p>
+                            <p>Nothing is more important that a customer oritented business model, we at Techmapperz  love what we do, and we are always passeonate about putting our customers first.</p>
                         </div>
 
                         <div className={Styles.card5}>
@@ -272,7 +278,7 @@ const Web_Development = () => {
                             </div>
 
                             <h1>Quality</h1>
-                            <p>Quality makes us excel.our approach is designed to provide it at all levels of functioning up-to the micro level details,that extra ounce of effort in effective communication....</p>
+                            <p>Quality makes us excel. our approach is designed to provide it at all levels of functioning up-to the micro level details.</p>
                         </div>
 
 

@@ -8,6 +8,7 @@ import Drone_Service1 from '../../Photos/DroneService1.png';
 import Drone_Service2 from '../../Photos/DroneService2.png';
 import Drone_Service3 from '../../Photos/DroneService3.png';
 import Drone_Service4 from '../../Photos/DroneService4.png';
+import { Helmet } from 'react-helmet';
 
 
 const Drone_Service = () => {
@@ -25,6 +26,11 @@ const Drone_Service = () => {
 
     return (
         <div className={styles.drone}>
+            <Helmet>
+        <title>{"Techmapperz"}</title>
+        <meta name="description" content={"Techmapperz map your business"} />
+        <meta property="og:title" content={"Techmapperz"} />
+      </Helmet>
             <section className={styles.part1}>
                 <h1>Drone Services</h1>
                 <p><Link to={"/"}>Home</Link> / <Link to={"/service"}>Services</Link> / Drone Services</p>

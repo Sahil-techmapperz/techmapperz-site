@@ -12,10 +12,16 @@ import {
 } from '@chakra-ui/react'
 
 import { BsCaretRightFill } from 'react-icons/bs';
+import { Helmet } from "react-helmet";
 const Choose = () => {
 
     return (
         <div className={styles.main}>
+            <Helmet>
+        <title>{"Techmapperz"}</title>
+        <meta name="description" content={"Techmapperz map your business"} />
+        <meta property="og:title" content={"Techmapperz"} />
+      </Helmet>
 
             <section className={styles.first_part}>
                 <div className={styles.first_part_main}>

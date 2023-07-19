@@ -25,15 +25,14 @@
     color: white;
     position: absolute;
     display: flex;
-    z-index: 3;
-    top: 13rem;
-    left: 18rem;
+  top: 40%;
+  left: 50%;
+  transform: translate(-40%, -50%);
     font-size: 60px;
     font-weight: 600;
     letter-spacing: 0.16px;
     text-align: center;
-    justify-content: center;
-    width: 900px;
+    /* width:80%; */
 }
 
 
@@ -41,12 +40,12 @@
     color: white;
     position: absolute;
     z-index: 3;
-    bottom: 8rem;
+    bottom: 12rem;
     left: 6rem;
     width: 450px;
     font-size: 16px;
     font-weight: 600;
-    text-align: left;
+    text-align: justify;
     border-left: 6px solid #396ba9;
     padding-left: 10px;
 }
@@ -746,16 +745,14 @@
         color: white;
         position: absolute;
         z-index: 3;
-        top: 8rem;
+        top: 25%;
         left: 1.5rem;
-        width:90%;
+        width:85%;
         height: max-content;
         font-size: 14px;
-        text-align:left;
-        /* text-justify: inter-word; */
+        text-align:justify !important;
         border-left: 6px solid #396ba9;
         padding-left: 5px;
-        /* display: none; */
     }
     
     
@@ -815,7 +812,7 @@
 
     .carousel_mobile .know_more {
         position: absolute;
-        bottom: 5rem;
+        bottom: 3rem !important;
         width: 250px;
         left: 35%;
     }
@@ -823,13 +820,13 @@
     .carousel_mobile .title{
         color:white;
         position: absolute;
-        z-index: 3;
-        top: 4rem;
-        left: -20rem;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%);
+        text-align: center;
         font-size: 20px;
-        font-weight:bold;
-        text-align: center !important;
-        width: 90%;
+        font-weight:600;
+        width: 60%;
     }
 
 
@@ -1196,6 +1193,7 @@
 
  .Testimonial {
     width: 100%;
+    height: min-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1240,7 +1238,7 @@
 .Testimonial .card {
     margin: auto;
     text-align: left;
-    height: 100%;
+    height:min-content;
     /* margin-top: 2rem; */
     width: 100%;
 }
@@ -1285,7 +1283,15 @@
 }
 
 .custom_arrow2{
-    display:none;
+    right: 0;
+    bottom: 10rem;
+    font-size: 30px;
+}
+
+
+.custom_arrow_prev2{
+    
+    display: none;
 }
 
 .Testimonial_web{

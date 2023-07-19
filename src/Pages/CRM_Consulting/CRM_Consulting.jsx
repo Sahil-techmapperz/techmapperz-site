@@ -14,6 +14,7 @@ import T01 from '../../Photos/01.png';
 import T02 from '../../Photos/02.png';
 import T03 from '../../Photos/03.png';
 import T04 from '../../Photos/04.png';
+import { Helmet } from 'react-helmet';
 
 const CRM_Consulting = () => {
 
@@ -29,6 +30,11 @@ const CRM_Consulting = () => {
 
     return (
         <div className={Styles.CRM_Consulting}>
+            <Helmet>
+        <title>{"Techmapperz"}</title>
+        <meta name="description" content={"Techmapperz map your business"} />
+        <meta property="og:title" content={"Techmapperz"} />
+      </Helmet>
             <section className={Styles.first_part}>
                 <h1>CRM Consulting</h1>
                 <p><Link to={"/service"}>Services</Link> / <Link to={"/crm_page"}>CRM-ERP</Link> / CRM Consulting</p>
@@ -70,7 +76,7 @@ const CRM_Consulting = () => {
                         </div> 
                             
                             <h3>Selection</h3>
-                            <p>We help you with the analysis of ypur requirenment and design the best CRM suited for your needs</p>
+                            <p>We help you with the analysis of ypur requirenment and design the best CRM suited for your needs.</p>
                         </div>
 
 
@@ -92,7 +98,7 @@ const CRM_Consulting = () => {
                         </div> 
                            
                             <h3>Migration</h3>
-                            <p>We help you migrate to a better CRM , in case your CRM has become out dated of obsolate </p>
+                            <p>We help you migrate to a better CRM, in case your CRM has become out dated of obsolate.</p>
                         </div>
 
 
@@ -103,7 +109,7 @@ const CRM_Consulting = () => {
                         </div> 
                            
                             <h3>Improvement</h3>
-                            <p>We deal with flaws of your CRM and help you maximise the utilities of your current CRM </p>
+                            <p>We deal with flaws of your CRM and help you maximise the utilities of your current CRM.</p>
                         </div>
 
                     </div>

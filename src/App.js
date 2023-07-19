@@ -9,7 +9,7 @@ function App() {
   return (
     <div className='app'>
     <div className='navbar'> <Navbar/></div>
-    <div className='details'> <Details/></div>
+    {/* <div className='details'> <Details/></div> */}
      <Router/>
      <Footer/>
     </div>

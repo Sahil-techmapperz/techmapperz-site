@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import styles from "./PrivacyPolicy_page.module.css"
 import { Link } from 'react-router-dom'
+import { Helmet } from 'react-helmet';
 const PrivacyPolicy_page = () => {
     useEffect(() => {
         const options = {
@@ -12,6 +13,11 @@ const PrivacyPolicy_page = () => {
     }, []);
     return (
         <div className={styles.PrivacyPolicy}>
+            <Helmet>
+        <title>{"Techmapperz"}</title>
+        <meta name="description" content={"Techmapperz map your business"} />
+        <meta property="og:title" content={"Techmapperz"} />
+      </Helmet>
             <div className={styles.Top}>
                 <h1>Data Privacy Policy</h1>
                 <p><Link to={"/"}>Home</Link> / Data Privacy Policy</p>

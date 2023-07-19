@@ -355,7 +355,7 @@ p {
     border: 2px solid white;
     /* position: absolute; */
     width: 400px;
-    height: 350px;
+    height:max-content;
     /* top: 5px;
     left: 250px; */
 
@@ -366,7 +366,7 @@ p {
     /* margin-top: 50px; */
     /* position: absolute; */
     width: 400px;
-    height: 350px;
+    height: max-content;
     /* top: 80px;
     left: 700px; */
 }

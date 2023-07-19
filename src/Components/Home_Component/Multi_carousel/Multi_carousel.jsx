@@ -3,10 +3,9 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import "./Multi_carouel.css"
 let Images = [
-    "https://techmapperz.com/images/2022/05/12/earthgenic_logo-removebg-preview.png",
     "https://ik.imagekit.io/ntktfi8dx/uploads/PAS.png?updatedAt=1680755047359",
     "https://ik.imagekit.io/ntktfi8dx/uploads/Genesys-removebg-preview.png?updatedAt=1680755067922",
-    "https://ik.imagekit.io/ntktfi8dx/uploads/English_facalities.png?updatedAt=1680830949547"
+    "https://ik.imagekit.io/ntktfi8dx/uploads/WhatsApp_Image_2023-05-20_at_12.53.16_PM.jpeg?updatedAt=1684590726666"
 ]
 
 const responsive = {
@@ -31,7 +30,7 @@ const responsive = {
 const Multi_carousel = () => {
     return (
         <>
-        <h1 className='multi_carousel_headind'>Our happy clients</h1>
+        <h1 className='multi_carousel_headind'>Our Happy Clients</h1>
         <Carousel
             swipeable={false}
             draggable={false}
