@@ -5,6 +5,7 @@ import Geospatial_Mapping from '../../Photos/Geospatial_Mapping.png';
 import Geo_health from '../../Photos/Geo_health.png';
 import WebGis1 from '../../Photos/WebGis1.png';
 import WebGis2 from '../../Photos/WebGis2.png';
+import { Helmet } from 'react-helmet';
 
 
 
@@ -19,6 +20,11 @@ const Web_GIS = () => {
     }, []);
     return (
         <div className={Styles.Web_GIS}>
+            <Helmet>
+        <title>{"Techmapperz"}</title>
+        <meta name="description" content={"Techmapperz map your business"} />
+        <meta property="og:title" content={"Techmapperz"} />
+      </Helmet>
             <div className={Styles.top}>
                 <h1>Web GIS Services</h1>
                 <p><Link to={"/"}>Home</Link> / <Link to={"service"}>Services</Link>  / Web GIS Services</p>

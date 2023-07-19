@@ -7,6 +7,7 @@ import Group1 from '../../Photos/Group1.png'
 import Career4 from '../../Photos/career_idea-4.png'
 import Career5 from '../../Photos/career_idea-5.png'
 import video from '../../media/Introducation_video.mp4'
+import { Helmet } from 'react-helmet';
 
 
 
@@ -25,6 +26,11 @@ const About = () => {
   return (
 
     <div className={styles.container}>
+      <Helmet>
+        <title>{"Techmapperz"}</title>
+        <meta name="description" content={"Techmapperz map your business"} />
+        <meta property="og:title" content={"Techmapperz"} />
+      </Helmet>
       <div className={styles.about}>
         
         <div className={styles.main}>
@@ -34,7 +40,7 @@ const About = () => {
           </header>
 
           <div className={styles.top_part}>
-            <h1>Chasing the Vision a better tomorrow where technology simplifies complex functions</h1>
+            <h1>Chasing the Vision for a better tomorrow where technology simplifies complex functions</h1>
           </div>
           <div className={styles.watermark}>About Company</div>
 

@@ -27,6 +27,7 @@ import CRM_Integretion17 from '../../Photos/CRM_Integration17.png';
 
 
 import Styles from "./CRM_Integretion.module.css";
+import { Helmet } from 'react-helmet';
 
 
 const CRM_Integretion = () => {
@@ -43,6 +44,11 @@ const CRM_Integretion = () => {
 
     return (
         <div className={Styles.CRM_Integretion}>
+            <Helmet>
+        <title>{"Techmapperz"}</title>
+        <meta name="description" content={"Techmapperz map your business"} />
+        <meta property="og:title" content={"Techmapperz"} />
+      </Helmet>
             <section className={Styles.first_part}>
                 <h1>CRM Integration</h1>
                 <p><Link to={"/service"}>Services</Link> / <Link to={"/crm_page"}>CRM-ERP</Link> /  CRM Integration</p>
@@ -56,7 +62,7 @@ const CRM_Integretion = () => {
                     <div className={Styles.product}>
                         <div className={Styles.product_info}>
                             <h1 className={Styles.heading}>Why is CRM <br /> Integration important? </h1>
-                            <p>CRM integration is connecting all the applications you use to run your business to customer information, it's a 360-degree view of customer data that can be seamlessly integrated with third-party systems related or unrelated to the host CRM system since your data synchronizes across all systems. CRM integration creates an accurate, comprehensive picture of your customers and prospects to make CRM work better, and vice versa.  </p>
+                            <p>CRM integration is connecting all the applications you use to run your business to customer information, it's a 360-degree view of customer data that can be seamlessly integrated with third-party systems related or unrelated to the host CRM system since your data synchronizes across all systems. CRM integration creates an accurate, comprehensive picture of your customers and prospects to make CRM work better, and vice versa.</p>
 
                             <Link to={"/contact"}> <div className={Styles.btn}>
                                 <div></div>

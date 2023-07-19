@@ -7,6 +7,7 @@ import Geo_health from '../../Photos/Geo_health.png'
 import GIS_Suvey from '../../Photos/GIS_Suvey.png'
 import Photogametry1 from '../../Photos/Photogametry1.png';
 import Photogametry2 from '../../Photos/Photogametry2.png';
+import { Helmet } from 'react-helmet';
 
 
 const Photogrammetry_Services = () => {
@@ -24,6 +25,11 @@ const Photogrammetry_Services = () => {
 
     return (
         <div className={styles.drone}>
+            <Helmet>
+        <title>{"Techmapperz"}</title>
+        <meta name="description" content={"Techmapperz map your business"} />
+        <meta property="og:title" content={"Techmapperz"} />
+      </Helmet>
             <section className={styles.part1}>
                 <h1>Photogrammetry Services</h1>
                 <p><Link to={"/"}>Home</Link> / <Link to={"/service"}>Services</Link> / Photogrammetry Services</p>
@@ -87,7 +93,7 @@ const Photogrammetry_Services = () => {
                             <h1 className={styles.heading3}>Contour Maps</h1>
                             <div className={styles.card1}><p>Based on the project requirenments, either the DMT or DSM model,with custom cantour lines map,giving you on
                                 improved understanding of the surface of
-                                the image taken by the drone</p>
+                                the image taken by the drone.</p>
                             </div>
                         </div>
                         <div>

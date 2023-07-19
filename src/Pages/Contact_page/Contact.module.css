@@ -186,7 +186,7 @@
 
     .contact_bottom .contact_bottom_left>h1{
         font-weight:bold;
-        font-size: 26px;
+        font-size: 18px;
         text-align: center;
         letter-spacing: 0.162793px;
         color: #FFFFFF;
@@ -206,6 +206,13 @@
 
     .contact_bottom .contact_bottom_left .address_card{
         display: block;
+    }
+
+    .contact_bottom .contact_bottom_left  .logo_contaner{
+        justify-content: left;
+    }
+    .contact_bottom .contact_bottom_left  .logo_contaner2{
+        justify-content: left;
     }
     .contact_bottom .contact_bottom_right{
         color: white;

@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom';
 import Styles from "./Sitemap.module.css";
 import { AiOutlineRight,AiOutlineLeft} from 'react-icons/ai';
+import { Helmet } from 'react-helmet';
 const Sitemap = () => {
 
 
@@ -16,6 +17,11 @@ const Sitemap = () => {
 }, []);
   return (
     <div className={Styles.sitemap}>
+      <Helmet>
+        <title>{"Techmapperz"}</title>
+        <meta name="description" content={"Techmapperz map your business"} />
+        <meta property="og:title" content={"Techmapperz"} />
+      </Helmet>
       <div className={Styles.Top}>
       <h1>Sitemap</h1>
         <p><Link to={"/"}>Home</Link> / Sitemap</p>

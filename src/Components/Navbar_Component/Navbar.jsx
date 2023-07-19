@@ -36,7 +36,7 @@ const Navbar = () => {
            location.pathname === '/it_consulting' && '3px solid red'||location.pathname === '/crm_integretion' && '3px solid red'||location.pathname === '/custom_consulting' && '3px solid red'||location.pathname === '/crm_implement' && '3px solid red'||location.pathname === '/crm_consulting' && '3px solid red'
             }}><Link to={"/service"}>Service <IoIosArrowDown /></Link>
             <ul>
-              <li><Link>Geospacial Services</Link>
+              <li><Link>Geospatial Services</Link>
                 <ul>
                   <li to={""}><Link to={"/gis_service"}>GIS Services</Link></li>
                   <li ><Link to={"/Remote_Sensing"}>Remote Sensing</Link></li>
@@ -47,10 +47,10 @@ const Navbar = () => {
               </li>
               <li><Link>IT Services</Link>
                 <ul>
-                  <li ><Link to={"/mobile_development"}>Mobile APP Development</Link></li>
+                  <li ><Link to={"/mobile_app_development"}>Mobile APP Development</Link></li>
                   <li ><Link to={"/web_development"}>Website Development</Link></li>
-                  <li ><Link to={"/crm_page"}>CRM / ERP</Link></li>
-                  <li><Link to={"/it_consulting"}>IT Consultancy</Link></li>
+                  <li ><Link to={"/crm_services"}>CRM / ERP</Link></li>
+                  <li><Link to={"/it_consulting_services"}>IT Consultancy</Link></li>
                 </ul>
               </li>
             </ul>

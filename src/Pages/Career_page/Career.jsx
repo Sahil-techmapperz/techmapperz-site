@@ -22,6 +22,7 @@ import {
   Button,
 } from '@chakra-ui/react'
 import { useToast } from '@chakra-ui/react'
+import { Helmet } from 'react-helmet';
 
 const init = {
   "name": "",
@@ -144,6 +145,11 @@ const Career = () => {
 
   return (
     <div className={Styles.career}>
+      <Helmet>
+        <title>{"Techmapperz"}</title>
+        <meta name="description" content={"Techmapperz map your business"} />
+        <meta property="og:title" content={"Techmapperz"} />
+      </Helmet>
 
       <section className={Styles.first_section}>
         <h1>Career</h1>
@@ -201,7 +207,7 @@ const Career = () => {
       <section className={Styles.secend_section}>
         <h3>Get Involved Now</h3>
         <h1 className={Styles.water_mark}>Current Openings</h1>
-        <h1>Let's join with us !!</h1>
+        <h1>Let's join us !!</h1>
         <div className={Styles.secend_section_main}>
           <div className={Styles.secend_section_main_one}>
             {Jobsdata && Jobsdata.map(job => {

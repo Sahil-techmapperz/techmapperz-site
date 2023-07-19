@@ -8,6 +8,7 @@ import CRM_Implement3 from '../../Photos/CRM_Implement3.gif';
 
 
 import Styles from "./CRM_Impliment.module.css";
+import { Helmet } from 'react-helmet';
 
 
 const CRM_Implement = () => {
@@ -24,6 +25,11 @@ const CRM_Implement = () => {
 
     return (
         <div className={Styles.CRM_Consulting}>
+            <Helmet>
+        <title>{"Techmapperz"}</title>
+        <meta name="description" content={"Techmapperz map your business"} />
+        <meta property="og:title" content={"Techmapperz"} />
+      </Helmet>
             <section className={Styles.first_part}>
                 <h1>CRM Implementation</h1>
                 <p><Link to={"/service"}>Services</Link>  /<Link to={"/crm_page"}>CRM-ERP</Link>  / CRM Implementation</p>
@@ -61,7 +67,7 @@ const CRM_Implement = () => {
                         </div>
                         <div className={Styles.product_info}>
                             <h1 className={Styles.heading}>Quick Implementation</h1>
-                            <p>Our Team is organised to deliver the CRM within the shortest span of time, we concentrate on the core issues and move to evolution mode wherein we keep adding more functionality to your CRM,ensuring that your requirenments are met and your organisation achieves  process automation capabilities. </p>
+                            <p>Our Team is organised to deliver the CRM within the shortest span of time, we concentrate on the core issues and move to evolution mode wherein we keep adding more functionality to your CRM, ensuring that your requirenments are met and your organisation achieves  process automation capabilities. </p>
 
                             <Link to={"/contact"}> <div className={Styles.btn}>
                                 <div></div>

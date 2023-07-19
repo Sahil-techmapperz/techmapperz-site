@@ -21,8 +21,8 @@ const Footer = () => {
     <div className={styles.Footer}>
       <div className={styles.Footer_main}>
       <div className={styles.footer_part_one}>
-        <p>Let's have a talk about your project.</p>
-        <h1>Need more information or want to get in touch?</h1>
+        <p>Let's talk to our expert.</p>
+        <h1>Need more information?</h1>
        <Link to={"/contact"}> <div className={styles.Submit_btn}>
             <div></div>
             <h2>Get in touch</h2>
@@ -31,9 +31,9 @@ const Footer = () => {
       </div>
 
       <div className={styles.footer_part_two}>
-        <p className={styles.title}>About</p>
-        <p>Chasing the Vision for a better tomorrow where technology simplifies complex functions.</p><br/><br/>
-        <p className={styles.title}>Follow on -</p>
+        <p className={`${styles.title} ${styles.title1}`}>About</p>
+        <p className={styles.abuot_title}>Chasing the Vision for a better tomorrow where technology simplifies complex functions.</p><br/><br/>
+        <p className={styles.title}>Follow us on -</p>
         <div className={styles.social_media_icons}>
             <a href='https://www.linkedin.com/company/techmapperz/' target="_blank"><h3><BsLinkedin className={styles.icon}/></h3></a>
             <a href='https://www.instagram.com/techmapperz/' target="_blank"><h3><BsInstagram className={styles.icon}/></h3></a>
@@ -51,10 +51,10 @@ const Footer = () => {
                 <Link to={"/"}><li>Home</li></Link>
                 <Link to={"/support"}><li>Support</li></Link>
                 <Link to={"/about"}><li>About Us</li></Link>
-                <Link to={"/Privacy_Policy"}><li>Privacy & Policy</li></Link>
+                <Link to={"/Privacy_Policy"}><li>Privacy Policy</li></Link>
                 <Link to={"/service"}><li>Services</li></Link>
                 <Link to={"/terms"}><li>Terms of Use</li></Link>
-                <Link to={"/news&article"}><li>News & Article</li></Link>
+                <Link to={"/news&article"}><li>News & Articles</li></Link>
                 <Link to={"/help"}><li>Help</li></Link>
                 <Link to={"/contact"}><li>Contact</li></Link>
                 <Link to={"/sitemap"}><li>Sitemap</li></Link>

@@ -116,6 +116,13 @@
 .title {
     font-weight: bold;
 }
+.title3{
+    font-weight: bold;
+}
+
+.abuot_title{
+    text-align: left;
+}
 
 .copyright {
     width: 100%;
@@ -167,8 +174,7 @@
     }
     
     .footer_part_three {
-       width: 100%;
-       margin-left: -3rem;
+       width:max-content;
     }
     
     .footer_part_one>h1 {
@@ -179,7 +185,7 @@
         text-align: center;
     }
     .footer_part_one>p{
-       font-size: 14px;
+       font-size: 16px;
        font-weight: bold;
        text-align: center !important;
     }
@@ -187,6 +193,16 @@
     
     .footer_part_one>a {
         color: white
+    }
+
+
+    .footer_part_two>p{
+        text-align: left;
+    }
+
+    .footer_part_two .abuot_title{
+        text-align: left !important;
+        
     }
     
     .Submit_btn {
@@ -214,7 +230,12 @@
     .title {
         padding-bottom: 18px;
         font-weight: bold;
-        text-align: center;
+        text-align: center !important;
+    }
+
+
+    .title1{
+        padding-bottom: 0px;
     }
     .title3 {
         font-weight: bold;
@@ -240,11 +261,14 @@
     
     
     .explore_content ul {
-        /* width: 100%; */
+        width: 100%;
         list-style: none;
         display:grid;
-        grid-template-columns: repeat(2,120px);
-       margin-left: -1rem;
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
+        justify-content: center;
+       row-gap: 5px;
+       column-gap: 15px;
         
     
     }

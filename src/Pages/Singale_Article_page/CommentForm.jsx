@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./SinglePost.css";
-function CommentForm({ postId }) {
+function CommentForm({ postId ,fetchPost}) {
   const [authorName, setAuthorName] = useState("");
   const [authorEmail, setAuthorEmail] = useState("");
   const [content, setContent] = useState("");
@@ -14,20 +14,21 @@ function CommentForm({ postId }) {
     setIsSubmitting(true);
 
     try {
-      await axios.post("http://localhost:8080/article/submit-comment", {
-        postId,
-        authorName,
-        authorEmail,
-        content
+      await axios.post(`${process.env.REACT_APP_Backend_baseUrl}/comments`, {
+        postId: postId,
+       name: authorName,
+       email: authorEmail,
+       content:content
       });
 
       setAuthorName("");
       setAuthorEmail("");
       setContent("");
       setSuccessMessage(
-        "Comment submitted successfully! Your comment will appear after it is approved."
+        "Comment submitted successfully!"
       );
       setErrorMessage("");
+      fetchPost();
     } catch (err) {
       setErrorMessage("Failed to submit comment.");
     } finally {

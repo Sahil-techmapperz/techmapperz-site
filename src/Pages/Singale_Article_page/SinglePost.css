@@ -152,8 +152,10 @@
   }
   
   .CommentForm {
+    width: 60%;
+    margin-left: 5rem;
     margin-top: 5rem;
-    margin-bottom: 40px;
+    padding-bottom: 20px;
   }
   
   .CommentForm label {
@@ -251,4 +253,15 @@
     width: 100%;
     padding-top: 2%;
     height:100vh;
+    }
+
+
+
+    @media (max-width:1100px) {
+      .CommentForm {
+        width: 80%;
+        margin-left: 2.5rem;
+        margin-top: 1rem;
+        padding-bottom: 20px;
+      }
     }

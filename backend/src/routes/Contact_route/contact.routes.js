@@ -32,7 +32,28 @@ contactRoute.post("/", async (req, res) => {
 
       let newres = await newcontact.save();
       res.status(200).json({ "message": "success" });
-    } else {
+    }else if(projectType===""){
+      let AllContact = await contactModel.find();
+
+      // Get the current date and format it as Date-month-year
+      const currentDate = new Date();
+      const formattedDate = `${currentDate.getDate()}-${currentDate.getMonth() + 1}-${currentDate.getFullYear()}`;
+
+      let newcontact = new contactModel({
+        name,
+        email,
+        mobile,
+        projectType:"false",
+        projectdetails,
+        Date: formattedDate, // Add the formatted date to the contact data
+        userId: AllContact.length + 1,
+      });
+
+      let newres = await newcontact.save();
+      res.status(200).json({ "message": "success" });
+    }
+    
+    else {
       res.status(201).json({ "message": "provide all details" });
     }
   } catch (err) {

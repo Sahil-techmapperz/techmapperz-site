@@ -26,6 +26,7 @@ import T02 from '../../Photos/02.png';
 import T03 from '../../Photos/03.png';
 import T04 from '../../Photos/04.png';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 
 
@@ -42,7 +43,12 @@ const CRM_pages = () => {
     }, []);
 
     return (
-        <div className={Styles.Mobile_development}>
+        <div className={Styles.mobile_app_development}>
+            <Helmet>
+        <title>{"Techmapperz"}</title>
+        <meta name="description" content={"Techmapperz map your business"} />
+        <meta property="og:title" content={"Techmapperz"} />
+      </Helmet>
             <section className={Styles.first_part}>
                 <h1>CRM-ERP</h1>
                 <p> <Link to={"/"}>Home</Link> /<Link to={"/service"}> Services</Link> /CRM-ERP</p>
@@ -54,7 +60,7 @@ const CRM_pages = () => {
             <div className={Styles.watermark}>IT Service</div>
             <div className={Styles.watermark2}>?</div>
                 <div className={Styles.harbour}>
-                    <p className={Styles.heading}>Everything CRM, All-round assistance,We are one stop solution for your CRM needs</p>
+                    <p className={Styles.heading}>Everything CRM, All-round assistance, We are one stop solution for your CRM needs</p>
                     <div className={Styles.design}>
 
                         <div className={Styles.card1}>
@@ -64,7 +70,7 @@ const CRM_pages = () => {
                             </div>
 
                             <Link to={"/crm_consulting"}><h3>CRM Consulting</h3></Link>
-                            <p>With the accumlated experince of more than 20 years,our team is well equipped to help you solve all possible challenges in the coustomer management field...<br/><b style={{"borderBottom":"1px solid red","fontStyle":"italic"}}><Link to={"/crm_consulting"}>Know More</Link></b></p>
+                            <p>With the accumlated experince of more than 20 years, our team is well equipped to help you solve all possible challenges in the coustomer management field...<br/><b style={{"borderBottom":"1px solid red","fontStyle":"italic"}}><Link to={"/crm_consulting"}>Know More</Link></b></p>
                         </div>
 
 
@@ -87,7 +93,7 @@ const CRM_pages = () => {
                             </div>
 
                             <Link to={"/custom_consulting"}>  <h3>Custom CRM Consulting </h3></Link>
-                            <p>AT customer CRM Consulting we understand your current capabilities,map your organisation's desired future state, and then recommend CRM implementation... <br/><b style={{"borderBottom":"1px solid red","fontStyle":"italic"}}><Link to={"/custom_consulting"}>Know More</Link></b></p>
+                            <p>AT customer CRM Consulting we understand your current capabilities, map your organisation's desired future state, and then recommend CRM implementation... <br/><b style={{"borderBottom":"1px solid red","fontStyle":"italic"}}><Link to={"/custom_consulting"}>Know More</Link></b></p>
 
                         </div>
 
@@ -118,14 +124,14 @@ const CRM_pages = () => {
 
                             <img src={CRM5} alt='' />
                             <h3>Operational</h3>
-                            <p>This is a prime tool to manage your business , more efficiently with maximum utilization of customer data.</p>
+                            <p>This is a prime tool to manage your business, more efficiently with maximum utilization of customer data.</p>
                         </div>
 
 
                         <div className={Styles.card6}>
                             <img src={CRM6} alt='' />
                             <h3>Analytical</h3>
-                            <p>An analytic CRM is for better interactions with your customers and new business possibilities based on customer data. </p>
+                            <p>An analytic CRM is for better interactions with your customers and new business possibilities based on customer data.</p>
 
                         </div>
 

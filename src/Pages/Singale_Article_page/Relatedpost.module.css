@@ -1,0 +1,20 @@
+.recentPost_contanet{
+    margin-top: 1rem;
+    width: 100%;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  .recentpost{display: flex;gap:15px;margin: 15px 10px;}
+  
+  .recentpost>img{
+    width: 35%;
+    height: 110px;
+    border-radius: 15px;
+    object-fit:fill;
+  }
+  
+  .recent_contaner_heading{
+    font-size: 25px;
+    font-weight: bold;
+  }

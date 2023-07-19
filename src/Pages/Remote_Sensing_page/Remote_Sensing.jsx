@@ -5,6 +5,7 @@ import Geospatial_Mapping from '../../Photos/Geospatial_Mapping.png';
 import Geo_health from '../../Photos/Geo_health.png';
 import RemoteSence1 from '../../Photos/RemoteSence1.png';
 import RemoteSence2 from '../../Photos/RemoteSence2.png';
+import { Helmet } from 'react-helmet';
 
 const Remote_Sensing = () => {
     
@@ -20,6 +21,11 @@ const Remote_Sensing = () => {
 
     return (
         <div className={Styles.Remote_Sensing}>
+            <Helmet>
+        <title>{"Techmapperz"}</title>
+        <meta name="description" content={"Techmapperz map your business"} />
+        <meta property="og:title" content={"Techmapperz"} />
+      </Helmet>
             <div className={Styles.top}>
                 <h1>Remote Sensing Services</h1>
                 <p><Link to={"/"}>Home </Link>/ <Link to={"/service"}>Services</Link> / Remote Sensing Services</p>

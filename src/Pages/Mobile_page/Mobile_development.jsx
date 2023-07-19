@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from './Mobile_development.module.css'
 import Development6 from '../../Photos/Development6.png';
 import Development7 from '../../Photos/Development7.png';
@@ -29,14 +29,29 @@ import MobileDev13 from '../../Photos/MobileDev13.png';
 import MobileDev14 from '../../Photos/MobileDev14.png';
 import MobileDev15 from '../../Photos/MobileDev15.png';
 import MobileDev16 from '../../Photos/MobileDev16.gif';
+import { Helmet } from "react-helmet";
 
 
 
 
 
 const Mobile_development = () => {
+    useEffect(() => {
+        const options = {
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
+        };
+        window.scrollTo(options);
+    }, []);
+
     return (
         <div className={styles.Mobile_development}>
+            <Helmet>
+        <title>{"Techmapperz"}</title>
+        <meta name="description" content={"Techmapperz map your business"} />
+        <meta property="og:title" content={"Techmapperz"} />
+      </Helmet>
             <section className={styles.first_part}>
                 <h1>Mobile Application Development</h1>
                 <p>Home / Service / Mobile Application Development</p>
@@ -44,15 +59,15 @@ const Mobile_development = () => {
 
 
             <section className={styles.secand_part}>
-                <p>In this digital era,it's not easy to live without smart devices,especially smartphones,Smart devices are transforming the way we live our lives. where mobile apps have become the most lucrative digital tool to make life easier and more conveient.
-                    The mobile app software intelligently combines the latest  technology,and design solutions which constantly get updated.It incorporates API,GPS,Camera, Microphone,Artificial Intelligence and other latest technologies and becomes a Launchpad hurling your business to the next level.</p>
+                <p>In this digital era,it's not easy to live without smart devices, especially smartphones, Smart devices are transforming the way we live our lives. where mobile apps have become the most lucrative digital tool to make life easier and more conveient.
+                    The mobile app software intelligently combines the latest  technology, and design solutions which constantly get updated. It incorporates API, GPS, Camera, Microphone, Artificial Intelligence and other latest technologies and becomes a Launchpad hurling your business to the next level.</p>
 
                 <div className={`${styles.contaner} ${styles.contaner_card2} `}>
 
                     <div className={styles.product}>
                         <div className={styles.product_info}>
                             <h1 className={styles.heading1}>Our Mobile App Development Services</h1>
-                            <p>We provide IOS and Android mobile application development services to loverage mobile technology for your business; we provide IOS and Android mobile application development services </p>
+                            <p>We provide IOS and Android mobile application development services to loverage mobile technology for your business. we provide IOS and Android mobile application development services </p>
                             <h2>Android App Development</h2>
                             <ul>
                                 <li><p>Android Mobile App Development</p></li>
@@ -60,7 +75,7 @@ const Mobile_development = () => {
                                 <li><p>Android Tablet App Development</p></li>
                                 <li><p>Android Wear App Development</p></li>
                             </ul>
-                            <p>Market Development-Android has more then 80% of the market share in the handheld device market share in the handheld device market,making it arguably the most popular market</p>
+                            <p>Market Development-Android has more then 80% of the market share in the handheld device market share in the handheld device market, making it arguably the most popular market</p>
                         </div>
                         <div className={styles.divimg1}>
                             <img src={MobileDev1} alt="MobileDev1.png" />
@@ -108,7 +123,7 @@ const Mobile_development = () => {
                         <div className={styles.card}>
                             <img src={MobileDev4} alt='Combind3.png' />
                             <h3>Web-based App</h3>
-                            <p>A web-based app is internet-dependent and stores all application data online.The type code can be Javascript, HTML5 or CSS, requiring much less space on your device to function.</p>
+                            <p>A web-based app is internet-dependent and stores all application data online. The type code can be Javascript, HTML5 or CSS, requiring much less space on your device to function.</p>
                         </div>
 
 
@@ -221,14 +236,14 @@ const Mobile_development = () => {
                         <div className={`${styles.card}  ${styles.class1}`}>
                             <img src={MobileDev11} />
                             <h3>Friendly</h3>
-                            <p>Nothing is more important that a customer oriented business model,we at Techmapperz love what we do,and we are always passionate about putting our customers first.</p>
+                            <p>Nothing is more important that a customer oriented business model, we at Techmapperz love what we do, and we are always passionate about putting our customers first.</p>
                         </div>
 
 
                         <div className={styles.card}>
                             <img src={MobileDev12} />
                             <h3>Quality</h3>
-                            <p>Quality makes us excel. our approach is designed to provide it at all levels of functioning up-to the micro level details. that extra ounce of effort in effective communication and best practices separates us and makes our work from Good to Great</p>
+                            <p>Quality makes us excel. our approach is designed to provide it at all levels of functioning up-to the micro level details, that extra ounce of effort in effective communication and best practices separates us and makes our work from Good to Great.</p>
                         </div>
 
                         <div className={styles.card}>
@@ -244,7 +259,7 @@ const Mobile_development = () => {
                         <div className={styles.card}>
                             <img src={MobileDev15} />
                             <h3>Transparency</h3>
-                            <p>For most of us our business is our baby,we want the best for it, and this is the driving emotion for our transparent work culture, all our development stages are discussed , so that the client is aware of time ,manpower and progress pace.</p>
+                            <p>For most of us our business is our baby,we want the best for it, and this is the driving emotion for our transparent work culture, all our development stages are discussed, so that the client is aware of time, manpower and progress pace.</p>
                         </div>
                     </div>
                 </div>

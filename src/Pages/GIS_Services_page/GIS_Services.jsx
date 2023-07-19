@@ -5,6 +5,7 @@ import Geo_health from '../../Photos/Geo_health.png';
 import Geogoverence from '../../Photos/Geogoverence.png';
 import GIS_Suvey from '../../Photos/GIS_Suvey.png';
 import Styles from "./GIS_Services.module.css";
+import { Helmet } from 'react-helmet';
 
 const GIS_Services = () => {
 
@@ -20,6 +21,11 @@ const GIS_Services = () => {
 
     return (
         <div className={Styles.service}>
+            <Helmet>
+        <title>{"Techmapperz"}</title>
+        <meta name="description" content={"Techmapperz map your business"} />
+        <meta property="og:title" content={"Techmapperz"} />
+      </Helmet>
             <section className={Styles.first_part}>
                 <h1>GIS Services</h1>
                 <p><Link to={"/"}>Home</Link> / <Link to={"/service"}>Services</Link> / GIS Services</p>
