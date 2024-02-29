@@ -1,0 +1,277 @@
+p,h1{
+color: white;
+}
+
+
+
+.techblog {
+    width: 100%;
+    margin: auto;
+    /* height: 800px; */
+    position: relative;
+    background-image: url("../../../Photos/Home/Latest\ News.gif");
+    backdrop-filter: 0.7;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 2rem 5rem;
+    z-index: 1;
+}
+
+.techblog::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3rem;
+}
+
+.subMain_1 {
+    width: 20%;
+    height: 100%;
+    z-index: 10;
+}
+
+.subMain_1>p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.162793px;
+    color: #808080;
+    
+}
+
+
+.subMain_1>h2 {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 54px;
+    letter-spacing: 0.162793px;
+    color: #FFFFFF;
+    width: 100%;
+}
+
+.subMain_2 {
+    width: 60%;
+    height: 100%;
+    z-index: 10;
+    
+}
+
+
+table tr{
+    display: block;
+    border: 1px solid #396BA9;
+    padding:0 15px;
+}
+
+
+.row_1 {
+    width: 30%;
+    height: 150px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.162793px;
+    border-right: 1px solid #396BA9;
+}
+
+.row_2 {
+    text-align: left;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.162793px;
+    color: #FFFFFF;
+    padding-left: 30px;
+    word-wrap: break-word;
+    padding-bottom: 10px;
+}
+
+.row_2 a{
+    font-size: 25px;
+    color: #396ba9;
+}
+
+.Submit_btn {
+    width: 150px;
+    height: 60px;
+}
+
+.Submit_btn div {
+    width: 55px;
+    height: 50px;
+    border-radius: 50%;
+    background: #396ba9;
+    
+}
+
+.Submit_btn h2 {
+    font-size: 20px;
+    position: absolute;
+    width: 100%;
+    top: -0.5rem;
+    left: 10px;
+    color: aliceblue;
+}
+
+.tabet{
+    /* height: 100%; */
+    position: relative;
+    padding-bottom: 70px;
+}
+
+.getintouch_btn {
+    position: absolute;
+    bottom: 0rem;
+    left: 0;
+    z-index: 10;
+}
+
+
+
+
+@media (max-width:1100px) {
+    .techblog {
+        width: 100%;
+        height: max-content;
+        position: relative;
+        background-image: url("../../../Photos/Home/Latest\ News.gif");
+        backdrop-filter: 0.7;
+        overflow: hidden;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        padding:1rem;
+        padding-bottom: 10rem;
+    }
+    
+    .techblog::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        /* height: 100%; */
+        background-color: rgba(0, 0, 0, 0.7);
+        z-index: 1;
+    }
+    
+    .main {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 3rem;
+    }
+    
+    .subMain_1 {
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+    }
+    
+    .subMain_1>p {
+        text-align: center !important;
+        
+    }
+    
+
+
+    
+    .subMain_1>h2 {
+        font-weight: bold;
+        font-size: 18px;
+        text-align: center;
+        color: #FFFFFF;
+        margin-top: -1rem;
+       
+       
+    }
+    
+    .subMain_2 {
+        width: 100%;
+        z-index: 10;
+    }
+
+
+    
+    table tr{
+        display: block;
+        border: 1px solid #396BA9;
+        padding:0 15px;
+    }
+    
+    
+    .row_1 {
+        width: 40%;
+        /* height: 150px; */
+        font-weight:bold;
+        font-size: 16px;
+        border-right: 1px solid #396BA9;
+    }
+    
+    .row_2 {
+        text-align: left;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 27px;
+        letter-spacing: 0.162793px;
+        color: #FFFFFF;
+        padding-left: 30px;
+        word-wrap: break-word;
+        padding-bottom: 10px;
+    }
+    
+    .row_2 a{
+        font-size: 16px;
+        font-weight: bold;
+        color: #396ba9;
+    }
+    
+    .Submit_btn {
+        width: 150px;
+        height: 60px;
+    }
+    
+    .Submit_btn div {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background: #396ba9;
+        
+    }
+    
+    .Submit_btn h2 {
+        font-size: 16px;
+        position: absolute;
+        width: 100%;
+        top: -0.5rem;
+        left: 10px;
+        color: aliceblue;
+    }
+    
+    .tabet{
+        position: relative;
+    }
+    
+    .getintouch_btn {
+        position: absolute;
+        left:7rem;
+        z-index: 10;
+        width: 100%;
+    }
+    
+}

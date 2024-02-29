@@ -1,0 +1,33 @@
+.carousel-item-padding-40-px img{
+    width: 180px;
+    object-fit:contain;
+}
+
+.carousel-item-padding-40-px{
+    display: flex;
+}
+
+
+.multi_carousel_headind{
+    text-align:left;
+    font-weight:bold;
+    font-size: 36px;
+    line-height: 54px;
+    letter-spacing: 0.162793px;
+    color: #FFFFFF;
+}
+
+@media (max-width:1100px) {
+    .carousel-item-padding-40-px img{
+        width: 150px;
+        margin-left: 5rem;
+    }
+    .multi_carousel_headind{
+        text-align:center;
+        font-weight:bold;
+        font-size: 26px;
+        line-height: 54px;
+        letter-spacing: 0.162793px;
+        color: #FFFFFF;
+    }
+}

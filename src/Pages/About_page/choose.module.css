@@ -1,0 +1,244 @@
+.main {
+    padding: 2rem 5rem;
+}
+
+
+.first_part {
+    width: 100%;
+    margin: auto;
+}
+
+.first_part_main {
+    width: 100%;
+    display: flex;
+    gap: 5rem;
+
+}
+
+.first_part_main div {
+    width: 50%;
+
+}
+
+/* .first_part_main>.video_contaner{
+    width: 50%;
+    height: auto;
+} */
+
+
+.first_part .company_info .heading {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 54px;
+    letter-spacing: 0.162793px;
+    color: #FFFFFF;
+}
+
+.first_part .company_info p {
+    width: 100%;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 33px;
+    text-align: justify;
+    text-justify: inter-word;
+    letter-spacing: 1.6px;
+    color: #A3A3A3;
+}
+
+.first_part .company_info .heading {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 54px;
+}
+
+.video_contaner {
+    margin-top: 60px;
+}
+
+
+
+.second_paragraph {
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.second_paragraph p {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: justify;
+    text-justify: inter-word;
+    color: #FFFFFF;
+    margin-bottom: 5rem;
+    
+}
+
+
+.dropdown {
+    display: grid;
+    grid-template-columns: repeat(2, 450px);
+    gap: 4.5rem;
+}
+
+.third_part {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    text-align: center;
+    margin-left: 10rem;
+    margin-right: 10rem;
+
+
+}
+
+.third_part1 {
+    border-style: solid;
+    height: 5px;
+    width: 0px;
+
+
+}
+
+.third_part2 {
+    border-style: solid;
+    height: 35px;
+    width: 350px;
+
+}
+
+.third_part3 {
+    border-style: solid;
+    height: 35px;
+    width: 350px;
+
+}
+
+.third_part4 {
+    border-style: solid;
+    height: 35px;
+    width: 350px;
+}
+
+
+.fast_part {
+    box-shadow: 0px 0px 20px 20px black,
+}
+
+.fast_part div {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    border-top: 8px solid white;
+    border-left: 8px solid white;
+    transform: rotate(90deg);
+    left: 27.px;
+    top: 35px;
+}
+
+
+
+@media (max-width: 1100px) {
+    .main {
+        padding: 2rem;
+    }
+    
+    
+    .first_part {
+        width: 100%;
+        margin: auto;
+    }
+    
+    .first_part_main {
+        width: 100%;
+        display: flex;
+        flex-direction:column;
+        gap: 5rem;
+    
+    }
+    
+    .first_part_main div {
+        width: 100%;
+    
+    }
+    
+    /* .first_part_main>.video_contaner{
+        width: 50%;
+        height: auto;
+    } */
+    
+    
+    .first_part .company_info .heading {
+        font-weight: bold;
+        font-size: 26px;
+        margin-top: -2rem;
+        text-align: center;
+    }
+    
+    .first_part .company_info p {
+        width: 100%;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 33px;
+        text-align: justify;
+        text-justify: inter-word;
+        letter-spacing: 1.6px;
+        color: #A3A3A3;
+    }
+    
+    .first_part .company_info .heading {
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 54px;
+    }
+    
+    .video_contaner {
+        margin-top: 60px;
+    }
+    
+    
+    
+    .second_paragraph {
+        margin-top: 2rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .second_paragraph p {
+        font-weight: 400;
+        font-size: 20px;
+        text-align: justify;
+        text-justify: inter-word;
+        color: #FFFFFF;
+        margin-bottom: 1rem;
+        
+    }
+    
+    
+    .dropdown {
+        display:flex;
+        flex-direction: column;
+        gap: 0rem;
+    }
+    
+    .dropdown>div{
+        width: 100vw;
+        padding: 1rem 2rem;
+    }
+
+    
+    .fast_part div {
+        position: absolute;
+        height: 40px;
+        width: 40px;
+        border-top: 8px solid white;
+        border-left: 8px solid white;
+        transform: rotate(90deg);
+        left: 27.px;
+        top: 35px;
+    }
+}
