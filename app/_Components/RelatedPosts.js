@@ -9,7 +9,7 @@ const RelatedPosts = ({ relatedPosts }) => {
         <div key={recent._id} className="flex items-center gap-4 my-4">
           <img src={recent.images[0]} alt={recent.title} className="w-24 h-24 object-cover rounded-md" />
           <div>
-            <h1><Link href={`/article/${recent._id}`}>{recent.title}</Link></h1>
+            <h1><Link href={`/blog/${recent._id}`}>{recent.title}</Link></h1>
             <h1>{moment(recent.created_at).format('YYYY-MM-DD')}</h1>
           </div>
         </div>

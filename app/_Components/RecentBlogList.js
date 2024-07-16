@@ -14,7 +14,7 @@ const RecentBlogList = async () => {
           <img src={recent.images[0]} alt={recent.title} className="w-[100px] h-[100px] object-cover rounded-md"/>
           <div>
             <h1 className="text-lg font-semibold mb-2 cursor-pointer">
-              <Link href={`/article/${recent._id}`}>{recent.title.slice(0, 100) + "..."}</Link>
+              <Link href={`/blog/${recent._id}`}>{recent.title.slice(0, 100) + "..."}</Link>
             </h1>
             <h1>{moment(recent.created_at).format('YYYY-MM-DD')}</h1>
           </div>
