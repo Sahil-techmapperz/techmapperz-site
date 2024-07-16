@@ -19,10 +19,10 @@ const BlogList = async ({ page }) => {
               <div>{`${moment(post.created_at).format('YYYY-MM-DD')}`}</div>
             </div>
             <div className="text-2xl font-bold mb-2 cursor-pointer">
-              <Link href={`/article/${post._id}`} >{post.title}</Link>
+              <Link href={`/blog/${post._id}`} >{post.title}</Link>
             </div>
             <div className="text-base mb-4">{post.content.slice(0, 200) + "..."}</div>
-            <Link href={`/article/${post._id}`} className="text-blue-600 font-semibold cursor-pointer">
+            <Link href={`/blog/${post._id}`} className="text-blue-600 font-semibold cursor-pointer">
               Read more...
             </Link>
           </div>

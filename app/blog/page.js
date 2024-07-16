@@ -17,8 +17,8 @@ const ArticlePage = ({ searchParams}) => {
     <div className="bg-gray-900 text-white min-h-screen">
       <ScrollToTop/>
       <div className="h-96 bg-cover bg-center flex flex-col justify-center items-center" style={{ backgroundImage: 'url("/Photos/banner_2.png")' }}>
-        <h1 className="text-5xl font-bold">News & Articles</h1>
-        <p className="text-lg mt-2"> <Link href="/">Home</Link> / News & Articles</p>
+        <h1 className="text-5xl font-bold">Blogs</h1>
+        <p className="text-lg mt-2"> <Link href="/">Home</Link> / Blogs</p>
       </div>
       <div className="flex flex-col md:flex-row gap-8 p-8">
         <div className="w-full md:w-2/3">

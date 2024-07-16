@@ -129,7 +129,7 @@ const About = () => {
             </ul>
           </section>
 
-          <section className="w-full flex flex-col justify-center items-center p-[2rem_5rem] border-t border-gray-500 border-b border-gray-500">
+          <section className="w-full flex flex-col justify-center items-center p-[2rem_5rem] border-t border-b border-gray-500">
             <div className="text-center mb-[3rem] text-[36px] leading-[54px] text-white">
               <h1>Company value</h1>
             </div>

@@ -34,7 +34,7 @@ const ArticlePage = async ({ params }) => {
     <div className="bg-gray-900 text-white min-h-screen">
       <div className="h-96 bg-cover bg-center flex flex-col justify-center items-center" style={{ backgroundImage: 'url("/Photos/banner_2.png")' }}>
         <h1 className="text-5xl font-bold">News & Articles</h1>
-        <p className="text-lg mt-2"><a href="/">Home</a> / <a href="/article?page=1">News & Articles</a> / Article</p>
+        <p className="text-lg mt-2"><a href="/">Home</a> / <a href="/blog?page=1">Blogs</a> / Blog</p>
       </div>
       <div className="flex flex-col md:flex-row gap-8 p-8">
         <div className="w-full md:w-2/3">

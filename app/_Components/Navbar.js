@@ -68,10 +68,10 @@ const Navbar = () => {
           </li>
           <li className={`relative text-center ${pathname === '/article' ? 'border-b-4 border-red-500' : ''} ${styles.dropdown}`}>
             <Link href="#" className="text-lg text-white flex items-center">
-              Articles & Case Studies <IoIosArrowDown />
+              Blogs & Case Studies <IoIosArrowDown />
             </Link>
             <ul className={`${styles.dropdownMenu}`}>
-              <li className="p-2 hover:bg-gray-300"><Link href="/article?page=1" className="text-sm block">Articles</Link></li>
+              <li className="p-2 hover:bg-gray-300"><Link href="/blog?page=1" className="text-sm block">Blogs</Link></li>
               <li className={`relative ${styles.subDropdown}`}>
                 <Link href="#" className="p-2 hover:bg-gray-300 block">Case Studies</Link>
                 <ul className={`${styles.subDropdownMenu}`}>

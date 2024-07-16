@@ -4,6 +4,8 @@ import { FaPinterest } from 'react-icons/fa';
 import Gotop from './Gotop';
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
     <>
       <div className="w-full bg-black p-8 relative">
@@ -12,7 +14,7 @@ const Footer = () => {
             <p>Let's talk to our expert.</p>
             <h1 className="font-bold text-2xl text-white">Need more information?</h1>
             <Link href="/contact">
-            <div className="relative h-16 mt-10 cursor-pointer flex items-center">
+              <div className="relative h-16 mt-10 cursor-pointer flex items-center">
                 <div className="w-14 h-12 rounded-[50%] bg-blue-700 flex justify-center items-center"></div>
                 <h2 className="absolute font-bold text-xl ml-2.5">Get in touch</h2>
               </div>
@@ -24,15 +26,15 @@ const Footer = () => {
             <p className="text-left">Chasing the Vision for a better tomorrow where technology simplifies complex functions.</p>
             <br /><br />
             <div className='flex flex-col gap-[1.5rem]'>
-            <p className="pb-4 font-bold">Follow us on -</p>
-            <div className="flex gap-5 text-xl mt-[-2rem]">
-              <a href='https://www.linkedin.com/company/techmapperz/' target="_blank"><BsLinkedin className="text-white text-2xl" /></a>
-              <a href='https://www.instagram.com/techmapperz/' target="_blank"><BsInstagram className="text-white text-2xl" /></a>
-              <a href='https://x.com/Techmapperzllp' target="_blank"><BsTwitter className="text-white text-2xl" /></a>
-              <a href='https://www.facebook.com/techmapperz' target="_blank"><BsFacebook className="text-white text-2xl" /></a>
-              <a href='https://www.youtube.com/channel/UCWogNBwwxTvoX8Ax24j6c6Q' target="_blank"><BsYoutube className="text-white text-2xl" /></a>
-              <a href='https://pin.it/2nsXnBd' target="_blank"><FaPinterest className="text-white text-2xl" /></a>
-            </div>
+              <p className="pb-4 font-bold">Follow us on -</p>
+              <div className="flex gap-5 text-xl mt-[-2rem]">
+                <a href='https://www.linkedin.com/company/techmapperz/' target="_blank"><BsLinkedin className="text-white text-2xl" /></a>
+                <a href='https://www.instagram.com/techmapperz/' target="_blank"><BsInstagram className="text-white text-2xl" /></a>
+                <a href='https://x.com/Techmapperzllp' target="_blank"><BsTwitter className="text-white text-2xl" /></a>
+                <a href='https://www.facebook.com/techmapperz' target="_blank"><BsFacebook className="text-white text-2xl" /></a>
+                <a href='https://www.youtube.com/channel/UCWogNBwwxTvoX8Ax24j6c6Q' target="_blank"><BsYoutube className="text-white text-2xl" /></a>
+                <a href='https://pin.it/2nsXnBd' target="_blank"><FaPinterest className="text-white text-2xl" /></a>
+              </div>
             </div>
           </div>
 
@@ -45,7 +47,7 @@ const Footer = () => {
               <Link href="/privacy&policy"><li>Privacy Policy</li></Link>
               <Link href="/service"><li>Services</li></Link>
               <Link href="/terms"><li>Terms of Use</li></Link>
-              <Link href="/news&article"><li>News & Articles</li></Link>
+              <Link href="/blog"><li>Blogs</li></Link>
               <Link href="/help"><li>Help</li></Link>
               <Link href="/contact"><li>Contact</li></Link>
               <Link href="/sitemap"><li>Sitemap</li></Link>
@@ -55,7 +57,7 @@ const Footer = () => {
         <Gotop/>
       </div>
       <div className="w-full h-9 bg-gray-800 text-white flex items-center font-medium pl-20">
-        Copyright &copy; 2022 Techmapperz LLP. All Rights Reserved
+        Copyright &copy; {currentYear} Techmapperz LLP. All Rights Reserved
       </div>
     </>
   );

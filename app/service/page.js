@@ -9,7 +9,7 @@ import Ourservice9 from '@/public/Photos/Ourservice9.png';
 import Ourservice8 from '@/public/Photos/Ourservice8.png';
 import Ourservice7 from '@/public/Photos/Ourservice7.png';
 import Ourservice4 from '@/public/Photos/Ourservice4.png';
-import Ourservice3 from '@/public/Photos/Ourservice3.png';
+import Ourservice3 from '@/public/Photos/OurService3.png';
 import Ourservice2 from '@/public/Photos/Ourservice2.png';
 import T01 from '@/public/Photos/01.png';
 import T02 from '@/public/Photos/02.png';
