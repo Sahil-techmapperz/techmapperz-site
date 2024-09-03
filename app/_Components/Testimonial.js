@@ -1,12 +1,12 @@
 "use client";
 import { useEffect, useState } from "react";
 import { Carousel } from "react-responsive-carousel";
-import { FaQuoteLeft } from "react-icons/fa";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // Import carousel styles
 import axios from 'axios';
-import avater from "@/public/Photos/testimonial_aveter.webp";
+import avater from "@/public/Photos/testimonial_aveter.png";
 import Image from "next/image";
-import { Box, Text,keyframes } from "@chakra-ui/react";
+import { Box, Text, keyframes } from "@chakra-ui/react";
+import { IoIosArrowBack,IoIosArrowForward } from "react-icons/io";
 
 const Testimonial = () => {
   const [testimonials, setTestimonials] = useState([]);
@@ -46,12 +46,38 @@ const Testimonial = () => {
     </Box>
   }
 
+  const CustomLeftArrow = ({ onClickHandler, hasPrev, label }) => (
+    <button
+      type="button"
+      onClick={onClickHandler}
+      title={label}
+      className="absolute left-[-15px] top-1/2 transform -translate-y-1/2 z-10 p-2 focus:outline-none"
+      aria-label={label}
+      disabled={!hasPrev}
+    >
+      <IoIosArrowBack size={60}  color="white" />
+    </button>
+  );
+
+  const CustomRightArrow = ({ onClickHandler, hasNext, label }) => (
+    <button
+      type="button"
+      onClick={onClickHandler}
+      title={label}
+      className="absolute right-[-15px] top-1/2 transform -translate-y-1/2 z-10 p-2 focus:outline-none"
+      aria-label={label}
+      disabled={!hasNext}
+    >
+      <IoIosArrowForward size={60} color="white" />
+    </button>
+  );
+
   return (
-    <div className="bg-gray-900 py-8 px-4 text-center">
+    <div className="bg-black py-8 px-4 text-center">
       <p className="text-lg font-semibold text-gray-500">Testimonial</p>
       <h1 className="text-4xl font-bold mb-6 text-white">What our Clients Say</h1>
       <div className="p-[3rem]">
-        <div className="w-[70%] m-auto relative">
+        <div className="w-full m-auto relative">
           <Carousel
             showStatus={false}
             infiniteLoop={true}
@@ -61,31 +87,34 @@ const Testimonial = () => {
             showIndicators={false}
             useKeyboardArrows={true}
             swipeable={false}
+            autoPlay={true}
             className="testimonial-carousel"
+            renderArrowPrev={(onClickHandler, hasPrev, label) =>
+              CustomLeftArrow({ onClickHandler, hasPrev, label })
+            }
+            renderArrowNext={(onClickHandler, hasNext, label) =>
+              CustomRightArrow({ onClickHandler, hasNext, label })
+            }
           >
             {testimonials.map((data, index) => (
-              <div key={index} className="bg-white p-6 m-[50px] rounded-lg shadow-lg relative overflow-visible">
+              <div key={index} className="text-white p-6 m-[50px] rounded-lg shadow-lg relative overflow-visible" style={{background: "linear-gradient(90deg, rgba(0, 0, 0, 0.3) 4.63%, rgba(197, 197, 197, 0.3) 50.08%, rgba(0, 0, 0, 0.3) 95.86%)"}}>
                 <div className="w-[100px] h-[100px] flex justify-center items-center absolute top-[-50px] left-1/2 transform -translate-x-1/2 z-10">
                   <Image
                     src={data.image || avater}
                     alt={data.name}
                     className="w-full h-full object-cover rounded-full"
-                    style={{ border: "5px solid #1a202c" }}
                   />
                 </div>
-                <div className="mt-16"> {/* Adjusted margin-top to ensure there's no overlap */}
+                <div className="mt-16">
                   <div className="flex gap-4 mb-4">
-                    <div className="flex-shrink-0">
-                      <FaQuoteLeft className="w-8 h-8 text-gray-500" />
-                    </div>
                     <div className="text-left">
-                      <p className="text-gray-700 h-[100px] overflow-auto">{data.message}</p>
+                      <p className=" h-[100px] overflow-auto">{data.message}</p>
                     </div>
                   </div>
                   <div className="flex items-center gap-4">
                     <div className="text-left">
                       <p className="text-lg font-semibold">{data.name}</p>
-                      <p className="text-gray-600">{data.Companyname}</p> {/* Corrected the field name */}
+                      <p>{data.Companyname}</p>
                     </div>
                   </div>
                 </div>

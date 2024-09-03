@@ -162,7 +162,7 @@ const ContactForm = () => {
         </FormControl>
       </HStack>
 
-      <HStack className="w-[85%]">
+      <HStack className="w-[80%]">
         <FormControl isInvalid={hasError.projectdetails}>
           <FormLabel>Write Project Details*</FormLabel>
           <Textarea

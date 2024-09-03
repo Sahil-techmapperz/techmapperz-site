@@ -25,7 +25,7 @@ const Navbar = () => {
   const pathname = usePathname();
 
   return (
-    <div className={`${styles.navbar} fixed top-0 w-full flex justify-between items-center p-4 z-20 bg-black bg-opacity-95`}>
+    <div className={`${styles.navbar} fixed top-0 w-full flex justify-between items-center p-4 z-[200] bg-black bg-opacity-95`}>
       <div className="md:w-1/5 w-1/2">
         <Link href="/">
           <Image
@@ -73,11 +73,7 @@ const Navbar = () => {
             <ul className={`${styles.dropdownMenu}`}>
               <li className="p-2 hover:bg-gray-300"><Link href="/blog?page=1" className="text-sm block">Blogs</Link></li>
               <li className={`relative ${styles.subDropdown}`}>
-                <Link href="#" className="p-2 hover:bg-gray-300 block">Case Studies</Link>
-                <ul className={`${styles.subDropdownMenu}`}>
-                  <li className="p-2 hover:bg-gray-300"><Link href="/itcasestudies" className="text-sm block">IT Case Studies</Link></li>
-                  <li className="p-2 hover:bg-gray-300"><Link href="/giscasestudies" className="text-sm block">GIS Case Studies</Link></li>
-                </ul>
+                <Link href="/casestudies" className="p-2 hover:bg-gray-300 block">Case Studies</Link>
               </li>
             </ul>
           </li>

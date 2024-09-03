@@ -20,9 +20,11 @@ const ArticlePage = ({ searchParams}) => {
         <h1 className="text-5xl font-bold">Blogs</h1>
         <p className="text-lg mt-2"> <Link href="/">Home</Link> / Blogs</p>
       </div>
+     
       <div className="flex flex-col md:flex-row gap-8 p-8">
         <div className="w-full md:w-2/3">
           <BlogList page={page} />
+
         </div>
         <div className="w-full md:w-1/3">
           <SearchPosts />

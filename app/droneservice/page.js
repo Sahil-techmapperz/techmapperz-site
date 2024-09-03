@@ -36,7 +36,7 @@ const DroneService = () => {
                             <Image src={Drone_Service1} alt="Geospatial Mapping" className="w-full object-contain mb-4" />
                             
                         </div>
-                        <Image src={Drone_Service4} alt="Data Acquisition & Processing" className="object-cover absolute right-10 top-[6rem] mb-4" />
+                        <Image src={Drone_Service4} alt="Data Acquisition & Processing" className="object-cover absolute right-10 top-[3rem] mb-4" />
                         <div className="relative">
                             <div className="flex flex-col gap-4">
                                 <p className="text-lg leading-7 text-justify">

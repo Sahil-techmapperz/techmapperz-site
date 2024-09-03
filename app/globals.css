@@ -3,3 +3,72 @@
 @tailwind utilities;
 
 
+
+
+.case-study-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+   
+  }
+  
+  .case-study-info {
+    position: absolute;
+    top: 0;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white; /* Text color */
+    transform: translateY(200%);
+    transition: transform 0.5s ease;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .case-study-container:hover .case-study-info {
+    transform: translateY(0);
+  }
+
+
+  ul.custom-list li::marker {
+    font-size: 50px; /* Large bullet size */
+    color: #F83131; /* Red bullet color */
+    vertical-align: bottom; /* Adjusts the alignment of the bullet relative to the text */
+}
+
+ul.custom-list {
+    list-style-type: disc; /* Ensures it uses bullet points */
+    padding-left: 20px; /* Adjust padding as needed for better spacing */
+}
+
+ul.custom-list li {
+    font-size: 14px; /* Text size */
+    color: white;
+}
+
+
+.active-category {
+    color: #F83131;
+  }
+  
+
+  
+  .backface-hidden {
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+  }
+
+
+  .parallax {
+    background-image: url('/Photos/home_about_BG.jpg'); /* Replace with your desired background image */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 500px; /* Adjust height as needed */
+  }
+  
+  
+  
+  

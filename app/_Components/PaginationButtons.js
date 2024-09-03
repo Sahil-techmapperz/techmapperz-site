@@ -7,14 +7,14 @@ const PaginationButtons = ({ page, totalPages }) => {
   const handlePreviousPage = () => {
     console.log(page);
     if (page > 1) {
-      window.location.href = `/article/?page=${page - 1}`;
+      window.location.href = `/blog/?page=${page - 1}`;
     }
   };
 
   const handleNextPage = () => {
     console.log(page);
     if (page < totalPages) {
-      window.location.href = `/article/?page=${page + 1}`;
+      window.location.href = `/blog/?page=${page + 1}`;
     }
   };
 

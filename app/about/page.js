@@ -3,14 +3,15 @@ import Image from 'next/image';
 import Choose from './choose';
 import Rectangle_6 from '@/public/Photos/Rectangle_6.png';
 import Group1 from '@/public/Photos/Group1.png'
-import Career4 from '@/public/Photos/career_idea-4.png'
-import Career5 from '@/public/Photos/career_idea-5.png'
 import ScrollToTop from '../_Components/ScrollToTop';
+import Missionvision from '../_Components/Missionvision';
+
 
 export const metadata = {
   title: "Techmapperz About",
   description: "Techmapperz map your business",
 };
+
 
 const About = () => {
 
@@ -26,8 +27,8 @@ const About = () => {
             <p className="text-[20px] leading-[30px] text-white"><Link href="/">Home</Link> / About us</p>
           </header>
 
-          <div className="text-center mt-[5%]">
-            <h1 className="text-[26px] mb-[3rem] leading-[39px] text-white">Chasing the Vision for a better tomorrow where technology simplifies complex functions</h1>
+          <div className="text-center mt-[5%] bg-white">
+            <h1 className="text-[26px] mb-[3rem] py-2 leading-[39px] text-white font-[600]" style={{background: "linear-gradient(90deg, #9F9F9F 0%, #393939 49%, #9F9F9F 100%)"}}>Chasing the Vision for a better tomorrow where technology simplifies complex functions</h1>
           </div>
           <div className="absolute rotate-[270deg] text-[60px] text-[rgba(238,237,237,0.02)] font-bold left-[-13rem] top-[67rem]">About Company</div>
 
@@ -43,7 +44,7 @@ const About = () => {
               <div className='h-full relative'>
                 <h1 className="text-[22px] font-bold  absolute top-[-60px]  text-white">Get known us</h1>
                 <h2 className="text-[36px] font-bold mt-[-15px] mb-[2rem] text-white">About Company</h2>
-                <p className="text-[18px] leading-[33px] text-justify text-[#A3A3A3]">Let your imagination fly, this has always been the spirit that made Techmapperz possible, we were always free-thinkers, a team that believed that the solution to a complex problem need not be complex, that complex issues should have very simple solutions, and this is the change that we all believe in.</p>
+                <p className="text-[18px] leading-[33px] text-justify text-[#A3A3A3]" >Let your imagination fly, this has always been the spirit that made Techmapperz possible, we were always free-thinkers, a team that believed that the solution to a complex problem need not be complex, that complex issues should have very simple solutions, and this is the change that we all believe in.</p>
                 
                 <Link href="/" >
                   <div className="relative h-[40px] w-[120px] cursor-pointer mt-[2rem]">
@@ -56,32 +57,7 @@ const About = () => {
           </section>
 
           <section className="p-[2rem_5rem] bg-[rgba(33,33,33,1)]">
-            <div className="grid grid-cols-2 gap-[5rem] justify-center items-center">
-
-              <div className="flex flex-col">
-                <Image src={Career4} alt="" className="h-[300px] object-fill mx-auto" />
-                <h2 className="text-[26px] mt-[-10px] text-white">Our Mission</h2>
-                <p className="text-[18px] leading-[33px] text-justify text-[#A3A3A3] mt-[2rem]">We at Techmapperz, understand that each organisation is different, and so are their challenges, so when we tailor solutions, we ensure that it is as simplified as it can be. Our mission is simplified solutions for complex problems.</p>
-                <Link href="/contact">
-                <div className="relative h-[40px] w-[120px] cursor-pointer mt-[2rem]">
-                    <div className="absolute w-[30px] h-[30px] rounded-full bg-[#396ba9] right-0 "></div>
-                    <h2 className="absolute text-[20px] text-white font-bold">Know More</h2>
-                  </div>
-                </Link>
-              </div>
-
-              <div className="flex flex-col">
-                <Image src={Career5} alt="" className="h-[300px] object-fill mx-auto" />
-                <h2 className="text-[26px] mb-[1.5rem] text-white">Our Vision</h2>
-                <p className="text-[18px] leading-[33px] text-justify text-[#A3A3A3]">With technology becoming the most important part of our day to day life, we are driven by the commitment to deliver the best of IT solutions, to be a trusted provider of end-to-end IT services and solutions to businesses globally.</p>
-                <Link href="/contact">
-                <div className="relative h-[40px] w-[120px] cursor-pointer mt-[2rem]">
-                    <div className="absolute w-[30px] h-[30px] rounded-full bg-[#396ba9] right-0 "></div>
-                    <h2 className="absolute text-[20px] text-white font-bold">Know More</h2>
-                  </div>
-                </Link>
-              </div>
-            </div>
+            <Missionvision/>
           </section>
 
           <section>
@@ -100,7 +76,7 @@ const About = () => {
                 <div className=" text-[40px] leading-[54px] font-bold text-white"><h1>How Do We Work</h1></div>
 
                 <div className="flex flex-col gap-[2rem] w-full">
-                  <p className="text-[22px] leading-[33px] text-white text-justify">
+                  <p className="text-[22px] leading-[33px] text-white text-justify" >
                     We are constantly looking for ways to keep us updated with the changing technology and evolving markets and demands. We believe that our performance should be more efficient, nimble, and flexible than before. That's where the Agile methodology comes in. We follow 4 values of Agile:
                   </p>
                   <ul className="list-disc ml-[1.3rem] flex flex-col gap-4">
