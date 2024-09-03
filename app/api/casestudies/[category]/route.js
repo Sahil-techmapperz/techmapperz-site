@@ -28,7 +28,7 @@ let CaseStudiesData = [
         ]
     },
     {
-        image: "/Photos/IT_3.png", category: "IT", name: "SHRC",link:"", details: [
+        image: "/Photos/IT_3.png", category: "IT", name: "SHRC",link:"shrc", details: [
             "Special Human Rights comissions is a civil rights’ group comprised of advocates, social activists and grassroots para- legal social workers dedicated to using the legal system to protect and advance the civil and human...................",
             "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
         ]
@@ -40,7 +40,7 @@ let CaseStudiesData = [
         ]
     },
     {
-        image: "/Photos/IT_4.png", category: "IT", name: "Premium Auto Services", link:"", details: [
+        image: "/Photos/IT_4.png", category: "IT", name: "Premium Auto Services", link:"premierautosource", details: [
             "Experience optimal performance and efficiency with PAS Auto Source, a leading manufacturer of automotive drivetrain components. Visit our website to explore our innovative drivetrain solutions, including pow............",
             "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
         ]
@@ -52,13 +52,13 @@ let CaseStudiesData = [
         ]
     },
     {
-        image: "/Photos/IT_5.png", category: "IT", name: "Welho", link:"", details: [
+        image: "/Photos/IT_5.png", category: "IT", name: "Welho", link:"welho", details: [
             "Say hello to Welho..! Welcome to the world of wellness. Made with high-quality natural ingredients and no artificial colours or flavours, our dairy-based refreshing beverages offer the perfect blend of nutrition ..........................",
             "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
         ]
     },
     {
-        image: "/Photos/IT_6.png", category: "IT", name: "Manusher Ghorbari", link:"", details: [
+        image: "/Photos/IT_6.png", category: "IT", name: "Manusher Ghorbari", link:"manusherghorbari", details: [
             "Manusher Ghorbari is not just a weekend destination only. Here one may experience a unique way of living life. Being inspired by Atin Bandopadhyay's four-part tetralogy on Partition (Nilka.......................",
             "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
         ]

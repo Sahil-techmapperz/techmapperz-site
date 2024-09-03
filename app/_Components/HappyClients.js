@@ -2,7 +2,7 @@ import Genesys_logo from "@/public/Photos/Genesys_logo.png";
 import Cocreatelab_logo from "@/public/Photos/Cocreatelab_logo.png";
 import manusherghorbari_logo from "@/public/Photos/manusherghorbari_logo.png";
 import premierautosource_logo from "@/public/Photos/premierautosource_logo.png";
-import shrc_logo from "@/public/Photos/shrc_logo.png";
+import shrc_logo from "@/public/Photos/Shrc_logo.png";
 import whitespreadfoods_logo from "@/public/Photos/whitespreadfoods_logo.png";
 import Image from "next/image";
 import Link from "next/link";
