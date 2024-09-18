@@ -4,7 +4,7 @@ import Geo_health from '@/public/Photos/Geo_health.png';
 import RemoteSence1 from '@/public/Photos/RemoteSence1.png';
 import RemoteSence2 from '@/public/Photos/RemoteSence2.png';
 import Image from 'next/image';
-import ScrollToTop from '../_Components/ScrollToTop';
+import ScrollToTop from '@/app/_Components/ScrollToTop';
 
 export const metadata = {
     title: "Techmapperz Remote Sensing",

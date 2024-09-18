@@ -140,7 +140,7 @@ const JoinUs = ({ Jobsdata }) => {
           ))}
         </div>
 
-        <div className="w-full bg-blue-700 rounded-lg p-8">
+        <div className="w-full bg-[#396BA9] rounded-lg p-8">
           <h2 className="text-center text-2xl font-bold text-white">Be a Volunteer</h2>
           <p className="text-center text-white">Join our team to work on exciting initiatives, meet others who share your interests, and change the world for the better.</p>
           <div className="flex flex-col gap-4 mt-4">

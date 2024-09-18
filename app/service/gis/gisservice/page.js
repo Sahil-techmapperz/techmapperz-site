@@ -5,7 +5,7 @@ import Geospatial_Mapping from '@/public/Photos/Geospatial_Mapping.png';
 import Geo_health from '@/public/Photos/Geo_health.png';
 import Geogoverence from '@/public/Photos/Geogoverence.png';
 import GIS_Suvey from '@/public/Photos/GIS_Suvey.png';
-import ScrollToTop from '../_Components/ScrollToTop';
+import ScrollToTop from '@/app/_Components/ScrollToTop';
 
 export const metadata = {
   title: "Techmapperz GIS Services",

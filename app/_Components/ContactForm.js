@@ -1,17 +1,7 @@
 // components/ContactForm.js
 'use client'
 import React, { useState } from 'react';
-import {
-  VStack,
-  HStack,
-  Input,
-  Textarea,
-  Button,
-  useToast,
-  FormControl,
-  FormLabel,
-  FormErrorMessage,
-} from '@chakra-ui/react';
+import {useToast} from '@chakra-ui/react';
 
 const init = {
   name: "",
@@ -111,76 +101,88 @@ const ContactForm = () => {
   };
 
   return (
-    <VStack spacing={8}>
-      <HStack spacing={[4, 14, 14]}>
-        <FormControl isInvalid={hasError.name}>
-          <FormLabel>Full Name*</FormLabel>
-          <Input
-            name="name"
-            value={contactdata.name}
-            onChange={handalechange}
-            placeholder="Enter Full Name"
-          />
-          <FormErrorMessage>{hasError.name}</FormErrorMessage>
-        </FormControl>
+    <form onSubmit={handalesubmit} className="grid text-black grid-cols-1 gap-6 w-full max-w-4xl mx-auto">
+      <div className="grid grid-cols-1">
+        <input
+          type="text"
+          name="name"
+          id="name"
+          value={contactdata.name}
+          onChange={handalechange}
+          placeholder="Enter Full Name"
+          className={`mt-1 block w-full px-3 py-4 border border-gray-300 rounded-md shadow-sm 
+        focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm ${hasError.name ? "border-red-500" : ""}`}
+        />
+        {hasError.name && <p className="text-red-500 text-sm mt-2">{hasError.name}</p>}
+      </div>
 
-        <FormControl isInvalid={hasError.email}>
-          <FormLabel>Email*</FormLabel>
-          <Input
-            name="email"
-            value={contactdata.email}
-            onChange={handalechange}
-            placeholder="Enter Email"
-          />
-          <FormErrorMessage>{hasError.email}</FormErrorMessage>
-        </FormControl>
-      </HStack>
+      <div className="grid grid-cols-1">
+        <input
+          type="email"
+          name="email"
+          id="email"
+          value={contactdata.email}
+          onChange={handalechange}
+          placeholder="Enter Email"
+          className={`mt-1 block w-full px-3 py-4 border border-gray-300 rounded-md shadow-sm 
+        focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm ${hasError.email ? "border-red-500" : ""}`}
+        />
+        {hasError.email && <p className="text-red-500 text-sm mt-2">{hasError.email}</p>}
+      </div>
 
-      <HStack spacing={[4, 14, 14]}>
-        <FormControl isInvalid={hasError.projectType}>
-          <FormLabel>Project Type</FormLabel>
-          <Input
-            name="projectType"
-            value={contactdata.projectType}
-            onChange={handalechange}
-            placeholder="Enter Project Type"
-          />
-          <FormErrorMessage>{hasError.projectType}</FormErrorMessage>
-        </FormControl>
+      <div className="grid grid-cols-1">
+        <input
+          type="text"
+          name="projectType"
+          id="projectType"
+          value={contactdata.projectType}
+          onChange={handalechange}
+          placeholder="Enter Project Type"
+          className="mt-1 block w-full px-3 py-4 border border-gray-300 rounded-md shadow-sm 
+        focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+        />
+        {hasError.projectType && <p className="text-red-500 text-sm mt-2">{hasError.projectType}</p>}
+      </div>
 
-        <FormControl isInvalid={hasError.mobile}>
-          <FormLabel>Mobile*</FormLabel>
-          <Input
-            name="mobile"
-            value={contactdata.mobile}
-            onChange={handalechange}
-            placeholder="Enter Mobile"
-            type="tel"
-            pattern="\d{10}"
-          />
-          <FormErrorMessage>{hasError.mobile}</FormErrorMessage>
-        </FormControl>
-      </HStack>
+      <div className="grid grid-cols-1">
+        <input
+          type="tel"
+          name="mobile"
+          id="mobile"
+          value={contactdata.mobile}
+          onChange={handalechange}
+          placeholder="Enter Mobile"
+          pattern="\d{10}"
+          className={`mt-1 block w-full px-3 py-4 border border-gray-300 rounded-md shadow-sm 
+        focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm ${hasError.mobile ? "border-red-500" : ""}`}
+        />
+        {hasError.mobile && <p className="text-red-500 text-sm mt-2">{hasError.mobile}</p>}
+      </div>
 
-      <HStack className="w-[80%]">
-        <FormControl isInvalid={hasError.projectdetails}>
-          <FormLabel>Write Project Details*</FormLabel>
-          <Textarea
-            name="projectdetails"
-            value={contactdata.projectdetails}
-            onChange={handalechange}
-            placeholder="Write Project Details"
-            height={"200px"}
-            width={"100%"}
-          />
-          <FormErrorMessage>{hasError.projectdetails}</FormErrorMessage>
-        </FormControl>
-      </HStack>
+      <div className="grid grid-cols-1">
+        <textarea
+          name="projectdetails"
+          id="projectdetails"
+          value={contactdata.projectdetails}
+          onChange={handalechange}
+          placeholder="Write Project Details"
+          rows="6"
+          className={`mt-1 block w-full px-3 py-4 border border-gray-300 rounded-md shadow-sm 
+        focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm ${hasError.projectdetails ? "border-red-500" : ""}`}
+        ></textarea>
+        {hasError.projectdetails && <p className="text-red-500 text-sm mt-2">{hasError.projectdetails}</p>}
+      </div>
 
-      <Button size={"lg"} w="40%" colorScheme="blue" onClick={handalesubmit}>
-        Submit
-      </Button>
-    </VStack>
+      <div className="grid grid-cols-1">
+        <button
+          type="submit"
+          className="inline-flex justify-center py-4 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-[#396BA9] hover:bg-[#3f7ecb] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+        >
+          Submit
+        </button>
+      </div>
+    </form>
+
   );
 };
 

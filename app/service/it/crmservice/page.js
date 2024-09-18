@@ -14,7 +14,7 @@ import CRM7 from '@/public/Photos/CRM7.png';
 import CRM8 from '@/public/Photos/CRM8.png';
 import CRM9 from '@/public/Photos/CRM9.png';
 import CRM10 from '@/public/Photos/CRM10.png';
-import ScrollToTop from '../_Components/ScrollToTop';
+import ScrollToTop from '@/app/_Components/ScrollToTop';
 
 const CRM_pages = () => {
 

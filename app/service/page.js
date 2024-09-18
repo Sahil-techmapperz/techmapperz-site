@@ -15,7 +15,7 @@ import T01 from '@/public/Photos/01.png';
 import T02 from '@/public/Photos/02.png';
 import T03 from '@/public/Photos/03.png';
 import T04 from '@/public/Photos/04.png';
-import ScrollToTop from '../_Components/ScrollToTop';
+import ScrollToTop from '@/app/_Components/ScrollToTop';
 
 export const metadata = {
   title: "Techmapperz Service",

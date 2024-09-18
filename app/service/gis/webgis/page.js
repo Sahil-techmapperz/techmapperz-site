@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import WebGis1 from '@/public/Photos/WebGis1.png';
 import WebGis2 from '@/public/Photos/WebGis2.png';
-import ScrollToTop from '../_Components/ScrollToTop';
+import ScrollToTop from '@/app/_Components/ScrollToTop';
 
 export const metadata = {
     title: "Techmapperz Web GIS",

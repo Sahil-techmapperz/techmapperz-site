@@ -1,7 +1,9 @@
 'use client'
 
+import Image from "next/image";
 import Link from "next/link"
 import { FaArrowRightLong } from "react-icons/fa6";
+import home_contact_img from "@/public/Photos/home_contact_img.png"
 
 const Homecontact = () => {
     return (
@@ -11,13 +13,18 @@ const Homecontact = () => {
                     <img src={"/Photos/Home_contact_banner.png"} alt="Main Banner" className="w-full h-[300px] object-cover" />
                 </div>
 
-                <div className="absolute inset-0 flex justify-center items-center text-center">
-                    <div className='text-white px-4'>
+                <div className="absolute inset-0 flex justify-between px-[30px] py-2">
+                    <div className='text-white flex flex-col gap-4 justify-center'>
                         <p className='text-4xl font-bold'>“ Empowering Your Business with Innovation</p>
                         <p className='text-4xl font-bold'><span className='text-[#3766BA]'>IT</span> and <span className='text-[#3766BA]'>GIS</span> Solution ”</p>
+                        <button
+                        style={{boxShadow: "0px 0px 8px 0px #00B0FE"}}
+                         className="bg-white text-[#00B0FE] py-2 px-4 w-max rounded-full"><Link href={"/contact"} className="flex gap-2 justify-center items-center">Contact Us <FaArrowRightLong /></Link> </button>
+                    </div>
+                    <div>
+                        <Image src={home_contact_img} alt="home_contact_img"/>
                     </div>
 
-                    <button className="bg-white text-black py-2 px-4 absolute w-max rounded-full bottom-4"><Link href={"/contact"} className="flex gap-2 justify-center items-center">Contact Us <FaArrowRightLong/></Link> </button>
                 </div>
 
             </div>

@@ -18,34 +18,60 @@ import Image from 'next/image';
 
 import company_logo from "@/public/company_logo.webp"
 import styles from './Navbar.module.css';
+import Resources from './Resources';
 
 const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = React.useRef();
   const pathname = usePathname();
 
+  const sections = [
+    {
+      title: 'Geospatial Services',
+      items: [
+        { name: 'GIS Services', link: '/service/gis/gisservice' },
+        { name: 'Remote Sensing', link: '/service/gis/remotesensing' },
+        { name: 'Drone Services', link: '/service/gis/droneservice' },
+        { name: 'Photogrammetry Services', link: '/service/gis/photogrammetry' },
+        { name: 'Web GIS Services', link: '/service/gis/webgis' },
+      ],
+    },
+    {
+      title: 'IT Services',
+      items: [
+        { name: 'Mobile APP Development', link: '/service/it/mobiledevelopment' },
+        { name: 'Website Development', link: '/service/it/webdevelopment' },
+        { name: 'CRM/ERP', link: '/service/it/crmservice' },
+        { name: 'IT Consultancy', link: '/service/it/itconsultingservic' },
+      ],
+    },
+  ];
+
   return (
-    <div className={`${styles.navbar} fixed top-0 w-full flex justify-between items-center p-4 z-[200] bg-black bg-opacity-95`}>
+    <>
+    <div className={`${styles.navbar} fixed top-0 w-full flex justify-between items-center py-3 px-2 z-[200] bg-black bg-opacity-95`}>
       <div className="md:w-1/5 w-1/2">
         <Link href="/">
           <Image
             src={company_logo}
             alt="company logo"
             priority
+            className='w-[200px]'
           />
         </Link>
       </div>
-      <div className="hidden md:flex">
-        <ul className="list-none relative flex gap-5">
-          <li className={`relative text-center ${pathname === '/' ? 'border-b-4 border-red-500' : ''}`}>
-            <Link href="/" className="text-lg text-white flex items-center">Home</Link>
+      <div className="hidden md:flex justify-center items-center">
+        <ul className="list-none relative flex gap-6 mr-[80px]">
+        <li className={`relative text-center ${pathname === '/' ? 'border-b-4 border-red-500' : ''}`}>
+            <Link href="/" className="text-lg text-white flex items-center ">Home</Link>
           </li>
-          <li className={`relative text-center ${pathname.startsWith('/service') ? 'border-b-4 border-red-500' : ''} ${styles.dropdown}`}>
+          <li className={`relative text-center   ${styles.dropdown}`}>
             <Link href="/service" className="text-lg text-white flex items-center">
               Service <IoIosArrowDown />
             </Link>
             <ul className={`${styles.dropdownMenu}`}>
-              <li className={`${styles.dropdownItem} ${styles.subDropdown}`}>
+            <Resources sections={sections} title={"Service"} subtitle={"Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old."} color={"#007F7B"} />
+              {/* <li className={`${styles.dropdownItem} ${styles.subDropdown}`}>
                 <Link href="#" className="p-2 hover:bg-gray-300 block">Geospatial Services</Link>
                 <ul className={`${styles.subDropdownMenu}`}>
                   <li className="p-2 hover:bg-gray-300"><Link href="/gisservice" className="text-sm block">GIS Services</Link></li>
@@ -63,7 +89,7 @@ const Navbar = () => {
                   <li className="p-2 hover:bg-gray-300"><Link href="/crmservice" className="text-sm block">CRM / ERP</Link></li>
                   <li className="p-2 hover:bg-gray-300"><Link href="/itconsultingservice" className="text-sm block">IT Consultancy</Link></li>
                 </ul>
-              </li>
+              </li> */}
             </ul>
           </li>
           <li className={`relative text-center ${pathname === '/article' ? 'border-b-4 border-red-500' : ''} ${styles.dropdown}`}>
@@ -83,9 +109,12 @@ const Navbar = () => {
           <li className={`relative text-center ${pathname === '/career' ? 'border-b-4 border-red-500' : ''}`}>
             <Link href="/career" className="text-lg text-white flex items-center">Careers</Link>
           </li>
-          <li className={`relative text-center ${pathname === '/contact' ? 'border-b-4 border-red-500' : ''}`}>
-            <Link href="/contact" className="text-lg text-white flex items-center">Contact us</Link>
+          <li className={`relative text-center ml-[60px] ${pathname === '/contact' ? 'border-b-4 border-red-500' : ''}`}>
+            <Link href="/contact" className="text-lg text-white flex items-center border-2 px-2 rounded-md hover:bg-white hover:text-black">Contact us</Link>
           </li>
+          {/* <li className={`relative text-center ${pathname === '/contact' ? 'border-b-4 border-red-500' : ''}`}>
+            <Link href="/contact" className="text-lg text-white flex items-center">RESQUEST A QUOTE</Link>
+          </li> */}
         </ul>
       </div>
       <div ref={btnRef} onClick={onOpen} className="block text-white md:hidden text-3xl cursor-pointer">
@@ -125,6 +154,9 @@ const Navbar = () => {
         </DrawerContent>
       </Drawer>
     </div>
+      
+
+    </>
   );
 };
 

@@ -3,7 +3,7 @@ import GIS_Survey from '@/public/Photos/GIS_Suvey.png';
 import Photogrammetry1 from '@/public/Photos/Photogametry1.png';
 import Photogrammetry2 from '@/public/Photos/Photogametry2.png';
 import Link from 'next/link';
-import ScrollToTop from '../_Components/ScrollToTop';
+import ScrollToTop from '@/app/_Components/ScrollToTop';
 
 export const metadata = {
     title: "Techmapperz Photogrammetry Services",

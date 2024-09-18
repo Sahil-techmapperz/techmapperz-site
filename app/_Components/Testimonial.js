@@ -55,7 +55,7 @@ const Testimonial = () => {
       aria-label={label}
       disabled={!hasPrev}
     >
-      <IoIosArrowBack size={60}  color="white" />
+      <IoIosArrowBack size={40}  color="white" />
     </button>
   );
 
@@ -68,7 +68,7 @@ const Testimonial = () => {
       aria-label={label}
       disabled={!hasNext}
     >
-      <IoIosArrowForward size={60} color="white" />
+      <IoIosArrowForward size={40} color="white" />
     </button>
   );
 

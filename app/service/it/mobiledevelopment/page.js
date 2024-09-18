@@ -19,7 +19,7 @@ import MobileDev12 from '@/public/Photos/MobileDev12.png';
 import MobileDev13 from '@/public/Photos/MobileDev13.png';
 import MobileDev14 from '@/public/Photos/MobileDev14.png';
 import MobileDev15 from '@/public/Photos/MobileDev15.png';
-import ScrollToTop from '../_Components/ScrollToTop';
+import ScrollToTop from '@/app/_Components/ScrollToTop';
 import Link from 'next/link';
 
 const Mobile_development = () => {

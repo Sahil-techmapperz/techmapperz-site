@@ -1,41 +1,15 @@
-"use client"
-import { motion, useAnimation, useScroll } from 'framer-motion';
 import Link from 'next/link';
-import Image from 'next/image';
-import Home_1 from '@/public/Photos/Home/Home_1.png';
-import Home_2 from '@/public/Photos/Home/Home_2.png';
-import Home_3 from '@/public/Photos/Home/Home_3.png';
 import feature_1 from '@/public/Photos/feature_1.png';
 import feature_2 from '@/public/Photos/feature_2.png';
 import feature_3 from '@/public/Photos/feature_3.png';
-import KnowMoreButton from './KnowMoreButton';
-import { useEffect } from 'react';
+import feature_4 from '@/public/Photos/feature_4.png';
+import feature_5 from '@/public/Photos/feature_5.png';
+import feature_6 from '@/public/Photos/feature_6.png';
 import FlipCard from './FlipCard';
 
-const cardVariants = {
-  hidden: { opacity: 0, x: -100 },
-  visible: {
-    opacity: 1,
-    x: 0,
-    transition: { duration: 0.5 }
-  }
-};
+
 
 const Features = () => {
-  const controls = useAnimation();
-  const { scrollYProgress } = useScroll();
-
-  useEffect(() => {
-    const unsubscribe = scrollYProgress.onChange((latest) => {
-      if (latest > 0.1) {
-        controls.start('visible');
-      } else {
-        controls.start('hidden');
-      }
-    });
-
-    return () => unsubscribe();
-  }, [scrollYProgress, controls]);
 
   return (
     <section className="bg-black py-8 px-[4rem] relative">
@@ -50,13 +24,13 @@ const Features = () => {
       </div>
 
 
-      <div className='grid grid-cols-3 max-sm:grid-cols-1 gap-4 w-[80%] m-auto'>
+      <div className='grid grid-cols-3 max-sm:grid-cols-1 gap-4 w-[100%] m-auto'>
         <FlipCard frontImage ={feature_1} backImage={feature_1}  title={"Website Development"} subtitle={"Give Your Brand Face"} backdiv_arr={['Mobile App Development','Mobile App Development','Mobile App Development']}/>
-        <FlipCard frontImage ={feature_2} backImage={feature_2} title={"Website Development"} subtitle={"Give Your Brand Face"} backdiv_arr={['Mobile App Development','Mobile App Development','Mobile App Development']}/>
-        <FlipCard frontImage ={feature_3} backImage={feature_3} title={"Website Development"} subtitle={"Give Your Brand Face"} backdiv_arr={['Mobile App Development','Mobile App Development','Mobile App Development']}/>
-        <FlipCard frontImage ={feature_1} backImage={feature_1} title={"Website Development"} subtitle={"Give Your Brand Face"} backdiv_arr={['Mobile App Development','Mobile App Development','Mobile App Development']}/>
-        <FlipCard frontImage ={feature_2} backImage={feature_2} title={"Website Development"} subtitle={"Give Your Brand Face"} backdiv_arr={['Mobile App Development','Mobile App Development','Mobile App Development']}/>
-        <FlipCard frontImage ={feature_1} backImage={feature_1} title={"Website Development"} subtitle={"Give Your Brand Face"} backdiv_arr={['Mobile App Development','Mobile App Development','Mobile App Development']}/>
+        <FlipCard frontImage ={feature_2} backImage={feature_2} title={"Mobile Application development"} subtitle={"Give Your Brand Face"} backdiv_arr={['Mobile App Development','Mobile App Development','Mobile App Development']}/>
+        <FlipCard frontImage ={feature_3} backImage={feature_3} title={"Drone Solution"} subtitle={"Give Your Brand Face"} backdiv_arr={['Mobile App Development','Mobile App Development','Mobile App Development']}/>
+        <FlipCard frontImage ={feature_4} backImage={feature_4} title={"CRM Solution"} subtitle={"Give Your Brand Face"} backdiv_arr={['Mobile App Development','Mobile App Development','Mobile App Development']}/>
+        <FlipCard frontImage ={feature_5} backImage={feature_5} title={"IT Consulting"} subtitle={"Give Your Brand Face"} backdiv_arr={['Mobile App Development','Mobile App Development','Mobile App Development']}/>
+        <FlipCard frontImage ={feature_6} backImage={feature_6} title={"Digital Marketing"} subtitle={"Give Your Brand Face"} backdiv_arr={['Mobile App Development','Mobile App Development','Mobile App Development']}/>
 
       </div>
 

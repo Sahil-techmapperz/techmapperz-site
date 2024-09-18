@@ -17,7 +17,7 @@ import Itconsulting14 from '@/public/Photos/Itconsulting14.png';
 import Office_work from '@/public/Photos/Itconsulting/Office work.gif';
 import Digital_nomad from '@/public/Photos/Itconsulting/Digital nomad.gif';
 import Good_team from '@/public/Photos/Itconsulting/Good team.gif';
-import ScrollToTop from '../_Components/ScrollToTop';
+import ScrollToTop from '@/app/_Components/ScrollToTop';
 
 const ItConsulting = () => {
 

@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+
 
 
 
@@ -69,6 +73,23 @@ ul.custom-list li {
     min-height: 500px; /* Adjust height as needed */
   }
   
+
+
+  .career_why_choose_us {
+    transition: all ease-in-out 0.5s; /* Added transition for non-hover state */
+}
+
+.career_why_choose_us:hover {
+    color: white !important;
+    background: #396BA9;
+    transform: scale(1.1);
+    transition: all ease-in-out 0.5s; /* Corrected transition duration */
+}
+
+.career_why_choose_us:hover p {
+    color: white !important;
+}
+
   
   
   
