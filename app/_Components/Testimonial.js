@@ -51,7 +51,7 @@ const Testimonial = () => {
       type="button"
       onClick={onClickHandler}
       title={label}
-      className="absolute left-[-15px] top-1/2 transform -translate-y-1/2 z-10 p-2 focus:outline-none"
+      className="absolute left-[-15px] top-1/2 transform -translate-y-1/2 z-10 p-2 focus:outline-none max-sm:hidden"
       aria-label={label}
       disabled={!hasPrev}
     >
@@ -64,7 +64,7 @@ const Testimonial = () => {
       type="button"
       onClick={onClickHandler}
       title={label}
-      className="absolute right-[-15px] top-1/2 transform -translate-y-1/2 z-10 p-2 focus:outline-none"
+      className="absolute right-[-15px] top-1/2 transform -translate-y-1/2 z-10 p-2 focus:outline-none max-sm:hidden"
       aria-label={label}
       disabled={!hasNext}
     >
@@ -73,10 +73,10 @@ const Testimonial = () => {
   );
 
   return (
-    <div className="bg-black py-8 px-4 text-center">
-      <p className="text-lg font-semibold text-gray-500">Testimonial</p>
-      <h1 className="text-4xl font-bold mb-6 text-white">What our Clients Say</h1>
-      <div className="p-[3rem]">
+    <div className="bg-black py-8 max-sm:pb-2 px-4 text-center">
+      <p className="text-xl font-semibold text-white">Testimonial</p>
+      <h1 className="text-[26px] mb-6 text-white">What our Clients Say</h1>
+      <div className="p-[3rem] max-sm:px-2">
         <div className="w-full m-auto relative">
           <Carousel
             showStatus={false}
@@ -97,7 +97,7 @@ const Testimonial = () => {
             }
           >
             {testimonials.map((data, index) => (
-              <div key={index} className="text-white p-6 m-[50px] rounded-lg shadow-lg relative overflow-visible" style={{background: "linear-gradient(90deg, rgba(0, 0, 0, 0.3) 4.63%, rgba(197, 197, 197, 0.3) 50.08%, rgba(0, 0, 0, 0.3) 95.86%)"}}>
+              <div key={index} className="text-white max-sm:mx-2 max-sm:px-2 p-6 m-[50px] rounded-lg shadow-lg relative overflow-visible" style={{background: "linear-gradient(90deg, rgba(0, 0, 0, 0.3) 4.63%, rgba(197, 197, 197, 0.3) 50.08%, rgba(0, 0, 0, 0.3) 95.86%)"}}>
                 <div className="w-[100px] h-[100px] flex justify-center items-center absolute top-[-50px] left-1/2 transform -translate-x-1/2 z-10">
                   <Image
                     src={data.image || avater}

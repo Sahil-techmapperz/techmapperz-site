@@ -48,7 +48,7 @@ const QueryDelayedForm = () => {
                 >
                   <video
                     id="videoButton"
-                    src="/Photos/popup_form_video.mp4"
+                    src="/media/popup_form_video.mp4"
                     loop
                     muted
                     className="absolute inset-0 w-full h-full object-cover"

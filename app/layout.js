@@ -5,6 +5,7 @@ import Navbar from './_Components/Navbar';
 import { ChakraProvider } from '@chakra-ui/react';
 import Footer from './_Components/Footer';
 import Head from 'next/head';
+import SocialMediaIcons from './_Components/SocialMediaIcons';
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -37,10 +38,20 @@ export default function RootLayout({ children }) {
             src="https://www.facebook.com/tr?id=792115005500081&ev=PageView&noscript=1" />
         </noscript>
         {/* End Meta Pixel Code */}
+
+        {/* <!-- Google tag (gtag.js) --> */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-SWB2CH4ZWC"
+        ></script>
+
+        {/* <!-- Google tag (gtag.js) --> */}
+
       </Head>
       <body className={poppins.className}>
         <Navbar />
         <ChakraProvider>
+          <SocialMediaIcons />
           {children}
         </ChakraProvider>
         <Footer />

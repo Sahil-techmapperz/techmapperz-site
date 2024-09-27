@@ -128,9 +128,9 @@ const JobCard = ({ job }) => {
           className="bg-white rounded-lg shadow-lg p-4"
           style={{ boxShadow: '30px 10px 15px rgba(0, 0, 0, 0.3)' }}
         >
-          <div className="flex items-center justify-between">
+          <div className="flex max-sm:flex-col max-sm:items-start items-center justify-between">
             <div>
-              <h3 className="text-lg font-bold">
+              <h3 className="text-lg font-bold text-[black]">
                 <span className="text-blue-600">Role :- </span>{job.designetion}
               </h3>
               <div className="flex items-center text-sm text-gray-500 space-x-4">

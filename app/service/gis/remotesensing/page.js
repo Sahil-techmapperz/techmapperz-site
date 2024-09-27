@@ -1,10 +1,11 @@
 import Link from 'next/link';
 import Geospatial_Mapping from '@/public/Photos/Geospatial_Mapping.png';
 import Geo_health from '@/public/Photos/Geo_health.png';
-import RemoteSence1 from '@/public/Photos/RemoteSence1.png';
-import RemoteSence2 from '@/public/Photos/RemoteSence2.png';
+import RemoteSence1 from '@/public/Photos/remote_sensing_img_1.png';
+import RemoteSence2 from '@/public/Photos/remote_sensing_img_2.png';
 import Image from 'next/image';
 import ScrollToTop from '@/app/_Components/ScrollToTop';
+import { FaArrowRightLong } from "react-icons/fa6";
 
 export const metadata = {
     title: "Techmapperz Remote Sensing",
@@ -17,53 +18,85 @@ const RemoteSensing = () => {
             <ScrollToTop />
             <div className="h-96 w-full flex flex-col justify-center items-center bg-cover bg-center" style={{ backgroundImage: `url("/Photos/banner_3.jpg")` }}>
                 <h1 className="text-6xl">Remote Sensing Services</h1>
-                <p className="text-xl">
+                <p className="text-xl mt-4">
                     <Link href="/">Home</Link> / <Link href="/service">Services</Link> / Remote Sensing Services
                 </p>
             </div>
             <div className="w-full bg-black">
                 <div className="p-8 lg:px-20">
-                    <p className="text-gray-400 text-lg text-justify">
-                        Measuring the physical characteristics of an area by measuring its reflected and emitted radiation from satellite or aircraft is Remote sensing. This helps researchers "sense" things about the Earth. Techmapperz has extensive expertise in Satellite Image Processing & Interpretation. Various Remote Sensing services offered by Techmapperz are:
+                    <p className="text-white text-[18px] text-center">
+                        Measuring the physical characteristics of an area by measuring it's reflected and emitted radiation from satellite or <br />
+                        aircraft is Remote sensing, this help researchers "sense" things about the Earth. Techmapperz has extensive <br />
+                        expertise in Satellite Image Processing & Interpretation. Various Remote Sensing services <br />
+                        offered by Techmapperz are: <br />
                     </p>
 
                     <div className="mt-8 flex flex-col space-y-8">
                         <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
-                            <div className="md:w-1/2">
-                                <h1 className="text-3xl font-semibold mb-4">Image Processing</h1>
-                                <Image src={RemoteSence1} alt="" className="w-full object-cover mb-4" />
+                            <div className="md:w-1/2 m-auto">
+                                <Image src={RemoteSence1} alt="" className="w-[80%] mb-4 ml-[80px]" />
                             </div>
                             <div className="md:w-1/2 relative">
-                                <p className="text-lg text-justify mb-8">
+                                <h1 className="text-3xl font-semibold mb-4">Image Processing</h1>
+                                <p className="text-[18px] mb-8">
                                     Most remote sensing data are recorded in the digital format in today's world of advanced technology, almost all image interpretation and analysis involves some element of digital processing. It involves various processes to enhance the image, we at Techmapperz use some of the best software and hardware available commercially to process high-quality images for commercial use.
                                 </p>
-                                <div className='flex mt-[15px] pb-4'>
-                                    <div className='flex absolute'>
-                                        <div className='bg-blue-500 w-12 h-12 rounded-full'></div>
-                                        <button className='text-white text-[26px] font-bold relative ml-[-25px]'>
-                                            <Link href="/contact">Know More</Link>
-                                        </button>
-                                    </div>
-                                </div>
+                                <ul className='flex flex-col gap-2 my-6 font-semibold list-disc ml-6'>
+                                    <li>Topographical Mapping</li>
+                                    <li>Utility Mapping</li>
+                                    <li>Cadastral Mapping</li>
+                                    <li>Cadastral Mapping</li>
+                                    <li>Parcel Mapping</li>
+                                </ul>
+                                <button
+                                    className='py-[10px] px-[15px] w-fit rounded-sm'
+                                    style={{
+                                        background: "linear-gradient(90deg, #EC212C 0%, #396BA9 100%)",
+                                        border: 'none',
+                                        cursor: 'pointer'
+                                    }}
+                                >
+                                    <Link
+                                        href='/contact'
+                                        style={{
+                                            color: 'white',
+                                            textDecoration: 'none'
+                                        }}
+                                    >
+                                        Know more
+                                        <FaArrowRightLong className="inline-block ml-2" />
+                                    </Link>
+                                </button>
                             </div>
                         </div>
-                        <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 bg-cover bg-center p-8" style={{ backgroundImage: `url("/Photos/banner_3.jpg")` }}>
+                        <div className="flex flex-col md:flex-row md:space-y-0 md:space-x-4 bg-cover bg-center p-8" >
                             <div className="md:w-1/2 relative">
                                 <h1 className="text-3xl font-semibold mb-4">Land Use / Land Cover Mapping</h1>
-                                <p className="text-lg text-justify mb-8">
+                                <p className="text-[18px] text-justify mb-8">
                                     Land use and land cover may sound the same but there is a slight difference between them. Land cover refers to the surface cover on the ground like vegetation, urban infrastructure, water, bare soil, etc. whereas Land use refers to the purpose the land serves, for example, recreation, wildlife habitat, or agriculture. Land use and Land cover mapping play a significant role in economic development. It is required for a better understanding and use of land in urban and rural areas.
                                 </p>
-                                <div className='flex mt-[15px] pb-4'>
-                                    <div className='flex absolute'>
-                                        <div className='bg-blue-500 w-12 h-12 rounded-full'></div>
-                                        <button className='text-white text-[26px] font-bold relative ml-[-25px]'>
-                                            <Link href="/contact">Know More</Link>
-                                        </button>
-                                    </div>
-                                </div>
+                                <button
+                                    className='py-[10px] px-[15px] w-fit rounded-sm'
+                                    style={{
+                                        background: "linear-gradient(90deg, #EC212C 0%, #396BA9 100%)",
+                                        border: 'none',
+                                        cursor: 'pointer'
+                                    }}
+                                >
+                                    <Link
+                                        href='/contact'
+                                        style={{
+                                            color: 'white',
+                                            textDecoration: 'none'
+                                        }}
+                                    >
+                                        Know more
+                                        <FaArrowRightLong className="inline-block ml-2" />
+                                    </Link>
+                                </button>
                             </div>
-                            <div className="md:w-1/2">
-                                <Image src={RemoteSence2} alt="" className="w-full object-contain mt-4 md:mt-0" />
+                            <div className="md:w-1/2 flex justify-end">
+                                <Image src={RemoteSence2} alt="" className="w-[80%] md:mt-0" />
                             </div>
                         </div>
                     </div>

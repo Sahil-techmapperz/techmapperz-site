@@ -35,7 +35,7 @@ const FlipCard = ({ frontImage, backImage, backdiv_arr, title, subtitle }) => {
                     />
                     <div className="absolute bottom-0 left-0 right-0 p-2 text-center text-white h-full flex items-center justify-center" style={{ background: "linear-gradient(0deg, rgba(55, 102, 186, 0.9) 14.46%, rgba(27, 50, 91, 0.37) 39.16%)" }}>
                         <div className="absolute bottom-2 left-0 right-0">
-                            <h3 className="font-bold ">{title}</h3>
+                            <h3 className="font-bold">{title}</h3>
                             <p>{subtitle}</p>
                         </div>
                     </div>
@@ -55,7 +55,7 @@ const FlipCard = ({ frontImage, backImage, backdiv_arr, title, subtitle }) => {
                      style={{ background: "linear-gradient(0deg, rgba(55, 102, 186, 0.9) 14.46%, rgba(27, 50, 91, 0.37) 39.16%)"}}
                     >
                         <div className="absolute font-[600] left-4 top-[150px]">
-                            <p className="text-[25px]">Website Development</p>
+                            <p className="text-[25px]">{title}</p>
                             {isFlipped && (
                                 <motion.div
                                     className="h-1 bg-white rounded"

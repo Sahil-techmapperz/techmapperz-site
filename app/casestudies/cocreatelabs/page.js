@@ -8,15 +8,22 @@ import Cocreatelabs_Inconclusion from "@/public/Photos/Cocreatelabs_Inconclusion
 import ChallengesBg from "@/public/Photos/Challenges_BG.png";
 import Image from 'next/image';
 import Scrool_Icons from '@/app/_Components/Scrool_Icons';
-import { FaReact, FaNodeJs, FaPython, FaHtml5, FaCss3Alt, FaJsSquare } from 'react-icons/fa';
+import { FaReact, FaNodeJs, FaPython, FaHtml5, FaCss3Alt, FaJsSquare,FaArrowRightLong } from 'react-icons/fa';
+import Link from 'next/link';
 
 const Cocreatelabs = () => {
   return (
     <div id='CaseStudiesITServices' className='bg-gray-900'>
       <ScrollToTop />
       <div className='flex flex-col h-[350px] text-center items-center justify-center bg-cover bg-center' style={{ backgroundImage: 'url("/Photos/Rectangle41.png")' }}>
-        <p className='text-white mt-[66px] mb-[30px] text-[66px] font-bold sm:text-[50px]'>IT Services</p>
-        <p className='text-white'>Case Studies / IT Services</p>
+        <p className='text-white mt-[66px] mb-[30px] text-[66px] font-bold sm:text-[50px]'>IT Portfolio</p>
+        {/* <p className='text-white'>IT Portfolio</p> */}
+        <Link
+          href="/contact"
+          className="relative w-fit text-[18px] text-[#00B0FE] py-2 px-4 bg-white rounded-lg shadow-[0px_0px_8px_0px_#00B0FE] hover:text-[#D555B5] hover:shadow-[0px_0px_8px_0px_#D555B5] transition-all duration-300"
+        >
+         Contact Now 
+        </Link>
       </div>
       <div className='w-full m-auto bg-gray-900'>
         {/* <div className="w-full h-[70px]" style={{ background: "linear-gradient(90deg, #9F9F9F 0%, #393939 49%, #9F9F9F 100%)" }}>
@@ -153,18 +160,18 @@ const Cocreatelabs = () => {
 
         <div className="w-full flex flex-col justify-center text-white items-center">
           <h1 className='text-2xl font-bold'>Technology Stacks</h1>
-          <p className='w-[40%] text-center'>We have used the latest technologies that can justify client requirements at 
-          the best to deliver bug-free solutions.</p>
+          <p className='w-[40%] text-center'>We have used the latest technologies that can justify client requirements at
+            the best to deliver bug-free solutions.</p>
         </div>
 
-        <Scrool_Icons icons={ [
-        <FaReact color="#61DBFB" size={60} />,
-        <FaNodeJs color="#68A063" size={60} />,
-        <FaPython color="#306998" size={60} />,
-        <FaHtml5 color="#E44D26" size={60} />,
-        <FaCss3Alt color="#264de4" size={60} />,
-        <FaJsSquare color="#F0DB4F" size={60} />
-    ]}/>
+        <Scrool_Icons icons={[
+          <FaReact color="#61DBFB" size={60} />,
+          <FaNodeJs color="#68A063" size={60} />,
+          <FaPython color="#306998" size={60} />,
+          <FaHtml5 color="#E44D26" size={60} />,
+          <FaCss3Alt color="#264de4" size={60} />,
+          <FaJsSquare color="#F0DB4F" size={60} />
+        ]} />
 
         <div>
 

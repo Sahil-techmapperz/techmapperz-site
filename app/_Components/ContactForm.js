@@ -101,7 +101,7 @@ const ContactForm = () => {
   };
 
   return (
-    <form onSubmit={handalesubmit} className="grid text-black grid-cols-1 gap-6 w-full max-w-4xl mx-auto">
+    <form onSubmit={handalesubmit} className="grid text-black grid-cols-1 gap-2 w-full max-w-4xl mx-auto">
       <div className="grid grid-cols-1">
         <input
           type="text"
@@ -110,7 +110,7 @@ const ContactForm = () => {
           value={contactdata.name}
           onChange={handalechange}
           placeholder="Enter Full Name"
-          className={`mt-1 block w-full px-3 py-4 border border-gray-300 rounded-md shadow-sm 
+          className={`mt-1 block w-full px-3 py-3 border border-gray-300 rounded-md shadow-sm 
         focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm ${hasError.name ? "border-red-500" : ""}`}
         />
         {hasError.name && <p className="text-red-500 text-sm mt-2">{hasError.name}</p>}
@@ -124,7 +124,7 @@ const ContactForm = () => {
           value={contactdata.email}
           onChange={handalechange}
           placeholder="Enter Email"
-          className={`mt-1 block w-full px-3 py-4 border border-gray-300 rounded-md shadow-sm 
+          className={`mt-1 block w-full px-3 py-3 border border-gray-300 rounded-md shadow-sm 
         focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm ${hasError.email ? "border-red-500" : ""}`}
         />
         {hasError.email && <p className="text-red-500 text-sm mt-2">{hasError.email}</p>}
@@ -138,7 +138,7 @@ const ContactForm = () => {
           value={contactdata.projectType}
           onChange={handalechange}
           placeholder="Enter Project Type"
-          className="mt-1 block w-full px-3 py-4 border border-gray-300 rounded-md shadow-sm 
+          className="mt-1 block w-full px-3 py-3 border border-gray-300 rounded-md shadow-sm 
         focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
         />
         {hasError.projectType && <p className="text-red-500 text-sm mt-2">{hasError.projectType}</p>}
@@ -153,7 +153,7 @@ const ContactForm = () => {
           onChange={handalechange}
           placeholder="Enter Mobile"
           pattern="\d{10}"
-          className={`mt-1 block w-full px-3 py-4 border border-gray-300 rounded-md shadow-sm 
+          className={`mt-1 block w-full px-3 py-3 border border-gray-300 rounded-md shadow-sm 
         focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm ${hasError.mobile ? "border-red-500" : ""}`}
         />
         {hasError.mobile && <p className="text-red-500 text-sm mt-2">{hasError.mobile}</p>}
@@ -167,7 +167,7 @@ const ContactForm = () => {
           onChange={handalechange}
           placeholder="Write Project Details"
           rows="6"
-          className={`mt-1 block w-full px-3 py-4 border border-gray-300 rounded-md shadow-sm 
+          className={`mt-1 block w-full px-3 py-3 border border-gray-300 rounded-md shadow-sm 
         focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm ${hasError.projectdetails ? "border-red-500" : ""}`}
         ></textarea>
         {hasError.projectdetails && <p className="text-red-500 text-sm mt-2">{hasError.projectdetails}</p>}
@@ -176,7 +176,7 @@ const ContactForm = () => {
       <div className="grid grid-cols-1">
         <button
           type="submit"
-          className="inline-flex justify-center py-4 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-[#396BA9] hover:bg-[#3f7ecb] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+          className="inline-flex justify-center py-3 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-[#396BA9] hover:bg-[#3f7ecb] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
         >
           Submit
         </button>

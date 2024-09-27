@@ -1,17 +1,18 @@
+"use client"
 import React, { useState } from 'react';
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 import { IoIosArrowForward, IoMdClose } from 'react-icons/io';
 import { motion } from 'framer-motion';
 
 const SocialMediaIcons = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
 
   const toggleIcons = () => {
     setIsOpen(!isOpen);
   };
 
   return (
-    <div className="fixed top-1/2 z-50-- right-0 transform -translate-y-1/2 flex items-center">
+    <div className="fixed top-1/2 z-50 right-0 transform -translate-y-1/2 flex items-center">
       {/* Social Media Icons */}
       <motion.div
         className={`relative flex flex-col space-y-4 p-4 bg-white rounded-l-lg shadow-lg ${
