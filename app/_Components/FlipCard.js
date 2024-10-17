@@ -7,22 +7,28 @@ import Image from "next/image";
 const FlipCard = ({ frontImage, backImage, backdiv_arr, title, subtitle }) => {
     const [isFlipped, setIsFlipped] = useState(false);
 
-    useEffect(() => {
-        const intervalId = setInterval(() => {
-            setIsFlipped((prev) => !prev);
-        }, 4000); // Flips every 3000 milliseconds (3 seconds)
+    // useEffect(() => {
+    //     const intervalId = setInterval(() => {
+    //         setIsFlipped((prev) => !prev);
+    //     }, 4000); 
 
-        return () => clearInterval(intervalId);
-    }, []);
+    //     return () => clearInterval(intervalId);
+    // }, []);
+
+
+    const handaleFlip = ()=>{
+        setIsFlipped((prev) => !prev);
+    };
 
     return (
-        <div className="relative w-full mb-6 h-80 perspective-1000">
+        <div className="relative w-full mb-6 h-80 perspective-1000 ">
             <motion.div
-                className="relative w-full h-full"
+                className="relative w-full h-full cursor-pointer"
                 initial={{ rotateY: 0 }}
                 animate={{ rotateY: isFlipped ? 180 : 0 }}
                 transition={{ duration: 1 }} // Set duration to 1 second
                 style={{ transformStyle: "preserve-3d" }}
+                onClick={handaleFlip}
             >
                 <div
                     className="absolute inset-0 backface-hidden"
@@ -35,8 +41,8 @@ const FlipCard = ({ frontImage, backImage, backdiv_arr, title, subtitle }) => {
                     />
                     <div className="absolute bottom-0 left-0 right-0 p-2 text-center text-white h-full flex items-center justify-center" style={{ background: "linear-gradient(0deg, rgba(55, 102, 186, 0.9) 14.46%, rgba(27, 50, 91, 0.37) 39.16%)" }}>
                         <div className="absolute bottom-2 left-0 right-0">
-                            <h3 className="font-bold ">{title}</h3>
-                            <p>{subtitle}</p>
+                            <h3 className="font-bold text-[25px]">{title}</h3>
+                            
                         </div>
                     </div>
                 </div>
@@ -55,7 +61,7 @@ const FlipCard = ({ frontImage, backImage, backdiv_arr, title, subtitle }) => {
                      style={{ background: "linear-gradient(0deg, rgba(55, 102, 186, 0.9) 14.46%, rgba(27, 50, 91, 0.37) 39.16%)"}}
                     >
                         <div className="absolute font-[600] left-4 top-[150px]">
-                            <p className="text-[25px]">Website Development</p>
+                            <p className="text-[25px]">{title}</p>
                             {isFlipped && (
                                 <motion.div
                                     className="h-1 bg-white rounded"

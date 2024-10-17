@@ -1,5 +1,4 @@
 import AboutUs from "./_Components/AboutUs";
-import CarouselComponent from "./_Components/CarouselComponent";
 import Features from "./_Components/Features";
 import HappyClients from "./_Components/HappyClients";
 import Carousel from "./_Components/HomeCarousel";
@@ -20,12 +19,7 @@ const Home = () => {
      
     <ScrollToTop/>
     {/* <QueryDelayedForm/> */}
-      {/* <section className="relative w-full overflow-hidden">
-        <CarouselComponent />
-      </section> */}
-
       <Carousel/>
-
       <Features />
       <Technology />
       <IndustryExpertise/>

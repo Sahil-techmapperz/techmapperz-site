@@ -25,16 +25,16 @@ const Card = ({ post }) => {
         />
         <span className="absolute bottom-2 right-0 bg-white bg-opacity-70 px-3 py-1 rounded-l font-bold text-gray-800 text-sm">{`${moment(post.created_at).format('YYYY-MM-DD')}`}</span>
       </div>
-      <p className="mt-1 px-4">{post.comments.length} Comments</p>
-      <div className="mt-4 px-4">
+      <p className="mt-1 px-4 max-sm:px-1">{post.comments.length} Comments</p>
+      <div className="mt-4 px-4 max-sm:px-1">
         <Link href={`/blog/${post._id}`}>
-          <h1 className="text-xl font-bold">{post.title}</h1>
+          <h1 className="text-xl font-bold max-sm:text-[16px] ">{post.title}</h1>
         </Link>
       </div>
       <div className="flex gap-2 m-4">
-        <span className="bg-gray-400 text-black hover:bg-white hover:font-bold hover:cursor-pointer px-2 py-1 rounded-full text-sm">{post.category}</span>
+        <span className="bg-gray-400 text-black hover:bg-white hover:font-bold hover:cursor-pointer px-2  py-1 rounded-full text-sm">{post.category}</span>
       </div>
-      <div className="flex px-4 text-2xl gap-[10px] mt-4 space-x-4 pb-4">
+      <div className="flex px-4 max-sm:px-1 text-2xl gap-[10px] mt-4 space-x-4 pb-4">
        
           <a href={socialLinks.linkedin} className="text-blue-700 hover:text-blue-800">
             <FaLinkedinIn />

@@ -35,7 +35,7 @@ function ItCaseStudies() {
               </p>
             ))}
           </div>
-          <h1 className='font-bold text-2xl text-white w-full flex justify-center'>Robust, functional & cost effective website design services for your business</h1>
+          <h1 className='font-bold text-2xl text-white w-full flex justify-center'>Robust, cost-effective website design for your business.</h1>
           <CashstudieCard filter={filter} />
         </div>
       </div>

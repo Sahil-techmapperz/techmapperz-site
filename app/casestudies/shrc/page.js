@@ -9,14 +9,21 @@ import ChallengesBg from "@/public/Photos/Challenges_BG.png";
 import Image from 'next/image';
 import Scrool_Icons from '@/app/_Components/Scrool_Icons';
 import { FaReact, FaNodeJs, FaPython, FaHtml5, FaCss3Alt, FaJsSquare } from 'react-icons/fa';
+import Link from 'next/link';
 
 const Shrc = () => {
   return (
     <div id='CaseStudiesITServices' className='bg-gray-900'>
       <ScrollToTop />
       <div className='flex flex-col h-[350px] text-center items-center justify-center bg-cover bg-center' style={{ backgroundImage: 'url("/Photos/Rectangle41.png")' }}>
-        <p className='text-white mt-[66px] mb-[30px] text-[66px] font-bold sm:text-[50px]'>IT Services</p>
-        <p className='text-white'>Case Studies / IT Services</p>
+        <p className='text-white mt-[66px] mb-[30px] text-[66px] font-bold sm:text-[50px]'>IT Portfolio</p>
+        {/* <p className='text-white'>IT Portfolio</p> */}
+        <Link
+          href="/contact"
+          className="relative w-fit text-[18px] text-[#00B0FE] py-2 px-4 bg-white rounded-lg shadow-[0px_0px_8px_0px_#00B0FE] hover:text-[#D555B5] hover:shadow-[0px_0px_8px_0px_#D555B5] transition-all duration-300"
+        >
+         Contact Now 
+        </Link>
       </div>
       <div className='w-full m-auto bg-gray-900'>
         {/* <div className="w-full h-[70px]" style={{ background: "linear-gradient(90deg, #9F9F9F 0%, #393939 49%, #9F9F9F 100%)" }}>

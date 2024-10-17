@@ -19,14 +19,15 @@ import MobileDev12 from '@/public/Photos/MobileDev12.png';
 import MobileDev13 from '@/public/Photos/MobileDev13.png';
 import MobileDev14 from '@/public/Photos/MobileDev14.png';
 import MobileDev15 from '@/public/Photos/MobileDev15.png';
+import MobileDev1_gif from '@/public/Photos/MobileDev1.gif';
 import ScrollToTop from '@/app/_Components/ScrollToTop';
 import Link from 'next/link';
-
+import { FaArrowRightLong } from "react-icons/fa6";
 const Mobile_development = () => {
 
     return (
-        <div className="bg-gray-900 text-white">
-            
+        <div className="bg-black text-white">
+
             <ScrollToTop />
 
             <section className="h-96 w-full flex flex-col justify-center items-center bg-cover bg-center" style={{ backgroundImage: "url('/Photos/banner_3.jpg')" }}>
@@ -34,11 +35,11 @@ const Mobile_development = () => {
                 <p className="text-lg mt-2"><Link href={"/"}> Home </Link> / <Link href={"/service"}>Service </Link> / Mobile Application Development</p>
             </section>
 
-            <section className="w-full bg-gray-900 p-10">
-                <p className="text-gray-400 text-justify leading-relaxed">In this digital era, it's not easy to live without smart devices, especially smartphones. Smart devices are transforming the way we live our lives. Mobile apps have become the most lucrative digital tool to make life easier and more convenient. The mobile app software intelligently combines the latest technology and design solutions, which constantly get updated. It incorporates API, GPS, Camera, Microphone, Artificial Intelligence, and other latest technologies and becomes a Launchpad hurling your business to the next level.</p>
+            <section className="w-full bg-black p-10">
+                <p className="text-white text-justify leading-relaxed">In this digital era, it's not easy to live without smart devices, especially smartphones. Smart devices are transforming the way we live our lives. Mobile apps have become the most lucrative digital tool to make life easier and more convenient. The mobile app software intelligently combines the latest technology and design solutions, which constantly get updated. It incorporates API, GPS, Camera, Microphone, Artificial Intelligence, and other latest technologies and becomes a Launchpad hurling your business to the next level.</p>
 
                 <div className="w-full py-10">
-                    <div className="flex flex-col md:flex-row gap-10 bg-gray-900">
+                    <div className="flex flex-col md:flex-row gap-10 bg-black">
                         <div className="w-full md:w-1/2 flex flex-col gap-5">
                             <h1 className="text-4xl">Our Mobile App Development Services</h1>
                             <p>We provide iOS and Android mobile application development services to leverage mobile technology for your business.</p>
@@ -50,15 +51,34 @@ const Mobile_development = () => {
                                 <li><span className='text-white'> Android Wear App Development</span></li>
                             </ul>
                             <p>Market Development - Android has more than 80% of the market share in the handheld device market, making it arguably the most popular market.</p>
+                            <button
+                                className='py-[10px] px-[15px] w-fit rounded-sm'
+                                style={{
+                                    background: "linear-gradient(90deg, #EC212C 0%, #396BA9 100%)",
+                                    border: 'none',
+                                    cursor: 'pointer'
+                                }}
+                            >
+                                <Link
+                                    href='/contact'
+                                    style={{
+                                        color: 'white',
+                                        textDecoration: 'none'
+                                    }}
+                                >
+                                    Know more
+                                    <FaArrowRightLong className="inline-block ml-2" />
+                                </Link>
+                            </button>
                         </div>
                         <div className="w-full md:w-1/2 h-96 overflow-hidden">
-                            <img className="w-full h-full object-contain" src={"./Photos/MobileDev1.gif"} alt="MobileDev1" />
+                            <img className="w-full h-full object-contain" src={"/Photos/MobileDev1.gif"} alt="MobileDev1" />
                         </div>
                     </div>
                 </div>
 
                 <div className="w-full py-10">
-                    <div className="flex flex-col md:flex-row gap-10 bg-gray-900">
+                    <div className="flex flex-col md:flex-row gap-10 bg-black">
                         <div className="w-full md:w-1/2 h-96 overflow-hidden">
                             <img className="w-full h-full object-contain" src={"/Photos/MobileDev2.gif"} alt="MobileDev2" />
                         </div>
@@ -72,6 +92,25 @@ const Mobile_development = () => {
                                 <li><span className='text-white'>App Clips Development</span></li>
                             </ul>
                             <p>Source - Apple's stringent data protection standards make sensitive corporate data lodged in iPhone applications very safe and secure.</p>
+                            <button
+                                    className='py-[10px] px-[15px] w-fit rounded-sm'
+                                    style={{
+                                        background: "linear-gradient(90deg, #EC212C 0%, #396BA9 100%)",
+                                        border: 'none',
+                                        cursor: 'pointer'
+                                    }}
+                                >
+                                    <Link
+                                        href='/contact'
+                                        style={{
+                                            color: 'white',
+                                            textDecoration: 'none'
+                                        }}
+                                    >
+                                        Know more
+                                        <FaArrowRightLong className="inline-block ml-2" />
+                                    </Link>
+                                </button>
                         </div>
                     </div>
                 </div>
@@ -99,8 +138,8 @@ const Mobile_development = () => {
 
                 <div className="w-full py-10 flex sm:flex-row gap-10">
                     <div className='flex flex-col w-full'>
-                    <h1 className="text-4xl text-center mb-10">How Mobile Applications Grow Your Business?</h1>
-                    <img className="w-full object-cover" src={"./Photos/MobileDev16.gif"} alt="MobileDev16" />
+                        <h1 className="text-4xl text-center mb-10">How Mobile Applications Grow Your Business?</h1>
+                        <img className="w-full object-cover" src={"/Photos/MobileDev16.gif"} alt="MobileDev16" />
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2">
                         <div className="flex flex-col items-center text-center p-5 border-r border-b">

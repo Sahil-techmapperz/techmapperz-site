@@ -8,7 +8,7 @@ const QueryDelayedForm = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setShowForm(true); // Show the form every 20 seconds
+      // setShowForm(true);
     }, 20000);
 
     return () => clearInterval(interval);
@@ -48,7 +48,7 @@ const QueryDelayedForm = () => {
                 >
                   <video
                     id="videoButton"
-                    src="/Photos/popup_form_video.mp4"
+                    src="/media/popup_form_video.mp4"
                     loop
                     muted
                     className="absolute inset-0 w-full h-full object-cover"

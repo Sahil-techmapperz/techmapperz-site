@@ -7,6 +7,8 @@ import premierautosource_logo from "@/public/Photos/premierautosource_logo.png";
 import shrc_logo from "@/public/Photos/Shrc_logo.png";
 import whitespreadfoods_logo from "@/public/Photos/whitespreadfoods_logo.png";
 import client_gradient_bg from "@/public/Photos/client_gradient-bg 1.png";
+import NS_logo from "@/public/Photos/NS_logo.png";
+import khanconsultants_logo from "@/public/Photos/khanconsultants_logo.png";
 import Image from "next/image";
 import Link from "next/link";
 import Carousel from "react-multi-carousel";
@@ -19,6 +21,8 @@ let Clients = [
   premierautosource_logo,
   whitespreadfoods_logo,
   shrc_logo,
+  NS_logo,
+  khanconsultants_logo
 ];
 
 const responsive = {
@@ -44,18 +48,18 @@ const HappyClients = () => {
     <section className="relative h-[450px]" style={{ background: "linear-gradient(270.25deg, rgba(2, 24, 50, 0.69) 0.9%, rgba(0, 49, 109, 0.69) 50.43%, rgba(2, 24, 50, 0.69) 97.19%)" }} >
       <Image className="absolute z-30 w-full h-full" src={client_gradient_bg} alt="client_gradient_bg" />
       <div className="p-[20px]">
-        <h1 className="text-white text-center text-2xl relative z-30 font-[600] mb-6">Our Happy Clients</h1>
-        <p className="text-[18px] pb-4 text-white text-center relative z-30 font-[400]">Our Awesome Clients Solution for you Company.</p>
+        <h1 className="text-white text-center text-xl relative z-30 font-[600] mb-6">Our Happy Clients</h1>
+        <p className="text-[26px] max-sm:text-[18px] pb-4 text-white text-center relative z-30">Trusted by Many, Valued by All: Meet Our Happy Clients</p>
       </div>
 
-      <div className="w-[90%] mx-auto relative z-30">
+      <div className="w-[90%] max-sm:w-full mx-auto relative z-30 max-sm:pl-[50px]">
         <Carousel
           responsive={responsive}
           ssr={true}
           arrows={false}
           infinite={true}
           autoPlay={true}
-          autoPlaySpeed={3000}
+          autoPlaySpeed={1000}
           keyBoardControl={true}
           customTransition="all 0.5s"
           transitionDuration={500}
@@ -67,10 +71,10 @@ const HappyClients = () => {
             <div
               key={index}
               style={{background: 'rgba(255, 255, 255, 0.1)'}}
-              className="flex w-[250px] h-[200px] p-3 justify-center items-center"
+              className="flex w-[250px] h-[200px] p-3 justify-center items-center "
             >
               <Image
-                className=""
+                className="object-cover"
                 src={client}
                 alt={`Client logo ${index + 1}`}
               />

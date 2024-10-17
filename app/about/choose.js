@@ -9,18 +9,19 @@ import {
     Box,
 } from '@chakra-ui/react';
 import { BsCaretRightFill } from 'react-icons/bs';
+import { FaArrowRightLong } from "react-icons/fa6";
 
 const Choose = () => {
     return (
         <div className={styles.main}>
             <section className={styles.first_part}>
-                <div className={`grid grid-cols-2 items-center gap-[4rem]`}>
+                <div className={`grid grid-cols-2 max-sm:grid-cols-1 items-center gap-[4rem]`}>
                     <div>
                         <Image src="/Photos/Aboutus3.png" alt="About Us" width={500} height={300} />
                     </div>
 
                     <div className={styles.company_info}>
-                        <h2 className={`${styles.heading} mb-[2rem]`}>Why Choose Techmapperz?</h2>
+                        <h2 className={`text-[36px] font-bold text-white mb-[2rem] max-sm:text-[18px]`}>Why Choose Techmapperz?</h2>
                         <p>The smaller things make big difference in everything that we do, we at Techmapperz also believe in the attention
                             to detail methodology. Our eye for detail in every project that we manage is what makes us stand out from the
                             rest. We have a 4-step approach on how we execute a project.</p>
@@ -28,7 +29,7 @@ const Choose = () => {
                 </div>
 
                 <div className={styles.second_paragraph}>
-                    <p>All the services that Techmapperz offers ensure that this four-step methodology is followed, one of the many reasons that
+                    <p className="max-sm:text-[14px]">All the services that Techmapperz offers ensure that this four-step methodology is followed, one of the many reasons that
                         most of our clients are either referred by our existing clients or are returning clients. Working with us will always make you
                         feel a sense of calmness and confidence; we treat our clients this way because we would want to be treated this way.</p>
 

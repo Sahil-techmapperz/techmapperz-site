@@ -2,9 +2,10 @@
 
 import { useState } from "react";
 import CaseStudyCard from "@/app/_Components/CaseStudyCard"; // Corrected import
-import Scrolltextanimation from "../_Components/Scrolltextanimation";
 import ScrollToTop from "../_Components/ScrollToTop";
-import SocialMediaIcons from "../_Components/SocialMediaIcons";
+import Link from "next/link";
+import Portfolio_banner from "@/public/Photos/Portfolio_banner.png"
+import Image from "next/image";
 
 const Casestudies = () => {
     const [filter, setFilter] = useState('All');
@@ -16,10 +17,15 @@ const Casestudies = () => {
     return (
         <div id='CaseStudiesITServices'>
       <ScrollToTop />
-      <SocialMediaIcons/>
-      <div className='flex flex-col h-[250px] text-center items-center justify-center bg-cover bg-center' style={{ backgroundImage: 'url("/Photos/Rectangle41.png")' }}>
-        <p className='text-white mt-[60px] mb-[40px] text-[66px] font-bold sm:text-[50px]'>IT Services</p>
-        <p className='text-white'>Case Studies / IT Services</p>
+      <div className='relative w-full'>
+        <Image src={Portfolio_banner} className='w-full h-[500px]' alt="About Us Banner" />
+        <div className='absolute inset-0 w-full h-full bg-black bg-opacity-50 flex flex-col justify-center items-center'>
+          <h1 className='text-center text-6xl text-white font-bold'>Portfolios</h1>
+          <p className='text-center text-xl text-gray-200 mt-4 px-4 md:px-8 md:w-[50%]'>
+            Chasing the Vision for a better tomorrow where technology simplifies complex functions
+          </p>
+          <Link href="/contact" className="text-lg flex items-center border-2 px-4 py-2 mt-4 font-semibold uppercase rounded-md bg-white text-[#00B0FE] shadow-[0px_0px_8px_0px_#00B0FE]">Let's Connect</Link>
+        </div>
       </div>
       {/* <Scrolltextanimation text="TechMapperz offers software development, web design, mobile app development." /> */}
       <div className='bg-gray-800 h-auto flex px-16 justify-center items-center sm:flex-col sm:px-0'>

@@ -10,7 +10,7 @@ let CaseStudiesData = [
         ]
     },
     {
-        image: "/Photos/GIS_4.png", category: "GIS", name: "Gas & Petroleum Service",link:"petroleumervice", details: [
+        image: "/Photos/Site_Suitability_Analysis.png", category: "GIS", name: "Site Suitability Analysis",link:"site_mapping", details: [
             "In our recent project, we've utilized advanced drone imagery to develop comprehensive maps for various Industrial Areas. This process included the meticulous digitization of over twenty distinct layers for each region,",
 
         ]
@@ -22,7 +22,7 @@ let CaseStudiesData = [
         ]
     },
     {
-        image: "/Photos/GIS_6.png", category: "GIS", name: "",link:"", details: [
+        image: "/Photos/Agricultural_Mapping.png", category: "GIS", name: "Agricultural Mapping",link:"", details: [
             "We have done the Landuse and Landcover mapping with the help of Higher esolution drone imagery. Digitization of more than 12 layers and 9 sub layers for mapping are done.",
 
         ]
@@ -34,7 +34,7 @@ let CaseStudiesData = [
         ]
     },
     {
-        image: "/Photos/GIS_3.png", category: "GIS", name: "",link:"", details: [
+        image: "/Photos/Land_Use_Land_Cover_Mapping.png", category: "GIS", name: "Land-Use  Land -Cover Mapping",link:"landcover_mapping", details: [
             "We have prepared map for City Mapping. Here we have used Drone Imagery as the source of digitization. We captured all the features in 1:100 scale",
 
         ]
@@ -46,7 +46,7 @@ let CaseStudiesData = [
         ]
     },
     {
-        image: "/Photos/GIS_5.png", category: "GIS", name: "", link:"", details: [
+        image: "/Photos/Georeferencing_of_Maps.png", category: "GIS", name: "Georeferencing of Maps", link:"", details: [
             "We have prepared map for City Mapping. Here we have used Drone Imagery as the source of digitization. We captured all the features in 1:100 scale",
 
         ]
@@ -64,17 +64,23 @@ let CaseStudiesData = [
         ]
     },
     {
-        image: "/Photos/GIS_1.png", category: "GIS", name: "", link:"", details: [
+        image: "/Photos/Industrial_Planning_and_Mapping.png", category: "GIS", name: "Industrial Planning and Mapping", link:"industrial_mapping", details: [
             "We have used Drone Imagery for digitization and mapping of habitation areas. We have digitized more than Eight (8) Layers in this project and more than 8 other sub layers too as per the individual areas. All the feature extraction is done in 1:50 scale.",
 
         ]
     },
     {
-        image: "/Photos/GIS_2.png", category: "GIS", name: "", link:"", details: [
+        image: "/Photos/City_Mapping.png", category: "GIS", name: "City Mapping", link:"city_mapping", details: [
             "Georeferencing of images are done in this project. Digitization of sheets of a particular Village or Tehsil is done when the sheets are aligned after Georeferencing.",
 
         ]
-    }
+    },
+    {
+        image: "/Photos/IT_7.png", category: "IT", name: "Techmapperz CRM", link:"crm", details: [
+            "Say hello to Welho..! Welcome to the world of wellness. Made with high quality natural ingredients and no artificial colours or flavours, our dairy-based refreshing beverages offer the perfect blend of nutrition ..........................",
+            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+        ]
+    },
 
 
 ];
