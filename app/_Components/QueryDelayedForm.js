@@ -7,11 +7,11 @@ const QueryDelayedForm = () => {
   const [showForm, setShowForm] = useState(false);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      // setShowForm(true);
-    }, 20000);
+    const interval = setTimeout(()=>{
+      setShowForm(true);
+    },20000)
 
-    return () => clearInterval(interval);
+    return () => clearTimeout(interval);
   }, []);
 
   const handleCloseForm = () => {
@@ -23,7 +23,7 @@ const QueryDelayedForm = () => {
   return (
     <>
       {showForm && (
-        <div className="fixed z-50 inset-0 bg-gray-800 bg-opacity-75 flex justify-center items-center">
+        <div className="fixed w-[100vw]  z-50 inset-0 bg-gray-800 bg-opacity-75 flex justify-center items-center">
           <div className="rounded-md relative">
           <button
               onClick={handleCloseForm}
@@ -43,12 +43,13 @@ const QueryDelayedForm = () => {
                 </div>
                 <button
                   className='mt-4 bg-[#00CAFF] text-white w-[200px] h-[200px] rounded-[50%] flex justify-center items-center hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-300 focus:ring-opacity-50 relative overflow-hidden'
-                  onMouseEnter={() => document.getElementById('videoButton').play()}
-                  onMouseLeave={() => document.getElementById('videoButton').pause()}
+                  onMouseEnter={() => document.getElementById('videoButton').pause()}
+                  onMouseLeave={() => document.getElementById('videoButton').play()}
                 >
                   <video
                     id="videoButton"
                     src="/media/popup_form_video.mp4"
+                    autoPlay
                     loop
                     muted
                     className="absolute inset-0 w-full h-full object-cover"

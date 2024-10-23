@@ -18,7 +18,7 @@ const Home = () => {
     <div>
      
     <ScrollToTop/>
-    {/* <QueryDelayedForm/> */}
+    <QueryDelayedForm/>
       <Carousel/>
       <Features />
       <Technology />

@@ -3,7 +3,6 @@
 import React from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { IoIosArrowDown } from 'react-icons/io';
 import { AiOutlineMenu } from 'react-icons/ai';
 import {
   Drawer,
@@ -19,7 +18,6 @@ import Image from 'next/image';
 import company_logo from "@/public/company_logo.webp"
 import styles from './Navbar.module.css';
 import Resources from './Resources';
-import Dropdown from './Dropdown';
 
 const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();

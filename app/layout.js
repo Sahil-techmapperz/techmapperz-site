@@ -5,6 +5,7 @@ import { ChakraProvider } from '@chakra-ui/react';
 import Footer from './_Components/Footer';
 import Script from 'next/script';
 import SocialMediaIcons from './_Components/SocialMediaIcons';
+import ZohoChat from './_Components/ZohoChat';
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -28,6 +29,7 @@ export default function RootLayout({ children }) {
         <ChakraProvider>
           <SocialMediaIcons />
           {children}
+          <ZohoChat/>
         </ChakraProvider>
         <Footer />
 
@@ -41,15 +43,15 @@ export default function RootLayout({ children }) {
           fbq('init', '792115005500081'); fbq('track', 'PageView');`
         }} />
         <noscript>
-          <img height="1" width="1" style={{ display: 'none' }} 
-            src="https://www.facebook.com/tr?id=792115005500081&ev=PageView&noscript=1" 
+          <img height="1" width="1" style={{ display: 'none' }}
+            src="https://www.facebook.com/tr?id=792115005500081&ev=PageView&noscript=1"
           />
         </noscript>
         {/* End Meta Pixel Code */}
 
         {/* Google Ads Script */}
-        <Script 
-          src={`https://www.googletagmanager.com/gtag/js?id=AW-10860570322`} 
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=AW-10860570322`}
           strategy="afterInteractive"
         />
         <Script id="google-ads" strategy="afterInteractive">
@@ -63,7 +65,7 @@ export default function RootLayout({ children }) {
         {/* End Google Ads Script */}
 
         {/* Google Analytics Script */}
-        <Script 
+        <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-SWB2CH4ZWC"
           strategy="afterInteractive"
         />
@@ -75,12 +77,7 @@ export default function RootLayout({ children }) {
             gtag('config', 'G-SWB2CH4ZWC');
           `}
         </Script>
-        {/* End Google Analytics Script */}
-
-        {/* For chatbot */}
-        {/* <Script src="https://cdn.botpress.cloud/webchat/v2.1/inject.js"></Script>
-        <Script src="https://mediafiles.botpress.cloud/c47a5b69-3e47-4be5-ab4b-d19e4eacd90a/webchat/v2.1/config.js"></Script> */}
-        {/* End chatbot */}
+        {/* End Google Analytics Script */}       
       </body>
     </html>
   );
