@@ -35,14 +35,14 @@ const QueryDelayedForm = () => {
               <img src={"/Photos/Popuop_Banner.png"} alt="Main Banner" className="w-full h-[300px] object-cover" />
               <img src={"/Photos/popup_form_watermark.png"} alt="Watermark" className="absolute top-0 left-0 w-[180px]" />
 
-              <div className="absolute inset-0 flex justify-around items-center text-center">
-                <div className='text-white px-4'>
-                  <p className='text-2xl'>Welcome to Techmapperz</p>
-                  <p className='text-4xl font-bold'>“ Empowering Your Business with Innovation</p>
-                  <p className='text-4xl font-bold'><span className='text-black'>IT</span> and <span className='text-black'>GIS</span> Solution ”</p>
+              <div className="absolute lg:justify-between lg:px-6 inset-0 flex items-center text-center px-2">
+                <div className='text-white px-2'>
+                  <p className='text-2xl max-sm:text-[20px]'>Welcome to Techmapperz</p>
+                  <p className='text-4xl max-sm:text-[22px] font-bold'>“ Empowering Your Business with Innovation</p>
+                  <p className='text-4xl max-sm:text-[20px] font-bold'><span className='text-black'>IT</span> and <span className='text-black'>GIS</span> Solution ”</p>
                 </div>
                 <button
-                  className='mt-4 bg-[#00CAFF] text-white w-[200px] h-[200px] rounded-[50%] flex justify-center items-center hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-300 focus:ring-opacity-50 relative overflow-hidden'
+                  className='mt-4 bg-[#00CAFF] text-white w-[200px] h-[200px] max-sm:w-[150px] max-sm:h-[100px] rounded-[50%] flex justify-center items-center hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-300 focus:ring-opacity-50 relative overflow-hidden'
                   onMouseEnter={() => document.getElementById('videoButton').pause()}
                   onMouseLeave={() => document.getElementById('videoButton').play()}
                 >
@@ -52,14 +52,14 @@ const QueryDelayedForm = () => {
                     autoPlay
                     loop
                     muted
-                    className="absolute inset-0 w-full h-full object-cover"
+                    className="absolute inset-0 w-full h-full  object-cover"
                   >
-                    Your browser does not support the video tag.
+                   Your browser does not support the video tag. 
                   </video>
                   
                   <div className="z-10  font-bold  bg-[#00CAFF] w-full">
-                  <Link href={"/contact"} className='flex justify-center items-center gap-2'>
-                    Get Started <img src='/Photos/right-arrow.png' alt="Right Arrow" />
+                  <Link href={"/contact"} className='flex justify-center items-center gap-2 max-sm:text-[12px]'>
+                    Get Started <img className='max-sm:hidden' src='/Photos/right-arrow.png' alt="Right Arrow" />
                     </Link>
                   </div>
                  

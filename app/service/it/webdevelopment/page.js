@@ -13,22 +13,22 @@ const WebDevelopment = () => {
         <div className="bg-black text-white relative">
             <ScrollToTop />
 
-            <section className="h-[300px] w-full flex flex-col justify-center items-center bg-cover bg-center" style={{ backgroundImage: "url('/Photos/banner_3.jpg')" }}>
-                <h1 className="text-6xl font-bold">Website Development</h1>
-                <p className="text-xl">
+            <section className="h-[300px]  max-sm:h-[250px] w-full flex flex-col justify-center items-center bg-cover bg-center" style={{ backgroundImage: "url('/Photos/banner_3.jpg')" }}>
+                <h1 className="text-4xl max-sm:text-2xl font-bold">Website Development</h1>
+                <p className="text-xl max-sm:text-[18px]">
                     <Link href="/" className="text-white">Home</Link> /
                     <Link href="/service" className="text-white">Service</Link> / Website Development
                 </p>
             </section>
 
             <section className="w-full overflow-hidden">
-                <div className="px-20 py-10 relative">
+                <div className="px-20 max-sm:px-2 py-10 relative">
                     <div className="absolute top-12 right-[-8rem] text-[116px] leading-[174px] text-white opacity-5">IT Service</div>
-                    <div className="flex gap-12">
-                        <Image unoptimized="true" src="/Photos/WebDev3.gif" alt="WebDev3.gif" className='w-[30%]' width={100} height={100} />
+                    <div className="flex max-sm:flex-col max-sm:gap-2 max-sm:items-center gap-12">
+                        <Image unoptimized="true" src="/Photos/WebDev3.gif" alt="WebDev3.gif" className='w-[30%] max-sm:w-[90vw]' width={100} height={100} />
                         <div className="flex flex-col gap-4">
-                            <h1 className="text-4xl font-bold">What is Web Design and Development?</h1>
-                            <p>One of the first website was created in 1991, and since then website and its designing have evolved manifold. Today it is complex and involves an entire ecosystem of roles and skill sets. Website development is an umbrella term for two major parts- Design & Development, Design represents the look and feel whereas Development determines how it functions.</p>
+                            <h1 className="text-4xl max-sm:text-2xl font-bold">What is Web Design and Development?</h1>
+                            <p className='text-[18px] max-sm:text-[16px]'>One of the first website was created in 1991, and since then website and its designing have evolved manifold. Today it is complex and involves an entire ecosystem of roles and skill sets. Website development is an umbrella term for two major parts- Design & Development, Design represents the look and feel whereas Development determines how it functions.</p>
                             <button
                                 className='py-[10px] px-[15px] w-fit rounded-sm'
                                 style={{
@@ -52,10 +52,10 @@ const WebDevelopment = () => {
                     </div>
                 </div>
 
-                <div className="px-20 py-10 relative flex justify-between items-center bg-cover bg-center" style={{ backgroundImage: "url('/Photos/banner_3.jpg')" }}>
-                    <div className="flex flex-col gap-4 w-1/2">
-                        <h1 className="text-4xl font-bold ">Why Web Design and Development is Important?</h1>
-                        <p>Today the world is connected online, people get to the Internet for any kind of need they may have, in this era Web design and web development are crucial for any business that wants to create an online presence. it is the first impression of your company, make sure it is a good one, and a functioning one as well. A good web design and functionality is also a key element in good sales and business growth.</p>
+                <div className="px-20 py-10 relative flex max-sm:flex-col-reverse max-sm:gap-2 max-sm:px-2 max-sm:items-center justify-between items-center bg-cover bg-center" style={{ backgroundImage: "url('/Photos/banner_3.jpg')" }}>
+                    <div className="flex flex-col gap-4 w-1/2 max-sm:w-full">
+                        <h1 className="text-4xl max-sm:text-2xl font-bold ">Why Web Design and Development is Important?</h1>
+                        <p className='text-[18px] max-sm:text-[16px]'>Today the world is connected online, people get to the Internet for any kind of need they may have, in this era Web design and web development are crucial for any business that wants to create an online presence. it is the first impression of your company, make sure it is a good one, and a functioning one as well. A good web design and functionality is also a key element in good sales and business growth.</p>
                         <button
                             className='py-[10px] px-[15px] w-fit rounded-sm'
                             style={{
@@ -76,16 +76,16 @@ const WebDevelopment = () => {
                             </Link>
                         </button>
                     </div>
-                    <Image src="/Photos/WebDev4.gif" unoptimized="true" alt="" className='w-[30%]' width={100} height={100} />
+                    <Image src="/Photos/WebDev4.gif" unoptimized="true" alt="" className='w-[30%] max-sm:w-[90vw]' width={100} height={100} />
                 </div>
 
-                <div className="px-20 py-10 relative">
+                <div className="px-20 max-sm:px-2 py-10 relative">
                     <div className="absolute bottom-4 right-[-5rem] text-[116px] leading-[174px] text-white opacity-5">Teamwork</div>
-                    <div className="flex gap-12">
-                        <Image src="/Photos/WebDev2.gif" unoptimized="true" alt="" className='w-[30%]' width={100} height={100} />
+                    <div className="flex max-sm:flex-col max-sm:gap-2 max-sm:items-center gap-12">
+                        <Image src="/Photos/WebDev2.gif" unoptimized="true" alt="" className='w-[30%] max-sm:w-[90vw] ' width={100} height={100} />
                         <div className="flex flex-col gap-4">
-                            <h1 className="text-4xl font-bold">The Right Web Design and Development Team</h1>
-                            <p>With so much at stake it is important that your web designing and development company is reliable and has a team that is experienced and can be trusted.</p>
+                            <h1 className="text-4xl max-sm:text-2xl font-bold">The Right Web Design and Development Team</h1>
+                            <p className='text-[18px] max-sm:text-[16px]'>With so much at stake it is important that your web designing and development company is reliable and has a team that is experienced and can be trusted.</p>
                             <button
                                 className='py-[10px] px-[15px] w-fit rounded-sm'
                                 style={{
@@ -109,9 +109,9 @@ const WebDevelopment = () => {
                     </div>
                 </div>
 
-                <div className="px-20 py-10 bg-cover" style={{ backgroundImage: 'url("/Photos/banner_3.jpg")' }}>
-                    <h3 className="text-3xl font-bold mb-8">Elements of Web Design</h3>
-                    <div className="grid grid-cols-2 gap-20 w-[60%] m-auto">
+                <div className="px-20 max-sm:px-2 py-10 bg-cover" style={{ backgroundImage: 'url("/Photos/banner_3.jpg")' }}>
+                    <h3 className="text-4xl max-sm:text-2xl font-bold mb-8">Elements of Web Design</h3>
+                    <div className="grid grid-cols-2 max-sm:grid-cols-1 max-sm:gap-2 max-sm:w-[90vw] gap-20 w-[60%] m-auto">
                         <div className="border border-white p-4 mt-[20px] relative">
                             <Image src="/Photos/Combind1.png" alt="" width={100} height={100} />
                             <Image src={T01} alt="" width={80} height={80} className='absolute top-7 right-5' />
@@ -139,15 +139,15 @@ const WebDevelopment = () => {
                     </div>
                 </div>
 
-                <div className="px-20 py-10">
-                    <h1 className="text-3xl font-bold text-center mb-8">Things to Consider</h1>
-                    <div className="flex justify-center gap-6">
+                <div className="px-20 max-sm:px-2 py-10">
+                    <h1 className="text-4xl max-sm:text-2xl font-bold text-center mb-8">Things to Consider</h1>
+                    <div className="flex max-sm:flex-col max-sm:gap-2 justify-center gap-6">
                         <div className=" p-4 flex flex-col justify-center items-center">
                             <Image src="/Photos/Webdev4.png" alt="" width={100} height={100} />
                             <h1 className="text-2xl font-bold mt-4">Original Content</h1>
                             <p>It is heighly recommended that the content of the website is original and of high quality, this is not only helps your coustomers find you quickly but also effects the ranking of your website,ensure this for your website.</p>
                         </div>
-                        <div className="border-x border-white p-4 flex flex-col justify-center items-center">
+                        <div className="border-x max-sm:border-none border-white p-4 flex flex-col justify-center items-center">
                             <Image src="/Photos/Webdev3.png" alt="" width={100} height={100} />
                             <h1 className="text-2xl font-bold mt-4">Call to Action</h1>
                             <p>Call to action is as simple as setting up a contact now button,this invariably motivates customers and visitors to get in touch with your company and promotes building relationships.</p>
@@ -160,11 +160,11 @@ const WebDevelopment = () => {
                     </div>
                 </div>
 
-                <div className="px-20 py-10 relative flex justify-between items-center bg-cover bg-center" style={{ backgroundImage: "url('/Photos/background_4.png')" }}>
-                    <div className="flex flex-col gap-4 w-1/2">
-                        <h1 className="text-3xl font-bold">Benefits of Getting Web Development Professionally</h1>
-                        <p>We at Techmapperz have some of the best developers in the field with a combined experience of more than 200 years...</p>
-                        <ul className="list-disc list-inside text-[#396ba9]">
+                <div className="px-20 max-sm:px-2 py-10 relative flex max-sm:flex-col-reverse justify-between items-center bg-cover bg-center" style={{ backgroundImage: "url('/Photos/background_4.png')" }}>
+                    <div className="flex flex-col gap-4 w-1/2 max-sm:w-full max-sm:px-4 max-sm:py-2">
+                        <h1 className="text-4xl max-sm:text-2xl font-bold">Benefits of Getting Web Development Professionally</h1>
+                        <p className='text-[18px] max-sm:text-[16px]'>We at Techmapperz have some of the best developers in the field with a combined experience of more than 200 years...</p>
+                        <ul className="list-disc text-[18px] max-sm:text-[16px] list-inside text-[#396ba9]">
                             <li><span className='text-white'>Drive Social Media Growth </span></li>
                             <li><span className='text-white'>Leveraging SEO </span></li>
                             <li><span className='text-white'>Drive Wider Reach </span></li>
@@ -192,13 +192,13 @@ const WebDevelopment = () => {
                             </Link>
                         </button>
                     </div>
-                    <Image src="/Photos/WebDev1.gif" unoptimized="true" alt="" className='w-[30%]' width={100} height={100} />
+                    <Image src="/Photos/WebDev1.gif" unoptimized="true" alt="" className='w-[30%] max-sm:w-[90vw]' width={100} height={100} />
                 </div>
 
-                <div className="px-20 py-10 relative">
+                <div className="px-20 max-sm:px-2 py-10 relative">
                     <div className="absolute top-12 right-[-5rem] text-[645px] leading-[968px] text-white opacity-5">?</div>
-                    <h3 className="text-3xl font-bold text-center mb-8">Why Choose Techmapperz for your Development</h3>
-                    <div className="grid grid-cols-2 gap-12 w-[60%] m-auto">
+                    <h3 className="text-4xl max-sm:text-2xl font-bold text-center mb-8">Why Choose Techmapperz for your Development</h3>
+                    <div className="grid grid-cols-2 max-sm:grid-cols-1 max-sm:w-[90vw] max-sm:gap-2 gap-12 w-[60%] m-auto">
                         <div className="border border-white p-4 mt-[20px] relative">
                             <Image src="/Photos/Webdevelop.png" alt="" width={100} height={100} />
                             <Image src={T01} alt="" width={80} height={80} className='absolute top-7 right-5' />
@@ -217,7 +217,7 @@ const WebDevelopment = () => {
                             <h1 className="text-2xl font-bold mt-4">Quality</h1>
                             <p title='Quality makes us excel. our approach is designed to provide it at all levels of functioning up-to the micro level details.'>Quality makes us excel. Our approach is designed to provide it at all levels of functioning up to the micro level details...</p>
                         </div>
-                        <div className="border border-white p-4 mt-[-20px] relative">
+                        <div className="border border-white p-4 max-sm:mt-0 mt-[-20px] relative">
                             <Image src="/Photos/Develop3.png" alt="" width={100} height={100} />
                             <Image src={T04} alt="" width={80} height={80} className='absolute top-7 right-5' />
                             <h1 className="text-2xl font-bold mt-4">Reduce cost</h1>

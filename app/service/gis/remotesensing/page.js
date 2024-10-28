@@ -16,15 +16,15 @@ const RemoteSensing = () => {
     return (
         <div className="bg-black overflow-hidden text-white">
             <ScrollToTop />
-            <div className="h-96 w-full flex flex-col justify-center items-center bg-cover bg-center" style={{ backgroundImage: `url("/Photos/banner_3.jpg")` }}>
-                <h1 className="text-6xl">Remote Sensing Services</h1>
-                <p className="text-xl mt-4">
+            <div className="h-96 max-sm:h-[250px] w-full flex flex-col justify-center items-center bg-cover bg-center" style={{ backgroundImage: `url("/Photos/banner_3.jpg")` }}>
+                <h1 className="text-4xl max-sm:text-2xl">Remote Sensing Services</h1>
+                <p className="text-xl max-sm:text-[16px] mt-4">
                     <Link href="/">Home</Link> / <Link href="/service">Services</Link> / Remote Sensing Services
                 </p>
             </div>
             <div className="w-full bg-black">
                 <div className="p-8 lg:px-20">
-                    <p className="text-white text-[18px] text-center">
+                    <p className="text-white text-[18px] max-sm:text-[16px] max-sm:text-justify text-center">
                         Measuring the physical characteristics of an area by measuring it's reflected and emitted radiation from satellite or <br />
                         aircraft is Remote sensing, this help researchers "sense" things about the Earth. Techmapperz has extensive <br />
                         expertise in Satellite Image Processing & Interpretation. Various Remote Sensing services <br />
@@ -32,16 +32,16 @@ const RemoteSensing = () => {
                     </p>
 
                     <div className="mt-8 flex flex-col space-y-8">
-                        <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
+                        <div className="flex flex-col  md:flex-row space-y-4 md:space-y-0 md:space-x-4">
                             <div className="md:w-1/2 m-auto">
-                                <Image src={RemoteSence1} alt="" className="w-[80%] mb-4 ml-[80px]" />
+                                <Image src={RemoteSence1} alt="" className="w-[80%] mb-4 ml-[80px] max-sm:w-[90vw] max-sm:ml-0" />
                             </div>
                             <div className="md:w-1/2 relative">
-                                <h1 className="text-3xl font-semibold mb-4">Image Processing</h1>
-                                <p className="text-[18px] mb-8">
+                                <h1 className="text-2xl max-sm:text-xl font-semibold mb-4">Image Processing</h1>
+                                <p className="text-[18px] max-sm:text-[16px] max-sm:text-justify mb-8">
                                     Most remote sensing data are recorded in the digital format in today's world of advanced technology, almost all image interpretation and analysis involves some element of digital processing. It involves various processes to enhance the image, we at Techmapperz use some of the best software and hardware available commercially to process high-quality images for commercial use.
                                 </p>
-                                <ul className='flex flex-col gap-2 my-6 font-semibold list-disc ml-6'>
+                                <ul className='flex flex-col max-sm:text-[16px] gap-2 my-6 font-semibold list-disc ml-6'>
                                     <li>Topographical Mapping</li>
                                     <li>Utility Mapping</li>
                                     <li>Cadastral Mapping</li>
@@ -69,10 +69,10 @@ const RemoteSensing = () => {
                                 </button>
                             </div>
                         </div>
-                        <div className="flex flex-col md:flex-row md:space-y-0 md:space-x-4 bg-cover bg-center p-8" >
+                        <div className="flex flex-col max-sm:flex-col-reverse md:flex-row md:space-y-0 md:space-x-4 bg-cover bg-center p-8 max-sm:px-0" >
                             <div className="md:w-1/2 relative">
-                                <h1 className="text-3xl font-semibold mb-4">Land Use / Land Cover Mapping</h1>
-                                <p className="text-[18px] text-justify mb-8">
+                                <h1 className="text-2xl max-sm:text-xl font-semibold mb-4">Land Use / Land Cover Mapping</h1>
+                                <p className="text-[18px] max-sm:text-[16px] text-justify mb-8">
                                     Land use and land cover may sound the same but there is a slight difference between them. Land cover refers to the surface cover on the ground like vegetation, urban infrastructure, water, bare soil, etc. whereas Land use refers to the purpose the land serves, for example, recreation, wildlife habitat, or agriculture. Land use and Land cover mapping play a significant role in economic development. It is required for a better understanding and use of land in urban and rural areas.
                                 </p>
                                 <button
@@ -96,14 +96,14 @@ const RemoteSensing = () => {
                                 </button>
                             </div>
                             <div className="md:w-1/2 flex justify-end">
-                                <Image src={RemoteSence2} alt="" className="w-[80%] md:mt-0" />
+                                <Image src={RemoteSence2} alt="" className="w-[80%] mb-4 ml-[80px] max-sm:w-[90vw] max-sm:ml-0" />
                             </div>
                         </div>
                     </div>
                 </div>
-                <div className="flex flex-col items-center py-8 bg-gray-800">
-                    <h1 className="text-3xl font-semibold mb-8">Techmapperz's Remote sensing services include</h1>
-                    <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
+                <div className="flex flex-col items-center p-8 bg-gray-800">
+                    <h1 className="text-2xl max-sm:text-xl max-sm:text-center font-semibold mb-8">Techmapperz's Remote sensing services include</h1>
+                    <div className="flex flex-col max-sm:text-[16px] md:flex-row space-y-4 md:space-y-0 md:space-x-4">
                         <div className="w-80 text-left">
                             <ul className="list-disc space-y-4">
                                 <li>
